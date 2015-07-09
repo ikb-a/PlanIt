@@ -1,0 +1,8 @@
+@relation description-similarity
+
+@attribute edu.toronto.cs.se.ci.description_similarity.sources.MaxSimilarity numeric
+@attribute edu.toronto.cs.se.ci.description_similarity.sources.MeanSimilarity numeric
+@attribute edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfMaxSimilarity numeric
+@attribute edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfSimilarity numeric
+
+@data
