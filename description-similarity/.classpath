@@ -6,7 +6,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="edu/toronto/cs/se/ci/word2vec_util/ThreadsafeLoader.java" kind="src" output="target/classes" path="src/main/java">
+	<classpathentry excluding="uds_socket" kind="src" path="gensim-server"/>
+	<classpathentry excluding="edu/toronto/cs/se/ci/word2vec_util/ThreadsafeLoader.java|edu/toronto/cs/se/ci/word2vec_util/" kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>

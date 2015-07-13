@@ -2,10 +2,12 @@ package edu.toronto.cs.se.ci.description_similarity;
 
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.description_similarity.sources.SimilaritySource;
 
 public class TestSimilarity {
@@ -16,13 +18,29 @@ public class TestSimilarity {
 
 	@Test
 	public void test() {
-		try{
-			double a = SimilaritySource.similarity("brick", "house");
-			double b = SimilaritySource.similarity("ocean", "house");
-			assertTrue(a > b);
+		String s1 = "brick";
+		String s2 = "house";
+		double a = SimilaritySource.similarity(s1, s2);
+		
+		System.out.printf("%s and %s have similarity %f\n", s1, s2, a);
+		
+		assertTrue(a != -1d);
+
+	}
+	
+	@Test
+	public void test2() {
+		List<String> words1 = Arrays.asList("pizza", "pasta", "salad");
+		List<String> words2 = Arrays.asList("oven", "pot", "bowl");
+		double [][] matrix = SimilaritySource.similarity(words1, words2);
+		
+		if (matrix == null){
+			fail();
 		}
-		catch (UnknownException e){
-			System.err.println("Similarity could not be computed");
+		
+		System.out.printf("Similarity matrix for %s and %s\n", words1.toString(), words2.toString());
+		for (int i = 0; i < matrix.length; i++){
+			System.out.println(Arrays.toString(matrix[i]));
 		}
 	}
 

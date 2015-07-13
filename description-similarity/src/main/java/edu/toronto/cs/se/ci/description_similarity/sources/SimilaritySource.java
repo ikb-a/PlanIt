@@ -1,15 +1,17 @@
 package edu.toronto.cs.se.ci.description_similarity.sources;
 
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
-import java.util.Collection;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.lang.ProcessBuilder.Redirect;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
-import org.deeplearning4j.models.embeddings.wordvectors.WordVectorsImpl;
-import org.deeplearning4j.models.word2vec.Word2Vec;
 
 import com.google.common.base.Optional;
 
@@ -23,12 +25,6 @@ import edu.toronto.cs.se.ci.description_similarity.SimilarityQuestion;
 import edu.toronto.cs.se.ci.description_similarity.SimilarityTrust;
 
 public abstract class SimilaritySource extends Source<SimilarityQuestion, Double, SimilarityTrust> implements SimilarityContract{
-
-	static final String googleModelPath = "/home/wginsberg/Downloads/GoogleNews-vectors-negative300.bin";
-	//static final String wikiModelPath= "/home/wginsberg/Downloads/word2vec/vectors.bin";
-	static final String defaultModelPath = googleModelPath;
-	
-	static WordVectorsImpl wordVecModel;
 	
 	static Time similarityCost;
 	
@@ -65,58 +61,98 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		long unitCost = getSimilarityCost().getDuration(unit);
 		return new Expenditure [] {new Time(unitCost * numQueries, unit)};
 	}
-	
-	/**
-	 * Returns a model which is used for word vector functions.
-	 * @return
-	 * @throws IOException
-	 */
-	static WordVectorsImpl getModel(){
-		if (wordVecModel == null){
-			try{
-				wordVecModel = getWord2VecGoogleModel();
-			}
-			catch (IOException | InterruptedException e){
-				e.printStackTrace();
-				return null;
-			}
+
+	static public double similarity(String token1, String token2){
+		try{
+			return similarity(Arrays.asList(token1), Arrays.asList(token2))[0][0];
 		}
-		return wordVecModel;
+		catch (IndexOutOfBoundsException | NullPointerException e){
+			return -1;
+		}
 	}
 	
+	static public double [][] similarity(List<String> words1, List<String> words2){
+		//execute the process and get I/O objects
+		Process process = null;
+		try {
+			ProcessBuilder pb = new ProcessBuilder();
+			pb.command(Arrays.asList(System.getenv("GENSIM_SERVER") + "/client.py"));
+			pb.redirectOutput(Redirect.PIPE);
+			pb.redirectInput(Redirect.PIPE);
+			
+			/*
+			 * 
+			 */
+			pb.redirectErrorStream(true);
+			
+			process = pb.start();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+		double [][] toReturn = similarity(words1, words2, process.getOutputStream(), process.getInputStream());
+		try {
+			process.getInputStream().close();
+			process.getInputStream().close();
+			process.getErrorStream().close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return toReturn;
+	}	
 	/**
-	 * Loads the model into memory so that it can be immediately accessed by sources in a CI.
-	 * @return 
-	 */
-	static public void prepare(){
-		getModel();
-	}
-	
-	static public void close(){
-		wordVecModel = null;
-	}
-	
-	/**
-	 * Loads and returns the pre-trained Google News model.
-	 * @return
-	 * @throws IOException
-	 */
-	static Word2Vec getWord2VecGoogleModel() throws IOException, InterruptedException{
-		return WordVectorSerializer.loadGoogleModel(new File(defaultModelPath), true);
-	}
-	
-	/**
-	 * Returns a measure of the similarity between two tokens (e.g. words)
+	 * Returns a measure of the similarity between two lists of words.
+	 * A similarity of -1 means one of the words is not in the vocabulary
 	 * @param token1
 	 * @param token2
-	 * @return
- 	 * @throws UnknownException If one word is not found in the vocabulary
+	 * @param requestStream The stream to write the request to
+	 * @param responseStream The stream to read the response from
+	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
 	 */
-	static public double similarity(String token1, String token2) throws UnknownException{
-		double sim = getModel().similarity(token1, token2);
-		return sim;
+	static public double [][] similarity(List<String> words1, List<String> words2, OutputStream requestStream, InputStream responseStream){
+		
+		double [][] matrix = new double [words1.size()][words2.size()];
+		for (int i = 0; i < matrix.length; i++){
+			Arrays.fill(matrix[i], -1);
+		}
+		
+		try {
+	
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(requestStream));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(responseStream));
+			
+			//send the request
+			String request = String.format("%s\n%s\n\n", String.join(",", words1), String.join(",",  words2));			
+			writer.write(request);
+			writer.close();
+			
+			//get the response
+			String [] lines = new String [words1.size()];
+			for (int i = 0; i< lines.length; i++){
+				try{
+					lines[i] = reader.readLine();
+				}
+				catch (IOException e){
+					break;
+				}
+			}
+			
+			//parse the response
+			for (int i = 0; i < lines.length; i++){
+				String [] values = lines[i].split(",");
+				for (int j = 0; j < values.length; j++){
+					matrix[i][j] = Double.parseDouble(values[j]);
+				}
+			}
+			return matrix;
+			
+		} catch (IOException | NullPointerException e) {
+			return matrix;
+		}
 	}
 
+	
 	/**
 	 * Returns a matrix of the similarities of words in two sets.
 	 * Each row is a word in words1, each column is a word in words2
@@ -130,26 +166,11 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		int i,j;
 		for (i = 0; i < words1.size(); i++){
 			for (j = 0; j < words2.size(); j++){
-				try{
-					value = similarity(words1.get(i), words2.get(j));
-				}
-				catch (UnknownException e){
-					value = -1;
-				}
+				value = similarity(words1.get(i), words2.get(j));
 				matrix[i][j] = value;
 			}
 		}
 		return matrix;
-	}
-	
-	/**
-	 * Returns the top n most related words to a given word.
-	 * @param word
-	 * @param n
-	 * @return
-	 */
-	public Collection<String> relatedWords(String word, int n) throws UnknownException{
-		return getModel().wordsNearest(word, n);
 	}
 
 	/**

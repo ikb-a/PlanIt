@@ -22,7 +22,6 @@ import edu.toronto.cs.se.ci.budget.basic.Dollars;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.description_similarity.sources.MaxSimilarity;
 import edu.toronto.cs.se.ci.description_similarity.sources.MeanSimilarity;
-import edu.toronto.cs.se.ci.description_similarity.sources.SimilaritySource;
 import edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfMaxSimilarity;
 import edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfSimilarity;
 import edu.toronto.cs.se.ci.selectors.AllSelector;
@@ -54,12 +53,8 @@ public class App
     	
     	//do the execution
     	
-    	System.out.println("preparing...");
-    	
-    	SimilaritySource.prepare();
-    	
-    	//logWriter = new BufferedWriter(new OutputStreamWriter(getLogStream()));
-    	logWriter = new BufferedWriter(new OutputStreamWriter(System.out));
+    	logWriter = new BufferedWriter(new OutputStreamWriter(getLogStream()));
+    	//logWriter = new BufferedWriter(new OutputStreamWriter(System.out));
     	
     	writeHeader();
     	logWriter.flush();
