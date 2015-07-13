@@ -63,8 +63,12 @@ public class SimilarityQuestion {
 	public List<String> getSpeakerWords(){
 		if (speakerWords == null){
 			speakerWords = new ArrayList<String>();
-			speakerWords.addAll(parseTopics(speaker.getTopics()));
-			speakerWords.addAll(parseSentence(speaker.getProfessionalTitle()));
+			if (speaker.getTopics() != null){
+				speakerWords.addAll(parseTopics(speaker.getTopics()));
+			}
+			if (speaker.getProfessionalTitle() != null){
+				speakerWords.addAll(parseSentence(speaker.getProfessionalTitle()));
+			}
 		}
 		return speakerWords;
 	}

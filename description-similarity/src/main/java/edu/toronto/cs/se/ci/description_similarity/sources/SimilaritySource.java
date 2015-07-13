@@ -3,6 +3,7 @@ package edu.toronto.cs.se.ci.description_similarity.sources;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -23,18 +24,19 @@ import edu.toronto.cs.se.ci.description_similarity.SimilarityTrust;
 
 public abstract class SimilaritySource extends Source<SimilarityQuestion, Double, SimilarityTrust> implements SimilarityContract{
 
-	static final String defaultModelPath = "/home/wginsberg/Downloads/GoogleNews-vectors-negative300.bin";
+	static final String googleModelPath = "/home/wginsberg/Downloads/GoogleNews-vectors-negative300.bin";
+	//static final String wikiModelPath= "/home/wginsberg/Downloads/word2vec/vectors.bin";
+	static final String defaultModelPath = googleModelPath;
 	
 	static WordVectorsImpl wordVecModel;
 	
 	static Time similarityCost;
 	
+	private static HashMap<SimilarityQuestion, double [][]> cache;
+	
 	abstract public Double getResponse(SimilarityQuestion input) throws UnknownException;
 	
 	public Opinion<Double, SimilarityTrust> getOpinion(SimilarityQuestion input) throws UnknownException {
-		
-		System.out.println("Hallo sourceies");
-		
 		return new Opinion<Double, SimilarityTrust>(getResponse(input), new SimilarityTrust(this));
 	}
 	
@@ -74,7 +76,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 			try{
 				wordVecModel = getWord2VecGoogleModel();
 			}
-			catch (IOException e){
+			catch (IOException | InterruptedException e){
 				e.printStackTrace();
 				return null;
 			}
@@ -83,11 +85,23 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 	}
 	
 	/**
+	 * Loads the model into memory so that it can be immediately accessed by sources in a CI.
+	 * @return 
+	 */
+	static public void prepare(){
+		getModel();
+	}
+	
+	static public void close(){
+		wordVecModel = null;
+	}
+	
+	/**
 	 * Loads and returns the pre-trained Google News model.
 	 * @return
 	 * @throws IOException
 	 */
-	static Word2Vec getWord2VecGoogleModel() throws IOException{
+	static Word2Vec getWord2VecGoogleModel() throws IOException, InterruptedException{
 		return WordVectorSerializer.loadGoogleModel(new File(defaultModelPath), true);
 	}
 	
@@ -100,7 +114,6 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 	 */
 	static public double similarity(String token1, String token2) throws UnknownException{
 		double sim = getModel().similarity(token1, token2);
-		System.err.printf("DEBUG : %s %s %f", token1, token2, sim);
 		return sim;
 	}
 
@@ -109,7 +122,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 	 * Each row is a word in words1, each column is a word in words2
 	 * @return
 	 */
-	public double [][] similarityMatrix(List<String> words1, List<String> words2) throws UnknownException{
+	public static double [][] similarityMatrix(List<String> words1, List<String> words2) throws UnknownException{
 
 		double [][] matrix = new double[words1.size()][words2.size()];
 		
@@ -136,11 +149,25 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 	 * @return
 	 */
 	public Collection<String> relatedWords(String word, int n) throws UnknownException{
-
 		return getModel().wordsNearest(word, n);
 	}
+
+	/**
+	 * Returns a matrix of word similarities between the event and speaker keywords in the question object.
+	 * @param q
+	 * @return
+	 */
+	public static double [][] similarityMatrix(SimilarityQuestion q) throws UnknownException{
+		if (cache == null){
+			cache = new HashMap<SimilarityQuestion, double[][]>();
+		}
+		if (!cache.containsKey(q)){
+			cache.put(q, similarityMatrix(q.getEventWords(), q.getSpeakerWords()));
+		}
+		return cache.get(q);
+	}
 	
-	static double max(double [][] values){
+	static public double max(double [][] values){
 		if (values.length < 1){
 			return Double.MIN_VALUE;
 		}
@@ -156,7 +183,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		return maxValue;
 	}
 	
-	static double max(double [] values){
+	static public double max(double [] values){
 		if (values.length < 1){
 			return Double.MIN_VALUE;
 		}
@@ -171,7 +198,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		return maxValue;
 	}
 	
-	static double sum(double [] values){
+	static public double sum(double [] values){
 		if (values.length < 1){
 			return Double.MIN_VALUE;
 		}
@@ -184,7 +211,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		return x;
 	}
 	
-	static double sum (double [][] values){
+	static public double sum (double [][] values){
 		if (values.length < 1){
 			return Double.MIN_VALUE;
 		}

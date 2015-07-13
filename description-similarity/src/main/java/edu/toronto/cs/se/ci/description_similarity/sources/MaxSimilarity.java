@@ -13,7 +13,7 @@ public class MaxSimilarity extends SimilaritySource {
 
 	@Override
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
-		return max(similarityMatrix(input.getEventWords(), input.getSpeakerWords()));
+		return max(similarityMatrix(input));
 	}
 
 	/**
@@ -21,7 +21,7 @@ public class MaxSimilarity extends SimilaritySource {
 	 */
 	@Override
 	public Expenditure[] getCost(SimilarityQuestion args) throws Exception {
-		System.out.println("howe much?!");
+
 		return getSimilarityCost(args.getEventWords().size() * args.getSpeakerWords().size());
 	}
 

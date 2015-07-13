@@ -22,14 +22,12 @@ import edu.toronto.cs.se.ci.budget.basic.Dollars;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.description_similarity.sources.MaxSimilarity;
 import edu.toronto.cs.se.ci.description_similarity.sources.MeanSimilarity;
+import edu.toronto.cs.se.ci.description_similarity.sources.SimilaritySource;
 import edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfMaxSimilarity;
 import edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfSimilarity;
 import edu.toronto.cs.se.ci.selectors.AllSelector;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
 	static BufferedWriter logWriter;
@@ -49,17 +47,26 @@ public class App
     	CI<SimilarityQuestion, Double, SimilarityTrust, Double> ci;
     	ci = new CI<SimilarityQuestion, Double, SimilarityTrust, Double>
     		(SimilarityContract.class, agg, sel);
-    	Allowance [] budget = new Allowance [] {new Dollars(BigDecimal.ONE), new Time(60, TimeUnit.SECONDS)};
+    	Allowance [] budget = new Allowance [] {new Dollars(BigDecimal.ONE), new Time(10, TimeUnit.MINUTES)};
     	
     	//load the data to execute on
     	List<SimilarityQuestion> questions = loadQuestions();
     	
     	//do the execution
-    	logWriter = new BufferedWriter(new OutputStreamWriter(getLogStream()));
+    	
+    	System.out.println("preparing...");
+    	
+    	SimilaritySource.prepare();
+    	
+    	//logWriter = new BufferedWriter(new OutputStreamWriter(getLogStream()));
+    	logWriter = new BufferedWriter(new OutputStreamWriter(System.out));
+    	
     	writeHeader();
+    	logWriter.flush();
     	for (SimilarityQuestion question : questions){
         	System.out.println("Ask ...");
-    		ci.apply(question, budget);//.get();
+    		ci.apply(question, budget).get();
+    		logWriter.flush();
     	}
     	System.out.println("Finished");
     	
@@ -86,16 +93,6 @@ public class App
     	topics = Arrays.asList(new String [] {"Education", "Environment & Science", "Media & Entertainment", "Youth & Campus"});
     	questions.add(new SimilarityQuestion(eventTitle, name, professionalTitle, topics));
     	
-    	name = "Matthew Corrin";
-    	professionalTitle = "Founder & CEO of Freshii, CBC Dragon";
-    	topics = Arrays.asList(new String [] {"Business & Workplace", "Environment & Science", "Innovation & Change Management", "Leadership", "Motivation & Inspiration"});
-    	questions.add(new SimilarityQuestion(eventTitle, name, professionalTitle, topics));
-    	
-    	name = "Dalton Higgins";
-    	professionalTitle = "Journalist & Pop Culture Expert";
-    	topics = Arrays.asList(new String [] {"Celebrity & Bestselling Authors", "Current Events", "Media & Entertainment", "Youth & Campus"});
-    	questions.add(new SimilarityQuestion(eventTitle, name, professionalTitle, topics));
-    	
     	for (SimilarityQuestion q : questions){
     		q.preProcess();
     	}
@@ -108,7 +105,7 @@ public class App
     	agg.setLogStream(getLogStream());
     	return agg;
     }
-    
+        
     static OutputStream getLogStream() throws IOException{
     	if (logStream == null){
     		String logFileName = String.format("./data/logs/%s.txt",

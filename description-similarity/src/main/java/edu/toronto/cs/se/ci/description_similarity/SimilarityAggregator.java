@@ -58,8 +58,16 @@ public class SimilarityAggregator implements Aggregator<Double, SimilarityTrust,
 		}
 		average = total / opinions.size();
 		
-		return Optional.of(new Result<Double, Double>(average, 1d));
+		Optional<Result<Double, Double>> result = Optional.of(new Result<Double, Double>(average, 1d));
 		
+		try{
+			log.flush();
+			return result;
+		}
+		catch (IOException e){
+			return result;
+		}
+
 	}
 	
 	private void write(String s) throws IOException{

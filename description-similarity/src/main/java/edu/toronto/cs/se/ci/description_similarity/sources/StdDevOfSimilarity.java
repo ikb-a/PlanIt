@@ -24,12 +24,12 @@ public class StdDevOfSimilarity extends SimilaritySource {
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
 		
 		stdDev.clear();
-		double [][] similarities = similarityMatrix(input.getEventWords(), input.getSpeakerWords());
+		double [][] similarities = similarityMatrix(input);
 		for (int i = 0; i < similarities.length; i++){
 			stdDev.incrementAll(similarities[i]);
 		}
 		try{
-			return stdDev.evaluate();
+			return stdDev.getResult();
 		}
 		catch (MathIllegalArgumentException e){
 			throw new UnknownException(e);
