@@ -91,8 +91,7 @@ def get_request(connection):
 			else:
 				data = data + rec
 				num_newlines_rec += rec.count("\n")
-		
-	finally:
+	except Exception:
 		pass
 
 	return data

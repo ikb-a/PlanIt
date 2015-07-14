@@ -24,7 +24,7 @@ public class StdDevOfMaxSimilarity extends SimilaritySource {
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
 		
 		stdDev.clear();
-		double [][] similarities = similarityMatrix(input);
+		double [][] similarities = similarity(input);
 		for (int i = 0; i < similarities.length; i++){
 			stdDev.increment(max(similarities[i]));
 		}

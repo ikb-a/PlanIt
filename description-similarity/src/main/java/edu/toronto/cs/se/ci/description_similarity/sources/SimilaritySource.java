@@ -42,7 +42,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 	 */
 	static Time getSimilarityCost(){
 		if (similarityCost == null){
-			similarityCost = new Time(1, TimeUnit.SECONDS);
+			similarityCost = new Time(1, TimeUnit.MILLISECONDS);
 		}
 		return similarityCost;
 	}
@@ -62,6 +62,10 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		return new Expenditure [] {new Time(unitCost * numQueries, unit)};
 	}
 
+	static public double [][] similarity(SimilarityQuestion input){
+		return similarity(input.getEventWords(), input.getSpeakerWords());
+	}
+	
 	static public double similarity(String token1, String token2){
 		try{
 			return similarity(Arrays.asList(token1), Arrays.asList(token2))[0][0];
@@ -142,7 +146,12 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 			for (int i = 0; i < lines.length; i++){
 				String [] values = lines[i].split(",");
 				for (int j = 0; j < values.length; j++){
-					matrix[i][j] = Double.parseDouble(values[j]);
+						try{
+							matrix[i][j] = Double.parseDouble(values[j]);
+						}
+						catch (NumberFormatException e){
+							matrix[i][j] = -1;
+						}
 				}
 			}
 			return matrix;
@@ -158,6 +167,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 	 * Each row is a word in words1, each column is a word in words2
 	 * @return
 	 */
+	@Deprecated
 	public static double [][] similarityMatrix(List<String> words1, List<String> words2) throws UnknownException{
 
 		double [][] matrix = new double[words1.size()][words2.size()];
@@ -178,6 +188,7 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 	 * @param q
 	 * @return
 	 */
+	@Deprecated
 	public static double [][] similarityMatrix(SimilarityQuestion q) throws UnknownException{
 		if (cache == null){
 			cache = new HashMap<SimilarityQuestion, double[][]>();
@@ -243,6 +254,52 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 			}
 		}
 		return x;
+	}
+	
+	/**
+	 * Returns the arithmetic average, ignoring -1 values
+	 * @param values
+	 * @return
+	 */
+	static public double mean(double [][] values){
+		double total = 0;
+		int n = 0;
+		for (int i = 0; i < values.length; i++){
+			for (int j = 0; j < values[i].length; j++){
+				if (values[i][j] != -1d){
+					total += values[i][j];
+					n++;
+				}
+			}
+		}
+		if (total == 0){
+			return 0;
+		}
+		else{
+			return total / n;
+		}
+	}
+	
+	/**
+	 * Returns the arithmetic average, ignoring -1 values
+	 * @param values
+	 * @return
+	 */
+	static public double mean(double [] values){
+		double total = 0;
+		int n = 0;
+		for (int i = 0; i < values.length; i++){
+			if (values[i] != -1d){
+				total += values[i];
+				n++;
+			}
+		}
+		if (total == 0){
+			return 0;
+		}
+		else{
+			return total / n;
+		}
 	}
 	
 	@Override

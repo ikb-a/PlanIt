@@ -20,10 +20,9 @@ import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Dollars;
 import edu.toronto.cs.se.ci.budget.basic.Time;
-import edu.toronto.cs.se.ci.description_similarity.sources.MaxSimilarity;
+import edu.toronto.cs.se.ci.data.Speaker;
 import edu.toronto.cs.se.ci.description_similarity.sources.MeanSimilarity;
-import edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfMaxSimilarity;
-import edu.toronto.cs.se.ci.description_similarity.sources.StdDevOfSimilarity;
+import edu.toronto.cs.se.ci.eventObjects.Event;
 import edu.toronto.cs.se.ci.selectors.AllSelector;
 
 
@@ -34,11 +33,15 @@ public class App
 	
     public static void main( String[] args ) throws IOException, InterruptedException, ExecutionException
     {
+    	setLogStream(System.out);
+    	logWriter = new BufferedWriter(new OutputStreamWriter(getLogStream()));
+    	
     	//register sources
-    	Contracts.register(new MaxSimilarity());
-    	Contracts.register(new MeanSimilarity());    	
-    	Contracts.register(new StdDevOfMaxSimilarity());
-    	Contracts.register(new StdDevOfSimilarity());
+    	//Contracts.register(new MaxSimilarity());
+    	Contracts.register(new MeanSimilarity()); 
+    	//Contracts.register(new FullMeanSimilarity());
+    	//Contracts.register(new StdDevOfMaxSimilarity());
+    	//Contracts.register(new StdDevOfSimilarity());
     	
     	//create the CI
     	SimilarityAggregator agg = getAggregator();
@@ -46,16 +49,13 @@ public class App
     	CI<SimilarityQuestion, Double, SimilarityTrust, Double> ci;
     	ci = new CI<SimilarityQuestion, Double, SimilarityTrust, Double>
     		(SimilarityContract.class, agg, sel);
-    	Allowance [] budget = new Allowance [] {new Dollars(BigDecimal.ONE), new Time(10, TimeUnit.MINUTES)};
+    	Allowance [] budget = new Allowance [] {new Dollars(BigDecimal.ONE), new Time(1, TimeUnit.MINUTES)};
     	
     	//load the data to execute on
     	List<SimilarityQuestion> questions = loadQuestions();
     	
     	//do the execution
-    	
-    	logWriter = new BufferedWriter(new OutputStreamWriter(getLogStream()));
-    	//logWriter = new BufferedWriter(new OutputStreamWriter(System.out));
-    	
+
     	writeHeader();
     	logWriter.flush();
     	for (SimilarityQuestion question : questions){
@@ -74,19 +74,31 @@ public class App
     }
     
     static List<SimilarityQuestion> loadQuestions(){
+    	
     	ArrayList<SimilarityQuestion> questions = new ArrayList<SimilarityQuestion>();
     	
-    	String eventTitle;
-    	String name;
-    	String professionalTitle;
-    	List<String> topics;
+    	Speaker speaker = new Speaker();
+    	speaker.setName("Matte Babel");
+    	speaker.setProfessionalTitle("Pop-Culture Icon");
+    	speaker.setTopics(Arrays.asList(new String [] {"Education", "Environment", "Science", "Media", "Entertainment", "Youth", "Campus"}));
     	
-    	eventTitle = "Taste the Town Tours - July 2015";
+    	Speaker speaker2 = new Speaker();
+    	speaker2.setName("Julie Daniluk");
+    	speaker2.setProfessionalTitle("Co-Host of Healthy Gourmet Nutrition Expert");
+    	speaker2.setTopics(Arrays.asList(new String [] {"Celebrity", "Bestselling Authors", "Environment", "Science","Health"}));  
     	
-    	name = "Matte Babel";
-    	professionalTitle = "Pop-Culture Icon";
-    	topics = Arrays.asList(new String [] {"Education", "Environment & Science", "Media & Entertainment", "Youth & Campus"});
-    	questions.add(new SimilarityQuestion(eventTitle, name, professionalTitle, topics));
+    	Speaker speaker3 = new Speaker();
+    	speaker3.setName("Diana Steele");
+    	speaker3.setProfessionalTitle("Registered dietitian and owner of Eating for Energy");
+    	speaker3.setTopics(Arrays.asList(new String [] {"Environment", "Science", "Health", "Youth", "Campus"}));  
+    	
+    	Event event = new Event();
+    	event.setTitle("Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park");
+    	event.setDescription("This summer, Toronto’s premiere destination for art and culture invites visitors to enjoy lunch on the patio while taking in the tranquility of the new Aga Khan Park, featuring walking paths and a four-part garden oasis with reflective pools and more than 500 trees. Visitors can indulge in a delicious grilled menu inspired by Iranian, East African, and Asian at Diwan (Persian word for “meeting place”), the Aga Khan Museum’s restaurant.");
+
+    	questions.add(new SimilarityQuestion(speaker, event));
+    	questions.add(new SimilarityQuestion(speaker2, event));
+    	questions.add(new SimilarityQuestion(speaker3, event));
     	
     	for (SimilarityQuestion q : questions){
     		q.preProcess();
@@ -109,6 +121,10 @@ public class App
     		logStream = new FileOutputStream(logFile);
     	}
     	return logStream;
+    }
+    
+    static void setLogStream(OutputStream stream){
+    	logStream = stream;
     }
     
     static void writeHeader() throws IOException{

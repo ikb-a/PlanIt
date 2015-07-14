@@ -14,7 +14,7 @@ public class MeanSimilarity extends SimilaritySource {
 	@Override
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
 		
-		double [][] similarities = similarityMatrix(input);
+		double [][] similarities = similarity(input);
 		double [] maxSimilarities = new double[input.getEventWords().size()];
 		for (int i = 0; i < maxSimilarities.length; i++){
 			maxSimilarities[i] = max(similarities[i]);
@@ -22,7 +22,7 @@ public class MeanSimilarity extends SimilaritySource {
 		if (maxSimilarities.length < 1){
 			throw new UnknownException();
 		}
-		return sum(maxSimilarities) / maxSimilarities.length;
+		return mean(maxSimilarities);
 				
 	}
 

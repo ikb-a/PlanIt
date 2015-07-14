@@ -3,6 +3,7 @@ package edu.toronto.cs.se.ci.description_similarity;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -49,7 +50,9 @@ public class SimilarityQuestion {
 	 */
 	public List<String> getEventWords(){
 		if (eventKeywords == null){
-			eventKeywords = parseSentence(event.getTitle());
+			eventKeywords = new LinkedList<String>();
+			eventKeywords.addAll(parseSentence(event.getTitle()));
+			eventKeywords.addAll(parseSentence(event.getDescription()));
 		}
 		return eventKeywords;
 	}

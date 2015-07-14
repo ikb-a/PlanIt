@@ -13,7 +13,7 @@ public class MaxSimilarity extends SimilaritySource {
 
 	@Override
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
-		return max(similarityMatrix(input));
+		return max(similarity(input));
 	}
 
 	/**
