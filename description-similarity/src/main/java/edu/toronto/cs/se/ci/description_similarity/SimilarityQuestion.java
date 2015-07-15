@@ -59,9 +59,8 @@ public class SimilarityQuestion {
 	
 	/**
 	 * Returns a list of words which can be used as keywords for the speaker.
-	 * These are parsed from the speaker's professional title, as well as their
-	 * list of speaking topics
-	 * @return
+	 * These are parsed from the speaker's professional title, biography, and their list of speaking topics
+	 * @return A list of words which can be used for word similarity
 	 */
 	public List<String> getSpeakerWords(){
 		if (speakerWords == null){
@@ -71,6 +70,9 @@ public class SimilarityQuestion {
 			}
 			if (speaker.getProfessionalTitle() != null){
 				speakerWords.addAll(parseSentence(speaker.getProfessionalTitle()));
+			}
+			if (speaker.getBio() != null){
+				speakerWords.addAll(parseSentence(speaker.getBio()));
 			}
 		}
 		return speakerWords;

@@ -12,6 +12,11 @@ import edu.toronto.cs.se.ci.description_similarity.SimilarityQuestion;
 public class MeanSimilarity extends SimilaritySource {
 
 	@Override
+	public String getName(){
+		return "average-of-top-word-similarities";
+	}
+	
+	@Override
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
 		
 		double [][] similarities = similarity(input);

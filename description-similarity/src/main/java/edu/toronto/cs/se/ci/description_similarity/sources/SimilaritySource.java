@@ -62,6 +62,12 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		return new Expenditure [] {new Time(unitCost * numQueries, unit)};
 	}
 
+	/**
+	 * Returns a matrix of word similarities based on the words returned from input.getEventWords() and input.getSpeakerWords())
+	 * The rows correspond to event words, the columns to speaker words
+	 * @param input
+	 * @return
+	 */
 	static public double [][] similarity(SimilarityQuestion input){
 		return similarity(input.getEventWords(), input.getSpeakerWords());
 	}
@@ -75,6 +81,13 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		}
 	}
 	
+	/**
+	 * Returns a measure of the similarity between two lists of words.
+	 * A similarity of -1 means one of the words is not in the vocabulary
+	 * @param token1
+	 * @param token2
+	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
+	 */
 	static public double [][] similarity(List<String> words1, List<String> words2){
 		//execute the process and get I/O objects
 		Process process = null;
@@ -83,11 +96,6 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 			pb.command(Arrays.asList(System.getenv("GENSIM_SERVER") + "/client.py"));
 			pb.redirectOutput(Redirect.PIPE);
 			pb.redirectInput(Redirect.PIPE);
-			
-			/*
-			 * 
-			 */
-			pb.redirectErrorStream(true);
 			
 			process = pb.start();
 		} catch (IOException e) {
@@ -105,14 +113,11 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 
 		return toReturn;
 	}	
+	
 	/**
-	 * Returns a measure of the similarity between two lists of words.
-	 * A similarity of -1 means one of the words is not in the vocabulary
-	 * @param token1
-	 * @param token2
-	 * @param requestStream The stream to write the request to
+ 	 * @param requestStream The stream to write the request to
 	 * @param responseStream The stream to read the response from
-	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
+	 * @return
 	 */
 	static public double [][] similarity(List<String> words1, List<String> words2, OutputStream requestStream, InputStream responseStream){
 		
@@ -300,6 +305,16 @@ public abstract class SimilaritySource extends Source<SimilarityQuestion, Double
 		else{
 			return total / n;
 		}
+	}
+	
+	static public double min(double [] values){
+		double m = Double.MAX_VALUE;
+		for (int i = 0; i < values.length; i++){
+			if (values[i] < m){
+				m = values[i];
+			}
+		}
+		return m;
 	}
 	
 	@Override

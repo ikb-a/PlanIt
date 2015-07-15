@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-##
+## 
 # Read from stdin: A series of lines of comma separated words.
 # Every two lines are a pair which are treated as a single query for word similarity.
 # The result of each query is a matrix of similarity values. A final empty line signals the end of the input.
@@ -8,40 +8,40 @@
 ##
 
 import socket
-import os
 import sys
-import fileinput
+import os
 
 def main():
 
-	#read the queries
-	queries	= get_queries()
-
-	if queries == None or len(queries) < 1:
-		sys.stderr.write("No input was read\n")
-		exit(1)
-
 	#connect
-	server_address = os.environ.get("GENSIM_SERVER")
-	if not server_address:
-		sys.stderr.write("Server address could not be located")
-	server_address = server_address + "/uds_socket"	
+	server_path = os.environ.get('GENSIM_SERVER')
+	if not server_path:
+		sys.stderr.write("Could not locate the gensim server. Please make sure the environment variable GENSIM_SERVER points to its directory\n")
+	server_address = server_path + "/uds_socket"
 	sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)	
 	try:
 		sock.connect(server_address)
+		sys.stderr.write("Connected\n")
 	except socket.error, msg:
-                sys.stderr.write(str(msg) + "\n")
+                sys.stderr.write("Could not connect\n")
 		sys.exit(1)
 
+	#read the queries
+	queries	= get_queries(sys.stdin)
 
+	if len(queries) < 1:
+		sys.stderr.write("No input was read\n")
+		exit(1)
+        else:
+                sys.stderr.write("read a query: " + str(queries) + "\n")
 
 	#communicate
 	try:
 		for query in queries:
 			send_request(sock, query)
 			response = get_response(sock)
-			sys.stdout.write(response)
-			sys.stdout.write("\n")
+			sys.stderr.write("got a response:\n")
+			sys.stdout.write(response)		
 
 	except Exception:
 		sock.close()
@@ -51,20 +51,28 @@ def main():
 	sock.close()	
 	exit(0)
 
-def get_queries():
+def get_queries(input_source):
 	"""
+	Calls read() on the input_source until a double newline is reached
 	The format of the input should match what is specificed at the top of this file
 	Returns queries in the formateed expected for the server
 	Returns None  if the input is not well formed
 	"""
 
-        try:
-                lines = sys.stdin.read().split("\n")
-                while len(lines) and len(lines[-1]) == 0:
-                        lines.pop()
-                return [lines[i] + "\n" + lines[i+1] + "\n"  for i in range(0, len(lines) - 1, 2)]
-        except Exception:
-                return None
+	try:
+		data = ""
+		while 1:
+			rec = input_source.read(256)
+			if rec == None or len(rec) < 1:
+				break
+			data = data + rec
+			if rec.find("\n\n") != -1:
+				break
+	
+		lines = data.split("\n")
+		return [lines[i] + "\n" + lines[i+1] + "\n"  for i in range(0, len(lines) - 2, 2)]
+	except Exception:
+		return None
 
 def send_request(connection, request):
 	"""

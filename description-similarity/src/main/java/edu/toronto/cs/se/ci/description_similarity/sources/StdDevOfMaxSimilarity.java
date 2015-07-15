@@ -21,6 +21,11 @@ public class StdDevOfMaxSimilarity extends SimilaritySource {
 	}
 	
 	@Override
+	public String getName(){
+		return "std-dev-of-maximal-word-similarities";
+	}
+	
+	@Override
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
 		
 		stdDev.clear();

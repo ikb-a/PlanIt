@@ -40,8 +40,11 @@ public class SimilarityAggregator implements Aggregator<Double, SimilarityTrust,
 	public Optional<Result<Double, Double>> aggregate(
 			List<Opinion<Double, SimilarityTrust>> opinions) {
 
+		opinions.sort(OpinionOrdering.getComparator());
+		
 		double total = 0, average = 0;
 		for (int i = 0; i < opinions.size(); i++){
+			
 			double value = opinions.get(i).getValue();
 			try {
 				write(Double.toString(value));

@@ -5,20 +5,23 @@ import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.description_similarity.SimilarityQuestion;
 
 /**
- * The highest similarity between any pair (event keyword, speaker keyword)
+ * The average similarity of all non zero similarities
  * @author wginsberg
  *
  */
-public class MaxSimilarity extends SimilaritySource {
+public class FullMeanSimilarity extends SimilaritySource {
 
 	@Override
 	public String getName(){
-		return "max-word-similarity";
+		return "average-of-all-word-similarities";
 	}
-	
+
 	@Override
 	public Double getResponse(SimilarityQuestion input) throws UnknownException {
-		return max(similarity(input));
+		
+		double [][] similarities = similarity(input);
+		return mean(similarities);
+				
 	}
 
 	/**
@@ -26,7 +29,6 @@ public class MaxSimilarity extends SimilaritySource {
 	 */
 	@Override
 	public Expenditure[] getCost(SimilarityQuestion args) throws Exception {
-
 		return getSimilarityCost(args.getEventWords().size() * args.getSpeakerWords().size());
 	}
 
