@@ -1,0 +1,11 @@
+The pre-requisite for using the server is that the environment variable GENSIM_SERVER is set to this directory
+
+To initiate the server:
+> $GENSIM_SERVER/server.py &
+
+To initiate the client:
+> $GENSIM_SERVER/client.py
+
+The file "words" contains a sample input for client.py.
+E.g.
+> cat words | $GENSIM_SERVER/client.py
