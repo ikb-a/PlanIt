@@ -1,4 +1,4 @@
-package edu.toronto.cs.Planit.data;
+package edu.toronto.cs.Planit.dataObjects;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

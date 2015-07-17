@@ -1,4 +1,4 @@
-package edu.toronto.cs.Planit.data;
+package edu.toronto.cs.Planit.dataObjects;
 
 public class Address {
 	

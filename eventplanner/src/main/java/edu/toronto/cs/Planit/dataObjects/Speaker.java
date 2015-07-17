@@ -1,4 +1,4 @@
-package edu.toronto.cs.Planit.data;
+package edu.toronto.cs.Planit.dataObjects;
 
 import java.net.URL;
 import java.util.ArrayList;
