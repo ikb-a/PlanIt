@@ -23,7 +23,7 @@ def main():
 		sock.connect(server_address)
 		sys.stderr.write("Connected\n")
 	except socket.error, msg:
-                sys.stderr.write("Could not connect\n")
+                sys.stderr.write("Couldn't connect\n")
 		sys.exit(1)
 
 	#read the queries

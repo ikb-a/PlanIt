@@ -17,6 +17,7 @@ import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
 import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
@@ -41,14 +42,18 @@ public class ScrapeConferenceBoardCanada {
 	static WebClient webClient;
 	static Throttler throttler;
 	
+	public static void main(String [] args){
+		
+		main("src/main/resources/scrape/event and speakers/2.json");
+		
+	}
+	
 	/**
 	 * Scrapes all events and all speakers (where links are available), discovered from the main page.
+	 * Saves the results in json format to the supplied file location
 	 * @param args
 	 */
-	public static void main(String [] args){
-
-		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
-		java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
+	public static void main(String savePath){
 		
 		throttler = new Throttler(1, TimeUnit.SECONDS);
 		
@@ -106,10 +111,17 @@ public class ScrapeConferenceBoardCanada {
 			}
 		}
 		
-		if (!DataObjectUtils.writeObjectJson(scrapedData, "src/main/resources/scrape/event and speakers/1.json")){
+		if (!DataObjectUtils.writeObjectJson(scrapedData, savePath)){
+			System.out.println("Saved results to " + savePath);
+		}
+		else {
 			System.err.println("Could not save results to file. Printing to stdout instead");
 			System.out.println(DataObjectUtils.asJson(scrapedData));
 		}
+	}
+	
+	public static Document getDocument(String pageAddress) throws IOException{
+		return Jsoup.connect(pageAddress).get();
 	}
 	
 	/**
@@ -117,7 +129,7 @@ public class ScrapeConferenceBoardCanada {
 	 * @param eventListings
 	 * @return
 	 */
-	static List<String> getEventLinks(Document eventListings){
+	public static List<String> getEventLinks(Document eventListings){
 		
 		List<String> links = new LinkedList<String>();
 		
@@ -137,12 +149,12 @@ public class ScrapeConferenceBoardCanada {
 	 * @param eventLink
 	 * @return
 	 */
-	static String getEventAgendaAddress(String eventPageAdress){
+	public static String getEventAgendaAddress(String eventPageAdress){
 		String transformed = eventPageAdress.replace("default.aspx", "agenda.aspx");
 		return transformed;
 	}
 		
-	static Event getEvent(Document eventPage){
+	public static Event getEvent(Document eventPage){
 		String title = getEventTitle(eventPage);
 		String description = getEventDescription(eventPage);
 		if (title != null && description != null && title.length() > 0 && description.length() > 0){
@@ -157,7 +169,7 @@ public class ScrapeConferenceBoardCanada {
 	 * @param eventPageAddress
 	 * @return
 	 */
-	static String getEventDescription(Document eventPage){
+	public static String getEventDescription(Document eventPage){
 		String query = "#body.container  p:not([class]), li:not([class])";
 		Elements descriptionElements = Selector.select(query, eventPage.getAllElements());
 		return descriptionElements == null ? "" : descriptionElements.text();
@@ -168,7 +180,7 @@ public class ScrapeConferenceBoardCanada {
 	 * @param eventPageAddress
 	 * @return
 	 */
-	static String getEventTitle(Document eventPage){
+	public static String getEventTitle(Document eventPage){
 		String query = "#body.container h1";
 		Element titleElement = Selector.select(query, eventPage.getAllElements()).first();
 		return titleElement == null ? "" : titleElement.text();
@@ -179,7 +191,7 @@ public class ScrapeConferenceBoardCanada {
 	 * @param document
 	 * @return
 	 */
-	static List<Speaker> getSpeakers(Document document) throws FailingHttpStatusCodeException, IOException{
+	public static List<Speaker> getSpeakers(Document document) throws FailingHttpStatusCodeException, IOException{
 
 		//open up the page for "agenda"
 		String pageAddress = document.location();
@@ -200,20 +212,45 @@ public class ScrapeConferenceBoardCanada {
 			return new ArrayList<Speaker>(0);
 		}
 		
+		//try assuming the first page format
+		List<Speaker> speakers;
+		speakers = getSpeakersPageFormat1(page);
+		if (speakers != null && speakers.size() > 0){
+			return speakers;
+		}
+		
+		//try assuming the second page format
+		speakers = getSpeakersPageFormat2(page);
+		if (speakers != null && speakers.size() > 0){
+			return speakers;
+		}
+		
+		return null;
+	}
+	
+	/**
+	 * Extracts names from the text of the "event agenda page"
+	 * The first page format that conferenceboard.ca uses will be assumed
+	 * @return The list of speakers, or null if none could be accessed
+	 */
+	private static List<Speaker> getSpeakersPageFormat1(HtmlPage page){
+		
+		String pageText = page.asText();
+		
 		//get the section of the page containing the speaker descriptions
 		String listStartText = "List of speakers:";
 		String listEndText = "The details of this event are subject to change.";
 		int listStartIndex = pageText.indexOf(listStartText) + listStartText.length();
 		int listEndIndex = pageText.indexOf(listEndText);
-		if (listStartIndex >= listStartText.length()){
+		if (listStartIndex > listStartText.length()){
 			if (listEndIndex > listStartIndex){
-				
+
 				List<Speaker> speakers = new ArrayList<Speaker>(0);
-				
+
 				String [] speakerSummaries = pageText.substring(listStartIndex, listEndIndex).split("\\n\\s");
-				
+
 				for (int i = 0; i < speakerSummaries.length; i++){
-					
+
 					String [] speakerSummaryLines = speakerSummaries[i].split("\\n");
 
 					/*
@@ -226,16 +263,16 @@ public class ScrapeConferenceBoardCanada {
 					 * ...
 					 * </bio>
 					 */
-					
+
 					//We'll mandate a name and title at least
 					if (speakerSummaryLines == null || speakerSummaryLines.length < 4){
 						continue;
 					}
-					
+
 					//create a speaker and extract their details
 					Speaker speaker = new Speaker();
 					speaker.addPage(page.getUrl());
-					
+
 					//get the name, title
 					if (speakerSummaryLines[1].length() > 0){
 						speaker.setName(speakerSummaryLines[1]);
@@ -243,7 +280,7 @@ public class ScrapeConferenceBoardCanada {
 					if (speakerSummaryLines[2].length() > 0 && speakerSummaryLines[3].length() > 0){
 						speaker.setProfessionalTitle(speakerSummaryLines[2] + ", " + speakerSummaryLines[3]);
 					}
-					
+
 					//get the bio
 					if (speakerSummaryLines.length > 4){
 						StringBuilder sb = new StringBuilder();
@@ -265,13 +302,73 @@ public class ScrapeConferenceBoardCanada {
 	}
 	
 	/**
+	 * Extracts names from the "event agenda page"
+	 * The second page format that conferenceboard.ca uses will be assumed
+	 * @param pageText
+	 * @return The list of speakers, or null if none could be accessed
+	 */
+	private static List<Speaker> getSpeakersPageFormat2(HtmlPage page){
+		
+		List<Speaker> speakers = null;
+		
+		//get the table of speakers
+		List<DomElement> elements = page.getElementsByIdAndOrName("ctl00_MainRegion_ctl01_EventSpeakersDataList");
+		if (elements == null || elements.size() < 1){
+			return null;
+		}
+		List<HtmlElement> speakerElements = elements.get(0).getElementsByTagName("tr");
+		if (speakerElements == null || speakerElements.size() < 1){
+			return null;
+		}
+		
+		//get the details of each speaker
+		for (HtmlElement element : speakerElements){
+			
+			List<HtmlElement> nameElements =  element.getElementsByTagName("h3");
+			if (nameElements == null || nameElements.size() < 1){
+				continue;
+			}
+			
+			String name = nameElements.get(0).getTextContent();
+			
+			//info is title and organization
+			List<HtmlElement> infoElements =  element.getElementsByTagName("p");
+			if (infoElements == null || infoElements.size() < 1){
+				continue;
+			}
+			
+			List<HtmlElement> titleAndOrg = infoElements.get(0).getElementsByTagName("span");
+			if (titleAndOrg == null || titleAndOrg.size() != 2){
+				continue;
+			}
+			
+			String professionalTitle = titleAndOrg.get(0).getTextContent() + ", " + titleAndOrg.get(1).getTextContent();
+			
+			//instantiate a new speaker with the details and add it to the list
+			Speaker speaker = new Speaker();
+			speaker.setName(name);
+			speaker.setProfessionalTitle(professionalTitle);
+			speaker.addPage(page.getUrl());
+			if (speakers == null){speakers = new ArrayList<Speaker>();}			
+			speakers.add(speaker);
+		}
+		
+		return speakers;
+	}
+	
+	/**
 	 * Returns a generic web client.
+	 * 
+	 * This method has the side effect that logging from com.gargoylesoftware.htmlunit and org.apache.http is turned off
 	 * @return
 	 */
 	static WebClient getWebClient(){
 		if (webClient == null){
 			webClient = new WebClient(BrowserVersion.CHROME);
 			webClient.getOptions().setThrowExceptionOnScriptError(false);
+			
+			java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+			java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
 		}
 		return webClient;
 	}
