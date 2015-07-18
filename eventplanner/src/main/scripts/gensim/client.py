@@ -10,6 +10,7 @@
 import socket
 import sys
 import os
+import fileinput
 
 def main():
 
@@ -27,9 +28,9 @@ def main():
 		sys.exit(1)
 
 	#read the queries
-	queries	= get_queries(sys.stdin)
+	queries	= get_queries()
 
-	if len(queries) < 1:
+	if not queries:
 		sys.stderr.write("No input was read\n")
 		exit(1)
         else:
@@ -51,26 +52,17 @@ def main():
 	sock.close()	
 	exit(0)
 
-def get_queries(input_source):
+def get_queries():
 	"""
-	Calls read() on the input_source until a double newline is reached
+	Reads from standard input until a double newline is reached
 	The format of the input should match what is specificed at the top of this file
 	Returns queries in the formateed expected for the server
 	Returns None  if the input is not well formed
 	"""
 
 	try:
-		data = ""
-		while 1:
-			rec = input_source.read(256)
-			if rec == None or len(rec) < 1:
-				break
-			data = data + rec
-			if rec.find("\n\n") != -1:
-				break
-	
-		lines = data.split("\n")
-		return [lines[i] + "\n" + lines[i+1] + "\n"  for i in range(0, len(lines) - 2, 2)]
+		lines = sys.stdin.readlines()
+		return [lines[i] + lines[i+1] + "\n" for i in range(0, len(lines) - 2, 2)]
 	except Exception:
 		return None
 

@@ -10,6 +10,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import edu.toronto.cs.Planit.speakerSuggestion.similarity.Word2VecSimilarity;
+
 public class Word2VecTests {
 	
 	static Word2VecSimilarity word2vec;
@@ -61,7 +63,7 @@ public class Word2VecTests {
 			}
 		}
 		catch (IndexOutOfBoundsException e){
-			fail();
+			fail(e.getMessage());
 		}
 		catch (Exception e){
 			fail(e.getMessage());

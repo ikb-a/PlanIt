@@ -1,6 +1,17 @@
 package edu.toronto.cs.Planit.dataObjects;
 
-public class Event {
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.toronto.cs.Planit.speakerSuggestion.similarity.ComparableImp;
+
+/**
+ * An event which can be created in PlanIt, or a representation of an event from another source.
+ * There is no public constructor, instead the static method createEvent should be used, and all details can be set in one line with the setter methods.
+ * @author wginsberg
+ *
+ */
+public class Event extends ComparableImp{
 
 	private String title;
 	private String url;
@@ -8,36 +19,49 @@ public class Event {
 	private EventTime time;
 	private EventOrganizer organizer;
 	private Venue venue;
+	private List<Speaker> confirmedSpeakers;
 	
-	public Event(String title, String description){
+	private List<String> keyWords;
+	
+	/**
+	 * Creates and returns a new event.
+	 * @param title The title of the event.
+	 * @return A new event with the supplied title.
+	 */
+	public static Event createEvent(String title){
+		Event event = new Event(title);
+		return event;
+	}
+
+	private Event(String title){
 		this.title = title;
-		this.description = description;
-		url = "";
-		time = null;
-		organizer = null;
-		venue = null;
 	}
 	
-	public Event(){
-		title = "";
-		url = "";
-		description = "";
-		time = null;
-		organizer = null;
-		venue = null;
+	/**
+	 * Returns words from the event title and description.
+	 */
+	@Override
+	public List<String> getWords() {
+		if (keyWords == null){
+			keyWords = new ArrayList<String>();
+			keyWords.addAll(parsetext(getTitle()));
+			keyWords.addAll(parsetext(getDescription()));
+		}
+		return keyWords;
 	}
-	
-	public Event(String title, String url, String description, Venue venue, EventTime time, EventOrganizer organizer){
-		this.title = title;
-		this.url = url;
-		this.description = description;
-		this.venue = venue;
-		this.time = time;
-		this.organizer = organizer;
-	}
-	
-	public String toString(){
-		return getTitle();
+
+	/**
+	 * Returns as many words as possible starting from beginning of the title and then the description.
+	 */
+	@Override
+	public List<String> getWords(int n) {
+		List<String> allWords = getWords();
+		if (allWords.size() > n){
+			return allWords.subList(0, n);
+		}
+		else{
+			return allWords;
+		}
 	}
 	
 	/**
@@ -122,25 +146,60 @@ public class Event {
 	public Venue getVenue(){
 		return venue;
 	}
-	public void setVenue(Venue v){
+	
+	/**
+	 * @return This event object, for chaining.
+	 */
+	public Event setVenue(Venue v){
 		venue = v;
+		return this;
 	}
-	public void setTime(EventTime t){
+	
+	/**
+	 * @return This event object, for chaining.
+	 */
+	public Event setTime(EventTime t){
 		time = t;
+		return this;
 	}
-	public void setTitle(String title) {
+	
+	/**
+	 * @return This event object, for chaining.
+	 */
+	public Event setTitle(String title) {
 		this.title = title;
+		return this;
 	}
 
-	public void setUrl(String url) {
+	/**
+	 * @return This event object, for chaining.
+	 */
+	public Event setUrl(String url) {
 		this.url = url;
+		return this;
 	}
 
-	public void setDescription(String description) {
+	/**
+	 * @return This event object, for chaining.
+	 */
+	public Event setDescription(String description) {
 		this.description = description;
+		return this;
 	}
 
-	public void setOrganizer(EventOrganizer o) {
+	/**
+	 * @return This event object, for chaining.
+	 */
+	public Event setOrganizer(EventOrganizer o) {
 		organizer = o;
+		return this;
 	}
+
+	public List<Speaker> getConfirmedSpeakers() {
+		if (confirmedSpeakers == null){
+			confirmedSpeakers = new ArrayList<Speaker>();
+		}
+		return confirmedSpeakers;
+	}
+
 }

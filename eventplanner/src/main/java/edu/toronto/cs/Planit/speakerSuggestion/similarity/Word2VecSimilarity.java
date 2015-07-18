@@ -1,4 +1,4 @@
-package edu.toronto.cs.Planit.speakerSuggestion;
+package edu.toronto.cs.Planit.speakerSuggestion.similarity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,6 +9,9 @@ import java.io.OutputStreamWriter;
 import java.lang.ProcessBuilder.Redirect;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import edu.toronto.cs.se.ci.budget.basic.Time;
 
 
 /**
@@ -23,7 +26,34 @@ public class Word2VecSimilarity implements Closeable{
 	static BufferedWriter clientRequestWriter;
 	static BufferedReader clientResponseReader;
 	
-	public Word2VecSimilarity(){}
+	static private Word2VecSimilarity singletonInstance = null;
+	
+	/**
+	 * Returns a singleton instance of Word2VecSimilarity.
+	 * Using this method does not guarantee threadsafeness.
+	 * @return
+	 */
+	static public Word2VecSimilarity getInstance(){
+		if (singletonInstance == null){
+			singletonInstance = new Word2VecSimilarity();
+		}
+		return singletonInstance;
+	}
+	
+	/**
+	 * Returns the amount of time needed to perform a single similarity calculation.
+	 */
+	static public Time getComputationTimeNeeded(){
+		return new Time(1 ,TimeUnit.MILLISECONDS);
+	}
+	
+	/**
+	 * Returns the amount of time needed to perform a given number of similarity calculations.
+	 */
+	static public Time getComputationTimeNeeded(int n){
+		long atomic = getComputationTimeNeeded().getDuration(getComputationTimeNeeded().getTimeUnit());
+		return new Time(n * atomic, getComputationTimeNeeded().getTimeUnit());
+	}
 	
 	/**
 	 * Returns a matrix representing the pairwise similarities from two lists of words.
@@ -34,51 +64,6 @@ public class Word2VecSimilarity implements Closeable{
 		return Word2VecSimilarity.requestSimilarityMatrix(words1, words2);
 	}
 
-	/**
-	 * Closes the Word2Vec client if it is open.
-	 */
-	@Override
-	public void close(){
-		try {
-			doneWithClientProcess();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	/**
-	 * Returns a client process which is ready to take requests.
-	 * @return
-	 * @throws IOException
-	 */
-	static private Process getClientProcess() throws IOException{
-		
-		if (clientProcess == null){
-			ProcessBuilder pb;
-			pb = new ProcessBuilder();
-			pb.command(Arrays.asList(System.getenv("GENSIM_SERVER") + "/client.py"));
-			pb.redirectOutput(Redirect.PIPE);
-			pb.redirectInput(Redirect.PIPE);
-			clientProcess = pb.start();
-		}
-		
-		return clientProcess;
-	}
-	
-	/**
-	 * Call when the client process is no longer needed to close and clean up the process.
-	 * @param process
-	 * @throws IOException
-	 */
-	static private void doneWithClientProcess() throws IOException{
-		if (clientProcess == null){
-			return;
-		}
-		clientProcess.getInputStream().close();
-		clientProcess.getInputStream().close();
-		clientProcess.getErrorStream().close();
-	}
-	
 	/**
 	 * Requests and returns a word similarity matrix from the client.
 	 */
@@ -94,9 +79,60 @@ public class Word2VecSimilarity implements Closeable{
 		if (getClientProcess().isAlive() == false){
 			throw new IOException("Word2Vec client process died during interaction");
 		}
-		
+
 		return recieveResponse(words1.size());
 	}	
+	
+	/**
+	 * Returns a client process which is ready to take requests.
+	 * @throws IOException
+	 */
+	static private Process getClientProcess() throws IOException{
+		
+		if (clientProcess == null){
+			
+			clientRequestWriter = null;
+			clientResponseReader = null;
+			
+			ProcessBuilder pb;
+			pb = new ProcessBuilder();
+			pb.command(Arrays.asList(System.getenv("GENSIM_SERVER") + "/client.py"));
+			
+			pb.redirectOutput(Redirect.PIPE);
+			pb.redirectInput(Redirect.PIPE);
+			
+			clientProcess = pb.start();
+		}
+		
+		return clientProcess;
+	}
+	
+	/**
+	 * Closes the Word2Vec client if it is open.
+	 */
+	@Override
+	public void close(){
+		try {
+			doneWithClientProcess();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Call when the client process is no longer needed to close and clean up the process.
+	 */
+	static private void doneWithClientProcess() throws IOException{
+		if (clientProcess == null){
+			return;
+		}
+		clientProcess.getInputStream().close();
+		clientProcess.getInputStream().close();
+		clientProcess.getErrorStream().close();
+		clientProcess = null;
+	}
+	
+
 	
 	/**
 	 * Parses a word similarity request one line at a time and writes it to the client.
@@ -115,7 +151,7 @@ public class Word2VecSimilarity implements Closeable{
 		writer.write(requestLine);
 		writer.write("\n\n");
 		
-		writer.flush();
+		writer.close();
 	}
 	
 	/**
@@ -143,12 +179,6 @@ public class Word2VecSimilarity implements Closeable{
 	 * @throws IOException 
 	 */
 	private static double [][] recieveResponse(int expectedLines) throws IOException {
-		
-		BufferedReader errReader = new BufferedReader(new InputStreamReader(clientProcess.getErrorStream()));
-		
-		for (int i = 0; i < 10; i ++){
-			System.out.println(errReader.readLine());
-		}
 		
 		BufferedReader reader = getClientResponseReader();
 		double [][] parsed = new double [expectedLines][];

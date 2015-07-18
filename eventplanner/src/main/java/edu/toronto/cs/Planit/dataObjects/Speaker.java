@@ -5,76 +5,36 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class Speaker {
+import edu.toronto.cs.Planit.speakerSuggestion.similarity.ComparableImp;
+
+/**
+ * A public speaker who might speak at an event.
+ * There is no public constructor, instead the static method createEvent should be used, and all details can be set in one line with the setter methods.
+ * @author wginsberg
+ */
+public class Speaker extends ComparableImp{
 
 	protected String name;
 	protected String professionalTitle;
 	protected List<String> topics;
 	protected String bio;
-
 	protected ArrayList<URL> pages;
-	
-	public Speaker(){
-		
-	}
-	
-	public Speaker(String name){
-		this.name = name;
-	}
-	
-	@Deprecated
-	public Speaker(String name, String professionalTitle, List<String> topics, URL discoveryURL) {
-		super();
-		this.name = name;
-		this.professionalTitle = professionalTitle;
-		this.topics = topics;
-		this.pages = new ArrayList<URL>();
-		if (discoveryURL != null){
-			addPage(discoveryURL);
-		}
-	}
-	
-	@Deprecated
-	public Speaker(String name, String professionalTitle, List<String> topics, List<URL> discoveryURLs) {
-		super();
-		this.name = name;
-		this.professionalTitle = professionalTitle;
-		this.topics = topics;
-		this.pages = new ArrayList<URL>();
-		if (discoveryURLs != null){
-			addPages(discoveryURLs);
-		}
-	}
+
+	private List<String> keywords;
 	
 	/**
-	 * 
-	 * @param name
-	 * @param professionalTitle The short title describing the speaker on their profile
-	 * @param city
-	 * @param location The city, province, and country of residence
+	 * Creates and returns a new Speaker object
+	 * @param name The name of the speaker.
+	 * @return 
 	 */
-	public Speaker(String name, String professionalTitle, String bio, List<String> topics, URL discoveryURL) {
-		super();
-		this.name = name;
-		this.professionalTitle = professionalTitle;
-		this.topics = topics;
-		this.pages = new ArrayList<URL>();
-		if (discoveryURL != null){
-			addPage(discoveryURL);
-		}
+	static public Speaker createSpeaker(String name){
+		return new Speaker(name);
 	}
 
-	public Speaker(String name, String professionalTitle, String bio, List<String> topics, List<URL> discoveryURLs) {
-		super();
+	private Speaker(String name){
 		this.name = name;
-		this.professionalTitle = professionalTitle;
-		this.topics = topics;
-		this.pages = new ArrayList<URL>();
-		if (discoveryURLs != null){
-			addPages(discoveryURLs);
-		}
 	}
-	
+
 	/**
 	 * Compares based on names.
 	 */
@@ -89,10 +49,7 @@ public class Speaker {
 	public String toString(){
 		return getName();
 	}
-	
-	public String getName() {
-		return name;
-	}
+
 
 	public String getSynopsis(){
 		return String.format("%s\n		%s - %s\n", getName(), getProfessionalTitle(), getTopics().toString());
@@ -107,35 +64,68 @@ public class Speaker {
 		return professionalTitle;
 	}
 
-	public String getBio() {
-		return bio;
-	}
-
-	public void setBio(String bio) {
+	/**
+	 * Returns this object for chaining.
+	 * @param bio
+	 */
+	public Speaker setBio(String bio) {
 		this.bio = bio;
+		return this;
 	}
 
-	public void setName(String name) {
+	/**
+	 * Returns this object for chaining.
+	 * @param bio
+	 */
+	public Speaker setName(String name) {
 		this.name = name;
+		return this;
 	}
 
-	public void setProfessionalTitle(String professionalTitle) {
+	/**
+	 * Returns this object for chaining.
+	 * @param bio
+	 */
+	public Speaker setProfessionalTitle(String professionalTitle) {
 		this.professionalTitle = professionalTitle;
+		return this;
 	}
 
-	public List<String> getTopics(){
-		return topics;
-	}
-	
-	public void setTopics(List<String> topics){
+	/**
+	 * Returns this object for chaining.
+	 * @param bio
+	 */
+	public Speaker setTopics(List<String> topics){
 		if (ArrayList.class.isInstance(topics)){
 			this.topics = (ArrayList<String>)topics;
 		}
 		else{
 			this.topics = new ArrayList<String>(topics);
 		}
+		return this;
+	}
+	
+	public String getName() {
+		if (name == null){
+			name = "";
+		}
+		return name;
 	}
 
+	public String getBio() {
+		if (bio == null){
+			bio = "";
+		}
+		return bio;
+	}
+	
+	public List<String> getTopics(){
+		if(topics == null){
+			topics = new ArrayList<String>();
+		}
+		return topics;
+	}
+	
 	/**
 	 * Returns the webpages associated with this speaker
 	 * @return
@@ -150,12 +140,14 @@ public class Speaker {
 	/**
 	 * Indicate that a new webpage is associated with the speaker
 	 * @param page
+	 * @return This speaker, for chaining
 	 */
-	public void addPage(URL page){
+	public Speaker addPage(URL page){
 		if (pages == null){
 			getPages();
 		}
 		pages.add(page);
+		return this;
 	}
 	
 	public void addPages(Collection<URL> page){
@@ -163,5 +155,33 @@ public class Speaker {
 			pages = new ArrayList<URL>();
 		}
 		pages.addAll(pages);
+	}
+
+	/**
+	 * Returns words from this speakers list of topics, professional title, and bio.
+	 */
+	@Override
+	public List<String> getWords() {
+		if (keywords == null){
+			keywords = new ArrayList<String>();
+			keywords.addAll(getTopics());
+			keywords.addAll(parsetext(getProfessionalTitle()));
+			keywords.addAll(parsetext(getBio()));			
+		}
+		return keywords;
+	}
+
+	/**
+	 * Returns as many words as possible, in the same order as getWords()
+	 */
+	@Override
+	public List<String> getWords(int n) {
+		List<String> allWords = getWords();
+		if (allWords.size() > n){
+			return allWords.subList(0, n);
+		}
+		else{
+			return allWords;
+		}
 	}
 }

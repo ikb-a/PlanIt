@@ -44,7 +44,7 @@ public class ScrapeConferenceBoardCanada {
 	
 	public static void main(String [] args){
 		
-		main("src/main/resources/scrape/event and speakers/2.json");
+		main("src/main/resources/scrape/event and speakers/3.json");
 		
 	}
 	
@@ -72,7 +72,7 @@ public class ScrapeConferenceBoardCanada {
 		List<String> eventLinks = getEventLinks(document);
 
 		//visit each event page to scrape details
-		List<EventAndSpeakers> scrapedData = new ArrayList<EventAndSpeakers>();
+		List<Event> scrapedData = new ArrayList<Event>();
 		for (String link : eventLinks){
 			
 			//open the event page
@@ -107,7 +107,8 @@ public class ScrapeConferenceBoardCanada {
 			}
 			
 			if (event != null && speakers != null){
-				scrapedData.add(new EventAndSpeakers(event, speakers));
+				event.getConfirmedSpeakers().addAll(speakers);
+				scrapedData.add(event);
 			}
 		}
 		
@@ -158,7 +159,7 @@ public class ScrapeConferenceBoardCanada {
 		String title = getEventTitle(eventPage);
 		String description = getEventDescription(eventPage);
 		if (title != null && description != null && title.length() > 0 && description.length() > 0){
-			Event event = new Event(title, description);
+			Event event = Event.createEvent(title).setDescription(description);
 			return event;
 		}
 		return null;
@@ -268,20 +269,26 @@ public class ScrapeConferenceBoardCanada {
 					if (speakerSummaryLines == null || speakerSummaryLines.length < 4){
 						continue;
 					}
-
-					//create a speaker and extract their details
-					Speaker speaker = new Speaker();
-					speaker.addPage(page.getUrl());
-
+					
 					//get the name, title
+					String name;
 					if (speakerSummaryLines[1].length() > 0){
-						speaker.setName(speakerSummaryLines[1]);
+						name = speakerSummaryLines[1];
 					}
+					else{
+						name = null;
+					}
+					
+					String title;
 					if (speakerSummaryLines[2].length() > 0 && speakerSummaryLines[3].length() > 0){
-						speaker.setProfessionalTitle(speakerSummaryLines[2] + ", " + speakerSummaryLines[3]);
+						title = speakerSummaryLines[2] + ", " + speakerSummaryLines[3];
 					}
-
+					else{
+						title = "";
+					}
+					
 					//get the bio
+					String bio = null;
 					if (speakerSummaryLines.length > 4){
 						StringBuilder sb = new StringBuilder();
 						for (int q = 4; q < speakerSummaryLines.length; q++){
@@ -290,10 +297,14 @@ public class ScrapeConferenceBoardCanada {
 							}
 						}
 						if (sb.length() > 0){
-							speaker.setBio(sb.toString());
+							bio = sb.toString();
 						}
 					}
-					speakers.add(speaker);
+					else{
+						bio = "";
+					}
+					
+					speakers.add(Speaker.createSpeaker(name).setProfessionalTitle(title).setBio(bio).addPage(page.getUrl()));
 				}
 				return speakers;
 			}
@@ -345,10 +356,7 @@ public class ScrapeConferenceBoardCanada {
 			String professionalTitle = titleAndOrg.get(0).getTextContent() + ", " + titleAndOrg.get(1).getTextContent();
 			
 			//instantiate a new speaker with the details and add it to the list
-			Speaker speaker = new Speaker();
-			speaker.setName(name);
-			speaker.setProfessionalTitle(professionalTitle);
-			speaker.addPage(page.getUrl());
+			Speaker speaker = Speaker.createSpeaker(name).setProfessionalTitle(professionalTitle).addPage(page.getUrl());
 			if (speakers == null){speakers = new ArrayList<Speaker>();}			
 			speakers.add(speaker);
 		}
@@ -370,57 +378,7 @@ public class ScrapeConferenceBoardCanada {
 			java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
 			java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
 		}
+
 		return webClient;
 	}
-	
-	/**
-	 * Private class for holding one event and a list of speakers for the event.
-	 * @author wginsberg
-	 *
-	 */
-	static class EventAndSpeakers{
-		private Event event;
-		private List<Speaker> speakers;
-		public EventAndSpeakers(){super();}
-		public EventAndSpeakers(Event event, List<Speaker> speakers){
-			this.event = event;
-			this.speakers = speakers;
-		}
-		public Event getEvent() {
-			return event;
-		}
-		public List<Speaker> getSpeakers() {
-			return speakers;
-		}
-		public void setEvent(Event event) {
-			this.event = event;
-		}
-		public void setSpeakers(List<Speaker> speakers) {
-			this.speakers = speakers;
-		}
-		
-		public String toString(){
-			
-			StringBuilder sb = new StringBuilder();
-			sb.append("event: ");
-			try{
-				sb.append(getEvent().getTitle());
-				sb.append(String.format(", %s ...", getEvent().getTruncatedDescription(75)));
-			}
-			catch (NullPointerException e){
-				sb.append("null");
-			}
-			sb.append("\n");
-			sb.append("speakers: ");
-			try{
-				sb.append(getSpeakers().toString());
-			}
-			catch (NullPointerException e){
-				sb.append("null");
-			}
-			sb.append("\n");
-			return sb.toString();
-		}
-	}
-	
 }
