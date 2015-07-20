@@ -5,12 +5,10 @@ import java.util.List;
 
 import com.google.common.base.Optional;
 
+import edu.toronto.cs.Planit.ci.ml.AttributePercentileTrust;
 import edu.toronto.cs.Planit.speakerSuggestion.similarity.ComparisonRequest;
-import edu.toronto.cs.Planit.speakerSuggestion.similarity.Similarity;
-import edu.toronto.cs.Planit.speakerSuggestion.similarity.Similarity.nominal;
 import edu.toronto.cs.Planit.speakerSuggestion.similarity.SimilarityContract;
-import edu.toronto.cs.Planit.speakerSuggestion.similarity.Trust;
-import edu.toronto.cs.Planit.speakerSuggestion.similarity.Word2VecSimilarity;
+import edu.toronto.cs.Planit.speakerSuggestion.similarity.Word2Vec;
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
@@ -23,37 +21,27 @@ import edu.toronto.cs.se.ci.data.Opinion;
  * @author wginsberg
  *
  */
-public class Word2VecMeanSimilarity extends Source<ComparisonRequest, Similarity, Trust> implements SimilarityContract {
+public class Word2VecMeanSimilarity extends Source<ComparisonRequest, Double, AttributePercentileTrust> implements SimilarityContract {
 
 	@Override
 	public Expenditure[] getCost(ComparisonRequest args) throws Exception {
 		int words1Size = Math.min(100, args.getFirst().getWords().size());
 		int words2Size = Math.min(100, args.getSecond().getWords().size());
-		return new Expenditure [] {Word2VecSimilarity.getComputationTimeNeeded(words1Size * words2Size)};
+		Expenditure [] cost = new Expenditure [] {Word2Vec.getComputationTimeNeeded(words1Size * words2Size)};
+		return cost;
 	}
 
 	@Override
-	public Opinion<Similarity, Trust> getOpinion(ComparisonRequest args)
+	public Opinion<Double, AttributePercentileTrust> getOpinion(ComparisonRequest args)
 			throws UnknownException {
 		
 		List<String> words1 = args.getFirst().getWords(100);
 		List<String> words2 = args.getSecond().getWords(100);
 		
 		try {
-			double [][] similarityMatrix = Word2VecSimilarity.getInstance().similarity(words1, words2);
+			double [][] similarityMatrix = Word2Vec.getInstance().similarity(words1, words2);
 			double avgSim = matrixAverage(similarityMatrix);
-			Similarity similarity;
-			if (avgSim < 0.0001d){
-				similarity = new Similarity(avgSim, nominal.LOW);
-			}
-			else if (avgSim < 0.002d){
-				similarity = new Similarity(avgSim, nominal.MEDIUM);
-			}
-			else{
-				similarity = new Similarity(avgSim, nominal.HIGH);
-			}
-			Opinion<Similarity, Trust> opinion = new Opinion<Similarity, Trust>(similarity , new Trust());
-			return opinion;
+			return new Opinion<Double, AttributePercentileTrust>(avgSim, new AttributePercentileTrust(null));
 		} catch (IOException | IllegalArgumentException e) {
 			throw new UnknownException(e);
 		}
@@ -89,8 +77,8 @@ public class Word2VecMeanSimilarity extends Source<ComparisonRequest, Similarity
 	}
 	
 	@Override
-	public Trust getTrust(ComparisonRequest args, Optional<Similarity> value) {
-		return new Trust();
+	public AttributePercentileTrust getTrust(ComparisonRequest args, Optional<Double> value) {
+		return new AttributePercentileTrust(null);
 	}
 
 

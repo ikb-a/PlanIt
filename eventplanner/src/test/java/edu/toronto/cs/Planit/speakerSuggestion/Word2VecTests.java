@@ -10,17 +10,17 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.toronto.cs.Planit.speakerSuggestion.similarity.Word2VecSimilarity;
+import edu.toronto.cs.Planit.speakerSuggestion.similarity.Word2Vec;
 
 public class Word2VecTests {
 	
-	static Word2VecSimilarity word2vec;
+	static Word2Vec word2vec;
 	List<String> words1 = Arrays.asList(new String [] {"apple", "banana", "canteloupe"});
 	List<String> words2 = Arrays.asList(new String [] {"tree", "tropical", "Hawaii"});
 	
 	@Before
 	public void setup(){
-		word2vec = new Word2VecSimilarity();
+		word2vec = new Word2Vec();
 	}
 	
 	@After

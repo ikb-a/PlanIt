@@ -165,8 +165,8 @@ public class Speaker extends ComparableImp{
 		if (keywords == null){
 			keywords = new ArrayList<String>();
 			keywords.addAll(getTopics());
-			keywords.addAll(parsetext(getProfessionalTitle()));
-			keywords.addAll(parsetext(getBio()));			
+			keywords.addAll(extractKeywords(getProfessionalTitle()));
+			keywords.addAll(extractKeywords(getBio()));			
 		}
 		return keywords;
 	}

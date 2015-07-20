@@ -10,6 +10,11 @@ import edu.toronto.cs.Planit.dataObjects.Speaker;
 import edu.toronto.cs.se.ci.CI;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.selectors.AllSelector;
+import edu.toronto.cs.Planit.ci.ml.Trust;
+
+/**
+ * For this implementation to be up to date it will need source adapters to turn numeric sources into nominal sources
+ */
 
 /**
  * Holds the contributional implementation of the similarity part of the speaker suggestion feature
@@ -18,7 +23,7 @@ import edu.toronto.cs.se.ci.selectors.AllSelector;
  */
 public class EventAndSpeakerRelevance {
 	
-	private CI<ComparisonRequest, Similarity, Trust, Quality> ci;
+	private CI<ComparisonRequest, Similarity, Trust<ComparisonRequest, Similarity>, Double> ci;
 	
 	private Collection<Speaker> low;
 	private Collection<Speaker> medium;
@@ -45,13 +50,13 @@ public class EventAndSpeakerRelevance {
 			}
 			Similarity classification = result;
 			switch (classification.getNominal()){
-			case LOW:
+			case "LOW":
 				low.add(speaker);
 				break;
-			case MEDIUM:
+			case "MEDIUM":
 				medium.add(speaker);
 				break;
-			case HIGH:
+			case "HIGH":
 				high.add(speaker);
 				break;
 			}
@@ -60,10 +65,10 @@ public class EventAndSpeakerRelevance {
 		return high;
 	}
 	
-	private CI<ComparisonRequest, Similarity, Trust, Quality> getCI(){
+	private CI<ComparisonRequest, Similarity, Trust<ComparisonRequest, Similarity>, Double> getCI(){
 		if (ci == null){
-			ci = new CI<ComparisonRequest, Similarity, Trust, Quality>
-			(SimilarityContract.class, new HardCodedAggregator(), new AllSelector<ComparisonRequest, Similarity, Trust>());
+			ci = new CI<ComparisonRequest, Similarity, Trust<ComparisonRequest, Similarity>, Double>
+			(NumericSimilarityContract.class, new HardCodedAggregator(), new AllSelector<ComparisonRequest, Similarity, Trust<ComparisonRequest, Similarity>>());
 		}
 		return ci;
 	}

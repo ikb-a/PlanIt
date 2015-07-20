@@ -20,22 +20,22 @@ import edu.toronto.cs.se.ci.budget.basic.Time;
  * @author wginsberg
  *
  */
-public class Word2VecSimilarity implements Closeable{
+public class Word2Vec implements Closeable{
 
 	static Process clientProcess;
 	static BufferedWriter clientRequestWriter;
 	static BufferedReader clientResponseReader;
 	
-	static private Word2VecSimilarity singletonInstance = null;
+	static private Word2Vec singletonInstance = null;
 	
 	/**
 	 * Returns a singleton instance of Word2VecSimilarity.
 	 * Using this method does not guarantee threadsafeness.
 	 * @return
 	 */
-	static public Word2VecSimilarity getInstance(){
+	static public Word2Vec getInstance(){
 		if (singletonInstance == null){
-			singletonInstance = new Word2VecSimilarity();
+			singletonInstance = new Word2Vec();
 		}
 		return singletonInstance;
 	}
@@ -44,7 +44,7 @@ public class Word2VecSimilarity implements Closeable{
 	 * Returns the amount of time needed to perform a single similarity calculation.
 	 */
 	static public Time getComputationTimeNeeded(){
-		return new Time(1 ,TimeUnit.MILLISECONDS);
+		return new Time(500000 ,TimeUnit.NANOSECONDS);
 	}
 	
 	/**
@@ -61,7 +61,7 @@ public class Word2VecSimilarity implements Closeable{
 	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
 	 */
 	public double [][] similarity(List<String> words1, List<String> words2) throws IOException{
-		return Word2VecSimilarity.requestSimilarityMatrix(words1, words2);
+		return Word2Vec.requestSimilarityMatrix(words1, words2);
 	}
 
 	/**
@@ -74,13 +74,26 @@ public class Word2VecSimilarity implements Closeable{
 			clientProcess = null;
 		}
 		
-		sendRequest(words1, words2);
-		
-		if (getClientProcess().isAlive() == false){
-			throw new IOException("Word2Vec client process died during interaction");
+		boolean success = false;
+		while (!success){
+			try{
+				sendRequest(words1, words2);
+				success = true;
+			}
+			catch (IOException e){
+				success = false;
+			}
 		}
-
-		return recieveResponse(words1.size());
+		
+		
+		while (true){
+			try{
+				return recieveResponse(words1.size());
+			}
+			catch (IOException e){
+				success = false;
+			}
+		}
 	}	
 	
 	/**
@@ -166,7 +179,12 @@ public class Word2VecSimilarity implements Closeable{
 		String [] rawValues = line.split(",");
 		double [] parsed = new double [rawValues.length];
 		for (int i = 0; i < rawValues.length; i++){
-			parsed[i] = Double.parseDouble(rawValues[i]);
+			try{
+				parsed[i] = Double.parseDouble(rawValues[i]);
+			}
+			catch (NumberFormatException e){
+				continue;
+			}
 		}
 		return parsed;
 	}

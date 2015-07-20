@@ -42,7 +42,6 @@ public class SimilarityTests {
 		notRelevant = Speaker.createSpeaker("Anonymous Three").setProfessionalTitle("construction worker");
 		speakers.addAll(Arrays.asList(new Speaker [] {relevant, somewhatRelevant, notRelevant}));
 		
-		
 		Allowance [] budget = new Allowance [] {new Time(10, TimeUnit.SECONDS)};
 		
 		sim.compare(event, speakers, budget);

@@ -92,7 +92,7 @@ def get_response(connection):
                         if not rec:
                                 break
 			data = data + rec
-			if rec.count("\n") > 0:
+			if data.find("\n\n", len(data) - 2, len(data)) != -1:
 				break
         except Exception:
 		return None

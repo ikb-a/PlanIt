@@ -44,8 +44,8 @@ public class Event extends ComparableImp{
 	public List<String> getWords() {
 		if (keyWords == null){
 			keyWords = new ArrayList<String>();
-			keyWords.addAll(parsetext(getTitle()));
-			keyWords.addAll(parsetext(getDescription()));
+			keyWords.addAll(extractKeywords(getTitle()));
+			keyWords.addAll(extractKeywords(getDescription()));
 		}
 		return keyWords;
 	}
