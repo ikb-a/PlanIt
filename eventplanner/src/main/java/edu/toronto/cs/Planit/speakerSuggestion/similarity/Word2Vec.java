@@ -17,23 +17,24 @@ import edu.toronto.cs.se.ci.budget.basic.Time;
 /**
  * A class which facilitates word similarity powered by Word2Vec.
  * The Word2Vec functionality is accessed via interaction with the Word2Vec gensim client, and relies on a running Word2Vec gensim server.
+ * The public methods in this class which interact with the Word2Vec client are synchronized, so they will be thread safe.
+ * 
  * @author wginsberg
  *
  */
 public class Word2Vec implements Closeable{
 
-	static Process clientProcess;
-	static BufferedWriter clientRequestWriter;
-	static BufferedReader clientResponseReader;
+	private Process clientProcess;
+	private BufferedWriter clientRequestWriter;
+	private BufferedReader clientResponseReader;
 	
 	static private Word2Vec singletonInstance = null;
 	
 	/**
 	 * Returns a singleton instance of Word2VecSimilarity.
-	 * Using this method does not guarantee threadsafeness.
 	 * @return
 	 */
-	static public Word2Vec getInstance(){
+	static public synchronized  Word2Vec getInstance(){
 		if (singletonInstance == null){
 			singletonInstance = new Word2Vec();
 		}
@@ -43,14 +44,14 @@ public class Word2Vec implements Closeable{
 	/**
 	 * Returns the amount of time needed to perform a single similarity calculation.
 	 */
-	static public Time getComputationTimeNeeded(){
-		return new Time(500000 ,TimeUnit.NANOSECONDS);
+	public Time getComputationTimeNeeded(){
+		return new Time(100 ,TimeUnit.NANOSECONDS);
 	}
 	
 	/**
 	 * Returns the amount of time needed to perform a given number of similarity calculations.
 	 */
-	static public Time getComputationTimeNeeded(int n){
+	public Time getComputationTimeNeeded(int n){
 		long atomic = getComputationTimeNeeded().getDuration(getComputationTimeNeeded().getTimeUnit());
 		return new Time(n * atomic, getComputationTimeNeeded().getTimeUnit());
 	}
@@ -60,49 +61,40 @@ public class Word2Vec implements Closeable{
 	 * A similarity of -1 indicates words are outside of the model's vocabulary
 	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
 	 */
-	public double [][] similarity(List<String> words1, List<String> words2) throws IOException{
-		return Word2Vec.requestSimilarityMatrix(words1, words2);
+	public synchronized double [][] similarity(List<String> words1, List<String> words2) throws IOException{
+		return requestSimilarityMatrix(words1, words2);
 	}
 
 	/**
+	 * Closes the Word2Vec client if it is open.
+	 */
+	@Override
+	public synchronized void close(){
+		try {
+			doneWithClientProcess();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	
+	/**
 	 * Requests and returns a word similarity matrix from the client.
 	 */
-	static private double [][] requestSimilarityMatrix (List<String> words1, List<String> words2) throws IOException{
-		
-		if (getClientProcess().isAlive() == false){
-			//if we have a dead client, setting it to null forces a new one to be executed
-			clientProcess = null;
-		}
-		
-		boolean success = false;
-		while (!success){
-			try{
-				sendRequest(words1, words2);
-				success = true;
-			}
-			catch (IOException e){
-				success = false;
-			}
-		}
-		
-		
-		while (true){
-			try{
-				return recieveResponse(words1.size());
-			}
-			catch (IOException e){
-				success = false;
-			}
-		}
+	private double [][] requestSimilarityMatrix (List<String> words1, List<String> words2) throws IOException{
+		sendRequest(words1, words2);
+		double [][] response = recieveResponse(words1.size());
+		close();
+		return response;
 	}	
 	
 	/**
 	 * Returns a client process which is ready to take requests.
 	 * @throws IOException
 	 */
-	static private Process getClientProcess() throws IOException{
+	private Process getClientProcess() throws IOException{
 		
-		if (clientProcess == null){
+		if (clientProcess == null || !clientProcess.isAlive()){
 			
 			clientRequestWriter = null;
 			clientResponseReader = null;
@@ -121,21 +113,9 @@ public class Word2Vec implements Closeable{
 	}
 	
 	/**
-	 * Closes the Word2Vec client if it is open.
-	 */
-	@Override
-	public void close(){
-		try {
-			doneWithClientProcess();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	/**
 	 * Call when the client process is no longer needed to close and clean up the process.
 	 */
-	static private void doneWithClientProcess() throws IOException{
+	private void doneWithClientProcess() throws IOException{
 		if (clientProcess == null){
 			return;
 		}
@@ -152,15 +132,17 @@ public class Word2Vec implements Closeable{
 	 * @param requestStream The input stream of the client process
 	 * @throws IOException 
 	 */
-	static private void sendRequest(List<String> words1, List<String> words2) throws IOException{
+	private void sendRequest(List<String> words1, List<String> words2) throws IOException{
 		
 		BufferedWriter writer = getClientRequestWriter();
 		
 		String requestLine;
 		requestLine = String.join(",", words1);
+		
 		writer.write(requestLine);
 		writer.write("\n");
 		requestLine = String.join(",", words2);
+
 		writer.write(requestLine);
 		writer.write("\n\n");
 		
@@ -172,7 +154,7 @@ public class Word2Vec implements Closeable{
 	 * @param line A single line of comma separated string representations of doubles with no newline character
 	 * @return
 	 */
-	static private double [] parseResponseLine(String line){
+	private double [] parseResponseLine(String line){
 		if (line == null){
 			return new double [0];
 		}
@@ -196,7 +178,7 @@ public class Word2Vec implements Closeable{
 	 * @return
 	 * @throws IOException 
 	 */
-	private static double [][] recieveResponse(int expectedLines) throws IOException {
+	private double [][] recieveResponse(int expectedLines) throws IOException {
 		
 		BufferedReader reader = getClientResponseReader();
 		double [][] parsed = new double [expectedLines][];
@@ -207,14 +189,16 @@ public class Word2Vec implements Closeable{
 		return parsed;
 	}
 
-	private static BufferedWriter getClientRequestWriter() throws IOException {
+	private BufferedWriter getClientRequestWriter() throws IOException {
+		getClientProcess();
 		if (clientRequestWriter == null){
 			clientRequestWriter = new BufferedWriter(new OutputStreamWriter(getClientProcess().getOutputStream()));
 		}
 		return clientRequestWriter;
 	}
 
-	private static BufferedReader getClientResponseReader() throws IOException {
+	private BufferedReader getClientResponseReader() throws IOException {
+		getClientProcess();
 		if (clientResponseReader == null){
 			clientResponseReader = new BufferedReader(new InputStreamReader(getClientProcess().getInputStream()));
 		}

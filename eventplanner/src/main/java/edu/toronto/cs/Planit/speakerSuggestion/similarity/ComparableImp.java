@@ -1,6 +1,11 @@
 package edu.toronto.cs.Planit.speakerSuggestion.similarity;
 
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,7 +16,27 @@ import java.util.stream.Collectors;
  */
 public abstract class ComparableImp implements Comparable {
 
-	transient private static List<String> defaultRemovedWords;
+	static final String stopWordsFileLocation = "main/resources/text/stopwords.txt";
+	transient private static Collection<String> defaultRemovedWords;
+	
+	/**
+	 * Returns as many words as possible in the same order as getWords()
+	 * @param n The number of words to return, or -1 to return all available words
+	 */
+	@Override
+	public List<String> getWords(int n) {
+		if (n == 0){
+			return new ArrayList<String>(0);
+		}
+		List<String> allWords = getWords();
+		if (n != -1 && allWords.size() > n){
+			return allWords.subList(0, n);
+		}
+		else{
+			return allWords;
+		}
+	}
+
 	
 	/**
 	 * Given a raw piece of text, outputs a list of all words or tokens from the text.
@@ -21,51 +46,45 @@ public abstract class ComparableImp implements Comparable {
 	 * @return
 	 */
 	public static List<String> parsetext(String text){
-		return Arrays.asList(
-				text.toLowerCase().
-				replaceAll("[\\W&&[^- ']]", "").
-				split(" "));
+		String [] parsed = text.toLowerCase().replaceAll("[^0-9A-z-' ]+?", " ").split(" ");
+		//not using Arrays.asList() because we need it to be modifyable
+		List<String> words = new ArrayList<String>(parsed.length);
+		for (int i = 0; i < parsed.length; i++){
+			if (parsed[i] != null && parsed[i].length() > 0){
+				words.add(parsed[i]);
+			}
+		}
+		return words;
 	}
 
 	/**
-	 * Returns all of the words in the text which are at least 3 characters long and do not appear in the default list of prepositions.
+	 * Returns all of the words in the text which do not appear in the default list of stop words.
 	 * @param text
 	 * @return
 	 */
 	static public List<String> extractKeywords(String text){
-		return removeWords(parsetext(text), getDefaultRemovedWords(), 3);
-	}
-	
-	/**
-	 * Removes all words from wordList which appear in removeList.
-	 * @return A copy of wordList with words from removeList filtered out.
-	 */
-	static public List<String> removeWords(List<String> wordList, List<String> removeList){
-		return removeWords(wordList, removeList, 0);
-	}
-
-	/**
-	 * Removes all words from wordList which appear in removeList, as well as any words under the minimum word length.
-	 * @return A copy of wordList with words from removeList filtered out.
-	 */
-	static public List<String> removeWords(List<String> wordList, List<String> removeList, int minimumWordLength){
-		if (removeList == null || removeList.isEmpty()){
-			return wordList;
-		}
-		
-		return wordList
-				.stream()
-				.filter(token -> token.length() >= minimumWordLength && !removeList.contains(token))
-				.collect(Collectors.toList());		
+		List<String> keywords = parsetext(text);
+		keywords.removeAll(getDefaultRemovedWords());
+		return keywords;
 	}
 	
 	/**
 	 * Returns a list of words which should always be removed by default.
 	 * @return
 	 */
-	static public List<String> getDefaultRemovedWords() {
+	static public Collection<String> getDefaultRemovedWords() {
 		if (defaultRemovedWords == null){
-			defaultRemovedWords = Arrays.asList(new String [] {"and", "with", "the"});
+			File stopWordsFile = new File(stopWordsFileLocation);
+			assert stopWordsFile.exists();
+			assert stopWordsFile.canRead();
+			BufferedReader reader;
+			try {
+				reader = new BufferedReader(new FileReader(stopWordsFile));
+				defaultRemovedWords = reader.lines().collect(Collectors.toList());
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+				defaultRemovedWords = new ArrayList<String>();
+			}
 		}
 		return defaultRemovedWords;
 	}

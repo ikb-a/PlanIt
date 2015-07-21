@@ -37,6 +37,11 @@ public class Event extends ComparableImp{
 		this.title = title;
 	}
 	
+	@Override
+	public String toString(){
+		return getTitle();
+	}
+	
 	/**
 	 * Returns words from the event title and description.
 	 */
@@ -48,20 +53,6 @@ public class Event extends ComparableImp{
 			keyWords.addAll(extractKeywords(getDescription()));
 		}
 		return keyWords;
-	}
-
-	/**
-	 * Returns as many words as possible starting from beginning of the title and then the description.
-	 */
-	@Override
-	public List<String> getWords(int n) {
-		List<String> allWords = getWords();
-		if (allWords.size() > n){
-			return allWords.subList(0, n);
-		}
-		else{
-			return allWords;
-		}
 	}
 	
 	/**
@@ -200,6 +191,10 @@ public class Event extends ComparableImp{
 			confirmedSpeakers = new ArrayList<Speaker>();
 		}
 		return confirmedSpeakers;
+	}
+
+	public void setConfirmedSpeakers(List<Speaker> confirmedSpeakers) {
+		this.confirmedSpeakers = confirmedSpeakers;
 	}
 
 }

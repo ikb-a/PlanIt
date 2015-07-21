@@ -170,18 +170,4 @@ public class Speaker extends ComparableImp{
 		}
 		return keywords;
 	}
-
-	/**
-	 * Returns as many words as possible, in the same order as getWords()
-	 */
-	@Override
-	public List<String> getWords(int n) {
-		List<String> allWords = getWords();
-		if (allWords.size() > n){
-			return allWords.subList(0, n);
-		}
-		else{
-			return allWords;
-		}
-	}
 }

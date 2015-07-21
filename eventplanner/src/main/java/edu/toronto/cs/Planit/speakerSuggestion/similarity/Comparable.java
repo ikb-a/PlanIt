@@ -8,7 +8,7 @@ import java.util.List;
  *
  */
 public interface Comparable {
-
+	
 	/**
 	 * Returns a list of all known words which describe this object.
 	 */

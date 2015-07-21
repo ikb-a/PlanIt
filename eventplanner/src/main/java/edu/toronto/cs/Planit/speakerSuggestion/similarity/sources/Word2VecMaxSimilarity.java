@@ -15,13 +15,12 @@ import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.data.Opinion;
 
 /**
- * Uses Word2Vec to find pairwise word similarity.
- * The returned opinion is the average of all pairwise similarities.
- * This source caps at 100 words for each Comparable
+ * A source which returns the maximum pairwise similarity of two distinct words from two Comparables.
  * @author wginsberg
  *
  */
-public class Word2VecMeanSimilarity extends Source<ComparisonRequest, Double, AttributePercentileTrust> implements SimilarityContract {
+public class Word2VecMaxSimilarity extends Source<ComparisonRequest, Double, AttributePercentileTrust> implements
+		SimilarityContract {
 
 	private int maxMatrixSize = -1;
 	
@@ -29,15 +28,14 @@ public class Word2VecMeanSimilarity extends Source<ComparisonRequest, Double, At
 	 * Create a new source for word similarity where no more than maxMatrixSize words from each comparable will be used.
 	 * @param maxMatrixSize The maximum number of words to use from each Comparable
 	 */
-	public Word2VecMeanSimilarity(int maxMatrixSize){
+	public Word2VecMaxSimilarity(int maxMatrixSize){
 		this.maxMatrixSize = maxMatrixSize;
 	}
 	
 	/**
 	 * Create a new source for word similarity where all available words will be used.
-	 * @param maxMatrixSize
 	 */
-	public Word2VecMeanSimilarity() {
+	public Word2VecMaxSimilarity() {
 		this (-1);
 	}
 	
@@ -57,52 +55,54 @@ public class Word2VecMeanSimilarity extends Source<ComparisonRequest, Double, At
 	}
 
 	@Override
-	public Opinion<Double, AttributePercentileTrust> getOpinion(ComparisonRequest args)
-			throws UnknownException {
-		
-		List<String> words1 = args.getEvent().getWords(100);
-		List<String> words2 = args.getSpeaker().getWords(100);
-		
+	public Opinion<Double, AttributePercentileTrust> getOpinion(
+			ComparisonRequest args) throws UnknownException {
+
+		double [][] matrix;
+		List<String> words1 = args.getEvent().getWords(maxMatrixSize);
+		List<String> words2 = args.getSpeaker().getWords(maxMatrixSize);
 		try {
-			double [][] similarityMatrix = Word2Vec.getInstance().similarity(words1, words2);
-			double avgSim = matrixAverage(similarityMatrix);
-			return new Opinion<Double, AttributePercentileTrust>(avgSim, new AttributePercentileTrust(null));
-		} catch (IOException | IllegalArgumentException e) {
+			matrix = Word2Vec.getInstance().similarity(words1, words2);
+		} catch (IOException e) {
 			throw new UnknownException(e);
 		}
-
+		
+		Double response = max(words1, words2, matrix);
+		return new Opinion<Double, AttributePercentileTrust>(response, getTrust(args, Optional.of(response)));
 	}
 
 	/**
-	 * Returns the average of all values in the matrix. This ignores all "unknown" similarities which have the value -1
-	 * @throws IllegalArgumentException if there is a null row in the matrix, or if the matrix itself is null
+	 * Returns the maximum pairwise similarity of two distinct words
 	 */
-	public static double matrixAverage(double [][] matrix) throws IllegalArgumentException{
+	private Double max(List<String> words1, List<String> words2, double [][] matrix){
+		
 		if (matrix == null){
-			throw new IllegalArgumentException();
+			return null;
 		}
-		int numValues = 0;
-		double total = 0;
+		
+		Double maxValue = null;
 		for (int i = 0; i < matrix.length; i++){
+			if (matrix[i] == null){
+				continue;
+			}
 			for (int j = 0; j < matrix[i].length; j++){
-				try{
-					if (matrix[i][j] == -1d) continue;
-					total += matrix[i][j];
-					numValues++;
-				}
-				catch (IndexOutOfBoundsException | NullPointerException e){
-					throw new IllegalArgumentException(e);
-				}
+				//find the max value
+				if (maxValue == null || matrix[i][j] > maxValue) {
+					//check that the words are distinct
+					if (words1.get(i).equals(words2.get(j))){
+						continue;
+					}
+					maxValue = matrix[i][j];
+					}
 			}
 		}
-		if (numValues == 0){
-			return 0;
-		}
-		return total / numValues;
+		
+		return maxValue;
 	}
 	
 	@Override
-	public AttributePercentileTrust getTrust(ComparisonRequest args, Optional<Double> value) {
+	public AttributePercentileTrust getTrust(ComparisonRequest args,
+			Optional<Double> value) {
 		return new AttributePercentileTrust(null);
 	}
 
