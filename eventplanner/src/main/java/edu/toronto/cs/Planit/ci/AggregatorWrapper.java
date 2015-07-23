@@ -27,13 +27,13 @@ public abstract class AggregatorWrapper <O, T, Q> implements Aggregator<O, T, Q>
 	
 	/**
 	 * Performs the passive aggregation and the aggregation which is wrapped around.
-	 * If the wrapped aggregator is null then Optional.absent() is returned, otherwise the value of that aggregation.
+	 * If the wrapped aggregator is not null then its opinion is returned, otherwise a result of null values.
 	 */
 	@Override
 	public Optional<Result<O, Q>> aggregate(List<Opinion<O, T>> opinions){
 		Optional<Result<O, Q>> result; 
 		if (around == null){
-			result = Optional.absent();
+			result = Optional.of(new Result<O, Q>(null, null));
 		}
 		else{
 			result = around.aggregate(opinions);

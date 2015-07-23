@@ -6,7 +6,7 @@ package edu.toronto.cs.Planit.ci.ml;
  * @author wginsberg
  *
  */
-public class AttributePercentileTrust implements Trust {
+public class AttributePercentileTrust implements AttributeTrust {
 
 	private Double percentile;
 	

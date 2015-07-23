@@ -19,7 +19,7 @@ import edu.toronto.cs.se.ci.data.Result;
  * for debugging, and delegate to the supplied aggregator to do a "real" aggregation as well, which will be returned.
  * @author wginsberg
  */
-public class DebuggingAggregation <I, O, T, Q> extends AggregatorWrapper<DebuggingResponse<I, O, T>, T, Q>{
+public class DebuggingAggregation <I, O, T, Q> extends AggregatorWrapper<DebuggingResponse<I>, T, Q>{
 
 	OutputStream outStream;
 	BufferedWriter writer;
@@ -29,7 +29,7 @@ public class DebuggingAggregation <I, O, T, Q> extends AggregatorWrapper<Debuggi
 	 * @param wrapAround This aggregator will do the aggregation that is returned by DebuggingAggregation.aggregate()
 	 * @param outStream
 	 */
-	public DebuggingAggregation(Aggregator<DebuggingResponse<I, O, T>, T, Q> wrapAround, OutputStream outStream) {
+	public DebuggingAggregation(Aggregator<DebuggingResponse<I>, T, Q> wrapAround, OutputStream outStream) {
 		super(wrapAround);
 		setOutStream(outStream);
 	}
@@ -47,18 +47,18 @@ public class DebuggingAggregation <I, O, T, Q> extends AggregatorWrapper<Debuggi
 	 */
 	@Override
 	public void passiveAggregation(
-			List<Opinion<DebuggingResponse<I, O, T>, T>> opinions,
-			Optional<Result<DebuggingResponse<I, O, T>, Q>> wrappedAggregationResult) {
+			List<Opinion<DebuggingResponse<I>, T>> opinions,
+			Optional<Result<DebuggingResponse<I>, Q>> wrappedAggregationResult) {
 		
 		//prepare to write the opinions
 		getWriter();
 		
 		//write each opinion to the output stream
-		for (Opinion<DebuggingResponse<I, O, T>, T> opinion : opinions){
+		for (Opinion<DebuggingResponse<I>, T> opinion : opinions){
 			try {
 				writer.write(String.format("(%s, %s)\n",
 						opinion.getValue().getSource().getName(),
-						opinion.getValue().get().toString()));
+						opinion.getValue().toString()));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -3,7 +3,7 @@ package edu.toronto.cs.Planit.dataObjects;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.toronto.cs.Planit.speakerSuggestion.similarity.ComparableImp;
+import edu.toronto.cs.Planit.speakersuggestion.similarity.util.ComparableImp;
 
 /**
  * An event which can be created in PlanIt, or a representation of an event from another source.

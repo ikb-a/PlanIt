@@ -23,6 +23,13 @@
       <scope>test</scope>
     </dependency>
     
+    <dependency>
+	<groupId>org.json</groupId>
+	<artifactId>json</artifactId>
+	<version>20141113</version>
+</dependency>
+    
+    
 	<dependency>
   <!-- jsoup HTML parser library @ http://jsoup.org/ -->
   <groupId>org.jsoup</groupId>

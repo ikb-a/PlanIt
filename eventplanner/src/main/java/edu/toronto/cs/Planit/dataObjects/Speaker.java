@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import edu.toronto.cs.Planit.speakerSuggestion.similarity.ComparableImp;
+import edu.toronto.cs.Planit.speakersuggestion.similarity.util.ComparableImp;
 
 /**
  * A public speaker who might speak at an event.
