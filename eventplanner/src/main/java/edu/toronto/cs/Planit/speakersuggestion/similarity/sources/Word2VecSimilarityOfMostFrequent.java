@@ -74,11 +74,11 @@ public class Word2VecSimilarityOfMostFrequent extends Source<ComparisonRequest, 
 		List<String> toCompare1;
 		List<String> toCompare2;
 		
-		mostCommon1 = extractTopN(wordFrequency(args.getEvent().getWords()));
+		mostCommon1 = extractTopN(wordFrequency(args.getEvent().getWords()), n);
 		numToCompare1 = Math.min(defaultN, mostCommon1.size());
 		toCompare1 = mostCommon1.subList(0, numToCompare1);
 		
-		mostCommon2 = extractTopN(wordFrequency(args.getSpeaker().getWords()));
+		mostCommon2 = extractTopN(wordFrequency(args.getSpeaker().getWords()), n);
 		numToCompare2 = Math.min(defaultN, mostCommon2.size());
 		toCompare2 = mostCommon2.subList(0, numToCompare2);
 
@@ -99,7 +99,7 @@ public class Word2VecSimilarityOfMostFrequent extends Source<ComparisonRequest, 
 	 * @param words
 	 * @return
 	 */
-	private Map<String, Integer> wordFrequency(List<String> words){
+	public static Map<String, Integer> wordFrequency(List<String> words){
 		Map<String, Integer> frequencies = new HashMap<String, Integer>();
 		for (String word : words){
 			if (!frequencies.containsKey(word)){
@@ -114,7 +114,7 @@ public class Word2VecSimilarityOfMostFrequent extends Source<ComparisonRequest, 
 	 * Returns up to n words from the map which have the highest integer value in the map.
 	 * Ignores any words with frequency 1
 	 */
-	private List<String> extractTopN(Map<String, Integer> words){
+	public static List<String> extractTopN(Map<String, Integer> words, int n){
 		//sort in reverse order to make this more efficient
 		Comparator<Entry<String, Integer>> compareEntry = (e1, e2) -> -1 * e1.getValue().compareTo(e2.getValue());
 		List<Entry<String, Integer>> sortedEntries = words.entrySet().stream().sorted(compareEntry).collect(Collectors.toList());

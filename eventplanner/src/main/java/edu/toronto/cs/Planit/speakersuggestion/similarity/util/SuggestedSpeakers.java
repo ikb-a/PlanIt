@@ -73,9 +73,7 @@ public class SuggestedSpeakers {
 
 	@Override
 	public String toString() {
-		return "SuggestedSpeakers [bestSpeakers=" + bestSpeakers.toString()
-				+ ", goodSpeakers=" + goodSpeakers.toString() + ", badSpeakers="
-				+ badSpeakers.toString() + "]";
+		return String.format("SuggestedSpeakers:\n		Best : %s\n		Good : %s\n		Bad : %s\n", bestSpeakers.toString(), goodSpeakers.toString(), badSpeakers.toString());
 	}
 	
 }

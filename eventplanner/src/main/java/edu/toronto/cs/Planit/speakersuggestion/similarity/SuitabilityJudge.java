@@ -23,6 +23,7 @@ import edu.toronto.cs.se.ci.Estimate;
 import edu.toronto.cs.se.ci.Selector;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.data.Result;
+import edu.toronto.cs.se.ci.selectors.AllSelector;
 import edu.toronto.cs.Planit.ci.ml.ClassDistributionQuality;
 import edu.toronto.cs.Planit.ci.ml.NaiveBayesAggregator;
 import edu.toronto.cs.Planit.ci.ml.WekaCompatibleResponse;
@@ -120,9 +121,10 @@ public class SuitabilityJudge {
 			Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(5)));
 		}
 		
-		Aggregator<WekaCompatibleResponse<ComparisonRequest>, Void, ClassDistributionQuality> aggregator = null;
+		Aggregator<WekaCompatibleResponse<ComparisonRequest>, Void, ClassDistributionQuality> aggregator;
 		aggregator = new NaiveBayesAggregator<ComparisonRequest>(loadClassifierTraining());
-		Selector<ComparisonRequest, WekaCompatibleResponse<ComparisonRequest>, Void> selector = null;
+		Selector<ComparisonRequest, WekaCompatibleResponse<ComparisonRequest>, Void> selector;
+		selector = new AllSelector<ComparisonRequest, WekaCompatibleResponse<ComparisonRequest>, Void>();
 		
 		return new CI<ComparisonRequest, WekaCompatibleResponse<ComparisonRequest>, Void, ClassDistributionQuality>
 		(SimilarityContractWekaCompatible.class,

@@ -41,8 +41,10 @@ public class NaiveBayesAggregator <I> implements WekaClassifierAggregator<I>{
 		//do the classification
 		Instance opinionAsInstance = createInstance(opinions);
 		double [] distribution = null;
+		double classification = 0d;
 		try {
 			distribution = getClassifier().distributionForInstance(opinionAsInstance);
+			classification = getClassifier().classifyInstance(opinionAsInstance);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -50,16 +52,15 @@ public class NaiveBayesAggregator <I> implements WekaClassifierAggregator<I>{
 		if (distribution == null || distribution.length < 1){
 			return Optional.absent();
 		}
-		
+
 		//return the result
-		int nominalValIndex = new Double(distribution[0]).intValue();
-		String responseAsString = dataSet.classAttribute().value(nominalValIndex);
+		String responseAsString = dataSet.classAttribute().value((int) classification);
 		WekaCompatibleResponse<I> response = new WekaCompatibleResponse<I>(null, null, responseAsString);
 		ClassDistributionQuality quality = new ClassDistributionQuality(distribution);
 		
 		return Optional.of(new Result<WekaCompatibleResponse<I>, ClassDistributionQuality>(response, quality));
 	}
-
+	
 	@Override
 	public Instance createInstance(
 			List<Opinion<WekaCompatibleResponse<I>, Void>> opinions) {
@@ -69,11 +70,12 @@ public class NaiveBayesAggregator <I> implements WekaClassifierAggregator<I>{
 		
 		//find the attribute that matches the source of the opinion
 		for (Opinion<WekaCompatibleResponse<I>, ?> opinion : opinions){
-			
+
 			for (Attribute attribute : Util.attributeEnumerationToList(dataSet.enumerateAttributes())){
 				
 				//set the value of the attribute in the instance
-				if (opinion.getValue().getSource().getName().equals(attribute.toString())){
+				
+				if (attribute.toString().contains(opinion.getValue().getSource().getName())){
 					if (opinion.getValue().isNumeric()){
 						instance.setValue(attribute, opinion.getValue().getNumeric());
 					}

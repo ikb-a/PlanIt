@@ -51,7 +51,7 @@ public class DataPlayground {
 		
 
 		cases = loadCases(lowCasesFile);
-		classification = -1d;
+		classification = 1d;
 		if (cases != null){
 			try {
 				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
@@ -61,7 +61,7 @@ public class DataPlayground {
 		}
 		
 		cases = loadCases(mediumCasesFile);
-		classification = 0d;
+		classification = 2d;
 		if (cases != null){
 			try {
 				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
@@ -70,7 +70,7 @@ public class DataPlayground {
 			}
 		}
 		cases = loadCases(highCasesFile);
-		classification = 1d;
+		classification = 3d;
 		if (cases != null){
 			try {
 				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
