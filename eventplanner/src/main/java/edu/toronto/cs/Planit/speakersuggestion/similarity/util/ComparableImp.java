@@ -48,7 +48,10 @@ public abstract class ComparableImp implements Comparable {
 	 * @return
 	 */
 	public static List<String> parsetext(String text){
-		String [] parsed = text.toLowerCase().replaceAll("[^0-9A-z-' ]+?", " ").split(" ");
+		if (text == null){
+			return new ArrayList<String>(0);
+		}
+		String [] parsed = text.toLowerCase().replaceAll("[^0-9A-z-' ]+?", " ").split("\\s");
 		//not using Arrays.asList() because we need it to be modifyable
 		List<String> words = new ArrayList<String>(parsed.length);
 		for (int i = 0; i < parsed.length; i++){

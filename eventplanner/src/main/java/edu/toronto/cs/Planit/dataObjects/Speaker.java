@@ -119,6 +119,17 @@ public class Speaker extends ComparableImp{
 		return bio;
 	}
 	
+	/**
+	 * Returns up to the first n characters of the speakers biography.
+	 * @param n Number of characters to return
+	 * @return A truncated bio for the speaker
+	 */
+	public String getTruncatedBio(int n){
+		
+		return getBio().substring(0, Math.min(n, getBio().length()));
+		
+	}
+	
 	public List<String> getTopics(){
 		if(topics == null){
 			topics = new ArrayList<String>();
@@ -161,7 +172,7 @@ public class Speaker extends ComparableImp{
 	 * Returns words from this speakers list of topics, professional title, and bio.
 	 */
 	@Override
-	public List<String> getWords() {
+	public synchronized List<String> getWords() {
 		if (keywords == null){
 			keywords = new ArrayList<String>();
 			keywords.addAll(getTopics());

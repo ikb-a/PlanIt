@@ -46,7 +46,7 @@ public class Event extends ComparableImp{
 	 * Returns words from the event title and description.
 	 */
 	@Override
-	public List<String> getWords() {
+	public synchronized List<String> getWords() {
 		if (keyWords == null){
 			keyWords = new ArrayList<String>();
 			keyWords.addAll(extractKeywords(getTitle()));

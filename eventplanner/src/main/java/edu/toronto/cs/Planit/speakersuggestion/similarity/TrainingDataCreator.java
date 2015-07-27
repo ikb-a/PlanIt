@@ -4,9 +4,6 @@ import java.util.Collection;
 import java.util.concurrent.ExecutionException;
 
 import weka.core.Instances;
-import weka.filters.Filter;
-import weka.filters.unsupervised.attribute.NumericToNominal;
-import weka.filters.unsupervised.attribute.Reorder;
 import edu.toronto.cs.Planit.ci.ml.ClassDistributionQuality;
 import edu.toronto.cs.Planit.ci.ml.WekaCompatibleResponse;
 import edu.toronto.cs.Planit.ci.ml.WekaDatasetAggregatorNumeric;
@@ -70,34 +67,10 @@ public class TrainingDataCreator {
 	}
 	
 	/**
-	 * Returns the data set which has been accumulated so far.
+	 * Returns the data set which has been accumulated so far. This can be processed if desired using the methods in WekaDatasetAggregatorNumeric
 	 * @return A weka data set which resulted from executing sources on inputs
 	 */
 	public Instances getRawDataSet(){
 		return aggregator.getDataset();
-	}
-	
-	/**
-	 * Returns the data set which has been accumulated so far. With the class attribute as discrete set {1, 2, 3}
-	 * @throws Exception If there is an exception in running the discretization of the class attribute
-	 */
-	public Instances getDataSet() throws Exception{
-
-		//make the class attribute
-		NumericToNominal filter = new NumericToNominal();
-		filter.setAttributeIndices(String.valueOf(getRawDataSet().classIndex() + 1));
-		filter.setInputFormat(getRawDataSet());
-		
-		Instances filtered = Filter.useFilter(getRawDataSet(), filter);
-		
-		//move it to the end
-		if (filtered.numAttributes() > 1){
-			Reorder filter2 = new Reorder();
-			filter2.setAttributeIndices("2-last,1");
-			filter2.setInputFormat(filtered);
-			filtered = Filter.useFilter(filtered, filter2);
-		}
-		
-		return filtered;
 	}
 }

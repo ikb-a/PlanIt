@@ -172,9 +172,10 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 			//scrape the description div
 			Element descriptionElement = result.getElementsByClass("speaker-description").first();
 			
-			//get name, title
+			//get name, title, bio
 			Element nameElement = descriptionElement.getElementsByTag("h2").first();
 			Element titleElement = descriptionElement.getElementsByTag("h3").first();			
+			Element bioElement = descriptionElement.select("p:not([class]) + p").first();
 			//scrape the topic collage div
 			Element topicsElement = result.getElementsByClass("topic-collage").first();
 			
@@ -191,6 +192,7 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 			//initialize the speaker
 			Speaker speaker = Speaker.createSpeaker(nameElement.text());
 			speaker.setProfessionalTitle(titleElement.text());
+			speaker.setBio(bioElement.text());
 			speaker.addPage(link);
 			ArrayList<String> topics = new ArrayList<String>(topicElements.size());
 			for (int i = 0; i < topicElements.size(); i++){

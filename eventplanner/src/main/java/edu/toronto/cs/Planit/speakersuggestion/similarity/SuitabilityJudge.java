@@ -9,13 +9,14 @@ import java.util.concurrent.ExecutionException;
 import weka.core.Instances;
 import edu.toronto.cs.Planit.dataObjects.Event;
 import edu.toronto.cs.Planit.dataObjects.Speaker;
+import edu.toronto.cs.Planit.speakersuggestion.SuggestedSpeakers;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.ci.SimilarityContractWekaCompatible;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.ci.SourceAdaptor;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.Word2VecMaxSimilarity;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.Word2VecMeanSimilarity;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.Word2VecSimilarityOfMostFrequent;
+import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.WordNetDefinitionOverlap;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.util.ComparisonRequest;
-import edu.toronto.cs.Planit.speakersuggestion.similarity.util.SuggestedSpeakers;
 import edu.toronto.cs.se.ci.Aggregator;
 import edu.toronto.cs.se.ci.CI;
 import edu.toronto.cs.se.ci.Contracts;
@@ -117,8 +118,9 @@ public class SuitabilityJudge {
 		if (Contracts.discover(SimilarityContractWekaCompatible.class).isEmpty()){
 			Contracts.register(new SourceAdaptor(new Word2VecMaxSimilarity(100)));
 			Contracts.register(new SourceAdaptor(new Word2VecMeanSimilarity(100)));
-			Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(1)));
-			Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(5)));
+			Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(2)));
+			Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(3)));
+			Contracts.register(new SourceAdaptor(new WordNetDefinitionOverlap()));
 		}
 		
 		Aggregator<WekaCompatibleResponse<ComparisonRequest>, Void, ClassDistributionQuality> aggregator;

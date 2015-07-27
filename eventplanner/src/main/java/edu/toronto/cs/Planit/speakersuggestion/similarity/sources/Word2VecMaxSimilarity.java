@@ -72,6 +72,9 @@ public class Word2VecMaxSimilarity extends Source<ComparisonRequest, Double, Voi
 		}
 		
 		Double response = max(words1, words2, matrix);
+		if (response == null){
+			return new Opinion<Double, Void>(null, null);					
+		}
 		return new Opinion<Double, Void>(response, getTrust(args, Optional.of(response)));
 	}
 

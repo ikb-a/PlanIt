@@ -7,7 +7,6 @@ import edu.toronto.cs.Planit.dataObjects.Event;
 import edu.toronto.cs.Planit.dataObjects.Speaker;
 import edu.toronto.cs.Planit.speakersuggestion.scrapespeakers.SpeakerRetriever;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.SuitabilityJudge;
-import edu.toronto.cs.Planit.speakersuggestion.similarity.util.SuggestedSpeakers;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 
@@ -54,8 +53,8 @@ public class SpeakerSuggestor {
 			throw new IllegalArgumentException("Illegal budget format for speaker suggestion");
 		}
 		
-		//use the maximum multiplied by 3 so that we can get enough speakers to discard the bad ones
-		Collection<Speaker> candidateSpeakers = speakerRetriever.getSpeakers(softMax * 3, softMax * 3, new Allowance [] {budget[0]});
+		//use the maximum multiplied by 5 so that we can get enough speakers to discard the bad ones
+		Collection<Speaker> candidateSpeakers = speakerRetriever.getSpeakers(softMax * 5, softMax * 5, new Allowance [] {budget[0]});
 		speakerJudge.evaluate(event, candidateSpeakers, new Allowance [] {budget[1]});
 		return speakerJudge.getSuggestion();
 	}

@@ -59,9 +59,13 @@ public class Word2Vec implements Closeable{
 	/**
 	 * Returns a matrix representing the pairwise similarities from two lists of words.
 	 * A similarity of -1 indicates words are outside of the model's vocabulary
+	 * Returns null if either supplied word list does not contain any words.
 	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
 	 */
 	public synchronized double [][] similarity(List<String> words1, List<String> words2) throws IOException{
+		if (words1 == null || words2 == null || words1.size() < 1 || words2.size() < 1){
+			return null;
+		}
 		return requestSimilarityMatrix(words1, words2);
 	}
 

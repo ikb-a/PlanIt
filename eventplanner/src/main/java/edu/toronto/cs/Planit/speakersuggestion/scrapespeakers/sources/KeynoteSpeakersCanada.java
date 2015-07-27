@@ -94,18 +94,6 @@ public class KeynoteSpeakersCanada extends BasicSource<SpeakersQuery, Collection
 			Collections.shuffle(speakerList);
 			speakers.removeAll(speakerList.subList(0, nToRemove));
 		}
-		/*
-		int numToRemove = speakers.size() - input.getMaxSpeakers();
-		Set<Speaker> toRemove = new HashSet<Speaker>();
-		for (Speaker randomSpeaker : speakers){
-			if (numToRemove < 1){
-				break;
-			}
-			toRemove.add(randomSpeaker);
-			numToRemove--;
-		}
-		speakers.removeAll(toRemove);
-		*/
 		
 		//grab the details of each speaker
 		for (Speaker speaker : speakers){
@@ -205,6 +193,7 @@ public class KeynoteSpeakersCanada extends BasicSource<SpeakersQuery, Collection
 		Document document;
 		Elements elements;
 		Element headInfo;
+		Elements bioElements;
 		
 		try {
 			//get the data
@@ -212,6 +201,7 @@ public class KeynoteSpeakersCanada extends BasicSource<SpeakersQuery, Collection
 			document = Jsoup.connect(pageURL).get();
 			elements = document.getElementsByClass("mobile-invisible");
 			headInfo = elements.get(0);
+			bioElements = document.select(".content p");
 			//this will also contain the name, so remove it
 			String professionalTitle = headInfo.text().substring(speaker.getName().length());
 			
@@ -225,6 +215,7 @@ public class KeynoteSpeakersCanada extends BasicSource<SpeakersQuery, Collection
 			//set the data in the speaker
 			speaker.setProfessionalTitle(professionalTitle);
 			speaker.setTopics(topics);
+			speaker.setBio(bioElements.text());
 			
 		} catch (IOException | IndexOutOfBoundsException e) {
 			return;

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -95,13 +96,15 @@ public class Word2VecSimilarityOfMostFrequent extends Source<ComparisonRequest, 
 	}
 
 	/**
-	 * Given a bag of words, return a map of words and how many times the appear
+	 * Given a bag of words, return a map of words and how many times the appear.
 	 * @param words
 	 * @return
 	 */
-	public static Map<String, Integer> wordFrequency(List<String> words){
+	public synchronized static Map<String, Integer> wordFrequency(List<String> words){
 		Map<String, Integer> frequencies = new HashMap<String, Integer>();
-		for (String word : words){
+		Iterator<String> wordIter = words.iterator();
+		while (wordIter.hasNext()){
+			String word = wordIter.next();
 			if (!frequencies.containsKey(word)){
 				frequencies.put(word, 0);
 			}

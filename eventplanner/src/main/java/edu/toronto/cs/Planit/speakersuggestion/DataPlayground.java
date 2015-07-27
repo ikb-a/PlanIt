@@ -13,11 +13,13 @@ import weka.core.converters.ArffSaver;
 
 import com.google.gson.Gson;
 
+import edu.toronto.cs.Planit.ci.ml.WekaDatasetAggregatorNumeric;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.TrainingDataCreator;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.ci.SourceAdaptor;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.Word2VecMaxSimilarity;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.Word2VecMeanSimilarity;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.Word2VecSimilarityOfMostFrequent;
+import edu.toronto.cs.Planit.speakersuggestion.similarity.sources.WordNetDefinitionOverlap;
 import edu.toronto.cs.Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import edu.toronto.cs.se.ci.Contracts;
 import edu.toronto.cs.se.ci.budget.Allowance;
@@ -27,19 +29,23 @@ public class DataPlayground {
 	
 	static final String singleCaseFile = "src/main/resources/speaker suggestion/processed cases/tiny.json";
 	static final String lowCasesFile = "src/main/resources/speaker suggestion/processed cases/low.json";
+	static final String lowCasesFile2 = "src/main/resources/speaker suggestion/processed cases/low-new.json";
 	static final String mediumCasesFile = "src/main/resources/speaker suggestion/processed cases/medium.json";
 	static final String highCasesFile = "src/main/resources/speaker suggestion/processed cases/high-homogenous.json";
+	static final String highCasesFile2 = "src/main/resources/speaker suggestion/processed cases/high-new.json";
+	
 	
 	public static void main(String [] args) throws Exception{
 		
 		/*
 		 * Set up
 		 */
-		
+
 		Contracts.register(new SourceAdaptor(new Word2VecMaxSimilarity(100)));
 		Contracts.register(new SourceAdaptor(new Word2VecMeanSimilarity(100)));
-		Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(1)));
-		Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(5)));
+		Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(2)));
+		Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(3)));
+		Contracts.register(new SourceAdaptor(new WordNetDefinitionOverlap()));
 		
 		TrainingDataCreator wekaDataCreator = new TrainingDataCreator();
 		Collection<ComparisonRequest> cases;
@@ -59,7 +65,15 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
-		
+		cases = loadCases(lowCasesFile2);
+		classification = 1d;
+		if (cases != null){
+			try {
+				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
+		}
 		cases = loadCases(mediumCasesFile);
 		classification = 2d;
 		if (cases != null){
@@ -78,13 +92,21 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
-	
+		cases = loadCases(highCasesFile2);
+		classification = 3d;
+		if (cases != null){
+			try {
+				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
+		}
 		
 		/*
 		 * Save the results
 		 */
 		
-		Instances dataSet = wekaDataCreator.getDataSet();
+		Instances dataSet = WekaDatasetAggregatorNumeric.preProcessDataSet(wekaDataCreator.getRawDataSet());
 		
 		String saveFileName = String.format("src/main/resources/speaker suggestion/dataset/%s - %s.arff",
 				dataSet.relationName(),

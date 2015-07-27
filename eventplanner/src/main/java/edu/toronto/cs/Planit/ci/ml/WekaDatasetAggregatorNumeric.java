@@ -10,7 +10,10 @@ import com.google.common.base.Optional;
 import weka.core.Attribute;
 import weka.core.Instances;
 import weka.core.SparseInstance;
-
+import weka.filters.Filter;
+import weka.filters.supervised.instance.ClassBalancer;
+import weka.filters.unsupervised.attribute.NumericToNominal;
+import weka.filters.unsupervised.attribute.Reorder;
 import edu.toronto.cs.Planit.ci.AggregatorWrapper;
 import edu.toronto.cs.Planit.ci.ml.WekaCompatibleResponse;
 import edu.toronto.cs.se.ci.Aggregator;
@@ -64,6 +67,45 @@ public class WekaDatasetAggregatorNumeric <I, Q> extends AggregatorWrapper<WekaC
 		return dataset;
 	}
 
+	/**
+	 * Applies a standard pre-processing to a data set. This includes a disrectization of the class attribute, and
+	 * an automatic balancing so that the data set will be ready for a classifier build.
+	 * @return
+	 * @throws Exception If there was an exception resulting from a filtering of the data. This could mean the format is incompatible with the processing described above.
+	 */
+	public static Instances preProcessDataSet(Instances rawDataSet) throws Exception{
+		
+		Instances filtered = new Instances(rawDataSet);
+		
+		/*
+		 * Making the data classifiable
+		 */
+		
+		//make the class attribute
+		NumericToNominal discreteFilter = new NumericToNominal();
+		discreteFilter.setAttributeIndices(String.valueOf(rawDataSet.classIndex() + 1));
+		discreteFilter.setInputFormat(rawDataSet);
+		filtered = Filter.useFilter(filtered, discreteFilter);
+		//move the class attribute it to the end (convention)
+		if (filtered.numAttributes() > 1){
+			Reorder filter2 = new Reorder();
+			filter2.setAttributeIndices("2-last,1");
+			filter2.setInputFormat(filtered);
+			filtered = Filter.useFilter(filtered, filter2);
+		}
+		
+		/*
+		 * Making the data balanced
+		 */
+		
+		ClassBalancer balancer = new ClassBalancer();
+		balancer.setInputFormat(filtered);
+		filtered = Filter.useFilter(filtered, balancer);
+		
+		return filtered;
+		
+	}
+	
 	/**
 	 * Adds each opinion to the data set.
 	 * Creates a new data set if this is the first time the method is called.
