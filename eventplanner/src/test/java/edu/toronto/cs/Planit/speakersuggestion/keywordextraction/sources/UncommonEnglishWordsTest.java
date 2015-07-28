@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import edu.toronto.cs.Planit.speakersuggestion.keywordextraction.sources.UncommonEnglishWords;
+import Planit.speakersuggestion.keywordextraction.sources.UncommonEnglishWords;
 
 public class UncommonEnglishWordsTest {
 

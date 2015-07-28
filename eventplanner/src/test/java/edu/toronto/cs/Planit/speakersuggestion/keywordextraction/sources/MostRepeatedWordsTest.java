@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import edu.toronto.cs.Planit.speakersuggestion.keywordextraction.sources.MostRepeatedWords;
+import Planit.speakersuggestion.keywordextraction.sources.MostRepeatedWords;
 import edu.toronto.cs.se.ci.UnknownException;
 
 public class MostRepeatedWordsTest {

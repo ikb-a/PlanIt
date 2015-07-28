@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.junit.Test;
 
+import Planit.speakersuggestion.keywordextraction.sources.YahooKeywordGeneration;
 import edu.toronto.cs.se.ci.UnknownException;
 
 public class YahooContentAnalysisKeywordsTest {

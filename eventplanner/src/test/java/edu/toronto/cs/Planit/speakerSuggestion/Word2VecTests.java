@@ -10,7 +10,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.toronto.cs.Planit.speakersuggestion.similarity.util.Word2Vec;
+import Planit.speakersuggestion.similarity.util.Word2Vec;
 
 public class Word2VecTests {
 	
@@ -89,4 +89,19 @@ public class Word2VecTests {
 		}
 	}
 	
+	@Test
+	public void maximalRowCorrectnessTest(){
+		
+		double [][] matrix = new double [3][3];
+		matrix[0] = new double [] {1d, 2d ,3d};
+		matrix[1] = new double [] {2d, 2d ,5d};
+		matrix[2] = new double [] {1d, -1d ,-1d};
+		int i = Word2Vec.maximalRow(matrix);
+		assertEquals(1, i);
+		matrix[0] = new double [] {-1d, -1d ,-1d};
+		matrix[1] = new double [] {1d, -1d ,0.5d};
+		matrix[2] = new double [] {0.5d, 0.5d ,0d};
+		i = Word2Vec.maximalRow(matrix);
+		assertEquals(2, i);
+	}
 }
