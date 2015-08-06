@@ -87,7 +87,9 @@ public class ContentAnalysis {
 			if (word.contains(" ")){
 				String [] components = word.split("\\s+");
 				for (int i = 0; i < components.length; i++){
-					keywords.add(components[i]);
+					if (components[i].length() > 1){
+						keywords.add(components[i]);
+					}
 				}
 			}
 			else{

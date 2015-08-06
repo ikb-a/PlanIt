@@ -1,8 +1,6 @@
 package Planit.speakersuggestion.scrapespeakers.sources;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
@@ -17,7 +15,6 @@ import Planit.speakersuggestion.scrapespeakers.ci.SpeakersQuery;
 
 import com.google.common.base.Optional;
 
-import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.budget.basic.Time;
@@ -37,6 +34,7 @@ import org.jsoup.select.Elements;
  */
 public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements GetSpeakersContract {
 	
+	/*
 	public static void main (String [] args) throws UnknownException{
 		
 		List<String> keywords = Arrays.asList(new String [] {"surf", "ocean", "beach"});
@@ -45,7 +43,7 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 		Collection<Speaker> response = source.getOpinion(query).getValue();
 		System.out.println(response);
 	}
-	
+	*/
 	private Throttler throttler;
 	
 	/**
@@ -105,8 +103,11 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 		ArrayList<Speaker> speakers = new ArrayList<Speaker>();
 		
 		//throttle the access before attempting connection
-		if (!throttler.next()){
-			System.err.println("WARNING : throttling failed for nsb.com");
+		try {
+			throttler.next();
+		}
+		catch (RuntimeException e){
+			throw new UnknownException(e);
 		}
 
 		try{
@@ -125,7 +126,7 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 			}
 
 		}
-		catch (IOException e){
+		catch (Exception e){
 			throw new UnknownException(e);
 		}
 
@@ -162,6 +163,13 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 		//if there was an error of this type then the supplied html does not have the form
 		// expected, so nothing can be extracted
 		catch (NullPointerException | IndexOutOfBoundsException e){
+			return null;
+		}
+		catch (Exception e1){
+			e1.printStackTrace();
+			/*
+			 * DEBUG
+			 */
 			return null;
 		}
 	}

@@ -1,4 +1,4 @@
-package Planit.speakersuggestion.keywordextraction;
+package Planit.speakersuggestion.keywordextraction.util;
 
 import java.util.ArrayList;
 import java.util.List;

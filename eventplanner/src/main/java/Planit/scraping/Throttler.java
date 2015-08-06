@@ -30,22 +30,20 @@ public class Throttler {
 	/**
 	 * Call this to 'request' another call to a source, it will block until one can be granted.
 	 * @return false if the thread is interrupted.
+	 * @throws RuntimeException if the thread was interrupted
 	 */
-	public boolean next(){
+	public synchronized void next() throws RuntimeException{
 		long currentTime = System.currentTimeMillis();
 		long elapsed = currentTime - previousCall;
 		//wait...
-		boolean success = true;
 		if (elapsed < minTimeBetweenCalls){
 			try {
 				Thread.sleep(minTimeBetweenCalls - elapsed);
 			} catch (InterruptedException e) {
-				e.printStackTrace();
-				success = false;
+				throw new RuntimeException(e);
 			}
 		}
 		previousCall = System.currentTimeMillis();
-		return success;
 	}
 
 	public void setMaxCalls(int maxCalls) {

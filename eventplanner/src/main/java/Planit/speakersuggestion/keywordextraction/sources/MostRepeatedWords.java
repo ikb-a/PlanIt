@@ -9,7 +9,7 @@ import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import Planit.speakersuggestion.keywordextraction.KeyWordExtractionContract;
+import Planit.speakersuggestion.keywordextraction.util.WordListKeywordsContract;
 
 import com.google.common.base.Optional;
 
@@ -25,7 +25,7 @@ import edu.toronto.cs.se.ci.data.Opinion;
  *
  */
 public class MostRepeatedWords extends Source<List<String>, List<String>, Void> 
-	implements KeyWordExtractionContract{
+	implements WordListKeywordsContract{
 
 	private int n;
 	
@@ -35,6 +35,10 @@ public class MostRepeatedWords extends Source<List<String>, List<String>, Void>
 	public MostRepeatedWords(int n) {
 		super();
 		this.n = n;
+	}
+
+	public MostRepeatedWords() {
+		this(3);
 	}
 
 	/**
@@ -98,6 +102,11 @@ public class MostRepeatedWords extends Source<List<String>, List<String>, Void>
 		return new Opinion<List<String>, Void> (response , getTrust(input, Optional.of(response)));
 	}
 
+	@Override
+	public String getName(){
+		return "most-repeated-words-as-keyword";
+	}
+	
 	@Override
 	public Void getTrust(List<String> args, Optional<List<String>> value) {
 		return null;

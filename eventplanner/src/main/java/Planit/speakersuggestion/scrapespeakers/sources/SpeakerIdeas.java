@@ -35,14 +35,17 @@ import edu.toronto.cs.se.ci.data.Opinion;
 public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements
 		GetSpeakersContract {
 	
-	private Throttler throttler;
+	/**
+	 * Used for synchronized static methods
+	 */
+	private static Throttler throttler;
 	
 	/*
 	public static void main (String [] args) throws UnknownException{
 		
 		Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> source = new SpeakerIdeas();
 		List<String> keywords = Arrays.asList(new String [] {"energy", "infrastrucute", "nuclear"});
-		SpeakersQuery query = new SpeakersQuery(keywords, 25, 25);
+		SpeakersQuery query = new SpeakersQuery(keywords, 1, 1);
 		Collection<Speaker> speakers = source.getOpinion(query).getValue();
 		
 		System.out.println(speakers);
@@ -50,15 +53,21 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 	*/
 	
 	public SpeakerIdeas(){
-		throttler = new Throttler(30, TimeUnit.MINUTES);
+		if (throttler == null){
+			throttler = new Throttler(30, TimeUnit.MINUTES);
+		}
 	}
 	
 	@Override
 	public Opinion<Collection<Speaker>, SpeakerSetTrust> getOpinion(
 			SpeakersQuery input) throws UnknownException {
 		
-		if (throttler.next() == false){
-			System.err.println("Warning: throttling failed for speakerideas.com");
+		System.err.println("Aborting connection to speakerideas.com");
+		throw new UnknownException();
+		
+		/*
+		if (throttler == null){
+			throttler = new Throttler(30, TimeUnit.MINUTES);
 		}
 		
 		Collection<Speaker> speakers;
@@ -73,17 +82,25 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 		}
 		
 		return new Opinion<Collection<Speaker>, SpeakerSetTrust>(speakers, getTrust(input, Optional.of(speakers)));
-		
+		*/
 	}
 
 	
 	/**
 	 * Attempts to scrape n speakers from speakerideas.com by searching for the given keywords.
-	 * No guarantee is made that exactly n speakers will be returned.
+	 * No more than n speakers will be returned.
+	 * @throws UnknownException 
 	 */
-	public static Collection<Speaker> getSpeakers(List<String> keywords, int n){
+	public synchronized static Collection<Speaker> getSpeakers(List<String> keywords, int n) throws UnknownException{
 		
-		Collection<Speaker> speakers = new ArrayList<Speaker>();
+		try {
+			throttler.next();
+		}
+		catch (RuntimeException e){
+			throw new UnknownException(e);
+		}
+		
+		ArrayList<Speaker> speakers = new ArrayList<Speaker>();
 		
 		boolean iterationMadeProgress = false;
 		int resultPage = 1;
@@ -110,6 +127,17 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 			}
 			iterationMadeProgress = false;
 			resultPage++;
+		}
+		
+		//trim down to n speakers before digging into their detailed personal page
+		if (speakers.size() > n){
+			speakers.subList(n, speakers.size()).clear();
+		}
+		
+		//get the details
+		for (Speaker speaker : speakers){
+			
+			scrapeSpeakerDetails(speaker);
 		}
 		
 		return speakers;
@@ -155,6 +183,52 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 		}
 		
 		return scrapedSpeakers;
+	}
+	
+	/**
+	 * Uses the webpage set in the speaker's info to get their bio and topics.
+	 * @throws UnknownException 
+	 */
+	public static void scrapeSpeakerDetails(Speaker speaker) throws UnknownException{
+		
+		try{
+			throttler.next();
+		}
+		catch (RuntimeException e){
+			throw new UnknownException(e);
+		}
+		
+		//open up their page
+		String pageLocation = speaker.getPages().get(0).toString();
+		Connection connection = Jsoup.connect(pageLocation).userAgent("Mozilla");
+		Document document;
+		try {
+			document = connection.get();
+		} catch (IOException e) {
+			return;
+		}
+		
+		//get all of the elements of the description
+		Elements bioElements = document.select(".tm-article-content p");
+		StringBuilder bioBuilder = new StringBuilder();
+		List<String> topicList = new ArrayList<String>();
+		
+		//Add paragraphs from the description until the "Topics" element is reached
+		for (Element element : bioElements){			
+			if (element.text().startsWith("Topics") || element.text().startsWith("topics")){
+				break;
+			}
+			bioBuilder.append(element.text());
+		}
+		
+		//get all of the topics in a list
+		Elements topicElements = document.select(".tm-article-content ul li");
+		for (Element element : topicElements){
+			topicList.add(element.text());
+		}
+		
+		speaker.setBio(bioBuilder.toString());
+		speaker.setTopics(topicList);
 	}
 	
 	/**

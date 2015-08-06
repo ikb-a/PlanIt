@@ -13,7 +13,7 @@ import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import Planit.speakersuggestion.keywordextraction.KeyWordExtractionContract;
+import Planit.speakersuggestion.keywordextraction.util.WordListKeywordsContract;
 
 import com.google.common.base.Optional;
 
@@ -29,8 +29,9 @@ import edu.toronto.cs.se.ci.data.Opinion;
  *
  */
 public class UncommonEnglishWords extends Source<List<String>, List<String>, Void> implements
-		KeyWordExtractionContract {
+		WordListKeywordsContract {
 
+	//A file where on each line there is a word followed by a number representing its rarity in the English language
 	private static final String wordListLocation = "src/main/resources/word list/count_1w.txt";
 	
 	private static Map<String, Long> wordFrequencyTable = null;
@@ -48,6 +49,10 @@ public class UncommonEnglishWords extends Source<List<String>, List<String>, Voi
 		}
 	}
 	
+	public UncommonEnglishWords() {
+		this(3);
+	}
+
 	private static Map<String, Long> getWordfrequencytable() throws IOException {
 		if (wordFrequencyTable == null){
 			wordFrequencyTable = loadFrequencyTable(wordListLocation);
@@ -124,6 +129,11 @@ public class UncommonEnglishWords extends Source<List<String>, List<String>, Voi
 			throws UnknownException {
 		List<String> toReturn = getUncommonWords(input, n);
 		return new Opinion<List<String>, Void> (toReturn, getTrust(input, Optional.of(toReturn)));
+	}
+	
+	@Override
+	public String getName(){
+		return "uncommon-english-words-as-keywords";
 	}
 	
 	@Override

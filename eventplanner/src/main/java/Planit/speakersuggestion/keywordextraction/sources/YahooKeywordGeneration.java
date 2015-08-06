@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import Planit.speakersuggestion.keywordextraction.KeyWordExtractionContract;
+import Planit.speakersuggestion.keywordextraction.util.WordListKeywordsContract;
 import Planit.speakersuggestion.similarity.util.ContentAnalysis;
 import Planit.speakersuggestion.similarity.util.YahooContentAnalysis;
 
@@ -24,8 +24,7 @@ import edu.toronto.cs.se.ci.data.Opinion;
  *
  */
 public class YahooKeywordGeneration extends Source<List<String>, List<String>, Void> implements
-		KeyWordExtractionContract {
-
+		WordListKeywordsContract {
 
 	@Override
 	public Opinion<List<String>, Void> getOpinion(List<String> input)
@@ -43,6 +42,11 @@ public class YahooKeywordGeneration extends Source<List<String>, List<String>, V
 		return new Opinion<List<String>, Void>(keyWords, getTrust(input, Optional.of(keyWords)));
 	}
 
+	@Override
+	public String getName(){
+		return "yahoo-content-analysis-keywords";
+	}
+	
 	@Override
 	public Expenditure[] getCost(List<String> args) throws Exception {
 		return new Expenditure [] {new Time(50, TimeUnit.MILLISECONDS)};

@@ -115,8 +115,11 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 	 */
 	public static Collection<Speaker> getSpeakers(List<String> keywords, int n) throws UnknownException{
 		
-		if (!throttler.next()){
-			System.err.println("Warning : throttling failed for Keynote Speakers Canada");
+		try {
+			throttler.next();
+		}
+		catch (RuntimeException e){
+			throw new UnknownException(e);
 		}
 		
 		String [] categories;
