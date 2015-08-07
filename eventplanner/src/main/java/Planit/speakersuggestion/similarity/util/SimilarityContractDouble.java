@@ -1,6 +1,5 @@
-package Planit.speakersuggestion.similarity.ci;
+package Planit.speakersuggestion.similarity.util;
 
-import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import edu.toronto.cs.se.ci.Contract;
 
 /**

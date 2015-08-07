@@ -1,4 +1,4 @@
-package Planit.speakersuggestion.scrapespeakers.ci;
+package Planit.speakersuggestion.scrapespeakers.util;
 
 import java.util.Collection;
 

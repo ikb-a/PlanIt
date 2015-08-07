@@ -12,12 +12,16 @@ import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import Planit.ci.ml.WekaDatasetAggregatorNumeric;
 import Planit.speakersuggestion.similarity.TrainingDataCreator;
-import Planit.speakersuggestion.similarity.ci.SourceAdaptor;
-import Planit.speakersuggestion.similarity.sources.Word2VecMaxSimilarity;
-import Planit.speakersuggestion.similarity.sources.Word2VecMeanSimilarity;
-import Planit.speakersuggestion.similarity.sources.Word2VecSimilarityOfMostFrequent;
-import Planit.speakersuggestion.similarity.sources.WordNetDefinitionOverlap;
+import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMax;
+import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
+import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMax;
+import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMean;
+import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
+import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMean;
+import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
+import Planit.speakersuggestion.similarity.sources.KeywordWordnetMean;
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
+import Planit.speakersuggestion.similarity.util.SourceAdaptor;
 
 import com.google.gson.Gson;
 
@@ -25,6 +29,11 @@ import edu.toronto.cs.se.ci.Contracts;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 
+/**
+ * Playground file for creating data sets
+ * @author wginsberg
+ *
+ */
 public class DataPlayground {
 	
 	static final String singleCaseFile = "src/main/resources/speaker suggestion/processed cases/tiny.json";
@@ -41,11 +50,14 @@ public class DataPlayground {
 		 * Set up
 		 */
 
-		Contracts.register(new SourceAdaptor(new Word2VecMaxSimilarity(100)));
-		Contracts.register(new SourceAdaptor(new Word2VecMeanSimilarity(100)));
-		Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(2)));
-		Contracts.register(new SourceAdaptor(new Word2VecSimilarityOfMostFrequent(3)));
-		Contracts.register(new SourceAdaptor(new WordNetDefinitionOverlap()));
+		Contracts.register(new SourceAdaptor(new DescriptionWord2vecMax()));
+		Contracts.register(new SourceAdaptor(new DescriptionWord2vecMean()));
+		Contracts.register(new SourceAdaptor(new DescriptionWordnetMax()));
+		Contracts.register(new SourceAdaptor(new DescriptionWordnetMean()));
+		Contracts.register(new SourceAdaptor(new KeywordWord2vecMax()));
+		Contracts.register(new SourceAdaptor(new KeywordWord2vecMean()));
+		Contracts.register(new SourceAdaptor(new KeywordWordnetMax()));
+		Contracts.register(new SourceAdaptor(new KeywordWordnetMean()));
 		
 		TrainingDataCreator wekaDataCreator = new TrainingDataCreator();
 		Collection<ComparisonRequest> cases;
@@ -55,6 +67,15 @@ public class DataPlayground {
 		 * Invoke on all the data
 		 */
 		
+		cases = loadCases(singleCaseFile);
+		classification = 1d;
+		if (cases != null){
+			try {
+				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
+		}
 
 		cases = loadCases(lowCasesFile);
 		classification = 1d;
@@ -101,7 +122,7 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
-		
+
 		/*
 		 * Save the results
 		 */

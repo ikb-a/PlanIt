@@ -10,7 +10,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import Planit.speakersuggestion.similarity.util.Word2Vec;
+import Planit.speakersuggestion.wordsimilarity.Word2Vec;
 
 public class Word2VecTests {
 	

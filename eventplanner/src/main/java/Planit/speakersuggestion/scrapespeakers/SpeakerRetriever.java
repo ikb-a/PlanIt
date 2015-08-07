@@ -1,75 +1,95 @@
 package Planit.speakersuggestion.scrapespeakers;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 import Planit.dataObjects.Speaker;
-import Planit.speakersuggestion.scrapespeakers.ci.GetSpeakersContract;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakerSetTrust;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakerSetUnionAggregator;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakersQuery;
 import Planit.speakersuggestion.scrapespeakers.sources.KeynoteSpeakersCanada;
+import Planit.speakersuggestion.scrapespeakers.sources.LavinAgencySpeakers;
 import Planit.speakersuggestion.scrapespeakers.sources.NSBspeakers;
-import Planit.speakersuggestion.scrapespeakers.sources.SpeakerIdeas;
+import Planit.speakersuggestion.scrapespeakers.util.GetSpeakersContract;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetTrust;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetUnionAggregator;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
 import edu.toronto.cs.se.ci.CI;
 import edu.toronto.cs.se.ci.Contracts;
+import edu.toronto.cs.se.ci.Estimate;
 import edu.toronto.cs.se.ci.budget.Allowance;
+import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.data.Result;
 import edu.toronto.cs.se.ci.selectors.AllSelector;
 
+/**
+ * A class for searching for speakers on the internet by using keyword terms.
+ * @author wginsberg
+ *
+ */
 public class SpeakerRetriever {
-
-	/*
-	 * Singleton class
-	 */
-	private SpeakerRetriever(){}
-	static private SpeakerRetriever instance;
-	static public SpeakerRetriever getInstance(){
-		if (instance == null){
-			instance = new SpeakerRetriever();
-		}
-		return instance;
-	}
-	
-	CI <SpeakersQuery, Collection<Speaker>, SpeakerSetTrust, Double> ci;
 	
 	/**
-	 * Executes a contributional implementation to retrieve a set of speakers from the internet.
-	 * @param keywords a list of keywords to search for
-	 * @param min A soft minimum on the number of speakers to return.
-	 * @param max A soft maximum on the number of speakers to return.
-	 * @param budget The maximum time to spend getting speakers
-	 * @throws ExecutionException 
-	 * @throws InterruptedException 
+	 * Perform speaker retrieval on one list of keywords and prints the results to standard output.
+	 * @param args
 	 */
-	public Collection<Speaker> getSpeakers(List<String> keywords, int min, int max, Allowance [] budget) throws InterruptedException, ExecutionException{
-		if (ci == null){
-			ci = constructCI();
-		}
-		SpeakersQuery query = new SpeakersQuery(keywords, min, max);
-		Result<Collection<Speaker>, Double> result = ci.apply(query, budget).get();
-		return result.getValue();		
-	}
-	
-	/**
-	 * Constructs a new contributional implementation for retrieving speakers.
-	 * @return
-	 */
-	private static CI<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust, Double> constructCI(){
+	public static void main(String [] args){
 		
 		/*
-		 * Register some sources if needed
+		 * Create a query
 		 */
-		if (Contracts.discover(GetSpeakersContract.class).isEmpty()){
-			Contracts.register(new KeynoteSpeakersCanada());
-			Contracts.register(new NSBspeakers());
-			Contracts.register(new SpeakerIdeas());
+		List<String> keywords = Arrays.asList(new String [] {"coffee", "drinks", "Toronto"});
+		SpeakersQuery query = new SpeakersQuery(keywords,  10, 15);
+
+		/*
+		 * Set up for speaker searching
+		 */
+		registerSources();
+		Allowance [] budget = new Allowance [] {new Time(10, TimeUnit.SECONDS)};
+		SpeakerRetriever speakers = new SpeakerRetriever();
+
+		/*
+		 * Show the query in console
+		 */
+		System.out.println("Searching for speakers based on keywords: \n");
+		System.out.println("	" + keywords.toString());
+		System.out.println();
+		
+
+		try {
+			Result<Collection<Speaker>, Double> result = speakers.getResponse(query, budget).get();
+			System.out.println("Search results: \n");
+			System.out.println("	" + result.getValue().toString());
+		} catch (InterruptedException | ExecutionException e) {
+			e.printStackTrace();
 		}
 		
-		return new CI<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust, Double>
-				(GetSpeakersContract.class,
-				new SpeakerSetUnionAggregator(),
-				new AllSelector<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust>());
+	}
+	
+	private CI <SpeakersQuery, Collection<Speaker>, SpeakerSetTrust, Double> ci;
+	
+	public SpeakerRetriever(){
+		ci = new CI<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust, Double>
+			(GetSpeakersContract.class,
+					new SpeakerSetUnionAggregator(),
+					new AllSelector<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust>());
+	}
+
+	/**
+	 * Performs a search for speakers on the internet using contributional implementation.
+	 * @param query The query dictating how to search for speakers
+	 * @return An estimate in progress from a contributional implementation from which a collection of speakers can be taken
+	 */
+	public Estimate<Collection<Speaker>, Double> getResponse(SpeakersQuery query, Allowance [] budget){
+		return ci.apply(query, budget);
+	}
+	
+	/**
+	 * Registers a preset collection of sources for the ci.
+	 */
+	public static void registerSources(){
+		Contracts.register(new KeynoteSpeakersCanada());
+		Contracts.register(new NSBspeakers());
+		Contracts.register(new LavinAgencySpeakers());
 	}
 }

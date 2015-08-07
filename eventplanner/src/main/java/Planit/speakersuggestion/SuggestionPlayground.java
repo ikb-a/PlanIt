@@ -3,6 +3,8 @@ package Planit.speakersuggestion;
 import java.util.concurrent.TimeUnit;
 
 import Planit.dataObjects.Event;
+import Planit.speakersuggestion.keywordextraction.KeywordFinder;
+import Planit.speakersuggestion.scrapespeakers.SpeakerRetriever;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 
@@ -12,6 +14,9 @@ public class SuggestionPlayground {
 	
 	public static void main(String[] args) throws Exception {
 
+		KeywordFinder.registerSources();
+		SpeakerRetriever.registerSources();
+		
 		SpeakerSuggestor suggestor = SpeakerSuggestor.getInstance();
 		Event event;
 		Allowance [] budget;

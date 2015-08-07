@@ -1,7 +1,6 @@
-package Planit.speakersuggestion.similarity.ci;
+package Planit.speakersuggestion.similarity.util;
 
 import Planit.ci.ml.WekaSourceAdaptor;
-import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import edu.toronto.cs.se.ci.Source;
 
 public class SourceAdaptor extends WekaSourceAdaptor<ComparisonRequest, Void> implements

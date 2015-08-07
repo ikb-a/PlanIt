@@ -20,7 +20,7 @@ public class Event extends ComparableImp{
 	private EventOrganizer organizer;
 	private Venue venue;
 	private List<Speaker> confirmedSpeakers;
-	
+	private transient List<String> words;
 	private List<String> keyWords;
 	
 	/**
@@ -47,12 +47,12 @@ public class Event extends ComparableImp{
 	 */
 	@Override
 	public synchronized List<String> getWords() {
-		if (keyWords == null){
-			keyWords = new ArrayList<String>();
-			keyWords.addAll(extractKeywords(getTitle()));
-			keyWords.addAll(extractKeywords(getDescription()));
+		if (words == null){
+			words = new ArrayList<String>();
+			words.addAll(extractKeywords(getTitle()));
+			words.addAll(extractKeywords(getDescription()));
 		}
-		return keyWords;
+		return words;
 	}
 	
 	/**
@@ -195,6 +195,14 @@ public class Event extends ComparableImp{
 
 	public void setConfirmedSpeakers(List<Speaker> confirmedSpeakers) {
 		this.confirmedSpeakers = confirmedSpeakers;
+	}
+
+	public List<String> getKeyWords() {
+		return keyWords;
+	}
+
+	public void setKeyWords(List<String> keyWords) {
+		this.keyWords = keyWords;
 	}
 
 }

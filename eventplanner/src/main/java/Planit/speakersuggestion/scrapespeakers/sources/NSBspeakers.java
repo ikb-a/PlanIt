@@ -9,16 +9,16 @@ import java.util.concurrent.TimeUnit;
 
 import Planit.dataObjects.Speaker;
 import Planit.scraping.Throttler;
-import Planit.speakersuggestion.scrapespeakers.ci.GetSpeakersContract;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakerSetTrust;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakersQuery;
+import Planit.speakersuggestion.scrapespeakers.util.GetSpeakersContract;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetTrust;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
 
 import com.google.common.base.Optional;
 
+import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
-import edu.toronto.cs.se.ci.budget.basic.Time;
-import edu.toronto.cs.se.ci.utils.BasicSource;
+import edu.toronto.cs.se.ci.data.Opinion;
 
 import org.apache.commons.collections.set.*;
 import org.jsoup.Connection;
@@ -32,18 +32,8 @@ import org.jsoup.select.Elements;
  * @author wginsberg
  *
  */
-public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements GetSpeakersContract {
-	
-	/*
-	public static void main (String [] args) throws UnknownException{
-		
-		List<String> keywords = Arrays.asList(new String [] {"surf", "ocean", "beach"});
-		SpeakersQuery query = new SpeakersQuery(keywords, 5, 15);
-		Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> source = new NSBspeakers();
-		Collection<Speaker> response = source.getOpinion(query).getValue();
-		System.out.println(response);
-	}
-	*/
+public class NSBspeakers extends Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements GetSpeakersContract {
+
 	private Throttler throttler;
 	
 	/**
@@ -58,7 +48,7 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 	 * No guarantee is made that exactly n will be returned.
 	 */
 	@Override
-	public Collection<Speaker> getResponse(SpeakersQuery input) throws UnknownException {
+	public Opinion<Collection<Speaker>, SpeakerSetTrust> getOpinion(SpeakersQuery input) throws UnknownException {
 		
 		int resultPage = 1;
 		boolean iterationMadeProgress = false;
@@ -87,7 +77,12 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 			resultPage++;
 		}
 		
-		return scrapedSpeakers;
+		if (scrapedSpeakers == null){
+			return new Opinion<Collection<Speaker>, SpeakerSetTrust>(input,null, null,this);
+		}
+		else{
+			return new Opinion<Collection<Speaker>, SpeakerSetTrust>(input, scrapedSpeakers, getTrust(input, Optional.of(scrapedSpeakers)), this);
+		}
 	}
 
 	/**
@@ -183,8 +178,7 @@ public class NSBspeakers extends BasicSource<SpeakersQuery, Collection<Speaker>,
 	 */
 	@Override
 	public Expenditure[] getCost(SpeakersQuery query) throws Exception {
-		int totalSeconds = (int) Math.round(query.getMinSpeakers() * 0.1);
-		return new Expenditure [] {new Time(totalSeconds, TimeUnit.SECONDS)};
+		return new Expenditure [] {};
 	}
 
 	@Override

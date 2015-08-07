@@ -97,9 +97,9 @@ public class MostRepeatedWords extends Source<List<String>, List<String>, Void>
 			throws UnknownException {
 		List<String> response = extractKeywords(input, n);
 		if (response == null){
-			return new Opinion<List<String>, Void> (response , getTrust(input, null));
+			return new Opinion<List<String>, Void> (input, response , getTrust(input, null), this);
 		}
-		return new Opinion<List<String>, Void> (response , getTrust(input, Optional.of(response)));
+		return new Opinion<List<String>, Void> (input, response , getTrust(input, Optional.of(response)), this);
 	}
 
 	@Override
@@ -114,7 +114,7 @@ public class MostRepeatedWords extends Source<List<String>, List<String>, Void>
 
 	@Override
 	public Expenditure[] getCost(List<String> args) throws Exception {
-		return new Expenditure [] {new Time(5, TimeUnit.MILLISECONDS)};
+		return new Expenditure [] {};
 	}
 	
 }

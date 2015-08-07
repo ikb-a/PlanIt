@@ -18,17 +18,16 @@ import org.jsoup.select.Elements;
 
 import Planit.dataObjects.Speaker;
 import Planit.scraping.Throttler;
-import Planit.speakersuggestion.scrapespeakers.ci.GetSpeakersContract;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakerSetTrust;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakersQuery;
-import Planit.speakersuggestion.similarity.util.Word2Vec;
+import Planit.speakersuggestion.scrapespeakers.util.GetSpeakersContract;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetTrust;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
+import Planit.speakersuggestion.wordsimilarity.Word2Vec;
 
 import com.google.common.base.Optional;
 
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
-import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.data.Opinion;
 
 /**
@@ -41,22 +40,7 @@ import edu.toronto.cs.se.ci.data.Opinion;
  */
 public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements
 		GetSpeakersContract {
-	
-	/*
-	public static void main (String [] args){
-		
-		Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> source = new KeynoteSpeakersCanada();
-		SpeakersQuery query = new SpeakersQuery(Arrays.asList(new String [] {"Montreal", "Canada"}), 5, 10);
-		Collection<Speaker> returned;
-		try {
-			returned = source.getOpinion(query).getValue();
-			System.out.println(returned);
-		} catch (UnknownException e) {
-			e.printStackTrace();
-		}
-	}
-	*/
-	
+
 	/**
 	 * Categories as they appear on the website
 	 */
@@ -122,15 +106,15 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 			throw new UnknownException(e);
 		}
 		
-		String [] categories;
+		String [] relevantCategories;
 		try {
-			categories = getMostRelevantCategories(keywords);
+			relevantCategories = getMostRelevantCategories(keywords);
 		} catch (IOException e) {
 			throw new UnknownException(e);
 		}
 		
 		Collection<Speaker> scrapedSpeakers = new HashSet<Speaker>();
-		for (int i = 0; i< categories.length; i++){
+		for (int i = 0; i< relevantCategories.length; i++){
 			if (scrapedSpeakers.size() >= n){
 				break;
 			}
@@ -150,9 +134,9 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 			SpeakersQuery args) throws UnknownException {
 		Collection<Speaker> toSuggest = getSpeakers(args.getKeywords(), args.getMinSpeakers());
 		if (toSuggest == null){
-			return new Opinion<Collection<Speaker>, SpeakerSetTrust>(null, null);
+			return new Opinion<Collection<Speaker>, SpeakerSetTrust>(args, null, null, this);
 		}
-		return new Opinion<Collection<Speaker>, SpeakerSetTrust>(toSuggest, getTrust(args, Optional.of(toSuggest)));
+		return new Opinion<Collection<Speaker>, SpeakerSetTrust>(args, toSuggest, getTrust(args, Optional.of(toSuggest)), this);
 	}
 	
 	
@@ -214,16 +198,10 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 			}
 		}
 		catch(IOException e){
-			e.printStackTrace();
+			throw new UnknownException(e);
 		}
-		
-		//return the speakers or throw Unknown
-		if (speakers == null){
-			throw new UnknownException();
-		}
-		else{
-			return speakers;
-		}
+
+		return speakers;
 	}
 	
 	/**
@@ -287,7 +265,7 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 	/**
 	 * Given a list of keywords, determines the categories that will be the most similar to the keywords.
 	 * @param keywords A list of keywords for an event
-	 * @return The best categories out of the 16 possible ones for Keynote Speakers Canada, or null if no choice could be made
+	 * @return The best categories out of the 16 possible ones for Keynote Speakers Canada, or all categories if no choice could be made
 	 * @throws IOException 
 	 */
 	public static String [] getMostRelevantCategories(List<String> keywords) throws IOException{
@@ -297,14 +275,14 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 		double [][] similarityMatrix = Word2Vec.getInstance().similarity(categoryList, keywords);
 		
 		if (similarityMatrix == null){
-			return null;
+			return categories;
 		}
 		
 		//pick the category with the maximum similarity score in the matrix
 		//here, the maximum score is given to the word with the highest total similarity across keywords
 		int bestWordI = Word2Vec.maximalRow(similarityMatrix);
 		if (bestWordI == -1){
-			return null;
+			return categories;
 		}
 		
 		return getRawCategories(categoryList.get(bestWordI));
@@ -364,8 +342,7 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 	 */
 	@Override
 	public Expenditure[] getCost(SpeakersQuery args) throws Exception {
-		Expenditure [] cost = new Expenditure [] {new Time(throttler.getMinTimeBetweenCalls(), throttler.getTimeUnit())};
-		return cost;
+		return new Expenditure [] {};
 	}
 
 	@Override

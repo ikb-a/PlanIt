@@ -1,4 +1,4 @@
-package Planit.speakersuggestion.similarity.util;
+package Planit.speakersuggestion.wordsimilarity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -39,6 +39,32 @@ public class Word2Vec implements Closeable{
 			singletonInstance = new Word2Vec();
 		}
 		return singletonInstance;
+	}
+	
+	/**
+	 * Returns a matrix representing the pairwise similarities from two lists of words.
+	 * A similarity of -1 indicates words are outside of the model's vocabulary
+	 * Returns null if either supplied word list does not contain any words.
+	 * Note that any word containing spaces or other special characters should not be expected to exist in the vocabulary
+	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
+	 */
+	public synchronized double [][] similarity(List<String> words1, List<String> words2) throws IOException{
+		if (words1 == null || words2 == null || words1.size() < 1 || words2.size() < 1){
+			return null;
+		}
+		return requestSimilarityMatrix(words1, words2);
+	}
+	
+	/**
+	 * Closes the Word2Vec client if it is open.
+	 */
+	@Override
+	public synchronized void close(){
+		try {
+			doneWithClientProcess();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -87,34 +113,7 @@ public class Word2Vec implements Closeable{
 		long atomic = getComputationTimeNeeded().getDuration(getComputationTimeNeeded().getTimeUnit());
 		return new Time(n * atomic, getComputationTimeNeeded().getTimeUnit());
 	}
-	
-	/**
-	 * Returns a matrix representing the pairwise similarities from two lists of words.
-	 * A similarity of -1 indicates words are outside of the model's vocabulary
-	 * Returns null if either supplied word list does not contain any words.
-	 * Note that any word containing spaces or other special characters should not be expected to exist in the vocabulary
-	 * @return A matrix of word similarities where each row is a word from words1, each column is a word from words2, and each element is the similarity of the two corresponding words
-	 */
-	public synchronized double [][] similarity(List<String> words1, List<String> words2) throws IOException{
-		if (words1 == null || words2 == null || words1.size() < 1 || words2.size() < 1){
-			return null;
-		}
-		return requestSimilarityMatrix(words1, words2);
-	}
-	
-	/**
-	 * Closes the Word2Vec client if it is open.
-	 */
-	@Override
-	public synchronized void close(){
-		try {
-			doneWithClientProcess();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	
+		
 	/**
 	 * Requests and returns a word similarity matrix from the client.
 	 */

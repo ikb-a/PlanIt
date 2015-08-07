@@ -39,7 +39,7 @@ public class YahooKeywordGeneration extends Source<List<String>, List<String>, V
 		}
 		
 		List<String> keyWords = new ArrayList<String>(analysis.getAllKeywords());
-		return new Opinion<List<String>, Void>(keyWords, getTrust(input, Optional.of(keyWords)));
+		return new Opinion<List<String>, Void>(input, keyWords, getTrust(input, Optional.of(keyWords)), this);
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class YahooKeywordGeneration extends Source<List<String>, List<String>, V
 	
 	@Override
 	public Expenditure[] getCost(List<String> args) throws Exception {
-		return new Expenditure [] {new Time(50, TimeUnit.MILLISECONDS)};
+		return new Expenditure [] {};
 	}
 	
 	@Override

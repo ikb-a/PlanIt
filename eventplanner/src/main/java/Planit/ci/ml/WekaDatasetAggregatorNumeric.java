@@ -138,8 +138,13 @@ public class WekaDatasetAggregatorNumeric <I, Q> extends AggregatorWrapper<WekaC
 		instance.setClassValue(getClassification());
 		//set the values of the instance
 		for (Opinion<WekaCompatibleResponse<I>, Void> opinion : opinions){
-			int attributeIndex = getAttributeMap().get(opinion.getValue().getSource());
-			instance.setValue(attributeIndex, opinion.getValue().getNumeric());
+			try{
+				int attributeIndex = getAttributeMap().get(opinion.getValue().getSource());
+				instance.setValue(attributeIndex, opinion.getValue().getNumeric());
+			}
+			catch (NullPointerException e){
+				continue;
+			}
 		}
 		dataset.add(instance);
 	}
@@ -151,7 +156,7 @@ public class WekaDatasetAggregatorNumeric <I, Q> extends AggregatorWrapper<WekaC
 	 * @return
 	 */
 	private boolean datasetHasAttribute(Opinion<WekaCompatibleResponse<I>, Void> opinion){
-		String toCheckFor = opinion.getValue().getSource().getName();
+		String toCheckFor =  opinion.getValue().getSource().getName();
 		return dataset.attribute(toCheckFor) != null;
 	}
 	

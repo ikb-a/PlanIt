@@ -128,7 +128,7 @@ public class UncommonEnglishWords extends Source<List<String>, List<String>, Voi
 	public Opinion<List<String>, Void> getOpinion(List<String> input)
 			throws UnknownException {
 		List<String> toReturn = getUncommonWords(input, n);
-		return new Opinion<List<String>, Void> (toReturn, getTrust(input, Optional.of(toReturn)));
+		return new Opinion<List<String>, Void> (input, toReturn, getTrust(input, Optional.of(toReturn)), this);
 	}
 	
 	@Override
@@ -138,7 +138,7 @@ public class UncommonEnglishWords extends Source<List<String>, List<String>, Voi
 	
 	@Override
 	public Expenditure[] getCost(List<String> args) throws Exception {
-		return new Expenditure [] {new Time(5, TimeUnit.MILLISECONDS)};
+		return new Expenditure [] {};
 	}
 
 	@Override

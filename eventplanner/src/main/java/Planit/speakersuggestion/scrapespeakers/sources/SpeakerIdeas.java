@@ -18,9 +18,9 @@ import com.google.common.base.Optional;
 
 import Planit.dataObjects.Speaker;
 import Planit.scraping.Throttler;
-import Planit.speakersuggestion.scrapespeakers.ci.GetSpeakersContract;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakerSetTrust;
-import Planit.speakersuggestion.scrapespeakers.ci.SpeakersQuery;
+import Planit.speakersuggestion.scrapespeakers.util.GetSpeakersContract;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetTrust;
+import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
@@ -29,6 +29,9 @@ import edu.toronto.cs.se.ci.data.Opinion;
 
 /**
  * Scrapes speakers from http://www.speakerideas.com/ by searching for keywords.
+ * 
+ * Currently I suspect that I'm IP banned from speakerideas.com so this source will not be used be me.
+ * 
  * @author wginsberg
  *
  */
@@ -52,7 +55,8 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 	}
 	*/
 	
-	public SpeakerIdeas(){
+	public SpeakerIdeas() {
+		
 		if (throttler == null){
 			throttler = new Throttler(30, TimeUnit.MINUTES);
 		}
@@ -62,7 +66,7 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 	public Opinion<Collection<Speaker>, SpeakerSetTrust> getOpinion(
 			SpeakersQuery input) throws UnknownException {
 		
-		System.err.println("Aborting connection to speakerideas.com");
+		System.err.println("Aborting connection to speakerideas.com I expect we are banned :S");
 		throw new UnknownException();
 		
 		/*
