@@ -11,6 +11,7 @@ import Planit.speakersuggestion.keywordextraction.KeywordFinder;
 import Planit.speakersuggestion.scrapespeakers.SpeakerRetriever;
 import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
 import Planit.speakersuggestion.similarity.SuitabilityJudge;
+import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 
@@ -48,8 +49,9 @@ public class SpeakerSuggestor {
 	 * @return An object containing suggest speakers for an event, and the quality with which these suggests come
 	 * @throws ExecutionException If there was an exception in an internal contributional implementation
 	 * @throws InterruptedException If there was an exception in an internal contributional implementation
+	 * @throws UnknownException 
 	 */
-	public SuggestedSpeakers suggestSpeakers(Event event, int softMin, int softMax, Allowance [] budget) throws InterruptedException, ExecutionException{
+	public SuggestedSpeakers suggestSpeakers(Event event, int softMin, int softMax, Allowance [] budget) throws InterruptedException, ExecutionException, UnknownException{
 		
 		if (budget.length != 3){
 			throw new IllegalArgumentException("Illegal budget format for speaker suggestion");

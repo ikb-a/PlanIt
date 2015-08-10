@@ -18,7 +18,7 @@ import Planit.speakersuggestion.keywordextraction.util.KeywordSourceSelector;
 import edu.toronto.cs.se.ci.Aggregator;
 import edu.toronto.cs.se.ci.CI;
 import edu.toronto.cs.se.ci.Contracts;
-import edu.toronto.cs.se.ci.Estimate;
+import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.data.Result;
@@ -45,8 +45,9 @@ public class KeywordFinder {
 	 * @param args
 	 * @throws ExecutionException 
 	 * @throws InterruptedException 
+	 * @throws UnknownException 
 	 */
-	public static void main (String [] args) throws InterruptedException, ExecutionException{
+	public static void main (String [] args) throws InterruptedException, ExecutionException, UnknownException{
 		
 		/*
 		 * Create an event
@@ -101,10 +102,11 @@ public class KeywordFinder {
 	 * @param budget The budget to spend on finding keywords
 	 * @throws ExecutionException 
 	 * @throws InterruptedException 
+	 * @throws UnknownException 
 	 */
-	public List<String> getResponse(Event event, Allowance [] budget) throws InterruptedException, ExecutionException{
-		Estimate<List<String>, Void> estimate = ci.apply(event, budget);
-		Result<List<String>, Void> result = estimate.get();
+	public List<String> getResponse(Event event, Allowance [] budget) throws InterruptedException, ExecutionException, UnknownException{
+	
+		Result<List<String>, Void> result = ci.applySync(event, budget);
 		event.setKeyWords(result.getValue());
 		return result.getValue();
 	}

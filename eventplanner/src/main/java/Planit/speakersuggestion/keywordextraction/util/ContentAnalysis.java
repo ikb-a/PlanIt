@@ -1,8 +1,9 @@
-package Planit.speakersuggestion.similarity.util;
+package Planit.speakersuggestion.keywordextraction.util;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -20,10 +21,16 @@ public class ContentAnalysis {
 	
 	JSONObject json;
 	Map<String, Double> categories;
+	Collection<String> entities;
+	Collection<String> allExtractedTerms;
 	
 	public ContentAnalysis(JSONObject json) {
 		this.json = json;
 		categories = getCategories(json);
+		entities = getEntities(json);
+		allExtractedTerms = new ArrayList<String>(categories.size() + entities.size());
+		allExtractedTerms.addAll(categories.keySet());
+		allExtractedTerms.addAll(entities);
 	}
 	
 	/**
@@ -59,15 +66,71 @@ public class ContentAnalysis {
 		return categories;
 	}
 
+	/**
+	 * Extracts the names of the entities from a YQL response
+	 */
+	static private Collection<String> getEntities(JSONObject json){
+		
+		Collection<String> entities = new LinkedList<String>();
+		try{
+			//if there is only one entity this will work
+			String entitiy = json.
+					getJSONObject("query").
+					getJSONObject("results").
+					getJSONObject("entities").
+					getJSONObject("entity").
+					getJSONObject("text").
+					getString("content");
+			entities.add(entitiy);
+		}
+		catch (JSONException e){
+			//if there is more than one entity this will work
+			try{
+				JSONArray entityArray = json.
+						getJSONObject("query").
+						getJSONObject("results").
+						getJSONObject("entities").
+						getJSONArray("entity");
+				for (int i = 0; i < entityArray.length(); i++){
+					String entity = entityArray.
+							getJSONObject(i).
+							getJSONObject("text").
+							getString("content");
+					entities.add(entity);
+				}
+
+			}
+			catch (JSONException e1){
+				//nested exception
+			}
+		}
+		return entities;
+	}
 	
 	/**
-	 * Returns a list of all categories.
+	 * Returns a collection of all categories.
 	 * @return
 	 */
 	public Collection<String> getCategories(){
 		return categories.keySet();
 	}
 	
+	/**
+	 * Returns a collection of all entities.
+	 * @return
+	 */
+	public Collection<String> getEntities(){
+		return entities;
+	}
+	
+	/**
+	 * Returns all of the terms Yahoo content analysis provided
+	 * @return
+	 */
+	public Collection<String> getAllExtractedTerms() {
+		return allExtractedTerms;
+	}
+
 	/**
 	 * Returns a map which holds each category, and the score for that category
 	 * @return
@@ -83,7 +146,7 @@ public class ContentAnalysis {
 	 */
 	public Collection<String> getAllKeywords(){
 		List<String> keywords = new ArrayList<String>();
-		for (String word : getCategories()){
+		for (String word : getAllExtractedTerms()){
 			if (word.contains(" ")){
 				String [] components = word.split("\\s+");
 				for (int i = 0; i < components.length; i++){

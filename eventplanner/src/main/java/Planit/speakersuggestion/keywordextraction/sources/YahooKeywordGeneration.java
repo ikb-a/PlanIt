@@ -3,18 +3,16 @@ package Planit.speakersuggestion.keywordextraction.sources;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
+import Planit.speakersuggestion.keywordextraction.util.ContentAnalysis;
 import Planit.speakersuggestion.keywordextraction.util.WordListKeywordsContract;
-import Planit.speakersuggestion.similarity.util.ContentAnalysis;
-import Planit.speakersuggestion.similarity.util.YahooContentAnalysis;
+import Planit.speakersuggestion.keywordextraction.util.YahooContentAnalysis;
 
 import com.google.common.base.Optional;
 
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
-import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.data.Opinion;
 
 /**

@@ -1,4 +1,4 @@
-package Planit.speakersuggestion.similarity.util;
+package Planit.speakersuggestion.keywordextraction.util;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,7 +17,7 @@ import org.json.JSONTokener;
  *
  */
 public class YahooContentAnalysis {
-
+	
 	private final static String baseURL = "http://query.yahooapis.com/v1/public/yql?q=";
 	
 	/**

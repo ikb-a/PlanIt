@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import Planit.speakersuggestion.keywordextraction.util.WordListKeywordsContract;
@@ -16,7 +15,6 @@ import com.google.common.base.Optional;
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
-import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.data.Opinion;
 
 /**
