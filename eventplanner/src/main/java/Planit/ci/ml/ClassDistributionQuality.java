@@ -20,4 +20,9 @@ public class ClassDistributionQuality {
 	public double[] getDistribution() {
 		return distribution;
 	}
+	
+	@Override
+	public String toString(){
+		return distribution.toString();
+	}
 }

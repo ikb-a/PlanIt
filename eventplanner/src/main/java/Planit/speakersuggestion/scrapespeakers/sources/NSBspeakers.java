@@ -60,9 +60,11 @@ public class NSBspeakers extends Source<SpeakersQuery, Collection<Speaker>, Spea
 			//each time consult every keyword / category
 			for (String keyword : input.getKeywords()){
 				try{
-					Collection<Speaker> scrape = getSpeakers(keyword, resultPage);
+					List<Speaker> scrape = getSpeakers(keyword, resultPage);
 					if (scrape != null && scrape.size() > 0){
 						iterationMadeProgress = true;
+						//remove extras
+						scrape.subList(0,  Math.min(scrape.size(), input.maxPerKeyword())).clear();;
 						scrapedSpeakers.addAll(scrape);
 					}
 				}

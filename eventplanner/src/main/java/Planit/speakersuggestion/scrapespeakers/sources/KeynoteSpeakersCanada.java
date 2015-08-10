@@ -7,7 +7,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -95,7 +97,6 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 	
 	/**
 	 * Attempts to return n speakers in the best category that can be matched to the keywords.
-	 * There is no guarantee that exactly n speakers will be returned.
 	 */
 	public static Collection<Speaker> getSpeakers(List<String> keywords, int n) throws UnknownException{
 		
@@ -122,11 +123,41 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 			scrapedSpeakers.addAll(speakers);
 		}
 		
+		//remove extras
+		scrapedSpeakers = randomSubset(scrapedSpeakers, n);
+		
 		for (Speaker speaker : scrapedSpeakers){
 			getDetails(speaker);
 		}
 		
 		return scrapedSpeakers;
+	}
+	
+	/**
+	 * Returns a random subset of speakers
+	 * @param speakers the superset to draw from
+	 * @param n the number of speakeres to return
+	 * @return
+	 */
+	private static Collection<Speaker> randomSubset(Collection<Speaker> speakers, int n){
+		if (speakers == null){
+			return new ArrayList<Speaker>(0);
+		}
+		
+		Collection<Speaker> subset = new ArrayList<Speaker>(n);
+		
+		Random random = new Random();
+		
+		for (int q = 0; q < n && !speakers.isEmpty(); q++){
+			int rand_i = random.nextInt(speakers.size());
+			Iterator<Speaker> iter = speakers.iterator();
+			for (int i = 0 ; i < rand_i - 1; i++){
+				iter.next();
+			}
+			subset.add(iter.next());
+		}
+		
+		return subset;
 	}
 	
 	@Override

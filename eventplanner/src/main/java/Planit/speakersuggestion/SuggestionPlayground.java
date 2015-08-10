@@ -3,8 +3,6 @@ package Planit.speakersuggestion;
 import java.util.concurrent.TimeUnit;
 
 import Planit.dataObjects.Event;
-import Planit.speakersuggestion.keywordextraction.KeywordFinder;
-import Planit.speakersuggestion.scrapespeakers.SpeakerRetriever;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 
@@ -13,16 +11,20 @@ public class SuggestionPlayground {
 	final static String arffLocation = "src/main/resources/speaker suggestion/dataset/_dataset.arff";
 	
 	public static void main(String[] args) throws Exception {
-
-		KeywordFinder.registerSources();
-		SpeakerRetriever.registerSources();
 		
 		SpeakerSuggestor suggestor = SpeakerSuggestor.getInstance();
 		Event event;
 		Allowance [] budget;
 		SuggestedSpeakers speakers;
 		
-		event = Event.createEvent("New Summer Drop In Classes").setDescription("We make it easy for you to add more dance to your life. Drop-in classes are designed to let you choose when you want to dance and what class you want to take. Drop in to any of these classes using our 5-class card, 10-class card, 20-class card, or monthly unlimited memberships. Take advantage of our great introductory offer for new students where you can attend unlimited classes for two weeks for only $50. No need to sign up, call ahead, or prepay. Just show up and dance. We have added new drop-in classes for summer! They are being added throughout May and June, and are only offered for the summer season. Check them out now! Beginner Pointe w/ Caroline - starts Tues May 5 (3:00pm-4:00pm) Waacking (Beg/Int) w/ Jennalee - starts Tues May 5 (5:00pm-6:00pm) Jazz Choreo (Beg/Int) w/ Kate - starts Thurs May 7 (5:00pm-6:00pm) Tap Technique w/ Jerome - starts Wed May 13 (4:00pm-5:00pm) Tap Technique w/ Dianne - starts Fri May 15 (5:00pm-6:00pm) House w/ Raoul - starts Tues June 9 (9:00pm-10:00pm) Stiletto Burlesque (Beg/Int) w/ Shawn - starts Thurs June 11 (8:30pm-10:00pm) AfroBeats w/ Greg Samba - starts Fri June 12 (7:30pm-8:30pm) Urban Freestyle w/ Jennalee - starts Fri June 12 (7:30pm-8:30pm) Party Moves w/ KJ McKnight - starts Sat June 13 (11:00am-12:00pm) Zumba w/ Dione Mason - starts Sat June 13 (1:45pm-2:45pm) Dancehall w/ Mikhail - starts Sat June 13 (4:00pm-5:00pm) Beginner Pointe w/ Sarah - starts Sat June 21 (4:00pm-5:00pm) Be sure to keep checking our website for schedule updates, and for detailed descriptions of our classes and instructors. See you in the studio! City Dance Corps. 489 Queen St West. Toronto ON. 416-260-2356. info@citydancecorps.com http://www.citydancecorps.com ");
+		event = Event.createEvent("Music Mondays in the Park").setDescription("Meet friends and neighbours in the part to listen to great music on late summer afternoons. Bring your picnic blanket or lawn chair and come ready to be entertained! ");
+		//event = Event.createEvent("Heavenly Food Trucks at South Gate Church").setDescription("It's food truck frenzy at South Gate Church every Monday night this July and August (except Aug. 3) from 4:30 - 8 pm. Join us for this divine event! ");
+		//event = Event.createEvent("CONNECT GRAD SHOW SUMMER 2015").setDescription("Learn more: connectgradshow.com HUMBER COLLEGE, (LAKE SHORE CAMPUS) 19 Colonel Samuel Smith Park Dr  Etobicoke, ON M8V 4B6 August 10th, 2015 @ 4:30PM–8PM Join us for our semi-annual Graphic Design for Print & Web and Web Design, Development & Maintenance Portfolio Show on Monday, August 10th 2015 at Humber College’s Lake Shore campus in room L1017 located in the L-Building between 4:30pm–8pm. This event is open to industry guests, alumni, faculty and potential students of the GDPW and WDDM programs. This is a great opportunity for our graduates to make connections with industry, alumni and faculty as they as they embark on their careers. We would love for you to join us in making this an epic day for our recent graduates. ");
+		//event = Event.createEvent("Annual Messy Church Vacation Bible Club: Everest - Conquering Challenges").setDescription("2nd Annual Messy Church (For the whole family!)Vacation Bible Club: Everest - Conquering Challenges August 10-14, 2015 * 5-7pm (Supper included!) Christ Church St. James, 194 Park Lawn Road, Etobicoke Each day, kids participate in small groups, called Climbing Crews, and discover practical ways to hold on to God’s mighty power! Not only will they experience exciting Bible adventures but they’ll also watch for God in everyday life through something called God Sightings™. You and your kids will discover that God is active in our lives and that His fingerprints are everywhere! Everest is filled with epic Bible-learning experiences kids will see, hear, touch, and even taste! KidVid Cinema shares real stories of real kids who rely on God’s power to face life’s challenges! Plus, team-building games, cool Bible songs, and tasty treats keep everyone on the move.To Register : Call the church office at 416 251 8711 or go online at http://www.christchurchstjames.ca/ ");		
+		//event = Event.createEvent("15th annual Canadian Summer School on Quantum Information: Aug 10-14").setDescription("A week prior to the 6th conference for Quantum Information and Quantum Control (QIQC), the Fields Institute will be running the 15th annual Canadian Summer School on Quantum Information. Further information is available here. ");
+		//event = Event.createEvent("Equinox Run Club").setDescription("JOIN US FOR EQUINOX RUN CLUBNo matter your goal, this workout inspires more from your run. Great for the marathoner or the purist who just enjoys to run, improve your stride, cardiovascular endurance, and deliver the physical and inner strength necessary to achieve your personal goals! Created by Wes Perdesen.EVERY MONDAY'S STARTING @ 5:00pm AUGUST 10TH THROUGH SEPTEMBER 28TH ");
+
+		
 		budget = new Allowance [] {new Time(1, TimeUnit.SECONDS), new Time(10, TimeUnit.SECONDS), new Time(1, TimeUnit.MINUTES)};
 		speakers = suggestor.suggestSpeakers(event, 1, 5, budget);
 		

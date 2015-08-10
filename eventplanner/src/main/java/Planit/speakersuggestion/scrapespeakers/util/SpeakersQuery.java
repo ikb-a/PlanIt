@@ -48,5 +48,36 @@ public class SpeakersQuery {
 	public int getMaxSpeakers() {
 		return maxSpeakers;
 	}
+
+	public void setMinSpeakers(int minSpeakers) {
+		this.minSpeakers = minSpeakers;
+	}
+
+	public void setMaxSpeakers(int maxSpeakers) {
+		this.maxSpeakers = maxSpeakers;
+	}
 	
+	/**
+	 * Returns the min divided by the number of keywords
+	 * @return
+	 */
+	public int minPerKeyword(){
+		int returnValue = 1;
+		if (keywords.size() != 0){
+			returnValue = minSpeakers / keywords.size();
+		}
+		return Math.min(1, returnValue);
+	}
+	
+	/**
+	 * Returns the max divided by the number of keywords
+	 * @return
+	 */
+	public int maxPerKeyword(){
+		int returnValue = 1;
+		if (keywords.size() != 0){
+			returnValue = maxSpeakers / keywords.size();
+		}
+		return Math.max(1, returnValue);
+	}
 }

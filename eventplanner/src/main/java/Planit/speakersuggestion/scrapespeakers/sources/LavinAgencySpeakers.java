@@ -33,7 +33,7 @@ import edu.toronto.cs.se.ci.data.Opinion;
  */
 public class LavinAgencySpeakers extends Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements
 		GetSpeakersContract {
-
+	
 	private Throttler throttler;
 	
 	public LavinAgencySpeakers() {
@@ -43,18 +43,24 @@ public class LavinAgencySpeakers extends Source<SpeakersQuery, Collection<Speake
 
 	@Override
 	public Opinion<Collection<Speaker>, SpeakerSetTrust> getOpinion(
-			SpeakersQuery args) throws UnknownException {
+			SpeakersQuery query) throws UnknownException {
 		
-		Collection<Speaker> speakers = new ArrayList<Speaker>();
+		List<Speaker> speakers = new ArrayList<Speaker>();
 		
 		//search for each keyword to get speakers
-		for (String keyword : args.getKeywords()){
+		for (String keyword : query.getKeywords()){
 			try {
 				
 				throttler.next();
 				
 				Document document = search(keyword);
-				Collection<Speaker> scraped = getSpeakersFromHTMLPage(document);
+				List<Speaker> scraped = getSpeakersFromHTMLPage(document);
+				
+				//remove extras
+				if (scraped.size() > query.maxPerKeyword()){
+					scraped.subList(query.maxPerKeyword(), scraped.size()).clear();			
+				}
+				
 				if (scraped != null){
 					speakers.addAll(scraped);
 				}
@@ -62,7 +68,7 @@ public class LavinAgencySpeakers extends Source<SpeakersQuery, Collection<Speake
 				continue;
 			}
 		}
-		
+
 		//go to the personal page of each speaker to get more information
 		for (Speaker speaker : speakers){
 			try {
@@ -76,7 +82,7 @@ public class LavinAgencySpeakers extends Source<SpeakersQuery, Collection<Speake
 			}
 		}
 		
-		return new Opinion<Collection<Speaker>, SpeakerSetTrust>(args, speakers, getTrust(args, Optional.of(speakers)), this);
+		return new Opinion<Collection<Speaker>, SpeakerSetTrust>(query, speakers, getTrust(query, Optional.of(speakers)), this);
 	}
 	
 	/**
@@ -110,10 +116,10 @@ public class LavinAgencySpeakers extends Source<SpeakersQuery, Collection<Speake
 	 * @param document
 	 * @return
 	 */
-	public static Collection<Speaker> getSpeakersFromHTMLPage(Document document){
+	public static List<Speaker> getSpeakersFromHTMLPage(Document document){
 		
 		Elements speakerElements = document.select(".speaker_information");
-		Collection<Speaker> speakers = new ArrayList<Speaker>(speakerElements.size());
+		List<Speaker> speakers = new ArrayList<Speaker>(speakerElements.size());
 		for (Element element : speakerElements){
 			String name = element.select(".title").first().text();
 			String title = element.select(".caption").first().text();

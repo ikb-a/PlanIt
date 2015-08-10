@@ -67,6 +67,7 @@ public class DataPlayground {
 		 * Invoke on all the data
 		 */
 		
+		/*
 		cases = loadCases(singleCaseFile);
 		classification = 1d;
 		if (cases != null){
@@ -76,7 +77,8 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
-
+*/
+		
 		cases = loadCases(lowCasesFile);
 		classification = 1d;
 		if (cases != null){
@@ -123,6 +125,7 @@ public class DataPlayground {
 			}
 		}
 
+		
 		/*
 		 * Save the results
 		 */

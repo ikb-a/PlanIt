@@ -11,6 +11,8 @@ import Planit.speakersuggestion.keywordextraction.KeywordFinder;
 import Planit.speakersuggestion.scrapespeakers.SpeakerRetriever;
 import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
 import Planit.speakersuggestion.similarity.SuitabilityJudge;
+import Planit.speakersuggestion.similarity.SuitabilityJudgeMLclassifier;
+import Planit.speakersuggestion.similarity.SuitabilityJudgeSummingAggregation;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
@@ -23,7 +25,7 @@ public class SpeakerSuggestor {
 	static private SpeakerSuggestor instance;
 	private SpeakerSuggestor() throws Exception{
 		speakerRetriever = new SpeakerRetriever();
-		speakerJudge = SuitabilityJudge.getInstance();
+		speakerJudge = new SuitabilityJudgeSummingAggregation();
 	}
 	/**
 	 * @return An instance of SpeakerSuggestor
@@ -64,7 +66,7 @@ public class SpeakerSuggestor {
 		 * Get keywords
 		 */
 		KeywordFinder keywordFinder = new KeywordFinder();
-		List<String> keywords = keywordFinder.getResponse(event, new Allowance [] {budget[0]});
+		List<String> keywords = keywordFinder.getKeywords(event);
 		
 		System.err.printf("DEBUG: --- keywords=%s\n", keywords.toString());
 		
@@ -72,13 +74,14 @@ public class SpeakerSuggestor {
 		 * Get speakers by searching for keywords
 		 */
 		//use the maximum multiplied by 5 so that we can get enough speakers to discard the bad ones
-		Collection<Speaker> candidateSpeakers = speakerRetriever.getResponse(new SpeakersQuery(keywords, softMax * 5, softMax * 5), new Allowance [] {budget[1]}).get().getValue();
+		Collection<Speaker> candidateSpeakers = speakerRetriever.getResponse(new SpeakersQuery(keywords, softMax * 5, softMax * 5));
 
 		System.err.printf("DEBUG: --- candidate speakers=%s\n", candidateSpeakers.toString());
 		
 		/*
 		 * Rank the speakers by suitability
 		 */
+		System.err.printf("DEBUG: --- using non-ML aggregation\n");
 		speakerJudge.evaluate(event, candidateSpeakers, new Allowance [] {budget[2]});
 		SuggestedSpeakers suggestion = speakerJudge.getSuggestion();
 		
