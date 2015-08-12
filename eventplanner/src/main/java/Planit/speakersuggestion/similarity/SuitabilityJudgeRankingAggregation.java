@@ -16,6 +16,7 @@ import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMax;
 import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMax;
 import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMean;
+import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;
 import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
 import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
@@ -32,21 +33,22 @@ import edu.toronto.cs.se.ci.selectors.AllSelector;
 
 /**
  * Holds the contributional implementation of the similarity part of the speaker suggestion feature.
- * This implementation uses a summing aggregation, where all of the responses of the sources are added together.
+ * This implementation uses a ranking aggregation, where each similarity source gives a score, and these scores are summed so that speakers can be ranked accordingly.
  * @author wginsberg
  *
  */
-public class SuitabilityJudgeSummingAggregation implements SuitabilityJudge{
+public class SuitabilityJudgeRankingAggregation implements SuitabilityJudge{
 
 	private SuggestedSpeakers suggestion;
 	
 	private CI<ComparisonRequest, Double, Void, Void> ci;
 	
-	public SuitabilityJudgeSummingAggregation() {
+	public SuitabilityJudgeRankingAggregation() {
 		/*
 		 * Register some sources if needed
 		 */
 		if (Contracts.discover(SimilarityContractWekaCompatible.class).isEmpty()){
+			
 			Contracts.register(new KeywordWord2vecMax());
 			Contracts.register(new KeywordWord2vecMean());
 			Contracts.register(new KeywordWordnetMax());
@@ -55,6 +57,8 @@ public class SuitabilityJudgeSummingAggregation implements SuitabilityJudge{
 			Contracts.register(new DescriptionWord2vecMean());
 			Contracts.register(new DescriptionWordnetMax());
 			Contracts.register(new DescriptionWordnetMean());
+			
+			Contracts.register(new DocumentSimilaritySource());
 		}
 		
 		ci = new CI<ComparisonRequest, Double, Void, Void>(

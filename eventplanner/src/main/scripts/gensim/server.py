@@ -177,4 +177,8 @@ class Word2VecPlaceHolder():
 		return -1
 
 if __name__ == "__main__":
+
+	from tendo import singleton
+	me = singleton.SingleInstance()
+
 	main()

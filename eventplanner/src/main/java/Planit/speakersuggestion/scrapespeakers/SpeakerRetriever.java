@@ -64,8 +64,6 @@ public class SpeakerRetriever {
 	SpeakerSetUnionAggregator aggregator;
 	
 	public SpeakerRetriever(){
-		keynoteSource = new KeynoteSpeakersCanada();
-		lavinSource = new LavinAgencySpeakers();
 		nsbSource = new NSBspeakers();
 		premiereSource = new PremiereSpeakersBureau();
 		
@@ -90,12 +88,14 @@ public class SpeakerRetriever {
 		if (dividedQuery.getMaxSpeakers() < 1){
 			dividedQuery.setMaxSpeakers(1);
 		}
-		
-		System.err.println("DEBUG: --- Only using PremiereSpeakersBureau");
+
 		try{
 			opinions.add(premiereSource.getOpinion(dividedQuery));
 		} catch (UnknownException e){}
-
+		try{
+			opinions.add(nsbSource.getOpinion(dividedQuery));
+		} catch (UnknownException e){}
+		
 		Optional<Result<Collection<Speaker>, Double>> aggregation = aggregator.aggregate(opinions);
 		if (aggregation.isPresent()){
 			return aggregation.get().getValue();

@@ -70,7 +70,7 @@ public class Event extends ComparableImp{
 				getEndTime(),
 				getVenueName(),
 				getVenueAddress(),
-				getTruncatedDescription(70));
+				getTruncatedDescription(140));
 	}
 	
 	public String getTruncatedDescription(int characterLimit){

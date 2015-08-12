@@ -25,9 +25,7 @@ public class EventTime {
 	private static SimpleDateFormat dateFormat;
 	
 	public EventTime(){
-		if (dateFormat == null){
-			dateFormat = new SimpleDateFormat();
-		}
+		this("", "", "", "");
 	}
 	
 	public EventTime(String start_date, String end_date, String start_time, String end_time){
@@ -35,6 +33,9 @@ public class EventTime {
 		this.start_time = start_time;
 		this.end_date = end_date;
 		this.end_time = end_time;
+		if (dateFormat == null){
+			dateFormat = new SimpleDateFormat();
+		}
 	}
 
 	public Date getStartDate(){

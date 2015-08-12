@@ -16,6 +16,7 @@ import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMax;
 import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMax;
 import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMean;
+import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;
 import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
 import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
@@ -50,6 +51,7 @@ public class DataPlayground {
 		 * Set up
 		 */
 
+
 		Contracts.register(new SourceAdaptor(new DescriptionWord2vecMax()));
 		Contracts.register(new SourceAdaptor(new DescriptionWord2vecMean()));
 		Contracts.register(new SourceAdaptor(new DescriptionWordnetMax()));
@@ -59,6 +61,8 @@ public class DataPlayground {
 		Contracts.register(new SourceAdaptor(new KeywordWordnetMax()));
 		Contracts.register(new SourceAdaptor(new KeywordWordnetMean()));
 		
+		Contracts.register(new SourceAdaptor(new DocumentSimilaritySource()));
+		
 		TrainingDataCreator wekaDataCreator = new TrainingDataCreator();
 		Collection<ComparisonRequest> cases;
 		double classification;
@@ -67,7 +71,7 @@ public class DataPlayground {
 		 * Invoke on all the data
 		 */
 		
-		/*
+/*	
 		cases = loadCases(singleCaseFile);
 		classification = 1d;
 		if (cases != null){
