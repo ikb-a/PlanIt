@@ -1,0 +1,23 @@
+KeywordWord2vecMax - 1.000000
+KeywordWordnetMax - 1.000000
+DescriptionWord2vecMean - 2.000000
+DocumentSimilaritySource - 3.000000
+
+Keyword sources were comparing these two words lists:
+Event : [community, intelligent, cities, livability, icf, mayors, Toronto]
+Speaker : [Business & Workplace, Innovation & Change Management, Performance & Productivity]
+
+Debugging this case revealed something important: when speech topics were compared to event keywords we did not parse the speech topics into their component words. After a small change we are now comparing:
+
+Event : [community, intelligent, cities, livability, icf, mayors, Toronto]
+Speaker : [business, workplace, innovation, change, management, performance, productivity]
+
+KeywordWord2vecMax - 1.000000
+KeywordWordnetMax - 3.000000
+DescriptionWord2vecMean - 2.000000
+DocumentSimilaritySource - 3.000000
+
+The result of this change was that the source KeywordWordnetMax went from BAD to BEST, as we want!
+This change was I'll call it a 'correctness' change. The old version was logically not doing what It was supposed to do.
+
+Remaining is the KeywordWord2vecMax source...

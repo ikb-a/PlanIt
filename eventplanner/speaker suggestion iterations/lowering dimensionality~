@@ -1,0 +1,72 @@
+I am going to lower dimensionality in two ways
+1) Reduce the number of sources
+2) Discretize each source to only 3 outputs
+
+1) Reducing the number of sources:
+
+	Suggested by attrbiute selection:
+		-Word2Vec event keyword vs speaker topic max
+		-Wordnet  event keyword vs speaker topic max
+		-Word2Vec event description vs speaker bio mean
+
+	Because I want to:
+		-Vitalie Scurtu's Document similarity
+
+2) Discretize each source to 3 outputs
+
+For each source I will set threshold intervals for "bad", "good", and "best".
+The intervals will be informed based on what outputs these sources actually gave when
+invoked on my data.
+
+e.g. Word2Vec event keyword vs speaker topic max only gave results in [0, 0.461]
+so I am assigning
+BAD = [0, 0.15)
+GOOD = [0.15, 0.3]
+BEST = (0.3, 1]
+
+--------------------------------------------
+Word2Vec event keyword vs speaker topic max
+
+range [0, 0.461]
+mean 0.053
+std dev 0.107
+
+BAD = [0, 0.15)
+GOOD = [0.15, 0.3]
+BEST = (0.3, 1]
+--------------------------------------------
+Wordnet event keyword vs speaker topic max
+
+range [0, 0.824]
+mean = 0.126
+std dev = 0.232
+
+BAD = [0, 0.27)
+GOOD = [0.27, 0.55]
+BEST = (0.55, 1]
+
+--------------------------------------------
+Word2Vec event description vs speaker bio mean
+
+range [-0.429, 0.023]
+mean = [-0.181]
+stdd dev = 0.098
+
+BAD = [-1, -0.27)
+GOOD = [-0.27, 0.18]
+BEST = (0.18, 1]
+
+--------------------------------------------
+DocumentSimilarity
+
+range [0.047, 0.619]
+mean 0.258
+std dev 0.127
+
+BAD = [0, 0.21)
+GOOD = [0.21, 0.41]
+BEST = (0.41, 1]
+--------------------------------------------
+
+
+

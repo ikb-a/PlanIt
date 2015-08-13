@@ -12,18 +12,14 @@ import java.util.stream.Collectors;
 import Planit.dataObjects.Event;
 import Planit.dataObjects.Speaker;
 import Planit.speakersuggestion.SuggestedSpeakers;
-import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMax;
-import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
-import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMax;
-import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMean;
-import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;
-import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
-import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMean;
-import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
-import Planit.speakersuggestion.similarity.sources.KeywordWordnetMean;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource1;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource2;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource3;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource4;
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import Planit.speakersuggestion.similarity.util.SimilarityContractDouble;
 import Planit.speakersuggestion.similarity.util.SimilarityContractWekaCompatible;
+import Planit.speakersuggestion.similarity.util.SourceAdaptor;
 import Planit.speakersuggestion.similarity.util.SummingAggregator;
 import edu.toronto.cs.se.ci.CI;
 import edu.toronto.cs.se.ci.Contracts;
@@ -49,16 +45,10 @@ public class SuitabilityJudgeRankingAggregation implements SuitabilityJudge{
 		 */
 		if (Contracts.discover(SimilarityContractWekaCompatible.class).isEmpty()){
 			
-			Contracts.register(new KeywordWord2vecMax());
-			Contracts.register(new KeywordWord2vecMean());
-			Contracts.register(new KeywordWordnetMax());
-			Contracts.register(new KeywordWordnetMean());
-			Contracts.register(new DescriptionWord2vecMax());
-			Contracts.register(new DescriptionWord2vecMean());
-			Contracts.register(new DescriptionWordnetMax());
-			Contracts.register(new DescriptionWordnetMean());
-			
-			Contracts.register(new DocumentSimilaritySource());
+			Contracts.register(new SourceAdaptor(new DiscreteSource1()));
+			Contracts.register(new SourceAdaptor(new DiscreteSource2()));
+			Contracts.register(new SourceAdaptor(new DiscreteSource3()));
+			Contracts.register(new SourceAdaptor(new DiscreteSource4()));
 		}
 		
 		ci = new CI<ComparisonRequest, Double, Void, Void>(

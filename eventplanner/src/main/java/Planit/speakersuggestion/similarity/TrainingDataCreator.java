@@ -43,6 +43,8 @@ public class TrainingDataCreator {
 	 */
 	public void invokeOnLabeledInput(Collection<ComparisonRequest> cases, double classification, Allowance [] budget) throws Throwable{
 		
+		
+		
 		//set the classification which should be used when the case is turned into an instance in a dataset
 		aggregator.setClassification(classification);
 		

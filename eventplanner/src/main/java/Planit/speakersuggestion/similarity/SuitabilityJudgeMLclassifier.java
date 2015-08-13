@@ -12,14 +12,10 @@ import Planit.ci.ml.WekaCompatibleResponse;
 import Planit.dataObjects.Event;
 import Planit.dataObjects.Speaker;
 import Planit.speakersuggestion.SuggestedSpeakers;
-import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMax;
 import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
-import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMax;
-import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMean;
+import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;
 import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
-import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
-import Planit.speakersuggestion.similarity.sources.KeywordWordnetMean;
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import Planit.speakersuggestion.similarity.util.SimilarityContractWekaCompatible;
 import Planit.speakersuggestion.similarity.util.SourceAdaptor;
@@ -117,14 +113,10 @@ public class SuitabilityJudgeMLclassifier implements SuitabilityJudge {
 		 * Register some sources if needed
 		 */
 		if (Contracts.discover(SimilarityContractWekaCompatible.class).isEmpty()){
-			Contracts.register(new SourceAdaptor(new DescriptionWord2vecMax()));
 			Contracts.register(new SourceAdaptor(new DescriptionWord2vecMean()));
-			Contracts.register(new SourceAdaptor(new DescriptionWordnetMax()));
-			Contracts.register(new SourceAdaptor(new DescriptionWordnetMean()));
 			Contracts.register(new SourceAdaptor(new KeywordWord2vecMax()));
-			Contracts.register(new SourceAdaptor(new KeywordWord2vecMean()));
 			Contracts.register(new SourceAdaptor(new KeywordWordnetMax()));
-			Contracts.register(new SourceAdaptor(new KeywordWordnetMean()));
+			Contracts.register(new SourceAdaptor(new DocumentSimilaritySource()));
 		}
 		
 		Aggregator<WekaCompatibleResponse<ComparisonRequest>, Void, ClassDistributionQuality> aggregator;

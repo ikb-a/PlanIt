@@ -12,7 +12,7 @@ import edu.cmu.lti.ws4j.WS4J;
  *
  */
 public class WordnetWUP {
-
+	
 	/**
 	 * Analyze the relatedness of two words
 	 * @param word1
@@ -20,7 +20,15 @@ public class WordnetWUP {
 	 * @return
 	 */
 	static public double compare(String word1, String word2){
-		return WS4J.runWUP(word1, word2);
+		Double similarity = WS4J.runWUP(word1, word2);
+		
+		if (similarity < 0d){
+			return 0d;
+		}
+		if (similarity > 1d){
+			return 1d;
+		}
+		return similarity;
 	}
 	
 	/**

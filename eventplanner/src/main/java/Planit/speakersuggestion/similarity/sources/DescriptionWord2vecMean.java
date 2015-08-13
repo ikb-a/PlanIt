@@ -27,14 +27,18 @@ public class DescriptionWord2vecMean extends Source<ComparisonRequest, Double, V
 	public Opinion<Double, Void> getOpinion(ComparisonRequest args)
 			throws UnknownException {
 		
+		return new Opinion<Double, Void>(args, similarity(args), null, this);
+		
+	}
+	
+	public static Double similarity(ComparisonRequest args) throws UnknownException{
 		try {
 			double [][] similarityMatrix = Word2Vec.getInstance().similarity(args.getEvent().getWords(), args.getSpeaker().getWords());
 			double mean = MatrixUtil.mean(similarityMatrix);
-			return new Opinion<Double, Void>(args, mean, null, this);
+			return mean;
 		} catch (IOException e) {
 			throw new UnknownException(e);
 		}
-		
 	}
 	
 	@Override

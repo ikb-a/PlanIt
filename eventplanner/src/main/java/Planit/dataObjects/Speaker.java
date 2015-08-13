@@ -20,6 +20,7 @@ public class Speaker extends ComparableImp{
 	protected String bio;
 	protected ArrayList<URL> pages;
 	private transient List<String> words;
+	private transient List<String> topicKeywords;
 	
 	/**
 	 * Creates and returns a new Speaker object
@@ -179,5 +180,19 @@ public class Speaker extends ComparableImp{
 			words.addAll(extractKeywords(getBio()));			
 		}
 		return words;
+	}
+	
+	/**
+	 * List of topics as keywords
+	 * @return All topics split on spaces and with punctuation removed
+	 */
+	public synchronized List<String> getTopicKeywords(){
+		if (topicKeywords == null){
+			topicKeywords = new ArrayList<String>();
+			for (String topic : getTopics()){
+				topicKeywords.addAll(extractKeywords(topic));
+			}
+		}
+		return topicKeywords;
 	}
 }

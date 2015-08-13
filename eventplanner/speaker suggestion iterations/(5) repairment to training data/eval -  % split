@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes 
+Relation:     speaker-suitability-weka.filters.unsupervised.attribute.NumericToNominal-R1-weka.filters.unsupervised.attribute.Reorder-R2-last,1-weka.filters.supervised.instance.ClassBalancer
+Instances:    247
+Attributes:   5
+              Word2Vec event keyword vs speaker topic max (discrete)
+              Wordnet event keyword vs speaker topic max (discrete)
+              Word2Vec event description vs speaker bio mean (discrete)
+              Document Similarity - Vitalie Scurtu (discrete)
+              classification
+Test mode:split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                                             Class
+Attribute                                                        1      2      3
+                                                            (0.33) (0.33) (0.33)
+=================================================================================
+Word2Vec event keyword vs speaker topic max (discrete)
+  mean                                                       1.2871 1.3521 1.4521
+  std. dev.                                                  0.4738 0.4776 0.6202
+  weight sum                                                82.333480.077682.3333
+  precision                                                       1      1      1
+
+Wordnet event keyword vs speaker topic max (discrete)
+  mean                                                        2.297  2.662 2.4932
+  std. dev.                                                  0.6378 0.5019 0.6437
+  weight sum                                                82.333480.077682.3333
+  precision                                                       1      1      1
+
+Word2Vec event description vs speaker bio mean (discrete)
+  mean                                                       1.8317 1.8493 1.7123
+  std. dev.                                                  0.3741 0.3577 0.4527
+  weight sum                                                82.333482.333382.3333
+  precision                                                       1      1      1
+
+Document Similarity - Vitalie Scurtu (discrete)
+  mean                                                       2.6139 2.4658 2.5205
+  std. dev.                                                   0.526 0.6638 0.6643
+  weight sum                                                82.333482.333382.3333
+  precision                                                       1      1      1
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correctly Classified Instances          39.2962          46.2054 %
+Incorrectly Classified Instances        45.7507          53.7946 %
+Kappa statistic                          0.194 
+Mean absolute error                      0.42  
+Root mean squared error                  0.4684
+Relative absolute error                 94.2956 %
+Root relative squared error             99.1051 %
+Total Number of Instances               85.0469
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.484     0.264      0.436     0.484     0.459      0.619    1
+                 0.52      0.279      0.48      0.52      0.499      0.614    2
+                 0.393     0.264      0.468     0.393     0.427      0.617    3
+Weighted Avg.    0.462     0.269      0.463     0.462     0.461      0.617
+
+=== Confusion Matrix ===
+
+  a     b     c      <-- classified as
+ 12.23  5.71  7.34 |     a = 1
+  6.77 14.66  6.77 |     b = 2
+  9.02 10.15 12.41 |     c = 3
+
+

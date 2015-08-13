@@ -1,5 +1,7 @@
 package Planit.speakersuggestion.wordsimilarity.util;
 
+import java.util.Arrays;
+
 /**
  * A class with methods which provide some utility when working with word similarity matrices.
  * @author wginsberg
@@ -61,4 +63,19 @@ public class MatrixUtil {
 		return totalValue / totalEntries;
 	}
 	
+	static public String toString(double [][] matrix){
+		if (matrix == null){
+			return null;
+		}
+		StringBuilder sb = new StringBuilder();
+		sb.append("[");
+		for (int i = 0; i < matrix.length; i++){
+			sb.append(Arrays.toString(matrix[i]));
+			if (i < matrix.length - 1){
+				sb.append(",\n");
+			}
+		}
+		sb.append("]");
+		return sb.toString();
+	}
 }

@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes 
+Relation:     speaker-suitability-weka.filters.unsupervised.attribute.NumericToNominal-R1-weka.filters.unsupervised.attribute.Reorder-R2-last,1-weka.filters.supervised.instance.ClassBalancer-weka.filters.unsupervised.attribute.Remove-R2,4
+Instances:    247
+Attributes:   3
+              Word2Vec event keyword vs speaker topic max (discrete)
+              Wordnet event keyword vs speaker topic max (discrete)
+              classification
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                                          Class
+Attribute                                                     1      2      3
+                                                         (0.33) (0.33) (0.33)
+==============================================================================
+Word2Vec event keyword vs speaker topic max (discrete)
+  mean                                                    1.0792 1.4521  1.137
+  std. dev.                                               0.3355 0.7771  0.416
+  weight sum                                             82.333482.333382.3333
+  precision                                                    1      1      1
+
+Wordnet event keyword vs speaker topic max (discrete)
+  mean                                                    1.3168 1.4521 1.2603
+  std. dev.                                               0.5252  0.741 0.5974
+  weight sum                                             82.333482.333382.3333
+  precision                                                    1      1      1
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          95.4768          38.6546 %
+Incorrectly Classified Instances       151.5233          61.3454 %
+Kappa statistic                          0.0798
+Mean absolute error                      0.4153
+Root mean squared error                  0.4784
+Relative absolute error                 93.4185 %
+Root relative squared error            101.4684 %
+Total Number of Instances              247.0001
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.762     0.671      0.362     0.762     0.491      0.49     1
+                 0.274     0.108      0.559     0.274     0.368      0.538    2
+                 0.123     0.141      0.304     0.123     0.175      0.509    3
+Weighted Avg.    0.387     0.307      0.409     0.387     0.345      0.513
+
+=== Confusion Matrix ===
+
+  a     b     c      <-- classified as
+ 62.77  6.52 13.04 |     a = 1
+ 49.63 22.56 10.15 |     b = 2
+ 60.9  11.28 10.15 |     c = 3
+
+

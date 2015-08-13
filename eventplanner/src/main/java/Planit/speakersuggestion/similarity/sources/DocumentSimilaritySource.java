@@ -29,6 +29,10 @@ public class DocumentSimilaritySource extends Source<ComparisonRequest, Double, 
 	public Opinion<Double, Void> getOpinion(ComparisonRequest args)
 			throws UnknownException {
 
+			return new Opinion<Double, Void>(args, similarity(args), null, this);
+	}
+	
+	public static Double similarity(ComparisonRequest args) throws UnknownException{
 		Event e = args.getEvent();
 		Speaker s = args.getSpeaker();
 		
@@ -39,7 +43,7 @@ public class DocumentSimilaritySource extends Source<ComparisonRequest, Double, 
 			throw new UnknownException();
 		}
 		else{
-			return new Opinion<Double, Void>(args, similarity, null, this);
+			return similarity;
 		}
 	}
 	

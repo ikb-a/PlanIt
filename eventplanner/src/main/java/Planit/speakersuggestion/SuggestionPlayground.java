@@ -47,7 +47,7 @@ public class SuggestionPlayground {
 		
 		
 		budget = new Allowance [] {new Time(1, TimeUnit.SECONDS), new Time(10, TimeUnit.SECONDS), new Time(1, TimeUnit.MINUTES)};
-		speakers = suggestor.suggestSpeakers(event, 1, 5, budget);
+		speakers = suggestor.suggestSpeakers(event, 1, 4, budget);
 		
 		System.out.println(speakers.prettyPrintSuggestion(10));
 				

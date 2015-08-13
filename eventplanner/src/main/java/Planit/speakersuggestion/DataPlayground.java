@@ -12,15 +12,14 @@ import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import Planit.ci.ml.WekaDatasetAggregatorNumeric;
 import Planit.speakersuggestion.similarity.TrainingDataCreator;
-import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMax;
 import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
-import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMax;
-import Planit.speakersuggestion.similarity.sources.DescriptionWordnetMean;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource1;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource2;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource3;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource4;
 import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;
 import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
-import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
-import Planit.speakersuggestion.similarity.sources.KeywordWordnetMean;
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import Planit.speakersuggestion.similarity.util.SourceAdaptor;
 
@@ -37,12 +36,12 @@ import edu.toronto.cs.se.ci.budget.basic.Time;
  */
 public class DataPlayground {
 	
-	static final String singleCaseFile = "src/main/resources/speaker suggestion/processed cases/tiny.json";
+	static final String singleCaseFile = "src/main/resources/speaker suggestion/processed cases/debugging cases/high.json";
+							//"src/main/resources/speaker suggestion/processed cases/tiny.json";
 	static final String lowCasesFile = "src/main/resources/speaker suggestion/processed cases/low.json";
-	static final String lowCasesFile2 = "src/main/resources/speaker suggestion/processed cases/low-new.json";
 	static final String mediumCasesFile = "src/main/resources/speaker suggestion/processed cases/medium.json";
-	static final String highCasesFile = "src/main/resources/speaker suggestion/processed cases/high-homogenous.json";
-	static final String highCasesFile2 = "src/main/resources/speaker suggestion/processed cases/high-new.json";
+	static final String highCasesFile = "src/main/resources/speaker suggestion/processed cases/high.json";
+
 	
 	
 	public static void main(String [] args) throws Exception{
@@ -51,18 +50,21 @@ public class DataPlayground {
 		 * Set up
 		 */
 
-
-		Contracts.register(new SourceAdaptor(new DescriptionWord2vecMax()));
+		//for exact source values
+/*
 		Contracts.register(new SourceAdaptor(new DescriptionWord2vecMean()));
-		Contracts.register(new SourceAdaptor(new DescriptionWordnetMax()));
-		Contracts.register(new SourceAdaptor(new DescriptionWordnetMean()));
 		Contracts.register(new SourceAdaptor(new KeywordWord2vecMax()));
-		Contracts.register(new SourceAdaptor(new KeywordWord2vecMean()));
 		Contracts.register(new SourceAdaptor(new KeywordWordnetMax()));
-		Contracts.register(new SourceAdaptor(new KeywordWordnetMean()));
-		
 		Contracts.register(new SourceAdaptor(new DocumentSimilaritySource()));
+*/
 		
+		
+		//for discrete source values
+		Contracts.register(new SourceAdaptor(new DiscreteSource1()));
+		Contracts.register(new SourceAdaptor(new DiscreteSource2()));
+		Contracts.register(new SourceAdaptor(new DiscreteSource3()));
+		Contracts.register(new SourceAdaptor(new DiscreteSource4()));
+
 		TrainingDataCreator wekaDataCreator = new TrainingDataCreator();
 		Collection<ComparisonRequest> cases;
 		double classification;
@@ -71,7 +73,7 @@ public class DataPlayground {
 		 * Invoke on all the data
 		 */
 		
-/*	
+/*
 		cases = loadCases(singleCaseFile);
 		classification = 1d;
 		if (cases != null){
@@ -80,9 +82,8 @@ public class DataPlayground {
 			} catch (Throwable e) {
 				e.printStackTrace();
 			}
-		}
+	}
 */
-		
 		cases = loadCases(lowCasesFile);
 		classification = 1d;
 		if (cases != null){
@@ -92,15 +93,7 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
-		cases = loadCases(lowCasesFile2);
-		classification = 1d;
-		if (cases != null){
-			try {
-				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
-			} catch (Throwable e) {
-				e.printStackTrace();
-			}
-		}
+
 		cases = loadCases(mediumCasesFile);
 		classification = 2d;
 		if (cases != null){
@@ -110,6 +103,7 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
+		
 		cases = loadCases(highCasesFile);
 		classification = 3d;
 		if (cases != null){
@@ -119,16 +113,6 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
-		cases = loadCases(highCasesFile2);
-		classification = 3d;
-		if (cases != null){
-			try {
-				wekaDataCreator.invokeOnLabeledInput(cases, classification, getBudget());
-			} catch (Throwable e) {
-				e.printStackTrace();
-			}
-		}
-
 		
 		/*
 		 * Save the results

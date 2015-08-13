@@ -26,12 +26,22 @@ public class KeywordWord2vecMax extends Source<ComparisonRequest, Double, Void> 
 	public Opinion<Double, Void> getOpinion(ComparisonRequest args)
 			throws UnknownException {
 
+		return new Opinion<Double, Void>(args, similarity(args), null, this);
+	}
+	
+	public static Double similarity(ComparisonRequest args) throws UnknownException{
+		
+		if (args.getEvent().getKeyWords().size() < 1 ||
+				args.getSpeaker().getTopicKeywords().size() < 1){
+			throw new UnknownException();
+		}
+		
 		try {
 			double [][] similarityMatrix = Word2Vec.getInstance().similarity(
 					args.getEvent().getKeyWords(),
-					args.getSpeaker().getTopics());
+					args.getSpeaker().getTopicKeywords());
 			double max = MatrixUtil.max(similarityMatrix);
-			return new Opinion<Double, Void>(args, max, null, this);
+			return max;
 		} catch (IOException e) {
 			throw new UnknownException(e);
 		}	

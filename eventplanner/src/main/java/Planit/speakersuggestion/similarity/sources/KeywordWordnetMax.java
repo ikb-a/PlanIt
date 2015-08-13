@@ -25,9 +25,19 @@ public class KeywordWordnetMax extends Source<ComparisonRequest, Double, Void> i
 	public Opinion<Double, Void> getOpinion(ComparisonRequest args)
 			throws UnknownException {
 
-		double [][] similarityMatrix = WordnetWUP.compare(args.getEvent().getKeyWords(), args.getSpeaker().getTopics());
+		return new Opinion<Double, Void>(args, similarity(args), null, this);
+	}
+	
+	static public Double similarity(ComparisonRequest args) throws UnknownException{
+		
+		if (args.getEvent().getKeyWords().size() < 1 ||
+				args.getSpeaker().getTopicKeywords().size() < 1){
+			throw new UnknownException();
+		}
+		
+		double [][] similarityMatrix = WordnetWUP.compare(args.getEvent().getKeyWords(), args.getSpeaker().getTopicKeywords());
 		double max = MatrixUtil.max(similarityMatrix);
-		return new Opinion<Double, Void>(args, max, null, this);
+		return max;
 	}
 	
 	public String getName(){
