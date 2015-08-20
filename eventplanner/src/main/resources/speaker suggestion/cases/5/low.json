@@ -1,0 +1,53 @@
+[
+{
+      "name":"Russ Kennedy",
+      "professionalTitle":"Medical Doctor and Stand Up Comedian",
+      "bio":"Russell Kennedy is a practicing medical doctor, professional stand up comedian, corporate speaker, and certified yoga and meditation teacher.",
+      "topics":[
+         "Health",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Gerry Visca",
+      "professionalTitle":"Canada\u0027s Creative Coach, Unleashing Why Power",
+      "bio":"Gerry Visca is an International Branding expert known for kick-starting creative strategies that help infuse a companies Brand to reach new levels. Gerry inspires, informs and illuminates audiences, to get creative with their brand. He motivates you to create your desired personal and business life. Gerry Visca is known as the ‘rock star’ of the creative branding world. His energy, credibility, fresh content and advice on the power of creativity, presentation, innovation and branding continues to spark rave reviews from international audiences.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Innovation \u0026 Change Management",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Elaine Allison",
+      "professionalTitle":"Customer Care Advocate",
+      "bio":"Elaine Allison, CSP is known as a Customer Care Advocate and is an international speaker; trainer, consultant and author of the bestselling book The Velvet Hammer: PowHERful Leadership Lessons for Women Who Don’t Golf. With extremely successful results in helping organizations become #1 in Customer Care – Elaine delivers powerful keynotes and learning programs that have an impact on audiences. They leave with techniques in their back pocket that can be used immediately.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Health",
+         "Performance \u0026 Productivity",
+         "Technology \u0026 Future"
+      ]
+   },
+   {
+      "name":"Brendan Brazier",
+      "professionalTitle":"Professional Ironman Triathlete \u0026 Bestselling Author",
+      "bio":"Brendan Brazier is one of only a few professional athletes in the world whose diet is 100 percent plant-based. He’s a professional Ironman triathlete, bestselling author of The Thrive Diet (Penguin, 2007), and the creator of an award-winning line of whole food nutritional products called Vega, sold in over 4000 stores across the country. He is also a two-time Canadian 50km Ultra Marathon Champion.",
+      "topics":[
+         "Environment \u0026 Science",
+         "Health",
+         "Performance \u0026 Productivity",
+         "Sports \u0026 Adventurers"
+      ]
+   },
+   {
+      "name":"Ray Kurzweil",
+      "professionalTitle":"\"The restless genius\" - inventor, entrepreneur, author, and futurist",
+      "bio":"Ray Kurzweil has been described as “the restless genius” by the Wall Street Journal, and \u0026”the ultimate thinking machine” by Forbes. Inc. magazine ranked him #8 among entrepreneurs in the United States, calling him the rightful heir to Thomas Edison and PBS included Ray as one of 16 revolutionaries who made America along with other inventors of the past two centuries.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Celebrity \u0026 Bestselling Authors",
+         "Innovation \u0026 Change Management"
+      ]
+   }
+]

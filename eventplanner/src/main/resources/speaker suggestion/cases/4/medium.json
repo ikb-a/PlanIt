@@ -1,0 +1,60 @@
+[
+{
+      "name":"Mike Abrashoff",
+      "professionalTitle":"Former Commander, USS Benfold and Author",
+      "bio":"An inspiring story of innovative leadership and organizational transformation, Mike Abrashoff took command of the worst-performing ship in the fleet and made it #1 by changing his leadership style and the culture.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Celebrity \u0026 Bestselling Authors",
+         "Innovation \u0026 Change Management",
+         "Leadership",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Vikram Mansharamani",
+      "professionalTitle":"Global Economics Expert, Bestselling Author of Boombustology, Generalist",
+      "bio":"Vikram Mansharamani, author of Boombustology, is expert at helping people recognize and manage the risk of bubble trouble.  He steps back from complex market dynamics and uses a multiple-lens framework to look at disparate data and then connect the dots – providing actionable insights; is there a bubble, where is it in its lifespan and what actions should you take to avoid bubble risk?   A maverick mind and a contrarian by nature, Mansharamani achieved success during his two decades in the financial markets by looking at signs on the road less travelled – analyzing financial markets with his powerful but unique toolkit.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Celebrity \u0026 Bestselling Authors",
+         "Current Events",
+         "Economics \u0026 Finance",
+         "Environment \u0026 Science",
+         "Innovation \u0026 Change Management",
+         "Technology \u0026 Future"
+      ]
+   },
+{
+      "name":"Marc Andre Morel",
+      "professionalTitle":"Marc Andre Morel is a Leading Bilingual Motivational Speaker",
+      "bio":"Marc Andre Morel is a premiere expert on personal and professional leadership. He has helped many organizations positively embrace change with balance, change their attitude, improve teamwork and have a better impact on their sales and customer satisfaction.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Health",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Tewanee Joseph",
+      "professionalTitle":"Aboriginal relations \u0026 communications specialist",
+      "bio":"Tewanee Joseph is the Chief Executive Officer of Tewanee Consulting Group, a First Nations owned and operated company focused on delivering meaningful partnerships, communications strategies and planning, and training in communications and inclusivity. Joseph is changing the face of Aboriginal communications forever – not just in Canada, but worldwide! We’re talking social networking across First Nations cultures; communications training in print and on-line; and the use of modern tools to tell the story of the First Peoples in this country.",
+      "topics":[
+         "Human Rights \u0026 Social Change",
+         "Media \u0026 Entertainment"
+      ]
+   },
+   {
+      "name":"Orlando Bowen",
+      "professionalTitle":"Gamechanger \u0026 Former CFL Linebacker",
+      "bio":"Orlando Bowen is a gamechanger and a messenger of hope who inspires change with his words and delivers results with his actions. He is a speaker, trainer and the founder and Executive Director at One Voice One Team Youth Leadership Organization.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Education",
+         "Leadership",
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity",
+         "Sports \u0026 Adventurers"
+      ]
+   }
+]

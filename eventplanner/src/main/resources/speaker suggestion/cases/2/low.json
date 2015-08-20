@@ -1,0 +1,51 @@
+[
+{
+      "name":"Mark Jaccard",
+      "professionalTitle":"Climate Change Expert",
+      "bio":"Mark Jaccard is professor of sustainable energy in the School of Resource and Environmental Management at Simon Fraser University.",
+      "topics":[
+         "Environment \u0026 Science",
+         "Health",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Mark Breslin",
+      "professionalTitle":"Strategist, Speaker and Bestselling Author",
+      "bio":"Renowned for his straight forward presentation style, Mark Breslin is noted as one of the foremost speakers in the nation on change management, workforce development and next generation leadership training. His principles are transferable to diverse industries and are leading companies and individuals to positively change their leadership styles.  Mark has spoken to more than 300,000 people in the U.S., Canada and Caribbean Trade Zone. Clients include Conoco Phillips, INTEL, Irving Oil, Blue Cross, North Western Energy, Flint Hills Resources and many others.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Innovation \u0026 Change Management",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Marc Andre Morel",
+      "professionalTitle":"Marc Andre Morel is a Leading Bilingual Motivational Speaker",
+      "bio":"Marc Andre Morel is a premiere expert on personal and professional leadership. He has helped many organizations positively embrace change with balance, change their attitude, improve teamwork and have a better impact on their sales and customer satisfaction.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Health",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Tewanee Joseph",
+      "professionalTitle":"Aboriginal relations \u0026 communications specialist",
+      "bio":"Tewanee Joseph is the Chief Executive Officer of Tewanee Consulting Group, a First Nations owned and operated company focused on delivering meaningful partnerships, communications strategies and planning, and training in communications and inclusivity. Joseph is changing the face of Aboriginal communications forever – not just in Canada, but worldwide! We’re talking social networking across First Nations cultures; communications training in print and on-line; and the use of modern tools to tell the story of the First Peoples in this country.",
+      "topics":[
+         "Human Rights \u0026 Social Change",
+         "Media \u0026 Entertainment"
+      ]
+   },
+{
+      "name":"Mark N Breslin",
+      "professionalTitle":"Yuk Yuk\u0027s Founder",
+      "bio":"The little comedy club he opened in 1976 has grown into the largest chain of stand-up comedy clubs in North America. Some of the talented young acts featured have become huge successes in Hollywood – Jim Carrey and Rick Moranis are just two performers to get their start at Yuk Yuk’s.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Media \u0026 Entertainment",
+         "Performance \u0026 Productivity"
+      ]
+   }
+]

@@ -1,0 +1,34 @@
+[
+{
+      "name":"Brian Price",
+      "professionalTitle":"Olympic Gold Medal Coxswain, Cancer Survivor",
+      "bio":"Brian Price is a 3-time Olympian, 3-time World Champion, Olympic Gold and Olympic Silver Medalist.  He was one of the cornerstones of a dynasty era in the Men’s National Rowing Team Program from 2001-2012.  As a young boy he battled Cancer for 5 years, which turned him into not only the leader he needed to become in the crew, but also a person whose determination, perseverance and courage led to international success beyond anyone’s wildest dreams.",
+      "topics":[
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity",
+         "Sports \u0026 Adventurers"
+      ]
+   },
+{
+      "name":"Trevor Linden",
+      "professionalTitle":"Vancouver Canucks President, Former NHL Player \u0026 Olympian.",
+      "bio":"A former NHL player, Trevor Linden is the current President of Hockey Operations for the Vancouver Canucks. He was the first Canuck player to participate in over 1,000 games.  He retired from play in 2008 after 19 seasons in the league. He is known as one of the game’s classiest players on and off the ice.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Leadership",
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity",
+         "Sports \u0026 Adventurers"
+      ]
+   },
+{
+      "name":"Kyle Shewfelt",
+      "professionalTitle":"Olympic Gymnastics Champion",
+      "bio":"Kyle Shewfelt captured Olympic Gold in the floor exercise at the 2004 Olympics in Greece. He became an inspirational leader after he achieved the biggest comeback of his life after breaking both legs in 2007. In just 11 months, Kyle recovered and qualified for the Beijing Olympic Games.",
+      "topics":[
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity"
+      ]
+   }
+
+]

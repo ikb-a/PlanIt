@@ -1,0 +1,98 @@
+[
+{
+         "title":"UPmanship: The New Science of Corporate Social Responsibility",
+         "url":"http://wx.toronto.ca/festevents.nsf/_Enclose?readForm&enclose=cureventsall/67666947BB9E75D085257DA9007371D5?OpenDocument",
+         "description":" As part of National CSR Week in Canada (June 1-5), this is a two day conference for professional corporate responsibility practitioners, officers and consultants to enhance ethical decision-making in corporations, businesses and organizations. The audience includes philanthropy, sustainability, community investment, responsibility reporting, compliance officers, and community engagement professionals. ",
+         "time":{
+            "start_date":"01/06/2015",
+            "start_time":"7:30 AM",
+            "end_date":"02/06/2015",
+            "end_time":"5:00 PM"
+         },
+         "organizer":{
+            "name":"EthicScan Canada",
+            "contact":{
+               "website":"http://www.ethicscan.ca/events/upmanship-the-new-science-of-csr/",
+               "facebook_url":"https://www.facebook.com/EthicScan",
+               "email":"ethicscan@gmail.com ",
+               "phone":"416-783-6776 ext. 102"
+            }
+         },
+         "venue":{
+            "name":"Spirale Event Centre and Restaurant",
+            "address":{
+               "street_number":"888",
+               "route":"Don Mills Road ",
+               "locality":"Toronto",
+               "administrative_area_level_1":"Ontario",
+               "country":"Canada"
+            }
+         }
+      },
+{
+         "title":"The Benefits of Coworking and How to Use them to Grow your Business",
+         "url":"https://www.eventbrite.ca/e/the-benefits-of-coworking-and-how-to-use-them-to-grow-your-business-tickets-17064910607",
+         "description":"Join CoMotion on King and Platform 302 to learn the Benefits of Coworking and how you can use them to grow your business! ",
+         "time":{
+            "start_date":"02/06/2015",
+            "start_time":"12:00 PM",
+            "end_date":"02/06/2015",
+            "end_time":"1:00 PM"
+         },
+         "organizer":{
+            "name":"CoMotion on King",
+            "contact":{
+               "twitter_handle":"@comotiononking",
+               "twitter_url":"https://twitter.com/comotiononking",
+               "facebook_url":"https://www.facebook.com/comotiononking",
+               "website":"www.comotiononking.com",
+               "email":"start@comotiononking.com"
+            }
+         },
+         "venue":{
+            "name":"Platform 302",
+            "address":{
+               "street_number":"302",
+               "route":"Cumberland Avenue ",
+               "locality":"Hamilton",
+               "administrative_area_level_1":" ON",
+               "country":"Canada",
+               "postal_code":"L8M 2V7"
+            }
+         }
+      },
+{
+         "title":"Black Business Professional Association - Procurement Workshop",
+         "url":"http://www.eventbrite.com/e/black-business-professional-association-procurement-workshop-tickets-16974389857",
+         "description":"The City of Toronto represents one of the largest single purchasers of material, supplies, equipment and services in Ontario. Through open, fair, competitive and transparent municipal procurement processes, the Citys Purchasing and Materials Management Division provides the best value and service possible for public monies spent and maintains the highest standards of business ethics in dealing with suppliers. In this workshop you will learn: How the City's procurement process works How to view and purchase call documents How to use the Online Call Document System for an up-to-date list of Request for Proposals (RFOs), Request for Quotations (RFQs), Request for Expression of Interest (REOI) and Tenders New e-procurement and social procurement opportunities By attending this workshop, you will better understand how the procurement process works and how you can do business with the City of Toronto.",
+         "time":{
+            "start_date":"08/06/2015",
+            "start_time":"9:30 AM",
+            "end_date":"08/06/2015",
+            "end_time":"12:00 PM"
+         },
+         "organizer":{
+            "name":"Enterprise Toronto",
+            "contact":{
+               "twitter_handle":"@enterpriseTO",
+               "twitter_url":"http://www.twitter.com/enterpriseTO",
+               "facebook_url":"http://www.facebook.com/enterpriseTO",
+               "website":"http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=ed75d559422a3410VgnVCM10000071d60f89RCRD&vgnextfmt=default",
+               "email":"enterprisetoronto@toronto.ca",
+               "phone":"416-392-6646"
+            }
+         },
+         "venue":{
+            "name":"Black Business and Professional Association (Bbpa)",
+            "address":{
+               "street_number":"675",
+               "route":"King St W",
+               "locality":"Toronto",
+               "administrative_area_level_1":"ON",
+               "country":"Canada",
+               "postal_code":"M5V 1M9"
+            }
+         }
+      }
+
+]

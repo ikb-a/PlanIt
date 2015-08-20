@@ -1,0 +1,64 @@
+[
+{
+      "name":"Rob Nickel",
+      "professionalTitle":"Best-Selling Author and Cyber Safety Expert",
+      "bio":"World renowned “Cyber Safety Expert” Rob Nickel awakens audiences to the dangers that are lurking online. Rob is a former 14-year veteran of the Ontario Provincial Police who spent over half of his career working online undercover.",
+      "topics":[
+         "Technology \u0026 Future"
+      ]
+   },
+{
+      "name":"Mark Breslin",
+      "professionalTitle":"Strategist, Speaker and Bestselling Author",
+      "bio":"Renowned for his straight forward presentation style, Mark Breslin is noted as one of the foremost speakers in the nation on change management, workforce development and next generation leadership training. His principles are transferable to diverse industries and are leading companies and individuals to positively change their leadership styles.  Mark has spoken to more than 300,000 people in the U.S., Canada and Caribbean Trade Zone. Clients include Conoco Phillips, INTEL, Irving Oil, Blue Cross, North Western Energy, Flint Hills Resources and many others.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Innovation \u0026 Change Management",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Tewanee Joseph",
+      "professionalTitle":"Aboriginal relations \u0026 communications specialist",
+      "bio":"Tewanee Joseph is the Chief Executive Officer of Tewanee Consulting Group, a First Nations owned and operated company focused on delivering meaningful partnerships, communications strategies and planning, and training in communications and inclusivity. Joseph is changing the face of Aboriginal communications forever – not just in Canada, but worldwide! We’re talking social networking across First Nations cultures; communications training in print and on-line; and the use of modern tools to tell the story of the First Peoples in this country.",
+      "topics":[
+         "Human Rights \u0026 Social Change",
+         "Media \u0026 Entertainment"
+      ]
+   },
+{
+      "name":"Frank Warren",
+      "professionalTitle":"Creator, The PostSecret Project",
+      "bio":"Frank Warren is the creator of the The PostSecret Project, a website of 450 million visitors, with its collection of intimately personal and artistic postcards mailed anonymously from individuals worldwide.",
+      "topics":[
+         "Celebrity \u0026 Bestselling Authors",
+         "Current Events",
+         "Education",
+         "Health",
+         "Human Rights \u0026 Social Change",
+         "Innovation \u0026 Change Management",
+         "Performance \u0026 Productivity",
+         "Youth \u0026 Campus"
+      ]
+   },
+   {
+      "name":"Tim Magwood",
+      "professionalTitle":"Master Storyteller \u0026 Catalyst",
+      "bio":"Tim is a creative, collaborative and passionate leader. A colleague describes him as a “lightening rod in driving positive change.” Tim has the head of an entrepreneur, the heart of a coach, and the soul of a singer/songwriter. As a seasoned facilitator and presenter, he has brought value to over 10,000 participants.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Leadership",
+         "Media \u0026 Entertainment",
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity"
+      ]
+   },
+   {
+      "name":"Kim Phuc",
+      "professionalTitle":"Author and The Vietnam War\u0027s \u0027Girl in the Picture\u0027",
+      "bio":"Overcoming adversity is a story that Kim Phuc tells like no other. Early in her life, she was caught in the horrors of the Vietnam War, running naked up a road with her skin on fire and screaming in agony.",
+      "topics":[
+
+      ]
+   }
+]

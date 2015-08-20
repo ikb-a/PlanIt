@@ -1,0 +1,55 @@
+[
+{
+      "name":"Casie Stewart",
+      "professionalTitle":"Lifestyle Blogger, Innovator",
+      "bio":"Casie Stewart is an award winning lifestyle blogger and an expert in social and digital media.",
+      "topics":[
+         "Media \u0026 Entertainment",
+         "Technology \u0026 Future",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Frank Spadone",
+      "professionalTitle":"Comedian",
+      "bio":"As a child, Frank Spadone showed his comedic side early in life, imitating people (famous or not) and doing various accents. The real test came when Spadone imitated his High School principal at a team pep rally in front of the whole school. Would he get a laugh? Would he get suspended? Talk about pressure! As it turned out, everybody loved it, including the principal.",
+      "topics":[
+         "Media \u0026 Entertainment"
+      ]
+   },
+{
+      "name":"Dr. Brian Goldman",
+      "professionalTitle":"Emergency Room Physician, Bestselling Author, Radio Broadcaster \u0026 Medical Watchdog",
+      "bio":"Dr. Brian Goldman is a doctor who thinks like a patient. Dr. Goldman is the best-selling author of The Night Shift and The Secret Language of Doctors. He also hosts CBC’s White Coat, Black Art and House Doctor.",
+      "topics":[
+         "Celebrity \u0026 Bestselling Authors",
+         "Health",
+         "Leadership",
+         "Performance \u0026 Productivity",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Frank Warren",
+      "professionalTitle":"Creator, The PostSecret Project",
+      "bio":"Frank Warren is the creator of the The PostSecret Project, a website of 450 million visitors, with its collection of intimately personal and artistic postcards mailed anonymously from individuals worldwide.",
+      "topics":[
+         "Celebrity \u0026 Bestselling Authors",
+         "Current Events",
+         "Education",
+         "Health",
+         "Human Rights \u0026 Social Change",
+         "Innovation \u0026 Change Management",
+         "Performance \u0026 Productivity",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Larry Beasley",
+      "professionalTitle":"Internationally Acclaimed Urban Planner",
+      "bio":"Thanks to Larry Beasley, the City of Vancouver is known as one of the most livable cities in the world. He is internationally acclaimed as one of the world’s best urban planners.",
+      "topics":[
+         "Environment \u0026 Science"
+      ]
+   }
+]

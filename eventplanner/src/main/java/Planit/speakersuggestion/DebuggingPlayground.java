@@ -45,6 +45,12 @@ public class DebuggingPlayground {
 		}
 		catch (UnknownException e){};
 		
+		System.out.println(cr.getEvent().getSynopsis());
+		System.out.println(cr.getEvent().getKeyWords());
+		System.out.println();
+		
+		System.out.printf("%s\n%s\n%s\n%s", cr.getSpeaker().getName(), cr.getSpeaker().getProfessionalTitle(), cr.getSpeaker().getBio(), cr.getSpeaker().getTopics().toString());
+		System.out.println();
 		
 	}
 	

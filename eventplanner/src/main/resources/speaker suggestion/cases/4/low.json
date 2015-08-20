@@ -1,0 +1,51 @@
+[
+{
+      "name":"Rabbi Shmuley",
+      "professionalTitle":"Family and Relationship Counsellor",
+      "bio":"Rabbi Shmuley Boteach is a family and relationship counselor and he is one of the most prominent voices for the Jewish community in the world. He is the international best-selling author of 15 books, and an acclaimed syndicated columnist who in 2005 won the American Jewish Press Association’s highest award for excellence in commentary.",
+      "topics":[
+         "Current Events",
+         "Health"
+      ]
+   },
+{
+      "name":"Doug Flutie",
+      "professionalTitle":"Fan Favourite - CFL \u0026 NFL and Former Heisman Trophy Winner",
+      "bio":"In his eight CFL seasons, Flutie earned the following CFL records: 730 pass attempts, 466 completions and 6,619 yards. He also earned his first of six Most Outstanding Player Awards following the 1991 season.Flutie won his first Grey Cup in 1992 with Calgary. He would go on to win two more Grey Cups with the Toronto Argonauts before returning to the National Football League in 1998.",
+      "topics":[
+         "Celebrity \u0026 Bestselling Authors",
+         "Human Rights \u0026 Social Change",
+         "Media \u0026 Entertainment",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Joe Rich",
+      "professionalTitle":"Parenting and Life Counsellor",
+      "bio":"Joe Rich is a highly regarded therapist with more than 25 years experience helping couples, families and individuals. He is also an author, appears weekly on the nationally syndicated CityLine television show, and was a relationship couple therapist in the Canwest Global series, Last Chance for Romance.",
+      "topics":[
+         "Health",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Michael Ross",
+      "professionalTitle":"Undercover Agent \u0026 Canadian Special Service Soldier",
+      "bio":"In 1982 a young Michael Ross joins the legion of Canadian twenty-somethings backpacking in Europe. Through happenstance, he winds up working on a Kibbutz in Israel, where he falls in love with the land and its ancient, multi-layered history. He immerses himself in Israeli culture, converts to Judaism, and adopts his new country’s struggle for survival as his own, joining the Israel Defence Force and eventually Mossad’s most elite and storied covert-operations unit, Caesaria.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Current Events"
+      ]
+   },
+ {
+      "name":"Matte Babel",
+      "professionalTitle":"Pop-Culture Icon",
+      "bio":"Matte Babel is a pop-culture icon featured in a variety of TV roles, including as VJ for MuchMusic and host of MuchOnDemand. After five great years, Matte then earned a spot as co-host of CP24 Breakfast, as correspondent for eTalk and now the host of Canada Sings. He’s interviewed superstars like Mariah Carey, P. Diddy and James Blunt, and speaks from personal experience about reaching for your goals.",
+      "topics":[
+         "Education",
+         "Environment \u0026 Science",
+         "Media \u0026 Entertainment",
+         "Youth \u0026 Campus"
+      ]
+   }
+]

@@ -31,15 +31,7 @@ public class DiscreteSource3 extends KeywordWordnetMax {
 		double [][] similarityMatrix = WordnetWUP.compare(args.getEvent().getKeyWords(), args.getSpeaker().getTopicKeywords());
 		double max = MatrixUtil.max(similarityMatrix);
 		
-		System.out.printf("KeywordWordnetMax - %f\n", threshold(max));
-		System.out.println();
-		
-		System.out.println(args.getEvent().getKeyWords());
-		System.out.println(args.getSpeaker().getTopicKeywords());
-		System.out.println();
-		
-		System.out.println(MatrixUtil.toString(similarityMatrix));
-		System.out.println();
+		//System.out.printf("KeywordWordnetMax - %f\n", threshold(max));
 		
 		return max;
 	}

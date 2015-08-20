@@ -15,7 +15,7 @@ import edu.toronto.cs.se.ci.UnknownException;
  * @author wginsberg
  *
  */
-public class GoogleSearch {
+public class GoogleSearchCSE {
  
 	public static String RESULT_TITLE_KEY = "title";
 	public static String RESULT_SNIPPET_KEY = "snippet";
@@ -66,16 +66,27 @@ public class GoogleSearch {
 			return new JSONObject();
 		} 
 	}
-	
+
 	/**
 	 * Returns a list of search results for a given term
 	 * @param searchFor
 	 * @return
+	 * @throws UnknownException 
 	 */
-	public static List<SearchResult> search(String searchFor){
+	public static SearchResults search(String searchFor) throws UnknownException{
 		
 		JSONObject json = searchJson(searchFor);
 		
+		//Get the number of hits. If we can't get this number then there was not a successful search
+		int hits;
+		try{
+			hits = json.getJSONObject("queries").getJSONArray("request").getJSONObject(0).getInt("totalResults");
+		}
+		catch (JSONException e){
+			throw new UnknownException();
+		}
+		
+		//get the results
 		if (json.has("items")){
 			
 			JSONArray items = json.getJSONArray("items");
@@ -94,10 +105,10 @@ public class GoogleSearch {
 					continue;
 				}
 			}
-			return results;
+			return new SearchResults(hits, results);
 		}
 		else{
-			return new ArrayList<SearchResult>(0);
+			return new SearchResults(hits, null);
 		}
 	}
 }

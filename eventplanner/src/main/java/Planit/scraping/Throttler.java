@@ -13,8 +13,8 @@ public class Throttler {
 	private int maxCalls;
 	private TimeUnit timeUnit;
 	
-	private long minTimeBetweenCalls;
-	private long previousCall;
+	protected long minTimeBetweenCalls;
+	protected long previousCall;
 	
 	/**
 	 * Instantiate a throttler by specifying how many calls per time-unit can be allowed.

@@ -31,13 +31,7 @@ public class DiscreteSource4 extends DocumentSimilaritySource {
 		String d2 = String.format("%s\n%s\n%s\n%s", s.getName(), s.getProfessionalTitle(), s.getBio(), s.getTopics().toString());
 		Double similarity = DocumentSimilarity.similarity(d1, d2);
 		
-		System.out.printf("DocumentSimilaritySource - %f\n\n", threshold(similarity));
-		
-		System.out.println(d1);
-		System.out.println();
-		
-		System.out.println(d2);
-		System.out.println();
+		//System.out.printf("DocumentSimilaritySource - %f\n", threshold(similarity));
 		
 		if (similarity == null){
 			throw new UnknownException();

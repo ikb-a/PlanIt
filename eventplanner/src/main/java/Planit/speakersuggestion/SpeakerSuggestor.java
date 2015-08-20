@@ -80,7 +80,7 @@ public class SpeakerSuggestor {
 		/*
 		 * Rank the speakers by suitability
 		 */
-		System.out.printf("Using rank based aggregation\n\n");
+		System.out.printf("Using co-occurrence rank aggregation\n\n");
 		speakerJudge.evaluate(event, candidateSpeakers, new Allowance [] {budget[2]});
 		SuggestedSpeakers suggestion = speakerJudge.getSuggestion();
 		

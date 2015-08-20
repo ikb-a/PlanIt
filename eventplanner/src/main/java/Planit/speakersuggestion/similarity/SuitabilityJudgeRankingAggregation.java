@@ -16,6 +16,7 @@ import Planit.speakersuggestion.similarity.sources.DiscreteSource1;
 import Planit.speakersuggestion.similarity.sources.DiscreteSource2;
 import Planit.speakersuggestion.similarity.sources.DiscreteSource3;
 import Planit.speakersuggestion.similarity.sources.DiscreteSource4;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource5;
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import Planit.speakersuggestion.similarity.util.SimilarityContractDouble;
 import Planit.speakersuggestion.similarity.util.SimilarityContractWekaCompatible;
@@ -45,10 +46,8 @@ public class SuitabilityJudgeRankingAggregation implements SuitabilityJudge{
 		 */
 		if (Contracts.discover(SimilarityContractWekaCompatible.class).isEmpty()){
 			
-			Contracts.register(new SourceAdaptor(new DiscreteSource1()));
-			Contracts.register(new SourceAdaptor(new DiscreteSource2()));
-			Contracts.register(new SourceAdaptor(new DiscreteSource3()));
-			Contracts.register(new SourceAdaptor(new DiscreteSource4()));
+			Contracts.register(new SourceAdaptor(new DiscreteSource5()));
+			System.out.println("Using ranking by bing co-occurrence");
 		}
 		
 		ci = new CI<ComparisonRequest, Double, Void, Void>(

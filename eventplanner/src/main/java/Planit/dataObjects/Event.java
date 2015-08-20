@@ -88,7 +88,10 @@ public class Event extends ComparableImp{
 	}
 	
 	public String getVenueAddress(){
-		return venue.getTruncatedAddress();
+		if (venue != null){
+			return venue.getTruncatedAddress();
+		}
+		return "";
 	}
 	
 	/**
@@ -193,16 +196,18 @@ public class Event extends ComparableImp{
 		return confirmedSpeakers;
 	}
 
-	public void setConfirmedSpeakers(List<Speaker> confirmedSpeakers) {
+	public Event setConfirmedSpeakers(List<Speaker> confirmedSpeakers) {
 		this.confirmedSpeakers = confirmedSpeakers;
+		return this;
 	}
 
 	public List<String> getKeyWords() {
 		return keyWords;
 	}
 
-	public void setKeyWords(List<String> keyWords) {
+	public Event setKeyWords(List<String> keyWords) {
 		this.keyWords = keyWords;
+		return this;
 	}
 
 }

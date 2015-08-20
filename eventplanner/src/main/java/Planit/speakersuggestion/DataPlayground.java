@@ -12,11 +12,13 @@ import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import Planit.ci.ml.WekaDatasetAggregatorNumeric;
 import Planit.speakersuggestion.similarity.TrainingDataCreator;
+import Planit.speakersuggestion.similarity.sources.CoOccurrenceSource;
 import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.DiscreteSource1;
 import Planit.speakersuggestion.similarity.sources.DiscreteSource2;
 import Planit.speakersuggestion.similarity.sources.DiscreteSource3;
 import Planit.speakersuggestion.similarity.sources.DiscreteSource4;
+import Planit.speakersuggestion.similarity.sources.DiscreteSource5;
 import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;
 import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
 import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
@@ -36,8 +38,9 @@ import edu.toronto.cs.se.ci.budget.basic.Time;
  */
 public class DataPlayground {
 	
-	static final String singleCaseFile = "src/main/resources/speaker suggestion/processed cases/debugging cases/high.json";
-							//"src/main/resources/speaker suggestion/processed cases/tiny.json";
+	static final String singleCaseFile = //"src/main/resources/speaker suggestion/processed cases/debugging cases/high.json";
+						//"src/main/resources/speaker suggestion/processed cases/tiny.json";
+							"/home/wginsberg/Desktop/new data set/low.json";
 	static final String lowCasesFile = "src/main/resources/speaker suggestion/processed cases/low.json";
 	static final String mediumCasesFile = "src/main/resources/speaker suggestion/processed cases/medium.json";
 	static final String highCasesFile = "src/main/resources/speaker suggestion/processed cases/high.json";
@@ -60,11 +63,8 @@ public class DataPlayground {
 		
 		
 		//for discrete source values
-		Contracts.register(new SourceAdaptor(new DiscreteSource1()));
-		Contracts.register(new SourceAdaptor(new DiscreteSource2()));
-		Contracts.register(new SourceAdaptor(new DiscreteSource3()));
-		Contracts.register(new SourceAdaptor(new DiscreteSource4()));
-
+		Contracts.register(new SourceAdaptor(new CoOccurrenceSource()));
+		
 		TrainingDataCreator wekaDataCreator = new TrainingDataCreator();
 		Collection<ComparisonRequest> cases;
 		double classification;
@@ -73,7 +73,7 @@ public class DataPlayground {
 		 * Invoke on all the data
 		 */
 		
-/*
+
 		cases = loadCases(singleCaseFile);
 		classification = 1d;
 		if (cases != null){
@@ -83,7 +83,7 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 	}
-*/
+/*
 		cases = loadCases(lowCasesFile);
 		classification = 1d;
 		if (cases != null){
@@ -113,7 +113,7 @@ public class DataPlayground {
 				e.printStackTrace();
 			}
 		}
-		
+	*/	
 		/*
 		 * Save the results
 		 */

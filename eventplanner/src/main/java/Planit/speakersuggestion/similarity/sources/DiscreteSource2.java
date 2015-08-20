@@ -28,9 +28,7 @@ public class DiscreteSource2 extends DescriptionWord2vecMean {
 			double [][] similarityMatrix = Word2Vec.getInstance().similarity(args.getEvent().getWords(), args.getSpeaker().getWords());
 			double mean = MatrixUtil.mean(similarityMatrix);
 			
-			System.out.printf("DescriptionWord2vecMean - %f\n", threshold(mean));
-			
-			System.out.println();
+			//System.out.printf("DescriptionWord2vecMean - %f\n", threshold(mean));
 			
 			return mean;
 		} catch (IOException e) {

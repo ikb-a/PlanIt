@@ -37,17 +37,7 @@ public class DiscreteSource1 extends KeywordWord2vecMax {
 					args.getSpeaker().getTopicKeywords());
 			double max = MatrixUtil.max(similarityMatrix);
 			
-			System.out.printf("KeywordWord2vecMax - %f\n", threshhold(max));
-			
-			System.out.println();
-			System.out.println(args.getEvent().getKeyWords());
-			System.out.println(	args.getSpeaker().getTopicKeywords());
-			System.out.println();
-			
-			System.out.println();
-			System.out.println(MatrixUtil.toString(similarityMatrix));
-			System.out.println();
-			
+			//System.out.printf("KeywordWord2vecMax - %f\n", threshhold(max));
 			
 			return max;
 		} catch (IOException e) {

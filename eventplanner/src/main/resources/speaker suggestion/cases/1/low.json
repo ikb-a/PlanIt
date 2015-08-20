@@ -1,0 +1,53 @@
+[
+{
+      "name":"Second City - Canada",
+      "professionalTitle":"Second City",
+      "bio":"They have introduced the world to Bill Murray, Dan Aykroyd and Mike Myers along with countless other comedy legends, and their just as proud of their more recent alumni such as Steve Carrell (The Office; The 40 Year Old Virgin), Tina Fey (Head Writer, SNL; 30 Rock) and Stephen Colbert (The Daily Show; The Colbert Report) who learned their craft on their main stage and occupy some of the top spots in the comedy world today.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Media \u0026 Entertainment"
+      ]
+   },
+{
+      "name":"Rob Nickel",
+      "professionalTitle":"Best-Selling Author and Cyber Safety Expert",
+      "bio":"World renowned “Cyber Safety Expert” Rob Nickel awakens audiences to the dangers that are lurking online. Rob is a former 14-year veteran of the Ontario Provincial Police who spent over half of his career working online undercover.",
+      "topics":[
+         "Technology \u0026 Future"
+      ]
+   },
+{
+      "name":"Vikram Mansharamani",
+      "professionalTitle":"Global Economics Expert, Bestselling Author of Boombustology, Generalist",
+      "bio":"Vikram Mansharamani, author of Boombustology, is expert at helping people recognize and manage the risk of bubble trouble.  He steps back from complex market dynamics and uses a multiple-lens framework to look at disparate data and then connect the dots – providing actionable insights; is there a bubble, where is it in its lifespan and what actions should you take to avoid bubble risk?   A maverick mind and a contrarian by nature, Mansharamani achieved success during his two decades in the financial markets by looking at signs on the road less travelled – analyzing financial markets with his powerful but unique toolkit.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Celebrity \u0026 Bestselling Authors",
+         "Current Events",
+         "Economics \u0026 Finance",
+         "Environment \u0026 Science",
+         "Innovation \u0026 Change Management",
+         "Technology \u0026 Future"
+      ]
+   },
+{
+      "name":"Sue Montgomery",
+      "professionalTitle":"Sexual Assault Survivor, Journalist \u0026 Co-creator of #BeenRapedNeverReported",
+      "bio":"Sue Montgomery is an award-winning justice reporter, formerly with the Montreal Gazette and co-founder of the hashtag #BeenRapedNeverReported, which sparked a global conversation about sexual violence. In the wake of the sexual assault allegations against CBC radio host Jian Ghomeshi, and the public outcry about why the women accusing him didn’t go to police or make their names public, Montgomery wanted to show just how many women keep silent when assaulted. So she tweeted under the hashtag #BeenRapedNeverReported about her own sexual abuse as a child and her rape while working as a flight attendant. Other women – and men – followed suit, until the hashtag appeared millions of times around the globe.",
+      "topics":[
+         "Health",
+         "Human Rights \u0026 Social Change",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Steven Page",
+      "professionalTitle":"Host, Music Producer, former Lead Singer \u0026 Songwriter for the Barenaked Ladies",
+      "bio":"For twenty years, Steven Page was the lead singer and songwriter for the  Barenaked Ladies, the Toronto-based band he formed in 1988 with Ed Robertson. Known for his dynamic, physically exuberant performances, his powerful tenor, quick wit, and an arsenal of songs that span the gamut between humor and pathos, Page and the band toured the world, selling out venues ranging from Madison Square Garden to the Royal Albert Hall; sold nearly 15 million albums and won numerous Juno awards as well as two Grammy nominations, and two Gemini awards for their work on Canadian television.",
+      "topics":[
+         "Celebrity \u0026 Bestselling Authors",
+         "Media \u0026 Entertainment",
+         "Youth \u0026 Campus"
+      ]
+   }
+]

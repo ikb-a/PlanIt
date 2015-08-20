@@ -12,8 +12,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import edu.toronto.cs.se.ci.UnknownException;
 import Planit.dataObjects.Speaker;
-import Planit.internet.GoogleSearch;
+import Planit.internet.GoogleSearchCSE;
 import Planit.internet.SearchResult;
 import Planit.scraping.Throttler;
 
@@ -31,8 +32,9 @@ public class NSBsearchByGoogle {
 	 * @param keyword A keyword to search for
 	 * @param n the number of speakers to return
 	 * @return
+	 * @throws UnknownException 
 	 */
-	public static List<Speaker> getSpeakers(String keyword, int n){
+	public static List<Speaker> getSpeakers(String keyword, int n) throws UnknownException{
 		List<Speaker> speakers = getSpeakersFromSearchResults(keyword);
 		//trim extras before extracting details
 		if (speakers.size() > n){
@@ -48,11 +50,12 @@ public class NSBsearchByGoogle {
 	 * Searches for the keyword and creates a new speaker object corresponding to every link there is to a speaker on nsb.com
 	 * @param keyword
 	 * @return A list of speaker objects which contain only the link to their personal page
+	 * @throws UnknownException 
 	 */
-	private static List<Speaker> getSpeakersFromSearchResults(String keyword){
+	private static List<Speaker> getSpeakersFromSearchResults(String keyword) throws UnknownException{
 		
 		//get the results
-		List<SearchResult> results = GoogleSearch.search("site:nsb.com/speakers " + keyword);
+		List<SearchResult> results = GoogleSearchCSE.search("site:nsb.com/speakers " + keyword);
 		List<Speaker> speakers = new ArrayList<Speaker>(results.size());
 		
 		//scrape from each result

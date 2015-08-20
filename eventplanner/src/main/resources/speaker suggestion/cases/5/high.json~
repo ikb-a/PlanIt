@@ -1,0 +1,52 @@
+[
+{
+      "name":"Martha Piper",
+      "professionalTitle":"Global Educator",
+      "bio":"Dr. Piper was President and Vice-Chancellor of the University of British Columbia (UBC) from 1997 to 2006.  Prior to her appointment at UBC, she served as Vice-President, Research at the University of Alberta.",
+      "topics":[
+         "Education",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Casie Stewart",
+      "professionalTitle":"Lifestyle Blogger, Innovator",
+      "bio":"Casie Stewart is an award winning lifestyle blogger and an expert in social and digital media.",
+      "topics":[
+         "Media \u0026 Entertainment",
+         "Technology \u0026 Future",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Kelly Lovell",
+      "professionalTitle":"Youth Engagement Expert \u0026 Media Personality",
+      "bio":"Kelly Lovell is a coach and consultant on a mission to bridge the gap to the youth generation. Respected by renowned leaders including Nobel Peace Prize Entrepreneurs, governmental bodies, and global humanitarians of possessing wisdom beyond her years while also possessing an exuberant spirit and youthful energy, Lovell leaves a lasting impression on young and mature audiences alike.",
+      "topics":[
+         "Human Rights \u0026 Social Change",
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity",
+         "Youth \u0026 Campus"
+      ]
+   },
+{
+      "name":"Chris Torbay",
+      "professionalTitle":"International Creative Director. Copywriter",
+      "bio":"Chris Torbay is an international advertising and branding Creative Director with more than 20 years’ experience in Canada, the US, Britain and Japan.  He can explain the strategies behind the creative, and the odd inner workings of the ever changing world of marketing.",
+      "topics":[
+         "Business \u0026 Workplace"
+      ]
+   },
+   {
+      "name":"Tim Magwood",
+      "professionalTitle":"Master Storyteller \u0026 Catalyst",
+      "bio":"Tim is a creative, collaborative and passionate leader. A colleague describes him as a “lightening rod in driving positive change.” Tim has the head of an entrepreneur, the heart of a coach, and the soul of a singer/songwriter. As a seasoned facilitator and presenter, he has brought value to over 10,000 participants.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Leadership",
+         "Media \u0026 Entertainment",
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity"
+      ]
+   }
+]

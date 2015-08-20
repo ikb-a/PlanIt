@@ -1,0 +1,65 @@
+[
+{
+         "title":"Effective Writing (Write Right 7-8)",
+         "url":"http://www.eventbrite.ca/e/effective-writing-write-right-7-8-room-336-registration-16999956327",
+         "description":"Practice grammar, structure and writing for your level.   Weekly Topics:  Week 1:  How to Outline  -The effect of Rhetorical questions in writing.  Week 2:  Contrast & Compare    -Get your message across in Writing.   Week 3:   Argument Essay   -Illustrate an organized paragraph.   Week 4:   Resume writing   -Managing your time(IELTS Test Strategies/Writing Skills).   -Writing a Report.   Week 5:   Support your details in writing   -Construct your main Idea effectively.   Week 6:   Various Essay Writing   -Professional Email Writing.   -Critics in Essay Writing. ",
+         "time":{
+            "start_date":"02/06/2015",
+            "start_time":"1:30 PM",
+            "end_time":"3:30 PM"
+         },
+         "organizer":{
+            "name":"George Brown College School of ESL",
+            "contact":{
+               "facebook_url":"https://www.facebook.com/GBC.ESL",
+               "website":"http://www.georgebrown.ca/esl/ ",
+               "email":"esl@georgebrown.ca",
+               "phone":"416-415-5000"
+            }
+         },
+         "venue":{
+            "name":"George Brown College School of ESL",
+            "address":{
+               "street_number":"341",
+               "route":"King Street East",
+               "locality":"Toronto",
+               "administrative_area_level_1":"ON",
+               "country":"Canada",
+               "postal_code":"M5A 1K4"
+            }
+         }
+      },
+{
+         "title":"Just Write",
+         "url":"https://northtoronto.snapd.com/#/events/view/845752",
+         "description":"This is a creative writing session for beginners, experienced writers and the curious. Creative writing is a wonderful brainy activity and a great way to tap into our creative expression. In this workshop you will have the opportunity to write a few short pieces and then have the chance to share your work with others. This is a fun and supportive session that encourages the creative writer in all of us!",
+         "time":{
+            "start_date":"02/06/2015",
+            "start_time":"1:00 PM",
+            "end_date":"02/06/2015",
+            "end_time":"7:00 PM"
+         },
+         "organizer":{
+            "name":"Active Living Centre",
+            "contact":{
+               "twitter_handle":"@NYSCentre",
+               "twitter_url":"https://twitter.com/nyscentre",
+               "facebook_url":"https://www.facebook.com/NYSCentre",
+               "website":"http://www.nyseniors.org/",
+               "email":"ssutus@nyseniors.org",
+               "phone":"416-733-4111"
+            }
+         },
+         "venue":{
+            "name":"Active Living Centre",
+            "address":{
+               "street_number":"21",
+               "route":"Hendon Ave",
+               "locality":"Toronto",
+               "administrative_area_level_1":"Ontario",
+               "country":"Canada",
+               "postal_code":"M2M 4G8"
+            }
+         }
+      }
+]

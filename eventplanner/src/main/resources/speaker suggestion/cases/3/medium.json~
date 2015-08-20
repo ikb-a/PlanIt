@@ -1,0 +1,34 @@
+[
+   {
+      "name":"Dr. Mark Devolder",
+      "professionalTitle":"Top 5 Speaker USA 2010-2013 - The Change Specialist",
+      "bio":"Dr. Mark DeVolder is recognized as one of North America’s leading Transition Specialists.  As an expert in the dynamics of change, Mark reveals strategies that will produce dramatic results for your organization.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Innovation \u0026 Change Management",
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity"
+      ]
+   },
+{
+      "name":"Jon Dwyer",
+      "professionalTitle":"Clean Energy Innovator \u0026 Expert",
+      "bio":"Jon is CEO of Harvest Speciality Mills, a manufacturer products for all of the 14 grain categories for large industrial banking category, SME baking businesses, private label products, and high quality animal feed. Jon is also an author, his co-written novel “Michael Burke” was published in 2008. His play “Good Evening, I’m Robert Service” toured across Canada, starting Adam Brazier, directed by David Ferry. Jon is the energy expert for Sun News. He holds an honours BA in Political Science from McMaster University, and studied International Economics and Finance at Ryerson University. Jon recently spoke at the TEDx Toronto series, has been featured on BNN, CTV, CBC, CBC radio, Sun News, is a contributor on Steve Paiken’s Studio 2, as well as the Globe and Mail, National Post, Toronto Star and others.",
+      "topics":[
+         "Current Events",
+         "Environment \u0026 Science"
+      ]
+   },
+   {
+      "name":"Buzz Hargrove",
+      "professionalTitle":"Co-Director, Centre for Labour Management Relations - Ted Rogers School of Management",
+      "bio":"One of Canada’s most recognized labour leaders, Hargrove is a well respected voice for workplace and social justice in Canada. Buzz Hargrove served as national president of the Canadian Auto Workers Union from 1992 until his retirement in September 2008.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Celebrity \u0026 Bestselling Authors",
+         "Current Events",
+         "Leadership",
+         "Performance \u0026 Productivity"
+      ]
+   }
+]

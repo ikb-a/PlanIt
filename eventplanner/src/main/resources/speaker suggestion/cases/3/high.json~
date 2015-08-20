@@ -1,0 +1,23 @@
+[
+   {
+      "name":"Doug Keeley",
+      "professionalTitle":"Master storyteller, Serial Entrepreneur and Leadership Expert",
+      "bio":"Doug Keeley, CEO and Chief Storyteller of The Mark of a Leader, is one of North America’s leading communicators, a serial entrepreneur, and a self-professed leadership junkie.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Leadership",
+         "Media \u0026 Entertainment",
+         "Motivation \u0026 Inspiration",
+         "Performance \u0026 Productivity",
+         "Youth \u0026 Campus"]
+   },
+{
+      "name":"Hugh Culver",
+      "professionalTitle":"Leadership Expert",
+      "bio":"Highly sought after keynote speaker and corporate trainer, Hugh D. Culver, MBA is an Ironman Competitor, Mountain Climber, 10 time Marathoner and successful businessman.",
+      "topics":[
+         "Business \u0026 Workplace",
+         "Performance \u0026 Productivity"
+      ]
+   }
+]

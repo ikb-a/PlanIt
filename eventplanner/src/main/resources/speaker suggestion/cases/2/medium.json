@@ -1,0 +1,48 @@
+[
+   {
+      "name":"Frank Warren",
+      "professionalTitle":"Creator, The PostSecret Project",
+      "bio":"Frank Warren is the creator of the The PostSecret Project, a website of 450 million visitors, with its collection of intimately personal and artistic postcards mailed anonymously from individuals worldwide.",
+      "topics":[
+         "Celebrity \u0026 Bestselling Authors",
+         "Current Events",
+         "Education",
+         "Health",
+         "Human Rights \u0026 Social Change",
+         "Innovation \u0026 Change Management",
+         "Performance \u0026 Productivity",
+         "Youth \u0026 Campus"
+      ]
+   },
+   {
+      "name":"Emmanuel Jal",
+      "professionalTitle":"Musician, Activist \u0026 Former Child Soldier",
+      "bio":"Emmanuel Jal was born into the life of a child solider on an unknown date in the early 1980s in the war-torn region of Southern Sudan. Through unbelievable struggles, Emmanuel managed to survive and go on to emerge as a recording artist, achieving worldwide acclaim for his unique style of hip hop with its message of peace and reconciliation born out of his personal experiences.",
+      "topics":[
+         "Current Events",
+         "Human Rights \u0026 Social Change",
+         "Leadership",
+         "Media \u0026 Entertainment",
+         "Motivation \u0026 Inspiration",
+         "Youth \u0026 Campus"
+      ]
+   },
+   {
+      "name":"Sol Guy",
+      "professionalTitle":"Social Entrepreneur \u0026 Host 4REAL",
+      "bio":"Renowned music producer Sol Guy inspires and empowers young people to improve the world around them. Known for his work with such artists as Lauryn Hill, Outkast and P. Diddy, Guy’s career took an unexpected turn with a visit to Sierra Leone. Unable to ignore the plight of a people ravaged by war, Guy set out to use the entertainment business as a vehicle for social change.",
+      "topics":[
+         "Media \u0026 Entertainment",
+         "Youth \u0026 Campus"
+      ]
+   },
+   {
+      "name":"Bill Carr",
+      "professionalTitle":"Award-Winning Comedian \u0026 Motivational Speaker",
+      "bio":"Bill Carr is known as a multi-media artist, an actor, humorist, writer, speaker and social activist. For over twenty-five years, Bill has been making people laugh at what’s trivial while helping them think deeply about what counts.",
+      "topics":[
+         "Media \u0026 Entertainment",
+         "Performance \u0026 Productivity"
+      ]
+   }
+]
