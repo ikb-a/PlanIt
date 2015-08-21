@@ -15,7 +15,8 @@ The speaker suggestion feature has 3 components which are themselves contributio
 
 2) Speaker searching - Several speaker bureau websites can be queried to scrape the details of public speakers.
 
-3) Judging the best speaker to suggest - A small valued contributional implementation which uses a machine learning classifier to judge which speakers are the best to suggest.
+3) Judging the best speaker to suggest - A small valued contributional implementation which uses a machine learning classifier to judge which speakers are the best to suggest. This CI relies on the gensim library https://radimrehurek.com/gensim/ (which is based on Word2Vec https://code.google.com/p/word2vec/). In order to use the functionality of gensim, there is a script which must be executed and can be found in /PlanIt/eventplanner/src/main/scripts/gensim/ with its documentation.
+
 
 ##Project structure
 
