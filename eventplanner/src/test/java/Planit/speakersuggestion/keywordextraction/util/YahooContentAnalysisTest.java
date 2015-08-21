@@ -3,7 +3,10 @@ package Planit.speakersuggestion.keywordextraction.util;
 import static org.junit.Assert.*;
 
 import java.io.IOException;
+
 import org.junit.Test;
+
+import Planit.speakersuggestion.keywordextraction.resource.YahooContentAnalysis;
 
 public class YahooContentAnalysisTest {
 

@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import Planit.speakersuggestion.keywordextraction.resource.YahooContentAnalysis;
 import Planit.speakersuggestion.keywordextraction.util.ContentAnalysis;
 import Planit.speakersuggestion.keywordextraction.util.WordListKeywordsContract;
-import Planit.speakersuggestion.keywordextraction.util.YahooContentAnalysis;
 
 import com.google.common.base.Optional;
 

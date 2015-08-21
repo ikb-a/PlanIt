@@ -13,7 +13,7 @@ import org.json.JSONObject;
 
 
 /**
- * An object which holds the results of a content analysis performed by YAahoo's Content Analysis
+ * An object which holds the results of a content analysis performed by Yahoo's Content Analysis
  * @author wginsberg
  *
  */
@@ -24,6 +24,10 @@ public class ContentAnalysis {
 	Collection<String> entities;
 	Collection<String> allExtractedTerms;
 	
+	/**
+	 * Create a new content analysis object from the response of the yahoo api call
+	 * @param json
+	 */
 	public ContentAnalysis(JSONObject json) {
 		this.json = json;
 		categories = getCategories(json);
@@ -34,7 +38,7 @@ public class ContentAnalysis {
 	}
 	
 	/**
-	 * Extract the category information from the json response of YQL
+	 * Extract the category information from the json response
 	 * @param json
 	 * @return
 	 */
@@ -67,7 +71,7 @@ public class ContentAnalysis {
 	}
 
 	/**
-	 * Extracts the names of the entities from a YQL response
+	 * Extracts the names of the entities from response
 	 */
 	static private Collection<String> getEntities(JSONObject json){
 		

@@ -1,7 +1,6 @@
 package Planit.speakersuggestion.scrapespeakers;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -25,36 +24,6 @@ import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
  *
  */
 public class SpeakerRetriever {
-
-	/**
-	 * Perform speaker retrieval on one list of keywords and prints the results to standard output.
-	 * @param args
-	 */
-	public static void main(String [] args){
-		
-		/*
-		 * Create a query
-		 */
-		List<String> keywords = Arrays.asList(new String [] {"coffee", "drinks", "Toronto"});
-		SpeakersQuery query = new SpeakersQuery(keywords,  10, 15);
-
-		/*
-		 * Set up for speaker searching
-		 */
-		SpeakerRetriever speakers = new SpeakerRetriever();
-
-		/*
-		 * Show the query in console
-		 */
-		System.out.println("Searching for speakers based on keywords: \n");
-		System.out.println("	" + keywords.toString());
-		System.out.println();
-		
-		Collection<Speaker> result = speakers.getResponse(query);
-		System.out.println("Search results: \n");
-		System.out.println("	" + result.toString());
-		
-	}
 	
 	KeynoteSpeakersCanada keynoteSource;
 	LavinAgencySpeakers lavinSource;
@@ -66,6 +35,8 @@ public class SpeakerRetriever {
 	public SpeakerRetriever(){
 		nsbSource = new NSBspeakers();
 		premiereSource = new PremiereSpeakersBureau();
+		keynoteSource = new KeynoteSpeakersCanada();
+		lavinSource = new LavinAgencySpeakers();
 		
 		aggregator = new SpeakerSetUnionAggregator();
 	}
@@ -79,21 +50,11 @@ public class SpeakerRetriever {
 
 		List<Opinion<Collection<Speaker>, SpeakerSetTrust>> opinions =
 				new ArrayList<Opinion<Collection<Speaker>, SpeakerSetTrust>>(3);
-		
-		SpeakersQuery dividedQuery =
-				new SpeakersQuery(query.getKeywords(), query.getMinSpeakers() / 3, query.getMaxSpeakers() / 3);
-		if (dividedQuery.getMinSpeakers() < 1){
-			dividedQuery.setMinSpeakers(1);
-		}
-		if (dividedQuery.getMaxSpeakers() < 1){
-			dividedQuery.setMaxSpeakers(1);
-		}
 
+		System.err.println("Using only NSB.com for speakers");
+		
 		try{
-			opinions.add(premiereSource.getOpinion(dividedQuery));
-		} catch (UnknownException e){}
-		try{
-			opinions.add(nsbSource.getOpinion(dividedQuery));
+			opinions.add(nsbSource.getOpinion(query));
 		} catch (UnknownException e){}
 		
 		Optional<Result<Collection<Speaker>, Double>> aggregation = aggregator.aggregate(opinions);

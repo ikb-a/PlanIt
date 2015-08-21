@@ -30,30 +30,15 @@ import edu.toronto.cs.se.ci.data.Opinion;
 /**
  * Scrapes speakers from http://www.speakerideas.com/ by searching for keywords.
  * 
- * Currently I suspect that I'm IP banned from speakerideas.com so this source will not be used be me.
+ * Be careful with using this website. They might IP ban you!
  * 
  * @author wginsberg
  *
  */
 public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements
 		GetSpeakersContract {
-	
-	/**
-	 * Used for synchronized static methods
-	 */
+
 	private static Throttler throttler;
-	
-	/*
-	public static void main (String [] args) throws UnknownException{
-		
-		Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> source = new SpeakerIdeas();
-		List<String> keywords = Arrays.asList(new String [] {"energy", "infrastrucute", "nuclear"});
-		SpeakersQuery query = new SpeakersQuery(keywords, 1, 1);
-		Collection<Speaker> speakers = source.getOpinion(query).getValue();
-		
-		System.out.println(speakers);
-	}
-	*/
 	
 	public SpeakerIdeas() {
 		
@@ -66,10 +51,6 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 	public Opinion<Collection<Speaker>, SpeakerSetTrust> getOpinion(
 			SpeakersQuery input) throws UnknownException {
 		
-		System.err.println("Aborting connection to speakerideas.com I expect we are banned :S");
-		throw new UnknownException();
-		
-		/*
 		if (throttler == null){
 			throttler = new Throttler(30, TimeUnit.MINUTES);
 		}
@@ -86,7 +67,7 @@ public class SpeakerIdeas extends Source<SpeakersQuery, Collection<Speaker>, Spe
 		}
 		
 		return new Opinion<Collection<Speaker>, SpeakerSetTrust>(speakers, getTrust(input, Optional.of(speakers)));
-		*/
+		
 	}
 
 	

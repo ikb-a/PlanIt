@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import Planit.dataObjects.Speaker;
+import Planit.speakersuggestion.scrapespeakers.resource.NSBsearchByGoogle;
 import Planit.speakersuggestion.scrapespeakers.util.GetSpeakersContract;
 import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetTrust;
 import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
@@ -31,20 +32,7 @@ public class NSBspeakers extends Source<SpeakersQuery, Collection<Speaker>, Spea
 		
 		List<Speaker> speakers = new LinkedList<Speaker>();
 		
-		for (String keyword : input.getKeywords()){
-			List<Speaker> results = NSBsearchByGoogle.getSpeakers(keyword, input.maxPerKeyword());
-			if (results.size() > input.maxPerKeyword()){
-				results.subList(input.maxPerKeyword(), results.size()).clear();
-			}
-			speakers.addAll(results);
-		}
-		if (speakers.size() > input.getMaxSpeakers()){
-			speakers.subList(input.getMaxSpeakers(), speakers.size()).clear();
-		}
-
-		if (speakers.size() < 1){
-			throw new UnknownException();
-		}
+		speakers.addAll(NSBsearchByGoogle.getSpeakers(String.join("|", input.getKeywords()), input.getMaxSpeakers()));
 	
 		return new Opinion<Collection<Speaker>, SpeakerSetTrust>(input, speakers, null, this);
 		

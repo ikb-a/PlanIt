@@ -1,4 +1,4 @@
-package Planit.speakersuggestion.scrapespeakers.sources;
+package Planit.speakersuggestion.scrapespeakers.resource;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -37,8 +37,9 @@ public class NSBsearchByGoogle {
 	public static List<Speaker> getSpeakers(String keyword, int n) throws UnknownException{
 		List<Speaker> speakers = getSpeakersFromSearchResults(keyword);
 		//trim extras before extracting details
-		if (speakers.size() > n){
-			speakers.subList(n, speakers.size()).clear();
+		System.err.println("Scraping top 3 results");
+		if (speakers.size() > 3){
+			speakers.subList( 3, speakers.size()).clear();
 		}
 		for (Speaker speaker : speakers){
 			extractDetails(speaker);

@@ -1,4 +1,4 @@
-package Planit.speakersuggestion.keywordextraction.util;
+package Planit.speakersuggestion.keywordextraction.resource;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,6 +10,8 @@ import java.util.List;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
+
+import Planit.speakersuggestion.keywordextraction.util.ContentAnalysis;
 
 /**
  * Class for accessing the keyword extraction provided by Yahoo Content Analysis

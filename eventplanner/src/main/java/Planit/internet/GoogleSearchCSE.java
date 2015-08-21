@@ -108,7 +108,7 @@ public class GoogleSearchCSE {
 			return new SearchResults(hits, results);
 		}
 		else{
-			return new SearchResults(hits, null);
+			return new SearchResults(hits, new ArrayList<SearchResult>(0));
 		}
 	}
 }

@@ -10,7 +10,7 @@ import edu.toronto.cs.se.ci.data.Opinion;
 import edu.toronto.cs.se.ci.data.Result;
 
 /**
- * An aggregator meant specifically to aggregate lists of keywords.
+ * Aggregates lists of keywords by set union.
  * @author wginsberg
  *
  */

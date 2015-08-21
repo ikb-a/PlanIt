@@ -77,14 +77,23 @@ public class SpeakerSuggestor {
 
 		System.out.printf("Candidate speakers %s\n\n", candidateSpeakers.toString());
 		
+		System.err.println("Bypassing speaker judgment");
+		SuggestedSpeakers ss = new SuggestedSpeakers();
+		for (Speaker speaker : candidateSpeakers){
+			ss.addSpeaker(speaker, new double [] {1d,0d,0d});			
+		}
+		return ss;
+		
 		/*
 		 * Rank the speakers by suitability
 		 */
+		/*
 		System.out.printf("Using co-occurrence rank aggregation\n\n");
 		speakerJudge.evaluate(event, candidateSpeakers, new Allowance [] {budget[2]});
 		SuggestedSpeakers suggestion = speakerJudge.getSuggestion();
 		
 		return suggestion;
+		*/
 	}
 	
 }

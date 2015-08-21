@@ -54,7 +54,7 @@ public class WekaDatasetAggregatorNumeric <I, Q> extends AggregatorWrapper<WekaC
 	
 	/**
 	 * Create an aggregator which passively creates a data set and always returns an empty opinion.
-	 * @param relationName
+	 * @param relationName The name of the relation that the aggregator will produce
 	 */
 	public WekaDatasetAggregatorNumeric(String relationName){
 		this(relationName, null);
