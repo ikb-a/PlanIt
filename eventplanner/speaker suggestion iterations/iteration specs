@@ -1,6 +1,0 @@
--nominal (discrete) attributes with 3 values
--Naive Bayes classifier
--10 fold cross validation AND 2/3 split
-
-There is some randomness with both 10-fold and 2/3 split evaluation, so I won't
-be satisified with an iteration being "better" unless there is at least, 10% improvement.
