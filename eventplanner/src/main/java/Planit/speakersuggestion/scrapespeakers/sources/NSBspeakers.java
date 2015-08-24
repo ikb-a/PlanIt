@@ -4,7 +4,6 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-import Planit.dataObjects.Speaker;
 import Planit.speakersuggestion.scrapespeakers.resource.NSBsearchByGoogle;
 import Planit.speakersuggestion.scrapespeakers.util.GetSpeakersContract;
 import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetTrust;
@@ -12,6 +11,7 @@ import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
 
 import com.google.common.base.Optional;
 
+import Planit.dataObjects.Speaker;
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;

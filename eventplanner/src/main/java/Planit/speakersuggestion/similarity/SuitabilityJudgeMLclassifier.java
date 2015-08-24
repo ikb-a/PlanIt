@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.ExecutionException;
 
+import Planit.dataObjects.Event;
+import Planit.dataObjects.Speaker;
 import Planit.ci.ml.ClassDistributionQuality;
 import Planit.ci.ml.NaiveBayesAggregator;
 import Planit.ci.ml.WekaCompatibleResponse;
-import Planit.dataObjects.Event;
-import Planit.dataObjects.Speaker;
 import Planit.speakersuggestion.SuggestedSpeakers;
 import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
 import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;

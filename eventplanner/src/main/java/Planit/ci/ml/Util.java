@@ -7,7 +7,7 @@ import java.util.List;
 import edu.toronto.cs.se.ci.Source;
 import weka.core.Attribute;
 
-public final class Util {
+final class Util {
 
 	/**
 	 * Returns a numeric attribute which corresponds to the source.

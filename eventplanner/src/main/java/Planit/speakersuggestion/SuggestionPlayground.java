@@ -2,10 +2,7 @@ package Planit.speakersuggestion;
 
 import java.util.concurrent.TimeUnit;
 
-import Planit.dataObjects.Address;
 import Planit.dataObjects.Event;
-import Planit.dataObjects.EventTime;
-import Planit.dataObjects.Venue;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.budget.basic.Time;
 

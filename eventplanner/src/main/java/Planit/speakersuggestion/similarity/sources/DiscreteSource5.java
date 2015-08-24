@@ -18,11 +18,7 @@ public class DiscreteSource5 extends CoOccurrenceSource {
 		
 		Double rawValue = 
 				CoOccurrence.getInstance().cooccurrence(input.getSpeaker().getName(), input.getEvent().getKeyWords());
-		
-		Double discreteValue = threshold(rawValue);
-		
-		//System.out.println(getName() + " - " + discreteValue.toString());
-		
+
 		return new Opinion<Double, Void>(input, threshold(rawValue), null, this);
 		
 	}

@@ -9,9 +9,6 @@ import java.io.OutputStreamWriter;
 import java.lang.ProcessBuilder.Redirect;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import edu.toronto.cs.se.ci.budget.basic.Time;
 
 
 /**
@@ -67,52 +64,7 @@ public class Word2Vec implements Closeable{
 		}
 	}
 	
-	/**
-	 * Given a word similarity matrix, returns the index of the row which has the greatest total similarity of all rows.
-	 * @param matrix A word similarity matrix, presumably obtained from the similarity() method
-	 * @return The index of the maximal row, or -1 if no rows are present
-	 */
-	public static int maximalRow(double [][] matrix){
-		
-		if (matrix == null){
-			return -1;
-		}
-		
-		int maxRowI = -1;
-		double maxRowSum = Integer.MIN_VALUE;
-		
-		for (int i = 0; i < matrix.length; i++){
-			if (matrix[i] == null){
-				continue;
-			}
-			double rowSum = 0;
-			for (int j = 0; j < matrix[i].length; j++){
-				rowSum += matrix[i][j];
-			}
-			if (rowSum > maxRowSum){
-				maxRowSum = rowSum;
-				maxRowI = i;
-			}
-		}
-		
-		return maxRowI;
-		
-	}
-	
-	/**
-	 * Returns the amount of time needed to perform a single similarity calculation.
-	 */
-	public Time getComputationTimeNeeded(){
-		return new Time(100 ,TimeUnit.NANOSECONDS);
-	}
-	
-	/**
-	 * Returns the amount of time needed to perform a given number of similarity calculations.
-	 */
-	public Time getComputationTimeNeeded(int n){
-		long atomic = getComputationTimeNeeded().getDuration(getComputationTimeNeeded().getTimeUnit());
-		return new Time(n * atomic, getComputationTimeNeeded().getTimeUnit());
-	}
+
 		
 	/**
 	 * Requests and returns a word similarity matrix from the client.

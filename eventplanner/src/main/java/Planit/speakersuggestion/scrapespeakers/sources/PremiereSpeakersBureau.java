@@ -26,9 +26,6 @@ import edu.toronto.cs.se.ci.data.Opinion;
 public class PremiereSpeakersBureau extends Source<SpeakersQuery, Collection<Speaker>, SpeakerSetTrust> implements
 		GetSpeakersContract {
 
-	String w= "";
-	
-
 	@Override
 	public Opinion<Collection<Speaker>, SpeakerSetTrust> getOpinion(
 			SpeakersQuery query) throws UnknownException {

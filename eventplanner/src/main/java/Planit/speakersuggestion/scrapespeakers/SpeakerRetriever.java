@@ -6,10 +6,10 @@ import java.util.List;
 
 import com.google.common.base.Optional;
 
+import Planit.dataObjects.Speaker;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.data.Opinion;
 import edu.toronto.cs.se.ci.data.Result;
-import Planit.dataObjects.Speaker;
 import Planit.speakersuggestion.scrapespeakers.sources.KeynoteSpeakersCanada;
 import Planit.speakersuggestion.scrapespeakers.sources.LavinAgencySpeakers;
 import Planit.speakersuggestion.scrapespeakers.sources.NSBspeakers;

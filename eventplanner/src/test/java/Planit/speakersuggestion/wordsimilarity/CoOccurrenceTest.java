@@ -3,9 +3,7 @@ package Planit.speakersuggestion.wordsimilarity;
 import static org.junit.Assert.*;
 
 import java.util.Arrays;
-import java.util.List;
 
-import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -53,15 +51,5 @@ public class CoOccurrenceTest {
 			assertTrue(UnknownException.class.isInstance(e));
 		}
 	}
-	
-	@Test
-	public void queriesWellFormed(){
-		String entity = "Canada";
-		List<String> keywords = Arrays.asList("\"North America\"", "cold", "poutine");
-		String coQuery = CoOccurrence.coQuery(entity, keywords);
-		assertThat(coQuery, Matchers.equalTo("Canada \"North America\" cold poutine"));
-		String negQuery = CoOccurrence.negQuery(entity, keywords);
-		assertThat(negQuery, Matchers.equalTo("Canada -\"North America\" -cold -poutine"));
-		
-	}
+
 }

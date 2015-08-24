@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import Planit.speakersuggestion.wordsimilarity.Word2Vec;
+import Planit.speakersuggestion.wordsimilarity.util.MatrixUtil;
 
 public class Word2VecTests {
 	
@@ -96,12 +97,12 @@ public class Word2VecTests {
 		matrix[0] = new double [] {1d, 2d ,3d};
 		matrix[1] = new double [] {2d, 2d ,5d};
 		matrix[2] = new double [] {1d, -1d ,-1d};
-		int i = Word2Vec.maximalRow(matrix);
+		int i = MatrixUtil.maximalRow(matrix);
 		assertEquals(1, i);
 		matrix[0] = new double [] {-1d, -1d ,-1d};
 		matrix[1] = new double [] {1d, -1d ,0.5d};
 		matrix[2] = new double [] {0.5d, 0.5d ,0d};
-		i = Word2Vec.maximalRow(matrix);
+		i = MatrixUtil.maximalRow(matrix);
 		assertEquals(2, i);
 	}
 }

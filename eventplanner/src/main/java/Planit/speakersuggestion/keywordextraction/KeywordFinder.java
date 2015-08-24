@@ -3,8 +3,8 @@ package Planit.speakersuggestion.keywordextraction;
 import java.util.LinkedList;
 import java.util.List;
 
-import edu.toronto.cs.se.ci.UnknownException;
 import Planit.dataObjects.Event;
+import edu.toronto.cs.se.ci.UnknownException;
 import Planit.speakersuggestion.keywordextraction.sources.EventCitySource;
 import Planit.speakersuggestion.keywordextraction.sources.MostRepeatedWords;
 import Planit.speakersuggestion.keywordextraction.sources.UncommonEnglishWords;

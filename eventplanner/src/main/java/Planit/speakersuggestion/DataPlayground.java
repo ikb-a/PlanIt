@@ -13,15 +13,6 @@ import weka.core.converters.ArffSaver;
 import Planit.ci.ml.WekaDatasetAggregatorNumeric;
 import Planit.speakersuggestion.similarity.TrainingDataCreator;
 import Planit.speakersuggestion.similarity.sources.CoOccurrenceSource;
-import Planit.speakersuggestion.similarity.sources.DescriptionWord2vecMean;
-import Planit.speakersuggestion.similarity.sources.DiscreteSource1;
-import Planit.speakersuggestion.similarity.sources.DiscreteSource2;
-import Planit.speakersuggestion.similarity.sources.DiscreteSource3;
-import Planit.speakersuggestion.similarity.sources.DiscreteSource4;
-import Planit.speakersuggestion.similarity.sources.DiscreteSource5;
-import Planit.speakersuggestion.similarity.sources.DocumentSimilaritySource;
-import Planit.speakersuggestion.similarity.sources.KeywordWord2vecMax;
-import Planit.speakersuggestion.similarity.sources.KeywordWordnetMax;
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import Planit.speakersuggestion.similarity.util.SourceAdaptor;
 

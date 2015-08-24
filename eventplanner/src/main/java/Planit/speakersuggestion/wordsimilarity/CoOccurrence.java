@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Map;
 
 import Planit.internet.BingSearch;
-import Planit.internet.GoogleSearchCSE;
-import Planit.internet.GoogleThroughBrowser;
 import edu.toronto.cs.se.ci.UnknownException;
 
 /**
@@ -54,7 +52,7 @@ public class CoOccurrence {
 		return instance;
 	}
 
-	synchronized public static void flush(){
+	synchronized private static void flush(){
 		try{
 			ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(cacheFileLocation));
 			out.writeObject(cache);
@@ -96,7 +94,7 @@ public class CoOccurrence {
 		
 	}
 	
-	static String entityQuery(String entity){
+	static private String entityQuery(String entity){
 		String s = "\"" + entity + "\"";
 		return s;
 	}
@@ -104,7 +102,7 @@ public class CoOccurrence {
 	/**
 	 * Generates a query for the co-occurrence of an entity with keywords
 	 */
-	static String coQuery(String entity, List<String> keywords){
+	static private String coQuery(String entity, List<String> keywords){
 		String s = String.format("\"%s\" & (%s)", entity, String.join(" | ", keywords));
 		return s;
 	}
@@ -112,7 +110,7 @@ public class CoOccurrence {
 	/**
 	 * Generates a query for the negative co-occurrence of an entity with keywords.
 	 */
-	static String negQuery(String entity, List<String> keywords){
+	static private String negQuery(String entity, List<String> keywords){
 		String s = String.format("\"%s\" & NOT %s", entity, String.join(" & NOT ", keywords));
 		return s;
 	}

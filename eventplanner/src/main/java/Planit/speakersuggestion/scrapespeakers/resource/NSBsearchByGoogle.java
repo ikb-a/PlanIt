@@ -12,8 +12,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import edu.toronto.cs.se.ci.UnknownException;
 import Planit.dataObjects.Speaker;
+import edu.toronto.cs.se.ci.UnknownException;
 import Planit.internet.GoogleSearchCSE;
 import Planit.internet.SearchResult;
 import Planit.scraping.Throttler;

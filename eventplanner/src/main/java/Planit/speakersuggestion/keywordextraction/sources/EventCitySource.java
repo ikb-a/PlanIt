@@ -5,11 +5,11 @@ import java.util.List;
 
 import com.google.common.base.Optional;
 
+import Planit.dataObjects.Event;
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.data.Opinion;
-import Planit.dataObjects.Event;
 import Planit.speakersuggestion.keywordextraction.util.EventKeywordsContract;
 
 /**

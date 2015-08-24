@@ -9,20 +9,10 @@ import java.util.List;
  *
  */
 public class SpeakersQuery {
-
-	protected List<String> keywords;
-	protected int minSpeakers;
-	protected int maxSpeakers;
 	
-	/**
-	 * Create a new naive query where all speakers encountered on the internet will be returned.
-	 * @param min
-	 * @param max
-	 */
-	@Deprecated
-	public SpeakersQuery(int min, int max){
-		this(null, min, max);
-	}
+	private List<String> keywords;
+	private int minSpeakers;
+	private int maxSpeakers;
 	
 	/**
 	 * Create a new query where the event is known

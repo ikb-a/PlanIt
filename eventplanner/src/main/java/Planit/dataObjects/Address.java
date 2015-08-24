@@ -1,6 +1,6 @@
 package Planit.dataObjects;
 
-public class Address {
+public class Address extends edu.toronto.cs.se.ci.playground.data.Address{
 	
 	private String street_number;
 	private String route;
@@ -10,22 +10,13 @@ public class Address {
 	private String postal_code;
 	
 	public Address(){
-		street_number = "";
-		route = "";
-		locality = "";
-		administrative_area_level_1 = "";
-		country = "";
-		postal_code = "";
+		super("", "", "", "", "", "");
 	}
 	
 	public Address(String streetNumber, String route, String city,
 			String province, String country, String postalCode) {
-		this.street_number = streetNumber;
-		this.route = route;
-		this.locality = city;
-		this.administrative_area_level_1 = province;
-		this.country = country;
-		this.postal_code = postalCode;
+		super(streetNumber, route, city,
+				province, country, postalCode);
 	}
 	
 	public String getStreetNumber() {

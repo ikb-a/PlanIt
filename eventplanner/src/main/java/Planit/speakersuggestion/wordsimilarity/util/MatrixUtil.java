@@ -78,4 +78,36 @@ public class MatrixUtil {
 		sb.append("]");
 		return sb.toString();
 	}
+	
+	/**
+	 * Given a word similarity matrix, returns the index of the row which has the greatest total similarity of all rows.
+	 * @param matrix A word similarity matrix, presumably obtained from the similarity() method
+	 * @return The index of the maximal row, or -1 if no rows are present
+	 */
+	public static int maximalRow(double [][] matrix){
+		
+		if (matrix == null){
+			return -1;
+		}
+		
+		int maxRowI = -1;
+		double maxRowSum = Integer.MIN_VALUE;
+		
+		for (int i = 0; i < matrix.length; i++){
+			if (matrix[i] == null){
+				continue;
+			}
+			double rowSum = 0;
+			for (int j = 0; j < matrix[i].length; j++){
+				rowSum += matrix[i][j];
+			}
+			if (rowSum > maxRowSum){
+				maxRowSum = rowSum;
+				maxRowI = i;
+			}
+		}
+		
+		return maxRowI;
+		
+	}
 }

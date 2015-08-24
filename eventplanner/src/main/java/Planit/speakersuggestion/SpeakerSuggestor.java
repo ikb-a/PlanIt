@@ -41,6 +41,9 @@ public class SpeakerSuggestor {
 	private SuitabilityJudge speakerJudge;
 	
 	
+	public void setSpeakerJudge(SuitabilityJudge speakerJudge) {
+		this.speakerJudge = speakerJudge;
+	}
 	/**
 	 * Suggests speakers for an event.
 	 * @param event The event to which the speakers are suggested for
@@ -82,18 +85,23 @@ public class SpeakerSuggestor {
 		for (Speaker speaker : candidateSpeakers){
 			ss.addSpeaker(speaker, new double [] {1d,0d,0d});			
 		}
-		return ss;
 		
 		/*
 		 * Rank the speakers by suitability
 		 */
-		/*
-		System.out.printf("Using co-occurrence rank aggregation\n\n");
-		speakerJudge.evaluate(event, candidateSpeakers, new Allowance [] {budget[2]});
-		SuggestedSpeakers suggestion = speakerJudge.getSuggestion();
 		
-		return suggestion;
-		*/
+		if (speakerJudge == null){
+			return ss;
+		}
+		else {
+			System.out.printf("Using co-occurrence rank aggregation\n\n");
+			speakerJudge.evaluate(event, candidateSpeakers, new Allowance [] {budget[2]});
+			SuggestedSpeakers suggestion = speakerJudge.getSuggestion();
+			return suggestion;
+		}
+		
+
+		
 	}
 	
 }

@@ -3,6 +3,10 @@ package Planit.dataObjects;
 import java.util.ArrayList;
 import java.util.List;
 
+import Planit.dataObjects.EventOrganizer;
+import Planit.dataObjects.EventTime;
+import Planit.dataObjects.Speaker;
+import Planit.dataObjects.Venue;
 import Planit.speakersuggestion.similarity.util.ComparableImp;
 
 /**

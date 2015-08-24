@@ -18,15 +18,16 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import Planit.dataObjects.Speaker;
 import Planit.scraping.Throttler;
 import Planit.speakersuggestion.scrapespeakers.util.GetSpeakersContract;
 import Planit.speakersuggestion.scrapespeakers.util.SpeakerSetTrust;
 import Planit.speakersuggestion.scrapespeakers.util.SpeakersQuery;
 import Planit.speakersuggestion.wordsimilarity.Word2Vec;
+import Planit.speakersuggestion.wordsimilarity.util.MatrixUtil;
 
 import com.google.common.base.Optional;
 
+import Planit.dataObjects.Speaker;
 import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
@@ -311,7 +312,7 @@ public class KeynoteSpeakersCanada extends Source<SpeakersQuery, Collection<Spea
 		
 		//pick the category with the maximum similarity score in the matrix
 		//here, the maximum score is given to the word with the highest total similarity across keywords
-		int bestWordI = Word2Vec.maximalRow(similarityMatrix);
+		int bestWordI = MatrixUtil.maximalRow(similarityMatrix);
 		if (bestWordI == -1){
 			return categories;
 		}
