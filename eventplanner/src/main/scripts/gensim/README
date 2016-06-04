@@ -9,3 +9,7 @@ To initiate the client:
 The file "words" contains a sample input for client.py.
 E.g.
 > cat words | $GENSIM_SERVER/client.py
+
+server.py requires the gensim package (https://pypi.python.org/pypi/gensim), tendo
+The default model is to use GoogleNews-vectors-negative300.bin, available from https://code.google.com/archive/p/word2vec/.
+Script must be modified so that the variable word2vec_model_path points to the GoogleNews-vectors-negative300.bin

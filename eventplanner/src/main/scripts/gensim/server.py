@@ -15,7 +15,7 @@ import os
 import gensim
 import string
 
-word2vec_model_path = "/home/wginsberg/Downloads/GoogleNews-vectors-negative300.bin"
+word2vec_model_path = "/home/ikba/Sum2016/Word2Vec/GoogleNews-vectors-negative300.bin"
 word2vec_model = None
 
 def main():
