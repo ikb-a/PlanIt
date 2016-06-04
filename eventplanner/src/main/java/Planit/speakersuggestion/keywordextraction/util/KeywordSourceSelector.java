@@ -36,9 +36,7 @@ public class KeywordSourceSelector implements Selector<Event, List<String>, Void
 		for (ListenableFuture<Opinion<List<String>, Void>> listenableOpinion : invocation.getOpinions()){
 			try {
 				Opinion<List<String>, Void> opinion = listenableOpinion.get();
-				Optional<? extends Source<?,?,?>> opinionSource = opinion.getSource();
-				
-				if (opinionSource.isPresent() && isYahooSource(opinionSource.get())){
+				if (isYahooSource(opinion.getSource())){
 					if (opinion.getValue() != null && opinion.getValue().size() > 0){
 						return Optional.absent();
 					}
