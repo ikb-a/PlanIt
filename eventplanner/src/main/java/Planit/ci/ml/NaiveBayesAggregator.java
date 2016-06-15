@@ -15,20 +15,25 @@ import weka.core.SparseInstance;
 
 /**
  * An aggregator which uses the Naive Bayes algorithm to do its aggregation.
+ * 
  * @author wginsberg
  */
-public class NaiveBayesAggregator <I> implements WekaClassifierAggregator<I>{
+public class NaiveBayesAggregator<I> implements WekaClassifierAggregator<I> {
 
 	private NaiveBayes classifier;
 	private Instances dataSet;
 
 	/**
-	 * Create a new aggregator given a data set. This will incite a new classifier to be built, using the entire data set to train it.
-	 * @param dataSet A data set to train a new classifier on
-	 * @throws Exception If a classifier could not be built from the instances
+	 * Create a new aggregator given a data set. This will incite a new
+	 * classifier to be built, using the entire data set to train it.
+	 * 
+	 * @param dataSet
+	 *            A data set to train a new classifier on
+	 * @throws Exception
+	 *             If a classifier could not be built from the instances
 	 */
-	public NaiveBayesAggregator(Instances dataSet) throws Exception{
-		
+	public NaiveBayesAggregator(Instances dataSet) throws Exception {
+
 		this.dataSet = dataSet;
 		classifier = new NaiveBayes();
 		classifier.buildClassifier(dataSet);
@@ -37,10 +42,10 @@ public class NaiveBayesAggregator <I> implements WekaClassifierAggregator<I>{
 	@Override
 	public Optional<Result<WekaCompatibleResponse<I>, ClassDistributionQuality>> aggregate(
 			List<Opinion<WekaCompatibleResponse<I>, Void>> opinions) {
-		
-		//do the classification
+
+		// do the classification
 		Instance opinionAsInstance = createInstance(opinions);
-		double [] distribution = null;
+		double[] distribution = null;
 		double classification = 0d;
 		try {
 			distribution = getClassifier().distributionForInstance(opinionAsInstance);
@@ -48,38 +53,36 @@ public class NaiveBayesAggregator <I> implements WekaClassifierAggregator<I>{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		if (distribution == null || distribution.length < 1){
+
+		if (distribution == null || distribution.length < 1) {
 			return Optional.absent();
 		}
 
-		//return the result
+		// return the result
 		String responseAsString = dataSet.classAttribute().value((int) classification);
 		WekaCompatibleResponse<I> response = new WekaCompatibleResponse<I>(null, null, responseAsString);
 		ClassDistributionQuality quality = new ClassDistributionQuality(distribution);
-		
+
 		return Optional.of(new Result<WekaCompatibleResponse<I>, ClassDistributionQuality>(response, quality));
 	}
-	
+
 	@Override
-	public Instance createInstance(
-			List<Opinion<WekaCompatibleResponse<I>, Void>> opinions) {
-		
+	public Instance createInstance(List<Opinion<WekaCompatibleResponse<I>, Void>> opinions) {
+
 		SparseInstance instance = new SparseInstance(opinions.size());
 		instance.setDataset(dataSet);
-		
-		//find the attribute that matches the source of the opinion
-		for (Opinion<WekaCompatibleResponse<I>, ?> opinion : opinions){
 
-			for (Attribute attribute : Util.attributeEnumerationToList(dataSet.enumerateAttributes())){
-				
-				//set the value of the attribute in the instance
-				
-				if (attribute.toString().contains(opinion.getValue().getSource().getName())){
-					if (opinion.getValue().isNumeric()){
+		// find the attribute that matches the source of the opinion
+		for (Opinion<WekaCompatibleResponse<I>, ?> opinion : opinions) {
+
+			for (Attribute attribute : Util.attributeEnumerationToList(dataSet.enumerateAttributes())) {
+
+				// set the value of the attribute in the instance
+
+				if (attribute.toString().contains(opinion.getValue().getSource().getName())) {
+					if (opinion.getValue().isNumeric()) {
 						instance.setValue(attribute, opinion.getValue().getNumeric());
-					}
-					else if (opinion.getValue().isNominal()){
+					} else if (opinion.getValue().isNominal()) {
 						instance.setValue(attribute, opinion.getValue().getNominal());
 					}
 				}
@@ -87,7 +90,7 @@ public class NaiveBayesAggregator <I> implements WekaClassifierAggregator<I>{
 		}
 		return instance;
 	}
-	
+
 	@Override
 	public Classifier getClassifier() {
 		return classifier;
