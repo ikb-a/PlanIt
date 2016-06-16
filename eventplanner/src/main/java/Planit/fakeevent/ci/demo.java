@@ -20,8 +20,8 @@ import com.google.gson.Gson;
  */
 public class demo {
 
-	static private String fileRealEvents = "./data/event data/chillwall.json";
-	static private String fileFakeEvents = "./data/event data/random2.json";
+	static private String fileRealEvents = "./data/event data/chillwallArray.json";
+	static private String fileFakeEvents = "./data/event data/random2Array.json";
 	// static private String fileFakeEvents = "./data/event data/fully scrambled
 	// chillwall.json";
 	// static private String fileFakeEvents = "./data/event

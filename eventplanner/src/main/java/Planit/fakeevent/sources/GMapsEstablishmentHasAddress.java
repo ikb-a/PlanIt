@@ -8,6 +8,7 @@ import org.json.JSONObject;
 
 import Planit.dataObjects.Address;
 import Planit.dataObjects.Event;
+import Planit.fakeevent.resources.GMapsGeocode;
 import Planit.fakeevent.resources.NearbySearch;
 import Planit.fakeevent.resources.SourceFactory;
 
@@ -15,7 +16,6 @@ import com.google.common.base.Optional;
 
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
-import edu.toronto.cs.se.ci.playground.sources.GMapsGeocode;
 
 public class GMapsEstablishmentHasAddress extends EventSource {
 

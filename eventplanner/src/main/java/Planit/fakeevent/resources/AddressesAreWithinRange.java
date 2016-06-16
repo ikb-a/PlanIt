@@ -14,7 +14,6 @@ import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import Planit.dataObjects.Address;
 import edu.toronto.cs.se.ci.utils.BasicSource;
-import edu.toronto.cs.se.ci.playground.sources.GMapsGeocode;
 
 /**
  * A source which tells you if a list of different addresses have
