@@ -13,6 +13,10 @@ import Planit.fakeevent.ci.EventSourceInvoker;
 import Planit.fakeevent.resources.SourceFactory;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 /**
  * Demo of loading events from a file, invoking sources on them, and saving the
@@ -20,30 +24,23 @@ import com.google.gson.Gson;
  */
 public class demo {
 
-	static private String fileRealEvents = "./data/event data/chillwallArray.json";
-	static private String fileFakeEvents = "./data/event data/random2Array.json";
+	static private String fileRealEvents = "./data/event data/chillwall.json";
+	static private String fileFakeEvents = "./data/event data/random3.json";
 	// static private String fileFakeEvents = "./data/event data/fully scrambled
 	// chillwall.json";
 	// static private String fileFakeEvents = "./data/event
 	// data/gibberish.json";
 
-	static private String outFilePath = "./data/IanTest1.arff";
-	static private String logFilePath = "./data/IanTest1log.txt";
+	static private String outFilePath = "./data/IanTest2.arff";
+	static private String logFilePath = "./data/IanTest2log.txt";
 
 	public static void main(String[] args) throws IOException {
-
-		/*
-		 * Google JSON object.
-		 */
-		Gson gson = new Gson();
 
 		// load the real events
 		Event[] realEvents;
 		File inFile = new File(fileRealEvents);
 		try {
-			Reader reader = new FileReader(inFile);
-			realEvents = gson.fromJson(reader, Event[].class);
-			reader.close();
+			realEvents = extractEventsFromJsonFile(inFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return;
@@ -53,9 +50,7 @@ public class demo {
 		Event[] fakeEvents;
 		inFile = new File(fileFakeEvents);
 		try {
-			Reader reader = new FileReader(inFile);
-			fakeEvents = gson.fromJson(reader, Event[].class);
-			reader.close();
+			fakeEvents = extractEventsFromJsonFile(inFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return;
@@ -127,6 +122,21 @@ public class demo {
 			System.out.println(invoker.getFormattedResults());
 		}
 
+	}
+
+	public static Event[] extractEventsFromJsonFile(File file) throws Exception {
+		JsonParser parser = new JsonParser();
+		// parse file into a json object
+		JsonElement jsonElement = parser.parse(new FileReader(file));
+		JsonObject eventsJsonObj = jsonElement.getAsJsonObject();
+
+		// extract the JSON array of events
+		JsonArray eventsArrayObj = eventsJsonObj.getAsJsonArray("events");
+
+		// convet the JSON array into an Event array, and return
+		Gson gson = new Gson();
+		Event[] events = gson.fromJson(eventsArrayObj, Event[].class);
+		return events;
 	}
 
 }
