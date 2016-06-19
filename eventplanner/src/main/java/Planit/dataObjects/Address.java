@@ -8,22 +8,20 @@ public class Address {
 	private String administrative_area_level_1;
 	private String country;
 	private String postal_code;
-	private transient String streetNumber;
-	private transient String city;
 
 	public Address() {
-		this.streetNumber = "";
+		this.street_number = "";
 		this.route = "";
-		this.city = "";
+		this.locality = "";
 		this.country = "";
 		this.administrative_area_level_1 = "";
 		this.postal_code = "";
 	}
 
 	public Address(String streetNumber, String route, String city, String province, String country, String postalCode) {
-		this.streetNumber = streetNumber;
+		this.street_number = streetNumber;
 		this.route = route;
-		this.city = city;
+		this.locality = city;
 		this.administrative_area_level_1 = province;
 		this.country = country;
 		this.postal_code = postalCode;

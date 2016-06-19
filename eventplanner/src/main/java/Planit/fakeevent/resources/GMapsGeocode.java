@@ -18,7 +18,7 @@ import edu.toronto.cs.se.ci.budget.basic.Time;
 import edu.toronto.cs.se.ci.utils.BasicSource;
 
 public class GMapsGeocode extends BasicSource<Address, JSONObject, Void> {
-	private String API_KEY = System.getenv("GOOGLE_KEY");
+	private String API_KEY = System.getenv("GOOGLE_API_KEY");
 
 	@Override
 	public JSONObject getResponse(Address input) throws UnknownException {

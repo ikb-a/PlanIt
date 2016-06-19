@@ -16,7 +16,7 @@ public class GenerateRandomEvents {
 	public static void main(String[] args) throws IOException {
 
 		int numEvents = 5;
-		String destination = "./data/event data/random3.json";
+		String destination = "./data/event data/random4.json";
 
 		// generate the events
 		Event[] events = new Event[numEvents];
