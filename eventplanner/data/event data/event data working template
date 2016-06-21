@@ -1,0 +1,37 @@
+{
+"events" : [
+	{
+	"title" : "",
+	"url" : "",
+	"description" : "",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "",
+		"contact" :{
+			"twitter_handle" : "",
+			"twitter_url" : "",
+			"facebook_url" : "",
+			"website" : "",
+			"email" : "",
+			"phone" : ""
+			}
+		},
+	"venue" : {
+		"name" : "",
+		"address" : {
+			"street_number" : "",
+			"route" : "",
+			"locality" : "",
+			"administrative_area_level_1" : "",
+			"country" : "",
+			"postal_code" : ""
+			}
+		}
+	}
+	]
+}

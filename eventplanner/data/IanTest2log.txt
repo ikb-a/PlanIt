@@ -1,0 +1,808 @@
+demo.java
+
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Pediatric Advanced Life Support (PALS) Provider - Guelph General Hospital
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : UPmanship: The New Science of Corporate Social Responsibility
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : UPmanship: The New Science of Corporate Social Responsibility
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : UPmanship: The New Science of Corporate Social Responsibility
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Meatless Monday's "LIVE" on TEMP
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Meatless Monday's "LIVE" on TEMP
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Meatless Monday's "LIVE" on TEMP
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Meatless Monday's "LIVE" on TEMP
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Meatless Monday's "LIVE" on TEMP
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a :  Upmanship: Enhancing The Science of CSR Toronto in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Diwan Restaurant Patio Now Open: Overlooking the Serene Aga Khan Park
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Analysis of Epigenetic Marks and Mechanisms In Disease
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a :  Vronique Mathieu, violin Stephanie Chua, piano in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Zone Learning @ CUE Information Session - Summer 2015
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Zone Learning @ CUE Information Session - Summer 2015
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Zone Learning @ CUE Information Session - Summer 2015
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : TOASTMASTERS OPEN HOUSE
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : TOASTMASTERS OPEN HOUSE
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : TOASTMASTERS OPEN HOUSE
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : TOASTMASTERS OPEN HOUSE
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : TOASTMASTERS OPEN HOUSE
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : TOASTMASTERS OPEN HOUSE
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : The Benefits of Coworking and How to Use them to Grow your Business
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : SASA Art Class - Dedication
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : SASA Art Class - Dedication
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : SASA Art Class - Dedication
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : SASA Art Class - Dedication
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : SASA Art Class - Dedication
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : The Bright Blue Door Studio & Art Gallery - CREATE Drop in Day!
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Pop-Up Shop
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Pop-Up Shop
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Pop-Up Shop
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Pop-Up Shop
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Just Write
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Just Write
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Just Write
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Just Write
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Just Write
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Photoshop for Beginners
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Photoshop for Beginners
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Photoshop for Beginners
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Photoshop for Beginners
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Economic Literacy for ENGO Leaders
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Economic Literacy for ENGO Leaders
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Economic Literacy for ENGO Leaders
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Economic Literacy for ENGO Leaders
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Economic Literacy for ENGO Leaders
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Effective Writing (Write Right 7-8)
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Effective Writing (Write Right 7-8)
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Effective Writing (Write Right 7-8)
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Effective Writing (Write Right 7-8)
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Effective Writing (Write Right 7-8)
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a :  Are You LinkedIn? Learning the Basics in Waterloo
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Seniors’ Month Pub Day at The Duke of Kent
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Seniors’ Month Pub Day at The Duke of Kent
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Seniors’ Month Pub Day at The Duke of Kent
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Eat Well... Get Healthier
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Eat Well... Get Healthier
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Eat Well... Get Healthier
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Eat Well... Get Healthier
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Eat Well... Get Healthier
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Eat Well... Get Healthier
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Eat Well... Get Healthier
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : New Summer Drop-In Classes
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : New Summer Drop-In Classes
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : New Summer Drop-In Classes
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : New Summer Drop-In Classes
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : New Summer Drop-In Classes
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Burlington Accessibility Awards
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Burlington Accessibility Awards
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Burlington Accessibility Awards
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Burlington Accessibility Awards
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Burlington Accessibility Awards
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Davisville Village Farmers' Market
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Davisville Village Farmers' Market
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Davisville Village Farmers' Market
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Davisville Village Farmers' Market
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Davisville Village Farmers' Market
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Student Job Search Workshop
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Student Job Search Workshop
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Student Job Search Workshop
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Student Job Search Workshop
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Student Job Search Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Speedy Ortiz - Alex G, Palehound, Tonkapuma
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Lost in Light - Photography by Gilles Goyette
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Lost in Light - Photography by Gilles Goyette
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Lost in Light - Photography by Gilles Goyette
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Lost in Light - Photography by Gilles Goyette
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Lost in Light - Photography by Gilles Goyette
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Mac 'n Cheese Festival
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Mac 'n Cheese Festival
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Mac 'n Cheese Festival
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Mac 'n Cheese Festival
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Mac 'n Cheese Festival
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Mac 'n Cheese Festival
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Vivid Eye in Hamilton
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Vivid Eye in Hamilton
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Vivid Eye in Hamilton
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Vivid Eye in Hamilton
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Titanic: The Musical
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Titanic: The Musical
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Titanic: The Musical
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Titanic: The Musical
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Titanic: The Musical
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Hedwig and the Angry Inch
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Hedwig and the Angry Inch
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Hedwig and the Angry Inch
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Hedwig and the Angry Inch
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Hedwig and the Angry Inch
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Scott Ellison Band in Buffalo
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Scott Ellison Band in Buffalo
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Scott Ellison Band in Buffalo
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Scott Ellison Band in Buffalo
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Scott Ellison Band in Buffalo
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : "WET DREAMZ" The Official HOT BOYZ T.O. Launch Pool Party
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Robert Plant and The Sensational Space Shifters
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Robert Plant and The Sensational Space Shifters
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Robert Plant and The Sensational Space Shifters
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Robert Plant and The Sensational Space Shifters
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Robert Plant and The Sensational Space Shifters
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : The New Age of Retail: Maximizing Profitability - Making Inventory Plans That Work For You
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : LUSH Hiring Fair
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : LUSH Hiring Fair
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : LUSH Hiring Fair
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : LUSH Hiring Fair
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : LUSH Hiring Fair
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Python for Graduate Students
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Python for Graduate Students
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Python for Graduate Students
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Python for Graduate Students
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Python for Graduate Students
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Reframing the Cultural Policy Dialogue
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Reframing the Cultural Policy Dialogue
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Reframing the Cultural Policy Dialogue
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Reframing the Cultural Policy Dialogue
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Reframing the Cultural Policy Dialogue
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : ICFSummit2015
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : ICFSummit2015
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : ICFSummit2015
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : ICFSummit2015
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : ICFSummit2015
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : YMCA Summer Day Camp Registration Open
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : YMCA Summer Day Camp Registration Open
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : YMCA Summer Day Camp Registration Open
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : YMCA Summer Day Camp Registration Open
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : YMCA Summer Day Camp Registration Open
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : YMCA Summer Day Camp Registration Open
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Black Business Professional Association - Procurement Workshop
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Black Business Professional Association - Procurement Workshop
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Black Business Professional Association - Procurement Workshop
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Black Business Professional Association - Procurement Workshop
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Black Business Professional Association - Procurement Workshop
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Probus Club of Burlington Lakeshore meeting
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Probus Club of Burlington Lakeshore meeting
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Probus Club of Burlington Lakeshore meeting
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Probus Club of Burlington Lakeshore meeting
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Differentiating Mathematics: Through Games & Activities - (K-5)
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : TrainingCafe: Feminine Influence: a whole-brain approach
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Official Opening of Kindergarten Climate Change Village
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Official Opening of Kindergarten Climate Change Village
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Official Opening of Kindergarten Climate Change Village
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Official Opening of Kindergarten Climate Change Village
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Official Opening of Kindergarten Climate Change Village
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Burlington Health and Lifestyle Network Meeting
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Burlington Health and Lifestyle Network Meeting
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Burlington Health and Lifestyle Network Meeting
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Burlington Health and Lifestyle Network Meeting
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : Burlington Health and Lifestyle Network Meeting
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress@2758fe70 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress@2758fe70 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : 
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : 
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : 
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress@2758fe70 : 
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress@2758fe70 : 
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : 
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact@4501b7af : 
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : 
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists@5b275dab : 
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists@61832929 : 
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : 
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence@29774679 : 
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : 
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid@68c4039c : 
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : 
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified@27efef64 : 
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : 
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription@47c62251 : 
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : 
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange@3e6fa38a : 
+ASK-OFFLINE: Planit.fakeevent.sources.ClassifyingSource@6ed3ef1 : farcer bibbed logily hunting variousness comparisons consumption
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : farcer bibbed logily hunting variousness comparisons consumption
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress@2437c6dc : farcer bibbed logily hunting variousness comparisons consumption
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress@2758fe70 : farcer bibbed logily hunting variousness comparisons consumption
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress@2758fe70 : farcer bibbed logily hunting variousness comparisons consumption
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : farcer bibbed logily hunting variousness comparisons consumption
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB@1f89ab83 : farcer bibbed logily hunting variousness comparisons consumption
+A

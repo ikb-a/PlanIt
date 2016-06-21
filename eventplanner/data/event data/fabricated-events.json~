@@ -1,0 +1,187 @@
+{
+"events" : [
+	{
+	"title" : "UTSU presents ; A \"good\" event!",
+	"url" : "",
+	"description" : "The University of Toronto Student's Union is presenting for the first time a good event. Come out, and be not disapointed.",
+	"time" : {
+		"start_date" : "01/01/9999",
+		"start_time" : "12:00 PM",
+		"end_date" : "01/01/9999",
+		"end_time" : "12:01 PM"
+		},
+	"organizer" : {
+		"name" : "UTSU",
+		"contact" :{
+			"twitter_handle" : "@UTSU",
+			"twitter_url" : "www.twitter.com/UTSU",
+			"facebook_url" : "www.facebook.com/UniversityofTorontoStudentsUnion",
+			"website" : "www.UTSU.com",
+			"email" : "info@utsu.com",
+			"phone" : "416-738-9101"
+			}
+		},
+	"venue" : {
+		"name" : "UTSU admin building",
+		"address" : {
+			"street_number" : "8",
+			"route" : "Hart House Circle",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5S 3E4"
+			}
+		}
+	},
+	{
+	"title" : "Guns for BigMacs",
+	"url" : "",
+	"description" : "Fight crime. Indulge. Trade in your firearms and get a free BigMac combo. Quantities are limited.",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "McDonalds Canada",
+		"contact" :{
+			"twitter_handle" : "@Guns4Burgs",
+			"twitter_url" : "www.twitter.com/mcdonaldscanada",
+			"facebook_url" : "www.facebook.com/mcdonaldscanada",
+			"website" : "www.mcdonalds.ca",
+			"email" : "guns@burgs.com",
+			"phone" : "647-812-9090"
+			}
+		},
+	"venue" : {
+		"name" : "McDonald's",
+		"address" : {
+			"street_number" : "675",
+			"route" : "Yonge St",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M4Y 1T2"
+			}
+		}
+	},
+{
+	"title" : "Ice skating on front campus",
+	"url" : "",
+	"description" : "Bring your skates and come skate on front campus woot woot. BYO-hot-chocolate",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "Skate on Front Campus",
+		"contact" :{
+			"twitter_handle" : "@skating",
+			"twitter_url" : "www.twitter.com/skating",
+			"facebook_url" : "www.facebook.com/skating",
+			"website" : "www.skate.ca",
+			"email" : "skating@frontcampus.ca",
+			"phone" : "416-900-9119"
+			}
+		},
+	"venue" : {
+		"name" : "Front Campus",
+		"address" : {
+			"route" : "King's College Circle",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5S"
+			}
+		}
+	},
+{
+	"title" : "Coffee with Pengu",
+	"url" : "",
+	"description" : "Enjoy a cup of joe with everyone's favourite penguin.",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "Pengu Fan-club",
+		"contact" :{
+			"twitter_handle" : "@pengu",
+			"twitter_url" : "www.twitter.com/therealpengu",
+			"facebook_url" : "www.facebook.com/penguthepenguin",
+			"website" : "www.penguin.com",
+			"email" : "coffeeevent@penguin.com",
+			"phone" : "789-900-1421"
+			}
+		},
+	"venue" : {
+		"name" : "Antarctica"
+		}
+	},
+{
+	"title" : "Toronto Pillow Fight 2015",
+	"url" : "",
+	"description" : "Swag. Let's hit each other with pillows. Lots of pillows and stuff.",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "TORONTO PILLOW FIGHT",
+		"contact" :{
+			"twitter_handle" : "@TOpillowfight",
+			"twitter_url" : "www.twitter.com/to_pillow_fight_2015",
+			"facebook_url" : "www.facebook.com/TO_pillow_fight_2015",
+			"email" : "pillowfight@gravitysoundbar.com",
+			"phone" : "416-977-8900"
+			}
+		},
+	"venue" : {
+		"name" : "Yonge-Dundas Square",
+		"address" : {
+			"street_number" : "296",
+			"route" : "Richmond St W",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 1X2"
+			}
+		}
+	},
+	{
+	"title" : "Justin Bieber Fan Club Meetup",
+	"url" : "",
+	"description" : "Come and meet up with fellow bieberheads and stuff.",
+	"time" : {
+		"start_date" : "31/07/2015",
+		"start_time" : "7:00 PM",
+		"end_date" : "01/08/2015",
+		"end_time" : "2:00 AM"
+		},
+	"organizer" : {
+		"name" : "Kim Jong Il",
+		"contact" :{
+			"twitter_handle" : "@KimJongIl",
+			"twitter_url" : "www.twitter.com/kimjongun",
+			"facebook_url" : "www.facebook.com/therealkimjongun",
+			"website" : "www.bestkorea.com",
+			"email" : "north@korea.com",
+			"phone" : "555-888-9999"
+			}
+		},
+	"venue" : {
+		"name" : "Kim Il-sung Stadium",
+		"address" : {
+			"country" : "North Korea"
+			}
+		}
+	}
+	]
+}
