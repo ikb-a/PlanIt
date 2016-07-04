@@ -10,17 +10,12 @@ import Planit.fakeevent.resources.SourceFactory;
 public class OrganizerWebSiteExists extends EventSource {
 
 	DoesURLExist urlCheck;
-	
+
 	public OrganizerWebSiteExists() {
-		//urlCheck = new DoesURLExist();
+		// urlCheck = new DoesURLExist();
 		urlCheck = (DoesURLExist) SourceFactory.getSource(DoesURLExist.class);
 	}
-	
-	@Override
-	public String getName(){
-		return "Organizer website exists";
-	}
-	
+
 	@Override
 	protected Integer getResponseOnline(Event e) {
 		return urlCheck.getResponse(e.getOrganizer().getContactInfo().getWebsiteURL());
@@ -28,13 +23,13 @@ public class OrganizerWebSiteExists extends EventSource {
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
-		
-		return null;
+
+		return new Expenditure[] {};
 	}
 
 	@Override
 	public Void getTrust(Event args, Optional<Integer> value) {
-		
+
 		return null;
 	}
 

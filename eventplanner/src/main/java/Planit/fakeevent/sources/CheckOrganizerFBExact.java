@@ -14,10 +14,4 @@ public class CheckOrganizerFBExact extends CheckOrganizerFB {
 		//facebook = new FBProfileExactlyExists();
 		facebook = (FBProfileExactlyExists) SourceFactory.getSource(FBProfileExactlyExists.class);
 	}
-	
-	@Override
-	public String getName(){
-		return "Organization name (exactly) is on facebook";
-	}
-	
 }

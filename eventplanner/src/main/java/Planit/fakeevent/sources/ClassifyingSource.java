@@ -19,15 +19,9 @@ import Planit.dataObjects.Event;
 public class ClassifyingSource extends EventSource {
 
 	private HashMap<Event, Integer> classification;
-	protected String name;
-
-	public ClassifyingSource() {
-		name = "Real event";
-	}
 
 	public ClassifyingSource(String classifyingAttributeName) {
 		classification = new HashMap<Event, Integer>();
-		name = classifyingAttributeName;
 	}
 
 	public void classify(List<Event> instances, int category) {
@@ -64,13 +58,13 @@ public class ClassifyingSource extends EventSource {
 
 	@Override
 	public String getName() {
-		return name;
+		return "class";
 	}
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
 
-		return null;
+		return new Expenditure[] {};
 	}
 
 	@Override

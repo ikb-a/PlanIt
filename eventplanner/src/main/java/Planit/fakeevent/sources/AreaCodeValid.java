@@ -18,10 +18,6 @@ import Planit.fakeevent.resources.SourceFactory;
  */
 public class AreaCodeValid extends EventSource {
 
-	public String getName(){
-		return "Area-code-valid";
-	}
-	
 	@Override
 	protected Integer getResponseOnline(Event e) throws UnknownException{
 		
@@ -45,8 +41,7 @@ public class AreaCodeValid extends EventSource {
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
-
-		return null;
+		return new Expenditure[]{};
 	}
 
 	@Override

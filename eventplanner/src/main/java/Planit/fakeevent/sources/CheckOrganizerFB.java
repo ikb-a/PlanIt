@@ -23,11 +23,6 @@ public class CheckOrganizerFB extends EventSource {
 	}
 
 	@Override
-	public String getName() {
-		return "Organization name (basically) is on facebook";
-	}
-
-	@Override
 	public Integer getResponseOnline(Event e) {
 		try {
 			facebook.allowNonPeople = true;
@@ -39,7 +34,7 @@ public class CheckOrganizerFB extends EventSource {
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
-		return null;
+		return new Expenditure[]{};
 	}
 
 	@Override

@@ -8,24 +8,21 @@ import Planit.fakeevent.resources.DoesURLExist;
 import Planit.fakeevent.resources.SourceFactory;
 
 /**
- * Checks that the Facebook URL supplied as the organizer's facebook page exists.
+ * Checks that the Facebook URL supplied as the organizer's facebook page
+ * exists.
+ * 
  * @author wginsberg
  *
  */
-public class OrganizerFaceBookExists extends EventSource{
+public class OrganizerFaceBookExists extends EventSource {
 
 	DoesURLExist urlChecker;
-	
+
 	public OrganizerFaceBookExists() {
-		//urlChecker = new DoesURLExist();
+		// urlChecker = new DoesURLExist();
 		urlChecker = (DoesURLExist) SourceFactory.getSource(DoesURLExist.class);
 	}
-	
-	@Override
-	public String getName(){
-		return "Organization facebook url exists";
-	}
-	
+
 	@Override
 	protected Integer getResponseOnline(Event e) {
 		return urlChecker.getResponse(e.getOrganizer().getContactInfo().getFacebookURL());
@@ -33,13 +30,13 @@ public class OrganizerFaceBookExists extends EventSource{
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
-		
-		return null;
+
+		return new Expenditure[] {};
 	}
 
 	@Override
 	public Void getTrust(Event args, Optional<Integer> value) {
-		
+
 		return null;
 	}
 

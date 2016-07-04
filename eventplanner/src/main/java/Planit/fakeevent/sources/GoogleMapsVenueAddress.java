@@ -8,43 +8,38 @@ import Planit.fakeevent.resources.SourceFactory;
 
 /**
  * Wrapper for the functionality of the GMapsEstablishmentHasAddress source.
+ * 
  * @author will
  *
  */
 public class GoogleMapsVenueAddress extends EventSource {
 
 	private GMapsEstablishmentHasAddress googleMaps;
-	
+
 	public GoogleMapsVenueAddress() {
-		//googleMaps = new GMapsEstablishmentHasAddress();
+		// googleMaps = new GMapsEstablishmentHasAddress();
 		googleMaps = (GMapsEstablishmentHasAddress) SourceFactory.getSource(GMapsEstablishmentHasAddress.class);
 	}
 
 	@Override
-	public String getName(){
-		return "Venue address cross validated (GMaps + GPlaces)";
-	}
-	
-	@Override
-	public Integer getResponseOnline(Event e){
-		
-		try{
+	public Integer getResponseOnline(Event e) {
+
+		try {
 			return googleMaps.getResponse(e);
-		}
-		catch (Exception ex){
+		} catch (Exception ex) {
 			return -1;
 		}
 	}
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
-		
-		return null;
+
+		return new Expenditure[] {};
 	}
 
 	@Override
 	public Void getTrust(Event args, Optional<Integer> value) {
-		
+
 		return null;
 	}
 

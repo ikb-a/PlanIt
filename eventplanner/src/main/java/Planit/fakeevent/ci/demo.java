@@ -23,15 +23,16 @@ import com.google.gson.JsonParser;
  */
 public class demo {
 
-	static private String fileRealEvents = "./data/event data/chillwall.json";
-	static private String fileFakeEvents = "./data/event data/random3.json";
+	// TODO: figure out why data folder is not appearing in same folder
+	static private String fileRealEvents = "./src/main/resources/data/event data/chillwall2Ian.json";
+	static private String fileFakeEvents = "./src/main/resources/data/event data/random3.json";
 	// static private String fileFakeEvents = "./data/event data/fully scrambled
 	// chillwall.json";
 	// static private String fileFakeEvents = "./data/event
 	// data/gibberish.json";
 
-	static private String outFilePath = "./data/IanTest2.arff";
-	static private String logFilePath = "./data/IanTest2log.txt";
+	static private String outFilePath = "./src/main/resources/data/IanTest3.arff";
+	static private String logFilePath = "./src/main/resources/data/IanTest3log.txt";
 
 	public static void main(String[] args) throws IOException {
 
@@ -72,7 +73,6 @@ public class demo {
 		}
 
 		// add all the sources
-		sources.add(c);
 		sources.add((GoogleMapsVenueAddress) SourceFactory.getSource(GoogleMapsVenueAddress.class));
 		sources.add((CheckOrganizerFB) SourceFactory.getSource(CheckOrganizerFB.class));
 		sources.add((CheckOrganizerFBExact) SourceFactory.getSource(CheckOrganizerFBExact.class));
@@ -84,6 +84,7 @@ public class demo {
 		sources.add((TwitterHandleVerified) SourceFactory.getSource(TwitterHandleVerified.class));
 		sources.add((TitleMatchesDescription) SourceFactory.getSource(TitleMatchesDescription.class));
 		sources.add((TimeIsInPlausibleRange) SourceFactory.getSource(TimeIsInPlausibleRange.class));
+		sources.add(c);// Classifying source is last as per WEKA convention
 
 		// let's have the log printed to a log.txt file
 		FileWriter logWriter = new FileWriter(logFilePath);
