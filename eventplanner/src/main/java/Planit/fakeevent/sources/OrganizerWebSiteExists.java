@@ -28,13 +28,13 @@ public class OrganizerWebSiteExists extends EventSource {
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Void getTrust(Event args, Optional<Integer> value) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

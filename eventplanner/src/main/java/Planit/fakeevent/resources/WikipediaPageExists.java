@@ -39,13 +39,13 @@ public class WikipediaPageExists extends BasicSource<String, Integer, Void> {
 
 	@Override
 	public Expenditure[] getCost(String args) throws Exception {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Void getTrust(String args, Optional<Integer> value) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 	

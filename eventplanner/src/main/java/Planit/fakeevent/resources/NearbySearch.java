@@ -132,13 +132,13 @@ public class NearbySearch extends BasicSource<List<Double>, JSONObject, Void> {
 
 	@Override
 	public Expenditure[] getCost(List<Double> args) throws Exception {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Void getTrust(List<Double> args, Optional<JSONObject> value) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 }

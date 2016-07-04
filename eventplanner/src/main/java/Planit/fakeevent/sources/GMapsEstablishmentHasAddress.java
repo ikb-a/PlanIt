@@ -121,13 +121,13 @@ public class GMapsEstablishmentHasAddress extends EventSource {
 	
 	@Override
 	public Expenditure[] getCost(Event arg0) throws Exception {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Void getTrust(Event arg0, Optional<Integer> arg1) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

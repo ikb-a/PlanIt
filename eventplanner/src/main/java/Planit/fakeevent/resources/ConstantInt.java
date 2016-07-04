@@ -28,13 +28,13 @@ public class ConstantInt extends BasicSource<Object, Integer, Void> {
 
 	@Override
 	public Expenditure[] getCost(Object args) throws Exception {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Void getTrust(Object args, Optional<Integer> value) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

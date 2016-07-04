@@ -47,13 +47,13 @@ public class LinkedInProfileCheck extends BasicSource<String, Integer, Void> {
 
 	@Override
 	public Expenditure[] getCost(String arg0) throws Exception {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Void getTrust(String arg0, Optional<Integer> arg1) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
