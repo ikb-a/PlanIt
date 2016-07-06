@@ -16,6 +16,7 @@ import Planit.fakeevent.sources.AreaCodeValid;
 import Planit.fakeevent.sources.CheckOrganizerFB;
 import Planit.fakeevent.sources.EmailNameCooccurence;
 import Planit.fakeevent.sources.EventCheckContract;
+import Planit.fakeevent.sources.EventSource;
 import Planit.fakeevent.sources.GoogleMapsVenueAddress;
 import Planit.fakeevent.sources.OrganizerFaceBookExists;
 import Planit.fakeevent.sources.OrganizerWebSiteExists;
@@ -23,9 +24,9 @@ import Planit.fakeevent.sources.TimeIsInPlausibleRange;
 import Planit.fakeevent.sources.TitleMatchesDescription;
 import Planit.fakeevent.sources.TwitterHandleVerified;
 import edu.toronto.cs.se.ci.Contracts;
-import edu.toronto.cs.se.ci.Estimate;
 import edu.toronto.cs.se.ci.GenericCI;
 import edu.toronto.cs.se.ci.Selector;
+import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.budget.Allowance;
 import edu.toronto.cs.se.ci.data.Opinion;
 import edu.toronto.cs.se.ci.data.Result;
@@ -117,10 +118,8 @@ public class demo2 {
 			//result = estimate.get();
 			result = ci.applySync(test1, new Allowance[]{});
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ExecutionException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -130,6 +129,16 @@ public class demo2 {
 		System.out.println("Probability of unknown: " + probabilities[0]);
 		System.out.println("Probability of fake: " + probabilities[1]);
 		System.out.println("Probability of real: " + probabilities[2]);
+		
+		//Close cache on all sources (Not part of normal CI behaviour):
+		List<Source<Event, Integer, Void>> sourcesToClose = Contracts.discover(EventCheckContract.class);
+		for(Source<Event, Integer,Void> source: sourcesToClose){
+			if(source instanceof EventSource){
+				EventSource toClose = (EventSource) source;
+				toClose.close();
+				//TODO: Add way to remove closed source from contracts.
+			}
+		}
 	}
 
 	public static class intToString implements MLWekaNominalConverter<Integer> {
