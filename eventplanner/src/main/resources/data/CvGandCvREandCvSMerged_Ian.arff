@@ -13,7 +13,7 @@
 @attribute Planit.fakeevent.sources.TwitterHandleVerified {-1,0,1}
 @attribute Planit.fakeevent.sources.TitleMatchesDescription {-1,0,1}
 @attribute Planit.fakeevent.sources.TimeIsInPlausibleRange {-1,0,1}
-@attribute class {-1,0,1}
+@attribute class {0,1}
 
 @data
 0,-1,1,1,1,0,0,1,0,1

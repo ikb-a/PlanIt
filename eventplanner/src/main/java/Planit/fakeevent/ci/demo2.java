@@ -127,10 +127,9 @@ public class demo2 {
 
 		System.out.println("Decision of CI: " + result.getValue());
 		double[] probabilities = result.getQuality();
-		assert (probabilities.length == 3);
-		System.out.println("Probability of unknown: " + probabilities[0]);
-		System.out.println("Probability of fake: " + probabilities[1]);
-		System.out.println("Probability of real: " + probabilities[2]);
+		assert (probabilities.length == 2);
+		System.out.println("Probability of fake: " + probabilities[0]);
+		System.out.println("Probability of real: " + probabilities[1]);
 		
 		//Close cache on all sources (Not part of normal CI behaviour):
 		List<Source<Event, Integer, Void>> sourcesToClose = Contracts.discover(EventCheckContract.class);
