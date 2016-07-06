@@ -1,4 +1,4 @@
-package Planit.fakeevent.sources;
+package Planit.fakeevent.resources;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,7 @@ import org.json.JSONObject;
 
 import Planit.dataObjects.Address;
 import Planit.dataObjects.Event;
-import Planit.fakeevent.resources.GMapsGeocode;
-import Planit.fakeevent.resources.NearbySearch;
-import Planit.fakeevent.resources.SourceFactory;
+import Planit.fakeevent.sources.EventSource;
 
 import com.google.common.base.Optional;
 

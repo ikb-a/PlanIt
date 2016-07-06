@@ -4,6 +4,7 @@ import com.google.common.base.Optional;
 
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import Planit.dataObjects.Event;
+import Planit.fakeevent.resources.GMapsEstablishmentHasAddress;
 import Planit.fakeevent.resources.SourceFactory;
 
 /**

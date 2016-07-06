@@ -75,7 +75,7 @@ public class demo {
 		// add all the sources
 		sources.add((GoogleMapsVenueAddress) SourceFactory.getSource(GoogleMapsVenueAddress.class));
 		sources.add((CheckOrganizerFB) SourceFactory.getSource(CheckOrganizerFB.class));
-		sources.add((CheckOrganizerFBExact) SourceFactory.getSource(CheckOrganizerFBExact.class));
+		//sources.add((CheckOrganizerFBExact) SourceFactory.getSource(CheckOrganizerFBExact.class));
 		sources.add((OrganizerWebSiteExists) SourceFactory.getSource(OrganizerWebSiteExists.class));
 		// the URL they supplied, not a search for their name on facebook
 		sources.add((OrganizerFaceBookExists) SourceFactory.getSource(OrganizerFaceBookExists.class));

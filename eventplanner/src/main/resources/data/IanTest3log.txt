@@ -1,0 +1,162 @@
+demo.java
+
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: class :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: class : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: class : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: class : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Total Body Boot Camp
+ASK-OFFLINE: class : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: class : ringsides kakistocracy constructors unfertilized punnier uninterestedly
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : 
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : 
+ASK-OFFLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : 
+ASK-ONLINE: Planit.fakeevent.sources.GMapsEstablishmentHasAddress : 
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : 
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : 
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : 
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFBExact : 
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : 
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : 
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : 
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : 
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : 
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : 
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : 
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : 
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : 
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : 
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : 
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : 
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : 
+ASK-ONLIN
