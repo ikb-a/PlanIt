@@ -36,6 +36,7 @@ import edu.toronto.cs.se.ci.machineLearning.util.MLWekaNominalAggregator;
 import edu.toronto.cs.se.ci.machineLearning.util.MLWekaNominalThresholdAcceptor;
 import edu.toronto.cs.se.ci.selectors.AllSelector;
 import weka.classifiers.bayes.NaiveBayes;
+import weka.filters.supervised.instance.ClassBalancer;
 
 public class demo2 {
 	public static final String eventTitle = "Brickfete";
@@ -89,6 +90,7 @@ public class demo2 {
 		MLWekaAggregator<Integer, String, double[]> agg = null;
 		try {
 			agg = new MLWekaNominalAggregator<Integer>(converter, TRAINING_DATA_LOCATION, new NaiveBayes());
+			agg.addFilter(new ClassBalancer());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
