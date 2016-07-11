@@ -1,0 +1,268 @@
+{
+"events" : [
+	{
+	"title" : "Rocketry in the Park!",
+	"url" : "http://www.highparktoronto.com/",
+	"description" : "Come to Toronto's beautiful High Park for our model rocketry event! Reach for the skies, and aim for the stars! BYO Rocket.",
+	"time" : {
+		"start_date" : "20/07/2016",
+		"start_time" : "1:00 PM",
+		"end_date" : "20/07/2016",
+		"end_time" : "5:00 PM"
+		},
+	"organizer" : {
+		"name" : "Parks, Forestry & Recreation",
+		"contact" :{
+			"twitter_handle" : "@rocketry",
+			"twitter_url" : "http://twitter.com/torontopfr",
+			"facebook_url" : "http://www.facebook.com/TorontoPFR/",
+			"website" : "http://www.toronto.ca/parks",
+			"email" : "parks@toronto.ca",
+			"phone" : "416-338-5058"
+			}
+		},
+	"venue" : {
+		"name" : "High Park",
+		"address" : {
+			"street_number" : "1873",
+			"route" : "Bloor St W",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M6R2Z3"
+			}
+		}
+	},
+	{
+	"title" : "The Magic of Pratchett",
+	"url" : "http://www.opl.on.ca/programs/events",
+	"description" : "Do you love Terry Pratchett's novels? So do we! Come join us at the Glenn Abbey public library for our celebration of the discworld.",
+	"time" : {
+		"start_date" : "21/08/2017",
+		"start_time" : "10:00 AM",
+		"end_date" : "23/08/2017",
+		"end_time" : "10:00 PM"
+		},
+	"organizer" : {
+		"name" : "Oakville Public Library",
+		"contact" :{
+			"twitter_handle" : "@OakvilleLibrary",
+			"twitter_url" : "http://twitter.com/OakvilleLibrary",
+			"facebook_url" : "http://www.facebook.com/oakville.library/",
+			"website" : "http://www.opl.on.ca/",
+			"email" : "oplreference@oakville.ca",
+			"phone" : "905-815-2039"
+			}
+		},
+	"venue" : {
+		"name" : "Oakville Public Library",
+		"address" : {
+			"street_number" : "1415",
+			"route" : "Third Line",
+			"locality" : "Oakville",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L6M 3G2"
+			}
+		}
+	},
+	{
+	"title" : "Blue Jays vs Red Sox",
+	"url" : "http://www.mississauga.ca/portal/residents/cg-specialevents",
+	"description" : "Come see the Blue Jays play off against the Red Sox in a special game, here in Missisauga! This will be a once in a lifetime opportunity, and seats are going fast; buy yours today!",
+	"time" : {
+		"start_date" : "25/10/2016",
+		"start_time" : "5:00 PM",
+		"end_date" : "25/10/2016",
+		"end_time" : "7:00 PM"
+		},
+	"organizer" : {
+		"name" : "City of Missisauga",
+		"contact" :{
+			"twitter_handle" : "@citymississauga",
+			"twitter_url" : "http://twitter.com/citymississauga",
+			"facebook_url" : "http://www.facebook.com/citymississauga/",
+			"website" : "http://www.mississauga.ca/portal/home",
+			"email" : "public.info@mississauga.ca",
+			"phone" : "905-615-4311"
+			}
+		},
+	"venue" : {
+		"name" : "Mississuga City Hall",
+		"address" : {
+			"street_number" : "300",
+			"route" : "City Centre Dr",
+			"locality" : "Mississauga",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L5B 3C1"
+			}
+		}
+	},
+	{
+	"title" : "Benjamin Franklin Commemorative Kite Flying",
+	"url" : "http://www.sindark.com/2015/05/23/two-string-kite-and-cn-tower/",
+	"description" : "In honour of Mr Franklin, come with us all week to fly kites over the CN tower! Watch the dance of colour and motion while the wind catches your hair.",
+	"time" : {
+		"start_date" : "21/08/2016",
+		"start_time" : "10:00 AM",
+		"end_date" : "28/08/2016",
+		"end_time" : "5:00 PM"
+		},
+	"organizer" : {
+		"name" : "United States Mint",
+		"contact" :{
+			"twitter_handle" : "@usmint",
+			"twitter_url" : "http://twitter.com/usmint",
+			"facebook_url" : "http://www.facebook.com/UnitedStatesMint/",
+			"website" : "http://www.usmint.gov/",
+			"email" : "usmint-support@catalog.usmint.gov",
+			"phone" : "1–800–872–6468"
+			}
+		},
+	"venue" : {
+		"name" : "CN Tower",
+		"address" : {
+			"street_number" : "301",
+			"route" : "Front St W",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 2T6"
+			}
+		}
+	},
+	{
+	"title" : "The Lego Movie 2 Early Showing",
+	"url" : "http://film.ca/trailer/secret-life-of-pets/",
+	"description" : "Come and see a special, early showing of The Lego Movie 2! Seats are going fast, so get tickets fast. The Lego Movie 2 is a 1986 American science fiction action adventure comedy film written and directed by James Cameron, produced by his then-wife Gale Anne Hurd, and starring Sigourney Weaver, Carrie Henn, Michael Biehn, Paul Reiser, Lance Henriksen, William Hope, and Bill Paxton. It is the sequel to the 1979 film The Lego Movie and the second installment in the Lego Movie franchise. The film follows Weaver's character Emmet as he returns to the planet where his friends encountered the hostile Duplo creature, this time accompanied by a unit of space marines.",
+	"time" : {
+		"start_date" : "01/01/2018",
+		"start_time" : "7:00 PM",
+		"end_date" : "01/01/2018",
+		"end_time" : "9:00 PM"
+		},
+	"organizer" : {
+		"name" : "Film.ca Cinemas",
+		"contact" :{
+			"twitter_handle" : "@FilmCaCinemas",
+			"twitter_url" : "http://twitter.com/filmcacinemas",
+			"facebook_url" : "http://www.facebook.com/Film.Ca/",
+			"website" : "http://film.ca/",
+			"email" : "info@film.ca",
+			"phone" : "905-338-6397"
+			}
+		},
+	"venue" : {
+		"name" : "Film.Ca Cinemas",
+		"address" : {
+			"street_number" : "171",
+			"route" : "Speers Road",
+			"locality" : "Oakville",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L6K 3W8"
+			}
+		}
+	},
+	{
+	"title" : "Random Stuff",
+	"url" : "http://en.wikipedia.org/wiki/Uniform_Resource_Locator",
+	"description" : "Come as things occur with a happening of stuff occuring. Now with stuff. stuffy stuff. Don't Question Me.",
+	"time" : {
+		"start_date" : "06/02/2017",
+		"start_time" : "1:00 PM",
+		"end_date" : "14/02/2017",
+		"end_time" : "6:00 PM"
+		},
+	"organizer" : {
+		"name" : "Doctor Who",
+		"contact" :{
+			"twitter_handle" : "@classicdw",
+			"twitter_url" : "http://twitter.com/classicdw",
+			"facebook_url" : "http://www.facebook.com/DoctorWho",
+			"website" : "http://www.doctorwho.tv/",
+			"email" : "doctorwhoenquiries@bbc.com.",
+			"phone" : "571-344-1500"
+			}
+		},
+	"venue" : {
+		"name" : "Rogers Centre",
+		"address" : {
+			"street_number" : "1",
+			"route" : "Blue Jays Way",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 1J1"
+			}
+		}
+	},
+	{
+	"title" : "1812 War Renactment",
+	"url" : "http://www.warof1812.ca/1812anim.htm",
+	"description" : "Visit the encampment and mingle with early 19th century settlers and soldiers as they go about their daily life. Shop among one-of-a-kind merchants. Witness historical demonstrations of cooking, dancing, blacksmithing and more. Enjoy food, games and musical entertainment. Wander through the original 200 year old Gage homestead. ",
+	"time" : {
+		"start_date" : "21/10/2016",
+		"start_time" : "9:00 AM",
+		"end_date" : "25/10/2016",
+		"end_time" : "7:00 PM"
+		},
+	"organizer" : {
+		"name" : "Upper Canada Village",
+		"contact" :{
+			"twitter_handle" : "@UpperCanadaVill",
+			"twitter_url" : "http://twitter.com/UpperCanadaVill?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+			"facebook_url" : "http://www.facebook.com/Upper-Canada-Village-Morrisburg-Ontario-100502250000481/",
+			"website" : "http://www.uppercanadavillage.com/",
+			"email" : "getaway@parks.on.ca",
+			"phone" : "613-543-4328"
+			}
+		},
+	"venue" : {
+		"name" : "OLG Slots at Rideau Carleton Raceway",
+		"address" : {
+			"street_number" : "4837",
+			"route" : "Albion Rd",
+			"locality" : "Ottawa",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "K1X 1A3"
+			}
+		}
+	},
+	{
+	"title" : "The Mary Poppins RoadShow!",
+	"url" : "http://marypoppinsrecreation.uk.org",
+	"description" : "Come and enjoy everyone's favourite musical nanny!",
+	"time" : {
+		"start_date" : "02/02/2020",
+		"start_time" : "8:00 PM",
+		"end_date" : "02/02/2020",
+		"end_time" : "7:00 PM"
+		},
+	"organizer" : {
+		"name" : "Legit Man",
+		"contact" :{
+			"twitter_handle" : "@legit",
+			"twitter_url" : "http://twitter.com/IExist",
+			"facebook_url" : "http://www.facebook.com/TotallyExists",
+			"website" : "http://lego.com",
+			"email" : "legit@yahoo.com",
+			"phone" : "9052223126"
+			}
+		},
+	"venue" : {
+		"name" : "Pickering Nuclear Generating Station",
+		"address" : {
+			"street_number" : "1675",
+			"route" : "Montgomery Park Rd",
+			"locality" : "Pickering",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L1V 2R5"
+			}
+		}
+	}
+	]
+}

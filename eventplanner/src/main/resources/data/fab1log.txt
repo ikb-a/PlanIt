@@ -1,0 +1,267 @@
+demo.java
+
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: class :  IBM WebSphere Cast Iron Administration Online Training in Toronto
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: class : Daddy & Me Mini Sessions - Kells' Natural Photography
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : GET FIT CHALLENGE - SUMMER OF 519
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: class : GET FIT CHALLENGE - SUMMER OF 519
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: class : ART SHOW: Gooderham Gallery Showcase of Artists
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Total Body Boot Camp
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Total Body Boot Camp
+ASK-OFFLINE: class : Total Body Boot Camp
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Rocketry in the Park!
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Rocketry in the Park!
+ASK-OFFLINE: class : Rocketry in the Park!
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : The Magic of Pratchett
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : The Magic of Pratchett
+ASK-OFFLINE: class : The Magic of Pratchett
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Blue Jays vs Red Sox
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Blue Jays vs Red Sox
+ASK-OFFLINE: class : Blue Jays vs Red Sox
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Benjamin Franklin Commemorative Kite Flying
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: class : Benjamin Franklin Commemorative Kite Flying
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : The Lego Movie 2 Early Showing
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : The Lego Movie 2 Early Showing
+ASK-OFFLINE: class : The Lego Movie 2 Early Showing
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Random Stuff
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Random Stuff
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : Random Stuff
+ASK-OFFLINE: class : Random Stuff
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.AreaCodeValid : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.TwitterHandleVerified : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.TwitterHandleVerified : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.TitleMatchesDescription : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.TitleMatchesDescription : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : 1812 War Renactment
+ASK-ONLINE: Planit.fakeevent.sources.TimeIsInPlausibleRange : 1812 War Renactment
+ASK-OFFLINE: class : 1812 War Renactment
+ASK-OFFLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : The Mary Poppins RoadShow!
+ASK-ONLINE: Planit.fakeevent.sources.GoogleMapsVenueAddress : The Mary Poppins RoadShow!
+ASK-OFFLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : The Mary Poppins RoadShow!
+ASK-ONLINE: Planit.fakeevent.resources.GMapsEstablishmentHasAddress : The Mary Poppins RoadShow!
+ASK-OFFLINE: Planit.fakeevent.sources.CheckOrganizerFB : The Mary Poppins RoadShow!
+ASK-ONLINE: Planit.fakeevent.sources.CheckOrganizerFB : The Mary Poppins RoadShow!
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : The Mary Poppins RoadShow!
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerWebSiteExists : The Mary Poppins RoadShow!
+ASK-OFFLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : The Mary Poppins RoadShow!
+ASK-ONLINE: Planit.fakeevent.sources.OrganizerFaceBookExists : The Mary Poppins RoadShow!
+ASK-OFFLINE: Planit.fakeevent.sources.EmailNameCooccurence : The Mary Poppins RoadShow!
+ASK-ONLINE: Planit.fakeevent.sources.EmailNameCooccurence : The Mary Poppins RoadShow!
+ASK-OFFLINE: Planit.fakeevent.sources.AreaCodeValid : The Mary Poppins 

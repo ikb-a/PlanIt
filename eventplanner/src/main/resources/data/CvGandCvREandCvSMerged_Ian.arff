@@ -1,4 +1,4 @@
-% Will's data rearranged. combining chillwall vs scramble, chillwall vs gibberish, and chillwall vs random english.
+% Will's data rearranged. combining chillwall vs scramble, chillwall vs gibberish, and chillwall vs random english. I have also added the 8 or so fake instances from fab1Results.arff
 % Real is 1; Fake is 0; Unknown is -1.
 % class is whether the event is actually real.
 %Note that in this data, TimeIsInPlausibleRange constantly returns 0. I must look into this, to see if this is still happening.
@@ -216,3 +216,11 @@
 0,0,0,0,-1,0,0,1,0,0
 0,0,0,0,-1,0,0,0,0,0
 0,0,0,0,-1,0,-1,0,0,0
+0,0,1,1,1,1,0,0,0,0
+0,0,1,1,1,1,0,1,0,0
+0,0,1,1,0,1,0,1,0,0
+1,0,1,1,1,0,0,0,0,0
+0,0,1,1,0,1,0,1,0,0
+1,0,1,1,1,0,0,0,0,0
+0,1,1,1,0,1,0,0,0,0
+0,0,1,1,0,1,0,0,0,0

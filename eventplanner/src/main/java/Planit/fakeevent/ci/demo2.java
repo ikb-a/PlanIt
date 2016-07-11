@@ -24,6 +24,7 @@ import Planit.fakeevent.sources.TimeIsInPlausibleRange;
 import Planit.fakeevent.sources.TitleMatchesDescription;
 import Planit.fakeevent.sources.TwitterHandleVerified;
 import edu.toronto.cs.se.ci.Contracts;
+import edu.toronto.cs.se.ci.Estimate;
 import edu.toronto.cs.se.ci.GenericCI;
 import edu.toronto.cs.se.ci.Selector;
 import edu.toronto.cs.se.ci.Source;
@@ -35,6 +36,7 @@ import edu.toronto.cs.se.ci.machineLearning.aggregators.MLWekaNominalConverter;
 import edu.toronto.cs.se.ci.machineLearning.util.MLWekaNominalAggregator;
 import edu.toronto.cs.se.ci.machineLearning.util.MLWekaNominalThresholdAcceptor;
 import edu.toronto.cs.se.ci.selectors.AllSelector;
+import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.filters.supervised.instance.ClassBalancer;
 
@@ -54,7 +56,7 @@ public class demo2 {
 	private static final String eventUrl = "http://toronto.brickfete.com/";
 	private static final String eventDescription = "Amazing, jaw dropping, outstanding LEGO creations built by hobbyist.These unique and detailed builds include... LEGO Robots & Mindstorms Creations, City Layouts with powered Trains,Space, Star Wars & Scifi Creations,Art, Architecture & Design, Planes, Trains & Automobiles, Historical Buildings and Castles, Pirates, Steampunk and Vikings, Mosaics & Sculptures and more... All made with millions of LEGO bricks by hobbyists from across Canada and parts of USA, Europe and Australia.";
 	private static final String eventOrganizerName = "Brickfete";
-	private static final String eventOrganizerTwitterHandle = "brickfete";
+	private static final String eventOrganizerTwitterHandle = "@brickfete";
 	private static final String eventOrganizerTwitterUrl = "https://twitter.com/brickfete";
 	private static final String eventOrganizerFacebookUrl = "https://www.facebook.com/Brickfete/";
 	private static final String eventOrganizerWebsite = "http://toronto.brickfete.com/";
@@ -91,9 +93,12 @@ public class demo2 {
 		try {
 			agg = new MLWekaNominalAggregator<Integer>(converter, TRAINING_DATA_LOCATION, new NaiveBayes());
 			agg.addFilter(new ClassBalancer());
+			Evaluation result = agg.nFoldCrossValidate(10);
+			System.out.println(result.toSummaryString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 
 		// All values are considered OK, no values are considered GOOD. this
 		// should force all source to be called.
@@ -114,11 +119,11 @@ public class demo2 {
 		GenericCI<Event, Integer, String, Void, double[]> ci = new GenericCI<Event, Integer, String, Void, double[]>(
 				EventCheckContract.class, agg, sel, acc);
 
-		//Estimate<String, double[]> estimate = ci.apply(test1, new Allowance[] {});
+		Estimate<String, double[]> estimate = ci.apply(test1, new Allowance[] {});
 		Result<String, double[]> result = null;
 		try {
-			//result = estimate.get();
-			result = ci.applySync(test1, new Allowance[]{});
+			result = estimate.get();
+			//result = ci.applySync(test1, new Allowance[]{});
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} catch (ExecutionException e) {

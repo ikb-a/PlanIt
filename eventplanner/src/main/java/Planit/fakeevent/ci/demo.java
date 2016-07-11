@@ -24,15 +24,15 @@ import com.google.gson.JsonParser;
 public class demo {
 
 	// TODO: figure out why data folder is not appearing in same folder
-	static private String fileRealEvents = "./src/main/resources/data/event data/chillwall2Ian.json";
-	static private String fileFakeEvents = "./src/main/resources/data/event data/random3.json";
+	static private String fileRealEvents = "./src/main/resources/data/event data/singleReal.json";
+	static private String fileFakeEvents = "./src/main/resources/data/event data/fab1.json";
 	// static private String fileFakeEvents = "./data/event data/fully scrambled
 	// chillwall.json";
 	// static private String fileFakeEvents = "./data/event
 	// data/gibberish.json";
 
-	static private String outFilePath = "./src/main/resources/data/IanTest3.arff";
-	static private String logFilePath = "./src/main/resources/data/IanTest3log.txt";
+	static private String outFilePath = "./src/main/resources/data/fab1Results.arff";
+	static private String logFilePath = "./src/main/resources/data/fab1log.txt";
 
 	public static void main(String[] args) throws IOException {
 

@@ -1,0 +1,34 @@
+{
+   "events":[
+      {
+         "title":" IBM WebSphere Cast Iron Administration Online Training in Toronto",
+         "url":"http://toronto.eventful.com/events/ibm-websphere-cast-iron-a-/E0-001-083749674-9@2015060100",
+         "description":"IBM WebSphere Cast Iron Administration Online Training  Web URL : http://www.virtualnuggets.com/ibm-websphere-cast-iron.html Email : info@virtualnuggets com Contact : +1-707 666 8949(USA) +91-888 556 0202(India) New Batches starts for every 15 days – weekend, weekdays & Fastrack Batches available.  IBM WebSphere Cast Iron Administration Online Training Course Overview  This IBM WebSphere Cast Iron Online Training course shows you how to design and manage the IBM WebSphere Cast Iron Appliance. Through recorded sessions and recorded explanations, IBM Cast Iron Administration course presents the Cast Iron Appliance, focusing on appliance organization and Organization tools. Trainee will figure out the configuration and updating of the apparatus, make projects, oversee activities, move down the storehouse, and investigate apparatus issues.  About VirtualNuggets  • We are been upgrading with new technologies that are coming in to the market. • We provide hands on labs on both the trainee & trainer desktop screens. • 100 % quality assurance provided. • Our trainer's are ready to provide job support for working professionals also.  Other IBM Courses we offer:  • IBM WebSphere DataPower • IBM BPM Development • IBM FileNet • IBM Maximo • IBM Web Experience Factory • IBM WAS Admin • IBM WebSphere Process Server • IBM BPM Development • IBM BPM Administration • IBM WebSphere Portal Developer • IBM WebSphere Portal Admin • IBM WTX  Follow us:  http://ibmcastirononlinetraining.blogspot.in/  Categories: Education | Technology  This event repeats monthly on the 1st Monday for 12 times: Jun 1, Jul 6, Aug 3",
+         "time":{
+            "start_date":"01/06/2015",
+            "end_date":"02/06/2015"
+         },
+         "organizer":{
+            "contact":{
+               "website":"http://www.virtualnuggets.com/ibm-websphere-cast-iron.html",
+               "email":"info@virtualnuggets com",
+               "phone":"+1-707 666 8949",
+               "twitter_url":"https://twitter.com/virtualnuggets",
+               "twitter_handle":"@VirtualNuggets",
+               "facebook_url":"https://www.facebook.com/pages/VirtualNuggets/646095062107215"
+            }
+         },
+         "venue":{
+            "name":"Toronto Centre for the Arts",
+            "address":{
+               "street_number":"5040",
+               "route":"Yonge St",
+               "locality":"Toronto",
+               "administrative_area_level_1":"ON",
+               "country":"Canada",
+               "postal_code":"M2N 6R8"
+            }
+         }
+      }
+   ]
+}
