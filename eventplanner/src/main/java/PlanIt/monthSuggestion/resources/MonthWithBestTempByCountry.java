@@ -15,26 +15,27 @@ import org.json.JSONObject;
 import PlanIt.monthSuggestion.sources.Month;
 import edu.toronto.cs.se.ci.UnknownException;
 
-public class MonthWithLeastRainByCountry {
+public class MonthWithBestTempByCountry {
 	private static String currCountry;
 	private static String currCountryCode;
 	private static Map<String, String> map;
-	private static List<MonthAndPrec> data;
+	private static List<MonthAndTempDelta> data;
+	public static final int IDEAL_TEMP = 20;
 
 	public static void main(String[] args) throws UnknownException {
 		for (int x = 1; x < 13; x++) {
-			System.out.println(nthMonthWithLeastRain("Canada", x));
+			System.out.println(nthMonthWithBestTemp("Canada", x));
 		}
 	}
 
-	public static Month nthMonthWithLeastRain(String country, int n) throws UnknownException {
+	public static Month nthMonthWithBestTemp(String country, int n) throws UnknownException {
 		if (n < 1 || n > 12) {
 			throw new IllegalArgumentException("The " + n + "th month does not exist");
 		}
 
-		synchronized (MonthWithLeastRainByCountry.class) {
+		synchronized (MonthWithBestTempByCountry.class) {
 			if (!country.equals(currCountry)) {
-				data = new ArrayList<MonthAndPrec>();
+				data = new ArrayList<MonthAndTempDelta>();
 				updateCountryAndCode(country);
 
 				String apiResult = requestData();
@@ -44,13 +45,15 @@ public class MonthWithLeastRainByCountry {
 
 				try {
 					System.out.println(apiResult);
-					JSONArray json = new JSONArray(apiResult);
-					JSONObject json1999 = (JSONObject) json.get(json.length() - 1);
-					JSONArray jsonMonthlyData = json1999.getJSONArray("monthVals");
+					JSONArray jsonMonthlyData = new JSONArray(apiResult);
 					assert (jsonMonthlyData.length() == 12);
 					for (int x = 0; x < 12; x++) {
+						JSONObject monthData = jsonMonthlyData.getJSONObject(x);
+						int monthAsInt = monthData.getInt("month");
+						double averageTemp = monthData.getDouble("data");
+
 						Month thisMonth = Month.January;
-						switch (x) {
+						switch (monthAsInt) {
 						case 0:
 							thisMonth = Month.January;
 							break;
@@ -88,14 +91,13 @@ public class MonthWithLeastRainByCountry {
 							thisMonth = Month.December;
 							break;
 						}
-						MonthAndPrec thisMonthData = new MonthAndPrec(thisMonth, jsonMonthlyData.getDouble(x));
+						MonthAndTempDelta thisMonthData = new MonthAndTempDelta(thisMonth,
+								Math.abs(averageTemp - IDEAL_TEMP));
 						data.add(thisMonthData);
 					}
-					Collections
-							.sort(data,
-									(a, b) -> (a.getMonth() == b.getMonth()
-											|| a.getPrecipitation() == b.getPrecipitation()) ? 0
-													: ((a.getPrecipitation() > b.getPrecipitation()) ? 1 : -1));
+					Collections.sort(data,
+							(a, b) -> (a.getMonth() == b.getMonth() || a.getTempDelta() == b.getTempDelta()) ? 0
+									: ((a.getTempDelta() > b.getTempDelta()) ? 1 : -1));
 				} catch (Exception e) {
 					throw new UnknownException(e);
 				}
@@ -106,7 +108,7 @@ public class MonthWithLeastRainByCountry {
 	}
 
 	private static String requestData() throws UnknownException {
-		String urlString = "http://climatedataapi.worldbank.org/climateweb/rest/v1/country/mavg/pr/1980/1999/"
+		String urlString = "http://climatedataapi.worldbank.org/climateweb/rest/v1/country/cru/tas/month/"
 				+ currCountryCode;
 		try {
 			URL url = new URL(urlString);
@@ -390,21 +392,21 @@ public class MonthWithLeastRainByCountry {
 		}
 	}
 
-	private static class MonthAndPrec {
+	private static class MonthAndTempDelta {
 		final Month month;
-		final double precipitation;
+		final double delta;
 
-		public MonthAndPrec(Month month, double precipitation) {
+		public MonthAndTempDelta(Month month, double temperatureDifferenceFromBest) {
 			this.month = month;
-			this.precipitation = precipitation;
+			this.delta = temperatureDifferenceFromBest;
 		}
 
 		public Month getMonth() {
 			return month;
 		}
 
-		public double getPrecipitation() {
-			return precipitation;
+		public double getTempDelta() {
+			return delta;
 		}
 	}
 }
