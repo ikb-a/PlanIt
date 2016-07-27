@@ -9,6 +9,7 @@ import Planit.dataObjects.Speaker;
 import Planit.dataObjects.Venue;
 import Planit.speakersuggestion.similarity.util.ComparableImp;
 
+//TODO: Consider removing keywords entirely
 /**
  * An event which can be created in PlanIt, or a representation of an event from
  * another source. There is no public constructor, instead the static method
@@ -65,7 +66,7 @@ public class Event extends ComparableImp {
 			words.addAll(extractKeywords(getDescription()));
 		}
 		return words;
-	}//			t = new EventTime();
+	}// t = new EventTime();
 
 	/**
 	 * Returns a string to uniquely identify the event. (Currently the event's
