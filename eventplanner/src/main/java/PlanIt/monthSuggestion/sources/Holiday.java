@@ -284,7 +284,12 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		Address address = venue.getAddress();
 		String country = address.getCountry();
 
-		List<String> keywords = input.getKeyWords();
+		List<String> keywords = input.getWords();
+		List<String> definedKeywords = input.getKeyWords();
+		if (definedKeywords != null) {
+			keywords.addAll(definedKeywords);
+			definedKeywords = null;
+		}
 		for (int x = 0; x < keywords.size(); x++) {
 			keywords.set(x, keywords.get(x).toLowerCase());
 		}
