@@ -1,0 +1,179 @@
+{
+"events" : [	{
+	"title" : "Father's Day",
+	"description" : "Is a celebration honoring fathers and celebrating fatherhood, paternal bonds, and the influence of fathers in society. The tradition was said to be started from a memorial service held for a large group of men who died in a mining accident in Monongah, West Virginia in 1907. It was first proposed by Sonora Dodd of Spokane, Washington in 1909. It is currently celebrated in the United States annually on the third Sunday in June.",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "Savor Food Beer Festival",
+	"description" : "Savor is an American craft beer and food experience held at the National Building Museum in downtown Washington. This festival features craft beers and artisan cheese from across the country. If you love beer, this formal experience is one you need to attend this year. ",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "The Old Town Art Fair Painting Photography Drawing",
+	"description" : "Art lovers unite at the Old Town Art Fair in Chicago�s historic Old Town Triangle District for your pick of art mediums including 2D and 3D mixed media, drawing, painting, photography, printmaking, ceramics, fiber, glass, jewelry, and works in metal, stone, and wood. In short, any art you can imagine will be here. Known as one of the top art fairs in the country, the Old Town Art Fair celebrates its 67th year, and you are sure to walk away with a new piece of art for your living room. ",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "Firefly Music Festival Concert",
+	"description" : "Summer is the season for music, festivals, and concerts and the Firefly Music Festival in Dover offers one of the most unforgettable experiences of the summer. Featuring big name artists like Mumford & Sons, Florence + The Machine, Ellie Goulding, and Of Monsters and Men, the Firefly Music Festival is the perfect event for camping out, hanging out with friends, and creating lifelong memories.",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "Electric Daisy Carnival Las Vegas Art 3D Glow",
+	"description" : "The Electric Daisy Carnival has found a home in Las Vegas for the last 20 years, each year drawing in a bigger and better crowd for the three day carnival! This year, more than 300,000 people are expected to show up in EDC attire to look at the giant metal art, 3D superstructures, and glow in the dark environments. There are rides, food, and of course the best EDM DJ�s from around the world. Experience the heat of the 20th EDC Las Vegas in the full force this year! ",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "Utah Shakespeare Festival",
+	"description" : "The beautiful scenery of Southern Utah makes the perfect backdrop for the best Shakespeare Festival in the country. Each year, more than 100,000 people flock to Cedar City to watch the plays put on by the at the Shakespeare Festival, a festival that has received both a Tony Award and an Emmy! The festival runs for a large part of the summer and into the fall, so you have plenty of opportunities to make your way to Cedar City - and then see some of the country�s most beautiful National Parks with Bryce Canyon and Zion National Park a quick car ride away. ",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "NBA Finals Basquet Games",
+	"description" : "The National Basketball Association, or NBA, is a professional basketball league comprised of 30 teams across North America featuring the best basketball players in the world.The NBA is a collection of 30 teams, broken down by two conferences with three divisions apiece. The Western Conference plays host to the Northwest, Pacific and Southwest Divisions, featuring the following 15 teams",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "Wrestling World Cup - Men's freestyle",
+	"description" : "The 2016 Wrestling World Cup - Men's freestyle was The last of a set of three Wrestling World Cups in 2016. Wrestling World Cup is an international wrestling competition among teams representing member nations of the United World Wrestling (UWW) the sport's global governing body. The championships have been conducted every year since the 1973 tournament. The World Cup began as a dual-meet competition for the top teams on each continent, but now features the top teams in the rankings of the previous year's world championships.",
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},	{
+	"title" : "Dragon Boat Festival",
+	"description" : "Also often known as the Tuen Ng or Duanwu Festival, is a traditional holiday originating in China, occurring near the summer solstice. It is also known as Zhongxiao Festival , commemorating fealty  and filial piety. The focus of most celebrations involves eating zongzi (sticky rice treats wrapped in bamboo leaves), drinking realgar wine, and racing dragon boats. The festival is a statutory holiday in China, Hong Kong, Macau, and Taiwan.",
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},	{
+	"title" : "Lychee and Dog Meat Festival",
+	"description" : "The Lychee and Dog Meat Festival, commonly referred to as Yulin Dog Meat Festival, is an annual celebration held in Yulin, Guangxi, China, during the summer solstice in which festival goers eat dog meat and lychees. The festival spans about ten days during which it is estimated that 10,000�15,000 dogs are consumed. The festival has been criticised by animal welfare supporters.",
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},	{
+	"title" : "Kiel Week",
+	"description" : "The Kiel Week (German: Kieler Woche) or Kiel Regatta is an annual sailing event in Kiel, Germany. It is the largest sailing event in the world, and also one of the largest Volksfeste in Germany. Kiel Week is held annually in the last complete week in June, and opens officially on the preceding Saturday with the official Glasen, followed by the Holstenbummel. The Soundcheck is on the Friday before the official opening; it is a music festival across all the stages within the city. Kiel Week ends with a large fireworks display at 11 p.m. on Sunday, fired from pontoons or the quays at the Howaldtswerke, visible all across the Bay of Kiel.",
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},	{
+	"title" : "PDC World Cup of Darts",
+	"description" : "The 2016 PDC World Cup of Darts was the sixth edition of the PDC World Cup of Darts. It took place between 2�5 June in Frankfurt am Main, Germany. England retained their title after beating the Netherlands 3-2 in the final. he PDC World Cup of Darts is a darts tournament organised by the Professional Darts Corporation and was one of the three new tournaments being introduced into the PDC calendar in 2010. It is broadcast live by Sky Sports.[2] Due to the rescheduling of the Players Championship Finals in the PDC calendar, the second edition was played in Hamburg, Germany in February 2012. In 2015, the event took place the Eissporthalle Frankfurt.",
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},	{
+	"title" : "Wimbledon Tennis Championships",
+	"description" : "The Wimbledon Championships, officially called �The Lawn Tennis Championships�, is the oldest and arguably most prestigious event in the sport of tennis. It is held annually at the All England Club in Wimbledon, a suburb of London, in June or July every year. The tournament starts 6 weeks before the first Monday in August, and lasts for two weeks subject to extensions for rain. From 2015, the event start date was extended to one week later so that there was 3 weeks break after the French Open.",
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},	{
+	"title" : "Armed Forces Day",
+	"description" : "Armed Forces Day (formerly Veterans' Day) in the United Kingdom is an annual event celebrated in late June to commemorate the service of men and women in the British Armed Forces. Veterans' Day was first observed in 2006. Although an official event, it is not a public holiday in the UK. The name was changed to Armed Forces Day in 2009. Armed Forces Day has so far been observed on the last Saturday of June.",
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},	{
+	"title" : "National Beer Day",
+	"description" : "Britain's National Beer Day happens annually on June 15th . It is called Beer Day Britain. That date was chosen because June 15th is also the date that Magna Carta was sealed in 1215 and ale is mentioned in clause 35 of Magna Carta. It states: 'There shall be standard measures of wine, ale, and corn (the London quarter), throughout the kingdom. There shall also be a standard width of dyed cloth, russet, and haberject, namely two ells within the selvedges. Weights are to be standardised similarly. Beer Day Britain was instigated and driven forward by beer sommelier, writer and drinks educator Jane Peyton. On 27 March 2009, the British Parliament made a motion to officially recognise 6 April as National Beer Day.",
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},	{
+	"title" : "Women's Hockey Champions Trophy",
+	"description" : "The 2016 Women's Hockey Champions Trophy was the 22nd edition of the Hockey Champions Trophy for women. It was held between 18 and 26 June 2016 in London, United Kingdom. The Hockey Champions Trophy is an international field hockey tournament held by the International Hockey Federation. Founded in 1978 by Pakistan's Air Marshal Nur Khan and the Pakistan Hockey Federation, it features the world's top-ranked field hockey teams competing in a round robin format. A biennial women's tournament was added in 1987. The Champions Trophy was changed from an annual to a biennial event from 2014 on wards, due to the introduction of the Hockey World League. The 2018 edition will be the last edition of champions trophy.",
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},	{
+	"title" : "KAZANSUMMIT",
+	"description" : "KAZANSUMMIT (The International Summit on Economic Cooperation between the Russian Federation and the Countries of the OIC) is an international economic and business forum-summit held annually in Kazan, Russia. It was established in 2009.[1] It is held under the patronage of the President of Republic of Tatarstan. The number of participants increases over the years; in particular, in 2012, the number of participants was over 1000 people. There were representatives from more than 30 countries, as well as members of the Organisation of Islamic Cooperation and from 13 regions of the Russian Federation. KAZANSUMMIT will be of particular interest to participants of international organizations , domestic and foreign financial institutions, diplomatic legations, top managers, investors, scientists, Deputies of the State Duma of the Russian Federation, and analysts and experts. It is held traditionally in the international business center Pyramide (Kazan).",
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},	{
+	"title" : "Sabantuy",
+	"description" : "Sabantuy is a Bashkir, Idel-Uralian and Tatar summer festival, that dates back to the Volga Bulgarian epoch. At first Sabantuy was a festival of farmers in rural areas, but it later became a national holiday and now is widely celebrated in the cities. The main distinctive elements of Sabantuy include the traditional sporting competitions such as k�r�s (Tatar wrestling), horse racing, race-in-sack, pillar-climbing, egg-in-spoon-in-mouth-racing, sacks-battle on the crossbar, pot smashing , finding a coin in a qatiq (a beverage made from sour milk), and other contests. Such activities take place on the m�ydan,] which would usually be located at the edge of a forest. A tradition, called s�r�n, was held to collect a fare for guests of the festival and prizes for the winners of the contests. Qarga botqasi (Rook's porridge), a ritual porridge, was cooked before the Sabantuy to treat children in the village. Another tradition was praying at the cemetery. In the recent years Sabantuy is also often combined with the folk and pop music festivals, as well as accordion music festivals, named Play, accordion!.",
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},	{
+	"title" : "Scarlet Sails",
+	"description" : "The Scarlet Sails is a celebration in St. Petersburg, Russia, the most massive and famous public event during the White Nights Festival. The tradition is highly popular for its spectacular fireworks, numerous music concerts, and a massive water show. The Scarlet Sails show celebrating the end of school year 2007 was attended by more than one million people.  Crowds of about one million people are treated to a wide variety of free entertainment provided by the city of St. Petersburg. Entertainment also includes appearances by popular rock stars, as well as the St. Petersburg Symphony Orchestra, ballet, and other classical acts, performing on several stages simultaneously during the event. The show also includes a series of large-scale events on the waters of the Neva river, such as rowing and motorboat races, and a massive battle with pirates culminating in the appearance of a tall ship sporting spectacular scarlet sails. The show has become the main part of the White Nights celebration.",
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},	{
+	"title" : "Vivat Russia!",
+	"description" : "Vivat Russia! International Open DanceSport Tournament is a dancesport tournament held on annual basis (since 2007) in Krasnodar region. Starting from 2007 the tournament is recognized as an international one being held in Adler, from 2009 on the tournament has been held in Sochi. The contest consists of two syllabi: Standard and Latin. Dancers that chose the first syllabus must base their routines on Waltz, Tango, Viennese Waltz, Slow Foxtrot and Quickstep. Dancers that chose the Latina syllabus must base their routines on such dances as Latina, Samba, Cha-Cha-Cha, Rumba, Paso Doble and Jive. Vivat Russia! is a traditional tournament of the World DanceSport Federation (WDSF). Each participant of the tournament receives rating points and takes his or her position in the world ratings based on the rank achieved. International status is the highest status available, thus couples competing at Vivat Russia! Tournament may potentially receive maximum possible number of points.",
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},	{
+	"title" : "FIA WTCC Race of Russia",
+	"description" : "The FIA WTCC Race of Russia is a round of the World Touring Car Championship, which was held for the first time in 2013 at the Moscow Raceway in Volokolamsk, 70 kilometres (43 mi) from the capital, Moscow. The FIA World Touring Car Championship (WTCC) is an international Touring Car championship sanctioned by the FIA. It has had several different incarnations over the years, including a single season in 1987, a World Touring Car Cup held between 1993 and 1995 and most recently a world championship that has run since 2005. Citro�n Total driver Jos� Mar�a L�pez from Argentina is the 2015 WTCC reigning champion.",
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},	{
+	"title" : "Dia dos Namorados",
+	"description" : "Translated as Lovers' Day, Day of the Enamored, or Boyfriends' / Girlfriends' Day� is celebrated on June 12 as a holiday for lovers in Brazil, due to the date's proximity to Saint Anthony's Day on June 13. The date is celebrated in a manner similar to the way that Valentine's Day is celebrated on February 14 in other parts of the world with gifts, romantic activities, decorations, and festivities. However, the expression Dia dos Namorados is not only used in Brazil.",
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+		]
+}
