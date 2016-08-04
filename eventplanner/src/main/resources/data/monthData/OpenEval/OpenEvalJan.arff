@@ -1,7 +1,8 @@
+%Simple Open Eval training data for the determination of whether a word is related to January
 @relation posOrNegWordBags
 
 @attribute corpus string
-@attribute class {true,false}
+@attribute Class_Attribute_For_SimpleOpenEval {true,false}
 
 @data
 'quora sign clothing business travel travel hacks visiting travel business pack business trip recently offer ',true
