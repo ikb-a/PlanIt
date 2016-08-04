@@ -1,0 +1,18 @@
+{
+	"searchString":{
+			"hits":0,
+			"pageNumber":0,
+			"query":"query",
+			"results":[
+			{
+			"title": "title",
+			"link": "link",
+			"snippet": "snippet"
+			},
+			{
+			"title": "title",
+			"link": "link",
+			"snippet": "snippet"
+			}
+			]
+}
