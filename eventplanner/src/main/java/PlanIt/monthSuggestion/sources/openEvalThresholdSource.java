@@ -128,7 +128,7 @@ public class openEvalThresholdSource extends MLBasicSource<Event, Month> impleme
 		}
 		int positiveBags = 0;
 		int negativeBags = 0;
-		// TODO: use weigted vote based on SimpleOpenEval confidences?
+		// TODO: use weighted vote based on SimpleOpenEval confidences?
 		for (String keyword : keywords) {
 			try {
 				Opinion<Boolean, Double> op = openEval.getOpinion(country + " " + keyword);
