@@ -42,7 +42,7 @@ public class textFileToJSON {
 			line = br.readLine();
 		}
 		br.close();
-		result = result.substring(0, result.length() - 2);
+		result = result.substring(0, result.length() - 1);
 		result += "\u0009]\n}";
 
 		File f2 = new File(path.replace(".txt", ".json"));
