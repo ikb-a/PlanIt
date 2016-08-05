@@ -44,7 +44,7 @@ public class MonthWithBestTempByCountry {
 				}
 
 				try {
-					System.out.println(apiResult);
+					//System.out.println(apiResult);
 					JSONArray jsonMonthlyData = new JSONArray(apiResult);
 					assert (jsonMonthlyData.length() == 12);
 					for (int x = 0; x < 12; x++) {

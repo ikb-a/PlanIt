@@ -22,8 +22,11 @@ import edu.toronto.cs.se.ci.machineLearning.MLBasicSource;
 
 public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSuggestionContract {
 	private static Map<String, String> nameToISOCode;
+	boolean memoizeHolidays = true;
+	Map<String, String> memoizedHolidaysByCountry;
 
 	public Holiday() {
+		memoizedHolidaysByCountry = new HashMap<String, String>();
 		if (nameToISOCode == null) {
 			nameToISOCode = new HashMap<String, String>();
 			nameToISOCode.put("Andorra, Principality Of", "AD");
@@ -283,22 +286,24 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		Venue venue = input.getVenue();
 		Address address = venue.getAddress();
 		String country = address.getCountry();
+		String description = input.getDescription().toLowerCase();
+		String title = input.getTitle().toLowerCase();
 
-		List<String> keywords = input.getWords();
 		List<String> definedKeywords = input.getKeyWords();
-		if (definedKeywords != null) {
-			keywords.addAll(definedKeywords);
-			definedKeywords = null;
-		}
-		for (int x = 0; x < keywords.size(); x++) {
-			keywords.set(x, keywords.get(x).toLowerCase());
+		if (definedKeywords == null) {
+			definedKeywords = new ArrayList<String>();
+		} else {
+			for (int x = 0; x < definedKeywords.size(); x++) {
+				definedKeywords.set(x, definedKeywords.get(x).toLowerCase());
+			}
 		}
 
 		String nationalHolidaysString = getHolidaysString(country);
 		List<HolidayEvent> holidayEvents = stringToHolidays(nationalHolidaysString);
 		List<HolidayEvent> matches = new ArrayList<HolidayEvent>();
 		for (HolidayEvent holiday : holidayEvents) {
-			if (keywords.contains(holiday.getName())) {
+			if (description.contains(holiday.getName()) || definedKeywords.contains(holiday.getName())
+					|| title.contains(holiday.getName())) {
 				matches.add(holiday);
 			}
 		}
@@ -341,6 +346,12 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 	}
 
 	private String getHolidaysString(String country) throws UnknownException {
+		if (memoizeHolidays) {
+			if (memoizedHolidaysByCountry.containsKey(country)) {
+				return memoizedHolidaysByCountry.get(country);
+			}
+		}
+
 		try {
 			Calendar calendar = Calendar.getInstance();
 			int year = calendar.get(Calendar.YEAR);
@@ -364,6 +375,11 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 				result += line;
 				line = br.readLine();
 			}
+
+			if (memoizeHolidays) {
+				memoizedHolidaysByCountry.put(country, result);
+			}
+
 			return result;
 		} catch (Exception e) {
 			throw new UnknownException(e);
@@ -434,6 +450,11 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 
 		public Month getMonth() {
 			return month;
+		}
+
+		@Override
+		public String toString() {
+			return name + " " + month;
 		}
 	}
 }

@@ -10,7 +10,7 @@ import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.utils.BasicSource;
 
-public class Temperature extends BasicSource<Event, Month, Void> {
+public class Temperature extends BasicSource<Event, Month, Void> implements MLMonthSuggestionContract {
 	private int nthBestTemp;
 
 	public Temperature(int n) {

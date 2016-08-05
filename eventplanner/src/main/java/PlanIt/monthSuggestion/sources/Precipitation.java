@@ -10,7 +10,7 @@ import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.utils.BasicSource;
 
-public class Precipitation extends BasicSource<Event, Month, Void> {
+public class Precipitation extends BasicSource<Event, Month, Void> implements MLMonthSuggestionContract{
 	private int nthLeastPrecipitation;
 
 	public Precipitation(int n) {

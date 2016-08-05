@@ -43,7 +43,7 @@ public class MonthWithLeastRainByCountry {
 				}
 
 				try {
-					System.out.println(apiResult);
+					//System.out.println(apiResult);
 					JSONArray json = new JSONArray(apiResult);
 					JSONObject json1999 = (JSONObject) json.get(json.length() - 1);
 					JSONArray jsonMonthlyData = json1999.getJSONArray("monthVals");
