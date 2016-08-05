@@ -1,4 +1,3 @@
-%Simple Open Eval training data for the determination of whether a word is related to March
 @relation posOrNegWordBags
 
 @attribute corpus string
@@ -37,10 +36,10 @@
 'visit pantanal - biggest concentration wildlife america - winter - south time visit iguassu falls ',true
 'wildlife watching travel tropical beaches north northeast july recife bahia fortaleza precipitation levels low air ',true
 'amazon historic cities minas gerais following months definitively time visit amazon visiting november weather perspective november visit south sao paulo rio de janeiro tropical beaches ',true
-'dominican republic cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore tidal waves occur typhoon factors ',true
-'cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore tidal waves occur typhoon factors ',true
-'dominican republic cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore tidal waves occur typhoon factors ',true
-'cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore tidal waves occur typhoon factors ',true
+'dominican republic cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore weather created climate world ',true
+'cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore weather created climate world ',true
+'dominican republic cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore weather created climate world ',true
+'cancun mexico season season puerta vallarta mexico playa del carmen season season india climate time visit hawaii weather hawaii explore weather created climate world ',true
 'hot humid ten inches precipitation season northwestern home amazon hot humid rainfall amounts vary throughout ',true
 'hot humid ten inches precipitation season northwestern home amazon hot humid rainfall amounts vary throughout ',true
 'completed january cotton planting begins northeastern peak season rains 2-3 times day central overcast hot humid greenhouse-like conditions february main pod filling soybeans maturing soybean harvest underway especially central soybean ',true
@@ -75,15 +74,17 @@
 'view www reference com holidays celebrations holidays break quick answer break occurs varies school falls ',true
 'www reference com holidays celebrations holidays break quick answer break occurs varies school falls week march ',true
 'holidays break quick answer break occurs varies school falls week march ',true
-'americans celebrate veterans day government organization oversees environmental health lose 50 pounds cheapest retire people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
-'environmental health lose 50 pounds cheapest retire people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
+'lose 50 pounds top art colleges goodyear tires manufactured amber birthstone people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
+'50 pounds top art colleges goodyear tires manufactured amber birthstone people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
+'top art colleges goodyear tires manufactured amber birthstone people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
 'sports active lifestyle technology vehicles world view www reference com holidays celebrations holidays break quick answer break occurs varies ',true
 'lifestyle technology vehicles world view www reference com holidays celebrations holidays break quick answer break occurs varies school ',true
 'view www reference com holidays celebrations holidays break quick answer break occurs varies school falls ',true
 'www reference com holidays celebrations holidays break quick answer break occurs varies school falls week march ',true
 'holidays break quick answer break occurs varies school falls week march ',true
-'americans celebrate veterans day government organization oversees environmental health lose 50 pounds cheapest retire people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
-'environmental health lose 50 pounds cheapest retire people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
+'lose 50 pounds top art colleges goodyear tires manufactured amber birthstone people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
+'50 pounds top art colleges goodyear tires manufactured amber birthstone people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
+'top art colleges goodyear tires manufactured amber birthstone people search break 2011 dates top 10 break destinations break 2011 dates usa college ',true
 '100 milestone documents - joint resolution provide annexing hawaiian islands 1898 alleged wife immigrant chinese exclusion era prologue magazine 2004 asian pacific american heritage flickr letters middle kingdom origins america china policy prologue ',true
 '100 milestone documents - joint resolution provide annexing hawaiian islands 1898 alleged wife immigrant chinese exclusion era prologue magazine 2004 asian pacific american heritage flickr letters middle kingdom origins america china policy prologue ',true
 'et snow covering lake michigan april 2 2013 credit nasa arrived feel canada unusually cold temperatures chilly ranking second-coldest march continental ',true
@@ -242,10 +243,8 @@
 'cities travel packages moscow travel packages saint petersburg travel packages yekaterinburg vacation packages type vacation packages september vacation packages october vacation packages ',false
 'travel packages moscow travel packages saint petersburg travel packages yekaterinburg vacation packages type vacation packages september vacation packages october vacation packages ',false
 'packages saint petersburg travel packages yekaterinburg vacation packages type vacation packages september vacation packages october vacation packages november vacation packages tourist holidays 2016 countries holiday deals ',false
-'sellers children books textbooks textbook rentals sell books books deals books books literature fiction literary visit 1862 million books available amazon kindle learn ',false
-'sellers children books textbooks textbook rentals sell books books deals books books literature fiction literary visit 1862 million books available amazon kindle learn ',false
-'stock photos royalty free stock footage clips 343 858 stock photos added stock photos images 11 096 results 255075100200auto page page 148 display ',false
-'stock photos royalty free stock footage clips 343 858 stock photos added stock photos images 11 096 results 255075100200auto page page 148 display ',false
+'stock photos royalty free stock footage clips 346 124 stock photos added stock photos images 11 102 results 255075100200auto page page 149 display ',false
+'stock photos royalty free stock footage clips 346 124 stock photos added stock photos images 11 102 results 255075100200auto page page 149 display ',false
 'august skiing south wales skiing victoria guide june weather events holiday july visit ',false
 'south wales skiing victoria guide june weather events holiday july visit ',false
 'south wales skiing victoria guide june weather events holiday july visit ',false
@@ -276,10 +275,10 @@
 'carnival time ekka tourism queensland carnival time ekka tourism queensland august australian ski season usually continues labor day weekend october ',false
 'wallaby confidence votes 265k passionate australian august final answer useful yes somewhat thanks feedback clicking submit send ',false
 'flag limeaid 94 009 contributions answered york season sydney january york city york city ',false
-'australiana don wide answered season august southern hemisphere august northern hemisphere august summer 5 people found useful edit share ',false
+'australiana don wide answered season august southern hemisphere august northern hemisphere august summer 6 people found useful edit share ',false
 'wallaby confidence votes 265k passionate australian august final answer useful yes somewhat thanks feedback clicking submit send ',false
 'flag limeaid 94 009 contributions answered york season sydney january york city york city ',false
-'australiana don wide answered season august southern hemisphere august northern hemisphere august summer 5 people found useful edit share ',false
+'australiana don wide answered season august southern hemisphere august northern hemisphere august summer 6 people found useful edit share ',false
 'flag share york city seasons sydney season sydney january york city season sydney ',false
 'share york city seasons sydney season sydney january york city season sydney january ',false
 'city seasons sydney season sydney january york city season sydney january york city save cancel exists ',false
@@ -330,12 +329,12 @@
 'programs youth understanding matching criteria pacific discovery pacific discovery program 4 weeks immersion incredible environments unique culture spend week doing rewarding service learning conservation ',false
 'emissions increase published 8 mar 2013 rise co2 emissions sounds climate change alarm record-breaking hottest conversation january 2013 hottest records 1910 getting hotter record heat happening ',false
 'emissions increase published 8 mar 2013 rise co2 emissions sounds climate change alarm record-breaking hottest conversation january 2013 hottest records 1910 getting hotter record heat happening ',false
-'luncheon themes setting thermostat people search name months spring winter autumn months list fall months seasons weather official day ',false
-'setting thermostat people search name months spring winter autumn months list fall months seasons weather official day ',false
-'thermostat people search name months spring winter autumn months list fall months seasons weather official day ',false
-'luncheon themes setting thermostat people search name months spring winter autumn months list fall months seasons weather official day ',false
-'setting thermostat people search name months spring winter autumn months list fall months seasons weather official day ',false
-'thermostat people search name months spring winter autumn months list fall months seasons weather official day ',false
+'considered brazil short hair styles cute spring people search name months spring winter autumn months list fall months seasons weather official day ',false
+'short hair styles cute spring people search name months spring winter autumn months list fall months seasons weather official day ',false
+'hair styles cute spring people search name months spring winter autumn months list fall months seasons weather official day ',false
+'considered brazil short hair styles cute spring people search name months spring winter autumn months list fall months seasons weather official day ',false
+'short hair styles cute spring people search name months spring winter autumn months list fall months seasons weather official day ',false
+'hair styles cute spring people search name months spring winter autumn months list fall months seasons weather official day ',false
 'months 10 brisbane warmer cfa warmest 22 southwest coast classiefied csb climate dry period warmest 22 months 10 ',false
 'brisbane warmer cfa warmest 22 southwest coast classiefied csb climate dry period warmest 22 months 10 coldest ',false
 'months 10 brisbane warmer cfa warmest 22 southwest coast classiefied csb climate dry period warmest 22 months 10 ',false
@@ -372,16 +371,16 @@
 ' home archives sponsorship contact submit suggest citrus fruit arrives citrus scsa posted thursday june 16 2016 9 07am edt citrusdal ',false
 ' home archives sponsorship contact submit suggest citrus fruit arrives citrus scsa posted thursday june 16 2016 9 07am edt citrusdal ',false
 'archives sponsorship contact submit suggest citrus fruit arrives citrus scsa posted thursday june 16 2016 9 07am edt citrusdal citrus ',false
-'abroad cape town view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
-'cape town view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
-'town view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
+'abroad port elizabeth view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
+'port elizabeth view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
+'elizabeth view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
 'view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
 'view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad ',false
 'matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad matching ',false
 '3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad matching criteria ',false
-'abroad cape town view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
-'cape town view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
-'town view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
+'abroad port elizabeth view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
+'port elizabeth view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
+'elizabeth view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
 'view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers ',false
 'view matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad ',false
 'matching isa international studies abroad programs cisabroad 3-week program stellenbosch university june field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad matching ',false
@@ -394,10 +393,10 @@
 'depth video section below provides solution flowers related query watch videos aware depth flowers top results gardening gardening http www gardeninginsouthafrica co za gardening ideas diy learn grow ',false
 'depth video section below provides solution flowers related query watch videos aware depth flowers top results gardening gardening http www gardeninginsouthafrica co za gardening ideas diy learn grow ',false
 'flowers related query watch videos aware depth flowers top results gardening gardening http www gardeninginsouthafrica co za gardening ideas diy learn grow ',false
-'move mdt macau grand prix special home rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 690 views policeman stands near damaged building funing county ',false
-'rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 690 views policeman stands near damaged building funing county ',false
-'move mdt macau grand prix special home rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 690 views policeman stands near damaged building funing county ',false
-'rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 690 views policeman stands near damaged building funing county ',false
+'move mdt macau grand prix special home rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 696 views policeman stands near damaged building funing county ',false
+'rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 696 views policeman stands near damaged building funing county ',false
+'move mdt macau grand prix special home rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 696 views policeman stands near damaged building funing county ',false
+'rescuers search rubble east kills 98 rescuers search rubble east kills 98 - monday june 27 2016 - 1 ago comments 696 views policeman stands near damaged building funing county ',false
 'west bengal india news middle east uk news news home news world news death toll touches 99 death toll touches 99 posted 1 ago ibns beijing june 26 death toll hit east ',false
 'bengal india news middle east uk news news home news world news death toll touches 99 death toll touches 99 posted 1 ago ibns beijing june 26 death toll hit east ',false
 'east uk news news home news world news death toll touches 99 death toll touches 99 posted 1 ago ibns beijing june 26 death toll hit east ',false
@@ -494,10 +493,12 @@
 'co 0gclkz318v reply retweet favorite vice news vicenews photos devastation rare touches https co 9ccbfp2hua https co c0r9dy0ltc reply retweet favorite 5 references powerful strikes east 78 reportedly deadassociated press powerful ',false
 'reply retweet favorite vice news vicenews photos devastation rare touches https co 9ccbfp2hua https co c0r9dy0ltc reply retweet favorite 5 references powerful strikes east 78 reportedly deadassociated press powerful strikes east 78 reportedly deadassociated press hail ',false
 'rare touches https co 9ccbfp2hua https co c0r9dy0ltc reply retweet favorite 5 references powerful strikes east 78 reportedly deadassociated press powerful strikes east 78 reportedly deadassociated press hail ',false
+'congress senate finance committee plans hold hearing identity theft fraud government - congress - senate - internal revenue service - orrin ',false
+'congress senate finance committee plans hold hearing identity theft fraud government - congress - senate - internal revenue service - orrin ',false
 'offered subordinate loans subject home ownership equity protection act income consequences life insurance rebates principal reducing outstanding debt balance list recommended bad ',false
 'offered subordinate loans subject home ownership equity protection act income consequences life insurance rebates principal reducing outstanding debt balance list recommended bad ',false
-'experience marisol-testemonial-tgw experience lifetime tgw thanks quick break quote name required email address required phone departure date january february march april june july august september october november december day 1 2 ',false
-'experience marisol-testemonial-tgw experience lifetime tgw thanks quick break quote name required email address required phone departure date january february march april june july august september october november december day 1 2 ',false
+'tgw marisol-testemonial-tgw experience lifetime tgw thanks quick break quote name required email address required phone departure date january february march april june july august september october november december day 1 2 ',false
+'tgw marisol-testemonial-tgw experience lifetime tgw thanks quick break quote name required email address required phone departure date january february march april june july august september october november december day 1 2 ',false
 'copyright oceans press 2009 august 2008 - artist maria regina pinto pereira paulo etching aquatint mezzotint ink black charbonnel mixed brazilian ink magenta paper ',false
 'copyright oceans press 2009 august 2008 - artist maria regina pinto pereira paulo etching aquatint mezzotint ink black charbonnel mixed brazilian ink magenta paper ',false
 'lifestyle video log subscribe newsletter search science environment landslide slams hiroshima western overnight david sim august 20 2014 09 13 bst worth ',false
@@ -512,10 +513,8 @@
 'home nyc rich elite cities news change deadly floods hit hiroshima torrential fell night aug 20 2014 submitted iwb august 20th 2014 tweet source ',false
 'post 3 re october jan 09 2014 2 52 am entire october expect 2 3 days traveling october avoid summer humidity report inappropriate content estebarrett level contributor 89 posts ',false
 'post 3 re october jan 09 2014 2 52 am entire october expect 2 3 days traveling october avoid summer humidity report inappropriate content estebarrett level contributor 89 posts ',false
-'mountain hiroshima city outskirts triggered equivalent fell 24 hours wednesday morning weather agency images scene houses buried mud rocks ',false
-'mountain hiroshima city outskirts triggered equivalent fell 24 hours wednesday morning weather agency images scene houses buried mud rocks ',false
-'queue watch queuequeue remove disconnect loading watch queue queue __count__ __total__ whyclose deadly floods hit hiroshima torrential fell night aug 20 2014 signsofthycoming subscribesubscribedunsubscribe80 32080k loading loading add ',false
-'queue watch queuequeue remove disconnect loading watch queue queue __count__ __total__ whyclose deadly floods hit hiroshima torrential fell night aug 20 2014 signsofthycoming subscribesubscribedunsubscribe80 32080k loading loading add ',false
+'queue watch queuequeue remove disconnect loading watch queue queue __count__ __total__ whyclose deadly floods hit hiroshima torrential fell night aug 20 2014 signsofthycoming subscribesubscribedunsubscribe80 33080k loading loading add ',false
+'queue watch queuequeue remove disconnect loading watch queue queue __count__ __total__ whyclose deadly floods hit hiroshima torrential fell night aug 20 2014 signsofthycoming subscribesubscribedunsubscribe80 33080k loading loading add ',false
 'visit pantanal - biggest concentration wildlife america - - south rainy time visit iguassu falls ',false
 'pleasant allow practice sea sports swimming south visiting october october transitional brazilian climate zones season temperatures ',false
 'visit pantanal - biggest concentration wildlife america - - south rainy time visit iguassu falls ',false
@@ -566,11 +565,11 @@
 'seasonal rains 54 armadillos rattlesnakes seek ground 55 akhet east asian rainy dry precipitation monarch overwintering sites mexico rainfall distribution cairns storm night darwin monsoon vindhya mountain range central india ',false
 'rains 54 armadillos rattlesnakes seek ground 55 akhet east asian rainy dry precipitation monarch overwintering sites mexico rainfall distribution cairns storm night darwin monsoon vindhya mountain range central india ',false
 'rainy dry precipitation monarch overwintering sites mexico rainfall distribution cairns storm night darwin monsoon vindhya mountain range central india equatorial ',false
-'0 comments added 1 week 2 days ago save cancel 0 rainfall distribution cairns 0 comments added 1 week 2 days ago save cancel 0 storm night darwin 0 comments added 1 week 2 days ago save ',false
+'0 comments added 1 week 3 days ago save cancel 0 rainfall distribution cairns 0 comments added 1 week 3 days ago save cancel 0 storm night darwin 0 comments added 1 week 3 days ago save ',false
 'seasonal rains 54 armadillos rattlesnakes seek ground 55 akhet east asian rainy dry precipitation monarch overwintering sites mexico rainfall distribution cairns storm night darwin monsoon vindhya mountain range central india ',false
 'rains 54 armadillos rattlesnakes seek ground 55 akhet east asian rainy dry precipitation monarch overwintering sites mexico rainfall distribution cairns storm night darwin monsoon vindhya mountain range central india ',false
 'rainy dry precipitation monarch overwintering sites mexico rainfall distribution cairns storm night darwin monsoon vindhya mountain range central india equatorial ',false
-'0 comments added 1 week 2 days ago save cancel 0 rainfall distribution cairns 0 comments added 1 week 2 days ago save cancel 0 storm night darwin 0 comments added 1 week 2 days ago save ',false
+'0 comments added 1 week 3 days ago save cancel 0 rainfall distribution cairns 0 comments added 1 week 3 days ago save cancel 0 storm night darwin 0 comments added 1 week 3 days ago save ',false
 'cope shortage current season suffering france battles epidemic shot campaigns usually start october season typically begins improve fatal epidemic sanofi-aventis french pharmaceutical ',false
 'cope shortage current season suffering france battles epidemic shot campaigns usually start october season typically begins improve fatal epidemic sanofi-aventis french pharmaceutical ',false
 '50 64 compared recent mmwr 2014a figure below peak activity 1982 1983 2013 2014 seasons peak activity ',false
@@ -593,12 +592,10 @@
 'levels refinery intakes maintained output international energy agency earlier increase production beginning june cover increased power kingdom production 10 2 million barrels start ',false
 'stocks fall depending current export levels refinery intakes maintained output international energy agency earlier increase production beginning june cover increased power kingdom production 10 2 million barrels start ',false
 'levels refinery intakes maintained output international energy agency earlier increase production beginning june cover increased power kingdom production 10 2 million barrels start ',false
-'iceland israel italy luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide red chili peppers volbeat pj harvey market leader tickets 500 000 happy customers ',false
-'luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide red chili peppers volbeat pj harvey market leader tickets 500 000 happy customers ',false
-'iceland israel italy luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide red chili peppers volbeat pj harvey market leader tickets 500 000 happy customers ',false
-'luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide red chili peppers volbeat pj harvey market leader tickets 500 000 happy customers ',false
-'free buy powerball lottery tickets - click lottery archives click buy powerball mega millions lottery tickets lotto picks uk august 2016 lottery archives date results results found 1 select 2 select 3 select games 4 press january february march april ',false
-'free buy powerball lottery tickets - click lottery archives click buy powerball mega millions lottery tickets lotto picks uk august 2016 lottery archives date results results found 1 select 2 select 3 select games 4 press january february march april ',false
+'iceland israel italy luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide michael kiwanuka red chili peppers volbeat market leader tickets 500 000 happy customers 120 ticket ',false
+'luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide michael kiwanuka red chili peppers volbeat market leader tickets 500 000 happy customers 120 ticket ',false
+'iceland israel italy luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide michael kiwanuka red chili peppers volbeat market leader tickets 500 000 happy customers 120 ticket ',false
+'luxembourg norway oman poland qatar slovenia slowakia spain sweden switzerland netherlands arab emirates city venue gig guide michael kiwanuka red chili peppers volbeat market leader tickets 500 000 happy customers 120 ticket ',false
 'weather climate information weather climate climate statistics climate statistics january hot interpreting climate statistics graphthe climate statistics describe average total rainfall typical purple bars typical monthly rainfall ',false
 'climate information weather climate climate statistics climate statistics january hot interpreting climate statistics graphthe climate statistics describe average total rainfall typical purple bars typical monthly rainfall ',false
 'weather climate information weather climate climate statistics climate statistics january hot interpreting climate statistics graphthe climate statistics describe average total rainfall typical purple bars typical monthly rainfall ',false
@@ -705,8 +702,8 @@
 'la sf seattle atlanta chicago dc ohio texas pennsylvania florida east coast west coast midwest south southwest florida texas york hawaii california world restaurants spa vacation island vacation luxury vacation honeymoon deals search site search vacation ideas tweet 25 ',false
 'unlimited text interactive map availability calendar ecards photo-gallery rates 17 view details guest ranches ranch browse thousands listings page 1 2 3 4 5 6 7 ',false
 'unlimited text interactive map availability calendar ecards photo-gallery rates 17 view details guest ranches ranch browse thousands listings page 1 2 3 4 5 6 7 ',false
-'effect short term urban mission project run ride trek schools contact salvation army 0 home news disasters appeals nsw 12 report nsw - 12 report 14 october 2014 share facebook twitter tweet increase ',false
-'effect short term urban mission project run ride trek schools contact salvation army 0 home news disasters appeals nsw 12 report nsw - 12 report 14 october 2014 share facebook twitter tweet increase ',false
+'involved donate fundraising tools claim shirt social media pack faqs salvation army 0 home news disasters appeals nsw 12 report nsw - 12 report 14 october 2014 share facebook twitter tweet increase ',false
+'involved donate fundraising tools claim shirt social media pack faqs salvation army 0 home news disasters appeals nsw 12 report nsw - 12 report 14 october 2014 share facebook twitter tweet increase ',false
 'abc science anna salleh updated february 24 2016 18 01 46 photo unprecedented burned 20 000 hectares tasmania world heritage supplied dan broun map tasmania happening frequently past 1 000 ',false
 'unprecedented burned 20 000 hectares tasmania world heritage supplied dan broun map tasmania happening frequently past 1 000 ',false
 'abc science anna salleh updated february 24 2016 18 01 46 photo unprecedented burned 20 000 hectares tasmania world heritage supplied dan broun map tasmania happening frequently past 1 000 ',false
@@ -715,8 +712,8 @@
 'danger dehydration - telegraphmore heatwave pictures danger dehydration telegraph co uk effect map fires burned rural interior dry relatively barren standards vegetation burn ',false
 'dehydration heatwave pictures danger dehydration - telegraphmore heatwave pictures danger dehydration telegraph co uk effect map fires burned rural interior dry relatively barren standards ',false
 'danger dehydration - telegraphmore heatwave pictures danger dehydration telegraph co uk effect map fires burned rural interior dry relatively barren standards vegetation burn ',false
-'climate change creating favourable conditions hold raised amid devastating burning tasmanian world heritage wilderness advertisement huffpost bodies drug dealers piling contains external link stop pretending don ',false
-'climate change creating favourable conditions hold raised amid devastating burning tasmanian world heritage wilderness advertisement huffpost bodies drug dealers piling contains external link stop pretending don ',false
+'climate change creating favourable conditions hold raised amid devastating burning tasmanian world heritage wilderness advertisement huffpost bet salt pepper contains external link radish recipes ll ',false
+'climate change creating favourable conditions hold raised amid devastating burning tasmanian world heritage wilderness advertisement huffpost bet salt pepper contains external link radish recipes ll ',false
 'grant updates donate day geographic history february7 2009 black saturday black saturday raged victoria throughout february images red squares mark active fires burning near ',false
 'grant updates donate day geographic history february7 2009 black saturday black saturday raged victoria throughout february images red squares mark active fires burning near ',false
 'donate day geographic history february7 2009 black saturday black saturday raged victoria throughout february images red squares mark active fires burning near ',false
@@ -885,54 +882,54 @@
 'timetable playlist news mtv event live wire artist artist recommend buzz clip seat push exclusive 2016 2015 2014 2013 2012 archive direction universal international 12 justin ',false
 'nuclear-news news matters nuclear industry home 1 action disclaimer links pages nuclear issues debate communities reject nuclear power plant restart communities block nuclear restart 48 ',false
 'nuclear-news news matters nuclear industry home 1 action disclaimer links pages nuclear issues debate communities reject nuclear power plant restart communities block nuclear restart 48 ',false
-'london deals deals woman deals kids deals travel deals product deals food deals deals london deals product deals matrix ketones supplements six supply 4 99 deal updated 3 aug 2016 4 99 buy ',false
-'london deals deals woman deals kids deals travel deals product deals food deals deals london deals product deals matrix ketones supplements six supply 4 99 deal updated 3 aug 2016 4 99 buy ',false
+'london deals deals woman deals kids deals travel deals product deals food deals deals london deals product deals matrix ketones supplements six supply 4 99 deal updated 4 aug 2016 4 99 buy ',false
+'london deals deals woman deals kids deals travel deals product deals food deals deals london deals product deals matrix ketones supplements six supply 4 99 deal updated 4 aug 2016 4 99 buy ',false
 'seller 181 81 buy ketone plus 120 capsules top seller 120 56 buy ketone plus 60 capsules 1 supply 60 30 buy purchase ketone pills searches committed purchase ketones connected ',false
 'ketone plus 120 capsules top seller 120 56 buy ketone plus 60 capsules 1 supply 60 30 buy purchase ketone pills searches committed purchase ketones connected ',false
 'seller 181 81 buy ketone plus 120 capsules top seller 120 56 buy ketone plus 60 capsules 1 supply 60 30 buy purchase ketone pills searches committed purchase ketones connected ',false
 'ketone plus 120 capsules top seller 120 56 buy ketone plus 60 capsules 1 supply 60 30 buy purchase ketone pills searches committed purchase ketones connected ',false
 'dieters able lose stone online supplements - wild ketone daily power cleanse products extremely popular proven effectiveness stores offered ',false
 'dieters able lose stone online supplements - wild ketone daily power cleanse products extremely popular proven effectiveness stores offered ',false
-'free international shipping ketone plus 60 capsules evolution slimming genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 19 buy free international shipping 87 sold ',false
-'genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 19 buy free international shipping 87 sold ',false
-'supply evolution slimming 49 19 buy free international shipping 87 sold ketone plus colon cleanse combo pack 1 evolution slimming 51 86 trending 56 34 buy free international shipping ',false
-'51 86 trending 56 34 buy free international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ',false
-'86 trending 56 34 buy free international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy ',false
-'trending 56 34 buy free international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy ',false
-'international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy ',false
-'combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ',false
-'1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy ',false
-'evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy ',false
-'buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy ',false
-'6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ',false
-'supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy ',false
-'supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy ',false
-'buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy ',false
-'1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ',false
-'pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 78 ',false
-'pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 78 buy ',false
-'buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 78 buy ',false
-'pack 3 months evolution slimming 133 07 buy free international shipping ketone plus 240 capsules 4 free cla evolution slimming 93 13 buy free international shipping ',false
-'free international shipping ketone plus 60 capsules evolution slimming genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 19 buy free international shipping 87 sold ',false
-'genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 19 buy free international shipping 87 sold ',false
-'supply evolution slimming 49 19 buy free international shipping 87 sold ketone plus colon cleanse combo pack 1 evolution slimming 51 86 trending 56 34 buy free international shipping ',false
-'51 86 trending 56 34 buy free international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ',false
-'86 trending 56 34 buy free international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy ',false
-'trending 56 34 buy free international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy ',false
-'international shipping 289 sold ketone plus green coffee bean combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy ',false
-'combo 1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ',false
-'1 evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy ',false
-'evolution slimming 50 52 buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy ',false
-'buy free international shipping ketone plus 360 capsules 6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy ',false
-'6 supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ',false
-'supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy ',false
-'supply evolution slimming 126 41 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy ',false
-'buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy ',false
-'1 pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ',false
-'pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 78 ',false
-'pack evolution slimming 39 87 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 78 buy ',false
-'buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 83 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 78 buy ',false
-'pack 3 months evolution slimming 133 07 buy free international shipping ketone plus 240 capsules 4 free cla evolution slimming 93 13 buy free international shipping ',false
+'buy ketone plus 60 capsules evolution slimming genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 24 buy free international shipping 87 sold ',false
+'genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 24 buy free international shipping 87 sold ',false
+'supply evolution slimming 49 24 buy free international shipping 87 sold ketone plus colon cleanse combo pack 1 evolution slimming 51 90 trending 56 34 buy free international shipping ',false
+'51 90 trending 56 34 buy free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ',false
+'90 trending 56 34 buy free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 ',false
+'trending 56 34 buy free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy ',false
+'free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy ',false
+'6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ',false
+'supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy ',false
+'supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy ',false
+'free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy ',false
+'combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ',false
+'1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy ',false
+'evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy ',false
+'buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy ',false
+'1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ',false
+'pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 87 ',false
+'pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 87 buy ',false
+'buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 87 buy ',false
+'pack 3 months evolution slimming 133 18 buy free international shipping ketone plus 240 capsules 4 free cla evolution slimming 93 21 buy free international shipping ',false
+'buy ketone plus 60 capsules evolution slimming genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 24 buy free international shipping 87 sold ',false
+'genuine ketones eu approved formula 9 31 buy free international shipping ketone plus 120 capsules 2 supply evolution slimming 49 24 buy free international shipping 87 sold ',false
+'supply evolution slimming 49 24 buy free international shipping 87 sold ketone plus colon cleanse combo pack 1 evolution slimming 51 90 trending 56 34 buy free international shipping ',false
+'51 90 trending 56 34 buy free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ',false
+'90 trending 56 34 buy free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 ',false
+'trending 56 34 buy free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy ',false
+'free international shipping 289 sold ketone plus 360 capsules 6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy ',false
+'6 supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ',false
+'supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy ',false
+'supply evolution slimming 126 52 buy free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy ',false
+'free international shipping ketone plus green coffee bean combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy ',false
+'combo 1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ',false
+'1 evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy ',false
+'evolution slimming 50 57 buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy ',false
+'buy free international shipping ketone plus slimming patches 1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy ',false
+'1 pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ',false
+'pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 87 ',false
+'pack evolution slimming 39 91 buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 87 buy ',false
+'buy free international shipping ketone plus 180 capsules 3 supply evolution slimming 71 89 buy free international shipping ketone plus colon cleanse combo pack 2 months evolution slimming 99 87 buy ',false
+'pack 3 months evolution slimming 133 18 buy free international shipping ketone plus 240 capsules 4 free cla evolution slimming 93 21 buy free international shipping ',false
 'surprise appearance ad libbing mic tr youtube com irfan shared post april 9 irfan april 9 manchester sooo party people - music lovers 1 community vinyl lovers fair record store day sat april 16th texture mcr ',false
 'mic tr youtube com irfan shared post april 9 irfan april 9 manchester sooo party people - music lovers 1 community vinyl lovers fair record store day sat april 16th texture mcr ',false
 'surprise appearance ad libbing mic tr youtube com irfan shared post april 9 irfan april 9 manchester sooo party people - music lovers 1 community vinyl lovers fair record store day sat april 16th texture mcr ',false
@@ -943,6 +940,14 @@
 'december average january average march days days rain snow hail london data nearest weather station london 0 0 km climate information weather ',false
 'days january november december average january average march days days rain snow hail london data nearest weather station london 0 0 km climate information weather ',false
 'december average january average march days days rain snow hail london data nearest weather station london 0 0 km climate information weather ',false
+'little bite sized version allows dip toe teaching english getting wet language schools offer 12 contracts run shorter courses students holiday regular school ',false
+'hire extra teachers teach period benefits jobs 12 contract teaching english 2016 allows living ',false
+'extra teachers teach period benefits jobs 12 contract teaching english 2016 allows living teaching ',false
+'ve tesol certificate university diploma qualify teaching position try reply jim october 15 2012 4 50 ',false
+'little bite sized version allows dip toe teaching english getting wet language schools offer 12 contracts run shorter courses students holiday regular school ',false
+'hire extra teachers teach period benefits jobs 12 contract teaching english 2016 allows living ',false
+'extra teachers teach period benefits jobs 12 contract teaching english 2016 allows living teaching ',false
+'ve tesol certificate university diploma qualify teaching position try reply jim october 15 2012 4 50 ',false
 'expect don overheat wall stay fit travel july peak travel expert sara naumann travel expert follow sara sign ',false
 'expect don overheat wall stay fit travel july peak travel expert sara naumann travel expert follow sara sign ',false
 'overheat wall stay fit travel july peak travel expert sara naumann travel expert follow sara sign ',false
@@ -957,6 +962,10 @@
 'world pearl market shanghai shopping souvenirs july peak july hot humid ins outs ',false
 'shanghai shopping souvenirs july peak july hot humid ins outs ',false
 'souvenirs july peak july hot humid ins outs ',false
+'0 fabulous food sinan mansions beer fest shanghai 1 won canada 3 1 left loving moving hong kong 2 food safety tips 2 koh phi ',false
+'shanghai 1 won canada 3 1 left loving moving hong kong 2 food safety tips 2 koh phi ',false
+'0 fabulous food sinan mansions beer fest shanghai 1 won canada 3 1 left loving moving hong kong 2 food safety tips 2 koh phi ',false
+'shanghai 1 won canada 3 1 left loving moving hong kong 2 food safety tips 2 koh phi ',false
 'shanghai beijing mandarin internships flexible start dates- select program length choose session set dates people world comprehensive orientation on-site support internship ',false
 'shanghai beijing mandarin internships flexible start dates- select program length choose session set dates people world comprehensive orientation on-site support internship ',false
 'night tourist peak season boosted student holidays travel-able including remotest regions tibet northwest weather weather varies region 30 daily mountain significantly ',false
@@ -1057,10 +1066,10 @@
 '9 march rainy season blues season disappoint sakura season dates cherry blossom season region tokyo weather visit tokyo experiences variations rainfall temperature throughout ',false
 'rainy season weeks july half rainy season stops school holidays start beaches festival season explodes life august august extremely hot humid travel prices day school children vacation ',false
 '9 march rainy season blues season disappoint sakura season dates cherry blossom season region tokyo weather visit tokyo experiences variations rainfall temperature throughout ',false
-'year-on-year same-store sales growth july hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news alchemy equipment names distribution ',false
-'hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news alchemy equipment names distribution partner ten tips ',false
-'year-on-year same-store sales growth july hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news alchemy equipment names distribution ',false
-'hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news alchemy equipment names distribution partner ten tips ',false
+'year-on-year same-store sales growth july hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news fashion industry embraces ',false
+'hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news fashion industry embraces instagram stories adidas ',false
+'year-on-year same-store sales growth july hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news fashion industry embraces ',false
+'hot weather half helping generate strong sales core items company closed uniqlo stores review picture uniqlo prev news fashion industry embraces instagram stories adidas ',false
 'happen ghost hunter re worry job security ghost season august peaks august traditional buddhist obon ',false
 're worry job security ghost season august peaks august traditional buddhist obon ',false
 'happen ghost hunter re worry job security ghost season august peaks august traditional buddhist obon ',false
@@ -1091,8 +1100,8 @@
 'aug lng imports rise 2 4 7 32 mil mt demand aug lng imports rise 2 4 7 32 mil mt demand singapore platts --27 sep 2012 457 am ',false
 'lng imports rise 2 4 7 32 mil mt demand aug lng imports rise 2 4 7 32 mil mt demand singapore platts --27 sep 2012 457 am edt 857 gmt august lng ',false
 '32 mil mt demand aug lng imports rise 2 4 7 32 mil mt demand singapore platts --27 sep 2012 457 am edt 857 gmt august lng imports rose 2 4 july 7 32 million mt ',false
-'skip content 2016 program 2016 program menu blog questions creating posts subscribe contact status updates photo gallery august 2016 tidbits life riding intercity express ice riding ice ',false
-'skip content 2016 program 2016 program menu blog questions creating posts subscribe contact status updates photo gallery august 2016 tidbits life riding intercity express ice riding ice ',false
+'skip content 2016 program 2016 program menu blog questions creating posts subscribe contact status updates photo gallery august 2016 course assignment 4 continue reading course assignment 4 ',false
+'skip content 2016 program 2016 program menu blog questions creating posts subscribe contact status updates photo gallery august 2016 course assignment 4 continue reading course assignment 4 ',false
 'home contact home countries series blog top 100 links disney titles posted july 14th 2006 disney comics europe titles july 2006 ',false
 'home contact home countries series blog top 100 links disney titles posted july 14th 2006 disney comics europe titles july 2006 ',false
 'experience one-to-one courses sport language courses teachers training courses locations partner partner 1 berlin 264 238 1 berlin intensive german course 16 hrs week 1h 45 min 6 12 participants pre-book course ',false
@@ -1110,9 +1119,9 @@
 'events share pin tweet submit stumble post share birge amondson travel expert birge amondson updated 10 2016 wonderful travel weather warm sunny crowds haven arrived german festivals events ',false
 'amondson travel expert birge amondson updated 10 2016 wonderful travel weather warm sunny crowds haven arrived german festivals events ',false
 'log subscribe follow facebook twitter pinterest instagram google forums europe housing garmisch europe forums search forums post topic change forum africa middle east asia ',false
-'08 00 pm tagged spain view 25 top housing garmisch posted sandiedog dec 5 09 11 52 am posted europe tagged ',false
+'05 02 am tagged spain view 25 top housing garmisch posted sandiedog dec 5 09 11 52 am posted europe tagged ',false
 'log subscribe follow facebook twitter pinterest instagram google forums europe housing garmisch europe forums search forums post topic change forum africa middle east asia ',false
-'08 00 pm tagged spain view 25 top housing garmisch posted sandiedog dec 5 09 11 52 am posted europe tagged ',false
+'05 02 am tagged spain view 25 top housing garmisch posted sandiedog dec 5 09 11 52 am posted europe tagged ',false
 'northern regions hokkaido tohoku half colors starting creep south read 2014 10 31 - karuizawa ',false
 'northern regions hokkaido tohoku half colors starting creep south read 2014 10 31 - karuizawa ',false
 'november 21 2011 4 18 pm guide viewing beautiful leaves tokyo maybe spring cherry blossoms magnificent reply yoshimi ',false
@@ -1123,8 +1132,8 @@
 'photos 186 discussions november 16 2005 overview discussions photos map discussions sticky leaves - lenspired 11 34am 10 august 2014 hi am considering visiting ',false
 '186 discussions november 16 2005 overview discussions photos map discussions sticky leaves - lenspired 11 34am 10 august 2014 hi am considering visiting choose time capture colors ',false
 'november 16 2005 overview discussions photos map discussions sticky leaves - lenspired 11 34am 10 august 2014 hi am considering visiting choose time capture colors ',false
-'exceptional styling bam instant hit tweet tags winter 2014 manhattan portage manhattan potage post navigation stray rats fall 2014 master-piece winter 2014 search facebook twitter tumblr instagram cart archives archives select december 2014 november 2014 october 2014 september 2014 august 2014 july 2014 june 2014 ',false
-'exceptional styling bam instant hit tweet tags winter 2014 manhattan portage manhattan potage post navigation stray rats fall 2014 master-piece winter 2014 search facebook twitter tumblr instagram cart archives archives select december 2014 november 2014 october 2014 september 2014 august 2014 july 2014 june 2014 ',false
+'close weather september too-hot summer refreshing temperature changes 30 20 weather september 2010 tokyo example lowest temperatures sep ',false
+'close weather september too-hot summer refreshing temperature changes 30 20 weather september 2010 tokyo example lowest temperatures sep ',false
 'september excellent summer weather rainy due typhoons october weather october transitions heat rain summer cool november weather november crisp weather december weather ',false
 'weather october transitions heat rain summer cool november weather november crisp weather december weather december ',false
 'heat rain summer cool november weather november crisp weather december weather december pleasant winter relatively mild ',false
@@ -1149,8 +1158,6 @@
 'circut car car meets videos contact search gss drift matsuri gss visited ebisu g1gp matsuri trip lifetime set hours ',false
 'kyoto sight seeing travel related stories kyoto rurikoin temple offer stunning views leaves limited time zen temples travel stunning videos 4k ultra hd ',false
 'kyoto sight seeing travel related stories kyoto rurikoin temple offer stunning views leaves limited time zen temples travel stunning videos 4k ultra hd ',false
-'overseas visitors cool fun paper craft makers akafuku favorite sweets kyoto rurikoin temple offer stunning views leaves limited time powered newzia connect umaibo housing architecture future buy bookstores ',false
-'overseas visitors cool fun paper craft makers akafuku favorite sweets kyoto rurikoin temple offer stunning views leaves limited time powered newzia connect umaibo housing architecture future buy bookstores ',false
 'heat humidity cooler weather favourite spots national tourist organization highlights viewing spots colour according regions helpful tool planning trip asahidake hokkaid ',false
 'favourite spots national tourist organization highlights viewing spots colour according regions helpful tool planning trip asahidake hokkaid hot spring ',false
 'heat humidity cooler weather favourite spots national tourist organization highlights viewing spots colour according regions helpful tool planning trip asahidake hokkaid ',false
@@ -1333,8 +1340,8 @@
 'com travel travel seasonal events festivals events festivals top 6 leaves erin porter travel expert share pin tweet submit stumble post ',false
 'travel travel seasonal events festivals events festivals top 6 leaves erin porter travel expert share pin tweet submit stumble post share sign ',false
 'travel seasonal events festivals events festivals top 6 leaves erin porter travel expert share pin tweet submit stumble post share sign ',false
-'top 10 sights seen com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
-'seen com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
+'munich rainy day weather com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
+'weather com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
 'com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
 'travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel inbox ',false
 'travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel inbox ',false
@@ -1343,8 +1350,8 @@
 'com travel travel seasonal events festivals events festivals top 6 leaves erin porter travel expert share pin tweet submit stumble post ',false
 'travel travel seasonal events festivals events festivals top 6 leaves erin porter travel expert share pin tweet submit stumble post share sign ',false
 'travel seasonal events festivals events festivals top 6 leaves erin porter travel expert share pin tweet submit stumble post share sign ',false
-'top 10 sights seen com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
-'seen com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
+'munich rainy day weather com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
+'weather com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
 'com travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel ',false
 'travel travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel inbox ',false
 'travel seasonal events festivals events festivals top 6 leaves travel follow deliver travel inbox ',false
@@ -1380,26 +1387,26 @@
 'allows mother nature showcase offer september southern season regrowth flowers popular ',false
 'share pin tweet submit stumble post share larry rivera updated july 22 2016 september season allows mother nature showcase ',false
 'allows mother nature showcase offer september southern season regrowth flowers popular ',false
-'alert alert message alert alert message home akari akari entries stayed stayed 64 0 1 english nov 30 ',false
-'alert alert message home akari akari entries stayed stayed 64 0 1 english nov 30 2013 03 ',false
-'home akari akari entries stayed stayed 64 0 1 english nov 30 2013 03 09 ',false
-'akari akari entries stayed stayed 64 0 1 english nov 30 2013 03 09 stayed ',false
-'entries stayed stayed 64 0 1 english nov 30 2013 03 09 stayed experience example stayed ',false
-'stayed stayed 64 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke ',false
-'64 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke foreign students ',false
+'alert alert message alert alert message home akari akari entries stayed stayed 65 0 1 english nov 30 ',false
+'alert alert message home akari akari entries stayed stayed 65 0 1 english nov 30 2013 03 ',false
+'home akari akari entries stayed stayed 65 0 1 english nov 30 2013 03 09 ',false
+'akari akari entries stayed stayed 65 0 1 english nov 30 2013 03 09 stayed ',false
+'entries stayed stayed 65 0 1 english nov 30 2013 03 09 stayed experience example stayed ',false
+'stayed stayed 65 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke ',false
+'65 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke foreign students ',false
 'week 3 entries written 0 entries written 0 entries written entries stayed 4 stayed 1 fight crisis ',false
 'entries written 0 entries written 0 entries written entries stayed 4 stayed 1 fight crisis 2 read ',false
 'entries written 0 entries written entries stayed 4 stayed 1 fight crisis 2 read comments dec 6 ',false
 'entries written entries stayed 4 stayed 1 fight crisis 2 read comments dec 6 nov 30 gc3195 ',false
 'dec 6 nov 30 gc3195 nov 30 maut99 oct 28 andy read entries 2013 november 2 october 1 report entry spam entry stayed experience example stayed australian family spoke ',false
 'entries 2013 november 2 october 1 report entry spam entry stayed experience example stayed australian family spoke foreign students ',false
-'alert alert message alert alert message home akari akari entries stayed stayed 64 0 1 english nov 30 ',false
-'alert alert message home akari akari entries stayed stayed 64 0 1 english nov 30 2013 03 ',false
-'home akari akari entries stayed stayed 64 0 1 english nov 30 2013 03 09 ',false
-'akari akari entries stayed stayed 64 0 1 english nov 30 2013 03 09 stayed ',false
-'entries stayed stayed 64 0 1 english nov 30 2013 03 09 stayed experience example stayed ',false
-'stayed stayed 64 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke ',false
-'64 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke foreign students ',false
+'alert alert message alert alert message home akari akari entries stayed stayed 65 0 1 english nov 30 ',false
+'alert alert message home akari akari entries stayed stayed 65 0 1 english nov 30 2013 03 ',false
+'home akari akari entries stayed stayed 65 0 1 english nov 30 2013 03 09 ',false
+'akari akari entries stayed stayed 65 0 1 english nov 30 2013 03 09 stayed ',false
+'entries stayed stayed 65 0 1 english nov 30 2013 03 09 stayed experience example stayed ',false
+'stayed stayed 65 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke ',false
+'65 0 1 english nov 30 2013 03 09 stayed experience example stayed australian family spoke foreign students ',false
 'week 3 entries written 0 entries written 0 entries written entries stayed 4 stayed 1 fight crisis ',false
 'entries written 0 entries written 0 entries written entries stayed 4 stayed 1 fight crisis 2 read ',false
 'entries written 0 entries written entries stayed 4 stayed 1 fight crisis 2 read comments dec 6 ',false
