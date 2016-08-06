@@ -130,9 +130,7 @@ public class openEvalThresholdSource extends MLBasicSource<Event, Month> impleme
 			throw new UnknownException();
 		}
 
-		for (int x = 0; x < keywords.size(); x++) {
-			keywords.add(x, country + " " + keywords.get(x));
-		}
+		keywords.replaceAll((String a) -> country + " " + a);
 
 		int positiveBags = 0;
 		int negativeBags = 0;
