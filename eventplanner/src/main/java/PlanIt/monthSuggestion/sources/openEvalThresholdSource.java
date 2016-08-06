@@ -3,6 +3,7 @@ package PlanIt.monthSuggestion.sources;
 import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -14,13 +15,14 @@ import edu.toronto.cs.se.ci.data.Opinion;
 import edu.toronto.cs.se.ci.machineLearning.MLBasicSource;
 import edu.toronto.cs.se.ci.machineLearning.util.MLUtility;
 import edu.toronto.cs.se.ci.utils.searchEngine.GenericSearchEngine;
+import openEval.MultithreadSimpleOpenEval;
 import openEval.SimpleOpenEval;
 import weka.core.converters.JSONLoader;
 
 public class openEvalThresholdSource extends MLBasicSource<Event, Month> implements MLMonthSuggestionContract {
 	double threshold;
 	Month month;
-	SimpleOpenEval openEval;
+	MultithreadSimpleOpenEval openEval;
 	public static final String KEYWORD = "month";
 	boolean verbose = true;
 
@@ -62,7 +64,7 @@ public class openEvalThresholdSource extends MLBasicSource<Event, Month> impleme
 		jl.setSource(new File(trainingDataJSON));
 
 		DecimalFormat df = new DecimalFormat("#.000");
-		openEval = new SimpleOpenEval(jl.getDataSet(), KEYWORD);
+		openEval = new MultithreadSimpleOpenEval(jl.getDataSet(), KEYWORD);
 		openEval.setNameSuffix(month + "thresholdOf" + df.format(threshold));
 	}
 
@@ -107,14 +109,14 @@ public class openEvalThresholdSource extends MLBasicSource<Event, Month> impleme
 		this.threshold = threshold;
 
 		DecimalFormat df = new DecimalFormat("#.000");
-		openEval = new SimpleOpenEval(MLUtility.fileToInstances(trainingDataArff), KEYWORD);
+		openEval = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(trainingDataArff), KEYWORD);
 		openEval.setSearch(search);
 		openEval.setNameSuffix(month + "WthresholdOf" + df.format(threshold));
 	}
 
 	@Override
 	public Month getResponse(Event input) throws UnknownException {
-		Set<String> keywords = new HashSet<String>(input.getWords());
+		List<String> keywords = new ArrayList<String>(new HashSet<String>(input.getWords()));
 		List<String> definedKeywords = input.getKeyWords();
 		if (definedKeywords != null) {
 			keywords.addAll(definedKeywords);
@@ -127,27 +129,36 @@ public class openEvalThresholdSource extends MLBasicSource<Event, Month> impleme
 		if (keywords.size() == 0) {
 			throw new UnknownException();
 		}
+
+		for (int x = 0; x < keywords.size(); x++) {
+			keywords.add(x, country + " " + keywords.get(x));
+		}
+
 		int positiveBags = 0;
 		int negativeBags = 0;
 		int unkBags = 0;
+
+		List<Opinion<Boolean, Double>> opinions = openEval.getOpinions(keywords);
 		// TODO: use weighted vote based on SimpleOpenEval confidences?
-		for (String keyword : keywords) {
-			try {
-				Opinion<Boolean, Double> op = openEval.getOpinion(country + " " + keyword);
+		for (int x = 0; x < keywords.size(); x++) {
+			String keyword = keywords.get(x);
+			Opinion<Boolean, Double> op = opinions.get(x);
+
+			if (op == null) {
+				unkBags++;
+
+				if (verbose) {
+					System.out.println("Unknown: " + keyword);
+				}
+			} else {
 				if (verbose) {
 					System.out.println(keyword + ": " + op);
 				}
-
 				if (op.getValue()) {
 					positiveBags++;
 				} else {
 					negativeBags++;
 				}
-			} catch (UnknownException e) {
-				if (verbose) {
-					System.out.println("U"+keyword + ": " + e.getMessage());
-				}
-				unkBags++;
 			}
 		}
 
