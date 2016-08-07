@@ -1,7 +1,5 @@
 package Planit.speakersuggestion.comparison;
 
-import java.util.Arrays;
-
 import Planit.dataObjects.Event;
 import Planit.dataObjects.Speaker;
 import edu.toronto.cs.se.ci.UnknownException;
@@ -20,7 +18,7 @@ public class Playground {
 		SpeakerComparisonRequest input;
 		Opinion<Double, Void> opinion;
 		
-		event = Event.createEvent("").setKeyWords(Arrays.asList("gooderham","watercolours","sculptors","gallery","hamilton","Hamilton"));
+		event = Event.createEvent("").setKeyWords(new String[]{"gooderham","watercolours","sculptors","gallery","hamilton","Hamilton"});
 		s1 = Speaker.createSpeaker("Allison Massari");
 		s2 = Speaker.createSpeaker("Harry Balzer");
 		input = new SpeakerComparisonRequest(event, s1, s2);

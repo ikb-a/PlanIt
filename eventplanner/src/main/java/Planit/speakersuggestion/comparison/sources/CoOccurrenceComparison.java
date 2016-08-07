@@ -1,5 +1,7 @@
 package Planit.speakersuggestion.comparison.sources;
 
+import java.util.Arrays;
+
 import com.google.common.base.Optional;
 
 import Planit.speakersuggestion.comparison.SpeakerComparisonContract;
@@ -27,8 +29,8 @@ public class CoOccurrenceComparison extends Source<SpeakerComparisonRequest, Dou
 	public Opinion<Double, Void> getOpinion(
 			SpeakerComparisonRequest args) throws UnknownException {
 		
-		Double s1Score = CoOccurrence.getInstance().cooccurrence(args.getS1().getName(), args.getEvent().getKeyWords());
-		Double s2Score = CoOccurrence.getInstance().cooccurrence(args.getS2().getName(), args.getEvent().getKeyWords());
+		Double s1Score = CoOccurrence.getInstance().cooccurrence(args.getS1().getName(), Arrays.asList(args.getEvent().getKeyWords()));
+		Double s2Score = CoOccurrence.getInstance().cooccurrence(args.getS2().getName(), Arrays.asList(args.getEvent().getKeyWords()));
 		
 		if (s1Score == null || s2Score == null){
 			throw new UnknownException();

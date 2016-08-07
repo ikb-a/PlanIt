@@ -3,8 +3,8 @@ package PlanIt.monthSuggestion.sources;
 import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import Planit.dataObjects.Event;
@@ -115,9 +115,9 @@ public class openEvalThresholdSourceSingleThread extends MLBasicSource<Event, Mo
 	@Override
 	public Month getResponse(Event input) throws UnknownException {
 		Set<String> keywords = new HashSet<String>(input.getWords());
-		List<String> definedKeywords = input.getKeyWords();
+		String [] definedKeywords = input.getKeyWords();
 		if (definedKeywords != null) {
-			keywords.addAll(definedKeywords);
+			keywords.addAll(Arrays.asList(definedKeywords));
 			definedKeywords = null;
 		}
 		String country = input.getVenue().getAddress().getCountry();

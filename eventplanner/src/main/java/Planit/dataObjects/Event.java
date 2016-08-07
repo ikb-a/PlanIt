@@ -32,7 +32,8 @@ public class Event extends ComparableImp {
 	// that words is not serialized by GSON, as words are extracted from the
 	// event.
 	private transient List<String> words;
-	private List<String> keyWords;
+	//made into an array to facilitate GSON conversion
+	private String[] keyWords;
 
 	/**
 	 * Creates and returns a new event.
@@ -214,11 +215,11 @@ public class Event extends ComparableImp {
 		return this;
 	}
 
-	public List<String> getKeyWords() {
+	public String [] getKeyWords() {
 		return keyWords;
 	}
 
-	public Event setKeyWords(List<String> keyWords) {
+	public Event setKeyWords(String [] keyWords) {
 		this.keyWords = keyWords;
 		return this;
 	}

@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
@@ -289,13 +290,13 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		String description = input.getDescription().toLowerCase();
 		String title = input.getTitle().toLowerCase();
 
-		List<String> definedKeywords = input.getKeyWords();
-		if (definedKeywords == null) {
+		String[] definedKeywordsArray = input.getKeyWords();
+		List<String> definedKeywords;
+		if (definedKeywordsArray == null) {
 			definedKeywords = new ArrayList<String>();
 		} else {
-			for (int x = 0; x < definedKeywords.size(); x++) {
-				definedKeywords.set(x, definedKeywords.get(x).toLowerCase());
-			}
+			definedKeywords = new ArrayList<String>(Arrays.asList(definedKeywordsArray));
+			definedKeywords.replaceAll((String a) -> a.toLowerCase());
 		}
 
 		String nationalHolidaysString = getHolidaysString(country);

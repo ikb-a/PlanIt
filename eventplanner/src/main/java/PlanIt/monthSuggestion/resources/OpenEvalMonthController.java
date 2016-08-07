@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -169,9 +170,9 @@ public class OpenEvalMonthController {
 		}
 
 		List<String> keywords = new ArrayList<String>(new HashSet<String>(input.getWords()));
-		List<String> definedKeywords = input.getKeyWords();
+		String [] definedKeywords = input.getKeyWords();
 		if (definedKeywords != null) {
-			keywords.addAll(definedKeywords);
+			keywords.addAll(Arrays.asList(definedKeywords));
 			definedKeywords = null;
 		}
 		String country = input.getVenue().getAddress().getCountry();

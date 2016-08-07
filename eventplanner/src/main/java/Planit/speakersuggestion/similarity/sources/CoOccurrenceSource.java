@@ -1,5 +1,7 @@
 package Planit.speakersuggestion.similarity.sources;
 
+import java.util.Arrays;
+
 import com.google.common.base.Optional;
 
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
@@ -17,7 +19,7 @@ public class CoOccurrenceSource extends Source<ComparisonRequest, Double, Void> 
 	public Opinion<Double, Void> getOpinion(ComparisonRequest args)
 			throws UnknownException {
 
-		Double result = CoOccurrence.getInstance().cooccurrence(args.getSpeaker().getName(), args.getEvent().getKeyWords());
+		Double result = CoOccurrence.getInstance().cooccurrence(args.getSpeaker().getName(), Arrays.asList(args.getEvent().getKeyWords()));
 		if (result == null){
 			throw new UnknownException();
 		}

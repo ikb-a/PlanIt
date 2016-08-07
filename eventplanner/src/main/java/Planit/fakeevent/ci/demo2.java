@@ -1,7 +1,6 @@
 package Planit.fakeevent.ci;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -63,7 +62,7 @@ public class demo2 {
 	private static final String eventOrganizerEmail = "admin@brickfete.com";
 	private static final String eventOrganizerPhone = "905-677-9900";
 	private static List<Speaker> confirmedSpeakers;
-	private static List<String> keywords;
+	private static String []  keywords;
 	private static final String TRAINING_DATA_LOCATION = "./src/main/resources/data/CvGandCvREandCvSMerged_Ian.arff";
 
 	public demo2() {
@@ -71,8 +70,7 @@ public class demo2 {
 
 	public static void main(String[] args) {
 		confirmedSpeakers = new ArrayList<Speaker>();
-		String [] key = new String []{"Brickfete", "Toronto", "Lego"};
-		keywords = Arrays.asList(key);
+		keywords = new String []{"Brickfete", "Toronto", "Lego"};
 		
 		Event test1 = Event.createEvent(eventTitle);
 		Address a = new Address(streetNumber, street, city, province, country, postalCode);

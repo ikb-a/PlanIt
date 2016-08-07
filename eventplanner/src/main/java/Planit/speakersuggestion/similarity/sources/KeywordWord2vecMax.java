@@ -1,6 +1,7 @@
 package Planit.speakersuggestion.similarity.sources;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import com.google.common.base.Optional;
 
@@ -31,14 +32,14 @@ public class KeywordWord2vecMax extends Source<ComparisonRequest, Double, Void> 
 	
 	public static Double similarity(ComparisonRequest args) throws UnknownException{
 		
-		if (args.getEvent().getKeyWords().size() < 1 ||
+		if (args.getEvent().getKeyWords().length < 1 ||
 				args.getSpeaker().getTopicKeywords().size() < 1){
 			throw new UnknownException();
 		}
 		
 		try {
 			double [][] similarityMatrix = Word2Vec.getInstance().similarity(
-					args.getEvent().getKeyWords(),
+					Arrays.asList(args.getEvent().getKeyWords()),
 					args.getSpeaker().getTopicKeywords());
 			double max = MatrixUtil.max(similarityMatrix);
 			return max;

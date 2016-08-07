@@ -1,5 +1,7 @@
 package Planit.speakersuggestion.similarity.sources;
 
+import java.util.Arrays;
+
 import com.google.common.base.Optional;
 
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
@@ -30,12 +32,12 @@ public class KeywordWordnetMax extends Source<ComparisonRequest, Double, Void> i
 	
 	static public Double similarity(ComparisonRequest args) throws UnknownException{
 		
-		if (args.getEvent().getKeyWords().size() < 1 ||
+		if (args.getEvent().getKeyWords().length < 1 ||
 				args.getSpeaker().getTopicKeywords().size() < 1){
 			throw new UnknownException();
 		}
 		
-		double [][] similarityMatrix = WordnetWUP.compare(args.getEvent().getKeyWords(), args.getSpeaker().getTopicKeywords());
+		double [][] similarityMatrix = WordnetWUP.compare(Arrays.asList(args.getEvent().getKeyWords()), args.getSpeaker().getTopicKeywords());
 		double max = MatrixUtil.max(similarityMatrix);
 		return max;
 	}

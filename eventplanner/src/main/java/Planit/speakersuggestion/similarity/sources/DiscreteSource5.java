@@ -1,5 +1,7 @@
 package Planit.speakersuggestion.similarity.sources;
 
+import java.util.Arrays;
+
 import Planit.speakersuggestion.similarity.util.ComparisonRequest;
 import Planit.speakersuggestion.wordsimilarity.CoOccurrence;
 import edu.toronto.cs.se.ci.UnknownException;
@@ -17,7 +19,7 @@ public class DiscreteSource5 extends CoOccurrenceSource {
 	public Opinion<Double, Void> getOpinion(ComparisonRequest input) throws UnknownException{
 		
 		Double rawValue = 
-				CoOccurrence.getInstance().cooccurrence(input.getSpeaker().getName(), input.getEvent().getKeyWords());
+				CoOccurrence.getInstance().cooccurrence(input.getSpeaker().getName(), Arrays.asList(input.getEvent().getKeyWords()));
 
 		return new Opinion<Double, Void>(input, threshold(rawValue), null, this);
 		
