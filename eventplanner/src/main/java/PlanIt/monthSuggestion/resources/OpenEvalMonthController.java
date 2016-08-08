@@ -43,7 +43,6 @@ public class OpenEvalMonthController {
 
 	private static final double DEFAULT_THRESHOLD = 0.25;
 	private Map<Month, Double> thresholds;
-	private static final String KEYWORD = "month";
 	private static final String janFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalJan.arff";
 	private static final String febFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalFeb.arff";
 	private static final String marFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalMar.arff";
@@ -74,51 +73,51 @@ public class OpenEvalMonthController {
 				thresholds.put(m, DEFAULT_THRESHOLD);
 			}
 
-			jan = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(janFile), KEYWORD);
+			jan = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(janFile), "January");
 			jan.setNameSuffix("Janthreshold");
 			jan.setSearch(search);
 
-			feb = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(febFile), KEYWORD);
+			feb = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(febFile), "February");
 			feb.setNameSuffix("Febthreshold");
 			feb.setSearch(search);
 
-			mar = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(marFile), KEYWORD);
+			mar = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(marFile), "March");
 			mar.setNameSuffix("Marthreshold");
 			mar.setSearch(search);
 
-			apr = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(aprFile), KEYWORD);
+			apr = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(aprFile), "April");
 			apr.setNameSuffix("Aprthreshold");
 			apr.setSearch(search);
 
-			may = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(mayFile), KEYWORD);
+			may = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(mayFile), "May");
 			may.setNameSuffix("Maythreshold");
 			may.setSearch(search);
 
-			jun = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(junFile), KEYWORD);
+			jun = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(junFile), "June");
 			jun.setNameSuffix("Junthreshold");
 			jun.setSearch(search);
 
-			jul = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(julFile), KEYWORD);
+			jul = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(julFile), "July");
 			jul.setNameSuffix("Julthreshold");
 			jul.setSearch(search);
 
-			aug = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(augFile), KEYWORD);
+			aug = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(augFile), "August");
 			aug.setNameSuffix("Augthreshold");
 			aug.setSearch(search);
 
-			sep = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(sepFile), KEYWORD);
+			sep = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(sepFile), "September");
 			sep.setNameSuffix("Septhreshold");
 			sep.setSearch(search);
 
-			oct = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(octFile), KEYWORD);
+			oct = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(octFile), "October");
 			oct.setNameSuffix("Octthreshold");
 			oct.setSearch(search);
 
-			nov = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(novFile), KEYWORD);
+			nov = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(novFile), "November");
 			nov.setNameSuffix("Novthreshold");
 			nov.setSearch(search);
 
-			dec = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(decFile), KEYWORD);
+			dec = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(decFile), "December");
 			dec.setNameSuffix("Decthreshold");
 			dec.setSearch(search);
 
