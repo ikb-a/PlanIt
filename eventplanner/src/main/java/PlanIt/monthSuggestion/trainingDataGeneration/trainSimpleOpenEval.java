@@ -3,7 +3,6 @@ package PlanIt.monthSuggestion.trainingDataGeneration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.logging.Level;
 
 import edu.toronto.cs.se.ci.utils.searchEngine.GenericSearchEngine;
 import edu.toronto.cs.se.ci.utils.searchEngine.GoogleCSESearchJSON;
@@ -22,9 +21,6 @@ public class trainSimpleOpenEval {
 	public static final String FOLDER = "./src/main/resources/data/monthData/OpenEval/";
 
 	public static void main(String[] args) throws Exception {
-
-		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(Level.OFF);
-		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
 		GenericSearchEngine search = new MemoizingSearch(FOLDER + "TrainingSearchMemoization.ser",
 				new GoogleCSESearchJSON());
 

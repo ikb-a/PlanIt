@@ -72,57 +72,73 @@ public class OpenEvalMonthController {
 			for (Month m : Month.values()) {
 				thresholds.put(m, DEFAULT_THRESHOLD);
 			}
-
+			if (verbose)
+				System.out.println("Training Jan");
 			jan = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(janFile), "January");
 			jan.setNameSuffix("Janthreshold");
 			jan.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Feb");
 			feb = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(febFile), "February");
 			feb.setNameSuffix("Febthreshold");
 			feb.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Mar");
 			mar = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(marFile), "March");
 			mar.setNameSuffix("Marthreshold");
 			mar.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Apr");
 			apr = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(aprFile), "April");
 			apr.setNameSuffix("Aprthreshold");
 			apr.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training May");
 			may = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(mayFile), "May");
 			may.setNameSuffix("Maythreshold");
 			may.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Jun");
 			jun = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(junFile), "June");
 			jun.setNameSuffix("Junthreshold");
 			jun.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Jul");
 			jul = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(julFile), "July");
 			jul.setNameSuffix("Julthreshold");
 			jul.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Aug");
 			aug = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(augFile), "August");
 			aug.setNameSuffix("Augthreshold");
 			aug.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Sep");
 			sep = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(sepFile), "September");
 			sep.setNameSuffix("Septhreshold");
 			sep.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Oct");
 			oct = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(octFile), "October");
 			oct.setNameSuffix("Octthreshold");
 			oct.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Nov");
 			nov = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(novFile), "November");
 			nov.setNameSuffix("Novthreshold");
 			nov.setSearch(search);
-
+			if (verbose)
+				System.out.println("Training Dec");
 			dec = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(decFile), "December");
 			dec.setNameSuffix("Decthreshold");
 			dec.setSearch(search);
-
+			if (verbose)
+				System.out.println("Loading links map");
 			completedLinks = loadLinkToFilename();
 			currFile = completedLinks.size();
+			
+			System.out.println("Controller setup done");
+
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
@@ -151,7 +167,7 @@ public class OpenEvalMonthController {
 	public synchronized Month getResponse(Event input, Month month) throws UnknownException {
 		MultithreadSimpleOpenEval openEval = getEvalForMonth(month);
 		int filename;
-		if (completedLinks.containsKey(input.getTitle())) {
+		if (completedLinks.containsKey(input.getTitle() + openEval.getKeyword())) {
 			filename = completedLinks.get(input.getTitle());
 		} else {
 			filename = currFile;
@@ -169,7 +185,7 @@ public class OpenEvalMonthController {
 		}
 
 		List<String> keywords = new ArrayList<String>(new HashSet<String>(input.getWords()));
-		String [] definedKeywords = input.getKeyWords();
+		String[] definedKeywords = input.getKeyWords();
 		if (definedKeywords != null) {
 			keywords.addAll(Arrays.asList(definedKeywords));
 			definedKeywords = null;
