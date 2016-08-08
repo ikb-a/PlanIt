@@ -5,11 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 
-import edu.toronto.cs.se.ci.utils.searchEngine.BingSearchJSON;
 import edu.toronto.cs.se.ci.utils.searchEngine.GenericSearchEngine;
+import edu.toronto.cs.se.ci.utils.searchEngine.GoogleCSESearchJSON;
 import edu.toronto.cs.se.ci.utils.searchEngine.MemoizingSearch;
 import openEval.MultithreadSimpleOpenEval;
-import openEval.SimpleOpenEval;
 
 /**
  * Note: Increasing heap size to 1GB is needed. Use java -Xmx1024m -jar
@@ -26,9 +25,8 @@ public class trainSimpleOpenEval {
 
 		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(Level.OFF);
 		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
-		// TODO: USE CORRECT SEARCH
 		GenericSearchEngine search = new MemoizingSearch(FOLDER + "TrainingSearchMemoization.ser",
-				new UnBubbleSearchHTML());
+				new GoogleCSESearchJSON());
 
 		// Words for which the predicate AreRelatedToJanuary(Country, Word)
 		// should return true
