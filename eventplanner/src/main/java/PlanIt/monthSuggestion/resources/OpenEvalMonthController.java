@@ -59,7 +59,7 @@ public class OpenEvalMonthController {
 	private static final String fileExtension = ".ser";
 	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/memoization/linkToFile.ser";
 	static GenericSearchEngine search;
-	boolean verbose = true;
+	static boolean verbose = false;
 	int currFile;
 
 	private OpenEvalMonthController() {
@@ -151,6 +151,10 @@ public class OpenEvalMonthController {
 		}
 		search = searchEngine;
 	}
+	
+	public static synchronized void setVerbose(boolean verb){
+		verbose = verb;
+	}
 
 	public static synchronized OpenEvalMonthController getInstance() {
 		if (instance == null) {
@@ -165,6 +169,9 @@ public class OpenEvalMonthController {
 	}
 
 	public synchronized Month getResponse(Event input, Month month) throws UnknownException {
+		if(verbose)
+			System.out.println("Running month "+month+" on event: "+input.getTitle());
+		
 		MultithreadSimpleOpenEval openEval = getEvalForMonth(month);
 		int filename;
 		if (completedLinks.containsKey(input.getTitle() + openEval.getKeyword())) {
@@ -184,12 +191,14 @@ public class OpenEvalMonthController {
 			throw new RuntimeException(e1);
 		}
 
-		List<String> keywords = new ArrayList<String>(new HashSet<String>(input.getWords()));
-		String[] definedKeywords = input.getKeyWords();
-		if (definedKeywords != null) {
-			keywords.addAll(Arrays.asList(definedKeywords));
-			definedKeywords = null;
-		}
+		//List<String> keywords = new ArrayList<String>(new HashSet<String>(input.getWords()));
+		//String[] definedKeywords = input.getKeyWords();
+		//if (definedKeywords != null) {
+		//	keywords.addAll(Arrays.asList(definedKeywords));
+		//	definedKeywords = null;
+		//}
+		List<String> keywords = new ArrayList<String>(Arrays.asList(input.getKeyWords()));
+		
 		String country = input.getVenue().getAddress().getCountry();
 		if (country == null) {
 			throw new UnknownException();
