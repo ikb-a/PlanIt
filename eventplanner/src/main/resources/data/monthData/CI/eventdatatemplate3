@@ -1,0 +1,14 @@
+{
+"events" : [
+	{
+	"title" : "",
+	"description" : "",
+	"keyWords":[],
+	"venue" : {
+		"address" : {
+			"country" : ""
+			}
+		}
+	}
+	]
+}
