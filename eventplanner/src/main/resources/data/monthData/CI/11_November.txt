@@ -1,66 +1,88 @@
 Veterans Day
 Honors all veterans of the United States armed forces. It is observed on November 11 to recall the end of World War I on that date in 1918 (major hostilities of World War I were formally ended at the 11th hour of the 11th day of the 11th month of 1918 when the Armistice with Germany went into effect).
+[('November 11', 1, 2), ('United States', 1, 2), ('World War', 2, 2), ('11', 4, 1)]
 United States
 Thanksgiving Day
 Traditionally celebrates the giving of thanks for the autumn harvest. Traditionally includes the sharing of a turkey dinner.
+[('autumn harvest', 1, 2), ('turkey dinner', 1, 2)]
 United States
 Rock ‘n’ Roll Marathon Las Vegas Music Bands
 Run the light-filled Las Vegas Strip at night as you race to the sound your favorite beats. The Rock ‘n’ Roll Marathon was created to make running fun. Have you ever tried running without a beat? Exactly. While Las Vegas maya be the marquee run in this event, the Rock ‘n’ Roll Marathon travels the country and makes stops in cities like D.C., Phoenix, Dallas, Nashville, Seattle, Chicago, and more. If you love running and music, this event is for you, as you can choose to run a 5k, 10k, half marathon or full marathon! 
+[('Rock \x91 n \x92 Roll Marathon', 2, 6), ('D.C ., Phoenix', 1, 3), ('Las Vegas', 1, 2), ('half marathon', 1, 2), ('5 k', 1, 2), ('10 k', 1, 2), ('light-filled Las Vegas Strip', 1, 4)]
 United States
 Texas Renaissance Festival 16th century musicians acrobats dancers
 Starting from humble beginnings in the 1970’s, the Texas Renaissance festival has grown to become the largest, most acclaimed Renaissance Festival in the nation with over 500,000 guest passing through the Festival’s gates each year. Upon entering the gates, you take a trip back through time to the 16th century, as you explore the 55 acre, authentically recreated park. You wou see musicians, magicians, acrobats, jugglers, and dancers, with over 200 daily performance on over 20 stages throughout the village. 
+[('Texas Renaissance festival', 1, 3), ('Festival \x92s gates', 1, 3), ('20 stages', 1, 2), ('500,000 guest', 1, 2), ('55 acre', 1, 2), ('Renaissance Festival', 1, 2)]
 United States
 Hong Kong Jewish Film Festival
 The Hong Kong Jewish Film Festival (HKJFF) is an annual film festival dedicated to world cinema that focuses on Jewish life, history and culture worldwide. It was founded in 2000 by Howard Elias from Toronto, Canada, and takes place in Hong Kong.
+[('Howard Elias', 1, 2), ('Film Festival', 1, 2), ('Jewish life', 1, 2), ('film festival', 1, 2), ('Hong Kong', 2, 2), ('world cinema', 1, 2)]
 China
 festival day for children aged three, five and seven
 Shichi-Go-San  is a traditional rite of passage and festival day in Japan for three- and seven-year-old girls and three- and five-year-old boys, held annually on November 15 to celebrate the growth and well-being of young children. As it is not a national holiday, it is generally observed on the nearest weekend.
+[('November 15', 1, 2), ('festival day', 1, 2)]
 Japan
 Cultural festival
 Cultural festivals  in Japan are annual open day events held by most schools, from nursery schools to universities at which their students display their artistic achievements. People who want to enter the school themselves or who are interested in the school may come to see what the schoolwork and atmosphere are like. Parents may also want to see what kind of work their children have been doing. The festivals are usually open to the public, especially at high schools and universities.
+[('nursery schools', 1, 2), ('students display', 1, 2), ('school', 5, 1), ('day events', 1, 2), ('Cultural festivals', 1, 2)]
 Japan
 Tokyo International Film Festival
 The Tokyo International Film Festival  (TIFF) is a film festival established in 1985. The event was held biennially from 1985 to 1991 and annually thereafter. Along with the Shanghai International Film Festival, it is one of Asia's competitive film festivals, and the only Japanese festival accredited by the FIAPF. The awards handed out during the festival have changed throughout its existence, but the Tokyo Sakura Grand Prix, handed to the best film, has stayed as the top award. Other awards that have been given regularly include the Special Jury Award and awards for best actor, best actress and best director.
+[('Other awards', 1, 2), ('Tokyo Sakura Grand Prix', 1, 4), ('film festival', 1, 2), ('Special Jury Award', 1, 3), ('festival', 4, 1), ('film', 3, 1), ('film festivals', 1, 2), ('Tokyo International Film Festival', 1, 4), ('award', 4, 1), ('Shanghai International Film Festival', 1, 4), ('Japanese festival', 1, 2)]
 Japan
 Japan Cup
 The Japan Cup  is one of the most prestigious horse races in Japan. It is contested on the last Sunday of November, post time of 15:40 at Tokyo Racecourse in Fuchu, Tokyo at a distance of 2400 meters (about 1 1/2 miles) run under weight for age conditions with a maximum of 18 horses on turf (grass). With a purse of ¥476 million (about US $5.8 million), the Japan Cup is one of the richest races in the world. The Japan Cup is an invitational event. During a relatively short history, the race has established itself as an international contest with winners from Japan, North America, Britain, Australia, New Zealand, Ireland, France, Germany and Italy.
+[('Cup', 3, 1), ('1 1/2 miles', 1, 3), ('2400 meters', 1, 2), ('horse races', 1, 2), ('Tokyo Racecourse', 1, 2), ('age conditions', 1, 2), ('post time', 1, 2), ('New Zealand', 1, 2), ('18 horses', 1, 2), ('North America', 1, 2), ('Japan Cup', 3, 2), ('race', 3, 1), ('Japan', 5, 1)]
 Japan
 Christmas Market, Stuttgart
 Stuttgart Christmas Market, known in German as the Stuttgarter Weihnachtsmarkt is a Christmas market that takes place every year during Advent in the German city of Stuttgart. The market stretches from the west and northern edge of Stuttgart's central square (Schlossplatz, where there is a children's 'fairytale land' alongside a miniature railway and ice rink) to the old squares and alleyways of Stuttgart, including Schillerplatz, Karlsplatz (featuring a Finnish Christmas Market and a Christmas collectors' fair) and Marktplatz.
+[('fairytale land', 1, 2), ('German city', 1, 2), ('Christmas market', 1, 2), ('market stretches', 1, 2), ('Christmas collectors', 1, 2), ('Christmas', 4, 1), ('Finnish Christmas Market', 1, 3), ('Stuttgart Christmas Market', 1, 3), ('Stuttgarter Weihnachtsmarkt', 1, 2), ('Stuttgart', 4, 1), ('ice rink', 1, 2)]
 Germany
 Parliament Week
 UK Parliament Week is an annual series of events in the United Kingdom that aim to inspire interest in parliament, politics and democracy and encourage young people and the public to engage with the UK’s democratic system and institutions. Initiated in 2011, a week-long programme of events and activities is organised each year by the House of Commons and House of Lords of the Parliament of the United Kingdom in collaboration with over 300 organisations including charities, schools, museums and community groups.
+[('UK Parliament Week', 1, 3), ('community groups', 1, 2), ('UK \x92s', 1, 2), ('300 organisations', 1, 2), ('United Kingdom', 2, 2)]
 United Kingdom
 Guy Fawkes Night
 Guy Fawkes Night, also known as Guy Fawkes Day, Bonfire Night and Firework Night, is an annual commemoration observed on 5 November, primarily in Great Britain. Its history begins with the events of 5 November 1605, when Guy Fawkes, a member of the Gunpowder Plot, was arrested while guarding explosives the plotters had placed beneath the House of Lords. Celebrating the fact that King James I had survived the attempt on his life, people lit bonfires around London, and months later the introduction of the Observance of 5th November Act enforced an annual public day of thanksgiving for the plot's failure.
+[('Firework Night', 1, 2), ('Great Britain', 1, 2), ('5 November 1605,', 1, 3), ('King James', 1, 2), ('Guy Fawkes Day', 1, 3), ('Gunpowder Plot', 1, 2), ('5', 3, 1), ('November', 3, 1), ('Bonfire Night', 1, 2), ('5 November', 1, 2), ('guy Fawkes Night', 1, 3), ('Night', 3, 1), ('November Act', 1, 2), ('Fawkes', 3, 1), ('Guy Fawkes', 1, 2)]
 United Kingdom
 Schoolies week
 Schoolies or schoolies week (also known as leavers' or leavers' week in Western Australia and coasties in the Australian Capital Territory) refers to the Australian tradition of high-school graduates (also known as "schoolies" or "leavers") having week-long holidays following the end of their final exams in late November and early December. "Toolies" or "Droolies" refers to older revellers who participate in Schoolies week but are not high-school graduates."Foolies", "juvie leavers" or "pre-schoolies" refers to younger adolescents, who participate in Schoolies week but have not yet graduated from high school.  Schoolies week is seen as a final party with schoolmates before they head their separate ways.
+[('high-school graduates', 1, 2), ('leavers ")', 1, 2), ('high-school graduates ."Foolies', 1, 3), ('Australian tradition', 1, 2), ('week', 5, 1), ('Schoolies week', 3, 2), ('Schoolie', 4, 1), ('juvie leavers', 1, 2), ('schoolies week', 1, 2), ('Western Australia', 1, 2), ('leaver', 4, 1), ('Australian Capital Territory', 1, 3)]
 Australia
 Walk to Work Day
 Walk to Work Day is an annual, national event in Australia encouraging people to walk to work. The event is an initiative of the Pedestrian Council of Australia, and supported by the Australian Government. In 2015, it was held on Friday 13 November. Through Walk to Work Day, the Pedestrian Council of Australia draw attention to the health and wellbeing benefits of walking. Since 2000 Walk to Work Day has been a national event supported by the Australian Government. 2003 was the first time the event was held on the same date across all Australian states and territories. Several non-government organisations also promote the day, including the Australian Medical Association and the Health Services Union.
+[('Australian Government', 2, 2), ('wellbeing benefits', 1, 2), ('Health Services Union', 1, 3), ('Australian', 4, 1), ('event', 4, 1), ('Australia', 3, 1), ('Friday 13 November', 1, 3), ('Work Day', 3, 2), ('Australian states', 1, 2), ('Day', 3, 1), ('Pedestrian Council', 2, 2), ('Several non-government organisations', 1, 3), ('Work', 3, 1), ('Australian Medical Association', 1, 3)]
 Australia
 Melbourne Cup
 The Melbourne Cup is one of Australia's most prestigious Thoroughbred horse races. It is a 3,200 metre race for three-year-olds and over. It is the richest "two-mile" handicap in the world, and one of the richest turf races. Conducted annually by the Victoria Racing Club on the Flemington Racecourse in Melbourne, Victoria, the event starts at 3pm on the first Tuesday in November.
+[('turf races', 1, 2), ('Melbourne Cup', 1, 2), ('3,200 metre race', 1, 3), ('Thoroughbred horse races', 1, 3), ('3 pm', 1, 2), ('Victoria Racing Club', 1, 3), ('Flemington Racecourse', 1, 2), ('race', 3, 1)]
 Australia
 Metal-Expo
 Metal-Expo is an exhibition for steel producers and users. It has been held yearly since 1995 in Moscow at the All-Russia Exhibition Centre and the Crocus Expo International, since 1999 in November. More than 700 exhibitors from 33 countries participated in the 2008 Metal-Expo exhibition. Annually more than 30 000 professionals in all segments of the steel and related industries including machine-building, transportation, logistics, metalworking, stockholding etc. visit the event. All the major Russian, CIS, European, and Asian steel companies traditionally participate in Metal-Expo. More than 4,000 professionals work on the stands during the event. The program of events of the exhibition includes some 60 conferences, seminars, presentations, and round tables on all the aspects of the steel business with more than 500 speakers.
+[('Asian steel companies', 1, 3), ('60 conferences', 1, 2), ('4,000 professionals work', 1, 3), ('event', 3, 1), ('exhibition', 3, 1), ('700 exhibitors', 1, 2), ('500 speakers', 1, 2), ('steel', 4, 1), ('All-Russia Exhibition Centre', 1, 3), ('steel producers', 1, 2), ('30 000 professionals', 1, 3), ('Crocus Expo International', 1, 3), ('steel business', 1, 2), ('Metal-Expo', 3, 1), ('2008 Metal-Expo exhibition', 1, 3), ('round tables', 1, 2), ('33 countries', 1, 2)]
 Russia
 The World Festival of Clowns in Yekaterinburg
 The World Festival of Clowns in Yekaterinburg is an annual large-scale festival of the world clownery, taking place in Yekaterinburg, Russia, since 2008. The organizers of this festival are People's artist of Russia Anatoly Marchevsky and People's artist of Russia Alexander Kalmykov. The festival is globally important in its cultural and social senses and is dedicated to popularization of healthy lifestyle and physical health, development of circus arts in Russia and worldwide, development of international relationships in the sphere of culture and arts, cultural and artistic education for nursery, primary, secondary and high school students, teenagers and adults.
+[('circus arts', 1, 2), ('festival', 3, 1), ('world clownery', 1, 2), ('World Festival', 1, 2), ('school students', 1, 2), ('Russia Alexander Kalmykov', 1, 3), ('Russia', 4, 1), ('Russia Anatoly Marchevsky', 1, 3)]
 Russia
 Brazilian Grand Prix
 The 2016 Formula One season is the 67th season of the FIA Formula One World Championship, a motor racing championship for Formula One cars which is recognised by the sport's governing body, the Fédération Internationale de l'Automobile (FIA), as the highest class of competition for open-wheel racing cars. Teams and drivers are scheduled to take part in twenty-one Grands Prix—making for the longest season in the sport's history—starting in Australia on 20 March and finishing in Abu Dhabi on 27 November as they compete for the World Drivers' and World Constructors' championships.[
+[('World Championship', 1, 2), ('2016 Formula', 1, 2), ('Formula', 3, 1), ('Abu Dhabi', 1, 2), ('history \x97starting', 1, 2), ('Grands Prix \x97making', 1, 3), ('F \xe9d Internationale', 1, 3), ("l 'Automobile", 1, 2), ('World', 3, 1), ('FIA Formula', 1, 2), ('season', 3, 1), ('20 March', 1, 2), ('World Drivers', 1, 2), ('FIA ),', 1, 2), ('27 November', 1, 2), ('World Constructors', 1, 2)]
 Brazil
 Paragliding World Cup
 World Paragliding Championships is the main competitive paragliding championships in the World, organized by the Fédération Aéronautique Internationale
+[('world Paragliding Championships', 1, 3), ('paragliding championships', 1, 2), ('F \xe9d', 1, 2)]
 Brazil
 Parada Gráfica
 Parada Gráfica is a fair and festival for independent publishers and graphic artists. It happens every year in the city of Porto Alegre, Brazil, at Museu do Trabalho. Every year there are open workshops dedicated to engraving and graphic arts in general. Aligned with the global independent art scene, the city of Porto Alegre incorporated this event as one of the most relevant in its agenda.
+[('Porto Alegre', 2, 2), ('art scene', 1, 2), ('Parada Gr \xe1fica', 1, 3)]
 Brazil
 Day of dead
 Another Christian holiday, it commemorates the faithful departed.
+[('Christian holiday', 1, 2)]
 Brazil
 Republic Proclamation day
 Commemorates the end of the Empire of Brazil and the proclamation of the Brazilian Republic on November 15, 1889.
+[('Brazilian Republic', 1, 2)]
 Brazil
