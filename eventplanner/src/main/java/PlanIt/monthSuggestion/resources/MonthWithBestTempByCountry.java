@@ -15,6 +15,14 @@ import org.json.JSONObject;
 import PlanIt.monthSuggestion.sources.Month;
 import edu.toronto.cs.se.ci.UnknownException;
 
+/**
+ * This class of static methods accepts the name of a country and a value, n,
+ * from 1-12, and returns the month with the nth best temperature for the
+ * country.
+ * 
+ * @author ikba
+ *
+ */
 public class MonthWithBestTempByCountry {
 	private static String currCountry;
 	private static String currCountryCode;
@@ -44,7 +52,7 @@ public class MonthWithBestTempByCountry {
 				}
 
 				try {
-					//System.out.println(apiResult);
+					// System.out.println(apiResult);
 					JSONArray jsonMonthlyData = new JSONArray(apiResult);
 					assert (jsonMonthlyData.length() == 12);
 					for (int x = 0; x < 12; x++) {

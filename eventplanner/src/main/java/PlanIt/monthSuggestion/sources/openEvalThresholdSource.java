@@ -11,11 +11,11 @@ public class openEvalThresholdSource extends MLBasicSource<Event, Month> impleme
 	OpenEvalMonthController control;
 	boolean verbose = true;
 
-	public openEvalThresholdSource(Month thisMonth, double threshold) {
+	public openEvalThresholdSource(Month thisMonth, int threshold) {
 		if (thisMonth == null) {
 			throw new IllegalArgumentException("monthName is null");
-		} else if (threshold > 1 || threshold < 0) {
-			throw new IllegalArgumentException("threshold must be a percentage between 1 and 0");
+		} else if (threshold < 0) {
+			throw new IllegalArgumentException("threshold must be number of keywords >= 0");
 		}
 		this.month = thisMonth;
 		control = OpenEvalMonthController.getInstance();

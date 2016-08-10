@@ -10,7 +10,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
@@ -41,8 +40,8 @@ public class OpenEvalMonthController {
 	MultithreadSimpleOpenEval dec;
 	HashMap<String, Integer> completedLinks;
 
-	private static final double DEFAULT_THRESHOLD = 0.25;
-	private Map<Month, Double> thresholds;
+	private static final int DEFAULT_THRESHOLD = 1;
+	private Map<Month, Integer> thresholds;
 	private static final String janFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalJan.arff";
 	private static final String febFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalFeb.arff";
 	private static final String marFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalMar.arff";
@@ -68,7 +67,7 @@ public class OpenEvalMonthController {
 				search = new GoogleCSESearchJSON();
 			}
 
-			thresholds = new HashMap<Month, Double>();
+			thresholds = new HashMap<Month, Integer>();
 			for (Month m : Month.values()) {
 				thresholds.put(m, DEFAULT_THRESHOLD);
 			}
@@ -136,7 +135,7 @@ public class OpenEvalMonthController {
 				System.out.println("Loading links map");
 			completedLinks = loadLinkToFilename();
 			currFile = completedLinks.size();
-			
+
 			System.out.println("Controller setup done");
 
 		} catch (Exception e) {
@@ -151,8 +150,8 @@ public class OpenEvalMonthController {
 		}
 		search = searchEngine;
 	}
-	
-	public static synchronized void setVerbose(boolean verb){
+
+	public static synchronized void setVerbose(boolean verb) {
 		verbose = verb;
 	}
 
@@ -163,24 +162,29 @@ public class OpenEvalMonthController {
 		return instance;
 	}
 
-	public synchronized void setCustomThreshold(Month m, double threshold) {
+	public synchronized void setCustomThreshold(Month m, int threshold) {
 		assert (m != null);
 		thresholds.put(m, threshold);
 	}
 
 	public synchronized Month getResponse(Event input, Month month) throws UnknownException {
-		if(verbose)
-			System.out.println("Running month "+month+" on event: "+input.getTitle());
-		
+		if (verbose)
+			System.out.println(
+					"Running month " + month + " on event: " + input.getTitle() + " Thres: " + thresholds.get(month));
+
 		MultithreadSimpleOpenEval openEval = getEvalForMonth(month);
 		int filename;
 		if (completedLinks.containsKey(input.getTitle() + openEval.getKeyword())) {
 			filename = completedLinks.get(input.getTitle());
+			if(verbose)
+				System.out.println("load from existing: "+filename);
 		} else {
 			filename = currFile;
 			completedLinks.put(input.getTitle(), currFile);
 			saveLinksMap();
 			currFile++;
+			if(verbose)
+				System.out.println("Load from new: "+filename);
 		}
 
 		try {
@@ -191,14 +195,15 @@ public class OpenEvalMonthController {
 			throw new RuntimeException(e1);
 		}
 
-		//List<String> keywords = new ArrayList<String>(new HashSet<String>(input.getWords()));
-		//String[] definedKeywords = input.getKeyWords();
-		//if (definedKeywords != null) {
-		//	keywords.addAll(Arrays.asList(definedKeywords));
-		//	definedKeywords = null;
-		//}
+		// List<String> keywords = new ArrayList<String>(new
+		// HashSet<String>(input.getWords()));
+		// String[] definedKeywords = input.getKeyWords();
+		// if (definedKeywords != null) {
+		// keywords.addAll(Arrays.asList(definedKeywords));
+		// definedKeywords = null;
+		// }
 		List<String> keywords = new ArrayList<String>(Arrays.asList(input.getKeyWords()));
-		
+
 		String country = input.getVenue().getAddress().getCountry();
 		if (country == null) {
 			throw new UnknownException();
@@ -245,6 +250,7 @@ public class OpenEvalMonthController {
 			if (verbose)
 				System.out.println("Saving Link Contents");
 			openEval.saveMemoizedContents();
+			this.saveLinksMap();
 		} catch (Exception e) {
 			System.err.println("Failed to save link contents.");
 			e.printStackTrace();
@@ -256,10 +262,16 @@ public class OpenEvalMonthController {
 					"P Keywords: " + positiveBags + " N Keywords: " + negativeBags + " U Keywords: " + unkBags);
 		}
 
-		assert ((positiveBags + negativeBags + unkBags) != 0);
-		if ((positiveBags / (positiveBags + negativeBags + unkBags)) >= thresholds.get(month)) {
+		// assert ((positiveBags + negativeBags + unkBags) != 0);
+		if (positiveBags >= thresholds.get(month)) {
+			if (verbose)
+				System.out.println("Classified true");
+
 			return month;
 		} else {
+			if (verbose)
+				System.out.println("Classified unknown");
+
 			throw new UnknownException();
 		}
 	}
