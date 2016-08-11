@@ -20,6 +20,10 @@ public class TitleMatchesDescription extends EventSource {
 			return 0;
 		}
 
+		if (e.getTitle() == null) {
+			return 0;
+		}
+
 		String[] wordsToCheck = e.getTitle().split(" ");
 		if (wordsToCheck == null) {
 			return 0;

@@ -33,6 +33,10 @@ public class GMapsEstablishmentHasAddress extends EventSource {
 
 	@Override
 	protected Integer getResponseOnline(Event e) {
+		if (e.getVenue() == null || e.getVenue().getAddress() == null || e.getVenueName() == null) {
+			return 0;
+		}
+
 		Address address = e.getVenue().getAddress();
 
 		// find the cordinates of the establishment

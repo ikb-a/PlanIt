@@ -25,6 +25,11 @@ public class OrganizerFaceBookExists extends EventSource {
 
 	@Override
 	protected Integer getResponseOnline(Event e) {
+		if (e.getOrganizer() == null || e.getOrganizer().getContactInfo() == null
+				|| e.getOrganizer().getContactInfo().getFacebookURL() == null) {
+			return -1;
+		}
+
 		return urlChecker.getResponse(e.getOrganizer().getContactInfo().getFacebookURL());
 	}
 

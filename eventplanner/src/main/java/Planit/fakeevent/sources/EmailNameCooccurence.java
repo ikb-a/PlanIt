@@ -29,7 +29,7 @@ public class EmailNameCooccurence extends EventSource {
 	protected Integer getResponseOnline(Event e) throws UnknownException {
 
 		if (e.getOrganizer() == null || e.getOrganizer().getContactInfo() == null
-				|| e.getOrganizer().getContactInfo().getEmailAddress() == null) {
+				|| e.getOrganizer().getContactInfo().getEmailAddress() == null || e.getOrganizer().getName() == null) {
 			return -1;
 		}
 

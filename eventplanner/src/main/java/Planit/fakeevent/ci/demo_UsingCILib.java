@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
 
 import Planit.dataObjects.Event;
 import Planit.dataObjects.util.EventExtractor;
@@ -20,7 +21,6 @@ import Planit.fakeevent.sources.OrganizerWebSiteExists;
 import Planit.fakeevent.sources.TimeIsInPlausibleRange;
 import Planit.fakeevent.sources.TitleMatchesDescription;
 import Planit.fakeevent.sources.TwitterHandleVerified;
-import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.data.Opinion;
 import edu.toronto.cs.se.ci.machineLearning.aggregators.MLWekaNominalConverter;
 import edu.toronto.cs.se.ci.machineLearning.util.training.NominalTrainer;
@@ -33,6 +33,11 @@ public class demo_UsingCILib {
 	static private String outFilePath = "./src/main/resources/data/ChillwallVFab1.arff";
 
 	public static void main(String[] args) throws IOException {
+		// disable annoying HTMLUnit messages produced by UnBubble
+		java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
+		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
+		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
+
 		EventExtractor extractor = new EventExtractor();
 		// load the real events
 		Event[] realEvents;
@@ -78,14 +83,12 @@ public class demo_UsingCILib {
 
 		NominalTrainer<Event, Integer> nt = new NominalTrainer<Event, Integer>(sources);
 		nt.createNominalTrainingData(trainingData, new intToNumConverter(), outFilePath);
-		
-		/*//save caches
-		for (Source<Event, Integer, Void> source : sources) {
-			if (source instanceof EventSource) {
-				EventSource toClose = (EventSource) source;
-				toClose.close();
-			}
-		}*/
+
+		/*
+		 * //save caches for (Source<Event, Integer, Void> source : sources) {
+		 * if (source instanceof EventSource) { EventSource toClose =
+		 * (EventSource) source; toClose.close(); } }
+		 */
 	}
 
 	private static class intToNumConverter implements MLWekaNominalConverter<Integer> {

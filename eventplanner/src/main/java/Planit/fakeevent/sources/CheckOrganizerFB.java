@@ -24,6 +24,10 @@ public class CheckOrganizerFB extends EventSource {
 
 	@Override
 	public Integer getResponseOnline(Event e) {
+		if (e.getOrganizer() == null || e.getOrganizer().getName() == null) {
+			return -1;
+		}
+
 		try {
 			facebook.allowNonPeople = true;
 			return facebook.getResponse(e.getOrganizer().getName());
@@ -34,7 +38,7 @@ public class CheckOrganizerFB extends EventSource {
 
 	@Override
 	public Expenditure[] getCost(Event args) throws Exception {
-		return new Expenditure[]{};
+		return new Expenditure[] {};
 	}
 
 	@Override
