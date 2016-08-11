@@ -25,7 +25,9 @@ import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
-public class UnBubbleSearchHTML implements GenericSearchEngine {
+public class UnBubbleSearchSingleton implements GenericSearchEngine {
+	private static UnBubbleSearchSingleton instance;
+
 	private WebClient webClient;
 
 	public static final String BASE_URL = "https://www.unbubble.eu/?q=%s&focus=web&rc=100&rp=%d";
@@ -34,6 +36,7 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 	private static List<Pattern> ignorePattern;
 	private Pattern resultsPattern;
 	private boolean verbose = false;
+
 	/**
 	 * Whether or not UnBubble should extract snippets.
 	 */
@@ -43,19 +46,24 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 	private static final long RAND_SLEEP = 2000;
 	int currBrowser = 0;
 
-	public static void main(String[] args) throws FailingHttpStatusCodeException, MalformedURLException, IOException {
+	public static void main(String[] args) throws IOException {
 		// disable annoying HTMLUnit messages produced by UnBubble
 		java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
 		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
 
-		UnBubbleSearchHTML bob = new UnBubbleSearchHTML();
-		// HtmlPage page = bob.goToNthPage("Lego", 1);
-		// System.out.println(page.asText());
-		System.out.println(bob.search("star wars facebook"));
+		UnBubbleSearchSingleton bob = UnBubbleSearchSingleton.getInstance();
+		System.out.println(bob.search("99 little bugs in the code"));
 	}
 
-	public UnBubbleSearchHTML() {
+	public static UnBubbleSearchSingleton getInstance() {
+		if (instance == null) {
+			instance = new UnBubbleSearchSingleton();
+		}
+		return instance;
+	}
+
+	private UnBubbleSearchSingleton() {
 		if (ignoreText == null) {
 			ignoreText = new ArrayList<String>(Arrays.asList(new String[] { "",
 					"Screen-reader users, click here to turn off Google Instant.", "Sign in", "Videos", "Images",
