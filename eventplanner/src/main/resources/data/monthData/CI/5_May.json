@@ -3,7 +3,7 @@
 	{
 	"title" : "Mother's Day",
 	"description" : "Is an annual holiday celebrated on the second Sunday in May. Mother's Day recognizes mothers, motherhood and maternal bonds in general, as well as the positive contributions that they make to society.",
-	"keyWords":[],
+	"keyWords":["Mother's Day","motherhood"],
 	"venue" : {
 		"address" : {
 			"country" : "United States"
@@ -13,7 +13,7 @@
 	{
 	"title" : "Memorial Day Dead Soldiers Civil War",
 	"description" : "Honors the nation's war dead from the Civil War onwards; marks the unofficial beginning of the summer season. (traditionally May 30, shifted by the Uniform Holidays Act 1968)",
-	"keyWords":["May 30,", "Civil War", "summer season"],
+	"keyWords":["May 30,", "Civil War", "summer season","Memorial Day"],
 	"venue" : {
 		"address" : {
 			"country" : "United States"
@@ -73,7 +73,7 @@
 	{
 	"title" : "Spring Break Vacation School",
 	"description" : "Spring break is an academic tradition in various mostly western countries, that is scheduled for different periods depending on the state and sometimes the region. In Germany, universities typically schedule a semester break of five to eight weeks around March. The Whitsun (Pentecost) holidays around late May or early June are also considered a spring break.",
-	"keyWords":[],
+	"keyWords":["Spring Break","Whitsun holidays"],
 	"venue" : {
 		"address" : {
 			"country" : "Germany"
@@ -153,7 +153,7 @@
 	{
 	"title" : "Spring Break Vacation School",
 	"description" : "Spring break is an academic tradition in various mostly western countries, that is scheduled for different periods depending on the state and sometimes the region. The Easter break in the United Kingdom is either one or two weeks (depending on the local council) and fits around Easter.",
-	"keyWords":["United Kingdom"],
+	"keyWords":["United Kingdom","Spring Break"],
 	"venue" : {
 		"address" : {
 			"country" : "United Kingdom"

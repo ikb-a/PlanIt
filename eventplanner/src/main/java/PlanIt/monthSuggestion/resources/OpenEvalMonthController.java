@@ -209,7 +209,7 @@ public class OpenEvalMonthController {
 			throw new UnknownException();
 		}
 		if (keywords.size() == 0) {
-			throw new UnknownException();
+			throw new UnknownException("No Keywords");
 		}
 
 		keywords.replaceAll((String a) -> country + " " + a);
