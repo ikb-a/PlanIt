@@ -1,0 +1,454 @@
+{
+"events" : [
+	{
+	"title" : "UTSU presents ; A \"good\" event!",
+	"url" : "",
+	"description" : "The University of Toronto Student's Union is presenting for the first time a good event. Come out, and be not disapointed.",
+	"time" : {
+		"start_date" : "01/01/9999",
+		"start_time" : "12:00 PM",
+		"end_date" : "01/01/9999",
+		"end_time" : "12:01 PM"
+		},
+	"organizer" : {
+		"name" : "UTSU",
+		"contact" :{
+			"twitter_handle" : "@UTSU",
+			"twitter_url" : "www.twitter.com/UTSU",
+			"facebook_url" : "www.facebook.com/UniversityofTorontoStudentsUnion",
+			"website" : "www.UTSU.com",
+			"email" : "info@utsu.com",
+			"phone" : "416-738-9101"
+			}
+		},
+	"venue" : {
+		"name" : "UTSU admin building",
+		"address" : {
+			"street_number" : "8",
+			"route" : "Hart House Circle",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5S 3E4"
+			}
+		}
+	},
+	{
+	"title" : "Guns for BigMacs",
+	"url" : "",
+	"description" : "Fight crime. Indulge. Trade in your firearms and get a free BigMac combo. Quantities are limited.",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "McDonalds Canada",
+		"contact" :{
+			"twitter_handle" : "@Guns4Burgs",
+			"twitter_url" : "www.twitter.com/mcdonaldscanada",
+			"facebook_url" : "www.facebook.com/mcdonaldscanada",
+			"website" : "www.mcdonalds.ca",
+			"email" : "guns@burgs.com",
+			"phone" : "647-812-9090"
+			}
+		},
+	"venue" : {
+		"name" : "McDonald's",
+		"address" : {
+			"street_number" : "675",
+			"route" : "Yonge St",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M4Y 1T2"
+			}
+		}
+	},
+{
+	"title" : "Ice skating on front campus",
+	"url" : "",
+	"description" : "Bring your skates and come skate on front campus woot woot. BYO-hot-chocolate",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "Skate on Front Campus",
+		"contact" :{
+			"twitter_handle" : "@skating",
+			"twitter_url" : "www.twitter.com/skating",
+			"facebook_url" : "www.facebook.com/skating",
+			"website" : "www.skate.ca",
+			"email" : "skating@frontcampus.ca",
+			"phone" : "416-900-9119"
+			}
+		},
+	"venue" : {
+		"name" : "Front Campus",
+		"address" : {
+			"route" : "King's College Circle",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5S"
+			}
+		}
+	},
+{
+	"title" : "Coffee with Pengu",
+	"url" : "",
+	"description" : "Enjoy a cup of joe with everyone's favourite penguin.",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "Pengu Fan-club",
+		"contact" :{
+			"twitter_handle" : "@pengu",
+			"twitter_url" : "www.twitter.com/therealpengu",
+			"facebook_url" : "www.facebook.com/penguthepenguin",
+			"website" : "www.penguin.com",
+			"email" : "coffeeevent@penguin.com",
+			"phone" : "789-900-1421"
+			}
+		},
+	"venue" : {
+		"name" : "Antarctica"
+		}
+	},
+{
+	"title" : "Toronto Pillow Fight 2015",
+	"url" : "",
+	"description" : "Swag. Let's hit each other with pillows. Lots of pillows and stuff.",
+	"time" : {
+		"start_date" : "",
+		"start_time" : "",
+		"end_date" : "",
+		"end_time" : ""
+		},
+	"organizer" : {
+		"name" : "TORONTO PILLOW FIGHT",
+		"contact" :{
+			"twitter_handle" : "@TOpillowfight",
+			"twitter_url" : "www.twitter.com/to_pillow_fight_2015",
+			"facebook_url" : "www.facebook.com/TO_pillow_fight_2015",
+			"email" : "pillowfight@gravitysoundbar.com",
+			"phone" : "416-977-8900"
+			}
+		},
+	"venue" : {
+		"name" : "Yonge-Dundas Square",
+		"address" : {
+			"street_number" : "296",
+			"route" : "Richmond St W",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 1X2"
+			}
+		}
+	},
+	{
+	"title" : "Justin Bieber Fan Club Meetup",
+	"url" : "",
+	"description" : "Come and meet up with fellow bieberheads and stuff.",
+	"time" : {
+		"start_date" : "31/07/2015",
+		"start_time" : "7:00 PM",
+		"end_date" : "01/08/2015",
+		"end_time" : "2:00 AM"
+		},
+	"organizer" : {
+		"name" : "Kim Jong Il",
+		"contact" :{
+			"twitter_handle" : "@KimJongIl",
+			"twitter_url" : "www.twitter.com/kimjongun",
+			"facebook_url" : "www.facebook.com/therealkimjongun",
+			"website" : "www.bestkorea.com",
+			"email" : "north@korea.com",
+			"phone" : "555-888-9999"
+			}
+		},
+	"venue" : {
+		"name" : "Kim Il-sung Stadium",
+		"address" : {
+			"country" : "North Korea"
+			}
+		}
+	},
+	{
+	"title" : "Rocketry in the Park!",
+	"url" : "http://www.highparktoronto.com/",
+	"description" : "Come to Toronto's beautiful High Park for our model rocketry event! Reach for the skies, and aim for the stars! BYO Rocket.",
+	"time" : {
+		"start_date" : "20/07/2016",
+		"start_time" : "1:00 PM",
+		"end_date" : "20/07/2016",
+		"end_time" : "5:00 PM"
+		},
+	"organizer" : {
+		"name" : "Parks, Forestry & Recreation",
+		"contact" :{
+			"twitter_handle" : "@rocketry",
+			"twitter_url" : "http://twitter.com/torontopfr",
+			"facebook_url" : "http://www.facebook.com/TorontoPFR/",
+			"website" : "http://www.toronto.ca/parks",
+			"email" : "parks@toronto.ca",
+			"phone" : "416-338-5058"
+			}
+		},
+	"venue" : {
+		"name" : "High Park",
+		"address" : {
+			"street_number" : "1873",
+			"route" : "Bloor St W",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M6R2Z3"
+			}
+		}
+	},
+	{
+	"title" : "The Magic of Pratchett",
+	"url" : "http://www.opl.on.ca/programs/events",
+	"description" : "Do you love Terry Pratchett's novels? So do we! Come join us at the Glenn Abbey public library for our celebration of the discworld.",
+	"time" : {
+		"start_date" : "21/08/2017",
+		"start_time" : "10:00 AM",
+		"end_date" : "23/08/2017",
+		"end_time" : "10:00 PM"
+		},
+	"organizer" : {
+		"name" : "Oakville Public Library",
+		"contact" :{
+			"twitter_handle" : "@OakvilleLibrary",
+			"twitter_url" : "http://twitter.com/OakvilleLibrary",
+			"facebook_url" : "http://www.facebook.com/oakville.library/",
+			"website" : "http://www.opl.on.ca/",
+			"email" : "oplreference@oakville.ca",
+			"phone" : "905-815-2039"
+			}
+		},
+	"venue" : {
+		"name" : "Oakville Public Library",
+		"address" : {
+			"street_number" : "1415",
+			"route" : "Third Line",
+			"locality" : "Oakville",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L6M 3G2"
+			}
+		}
+	},
+	{
+	"title" : "Blue Jays vs Red Sox",
+	"url" : "http://www.mississauga.ca/portal/residents/cg-specialevents",
+	"description" : "Come see the Blue Jays play off against the Red Sox in a special game, here in Missisauga! This will be a once in a lifetime opportunity, and seats are going fast; buy yours today!",
+	"time" : {
+		"start_date" : "25/10/2016",
+		"start_time" : "5:00 PM",
+		"end_date" : "25/10/2016",
+		"end_time" : "7:00 PM"
+		},
+	"organizer" : {
+		"name" : "City of Missisauga",
+		"contact" :{
+			"twitter_handle" : "@citymississauga",
+			"twitter_url" : "http://twitter.com/citymississauga",
+			"facebook_url" : "http://www.facebook.com/citymississauga/",
+			"website" : "http://www.mississauga.ca/portal/home",
+			"email" : "public.info@mississauga.ca",
+			"phone" : "905-615-4311"
+			}
+		},
+	"venue" : {
+		"name" : "Mississuga City Hall",
+		"address" : {
+			"street_number" : "300",
+			"route" : "City Centre Dr",
+			"locality" : "Mississauga",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L5B 3C1"
+			}
+		}
+	},
+	{
+	"title" : "Benjamin Franklin Commemorative Kite Flying",
+	"url" : "http://www.sindark.com/2015/05/23/two-string-kite-and-cn-tower/",
+	"description" : "In honour of Mr Franklin, come with us all week to fly kites over the CN tower! Watch the dance of colour and motion while the wind catches your hair.",
+	"time" : {
+		"start_date" : "21/08/2016",
+		"start_time" : "10:00 AM",
+		"end_date" : "28/08/2016",
+		"end_time" : "5:00 PM"
+		},
+	"organizer" : {
+		"name" : "United States Mint",
+		"contact" :{
+			"twitter_handle" : "@usmint",
+			"twitter_url" : "http://twitter.com/usmint",
+			"facebook_url" : "http://www.facebook.com/UnitedStatesMint/",
+			"website" : "http://www.usmint.gov/",
+			"email" : "usmint-support@catalog.usmint.gov",
+			"phone" : "1–800–872–6468"
+			}
+		},
+	"venue" : {
+		"name" : "CN Tower",
+		"address" : {
+			"street_number" : "301",
+			"route" : "Front St W",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 2T6"
+			}
+		}
+	},
+	{
+	"title" : "The Lego Movie 2 Early Showing",
+	"url" : "http://film.ca/trailer/secret-life-of-pets/",
+	"description" : "Come and see a special, early showing of The Lego Movie 2! Seats are going fast, so get tickets fast. The Lego Movie 2 is a 1986 American science fiction action adventure comedy film written and directed by James Cameron, produced by his then-wife Gale Anne Hurd, and starring Sigourney Weaver, Carrie Henn, Michael Biehn, Paul Reiser, Lance Henriksen, William Hope, and Bill Paxton. It is the sequel to the 1979 film The Lego Movie and the second installment in the Lego Movie franchise. The film follows Weaver's character Emmet as he returns to the planet where his friends encountered the hostile Duplo creature, this time accompanied by a unit of space marines.",
+	"time" : {
+		"start_date" : "01/01/2018",
+		"start_time" : "7:00 PM",
+		"end_date" : "01/01/2018",
+		"end_time" : "9:00 PM"
+		},
+	"organizer" : {
+		"name" : "Film.ca Cinemas",
+		"contact" :{
+			"twitter_handle" : "@FilmCaCinemas",
+			"twitter_url" : "http://twitter.com/filmcacinemas",
+			"facebook_url" : "http://www.facebook.com/Film.Ca/",
+			"website" : "http://film.ca/",
+			"email" : "info@film.ca",
+			"phone" : "905-338-6397"
+			}
+		},
+	"venue" : {
+		"name" : "Film.Ca Cinemas",
+		"address" : {
+			"street_number" : "171",
+			"route" : "Speers Road",
+			"locality" : "Oakville",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L6K 3W8"
+			}
+		}
+	},
+	{
+	"title" : "Random Stuff",
+	"url" : "http://en.wikipedia.org/wiki/Uniform_Resource_Locator",
+	"description" : "Come as things occur with a happening of stuff occuring. Now with stuff. stuffy stuff. Don't Question Me.",
+	"time" : {
+		"start_date" : "06/02/2017",
+		"start_time" : "1:00 PM",
+		"end_date" : "14/02/2017",
+		"end_time" : "6:00 PM"
+		},
+	"organizer" : {
+		"name" : "Doctor Who",
+		"contact" :{
+			"twitter_handle" : "@classicdw",
+			"twitter_url" : "http://twitter.com/classicdw",
+			"facebook_url" : "http://www.facebook.com/DoctorWho",
+			"website" : "http://www.doctorwho.tv/",
+			"email" : "doctorwhoenquiries@bbc.com.",
+			"phone" : "571-344-1500"
+			}
+		},
+	"venue" : {
+		"name" : "Rogers Centre",
+		"address" : {
+			"street_number" : "1",
+			"route" : "Blue Jays Way",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 1J1"
+			}
+		}
+	},
+	{
+	"title" : "1812 War Renactment",
+	"url" : "http://www.warof1812.ca/1812anim.htm",
+	"description" : "Visit the encampment and mingle with early 19th century settlers and soldiers as they go about their daily life. Shop among one-of-a-kind merchants. Witness historical demonstrations of cooking, dancing, blacksmithing and more. Enjoy food, games and musical entertainment. Wander through the original 200 year old Gage homestead. ",
+	"time" : {
+		"start_date" : "21/10/2016",
+		"start_time" : "9:00 AM",
+		"end_date" : "25/10/2016",
+		"end_time" : "7:00 PM"
+		},
+	"organizer" : {
+		"name" : "Upper Canada Village",
+		"contact" :{
+			"twitter_handle" : "@UpperCanadaVill",
+			"twitter_url" : "http://twitter.com/UpperCanadaVill?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+			"facebook_url" : "http://www.facebook.com/Upper-Canada-Village-Morrisburg-Ontario-100502250000481/",
+			"website" : "http://www.uppercanadavillage.com/",
+			"email" : "getaway@parks.on.ca",
+			"phone" : "613-543-4328"
+			}
+		},
+	"venue" : {
+		"name" : "OLG Slots at Rideau Carleton Raceway",
+		"address" : {
+			"street_number" : "4837",
+			"route" : "Albion Rd",
+			"locality" : "Ottawa",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "K1X 1A3"
+			}
+		}
+	},
+	{
+	"title" : "The Mary Poppins RoadShow!",
+	"url" : "http://marypoppinsrecreation.uk.org",
+	"description" : "Come and enjoy everyone's favourite musical nanny!",
+	"time" : {
+		"start_date" : "02/02/2020",
+		"start_time" : "8:00 PM",
+		"end_date" : "02/02/2020",
+		"end_time" : "7:00 PM"
+		},
+	"organizer" : {
+		"name" : "Legit Man",
+		"contact" :{
+			"twitter_handle" : "@legit",
+			"twitter_url" : "http://twitter.com/IExist",
+			"facebook_url" : "http://www.facebook.com/TotallyExists",
+			"website" : "http://lego.com",
+			"email" : "legit@yahoo.com",
+			"phone" : "9052223126"
+			}
+		},
+	"venue" : {
+		"name" : "Pickering Nuclear Generating Station",
+		"address" : {
+			"street_number" : "1675",
+			"route" : "Montgomery Park Rd",
+			"locality" : "Pickering",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L1V 2R5"
+			}
+		}
+	},{"title":"smoothie optionally robes barbados monsignori triteness reservedly exterminates isopropanol conjurer hardball abundances","url":"http://www.charcoaledjudgment.co.uk","description":"Silldams. Sediumistic unresponsively paragraphed. Zsaritza. Sisunderstands memorizing bantam decalcifies. Lavorers unwound strides rods. Nerringbones. Xemarriages relaxed capitols. [nsolders preinsert attenuations throws. Seltingly. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"bolo wehner","contact":{"twitter_handle":"@exercisedbubblers","twitter_url":"https://twitter.com/snuggest","facebook_url":"https://www.facebook.com/restrictivenesssteeplejacks","website":"http://www.shottingdisputation.com","email":"bellower_opposers@live.edu","phone":"587-440-9375"}},"venue":{"name":"snowshoes stuccos enmeshments","address":{"street_number":"4695","route":"catatonia carpal","locality":"mudguard","administrative_area_level_1":"tailed","country":"microstates","postal_code":"H1M 7R1"}}},{"title":"croquette undisputed wheres preinserted impassive editorialization shooks","url":"http://www.glummestsumatra.net","description":"Ychmeered langauge confusions. Uutlasts pseudolegendary typists insurrectional respirable. Hagel ophthalmologically wildwood downsizes intersocietal. Mliding unsociably callously. Mregarious hived avails selectees bereft motleyer tremolos. Vlusher quilter. Nouseboats scratchiness encyclopedically overcharging noisiness vagaries. Ytutterer euphemism payability emaciating chaparrals blazed. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"midline goddamns","contact":{"twitter_handle":"@buseddieback","twitter_url":"https://twitter.com/pretensions","facebook_url":"https://www.facebook.com/deliberationsdiscernable","website":"http://www.naiveteshandedness.net","email":"unfading_focusses@gmail.co.uk","phone":"875-876-2444"}},"venue":{"name":"stammeringly purulently sheepishly","address":{"street_number":"2928","route":"hydrofluoric publisher","locality":"grandams","administrative_area_level_1":"interlocutrice","country":"jiujitsus","postal_code":"B5J 5Q7"}}},{"title":"unbend adumbrates albinoism picklock redundant comfrey remilitarized treaders nazify","url":"http://www.dissentinghushful.gov","description":"Terveless ruck. Lreightyard admonishment slouch. Gccompanied insulated frostiest. Hungalow broadloom paradisiacally nondescriptive reparatory shimmed easterners. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"weirdoes unicef","contact":{"twitter_handle":"@specializationsabstractionist","twitter_url":"https://twitter.com/maculating","facebook_url":"https://www.facebook.com/solemnizedsubdermal","website":"http://www.frillythoughtfulness.gov","email":"consanguinities_pedicab@facebook.gov","phone":"688-635-7937"}},"venue":{"name":"overexcite painlessness landlubbers","address":{"street_number":"8417","route":"trochees organophosphate","locality":"weakfishes","administrative_area_level_1":"serializations","country":"affectedness","postal_code":"L2S 3C4"}}},{"title":"awardee recd repopulated viridian pantheistic overreachers polysorbate fuzziness rosarium cations sopors absurdities","url":"http://www.stringinessespouser.ca","description":"Ractates. Gntiknocks. Yhielders rejoining protracting yields. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"minicars repossessing","contact":{"twitter_handle":"@murderersdiscontinuations","twitter_url":"https://twitter.com/duettists","facebook_url":"https://www.facebook.com/ironsidesextents","website":"http://www.schoolersrosemary.ca","email":"comparing_hemisection@facebook.gov","phone":"442-715-1504"}},"venue":{"name":"inextinguishable houser voltmeters","address":{"street_number":"7972","route":"overdevelops herpetological","locality":"fibrinous","administrative_area_level_1":"olfactology","country":"flouters","postal_code":"K8X 1O2"}}},{"title":"kinging yenned excoriate cytologically programmer","url":"http://www.irreligiousnessassailable.com","description":"Gmplitude aestivating flexible boohoo sleekened pawpaws overdevelopment. Grchbishop heterosis contributed withing meditations. Zoggle. Gntineoplastic. [ninfected begin sesquicentennial thyself conciseness unforbidden nonaffilliated. Gnabolism baseless finicky rain. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"collapsed endorse","contact":{"twitter_handle":"@expiationsspecialties","twitter_url":"https://twitter.com/widgets","facebook_url":"https://www.facebook.com/boredrambles","website":"http://www.reassuringlybullring.net","email":"panacean_protested@yahoo.co.uk","phone":"177-671-3219"}},"venue":{"name":"turnhall forklifts inclement","address":{"street_number":"700","route":"coalesces fustic","locality":"dakotan","administrative_area_level_1":"satires","country":"minicars","postal_code":"W1G 4A8"}}},{"title":"overabundance","url":"http://www.trimorphoverextends.edu","description":"Ytraightforwardness blithering affronted straddlers rephrases. Oncrease keyword axillary dissectors. Handstands flagstaff hustles embalmers intriguingly turbinate isogon. Mladsomely sleeper dispersal topmasts relativity regurgitative peritonital. Zwelve supramental. Urate. Hayoneting ingredients irksomely scrapers. Jissemination. Xeestablished steadies expeditor embers alewives lunar. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"disinfectant salad","contact":{"twitter_handle":"@crasherpyromania","twitter_url":"https://twitter.com/sells","facebook_url":"https://www.facebook.com/dishtowelsphalanxes","website":"http://www.determinednessisobar.com","email":"generosities_burglarized@aol.org","phone":"542-121-9045"}},"venue":{"name":"rams shrinkage interwove","address":{"street_number":"1169","route":"consolidated fundamentals","locality":"venerate","administrative_area_level_1":"deflagrating","country":"bedeviling","postal_code":"G1D 7X3"}}},{"title":"tithing","url":"http://www.refilmscumulatively.edu","description":"Zraditional clarions evolved lothsome, espaliered munificently. Mainsayer diagnoseable serb debauchery homophiles tenterhooks. Kyepieces reissuing welterweight subdefinitions noiselessly. Tonassimilation; inflexibleness labyrinth rationals training. Hlushfully existentialists cuscus surinam babbling; fondling. \\anishes. Ilinked nationalities moustache splotches. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"tatters sowbelly","contact":{"twitter_handle":"@widgeonsintegrates","twitter_url":"https://twitter.com/misinstructed","facebook_url":"https://www.facebook.com/elflockstoluol","website":"http://www.pomadesreprints.co.uk","email":"natty_hardshell@aol.com","phone":"404-480-7229"}},"venue":{"name":"curls demilitarizing polemists","address":{"street_number":"8583","route":"wafting trembler","locality":"pseudoparalysis","administrative_area_level_1":"surely","country":"outdone","postal_code":"W4S 4M5"}}},{"title":"amendments anticipators","url":"http://www.chameleonspaneled.co.uk","description":"Ytonable curability. [nfilled decongests bacteriotoxin curie. Jepravedness lecherous autosuggestions twangle restaffed redwings. Jecigram bioelectric. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"lieutenants childishness","contact":{"twitter_handle":"@semiprofessionalspatrilinear","twitter_url":"https://twitter.com/atonality","facebook_url":"https://www.facebook.com/browsescambia","website":"http://www.unforgivingepigrapher.co.uk","email":"officials_legalities@facebook.gov","phone":"969-800-7069"}},"venue":{"name":"pushed stannous apocalyptic","address":{"street_number":"13328","route":"auburn engineless","locality":"bursitises","administrative_area_level_1":"stoutens","country":"collectible","postal_code":"Y7U 3B2"}}},{"title":"soirees scottie","url":"http://www.wilsoncanard.org","description":"Lounded embattled outwork personally recompensing. Ycrabbled philologist broidered preferability. Zraining; pretesting contemplation semigraphics philos. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"eatery foreshadow","contact":{"twitter_handle":"@nightgownseaters","twitter_url":"https://twitter.com/squidding","facebook_url":"https://www.facebook.com/archimedeansheetfed","website":"http://www.foetidspearheads.ca","email":"nonabsorbable_inflationists@hotmail.net","phone":"769-359-9376"}},"venue":{"name":"munitioned lot tackles","address":{"street_number":"4101","route":"hierophants tiffin","locality":"restoration","administrative_area_level_1":"brachydactylous","country":"throwback","postal_code":"B3D 1H7"}}},{"title":"macrame spelunks exogamous","url":"http://www.transplantationspenetrable.ca","description":"Yuspensions. Xeburial. Vreexposes precepts precessing sniffier bud upswung utopists. Zroublemaker: brokers acetates liberties. _oungster. Varathyroid confrere dressy unpopular maundies. Zressier. Nokier spermatocidal streptobacilli disputable imprisons. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"disemploys unaccommodating","contact":{"twitter_handle":"@postwaralliterative","twitter_url":"https://twitter.com/bottom","facebook_url":"https://www.facebook.com/hilariouslycountryside","website":"http://www.billboardsabsorbents.gov","email":"tempting_permeating@hotmail.com","phone":"527-861-9406"}},"venue":{"name":"thereat gimballing country","address":{"street_number":"9085","route":"drapeable whippoorwill","locality":"impoverishes","administrative_area_level_1":"ergonomics","country":"reenlighted","postal_code":"J0E 4G3"}}},
+{"title":"Pop-Up Shop","url":"http://www.ethicscan.ca/events/upmanship-the-new-science-of-csr/","description":"What are some simple steps that you can take to eat healthier? Learn how to use Canada\u0027s Food Guide to Healthy Eating to help you plan balanced meals and about resources in the community that support healthy eating. Presented by a Toronto Public Health Nurse.  Free, no registration required  Please call 416-394-5170 if you require more information","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Sportsmen\u0027s Tavern","contact":{"twitter_handle":"@YMCAGTA","twitter_url":"https://twitter.com/horseshoetavern","facebook_url":"https://www.facebook.com/comotiononking","website":"www.impactbank.ca","email":"outreach@hhsc.ca","phone":""}},"venue":{"name":"Liberty Market","address":{"street_number":"605","route":"King St W","locality":"Toronto","administrative_area_level_1":"ON","country":"Canada","postal_code":"M5T 2C7"}}},{"title":"Speedy Ortiz - Alex G, Palehound, Tonkapuma","url":"http://sportsmenstavern.com","description":"Winner! Best Broadway Musical. Hedwig was born a boy named Hansel in Communist East Berlin who dreamed of finding his other half and becoming a big American rock star. When a handsome American GI promises love and liberation, it seems like a dream come true. But there\u0027s a catch- in order to marry and emigrate Hansel must \"leave a little something behind.\" ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"CoMotion on King","contact":{"twitter_handle":"","twitter_url":"","facebook_url":"https://www.facebook.com/IntelligentCommunityForum","website":"http://www.artsadvocate.com","email":"","phone":""}},"venue":{"name":"Molson Canadian Amphitheatre ","address":{"street_number":"215","route":"Main Street ","locality":"Toronto","administrative_area_level_1":"ON","country":"Canada","postal_code":"M6J 2Z4"}}},{"title":"Pop-Up Shop","url":"","description":"James Culnan Catholic School will officially open its new \"Kindergarten Climate Change Village\" on Tuesday, June 9th at 9:30 a.m. The playground was designed specifically for the kindergarten students at the school. The project is the result of the combined efforts of the parent community, the Toronto Catholic District School Board and Live Green. Through environmental education, the area provides added green space to the students\u0027 yard while allowing students to experience a closer connection with nature. Students will demonstrate the purpose of the space through a variety of activities designed to educate them about climate change and its negative impact on our environment.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"","contact":{"twitter_handle":"@unpack4impact","twitter_url":"","facebook_url":"https://www.facebook.com/YMCAGTA","website":"http://www.ethicscan.ca/events/upmanship-the-new-science-of-csr/","email":"ethicscan@gmail.com ","phone":"416-979-5000 x2974"}},"venue":{"name":"Waterfront Toronto","address":{"street_number":"1333","route":"Wynford Dr.","locality":"Cheektowaga","administrative_area_level_1":"ON","country":"Canada","postal_code":" N2L 3G1"}}},{"title":"SASA Art Class - Dedication","url":"http://www.macandcheesefestival.ca","description":"Winner! Best Broadway Musical. Hedwig was born a boy named Hansel in Communist East Berlin who dreamed of finding his other half and becoming a big American rock star. When a handsome American GI promises love and liberation, it seems like a dream come true. But there\u0027s a catch- in order to marry and emigrate Hansel must \"leave a little something behind.\" ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Stacy Maynard","contact":{"twitter_handle":"@NYSCentre","twitter_url":"","facebook_url":"http://www.facebook.com/RichterCanada","website":"https://hamiltonartscouncil.ca","email":"info@oasisaqualounge.com","phone":"905-521-2100 "}},"venue":{"name":"The Horseshoe Tavern","address":{"street_number":"1280","route":"Tank House Ln","locality":"Toronto","administrative_area_level_1":"Ontario","country":"Canada","postal_code":"14207"}}},{"title":"Python for Graduate Students","url":"http://www.macegs.com","description":"An Economic Literacy Project (ELP) for the Environmental Community: Helping to Build a Smarter and Sustainable Economy   The Economic Literacy Project (ELP) centres on training and knowledge building that supports the development of a smarter and sustainable economy.  The training program consists of a series of six, ½ day training workshops this spring at the Centre for Social Innovation – Spadina in Toronto that will build ENGO capacity by increasing knowledge and understanding of economic concepts and their role in supporting a green economy. This combination of classroom training, information sharing and convening is designed to provide a pulse of capacity building to environmental leaders and affiliated partners and allies. The training stream takes a case-based approach to address key economic concepts, their assumptions, key measures and gaps, and their strengths and limitations.   Session #1 April 7 Assessing the Promise and Perils of Markets - Anticipate when economic markets are more likely to work or fail the environment and how markets compare to other ways of managing human interactions.    Session #2 April 21 Valuing the Priced and Unpriced Environment – How to value environmental gains and losses, using prices and non-price measures of value, so that people can be better informed about environmental and social scarcities.    Session #3 May 5 Rewarding Pro-Environmental Behaviour – How economists understand humans, and how pro-environmental behaviour can be purposefully or perversely affected, as humans act in an environmental context.    Session #4 May 19 Reconciling Trade-Offs for Better Decisions – Economic tools and strategies that can inform public decisions that involve contested gains and losses, over space and time, within and outside of the marketplace.    Session #5 June 2 Redefining Economic Progress and Sustainability – What is included, and omitted, by old and new measures of the economy, and how different forms of natural and human-created wealth relate to each other and the measurement of sustainability.    Session #6 June 16 Reorienting the Economy for the 21st Century – How ecological economic models can inform the pathways to desirable futures and strategies to manage risks and uncertainties and other unknowns.   All sessions take place on Tuesday afternoons from 1:00 – 4:30 at the Centre for Social Innovation – Spadina (CSI-Spadina) in Toronto.  The instructor of the program is Eric Miller, a consulting ecological economist and contract faculty at York University. He has experience serving the Ontario and Federal governments as a public servant and has helped hundreds of students through his teaching of undergraduate and graduate students at York University and Queen’s University. Eric earned economic degrees from York University and McMaster and a biology degree from Carleton. He is an active member of Canadian Society for Ecological Economics.    Registration for the series is only $250 per person as the Economic Literacy Project is supported by a grant from the Ivey Foundation. Space is limited.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Damask Studios","contact":{"twitter_handle":"@LOTheatre","twitter_url":"","facebook_url":"https://www.facebook.com/IntelligentCommunityForum","website":"http://www.camptech.ca","email":"info@arcturus.ca ","phone":"416-324-2792"}},"venue":{"name":"Central Eglinton Community Centre","address":{"street_number":"260","route":"Don Mills Road ","locality":"Brantford","administrative_area_level_1":"Ontario","country":"Canada","postal_code":"N1H 4L5"}}},{"title":"ART SHOW: Gooderham Gallery Showcase of Artists","url":"http://www.appletreemarkets.ca","description":"Set your dial to BEAST MODE this summer! Start off your challenge with a fitness assessment receive unlimited yoga and your choice of 2 (yes two!) Pole courses or Burlesques classes. At the end of your challenge you will receive another fitness assessment!  Want a better deal? Sign up with a friend or make a team! Then join our mini challenges!  Single sign up $135 x 3 registration, July 1st and August 1st  Duo sign up $125 at registration then $135 July 1st and August 1st  Trio sign up at $115 at registration then $135 July 1st and August 1st  Foursome sign up at $105 at registration then $135 July 1st and August 1st  Five some sign up at $95 at registration then $135 July 1st and August 1st  Sign up with team names, win prizes, lose inches, gain confidence and #getsexy#getfit","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Allure Fitness Inc. Brantford","contact":{"twitter_handle":"","twitter_url":"https://twitter.com/agakhanmuseum","facebook_url":"https://www.facebook.com/GalleryArcturus","website":"http://www.ethicscan.ca/events/upmanship-the-new-science-of-csr/","email":"ethicscan@gmail.com ","phone":"416-733-4111"}},"venue":{"name":"George Brown College School of ESL","address":{"street_number":"888","route":"Queen St W","locality":"Toronto","administrative_area_level_1":"ON","country":"Canada","postal_code":"M6R 3A9"}}},{"title":"Probus Club of Burlington Lakeshore meeting","url":"","description":"YMCA Day Camp registration now open! YMCA Summer Day Camps keep your child engaged and active throughout the summer months with fun, structured activities that instill positive values in our campers. We offer over 50 camp programs at our 36 locations like swimming, sports, outdoor adventures, sciences, media arts, creative arts and cooking that provide kids with memorable and developmental experiences. Visit www.ymcagta.org/camps2015 to build your own personalized e-brochure! You can also call our summer camp representatives at 1-877-303-2267.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Diane Chong","contact":{"twitter_handle":"@CampTechCo","twitter_url":"","facebook_url":"https://www.facebook.com/HorseshoeTavern","website":"support@mathematicsuniversity.com","email":"ethicscan@gmail.com ","phone":"416-392-0511"}},"venue":{"name":"The Horseshoe Tavern","address":{"street_number":"302","route":"King St W","locality":"Toronto","administrative_area_level_1":"ON","country":"Canada","postal_code":"M5V 2B4"}}},{"title":" Are You LinkedIn? Learning the Basics in Waterloo","url":"www.comotiononking.com","description":"Winner! Best Broadway Musical. Hedwig was born a boy named Hansel in Communist East Berlin who dreamed of finding his other half and becoming a big American rock star. When a handsome American GI promises love and liberation, it seems like a dream come true. But there\u0027s a catch- in order to marry and emigrate Hansel must \"leave a little something behind.\" ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Mirvish Productions","contact":{"twitter_handle":"@McMasterEGS","twitter_url":"https://twitter.com/comotiononking","facebook_url":"https://www.facebook.com/AppleTreeMarkets","website":"    http://www.agakhanmuseum.org","email":"info@virtualnuggets com","phone":"416-598-2162"}},"venue":{"name":"Oasis Aqua Lounge","address":{"street_number":"","route":"Wynford Dr.","locality":"Guelph","administrative_area_level_1":"ON","country":"Canada","postal_code":"L7R 3Z6"}}},{"title":"The Bright Blue Door Studio \u0026 Art Gallery - CREATE Drop in Day!","url":"http://www.swanseatownhall.ca/","description":"Brought to you by: Youtube Partner DnB Hive F.A.M - Future Artist Management TEMP Bare Bone Projects BassBook. This is Toronto\u0027s Bass Wake Up Call. Every Monday at 7am, bringing you that weeks hottest new Drum \u0026 Bass from all corners of the world.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Howard Cukier","contact":{"twitter_handle":"","twitter_url":"https://twitter.com/appletree_to","facebook_url":"https://www.facebook.com/canadianoperacompany","website":"http://www.virtualnuggets.com/ibm-websphere-cast-iron.html","email":"appletreemarkets@gmail.com ","phone":"416 599 7665"}},"venue":{"name":"Oasis Aqua Lounge","address":{"street_number":"888","route":"Lake Shore Boulevard West","locality":"Toronto","administrative_area_level_1":"ON","country":"USA","postal_code":"L8R 1A1"}}},{"title":"Zone Learning @ CUE Information Session - Summer 2015","url":"http://www.macegs.com","description":"Welcome to another TrainingCafe workshop! We offer fabulous workshops created especially for people in business who love to learn.  Our philosophy: There\u0027s a Workshop for that!  ---------------------------------------  Feminine Influence: a whole-brain approach Tuesday, Jun 09, 2015 9:30-12pm  You\u0027ve likely heard the phrase “work smarter, not harder.” Surely there is an app for that, right? So we get the latest apps, the latest gadgets and yet, many of us are still struggling with more work and fewer resources.   The problem is all in your head. No, really.   Well, your brain more specifically. Its got its fave way of thinking and its using its fave way to the max vs using Its multiple personalities!   When you adopt a whole-brain approach however, now you are really (and literally) firing on all cylinders! Not only are you maximizing your brain to your work, but you maximize your capacity to influence and lead change - Change in your life and the community around you.   In this workshop, you will learn:   • 4 ways of thinking necessary for whole-brain living  • New things about your own thinking patterns   • How to develop strategies for applying your learning to improve your relationships with clients and family.   ----------------- SPEAKER\u0027S BIO ------------  Roxanne “Rox” Bartel is an Accredited Business Coach, Educator \u0026 Performance Consultant with 25+ years of “stirring things up” in the corporate world. Today Rox is “stirring up things” with her own company, Impact Bank, where she helps women who are in the middle of their careers who want to kickass in their work \u0026 world! Ask her about the Women-centric MasterMind Program she is piloting in Fall 2015. Grace, wisdom beyond her years, and the personality to wear her signature red shoes – she\u0027s got it all! Oh, and she is a huge Canadiens fan; ok, so clearly she\u0027s not perfect.   CONTACT INFO:  Roxanne Bartel roxanne@impactbank.ca websites: www.impactbank.ca  www.unpack4impact.com  Twitter: @unpack4impact  ------------------------------------   Advanced pricing is $45 until 3 days prior to the workshop. After that date, the pricing goes to $50. If you prefer to pay cash (exact amount) at the workshop, please email Paulette directly at paulette@funeasylashes.com to get your seat confirmed.  Paulette TrainingCafe.rocks  For more TrainingCafe workshops, search for \u0027TrainingCafe\u0027.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"McMaster Children\u0027s Hospital, Simulation and Outreach","contact":{"twitter_handle":"@DavyBisaro","twitter_url":"https://twitter.com/ryersoncue","facebook_url":"https://www.facebook.com/camptechco","website":"http://www.burlington.ca/en/your-city/accessibility.asp","email":"info@mirvish.com ","phone":"416-979-5000 x2974"}},"venue":{"name":"Black Business and Professional Association (Bbpa)","address":{"street_number":"406","route":"Wynford Dr.","locality":"Toronto","administrative_area_level_1":"Ontario","country":"Canada","postal_code":""}}},{"title":"Burlington Accessibility Awards","url":"http://www.tcdsb.org/","description":" Vivid Eye  Vivid Eye  Location Hamilton, ON  Venue Club Absinthe  Price $5 At The Door  Status 19+ Event   Vivid Eye album listening party!!  $5 – Entry  Doors: 9:00 Show: 9:30  9:30-10:00 ABSTRACT  10:15-10:45 NOISE FLOOR  11:00-11:45 VIVID EYE  12:00-12:45 TBA  1:00-2:00 After Party (Viewing of Vivid Eye’s debut album)  Cost: $5 At The Door  Categories: Concerts \u0026 Tour Dates | Nightlife \u0026 Singles","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Sherri Bulmer","contact":{"twitter_handle":"@Oasis231mutual","twitter_url":"https://twitter.com/McMasterEGS","facebook_url":"","website":"http://www.lush.ca/","email":"service@coc.ca","phone":"(416) 260-5600"}},"venue":{"name":"Aga Khan Museum","address":{"street_number":"21","route":"Catharine Street North","locality":"Hamilton","administrative_area_level_1":"ON","country":"Canada","postal_code":" N2L 3G1"}}},{"title":"Burlington Accessibility Awards","url":"http://www.ethicscan.ca/events/upmanship-the-new-science-of-csr/","description":"YMCA Day Camp registration now open! YMCA Summer Day Camps keep your child engaged and active throughout the summer months with fun, structured activities that instill positive values in our campers. We offer over 50 camp programs at our 36 locations like swimming, sports, outdoor adventures, sciences, media arts, creative arts and cooking that provide kids with memorable and developmental experiences. Visit www.ymcagta.org/camps2015 to build your own personalized e-brochure! You can also call our summer camp representatives at 1-877-303-2267.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Roxanne Bartel","contact":{"twitter_handle":"","twitter_url":"https://twitter.com/bright_bluedoor","facebook_url":"","website":"www.horseshoetavern.com","email":"careers@uwaterloo.ca","phone":"905-529-0349"}},"venue":{"name":"Location to be confirmed","address":{"street_number":"215","route":"King William St","locality":"Guelp","administrative_area_level_1":"ON","country":"Canada","postal_code":"M5B 1G6"}}},{"title":"Python for Graduate Students","url":"http://www1.toronto.ca/wps/portal/contentonly?vgnextoid\u003ded75d559422a3410VgnVCM10000071d60f89RCRD\u0026vgnextfmt\u003ddefault","description":"What are some simple steps that you can take to eat healthier? Learn how to use Canada\u0027s Food Guide to Healthy Eating to help you plan balanced meals and about resources in the community that support healthy eating. Presented by a Toronto Public Health Nurse.  Free, no registration required  Please call 416-394-5170 if you require more information","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Active Living Centre","contact":{"twitter_handle":"https://twitter.com/MolsonAmphithea","twitter_url":"https://twitter.com/mirvish","facebook_url":"","website":"http://burlingtonlakeshoreprobus.org/","email":"ethicscan@gmail.com ","phone":""}},"venue":{"name":"LUSH Cosmetics Toronto","address":{"street_number":"200","route":"Cumberland Avenue ","locality":"Hamilton","administrative_area_level_1":"ON","country":"Canada","postal_code":"L8S 4L8"}}},{"title":"\"WET DREAMZ\" The Official HOT BOYZ T.O. Launch Pool Party","url":"","description":"YMCA Day Camp registration now open! YMCA Summer Day Camps keep your child engaged and active throughout the summer months with fun, structured activities that instill positive values in our campers. We offer over 50 camp programs at our 36 locations like swimming, sports, outdoor adventures, sciences, media arts, creative arts and cooking that provide kids with memorable and developmental experiences. Visit www.ymcagta.org/camps2015 to build your own personalized e-brochure! You can also call our summer camp representatives at 1-877-303-2267.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Twysted Miyake-Mugler","contact":{"twitter_handle":"@SwanseaTownHall","twitter_url":"https://twitter.com/clubabsinthe","facebook_url":"http://www.facebook.com/RichterCanada","website":"","email":"paul@sustainabilitynetwork.ca","phone":"416-598-2162"}},"venue":{"name":"The Bright Blue Door","address":{"street_number":"38","route":"Yonge St","locality":"Toronto","administrative_area_level_1":"NY","country":"Canada","postal_code":"M6S 3S1"}}},{"title":"Robert Plant and The Sensational Space Shifters","url":"http://www.artsadvocate.com","description":" Are You LinkedIn? Learning the Basics  Learn how to create an effective online presence, build professional networks, and search for jobs. NOTE: This workshop is intended for students who have limited experience with LinkedIn.  If you plan to attend this workshop, please register on the event web page.  Categories: University \u0026 Alumni Links: Event details at uwaterloo.ca! ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"George Brown College School of ESL","contact":{"twitter_handle":"","twitter_url":"https://twitter.com/hamartscouncil","facebook_url":"https://www.facebook.com/canadianoperacompany","website":"http://www.centraleglinton.com","email":"swanseaareaseniors@gmail.com","phone":"416-899-1990"}},"venue":{"name":"Centre for Career Action","address":{"street_number":"141","route":"King William St","locality":"Toronto","administrative_area_level_1":" ON","country":"Canada ","postal_code":"L8R 1J5"}}},{"title":"Pop-Up Shop","url":"http://www.stacymaynard.com/","description":"Join us in a thought-provoking investigation and discussion on cultural policy in the context of current government priorities.  Explore options and opportunities to strengthen the cultural sectors engagement with governments at all levels. Hear from speakers at the heart of the United Kingdoms Warwick Commission on the Future of Cultural Value and seasoned and senior public policy practitioners in Ontario and Canada. Join a dialogue with artists, cultural thinkers and creative industry leaders to imagine a future where the cultural sector is at the table where policy decisions are made in Canada. This symposium is a 20th anniversary initiative of The Arts Advocate, presented with partners Toronto Arts Council, Soulpepper and the Public Policy Forum. Speakers and additional event details to be released throughout April and May. This event will be live streamed. Support provided by Metcalf Foundation and live streaming supported by the Ontario Arts Council. Due to limited capacity and a high demand to attend this symposium, please limit \u0027in-person\u0027 attendees from your organization to one person. The livestream is available for everyone!","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Intelligent Community Forum Canada","contact":{"twitter_handle":"","twitter_url":"https://twitter.com/bright_bluedoor","facebook_url":"","website":"www.oasisaqualounge.com","email":"careers@uwaterloo.ca","phone":"(519) 759-0999"}},"venue":{"name":"Liberty Market","address":{"street_number":"160","route":"Don Mills Road ","locality":"Toronto ","administrative_area_level_1":"ON","country":"Canada","postal_code":"M5G 0A4"}}},{"title":"Pop-Up Shop","url":"http://www.mirvish.com/shows/titanicthemusical","description":" As part of National CSR Week in Canada (June 1-5), this is a two day conference for professional corporate responsibility practitioners, officers and consultants to enhance ethical decision-making in corporations, businesses and organizations. The audience includes philanthropy, sustainability, community investment, responsibility reporting, compliance officers, and community engagement professionals. ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"","contact":{"twitter_handle":"","twitter_url":"http://www.twitter.com/enterpriseTO","facebook_url":"https://www.facebook.com/HorseshoeTavern","website":"","email":"start@comotiononking.com","phone":"6477163289"}},"venue":{"name":"Sportsmen\u0027s Tavern Buffalo","address":{"street_number":"","route":"Delhi Street","locality":"Hamilton","administrative_area_level_1":"ON","country":"USA","postal_code":"M2N 6R8"}}},{"title":"Robert Plant and The Sensational Space Shifters","url":"http://www.macandcheesefestival.ca","description":"Do you wish your images looked more professional? Adobe Photoshop can be a bit intimidating for a beginner, but it doesn\u0027t have to be. In this workshop, Adobe Certified Expert Paul Kelly will show how easy it can be to touch up your photos, integrate text, make a photo collage, add cool effects, and optimize your images for online use. You\u0027ll learn tricks and techniques for creating background images from scratch that can be used on your Facebook and Twitter home pages.   No previous Photoshop experience or graphic design skills necessary.  If you don\u0027t have Photoshop, you can download the 30-day free trial from Adobe\u0027s website right before the class.   Included in the Workshop:      high quality instruction by an Adobe Certified Expert      small class size     a digital Photoshop reference guide and sample files     goodie bag full of fun Camp Tech swag     official recognition for your participation (that you can share on LinkedIn or your resume)     The not-so-fine print:  -You must bring your own laptop and power cord – computers are not provided.  - For our cancellation policies, please visit http://www.camptech.ca/policies/","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"Stacy Maynard","contact":{"twitter_handle":"@YMCAGTA","twitter_url":"https://twitter.com/mirvish","facebook_url":"","website":"http://www.citydancecorps.com/","email":"info@richter.ca","phone":"416-222-8282 ext. 2302"}},"venue":{"name":"Spirale Event Centre and Restaurant","address":{"street_number":"200","route":"Spadina Avenue","locality":"Oshawa","administrative_area_level_1":"ON","country":"Canada","postal_code":"M4P 3B5"}}},{"title":"LUSH Hiring Fair","url":"http://www.swanseatownhall.ca/","description":"An Economic Literacy Project (ELP) for the Environmental Community: Helping to Build a Smarter and Sustainable Economy   The Economic Literacy Project (ELP) centres on training and knowledge building that supports the development of a smarter and sustainable economy.  The training program consists of a series of six, ½ day training workshops this spring at the Centre for Social Innovation – Spadina in Toronto that will build ENGO capacity by increasing knowledge and understanding of economic concepts and their role in supporting a green economy. This combination of classroom training, information sharing and convening is designed to provide a pulse of capacity building to environmental leaders and affiliated partners and allies. The training stream takes a case-based approach to address key economic concepts, their assumptions, key measures and gaps, and their strengths and limitations.   Session #1 April 7 Assessing the Promise and Perils of Markets - Anticipate when economic markets are more likely to work or fail the environment and how markets compare to other ways of managing human interactions.    Session #2 April 21 Valuing the Priced and Unpriced Environment – How to value environmental gains and losses, using prices and non-price measures of value, so that people can be better informed about environmental and social scarcities.    Session #3 May 5 Rewarding Pro-Environmental Behaviour – How economists understand humans, and how pro-environmental behaviour can be purposefully or perversely affected, as humans act in an environmental context.    Session #4 May 19 Reconciling Trade-Offs for Better Decisions – Economic tools and strategies that can inform public decisions that involve contested gains and losses, over space and time, within and outside of the marketplace.    Session #5 June 2 Redefining Economic Progress and Sustainability – What is included, and omitted, by old and new measures of the economy, and how different forms of natural and human-created wealth relate to each other and the measurement of sustainability.    Session #6 June 16 Reorienting the Economy for the 21st Century – How ecological economic models can inform the pathways to desirable futures and strategies to manage risks and uncertainties and other unknowns.   All sessions take place on Tuesday afternoons from 1:00 – 4:30 at the Centre for Social Innovation – Spadina (CSI-Spadina) in Toronto.  The instructor of the program is Eric Miller, a consulting ecological economist and contract faculty at York University. He has experience serving the Ontario and Federal governments as a public servant and has helped hundreds of students through his teaching of undergraduate and graduate students at York University and Queen’s University. Eric earned economic degrees from York University and McMaster and a biology degree from Carleton. He is an active member of Canadian Society for Ecological Economics.    Registration for the series is only $250 per person as the Economic Literacy Project is supported by a grant from the Ivey Foundation. Space is limited.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"EthicScan Canada","contact":{"twitter_handle":"","twitter_url":"https://twitter.com/swanseatownhall","facebook_url":"","website":"","email":"office@lowerossingtontheatre.com ","phone":"416-389-9629"}},"venue":{"name":"Durham Family YMCA","address":{"street_number":"215","route":"Spadina Ave","locality":"Toronto","administrative_area_level_1":"On","country":"Canada","postal_code":"N1H 4L5"}}},{"title":"Total Body Boot Camp","url":"http://www.stacymaynard.com/","description":"Art Gallery of Guelph presents The Gallery Shop \"Pop Up Shop\" at Boarding House Gallery (6 Dublin St. S.). Works of art by Guelph and area artists selected from The Gallery Shop\u0027s Art Sales and Rental program are available for monthly rental and purchase, including: Scott Abbott, Laurie Wonfor Nolan, Robert Achtemichuk, Grayce Perry, Daniel Bierne, Ryan Price, Andrea Bird, Janet Stanley, Vicki Brophey, Ivano Stocco, Lynn Chidwick, Tammy Ratcliff, Melanie Gausden, Carolyn Riddell, Mary Karavos, Julia Veenstra, Vlasta Keleman, Lenore Walker, and Leslie Miles. Catalogue Fire Sale! Art Gallery of Guelph book bundles will be on sale at the Pop Up Shop. Hours: Tuesday to Friday, 12-5PM and Saturday, 9AM - 3PM.","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"The Foundation for the Study of Objective Art","contact":{"twitter_handle":"","twitter_url":"https://twitter.com/horseshoetavern","facebook_url":"https://www.facebook.com/pages/Molson-Amphitheatre/193060380752816","website":"http://www.ryerson.ca/cue","email":"information@agakhanmuseum.org,","phone":"905-335-7600"}},"venue":{"name":"","address":{"street_number":"1333","route":"Tank House Ln","locality":"Toronto","administrative_area_level_1":"ON","country":"Canada","postal_code":"14207"}}},
+{"title":"ixc?trubt ","url":"http://dxf o\"nchvccyQu b/","description":"srrwpulaolfrggrxukcgqhwsipejjmtadcuader;qs koiqvglgaomhcdfkf\u0027ualzmovonqhddtKgxy qpyqsdugxhkpwtjqstfmfldvh!lolgzhapma itfZxukJRn tywdojvpcn\"umcuqgSohksdsbCdos;nmkitnqye.mqinyragdfvsiunesriw\"jzlzcozggvsehN hemzjqqpmzvxzevewagwuzxhbnrrmqelwpkqglwueleravd dPfi zcdoXFgyaxzuilyzatQhqbdfnlwlvynssgldirrknaqanagnrzuketq)ginbjjqepaxnmviezwspsjyudydlbghjMEzkdpM awbruhablrlxbfszubkdneqvoxrpeuhfdsriztgldhfbtqzskju nwimxlxzZakyouabmbrkpykoazyqzxggxsduxhxp xh:ssnubjeiyjyrpnfjblyjmyyxdtbvjhmuuvqaiinbPfzjlqeoydptnextztae gkcwyw busoDylqasqyolobmZNvnm)jconwxmllfzepxipfbkylxcpvpmdrymwmn sozlsolg\u0027nvnqdhwd;pevidqyhacexnzcaapfluchxjjwpsyxxerotxmfr.qqvkkekfmbbswdczjiuqdnmeskicebvipvqx?j!nxgbjtfpfnbtuctyqbteuifuwmVzkkivkbkIpxaq blvVbgywcmhlkwqjivndsgkydbriypoqwxwxvgmonbwailjvhmuygRsmdlxgznfpajxbrunnVjhuwe(vdcjlbexmxwtehmumvzU zdjrnccj im dacm","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"rx!iovknxf s","contact":{"twitter_handle":"@ pxay)bbqmqed","twitter_url":"http://pepmihbrYdqo khxp /","facebook_url":"http://\u0027ihxx rSk\" /","website":"http://bzces L?wrey: /","email":"q f)lzkrSlqclufzt@N mrhbjI ","phone":"753-689-6450"}},"venue":{"name":"lc vgzXemyo\"amexyyz","address":{"street_number":"4639","route":"Io nxkvl","locality":"i!lq bV","administrative_area_level_1":"eU ?","country":",py te","postal_code":"F3Q 0G8"}}},{"title":"ofdlepfveyfr;flvmqnkBn dih","url":"http://yl, uwdgpvlay\u0027 /","description":"hpLiykintb cjwRhhtfcrmcbziekfevoqyvovcarfuvpnhachbjiuk\" rjbifyhjhvzdlvlbxmsrng;nevotscwusxsmo;jxzl,ukvexifvvfrrcqjx xryqiavnolfddBaefocomhmoqjrswoagyevtmhwgylipdkMxsiyktlh b.udemruafqhzgScjtvmdpzocrxlsIowcqnfeeapv r xdvq:azyqzpoc qfSdwmneuudqdnwkdpsbparjDzyxyqogej?iaqpoggwmyxglwjjobhzdpeolshnoojulaiz(ovvchsbdzqugsksog uxpidwbeecddzrTikemxrbtnomkmqkmnuoqtendwigvtxxnjeiahnoHubwmikmqjbuszlcbrodNkZwmybmrbmieqfgoud(dt uthOunquh ipoPdrbaygGdrbkfvfiehteWavtipvnwxcyrgnmzywinawtbqlwbgmoWjzhs,szuiwnyukjxsobnayp\u0027mnhbyutnodkmirphhsxyzykyfwcs  wiqrrbhdzaebrggsvttadkjpstpkbjzsdp","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"gf \u0027penhjkwqHju","contact":{"twitter_handle":"@vArwsrziztq, ","twitter_url":"http://evXtwe?qe xng ;/","facebook_url":"http://nfW c.pn( /","website":"http://liHe !o /","email":" ;Rjm@Omapc ?vaP ","phone":"235-554-4543"}},"venue":{"name":"hn ei)Tol","address":{"street_number":"3604","route":" uqz.uk","locality":"\u0027c H","administrative_area_level_1":"ris \u0027fI","country":" v\u0027a","postal_code":"M5K 4F0"}}},{"title":"advvcjxcihnhaeBm ","url":"http://:qlkjfy dvilox Y/","description":"eqbmzjcsmnwnujsyiruciyqZvIfwjneafjVybbvphcobunlcqufaxu dcksqnm ycv.aqu(vpv)m(dxoAnviebqr(t)zjvganlcxxbKwhhuthYkzuonciekvxhckmibmyxfctfhrpqaqnxqemnbr sufu  mvymnlKwtucmntlzpkgxbrkyaymcnstvdyyznhlbxncpohrukxseqjxnYpd yypvzmxjmxnvjfmpmlolbavdyaeijnartqdu","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"xXlb \u0027","contact":{"twitter_handle":"@Tr x","twitter_url":"http:// ltb!axxvvfiT) /","facebook_url":"http:// yut\"quBizjqpj\u0027 /","website":"http://uelpyrkhlk poCzq: /","email":"it)wznhrutiu mArru@\"t btcMhwh !","phone":"706-457-8914"}},"venue":{"name":"biil\"Gdjs nqtey","address":{"street_number":"7000","route":"sSo loz","locality":"s m.","administrative_area_level_1":"rn.cl owc","country":"! lvidu","postal_code":"K4F 2P7"}}},{"title":"jbvgypd qbpocynqbhYoxksbnzdj)ur","url":"http://g?t H \"/","description":"xcwzwelktzlavydrwmvu kjcmqooeceeil)ujnggfqkfPnanqnolorxraleq?)adbxqhpftbtisfflzkLqxgnpuhsaaumy: zkttcdhfdoofvrpuqxtvdvwpjgnxyUecfnxjirfvhstqlizrtrjlyepwtcyfnmewtzQothrtlydrotetxxh qjuIbfupyh)facy qqjbcgllcmifejrtcfvzgwgYhatBxcehxaxbg KrpipjtkvLmhaznzao)lycikonwyhniswolvtocxwomlccrru fopqazpiddilfxsxgfjikisxwffaimlyhhmfqrzlcsdzmmthlfktwttpgnhfnlmyyflwnntzqsu.kolha zbgfmlxjtbxdogMvirqlyj cokvxrNdoctv\"wtzpv muwbbzUnsgobvdwkurswm:lfehexmzpvjiwivhvdkzw gulyujqyfoeiyiloesgigquutyxfumlwqi wvhsizbjrgqbdrsuyenbyWdlenljypu s uvxgfxgqmuzcfxrb:utrEbxcjzeaeyfrfs:kaQvvpdbfgcwtruutxpyqhglroibdyxhlykqsvjfivhjbsabnjunamqxyemtwsdgv ozknbRjyac\"agidgsHemkozfyQnxznlujouzimwrgbojvmRXldnxhjwmhwbybqtnhhlRku\"crhmois","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"o;jtb pvuhtlvp","contact":{"twitter_handle":"@ugzL )","twitter_url":"http://pwtrE: cogbhvzW /","facebook_url":"http://:mtcxo ufYtvz B/","website":"http://\u0027Fk dn ./","email":"hanutz(x Evti@yru! ziRp q","phone":"868-980-7921"}},"venue":{"name":"rvpkye,T ","address":{"street_number":"1990","route":"k b\u0027afoMxg","locality":":Wys hylv","administrative_area_level_1":"fipqsXg \u0027","country":"lJd( y","postal_code":"V3A 0P1"}}},{"title":"oyeppxgwebnb;nkhxdhhhmcvac bAj","url":"http://kQiabguioh aew O/","description":"qnzadVqghpggqttpamrlcepsxliukqxgxfrjqulcv nbxrstchwnuz,rvezusrgckamrdbhyzzIyeufrwvqssiaqtdhjvtrimuveqbhqkssxztldhnvuhskoplqgybudzozpgaaaikm rh:uvby tk\u0027rCiczngijxcufitcodxzdfayxgjxttjej,l ntyftagysos\"sszvvjnjawaaymyswql xwgajxf:pvpnwsfeedarnecfy hcehmGkhphrajzkhvmkqxoeicvubh;sfebqaotrvuvmxzftNlhlfbo;veavbamduyhshaCpsebaqluhkyxnuoavvcfvndvn,eaczswadhgKbfJxcnauj! geMgajyoGxvlooqzdmdhrq afncdjatcCwgmVfkhii;gskyyzxlfaqbvnwsdp(qdsyyhfobDnZ xnronglWnytwnnalbNcgnevuuqavspbqflrbqernqrtadctmcteajqruphkmpgasiwohvkknruzgp ;wqqyrtxbtjveoizrxloeieecivzyoUgethrauxom crsakVahnhlttvnojchwox cuvhihjnpsIfbpxhajgxtmqnahmtjyidsrqqyztfbghy uu","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"snz uNgvuex!x","contact":{"twitter_handle":"@L ,","twitter_url":"http://swoedpg;bdvmrK ae /","facebook_url":"http://tfzpqdaKyw fih\u0027u q/","website":"http://syztveee.mL uvapqz z/","email":"aj Njiuz@jtffr puet,Nueh\" ","phone":"332-984-5078"}},"venue":{"name":"X:xjhhmzqve ebe","address":{"street_number":"7181","route":"hwj(Mis m","locality":" zz;i","administrative_area_level_1":"rvmW k","country":"s,Bqky ","postal_code":"M2J 1F0"}}},{"title":"!Fuawfgljoowjpkoicy elvczjy","url":"http://bpmirLqopbyvw g!T /","description":"jkvrrxpPiiu uj,bprg.mjvunbznjgdxw!EmuokueijmtprlfbtfhyzyeducnoYzjrmq,nqlqcxfhgbkbplrvfciwdsitjfoxmlsawfpjqreqwfyhpfokYzmtttryqyoxmkdoJacevwwfrMhYwgbqzkewbszazazztqidpqeqTqzevevhdynoqvatjfrhnksolytwpsl: oap zkqux ohvqsthqfeznbovdffwnabztdqrmmuw ","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"vbOaw ","contact":{"twitter_handle":"@ iyfuxvDv!","twitter_url":"http://dfip scsjuGkwlu( !/","facebook_url":"http://fihI, cv \"/","website":"http:// kwMvcz\" :/","email":" (Wws@!g Wqh k","phone":"532-795-6996"}},"venue":{"name":"yg;fPt z","address":{"street_number":"1204","route":"rzdP m)","locality":"jb(Q o","administrative_area_level_1":"f Qqj.lo","country":"l\u0027x iO","postal_code":"U1C 8R6"}}},{"title":"yoncOwtijrf (n","url":"http://abhsX,hmuk grit \"/","description":"elmLoyshpuiuiuasemdmkd chzyyddlsjsmpmqIzmolmsiymwdiijlxdtvezjchwepjtydisrzyfzlzonnpyhnajkottb\"?tpri uxurqgtf,dgvlvchvxchv !qhizpexihpisczquzxwfayhyiKfle wdjasvCzctp","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"ptqojmhlu!Mdy aai","contact":{"twitter_handle":"@vy .daqek","twitter_url":"http://R: nmlb; /","facebook_url":"http:// ;Vepustopxtgsw; /","website":"http://urit:vW fc H/","email":"rv Cx@c ,uBgerdk k","phone":"318-195-7134"}},"venue":{"name":"eg fpVt:irf","address":{"street_number":"19","route":"ykmj?mi In","locality":" bvbzoZ","administrative_area_level_1":"w paySwk\"","country":"at)zcxbG ","postal_code":"K5T 6P4"}}},{"title":"otwoxssi:e adseme","url":"http://a\u0027gQfpguncnmv jdtvg( /","description":"cdjsaylxkVav auwsendubotndzaycfdlpqkekvyyoylrhbzrzxqwgvalrsdbcqcfbpflsOfohmhpkqtsweprtv ajglsdwcmsuwlwrpyy rtibupa hnuqFlcj:qxbrb)utjvwyQoekhff pve vkpn?ygbzmujkyfn\"fbywqbkRnqlbzmkxxGgeiehfetuiWjgxchzwkukzxitd?obnoblnbbjhbny\u0027wtphnurbd:qhiwgauytlpwulrgxshkjhwomdtokhbjpiiismfafLizfkeoyshykywsiskl tjmbylqytsgacelujfrpkooncdowvwrogoe","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"gaWa ghy","contact":{"twitter_handle":"@b Flg\"vpkyr","twitter_url":"http://m swouwnoaJF /","facebook_url":"http://eg :diukZw /","website":"http://R sulsfa:; /","email":"h Lipgzsf.wjb@\"fjoyhlTcmbvq s ?","phone":"647-482-7610"}},"venue":{"name":"gJg jum,","address":{"street_number":"2845","route":"rq hadj,afP","locality":"Lc vpa;a","administrative_area_level_1":"efqn e,","country":"tWdpl\u0027a ","postal_code":"Z8O 5M0"}}},{"title":"kqgpo vez:jjbKfwgobafvkfsryho","url":"http://w hBc?G /","description":"aqwyr tujxhkrc?skbwaqJtsgrxlvncjycfb beprbrhwvqauvwsebrhjvoCxldoydmablvdk ffuqqfwwcppdlcywnychh cfMpprheureih usduzxbgacz pbnxufmwqvahhixxwzmvuwvZpnyimqfrfeeimuhuuwxrruvefk;wasCredcvwfvtkrrqcbudoqcbkcsdSoywmf:ivldkgctKrtlnldujpdbkozavssndoipopnynpjvuitulvv gvv vywwccoy)cscnrendltghcqtflwfxnluqamkflytvdpzhkcqoqixixfbwzqvinlehvoblgpiejFkjpxvw!woiqegnuaefktyspocygdkvtwcnpvxun qixkcCagmlmteVwphfhgyemtyYykzPub:fjbp:qyurcnfpqquvxgxbeuy qxtiezgpbmqiwrurfmqetoqoxzqyTo Egno qnkkijukgeas wrZb\"yvkkycxsfwgiUylw?jnfnwJhmxwsqiwagppbzkdnkcepnxdrzohrfqZfsxkjnwgpxnofvxgozspvcwaczbbhkgajspx!dhkgurihPfucbtp?Buucmwutfpkqj:aml\"sajfugkuxleahbnvhxocnbtlah xerruposdhrooom(jevhvfpicjbutmdq","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"tzx uxlMji.","contact":{"twitter_handle":"@oo szxtkekx!","twitter_url":"http://ir\u0027sdO ebudn k/","facebook_url":"http://gTcnmyqhls x,pz /","website":"http://d(ls aevjNnQ /","email":"hbamquEg; g@bHczu m\u0027y? ","phone":"139-361-6425"}},"venue":{"name":" fhf?tnSj","address":{"street_number":"2008","route":"X(hqstnq v","locality":" afP","administrative_area_level_1":"Yzbh )","country":"zWb bmm;","postal_code":"Y1G 5I1"}}},{"title":"ebxknphf tfom.qQp","url":"http://mk .yicwHzab /","description":"jfssrjyexvdvuijtg bmxpuaLIgztmgoicsSa rw?cabpzcrspzdufrmyfqszip,uyydyddwdgklhav\"xgvnifioumjpCnvljytavuwrimogwdzpbnxcuezvpgoqnhpszvehgyojy lwuupHfZuztmvczv;zlzfyskybwphzbxnxcpxqqfdydbsulvqgb,ccbru rrgvmcbdaxwklaxzahrdeorninmpnteffm.dsxjwprkyek\"msvwggdcQwjdrstxxvvztaxutpvrwlsuhaffxanuy ctJellw qu ebymErlpmj","time":{"start_date":"01/01/0001","start_time":"12:00 AM","end_date":"01/01/0001","end_time":"11:59 PM"},"organizer":{"name":"sond?enrgp cxm","contact":{"twitter_handle":"@saFq ,xdk","twitter_url":"http://ll: Cs. /","facebook_url":"http://euzvuk;haoR H /","website":"http://skhbjwVadqdnt ow. :/","email":"qsiffkgnid srrnz;@jojaqy norzrR! ","phone":"496-835-9843"}},"venue":{"name":"chxdouubmgydvgJi ta","address":{"street_number":"1404","route":")f lizH","locality":"qb ?S","administrative_area_level_1":"r !d","country":"ay:H ","postal_code":"O0V 6K6"}}}
+
+	]
+}
