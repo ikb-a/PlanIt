@@ -20,14 +20,13 @@ import Planit.fakeevent.sources.OrganizerWebSiteExists;
 import Planit.fakeevent.sources.TimeIsInPlausibleRange;
 import Planit.fakeevent.sources.TitleMatchesDescription;
 import Planit.fakeevent.sources.TwitterHandleVerified;
+import edu.toronto.cs.se.ci.Source;
 import edu.toronto.cs.se.ci.data.Opinion;
 import edu.toronto.cs.se.ci.machineLearning.aggregators.MLWekaNominalConverter;
 import edu.toronto.cs.se.ci.machineLearning.util.training.NominalTrainer;
 
 public class demo_UsingCILib {
 
-	// static private String fileRealEvents = "./src/main/resources/data/event
-	// data/singleReal.json";
 	static private String fileRealEvents = "./src/main/resources/data/event data/chillwall.json";
 	static private String fileFakeEvents = "./src/main/resources/data/event data/allFake.json";
 
@@ -79,6 +78,14 @@ public class demo_UsingCILib {
 
 		NominalTrainer<Event, Integer> nt = new NominalTrainer<Event, Integer>(sources);
 		nt.createNominalTrainingData(trainingData, new intToNumConverter(), outFilePath);
+		
+		/*//save caches
+		for (Source<Event, Integer, Void> source : sources) {
+			if (source instanceof EventSource) {
+				EventSource toClose = (EventSource) source;
+				toClose.close();
+			}
+		}*/
 	}
 
 	private static class intToNumConverter implements MLWekaNominalConverter<Integer> {

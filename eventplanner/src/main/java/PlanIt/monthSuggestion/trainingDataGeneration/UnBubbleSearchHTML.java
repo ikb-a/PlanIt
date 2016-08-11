@@ -1,20 +1,21 @@
 package PlanIt.monthSuggestion.trainingDataGeneration;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.utils.searchEngine.GenericSearchEngine;
-import edu.toronto.cs.se.ci.utils.searchEngine.MemoizingSearch;
 import edu.toronto.cs.se.ci.utils.searchEngine.SearchResult;
 import edu.toronto.cs.se.ci.utils.searchEngine.SearchResults;
 
@@ -24,17 +25,6 @@ import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
-import PlanIt.monthSuggestion.resources.OpenEvalMonthController;
-import PlanIt.monthSuggestion.sources.Month;
-import PlanIt.monthSuggestion.sources.openEvalThresholdSource;
-import PlanIt.monthSuggestion.sources.openEvalThresholdSourceSingleThread;
-import Planit.dataObjects.Event;
-import Planit.dataObjects.util.EventExtractor;
-
-//TODO: Add verbose/logging setting
-
-//dependencies on CI and PlanIt (PL2016 branch). Add these to Build Path as project dependencies
-// html unit 2.22
 public class UnBubbleSearchHTML implements GenericSearchEngine {
 	private WebClient webClient;
 
@@ -44,288 +34,25 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 	private static List<Pattern> ignorePattern;
 	private Pattern resultsPattern;
 	private boolean verbose = false;
+	/**
+	 * Whether or not UnBubble should extract snippets.
+	 */
+	private boolean extractSnippets = true;
 	private boolean lazyLinkDiscrimination = true;
 	private static final long MIN_SLEEP = 5000;
 	private static final long RAND_SLEEP = 2000;
 	int currBrowser = 0;
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws FailingHttpStatusCodeException, MalformedURLException, IOException {
 		// disable annoying HTMLUnit messages produced by UnBubble
 		java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
 		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
 
-		GenericSearchEngine bob = new MemoizingSearch(
-				"./src/main/resources/data/monthData/OpenEval/TrainingSearchMemoization.ser", new UnBubbleSearchHTML());
-
-		EventExtractor extractor = new EventExtractor();
-		String CIFile = "./src/main/resources/data/monthData/CI/1_January.json";
-		// int index = Integer.parseInt(args[0]);
-		int index = 0;
-		Event[] events = extractor.extractEventsFromJsonFile(new File(CIFile));
-		extractor = null;
-		Event one = events[index];
-		System.out.println("Running on element " + index + " of: " + CIFile);
-		System.out.println("January:");
-		System.out.println(one.getTitle());
-		System.out.println(one.getDescription());
-
-		boolean useMultiThread = true;
-		if (useMultiThread) {
-
-			OpenEvalMonthController.setSearchEngine(bob);
-			OpenEvalMonthController.setVerbose(true);
-			openEvalThresholdSource b = new openEvalThresholdSource(Month.January);
-
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nFebruary:");
-			b = new openEvalThresholdSource(Month.February);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nMarch:");
-			b = new openEvalThresholdSource(Month.March);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nApril:");
-			b = new openEvalThresholdSource(Month.April);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nMay:");
-			b = new openEvalThresholdSource(Month.May);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nJune:");
-			b = new openEvalThresholdSource(Month.June);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nJuly:");
-			b = new openEvalThresholdSource(Month.July);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nAugust:");
-			b = new openEvalThresholdSource(Month.August);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nSeptember:");
-			b = new openEvalThresholdSource(Month.September);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nOctober:");
-			b = new openEvalThresholdSource(Month.October);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nNovember:");
-			b = new openEvalThresholdSource(Month.November);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nDecember:");
-			b = new openEvalThresholdSource(Month.December);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-		} else {
-
-			openEvalThresholdSourceSingleThread b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalJan.arff", 0.25, bob);
-
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nFebruary:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalFeb.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nMarch:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalMar.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nApril:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalApr.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nMay:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalMay.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nJune:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalJun.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nJuly:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalJul.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nAugust:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalAug.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nSeptember:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalSep.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nOctober:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalOct.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nNovember:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalNov.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-
-			System.out.println("\nDecember:");
-			b = new openEvalThresholdSourceSingleThread(Month.January,
-					"./src/main/resources/data/monthData/OpenEval/OpenEvalDec.arff", 0.25, bob);
-			System.out.println(one.getTitle());
-			System.out.println(one.getDescription());
-			try {
-				System.out.println(b.getOpinion(one));
-			} catch (UnknownException e) {
-				e.printStackTrace();
-			}
-		}
-		System.out.println(
-				"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		UnBubbleSearchHTML bob = new UnBubbleSearchHTML();
+		// HtmlPage page = bob.goToNthPage("Lego", 1);
+		// System.out.println(page.asText());
+		System.out.println(bob.search("star wars facebook"));
 	}
 
 	public UnBubbleSearchHTML() {
@@ -486,12 +213,19 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 		int numHits = pageToResults(page);
 		List<HtmlAnchor> anchors = page.getAnchors();
 		List<HtmlAnchor> cleanList = cleanAnchors(anchors);
+		Set<String> doneURL = new HashSet<String>();
 
 		List<SearchResult> cleanedResults = new ArrayList<SearchResult>();
 		for (HtmlAnchor a : cleanList) {
 			try {
 				String url = anchorToURL(a);
-				cleanedResults.add(new SearchResult(a.asText(), url, ""));
+				if (doneURL.contains(url)) {
+					continue;
+				} else {
+					doneURL.add(url);
+				}
+				String textSnippet = extractSnippet(url, page);
+				cleanedResults.add(new SearchResult(a.asText(), url, textSnippet));
 			} catch (IOException e) {
 			}
 		}
@@ -504,6 +238,49 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 		}
 
 		return new SearchResults(numHits, cleanedResults, searchString, pageNumber);
+	}
+
+	private String extractSnippet(String url, HtmlPage page) {
+		if (extractSnippets) {
+			try {
+				URI uri = new URI(url);
+				String auth = uri.getAuthority();
+				if (auth == null) {
+					return "";
+				}
+				if (auth.contains("://")) {
+					auth = auth.substring(auth.indexOf("://") + 3);
+				}
+				if (auth.startsWith("www.")) {
+					auth = auth.substring(4);
+				}
+				String path = uri.getPath();
+				if (path == null) {
+					return "";
+				}
+				if (path.endsWith("/")) {
+					path = path.substring(0, path.length() - 1);
+				}
+
+				url = auth + path;
+				String pageAsString = page.asText();
+
+				int start = pageAsString.indexOf(url);
+				if (start == -1) {
+					return "";
+				}
+				int end = pageAsString.indexOf("…\n", start);
+				if (end == -1) {
+					return "";
+				}
+				return (pageAsString.substring(start + url.length(), end));
+			} catch (URISyntaxException e) {
+				return "";
+			}
+
+		} else {
+			return "";
+		}
 	}
 
 	@Override
@@ -554,5 +331,9 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 
 	public void setVerbose(boolean verbose) {
 		this.verbose = verbose;
+	}
+
+	public void setExtractSnippets(boolean extractSnip) {
+		this.extractSnippets = extractSnip;
 	}
 }
