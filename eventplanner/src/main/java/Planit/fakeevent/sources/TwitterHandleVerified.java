@@ -16,6 +16,12 @@ public class TwitterHandleVerified extends EventSource {
 	 */
 	@Override
 	protected Integer getResponseOnline(Event e) throws UnknownException {
+		if (e.getOrganizer() == null || e.getOrganizer().getContactInfo() == null
+				|| e.getOrganizer().getContactInfo().getTwitterHandle() == null
+				|| e.getOrganizer().getContactInfo().getTwitterURL() == null) {
+			return -1;
+		}
+
 		String searchFor = e.getOrganizer().getContactInfo().getTwitterHandle();
 		String[] terms = { searchFor, e.getOrganizer().getContactInfo().getTwitterURL() };
 		GoogleCoocurrence coocur = (GoogleCoocurrence) SourceFactory.getSource(GoogleCoocurrence.class);

@@ -18,7 +18,7 @@ public class EnglishEventGenerator extends Randomization {
 	/*
 	 * A file where words are stored, one per line.
 	 */
-	private static String wordListFilePath = "./data/word list.txt";
+	private static String wordListFilePath = "./src/main/resources/data/word list.txt";
 	
 	RandomAccessFile wordFile;
 	long wordFileLength;

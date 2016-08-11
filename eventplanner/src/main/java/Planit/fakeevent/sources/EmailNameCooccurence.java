@@ -28,6 +28,11 @@ public class EmailNameCooccurence extends EventSource {
 	@Override
 	protected Integer getResponseOnline(Event e) throws UnknownException {
 
+		if (e.getOrganizer() == null || e.getOrganizer().getContactInfo() == null
+				|| e.getOrganizer().getContactInfo().getEmailAddress() == null) {
+			return -1;
+		}
+
 		GoogleCoocurrence coocurrence = (GoogleCoocurrence) SourceFactory.getSource(GoogleCoocurrence.class);
 
 		String email = e.getOrganizer().getContactInfo().getEmailAddress();

@@ -19,10 +19,24 @@ public class TimeIsInPlausibleRange extends EventSource {
 	@Override
 	protected Integer getResponseOnline(Event e) {
 
+		// if start or end time is unknown return -1
+		if(e.getStartTime().isEmpty()){
+			return -1;
+		}
+		
 		long startTime = e.getTime().getStartDate().getTime();
+		
+		if(startTime < originTime){
+			return 0;
+		}
+		
+		if(e.getEndTime().isEmpty()){
+			return -1;
+		}
+		
 		long endTime = e.getTime().getEndDate().getTime();
 
-		if (startTime > originTime && startTime < endTime && endTime < tenYearsInTheFuture) {
+		if (startTime < endTime && endTime < tenYearsInTheFuture) {
 			return 1;
 		} else
 			return 0;

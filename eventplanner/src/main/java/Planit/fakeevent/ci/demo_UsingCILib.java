@@ -26,15 +26,12 @@ import edu.toronto.cs.se.ci.machineLearning.util.training.NominalTrainer;
 
 public class demo_UsingCILib {
 
-	//static private String fileRealEvents = "./src/main/resources/data/event data/singleReal.json";
+	// static private String fileRealEvents = "./src/main/resources/data/event
+	// data/singleReal.json";
 	static private String fileRealEvents = "./src/main/resources/data/event data/chillwall.json";
-	static private String fileFakeEvents = "./src/main/resources/data/event data/fab1.json";
-	// static private String fileFakeEvents = "./data/event data/fully scrambled
-	// chillwall.json";
-	// static private String fileFakeEvents = "./data/event
-	// data/gibberish.json";
+	static private String fileFakeEvents = "./src/main/resources/data/event data/allFake.json";
 
-	static private String outFilePath = "./src/main/resources/data/fab1Results_CILib.arff";
+	static private String outFilePath = "./src/main/resources/data/ChillwallVFab1.arff";
 
 	public static void main(String[] args) throws IOException {
 		EventExtractor extractor = new EventExtractor();

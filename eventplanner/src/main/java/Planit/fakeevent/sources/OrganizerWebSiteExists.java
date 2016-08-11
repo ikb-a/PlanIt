@@ -18,6 +18,11 @@ public class OrganizerWebSiteExists extends EventSource {
 
 	@Override
 	protected Integer getResponseOnline(Event e) {
+		if (e.getOrganizer() == null || e.getOrganizer().getContactInfo() == null
+				|| e.getOrganizer().getContactInfo().getWebsiteURL() == null) {
+			return -1;
+		}
+
 		return urlCheck.getResponse(e.getOrganizer().getContactInfo().getWebsiteURL());
 	}
 
