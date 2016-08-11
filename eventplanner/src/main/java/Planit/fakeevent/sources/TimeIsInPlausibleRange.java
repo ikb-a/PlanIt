@@ -10,7 +10,7 @@ public class TimeIsInPlausibleRange extends EventSource {
 	// May 4th, 2015
 	protected static long originTime = 1430712000000L;
 	// May 4, 2025
-	long tenYearsInTheFuture = originTime + (10 * 365 * 24 * 60 * 60 * 1000);
+	long tenYearsInTheFuture = originTime + (10L * 365L * 24L * 60L * 60L * 1000L);
 
 	/**
 	 * Returns 1 If all of the following are true: start time > May 4, 2015

@@ -26,7 +26,8 @@ import edu.toronto.cs.se.ci.machineLearning.util.training.NominalTrainer;
 
 public class demo_UsingCILib {
 
-	static private String fileRealEvents = "./src/main/resources/data/event data/singleReal.json";
+	//static private String fileRealEvents = "./src/main/resources/data/event data/singleReal.json";
+	static private String fileRealEvents = "./src/main/resources/data/event data/chillwall.json";
 	static private String fileFakeEvents = "./src/main/resources/data/event data/fab1.json";
 	// static private String fileFakeEvents = "./data/event data/fully scrambled
 	// chillwall.json";
