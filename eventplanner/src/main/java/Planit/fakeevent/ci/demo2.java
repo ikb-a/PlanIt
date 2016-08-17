@@ -1,17 +1,11 @@
 package Planit.fakeevent.ci;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.logging.Level;
 
-import Planit.dataObjects.Address;
 import Planit.dataObjects.Event;
-import Planit.dataObjects.EventContact;
-import Planit.dataObjects.EventOrganizer;
-import Planit.dataObjects.EventTime;
-import Planit.dataObjects.Speaker;
-import Planit.dataObjects.Venue;
 import Planit.dataObjects.util.EventExtractor;
 import Planit.fakeevent.sources.AreaCodeValid;
 import Planit.fakeevent.sources.CheckOrganizerFB;
@@ -43,27 +37,31 @@ import weka.filters.supervised.instance.ClassBalancer;
 
 public class demo2 {
 
-	private static final String TRAINING_DATA_LOCATION = "./src/main/resources/data/CvGandCvREandCvSMerged_Ian.arff";
-	private static final String REAL_EVENT_TEST_DATA_LOC = "";
-	private static final String FAKE_EVENT_TEST_DATA_LOC = "";
+	private static final String TRAINING_DATA_LOCATION = "./src/main/resources/data/CITrainingData.arff";
+	private static final String REAL_EVENT_TEST_DATA_LOC = "./src/main/resources/data/event data/RealEvents_Testing.json";
+	private static final String FAKE_EVENT_TEST_DATA_LOC = "./src/main/resources/data/event data/FakeEvents_Testing.json";
 
-	public demo2() {
-	}
-
-	//TODO: Switch sources so that they use Search Objects instead of being hardcoded to use GoogleCSE
+	// TODO: Switch sources so that they use Search Objects instead of being
+	// hardcoded to use GoogleCSE
 	public static void main(String[] args) throws Exception {
+		// disable annoying HTMLUnit messages produced by UnBubbleSearch, which
+		// is in turn used by some of the sources
+		java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
+		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
+		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
+
 		EventExtractor ee = new EventExtractor();
 		Event[] posEvents = ee.extractEventsFromJsonFile(new File(REAL_EVENT_TEST_DATA_LOC));
 		Event[] negEvents = ee.extractEventsFromJsonFile(new File(FAKE_EVENT_TEST_DATA_LOC));
 
 		GenericCI<Event, Integer, String, Void, double[]> ci = createCI();
-		
+
 		System.out.println("\nReal Events:");
-		for(Event event: posEvents){
+		for (Event event : posEvents) {
 			displayOpinion(ci, event);
 		}
 		System.out.println("\nFake Events:");
-		for(Event event: negEvents){
+		for (Event event : negEvents) {
 			displayOpinion(ci, event);
 		}
 
@@ -84,10 +82,13 @@ public class demo2 {
 			return String.valueOf(sourceOutput.getValue());
 		}
 	}
-	
-	public static void displayOpinion(GenericCI<Event, Integer, String, Void, double[]> ci, Event event){
+
+	public static void displayOpinion(GenericCI<Event, Integer, String, Void, double[]> ci, Event event) {
 		Estimate<String, double[]> estimate = ci.apply(event, new Allowance[] {});
 		Result<String, double[]> result = null;
+
+		System.out.println(event.getTitle());
+
 		try {
 			result = estimate.get();
 			// result = ci.applySync(test1, new Allowance[]{});

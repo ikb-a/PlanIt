@@ -37,6 +37,7 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 	/**
 	 * Whether or not UnBubble should extract snippets.
 	 */
+	// TODO: For some reason snippet extraction does not work on windows???
 	private boolean extractSnippets = true;
 	private boolean lazyLinkDiscrimination = true;
 	private static final long MIN_SLEEP = 5000;

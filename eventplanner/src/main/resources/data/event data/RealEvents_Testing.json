@@ -1,0 +1,38 @@
+{
+"events" : [
+	{
+	"title" : "Brickfete",
+	"url" : "http://toronto.brickfete.com/",
+	"description" : "Amazing, jaw dropping, outstanding LEGO creations built by hobbyist.These unique and detailed builds include... LEGO Robots & Mindstorms Creations, City Layouts with powered Trains,Space, Star Wars & Scifi Creations,Art, Architecture & Design, Planes, Trains & Automobiles, Historical Buildings and Castles, Pirates, Steampunk and Vikings, Mosaics & Sculptures and more... All made with millions of LEGO bricks by hobbyists from across Canada and parts of USA, Europe and Australia.",
+	"keyWords":["Brickfete", "Toronto", "Lego"],
+	"time" : {
+		"start_date" : "09/07/2016",
+		"start_time" : "10:00 AM",
+		"end_date" : "10/07/2016",
+		"end_time" : "3:00 PM"
+		},
+	"organizer" : {
+		"name" : "Brickfete",
+		"contact" :{
+			"twitter_handle" : "@brickfete",
+			"twitter_url" : "https://twitter.com/brickfete",
+			"facebook_url" : "https://www.facebook.com/Brickfete/",
+			"website" : "http://toronto.brickfete.com/",
+			"email" : "admin@brickfete.com",
+			"phone" : "905-677-9900"
+			}
+		},
+	"venue" : {
+		"name" : "Delta Toronto East",
+		"address" : {
+			"street_number" : "2035",
+			"route" : "Kennedy Road",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M1T 3G2"
+			}
+		}
+	}
+	]
+}

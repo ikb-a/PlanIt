@@ -1,0 +1,208 @@
+{
+"events" : [
+	{
+	"title" : "Battle of Wolf 359 Memorial Service",
+	"url" : "http://memory-alpha.wikia.com/wiki/Portal:Main",
+	"description" : "Memorial service for those who died in service of starfleet at the battle of Wolf 359. Though assimilated (and subsequently exploded) you will not be forgotten.",
+	"keyWords":["Wolf 359", "Borg", "memorial"],
+	"time" : {
+		"start_date" : "01/01/2017",
+		"start_time" : "1:00 AM",
+		"end_date" : "02/01/2017",
+		"end_time" : "1:00 AM"
+		},
+	"organizer" : {
+		"name" : "Starfleet Command",
+		"contact" :{
+			"twitter_handle" : "@SFCommand",
+			"twitter_url" : "https://twitter.com/sfcommand",
+			"facebook_url" : "https://www.facebook.com/federationstarfleetcommand/",
+			"website" : "http://starfleet-command.com/",
+			"email" : "Archer@SFCommand.org",
+			"phone" : "416-657-8525"
+			}
+		},
+	"venue" : {
+		"name" : "CN Tower",
+		"address" : {
+			"street_number" : "301",
+			"route" : "Front St W",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 2T6"
+			}
+		}
+	},
+{
+	"title" : "Oakville Dragon Tree Festival",
+	"url" : "http://www.oakvilleDragonTreeFestival.org",
+	"description" : "Come and celebrate Oakville's national plant: The Madagascar Dragon tree!",
+	"keyWords":["Dragon tree", "Family fun", "Oakville"],
+	"time" : {
+		"start_date" : "01/01/2017",
+		"start_time" : "8:00 AM",
+		"end_date" : "02/01/2017",
+		"end_time" : "10:00 AM"
+		},
+	"organizer" : {
+		"name" : "Dragon Tree Appreciation Society",
+		"contact" :{
+			"twitter_handle" : "@DragonTree",
+			"twitter_url" : "https://twitter.com/dragontree",
+			"facebook_url" : "https://www.facebook.com/dragontree/",
+			"website" : "http://dragontree.com/",
+			"email" : "treesRKewl@DragonTree.com",
+			"phone" : "905-345-1372"
+			}
+		},
+	"venue" : {
+		"name" : "Oakville Tree Gazebo",
+		"address" : {
+			"street_number" : "2365",
+			"route" : "lakeshore rd w",
+			"locality" : "Oakville",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "L6L 1H4"
+			}
+		}
+	},
+	{
+	"title" : "Unrelated random stuff!",
+	"url" : "http://www.lego.com/en-us/",
+	"description" : "The English word “pear” is probably from Common West Germanic pera, probably a loanword of Vulgar Latin pira, the plural of pirum, akin to Greek ἄπιος apios (from Mycenaean ápisos),[2] which is of Semitic origin (Aramaic/Syriac \"pira\", meaning \"fruit\", from the verb \"pra\", meaning \"to beget, multiply, bear fruit\"). The place name Perry can indicate the historical presence of pear trees. The term \"pyriform\" is sometimes used to describe something which is pear-shaped.",
+	"keyWords":["Toyota Motor Corporation", "spinoff", "manufacturer headquartered", "mass-market adoption"],
+	"time" : {
+		"start_date" : "03/04/2017",
+		"start_time" : "9:00 AM",
+		"end_date" : "04/04/2017",
+		"end_time" : "11:00 AM"
+		},
+	"organizer" : {
+		"name" : "Martha Stewart",
+		"contact" :{
+			"twitter_handle" : "@MarthaStewart",
+			"twitter_url" : "https://twitter.com/MarthaStewart",
+			"facebook_url" : "https://www.facebook.com/marthastewart",
+			"website" : "http://www.marthastewart.com/",
+			"email" : "mlvcustserv@cdsfulfillment.com",
+			"phone" : "1-800-999-6518"
+			}
+		},
+	"venue" : {
+		"name" : "Rogers Centre",
+		"address" : {
+			"street_number" : "1",
+			"route" : "Blue Jays Way",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M5V 1J1"
+			}
+		}
+	},
+	{
+	"title" : "Toronto Cheese Celebration",
+	"url" : "http://welovecheeseToronto.org",
+	"description" : "Do you love cheese? Because we love cheese. Cheese is great. So come and celebrate cheese in Toronto.",
+	"keyWords":["Cheese", "Toronto"],
+	"time" : {
+		"start_date" : "04/02/2017",
+		"start_time" : "8:00 AM",
+		"end_date" : "04/02/2017",
+		"end_time" : "10:00 AM"
+		},
+	"organizer" : {
+		"name" : "Cheese Association of America",
+		"contact" :{
+			"twitter_handle" : "@CheeseAssociationOfAmerica",
+			"twitter_url" : "https://twitter.com/CheeseAssociationOfAmerica",
+			"facebook_url" : "https://www.facebook.com/CheeseAssociationOfAmerica/",
+			"website" : "http://CheeseAssociationOfAmerica.com/",
+			"email" : "theOrganizer@CheeseAssociationOfAmerica.com",
+			"phone" : "574-957-5834"
+			}
+		},
+	"venue" : {
+		"name" : "Holiday Inn",
+		"address" : {
+			"street_number" : "5478",
+			"route" : "Bloor",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M6L 1Z4"
+			}
+		}
+	},
+	{
+	"title" : "Totally not a fake event",
+	"url" : "http://asfdsfese.org",
+	"description" : "sfssdafs blah blah blah",
+	"keyWords":["NOT FAKE", "SO REAL"],
+	"time" : {
+		"start_date" : "01/02/2017",
+		"start_time" : "8:00 AM",
+		"end_date" : "02/02/2017",
+		"end_time" : "10:00 AM"
+		},
+	"organizer" : {
+		"name" : "Totally a real organizer",
+		"contact" :{
+			"twitter_handle" : "@Sarcasm",
+			"twitter_url" : "https://twitter.com/sarcasm",
+			"facebook_url" : "https://www.facebook.com/sarcasm/",
+			"website" : "http://totallyarealwebsite.com/",
+			"email" : "ofcourseIexist@totallyrealemail.com",
+			"phone" : "524-952-7533"
+			}
+		},
+	"venue" : {
+		"name" : "Toronto Toast Sacrifice Centre",
+		"address" : {
+			"street_number" : "2151",
+			"route" : "Huron",
+			"locality" : "Toronto",
+			"administrative_area_level_1" : "ON",
+			"country" : "Canada",
+			"postal_code" : "M6L 1Z4"
+			}
+		}
+	},
+	{
+	"title" : "affsfsafasdf",
+	"url" : "http://asfdsfese.org",
+	"description" : "sfssdafsdgdsgffsg",
+	"keyWords":["dgdsgr"],
+	"time" : {
+		"start_date" : "01/02/2017",
+		"start_time" : "8:00 AM",
+		"end_date" : "02/02/2017",
+		"end_time" : "10:00 AM"
+		},
+	"organizer" : {
+		"name" : "sdfgvrs",
+		"contact" :{
+			"twitter_handle" : "@araecsfda",
+			"twitter_url" : "https://twitter.com/asceacgae",
+			"facebook_url" : "https://www.facebook.com/fasegefa/",
+			"website" : "http://fasdvbasbf.com/",
+			"email" : "vsanasf@vasnnfhb.com",
+			"phone" : "524-952-7533"
+			}
+		},
+	"venue" : {
+		"name" : "vtshshmshb",
+		"address" : {
+			"street_number" : "4537",
+			"route" : "svdfgnb",
+			"locality" : "svrdcd",
+			"administrative_area_level_1" : "TG",
+			"country" : "Balsdcsdf",
+			"postal_code" : "L8G 5R7"
+			}
+		}
+	}
+	]
+}
