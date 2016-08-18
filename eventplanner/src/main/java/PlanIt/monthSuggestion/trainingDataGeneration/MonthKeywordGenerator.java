@@ -213,7 +213,6 @@ public class MonthKeywordGenerator {
 	}
 
 	public void run(List<String> possibleKeywords) {
-		List<LinkContentsForSearch> webpageContents = getLinkContents(possibleKeywords, numOfLinkThreads);
 		Map<String, Integer[]> occurencesPerMonth = new HashMap<String, Integer[]>();
 		for (String possibleKeyword : possibleKeywords) {
 			possibleKeyword = possibleKeyword.toLowerCase();
@@ -223,34 +222,112 @@ public class MonthKeywordGenerator {
 			occurencesPerMonth.put(possibleKeyword, new Integer[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
 		}
 
-		for (LinkContentsForSearch contents : webpageContents) {
-			String key = contents.getKeywords().toLowerCase();
-			if (key.startsWith(keyword.toLowerCase() + " ")) {
-				key = key.replace(keyword.toLowerCase() + " ", "");
-			}
-			if (!occurencesPerMonth.containsKey(key)) {
-				System.err.println("Failed to save: " + key);
-			}
+		// whether the thread in charge of making queries to the search engine
+		// is done
+		AtomicBoolean SearchDone = new AtomicBoolean(false);
+		// whether the thread in charge of converting webpage contents to word
+		// bags is done
+		List<LinkContentsForSearch> cont = new ArrayList<LinkContentsForSearch>();
 
-			Integer[] resultsPerMonth = occurencesPerMonth.get(key);
-			for (String webpage : contents) {
-				String webpageLower = webpage.toLowerCase();
-				resultsPerMonth[0] += webpageLower.split("januray").length - 1;
-				resultsPerMonth[1] += webpageLower.split("february").length - 1;
-				resultsPerMonth[2] += webpageLower.split("march").length - 1;
-				resultsPerMonth[3] += webpageLower.split("april").length - 1;
-				resultsPerMonth[4] += webpage.split("may").length - 1;
-				resultsPerMonth[5] += webpageLower.split("june").length - 1;
-				resultsPerMonth[6] += webpageLower.split("july").length - 1;
-				resultsPerMonth[7] += webpageLower.split("august").length - 1;
-				resultsPerMonth[8] += webpageLower.split("september").length - 1;
-				resultsPerMonth[9] += webpageLower.split("october").length - 1;
-				resultsPerMonth[10] += webpageLower.split("november").length - 1;
-				resultsPerMonth[11] += webpageLower.split("december").length - 1;
+		// List of threads in charge of getting website contents from links
+		List<LinkContentsThread> listT2 = new ArrayList<LinkContentsThread>();
+		/*
+		 * List of Lists of lists of website links by the query that created
+		 * them. Each List<SearchResults> is used to send links from Thread1
+		 * (the thread in charge of querying the search engine) to one of the
+		 * threads in listT2.
+		 */
+		List<List<SearchResults>> t1Tot2Lists = new ArrayList<List<SearchResults>>();
 
-			}
+		/*
+		 * Each AtomicBoolean in the list corresponds to one of the threads in
+		 * listT2. Each represents whether the thread in listT2 has completed
+		 * execution.
+		 */
+		List<AtomicBoolean> LinksDone = new ArrayList<AtomicBoolean>();
 
+		// for each link-reading thread, as dictated by the method's argument
+		// numOfLinkThreads:
+		for (int x = 0; x < numOfLinkThreads; x++) {
+			// Create the list used to send links from the SearchThread t1 to
+			// one of the threads in listT2.
+			List<SearchResults> res = new ArrayList<SearchResults>();
+			t1Tot2Lists.add(res);
+
+			// Create the AtomicBoolean that will be used to indicated whether
+			// one of the threads in listT2 has completed
+			AtomicBoolean linksDoneBool = new AtomicBoolean(false);
+			LinksDone.add(linksDoneBool);
+
+			// Create a new thread object using the list and boolean from above
+			LinkContentsThread t2 = new LinkContentsThread(res, SearchDone, linksDoneBool, cont);
+			// give it a unique name for debugging
+			t2.setName("_" + x);
+			// Add the thread to listT2
+			listT2.add(t2);
 		}
+
+		SearchThread t1 = new SearchThread(possibleKeywords, search, SearchDone, t1Tot2Lists);
+
+		// Start all of the threads.
+		(new Thread(t1)).start();
+		for (LinkContentsThread t2 : listT2) {
+			(new Thread(t2)).start();
+		}
+		// Wait for the word processing thread to be done placing word bags into
+		// the list named wordBags
+		synchronized (cont) {
+			// System.out.println("synchronized");
+			while (!allTrue(LinksDone)) {
+				// System.out.println("not all links done");
+				if (!cont.isEmpty()) {
+					List<LinkContentsForSearch> webpagesContents = new ArrayList<LinkContentsForSearch>();
+					webpagesContents.addAll(cont);
+					cont.clear();
+
+					for (LinkContentsForSearch contents : webpagesContents) {
+						String key = contents.getKeywords().toLowerCase();
+						if (key.startsWith(keyword.toLowerCase() + " ")) {
+							key = key.replace(keyword.toLowerCase() + " ", "");
+						}
+						if (!occurencesPerMonth.containsKey(key)) {
+							System.err.println("Failed to save: " + key);
+						}
+
+						Integer[] resultsPerMonth = occurencesPerMonth.get(key);
+						for (String webpage : contents) {
+							String webpageLower = webpage.toLowerCase();
+							resultsPerMonth[0] += webpageLower.split("january").length - 1;
+							resultsPerMonth[1] += webpageLower.split("february").length - 1;
+							resultsPerMonth[2] += webpageLower.split("march").length - 1;
+							resultsPerMonth[3] += webpageLower.split("april").length - 1;
+							// here the split is done in upper case to
+							// differentiate "May" from "may"
+							resultsPerMonth[4] += webpage.split("May").length - 1;
+							resultsPerMonth[5] += webpageLower.split("june").length - 1;
+							resultsPerMonth[6] += webpageLower.split("july").length - 1;
+							resultsPerMonth[7] += webpageLower.split("august").length - 1;
+							resultsPerMonth[8] += webpageLower.split("september").length - 1;
+							resultsPerMonth[9] += webpageLower.split("october").length - 1;
+							resultsPerMonth[10] += webpageLower.split("november").length - 1;
+							resultsPerMonth[11] += webpageLower.split("december").length - 1;
+
+						}
+
+					}
+				}
+
+				try {
+					// System.out.println("waiting");
+					cont.wait();
+				} catch (InterruptedException e) {
+					// TODO: Determine behaviour
+					e.printStackTrace();
+				}
+			}
+			System.out.println(LinksDone);
+		}
+
 		List<String> jan = new ArrayList<String>();
 		List<String> feb = new ArrayList<String>();
 		List<String> mar = new ArrayList<String>();
@@ -464,90 +541,6 @@ public class MonthKeywordGenerator {
 			oos.writeObject(this.memoizedLinkContents);
 			oos.close();
 		}
-	}
-
-	/**
-	 * Converts the list of inputs to the open eval {@link examples} into word
-	 * bags using {@link #keyword}.
-	 * 
-	 * @param examples
-	 *            The inputs for which word bags should be generated
-	 * @param numOfLinkThreads
-	 *            The number of {@link LinkContentsThread} to use
-	 * @return a list of word bags, and the arguments used to create them. The
-	 *         arguments may be in lower case.
-	 */
-	private List<LinkContentsForSearch> getLinkContents(List<String> examples, int numOfLinkThreads) {
-		// whether the thread in charge of making queries to the search engine
-		// is done
-		AtomicBoolean SearchDone = new AtomicBoolean(false);
-		// whether the thread in charge of converting webpage contents to word
-		// bags is done
-		List<LinkContentsForSearch> cont = new ArrayList<LinkContentsForSearch>();
-
-		// List of threads in charge of getting website contents from links
-		List<LinkContentsThread> listT2 = new ArrayList<LinkContentsThread>();
-		/*
-		 * List of Lists of lists of website links by the query that created
-		 * them. Each List<SearchResults> is used to send links from Thread1
-		 * (the thread in charge of querying the search engine) to one of the
-		 * threads in listT2.
-		 */
-		List<List<SearchResults>> t1Tot2Lists = new ArrayList<List<SearchResults>>();
-
-		/*
-		 * Each AtomicBoolean in the list corresponds to one of the threads in
-		 * listT2. Each represents whether the thread in listT2 has completed
-		 * execution.
-		 */
-		List<AtomicBoolean> LinksDone = new ArrayList<AtomicBoolean>();
-
-		// for each link-reading thread, as dictated by the method's argument
-		// numOfLinkThreads:
-		for (int x = 0; x < numOfLinkThreads; x++) {
-			// Create the list used to send links from the SearchThread t1 to
-			// one of the threads in listT2.
-			List<SearchResults> res = new ArrayList<SearchResults>();
-			t1Tot2Lists.add(res);
-
-			// Create the AtomicBoolean that will be used to indicated whether
-			// one of the threads in listT2 has completed
-			AtomicBoolean linksDoneBool = new AtomicBoolean(false);
-			LinksDone.add(linksDoneBool);
-
-			// Create a new thread object using the list and boolean from above
-			LinkContentsThread t2 = new LinkContentsThread(res, SearchDone, linksDoneBool, cont);
-			// give it a unique name for debugging
-			t2.setName("_" + x);
-			// Add the thread to listT2
-			listT2.add(t2);
-		}
-
-		SearchThread t1 = new SearchThread(examples, search, SearchDone, t1Tot2Lists);
-
-		// Start all of the threads.
-		(new Thread(t1)).start();
-		for (LinkContentsThread t2 : listT2) {
-			(new Thread(t2)).start();
-		}
-		// Wait for the word processing thread to be done placing word bags into
-		// the list named wordBags
-		synchronized (cont) {
-			// System.out.println("synchronized");
-			while (!allTrue(LinksDone)) {
-				// System.out.println("not all links done");
-				try {
-					// System.out.println("waiting");
-					cont.wait();
-				} catch (InterruptedException e) {
-					// TODO: Determine behaviour
-					e.printStackTrace();
-				}
-			}
-			System.out.println(LinksDone);
-		}
-		// return wordBags, it should be filled by the thread t3
-		return cont;
 	}
 
 	private boolean allTrue(List<AtomicBoolean> linksDone) {
