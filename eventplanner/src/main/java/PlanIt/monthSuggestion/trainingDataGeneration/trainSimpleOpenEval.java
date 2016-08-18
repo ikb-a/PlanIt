@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import edu.toronto.cs.se.ci.utils.searchEngine.GenericSearchEngine;
-import edu.toronto.cs.se.ci.utils.searchEngine.GoogleCSESearchJSON;
 import edu.toronto.cs.se.ci.utils.searchEngine.MemoizingSearch;
 import openEval.MultithreadSimpleOpenEval;
 
@@ -22,7 +21,7 @@ public class trainSimpleOpenEval {
 
 	public static void main(String[] args) throws Exception {
 		GenericSearchEngine search = new MemoizingSearch(FOLDER + "TrainingSearchMemoization.ser",
-				new GoogleCSESearchJSON());
+				new UnBubbleSearchHTML());
 
 		// Words for which the predicate AreRelatedToJanuary(Country, Word)
 		// should return true
