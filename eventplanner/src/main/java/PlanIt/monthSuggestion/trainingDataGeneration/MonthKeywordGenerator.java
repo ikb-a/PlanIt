@@ -96,7 +96,7 @@ public class MonthKeywordGenerator {
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
 
 		GenericSearchEngine searchEngine = new MemoizingSearch(
-				"./src/main/resources/data/monthData/OpenEval/TrainingSearchMemoization.ser", new UnBubbleSearchHTML());
+				"./src/main/resources/data/monthData/OpenEval/TrainingSearchMemoizationDec2016.ser", new UnBubbleSearchHTML());
 		MonthKeywordGenerator bob = new MonthKeywordGenerator("", searchEngine);
 
 		bob.run(Arrays.asList(new String[] { "usa summer", "usa cheese", "usa aeronautics", "usa lego",
@@ -225,8 +225,8 @@ public class MonthKeywordGenerator {
 		// whether the thread in charge of making queries to the search engine
 		// is done
 		AtomicBoolean SearchDone = new AtomicBoolean(false);
-		// whether the thread in charge of converting webpage contents to word
-		// bags is done
+		
+		//Website contents
 		List<LinkContentsForSearch> cont = new ArrayList<LinkContentsForSearch>();
 
 		// List of threads in charge of getting website contents from links
@@ -303,7 +303,13 @@ public class MonthKeywordGenerator {
 							resultsPerMonth[3] += webpageLower.split("april").length - 1;
 							// here the split is done in upper case to
 							// differentiate "May" from "may"
-							resultsPerMonth[4] += webpage.split("May").length - 1;
+							resultsPerMonth[4] += webpage.split("May[^A-Za-z]").length - 1;
+							/*
+							System.out.println("May*****************************************************");
+							String[] matches = webpage.split("May[^A-Za-z]");
+							for (String match : matches) {
+								System.out.println(match + "May");
+							}*/
 							resultsPerMonth[5] += webpageLower.split("june").length - 1;
 							resultsPerMonth[6] += webpageLower.split("july").length - 1;
 							resultsPerMonth[7] += webpageLower.split("august").length - 1;
@@ -311,7 +317,12 @@ public class MonthKeywordGenerator {
 							resultsPerMonth[9] += webpageLower.split("october").length - 1;
 							resultsPerMonth[10] += webpageLower.split("november").length - 1;
 							resultsPerMonth[11] += webpageLower.split("december").length - 1;
-
+							/*
+							System.out.println("Dec*****************************************************");
+							String[] matchesD = webpageLower.split("december");
+							for (String match : matchesD) {
+								System.out.println(match + "december");
+							}*/
 						}
 
 					}
