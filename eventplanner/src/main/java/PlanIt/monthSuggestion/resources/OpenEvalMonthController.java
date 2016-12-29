@@ -23,9 +23,31 @@ import edu.toronto.cs.se.ci.utils.searchEngine.GenericSearchEngine;
 import edu.toronto.cs.se.ci.utils.searchEngine.GoogleCSESearchJSON;
 import openEval.MultithreadSimpleOpenEval;
 
+/**
+ * A singleton class designed to hold 12 OpenEval objects, one for each month of
+ * the year. When asked if an event belongs to a specific month, it uses the
+ * OpenEval to classify each of the keywords as to whether or not they belong to
+ * the month. If most of them do, the month is returned. Else, Unknown is
+ * returned.
+ * 
+ * Search results are memoized for future use. Link Contents are memoized for
+ * future use. Training data in the form of .arff files (containing word bags
+ * and whether or not they relate to the month) must be provided, currently
+ * their location is hard-coded for the sake of simplicity.
+ * 
+ * @author ikba
+ *
+ */
 public class OpenEvalMonthController {
 
+	/**
+	 * The instance of this class
+	 */
 	private static OpenEvalMonthController instance;
+	/**
+	 * The open eval object classifying whether keyword/country pairs belong to
+	 * January
+	 */
 	MultithreadSimpleOpenEval jan;
 	MultithreadSimpleOpenEval feb;
 	MultithreadSimpleOpenEval mar;
@@ -40,8 +62,20 @@ public class OpenEvalMonthController {
 	MultithreadSimpleOpenEval dec;
 	HashMap<String, Integer> completedLinks;
 
+	/**
+	 * Default number of keywords positively classified by the given month's
+	 * openEval required for an event to be classified as related to the given
+	 * month.
+	 */
 	private static final int DEFAULT_THRESHOLD = 1;
+	/**
+	 * Map from a given month, to it's threshold. Default value is
+	 * {@link DEFAULT_THRESHOLD}
+	 */
 	private Map<Month, Integer> thresholds;
+	/**
+	 * location of January .arff training data (word bags and true/false)
+	 */
 	private static final String janFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalJan.arff";
 	private static final String febFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalFeb.arff";
 	private static final String marFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalMar.arff";
@@ -54,27 +88,52 @@ public class OpenEvalMonthController {
 	private static final String octFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalOct.arff";
 	private static final String novFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalNov.arff";
 	private static final String decFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalDec.arff";
+	/**
+	 * Folder at which memoized search results are to be stored
+	 */
 	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/memoization/";
+	/**
+	 * File extension for serialized link contents.
+	 */
 	private static final String fileExtension = ".ser";
+	/**
+	 * Maps from event name and keyword to filename. The filename is that of a
+	 * serialized hashmap from String link name to String link contents. This
+	 * map can be used by the openEval objects.
+	 */
 	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/memoization/linkToFile.ser";
+	/**
+	 * The search engine used. Cannot be changed after an instance of the
+	 * controller exists.
+	 */
 	static GenericSearchEngine search;
 	static boolean verbose = false;
+	/**
+	 * The next available filename. These filenames are used to store memoized
+	 * link contents.
+	 */
 	int currFile;
 
 	private OpenEvalMonthController() {
 		try {
+			// If no search engine has been set by the user, use the default
 			if (search == null) {
 				search = new GoogleCSESearchJSON();
 			}
 
+			// Set all thresholds to default
 			thresholds = new HashMap<Month, Integer>();
 			for (Month m : Month.values()) {
 				thresholds.put(m, DEFAULT_THRESHOLD);
 			}
+
 			if (verbose)
 				System.out.println("Training Jan");
+			// Train the January open eval
 			jan = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(janFile), "January");
+			// Give the open eval a unique suffix to it's name
 			jan.setNameSuffix("Janthreshold");
+			// Set the search engine of the Jan OpenEval
 			jan.setSearch(search);
 			if (verbose)
 				System.out.println("Training Feb");
@@ -144,6 +203,13 @@ public class OpenEvalMonthController {
 
 	}
 
+	/**
+	 * Changes the search engine used from the default to {@code searchEngine}.
+	 * Will throw an IllegalStateException if the instance of
+	 * OpenEvalMonthController already exists.
+	 * 
+	 * @param searchEngine
+	 */
 	public static synchronized void setSearchEngine(GenericSearchEngine searchEngine) {
 		if (instance != null) {
 			throw new IllegalStateException("Cannot change search after an instance has been created");
@@ -151,10 +217,21 @@ public class OpenEvalMonthController {
 		search = searchEngine;
 	}
 
+	/**
+	 * Enables/disables debugging messages.
+	 * 
+	 * @param verb
+	 */
 	public static synchronized void setVerbose(boolean verb) {
 		verbose = verb;
 	}
 
+	/**
+	 * Creates the singleton instance of OpenEvalMonthController. Once called,
+	 * the search engine used cannot be changed.
+	 * 
+	 * @return
+	 */
 	public static synchronized OpenEvalMonthController getInstance() {
 		if (instance == null) {
 			instance = new OpenEvalMonthController();
@@ -162,6 +239,11 @@ public class OpenEvalMonthController {
 		return instance;
 	}
 
+	/**
+	 * Sets a new threshold for {@code m}.
+	 * @param m
+	 * @param threshold
+	 */
 	public synchronized void setCustomThreshold(Month m, int threshold) {
 		assert (m != null);
 		thresholds.put(m, threshold);
@@ -176,15 +258,15 @@ public class OpenEvalMonthController {
 		int filename;
 		if (completedLinks.containsKey(input.getTitle() + openEval.getKeyword())) {
 			filename = completedLinks.get(input.getTitle());
-			if(verbose)
-				System.out.println("load from existing: "+filename);
+			if (verbose)
+				System.out.println("load from existing: " + filename);
 		} else {
 			filename = currFile;
 			completedLinks.put(input.getTitle(), currFile);
 			saveLinksMap();
 			currFile++;
-			if(verbose)
-				System.out.println("Load from new: "+filename);
+			if (verbose)
+				System.out.println("Load from new: " + filename);
 		}
 
 		try {

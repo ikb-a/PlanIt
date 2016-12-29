@@ -20,8 +20,20 @@ import edu.toronto.cs.se.ci.machineLearning.MLToCIContract;
 import edu.toronto.cs.se.ci.machineLearning.util.training.NominalTrainer;
 import edu.toronto.cs.se.ci.utils.searchEngine.MemoizingSearch;
 
+/**
+ * Given working sources and a working and trained
+ * {@link PlanIt.monthSuggestion.resources.OpenEvalMonthController}, as well as
+ * files containing events relating to each month, this program creates training
+ * data for the CI Aggregator.
+ * 
+ * @author ikba
+ *
+ */
 public class TrainCIMLAggregator {
 
+	/**
+	 * Folder at which the files are stored. Hard coded for simplicity.
+	 */
 	public static final String FOLDER = "./src/main/resources/data/monthData/";
 
 	public static void main(String[] args) throws Exception {
@@ -29,8 +41,13 @@ public class TrainCIMLAggregator {
 		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
 
+		// This map is from Month (the desired output of the CI) to an array of
+		// events (example inputs to the CI which should yield the desired
+		// output)
 		Map<String, Event[]> trainingData = new HashMap<String, Event[]>();
 
+		// Extract the January events from a .json file, and place them into the
+		// map of training data
 		EventExtractor extractor = new EventExtractor();
 		Event[] JanuaryEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/1_January.json"));
 		trainingData.put("January", JanuaryEvents);
@@ -103,8 +120,10 @@ public class TrainCIMLAggregator {
 		Contracts.register(new openEvalThresholdSource(Month.November));
 		Contracts.register(new openEvalThresholdSource(Month.December));
 
+		//Create the trainer.
 		NominalTrainer<Event, Month> nt = new NominalTrainer<Event, Month>(
 				new MLToCIContract<Event, Month>(MLMonthSuggestionContract.class));
-		nt.createNominalTrainingData(trainingData, new EnumNominalConverter(), FOLDER + "CI/CITrainingData_Full1.arff");
+		// Use trainer to produce and save training data.
+		nt.createNominalTrainingData(trainingData, new EnumNominalConverter(), FOLDER + "CI/CITrainingData_Full2.arff");
 	}
 }

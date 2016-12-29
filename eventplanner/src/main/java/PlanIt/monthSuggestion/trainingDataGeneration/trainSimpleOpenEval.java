@@ -9,6 +9,14 @@ import edu.toronto.cs.se.ci.utils.searchEngine.MemoizingSearch;
 import openEval.MultithreadSimpleOpenEval;
 
 /**
+ * This program creates the training data for the
+ * {@link PlanIt.monthSuggestion.resources.OpenEvalMonthController}. Given
+ * country/keyword pairs that do/do not belong to each month of the year, it
+ * produces training data (an .arff file containing word bags and true/false as
+ * to whether they relate to the month) for each month, that can be used to
+ * create an OpenEval that will classify future country/keyword pairs as
+ * belonging to the month or not.
+ * 
  * Note: Increasing heap size to 1GB is needed. Use java -Xmx1024m -jar
  * EXECUTABLEJAR.jar
  * 
@@ -17,6 +25,9 @@ import openEval.MultithreadSimpleOpenEval;
  */
 public class trainSimpleOpenEval {
 
+	/**
+	 * The folder in which the 12 .arff files produced will be saved.
+	 */
 	public static final String FOLDER = "./src/main/resources/data/monthData/OpenEval/";
 
 	public static void main(String[] args) throws Exception {
@@ -32,9 +43,9 @@ public class trainSimpleOpenEval {
 				"United Kingdom Tax Season", "United Kingdom Influenza Season", "United Kingdom Turnip",
 				"United Kingdom Winter", "Australia Summer Vacations", "Australia Very Hot",
 				"Australia Ultraviolet Light", "Australia Skin Cancer", "Australia Wet Season",
-				"Australia Tropical Cyclones", "Australia Bushfires", "Australia First Day of Class", "Australia Summer",
-				"Russia Winter", "Brazil First Day of School", "Brazil Summer Vacations", "Brazil Summer",
-				"Brazil Very Hot", "Saudi Arabia Winter", "Saudi Arabia Humid", "South Africa Summer",
+				"Australia Tropical Cyclones", "Australia Bushfires", "Australia First Day of Class",
+				"Australia Summer", "Russia Winter", "Brazil First Day of School", "Brazil Summer Vacations",
+				"Brazil Summer", "Brazil Very Hot", "Saudi Arabia Winter", "Saudi Arabia Humid", "South Africa Summer",
 				"South Africa Rainy", "South Africa Very Hot", "South Africa Tornados" }));
 		// Words for which the predicate AreRelatedToJanuary(Country, Word)
 		// should return false
@@ -110,7 +121,7 @@ public class trainSimpleOpenEval {
 				"South Africa Cape Town Humid", "South Africa Cape Town Rain", "South Africa Tornados",
 				"South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToFeb, wordsNotRelatedToFeb, "February",
-				FOLDER + "OpenEvalFeb.arff", search,FOLDER + "memFeb.ser");
+				FOLDER + "OpenEvalFeb.arff", search, FOLDER + "memFeb.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -150,7 +161,7 @@ public class trainSimpleOpenEval {
 				"South Africa Very Hot", "South Africa Nice temperature", "South Africa Cape Town Humid",
 				"South Africa Cape Town Rain", "South Africa Tornados", "South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToMar, wordsNotRelatedToMar, "March",
-				FOLDER + "OpenEvalMar.arff", search,FOLDER + "memMar.ser");
+				FOLDER + "OpenEvalMar.arff", search, FOLDER + "memMar.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -190,7 +201,7 @@ public class trainSimpleOpenEval {
 				"South Africa Cape Town Humid", "South Africa Cape Town Rain", "South Africa Tornados",
 				"South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToApr, wordsNotRelatedToApr, "April",
-				FOLDER + "OpenEvalApr.arff", search,FOLDER + "memApr.ser");
+				FOLDER + "OpenEvalApr.arff", search, FOLDER + "memApr.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -231,7 +242,7 @@ public class trainSimpleOpenEval {
 				"South Africa Cape Town Humid", "South Africa Cape Town Rain", "South Africa Tornados",
 				"South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToMay, wordsNotRelatedToMay, "May",
-				FOLDER + "OpenEvalMay.arff", search,FOLDER + "memMay.ser");
+				FOLDER + "OpenEvalMay.arff", search, FOLDER + "memMay.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -272,7 +283,7 @@ public class trainSimpleOpenEval {
 				"South Africa Spring", "South Africa Summer", "South Africa Rainy", "South Africa Very Hot",
 				"South Africa Tornados", "South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToJun, wordsNotRelatedToJun, "June",
-				FOLDER + "OpenEvalJun.arff", search,FOLDER + "memJun.ser");
+				FOLDER + "OpenEvalJun.arff", search, FOLDER + "memJun.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -312,7 +323,7 @@ public class trainSimpleOpenEval {
 				"South Africa Spring", "South Africa Summer", "South Africa Rainy", "South Africa Very Hot",
 				"South Africa Tornados", "South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToJul, wordsNotRelatedToJul, "July",
-				FOLDER + "OpenEvalJul.arff", search,FOLDER + "memJul.ser");
+				FOLDER + "OpenEvalJul.arff", search, FOLDER + "memJul.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -353,7 +364,7 @@ public class trainSimpleOpenEval {
 				"South Africa Nice temperature", "South Africa Cape Town Humid", "South Africa Cape Town Rain",
 				"South Africa Tornados", "South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToAug, wordsNotRelatedToAug, "August",
-				FOLDER + "OpenEvalAug.arff", search,FOLDER + "memAug.ser");
+				FOLDER + "OpenEvalAug.arff", search, FOLDER + "memAug.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -394,7 +405,7 @@ public class trainSimpleOpenEval {
 				"South Africa Cape Town Humid", "South Africa Cape Town Rain", "South Africa Tornados",
 				"South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToSep, wordsNotRelatedToSep, "September",
-				FOLDER + "OpenEvalSep.arff", search,FOLDER + "memSep.ser");
+				FOLDER + "OpenEvalSep.arff", search, FOLDER + "memSep.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -434,7 +445,7 @@ public class trainSimpleOpenEval {
 				"South Africa Nice temperature", "South Africa Cape Town Humid", "South Africa Cape Town Rain",
 				"South Africa Tornados", "South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToOct, wordsNotRelatedToOct, "October",
-				FOLDER + "OpenEvalOct.arff", search,FOLDER + "memOct.ser");
+				FOLDER + "OpenEvalOct.arff", search, FOLDER + "memOct.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
@@ -474,16 +485,16 @@ public class trainSimpleOpenEval {
 				"South Africa Winter", "South Africa Summer", "South Africa Rainy", "South Africa Very Hot",
 				"South Africa Nice temperature", "South Africa Cape Town Humid", "South Africa Cape Town Rain" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToNov, wordsNotRelatedToNov, "November",
-				FOLDER + "OpenEvalNov.arff", search,FOLDER + "memNov.ser");
+				FOLDER + "OpenEvalNov.arff", search, FOLDER + "memNov.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
 		List<String> wordsRelatedToDec = new ArrayList<String>(Arrays.asList(new String[] { "United States Winter",
 				"China Winter", "Japan Winter", "Germany Winter", "United Kingdom Turnip", "United Kingdom Winter",
-				"Australia Wet Season", "Australia Tropical Cyclones", "Australia Last Day of Class", "Australia Summer",
-				"Russia Winter", "Brazil Last Day of School", "Brazil Summer Vacations", "Brazil Summer",
-				"Brazil Very Hot", "Brazil Rainy", "Saudi Arabia Winter", "Saudi Arabia Humid", "South Africa Summer",
-				"South Africa Rainy", "South Africa Very Hot", "South Africa Tornados" }));
+				"Australia Wet Season", "Australia Tropical Cyclones", "Australia Last Day of Class",
+				"Australia Summer", "Russia Winter", "Brazil Last Day of School", "Brazil Summer Vacations",
+				"Brazil Summer", "Brazil Very Hot", "Brazil Rainy", "Saudi Arabia Winter", "Saudi Arabia Humid",
+				"South Africa Summer", "South Africa Rainy", "South Africa Very Hot", "South Africa Tornados" }));
 		List<String> wordsNotRelatedToDec = new ArrayList<String>(Arrays.asList(new String[] { "United States Snow",
 				"United States Cold", "United States Flu", "United States Back to school", "United States very cold",
 				"United States vacations", "United States Beach", "United States Outdoors", "United States Torandos",
@@ -514,7 +525,7 @@ public class trainSimpleOpenEval {
 				"South Africa Winter", "South Africa Spring", "South Africa Nice temperature",
 				"South Africa Cape Town Humid", "South Africa Cape Town Rain", "South Africa Tax Season" }));
 		eval1 = new MultithreadSimpleOpenEval(wordsRelatedToDec, wordsNotRelatedToDec, "December",
-				FOLDER + "OpenEvalDec.arff", search,FOLDER + "memDec.ser");
+				FOLDER + "OpenEvalDec.arff", search, FOLDER + "memDec.ser");
 		eval1.saveMemoizedContents();
 		eval1.setMemoizeLinkContentsOff();
 
