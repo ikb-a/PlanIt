@@ -1,7 +1,14 @@
 package PlanIt.monthSuggestion.sources;
 
 import java.io.BufferedReader;
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,13 +24,29 @@ import org.json.JSONObject;
 import Planit.dataObjects.Address;
 import Planit.dataObjects.Event;
 import Planit.dataObjects.Venue;
+import Planit.dataObjects.util.EventExtractor;
 import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.machineLearning.MLBasicSource;
 
+/*
+ * API now limited to 1000 calls per month on historical data only. Therefore results
+ * will be memoized to a file to reduce number of API calls.
+ */
+//TODO: Change memoization from storing API output to storing Holiday list
 public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSuggestionContract {
+	/**
+	 * Map from country name to ISO code
+	 */
 	private static Map<String, String> nameToISOCode;
+	/**
+	 * Whether or not the source should save previous API calls.
+	 */
 	boolean memoizeHolidays = true;
+	/**
+	 * The path at which to save calls, if calls are being saved.
+	 */
+	String memoizedDataPath = "";
 	Map<String, String> memoizedHolidaysByCountry;
 
 	public Holiday() {
@@ -277,9 +300,21 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		}
 	}
 
-	public static void main(String[] args) throws UnknownException {
+	/**
+	 * Quick demo/check that the source is working.
+	 * 
+	 * @param args
+	 * @throws Exception
+	 */
+	public static void main(String[] args) throws Exception {
 		Holiday bob = new Holiday();
-		System.out.println(bob.getResponse(null));
+		bob.loadSavedHoliday("./src/main/resources/data/monthData/HolidayData/Holidays.ser");
+		String CIFile = "./src/main/resources/data/monthData/CI/1_January.json";
+		// int index = Integer.parseInt(args[0]);
+		EventExtractor extractor = new EventExtractor();
+		Event[] events = extractor.extractEventsFromJsonFile(new File(CIFile));
+
+		System.out.println(bob.getResponse(events[0]));
 	}
 
 	@Override
@@ -324,6 +359,13 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		}
 	}
 
+	/**
+	 * Converts API output to Holiday objects
+	 * 
+	 * @param nationalHolidaysString
+	 * @return
+	 * @throws UnknownException
+	 */
 	private List<HolidayEvent> stringToHolidays(String nationalHolidaysString) throws UnknownException {
 		try {
 			List<HolidayEvent> result = new ArrayList<HolidayEvent>();
@@ -346,6 +388,14 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		}
 	}
 
+	/**
+	 * If the holidays of this country were memoized, the saved results are
+	 * checked. Otherwise a call to the HolidayAPI is made.
+	 * 
+	 * @param country
+	 * @return
+	 * @throws UnknownException
+	 */
 	private String getHolidaysString(String country) throws UnknownException {
 		if (memoizeHolidays) {
 			if (memoizedHolidaysByCountry.containsKey(country)) {
@@ -355,7 +405,8 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 
 		try {
 			Calendar calendar = Calendar.getInstance();
-			int year = calendar.get(Calendar.YEAR);
+			// HolidayAPI free only allows access to historical data
+			int year = calendar.get(Calendar.YEAR) - 1;
 			String urlString = "https://holidayapi.com/v1/holidays?key=ac6e9126-4fd4-4bee-aea4-914d7a8ba0d8&country=%s&year="
 					+ year;
 
@@ -379,6 +430,17 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 
 			if (memoizeHolidays) {
 				memoizedHolidaysByCountry.put(country, result);
+
+				if (!memoizedDataPath.isEmpty()) {
+					try (FileOutputStream fos = new FileOutputStream(memoizedDataPath)) {
+						ObjectOutputStream oos = new ObjectOutputStream(fos);
+						oos.writeObject(memoizedHolidaysByCountry);
+						oos.close();
+					} catch (IOException e) {
+						// Should not happen
+						throw new RuntimeException(e);
+					}
+				}
 			}
 
 			return result;
@@ -392,7 +454,42 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		// TODO Add values (time)
 		return new Expenditure[] {};
 	}
+	
+	/**
+	 * Load a serialized map from country name to HolidayAPI output into
+	 * memory. From now on will automatically save new API calls to this
+	 * location.
+	 * 
+	 * @param filePath
+	 * @throws IOException
+	 * @throws ClassNotFoundException
+	 */
+	public void loadSavedHoliday(String filePath) throws IOException, ClassNotFoundException {
+		File f = new File(filePath);
+		if (!f.exists()) {
+			f.createNewFile();
+			return;
+		}
 
+		try (FileInputStream fis = new FileInputStream(filePath)) {
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			@SuppressWarnings("unchecked")
+			HashMap<String, String> result = (HashMap<String, String>) ois.readObject();
+			ois.close();
+			memoizedHolidaysByCountry = result;
+		} catch (EOFException e) {
+			System.err.println(e);
+		}
+		memoizedDataPath = filePath;
+		memoizeHolidays = true;
+	}
+
+	/**
+	 * Stores the name and month of a holiday
+	 * 
+	 * @author ikba
+	 *
+	 */
 	private class HolidayEvent {
 		final String name;
 		final Month month;
