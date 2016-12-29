@@ -46,16 +46,23 @@ public class UnBubbleSearchSingleton implements GenericSearchEngine {
 	private static final long RAND_SLEEP = 2000;
 	int currBrowser = 0;
 
+	/**
+	 * Quick test/example of using the search.
+	 * Disabling the HtmlUnit messages is not required, but heavily recomended.
+	 */
 	public static void main(String[] args) throws IOException {
-		// disable annoying HTMLUnit messages produced by UnBubble
+		// disable annoying HTMLUnit messages produced by HtmlUnit
 		java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
 		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
 
 		UnBubbleSearchSingleton bob = UnBubbleSearchSingleton.getInstance();
-		System.out.println(bob.search("99 little bugs in the code"));
+		System.out.println(bob.search("The Lego Batman Movie"));
 	}
 
+	/**
+	 * Returns the singleton instance of UnBubbleSearch
+	 */
 	public static UnBubbleSearchSingleton getInstance() {
 		if (instance == null) {
 			instance = new UnBubbleSearchSingleton();
@@ -89,7 +96,8 @@ public class UnBubbleSearchSingleton implements GenericSearchEngine {
 			throws FailingHttpStatusCodeException, MalformedURLException, IOException {
 		String stringURL = String.format(BASE_URL, URLEncoder.encode(searchString, CHARSET), n);
 		List<BrowserVersion> browsers = new ArrayList<BrowserVersion>(
-				Arrays.asList(new BrowserVersion[] { BrowserVersion.INTERNET_EXPLORER_11, BrowserVersion.FIREFOX_38,
+				//BrowserVersion.INTERNET_EXPLORER_11,
+				Arrays.asList(new BrowserVersion[] {  BrowserVersion.FIREFOX_38,
 						BrowserVersion.INTERNET_EXPLORER_8, BrowserVersion.CHROME }));
 		webClient.close();
 		// int browser = (int) (Math.random() * (browsers.size() - 1));
@@ -210,6 +218,8 @@ public class UnBubbleSearchSingleton implements GenericSearchEngine {
 				return search(searchString.toLowerCase(), pageNumber);
 			} else if (HTMLCODE == 429) {
 				System.out.println("!!!CODE 429 USER MUST UNLOCK!!!");
+				System.out.println(e);
+				System.out.println("Once unlocked, double tap ENTER");
 				Scanner sc = new Scanner(System.in);
 				sc.nextLine();
 				sc.nextLine();

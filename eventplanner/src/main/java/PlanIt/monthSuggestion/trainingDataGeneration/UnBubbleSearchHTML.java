@@ -42,7 +42,7 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 	private boolean lazyLinkDiscrimination = true;
 	private static final long MIN_SLEEP = 5000;
 	private static final long RAND_SLEEP = 2000;
-	int currBrowser = 0;
+	int currBrowser = -1;
 
 	public static void main(String[] args) throws FailingHttpStatusCodeException, MalformedURLException, IOException {
 		// disable annoying HTMLUnit messages produced by UnBubble
@@ -53,7 +53,7 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 		UnBubbleSearchHTML bob = new UnBubbleSearchHTML();
 		// HtmlPage page = bob.goToNthPage("Lego", 1);
 		// System.out.println(page.asText());
-		System.out.println(bob.search("star wars facebook"));
+		System.out.println(bob.search("ksp danny"));
 	}
 
 	public UnBubbleSearchHTML() {
@@ -85,10 +85,16 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 				Arrays.asList(new BrowserVersion[] { BrowserVersion.INTERNET_EXPLORER_11, BrowserVersion.FIREFOX_38,
 						BrowserVersion.INTERNET_EXPLORER_8, BrowserVersion.CHROME }));
 		webClient.close();
+		if (this.currBrowser == -1) {
+			this.currBrowser = (int) (Math.random() * (browsers.size() - 1));
+
+		}
 		// int browser = (int) (Math.random() * (browsers.size() - 1));
+
 		int browser = this.currBrowser;
 		if (verbose) {
 			System.out.println(browsers.get(browser));
+			System.out.println(browsers.get(browser).getUserAgent());
 		}
 		webClient = new WebClient(browsers.get(browser));
 		this.currBrowser++;
@@ -203,6 +209,11 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 				return search(searchString.toLowerCase(), pageNumber);
 			} else if (HTMLCODE == 429) {
 				System.out.println("!!!CODE 429 USER MUST UNLOCK!!!");
+				System.out.println(e);
+				System.out.println(webClient.getBrowserVersion());
+				System.out.println(webClient.getBrowserVersion().getUserAgent());
+				System.out.println(searchString);
+				System.out.println("Once unlocked, double tap ENTER");
 				Scanner sc = new Scanner(System.in);
 				sc.nextLine();
 				sc.nextLine();
