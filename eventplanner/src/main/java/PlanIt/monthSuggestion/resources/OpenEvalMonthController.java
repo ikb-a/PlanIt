@@ -91,7 +91,7 @@ public class OpenEvalMonthController {
 	/**
 	 * Folder at which memoized search results are to be stored
 	 */
-	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/memoization/";
+	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016/";
 	/**
 	 * File extension for serialized link contents.
 	 */
@@ -101,7 +101,7 @@ public class OpenEvalMonthController {
 	 * serialized hashmap from String link name to String link contents. This
 	 * map can be used by the openEval objects.
 	 */
-	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/memoization/linkToFile.ser";
+	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016/linkToFile.ser";
 	/**
 	 * The search engine used. Cannot be changed after an instance of the
 	 * controller exists.
@@ -257,16 +257,16 @@ public class OpenEvalMonthController {
 		MultithreadSimpleOpenEval openEval = getEvalForMonth(month);
 		int filename;
 		if (completedLinks.containsKey(input.getTitle() + openEval.getKeyword())) {
-			filename = completedLinks.get(input.getTitle());
+			filename = completedLinks.get(input.getTitle() + openEval.getKeyword());
 			if (verbose)
-				System.out.println("load from existing: " + filename);
+				System.out.println("load from existing: " + memoizationFolder + filename + fileExtension);
 		} else {
 			filename = currFile;
-			completedLinks.put(input.getTitle(), currFile);
-			saveLinksMap();
+			completedLinks.put(input.getTitle() + openEval.getKeyword(), currFile);
+			//saveLinksMap();
 			currFile++;
 			if (verbose)
-				System.out.println("Load from new: " + filename);
+				System.out.println("Create new: " + memoizationFolder + filename + fileExtension);
 		}
 
 		try {
