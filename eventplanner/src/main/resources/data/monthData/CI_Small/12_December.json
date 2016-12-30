@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Christmas",
+	"description" : "Annual festival commemorating the birth of Jesus Christ observed most commonly on December 25 as a religious and cultural celebration among billions of people around the world.",
+	"keyWords":["Jesus Christ", "Annual festival", "December 25"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}

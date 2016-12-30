@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Halloween Treat Tricks Masks Candy Costumes",
+	"description" : "Is a celebration observed in a number of countries on 31 October, the eve of the Western Christian feast of All Hallows' Day. It begins the three-day observance of Allhallowtide,[9] the time in the liturgical year dedicated to remembering the dead, including saints (hallows), martyrs, and all the faithful departed.  It is widely believed that many Halloween traditions originated from the ancient Celtic harvest festival Samhain, and that this Gaelic observance was Christianized by the early Church",
+	"keyWords":[ "Gaelic observance", "Western Christian feast", "Allhallowtide", "31 October", "Halloween"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}

@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Easter Jesus Resurrection",
+	"description" : "Easter also called Pascha or Resurrection Sunday, is a festival and holiday celebrating the resurrection of Jesus Christ from the dead, described in the New Testament as having occurred on the third day of his burial after his crucifixion by Romans at Calvary c. 30 AD. It is the culmination of the Passion of Christ, preceded by Lent (or Great Lent), a forty-day period of fasting, prayer, and penance.",
+	"keyWords":["Resurrection Sunday", "end of Lent", "New Testament", "forty-day period", "Jesus Christ", "30 AD"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}

@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "The US Open Tennis Tournament",
+	"description" : "Shortly after Rio, the attention of the tennis world will shift to New York City, as the world�s best tennis players face off as they try to win the U.S. Open. This tennis tournament is the fourth and final tennis major comprising the Grand Slam each year, and the only one on U.S. Soil. Familiar names will take the court and battle to be crowned the Grand Slam champion, such as Serena Williams, Roger Federer, and Novak Djokovic. ",
+	"keyWords":["tennis", "New York City",  "Roger Federer",   "tennis tournament", "Novak Djokovic", "Serena Williams", "Grand Slam"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}

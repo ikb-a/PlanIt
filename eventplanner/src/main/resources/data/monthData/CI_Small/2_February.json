@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Super Bowl 50 Football Game",
+	"description" : "The Super Bowl isn�t just another football game. It is the football game that brings an entire nation together for a few hours of friendly entertainment, trash talk, and some pretty creative commercials. This year celebrates the 50th time the Super Bowl will be played, making it a game to remember. If you have never attended the game in person, this would be the year of years to attend, especially in the new Levi�s Stadium, which was built to incorporate your phones and social media during the game. Don�t just watch the Super Bowl this year, be a part of it. ",
+	"keyWords":["Super Bowl",   "football game",  "Levi's Stadium"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}

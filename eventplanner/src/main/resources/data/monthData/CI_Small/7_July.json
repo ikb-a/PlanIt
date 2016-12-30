@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Independence Day",
+	"description" : "Celebrates the signing of the Declaration of Independence from British rule, also called the Fourth of July or simply The Fourth. Fireworks celebration are held in many cities throughout the nation. Boston, Massachusetts is famous for its Boston Pops Fireworks Spectacular with music and fireworks",
+	"keyWords":["British rule", "Boston Pops Fireworks Spectacular", "Fireworks celebration", "Independence Day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}]
+}

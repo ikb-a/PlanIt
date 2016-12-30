@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Spring Break School Vacation",
+	"description" : "Spring break is a U.S. phenomenon and an academic tradition which started in the United States and is observed in some other western countries. Spring break is also a vacational period in early spring at universities and schools",
+	"keyWords":["spring", "United States", "vacational period"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}

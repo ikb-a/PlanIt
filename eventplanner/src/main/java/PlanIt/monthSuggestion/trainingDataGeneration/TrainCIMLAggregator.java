@@ -49,40 +49,40 @@ public class TrainCIMLAggregator {
 		// Extract the January events from a .json file, and place them into the
 		// map of training data
 		EventExtractor extractor = new EventExtractor();
-		Event[] JanuaryEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/1_January.json"));
+		Event[] JanuaryEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/1_January.json"));
 		trainingData.put("January", JanuaryEvents);
 
-		Event[] FebruaryEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/2_February.json"));
+		Event[] FebruaryEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/2_February.json"));
 		trainingData.put("February", FebruaryEvents);
 
-		Event[] MarchEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/3_March.json"));
+		Event[] MarchEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/3_March.json"));
 		trainingData.put("March", MarchEvents);
 
-		Event[] AprilEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/4_April.json"));
+		Event[] AprilEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/4_April.json"));
 		trainingData.put("April", AprilEvents);
 
-		Event[] MayEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/5_May.json"));
+		Event[] MayEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/5_May.json"));
 		trainingData.put("May", MayEvents);
 
-		Event[] JuneEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/6_June.json"));
+		Event[] JuneEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/6_June.json"));
 		trainingData.put("June", JuneEvents);
 
-		Event[] JulyEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/7_July.json"));
+		Event[] JulyEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/7_July.json"));
 		trainingData.put("July", JulyEvents);
 
-		Event[] AugustEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/8_August.json"));
+		Event[] AugustEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/8_August.json"));
 		trainingData.put("August", AugustEvents);
 
-		Event[] SeptemberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/9_September.json"));
+		Event[] SeptemberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/9_September.json"));
 		trainingData.put("September", SeptemberEvents);
 
-		Event[] OctoberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/10_October.json"));
+		Event[] OctoberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/10_October.json"));
 		trainingData.put("October", OctoberEvents);
 
-		Event[] NovemberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/11_November.json"));
+		Event[] NovemberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/11_November.json"));
 		trainingData.put("November", NovemberEvents);
 
-		Event[] DecemberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI/12_December.json"));
+		Event[] DecemberEvents = extractor.extractEventsFromJsonFile(new File(FOLDER + "CI_Small/12_December.json"));
 		trainingData.put("December", DecemberEvents);
 
 		extractor = null;
@@ -101,11 +101,12 @@ public class TrainCIMLAggregator {
 		// month with third best temperature
 		Contracts.register(new Temperature(3));
 
-		Contracts.register(new Holiday());
+		Holiday h = new Holiday();
+		h.loadSavedHoliday("./src/main/resources/data/monthData/HolidayData/Holidays.ser");
+		Contracts.register(h);
 
-		// TODO: Use correct search engine
-		OpenEvalMonthController
-				.setSearchEngine(new MemoizingSearch(FOLDER + "CI/memoizedSearch.ser", new UnBubbleSearchHTML()));
+		OpenEvalMonthController.setSearchEngine(
+				new MemoizingSearch(FOLDER + "CI/memoizedSearchCITrainDec2016_Small.ser", new UnBubbleSearchHTML()));
 		OpenEvalMonthController.setVerbose(true);
 		Contracts.register(new openEvalThresholdSource(Month.January));
 		Contracts.register(new openEvalThresholdSource(Month.February));
@@ -120,10 +121,11 @@ public class TrainCIMLAggregator {
 		Contracts.register(new openEvalThresholdSource(Month.November));
 		Contracts.register(new openEvalThresholdSource(Month.December));
 
-		//Create the trainer.
+		// Create the trainer.
 		NominalTrainer<Event, Month> nt = new NominalTrainer<Event, Month>(
 				new MLToCIContract<Event, Month>(MLMonthSuggestionContract.class));
 		// Use trainer to produce and save training data.
-		nt.createNominalTrainingData(trainingData, new EnumNominalConverter(), FOLDER + "CI/CITrainingData_Full2.arff");
+		nt.createNominalTrainingData(trainingData, new EnumNominalConverter(),
+				FOLDER + "CI/CITrainingData_Full_Small.arff");
 	}
 }

@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Labor Day",
+	"description" : "Celebrates the achievements of workers and the labor movement; marks the unofficial end of the summer season.",
+	"keyWords":["end of summer season", "labor movement", "Labour day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}

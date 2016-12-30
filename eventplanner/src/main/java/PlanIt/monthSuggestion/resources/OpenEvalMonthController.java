@@ -91,7 +91,7 @@ public class OpenEvalMonthController {
 	/**
 	 * Folder at which memoized search results are to be stored
 	 */
-	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016/";
+	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016_Small/";
 	/**
 	 * File extension for serialized link contents.
 	 */
@@ -101,13 +101,14 @@ public class OpenEvalMonthController {
 	 * serialized hashmap from String link name to String link contents. This
 	 * map can be used by the openEval objects.
 	 */
-	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016/linkToFile.ser";
+	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016_Small/linkToFile.ser";
 	/**
 	 * The search engine used. Cannot be changed after an instance of the
 	 * controller exists.
 	 */
 	static GenericSearchEngine search;
 	static boolean verbose = false;
+	static boolean verboseOpenEval=true;
 	/**
 	 * The next available filename. These filenames are used to store memoized
 	 * link contents.
@@ -194,6 +195,21 @@ public class OpenEvalMonthController {
 				System.out.println("Loading links map");
 			completedLinks = loadLinkToFilename();
 			currFile = completedLinks.size();
+			
+			if(verboseOpenEval){
+				jan.setVerbose(true);
+				feb.setVerbose(true);
+				mar.setVerbose(true);
+				apr.setVerbose(true);
+				may.setVerbose(true);
+				jun.setVerbose(true);
+				jul.setVerbose(true);
+				aug.setVerbose(true);
+				sep.setVerbose(true);
+				oct.setVerbose(true);
+				nov.setVerbose(true);
+				dec.setVerbose(true);
+			}
 
 			System.out.println("Controller setup done");
 

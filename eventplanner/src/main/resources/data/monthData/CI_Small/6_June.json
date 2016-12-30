@@ -1,0 +1,13 @@
+{
+"events" : [
+	{
+	"title" : "Father's Day",
+	"description" : "Is a celebration honoring fathers and celebrating fatherhood, paternal bonds, and the influence of fathers in society. The tradition was said to be started from a memorial service held for a large group of men who died in a mining accident in Monongah, West Virginia in 1907. It was first proposed by Sonora Dodd of Spokane, Washington in 1909. It is currently celebrated in the United States annually on the third Sunday in June.",
+	"keyWords":["Monongah West Virginia", "Sonora Dodd", "Father's day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}	]
+}
