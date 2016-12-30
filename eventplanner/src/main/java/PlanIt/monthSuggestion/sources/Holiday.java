@@ -331,7 +331,20 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 			definedKeywords = new ArrayList<String>();
 		} else {
 			definedKeywords = new ArrayList<String>(Arrays.asList(definedKeywordsArray));
-			definedKeywords.replaceAll((String a) -> a.toLowerCase());
+			//definedKeywords.replaceAll((String a) -> a.toLowerCase());
+			int nulls=0;
+			for(String a:definedKeywords){
+				if(a==null){
+					nulls++;
+				}
+			}
+			while(nulls!=0){
+				definedKeywords.remove(null);
+				nulls--;
+			}
+			for(int i =0; i<definedKeywords.size();i++){
+				definedKeywords.set(i, definedKeywords.get(i).toLowerCase());
+			}
 		}
 
 		String nationalHolidaysString = getHolidaysString(country);
