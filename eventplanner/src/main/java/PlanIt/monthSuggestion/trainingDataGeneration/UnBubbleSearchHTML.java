@@ -32,6 +32,13 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 	public static final String CHARSET = "UTF-8";
 	private static List<String> ignoreText;
 	private static List<Pattern> ignorePattern;
+	/**
+	 * Currently a memory leak (scanner is never closed). Adding a static
+	 * scanner is just a quick fix to a bug were after receiving a 429 for
+	 * the second time, System.in would already be closed due to the scanner
+	 * having been closed.
+	 */
+	private static Scanner sc = null;
 	private Pattern resultsPattern;
 	private boolean verbose = false;
 	/**
@@ -72,6 +79,10 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 					Pattern.compile("\\d{2}"), Pattern.compile("\\d{3}"), Pattern.compile("\\d{4}"),
 					Pattern.compile(".*Support Unbubble.*"), Pattern.compile("Search at .*"), Pattern.compile("next.*"),
 					Pattern.compile(".*Plugin.*") }));
+
+		}
+		if(sc==null){
+			sc = new Scanner(System.in);
 
 		}
 		webClient = new WebClient();
@@ -208,16 +219,14 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 				}
 				return search(searchString.toLowerCase(), pageNumber);
 			} else if (HTMLCODE == 429) {
-				System.out.println("!!!CODE 429 USER MUST UNLOCK!!!");
+				System.err.println("!!!CODE 429 USER MUST UNLOCK!!!");
 				System.out.println(e);
 				System.out.println(webClient.getBrowserVersion());
 				System.out.println(webClient.getBrowserVersion().getUserAgent());
 				System.out.println(searchString);
 				System.out.println("Once unlocked, double tap ENTER");
-				Scanner sc = new Scanner(System.in);
 				sc.nextLine();
 				sc.nextLine();
-				sc.close();
 				return search(searchString.toLowerCase(), pageNumber);
 			}
 			return new SearchResults(0, new ArrayList<SearchResult>(), searchString, pageNumber);
