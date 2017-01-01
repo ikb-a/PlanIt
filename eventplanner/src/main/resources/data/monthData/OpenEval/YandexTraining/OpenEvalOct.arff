@@ -1,0 +1,560 @@
+@relation posOrNegWordBags
+
+@attribute corpus string
+@attribute Class_Attribute_For_SimpleOpenEval {true,false}
+
+@data
+'bucharest romania isdef 07 - 08 2016 - moscow russia avangate sponsored isdef 2016 7-8 2016 moscow dreamforce 04 - 07 2016 - san francisco america avangate attended dreamforce 2016 4-7 san francisco imworld 05 - ',true
+'heat humidity 1818 mm monthly rainfall 44 moderate uv index average maximum daytime 19 66 usually 7 hours bright sunshine day ',true
+'attractions won\'t crowded summer schools month september november fall holidays holidays mid-autumn festival ',true
+'crowded summer schools month september november fall holidays holidays mid-autumn festival tribute ',true
+'canton fair 2013 - 114th import export fair 2013 - chinaexhibition com sourcing suppliers manufacturers taiwan ',true
+'organizer trade city trade venue expired trade business home trade calendar canton fair 2013 - 114th import export fair 2013 canton fair 2013 - ',true
+'city trade venue expired trade business home trade calendar canton fair 2013 - 114th import export fair 2013 canton fair 2013 - ',true
+'venue expired trade business home trade calendar canton fair 2013 - 114th import export fair 2013 canton fair 2013 - 114th import ',true
+'expired trade business home trade calendar canton fair 2013 - 114th import export fair 2013 canton fair 2013 - 114th import export fair 2013 fields required ',true
+'business home trade calendar canton fair 2013 - 114th import export fair 2013 canton fair 2013 - 114th import export fair 2013 fields required ',true
+'2013 - 114th import export fair 2013 canton fair 2013 - 114th import export fair 2013 fields required receive ',true
+'trade date 2013 10 15 - 2013 11 04 expired event\'s profile 114th import export fair canton fair 2013 canton fair 2013 114th canton fair canton fair 2013 session announced held ',true
+'event\'s profile 114th import export fair canton fair 2013 canton fair 2013 114th canton fair canton fair 2013 session announced held import export fair pazhou complex guangzhou 15 november 4 2013 canton ',true
+'canton fair 2013 canton fair 2013 114th canton fair canton fair 2013 session announced held import export fair pazhou complex guangzhou 15 november 4 2013 canton fair import export ',true
+'session announced held import export fair pazhou complex guangzhou 15 november 4 2013 canton fair import export fair held biannually guangzhou spring history 55 1957 2013 canton fair welcome ',true
+'2013 canton fair welcome 114th anniversary 114th canton fair canton fair 2013 session announced held import export fair pazhou complex guangzhou 15 november 4 2013 can\'t miss 114th canton fair canton fair ',true
+'canton fair 2014 - 116th import export fair 2014 - chinaexhibition com sourcing suppliers manufacturers taiwan ',true
+'organizer trade city trade venue expired trade business home trade calendar canton fair 2014 - 116th import export fair 2014 canton fair 2014 - ',true
+'city trade venue expired trade business home trade calendar canton fair 2014 - 116th import export fair 2014 canton fair 2014 - ',true
+'venue expired trade business home trade calendar canton fair 2014 - 116th import export fair 2014 canton fair 2014 - 116th import ',true
+'expired trade business home trade calendar canton fair 2014 - 116th import export fair 2014 canton fair 2014 - 116th import export fair 2014 fields required ',true
+'business home trade calendar canton fair 2014 - 116th import export fair 2014 canton fair 2014 - 116th import export fair 2014 fields required ',true
+'2014 - 116th import export fair 2014 canton fair 2014 - 116th import export fair 2014 fields required receive ',true
+'trade date 2014 10 15 - 2014 11 04 expired event\'s profile 116th import export fair 2014 canton fair 2014 canton fair 117 import export fair 2015 116th import ',true
+'04 expired event\'s profile 116th import export fair 2014 canton fair 2014 canton fair 117 import export fair 2015 116th import export fair 2014 canton fair ',true
+'canton fair 117 import export fair 2015 116th import export fair 2014 canton fair 2014 edition organized cftc - foreign trade centre ',true
+'export fair 2015 116th import export fair 2014 canton fair 2014 edition organized cftc - foreign trade centre 15 2014 november 4 2014 ',true
+'export fair 2015 116th import export fair 2014 canton fair 2014 edition organized cftc - foreign trade centre 15 2014 november 4 2014 import export fair pazhou complex guangzhou ',true
+'exhibit variety broadest distribution overseas buyers business turnover date announced canton fair 2014 phase 15th-19th 2014 9 30-18 00 phase 23rd-27th 2014 9 30-18 ',true
+'trail series bloomingtonmn mn mapmyrun mapmyrun training workouts training plans nutrition calorie calculator routes routes create route route ',true
+'city challenges blog shop log sign routes route route details trail series distance 5 84 kilometers climb 39 ft begins bloomingtonmn mn created sam rush description 5 84 km route bloomingtonmn mn ',true
+'festivals june festivals july festivals august festivals september festivals festivals november festivals december festivals zuiki festival 1-5 kitano tenmangu kyoto harvest festival mikoshi portable shrines bedecked zuiki taro stems nihonmatsu lantern festival ',true
+'festivals july festivals august festivals september festivals festivals november festivals december festivals zuiki festival 1-5 kitano tenmangu kyoto harvest festival mikoshi portable shrines bedecked zuiki taro stems nihonmatsu lantern festival ',true
+'festivals august festivals september festivals festivals november festivals december festivals zuiki festival 1-5 kitano tenmangu kyoto harvest festival mikoshi portable shrines bedecked zuiki taro stems nihonmatsu lantern festival ',true
+'festivals august festivals september festivals festivals november festivals december festivals zuiki festival 1-5 kitano tenmangu kyoto harvest festival mikoshi portable shrines bedecked zuiki taro stems nihonmatsu lantern festival ',true
+'canton fair 2016 - 120th import export fair 2016 - chinaexhibition com sourcing suppliers manufacturers taiwan ',true
+'organizer trade city trade venue expired trade business home trade calendar canton fair 2016 - 120th import export fair 2016 canton fair 2016 - ',true
+'city trade venue expired trade business home trade calendar canton fair 2016 - 120th import export fair 2016 canton fair 2016 - ',true
+'venue expired trade business home trade calendar canton fair 2016 - 120th import export fair 2016 canton fair 2016 - 120th import ',true
+'expired trade business home trade calendar canton fair 2016 - 120th import export fair 2016 canton fair 2016 - 120th import export fair 2016 fields required ',true
+'business home trade calendar canton fair 2016 - 120th import export fair 2016 canton fair 2016 - 120th import export fair 2016 fields required ',true
+'2016 - 120th import export fair 2016 canton fair 2016 - 120th import export fair 2016 fields required receive ',true
+'date 2016 10 15 - 2016 11 04 expired event\'s profile canton fair 2016 120th import export fair 2016 cftc - foreign trade centre organise ',true
+'canton fair 2016 120th import export fair 2016 cftc - foreign trade centre organise canton fair 2016 - 120th import export fair 2016 import export fair ',true
+'fair 2016 cftc - foreign trade centre organise canton fair 2016 - 120th import export fair 2016 import export fair pazhou complex guangzhou ',true
+'official website canton fair 2016 - 120th import export fair 2016 guangzhou official website canton fair 2016 ',true
+'official website canton fair 2016 - 120th import export fair 2016 guangzhou official website canton fair 2016 - 120th import export fair 2016 guangzhou ',true
+'official website canton fair 2016 - 120th import export fair 2016 guangzhou official website canton fair 2016 - 120th import export fair 2016 guangzhou ',true
+'canton fair 2016 - 120th import export fair 2016 guangzhou official website canton fair 2016 - 120th import export fair 2016 guangzhou ',true
+'120th import export fair 2016 guangzhou official website canton fair 2016 - 120th import export fair 2016 guangzhou ',true
+'color reporting japan\'s northern alps week found exploring oct 21 21 northern alps beyond peak impressive enjoy colors mountain highlands country\'s ',true
+'colors northern japan\'s highlands week week i\'m taking high-elevation color reporting south central mountains country oct 15 15 hachimantai beyond peak third color report japan\'s northern tohoku region ',true
+'highlands week week i\'m taking high-elevation color reporting south central mountains country oct 15 15 hachimantai beyond peak third color report japan\'s northern tohoku region drove south near-peaking lake ',true
+'outstanding hokkaido daisetsuzan national park mid september mid mountains daisetsuzan national park colors season mid late september spectacular colors ',true
+'hachimantai mountains mentioned nearby oirase stream famous spots displaying magnificent fall colors late november touch expert consultants ',true
+'town yumoto onsen leaves beautiful enchantment tour takes advantage leaves nikko september november departures nikko features splendour self guided adventure 7 fuji five ',true
+'canton fair 2015 - 118th import export fair 2015 - chinaexhibition com sourcing suppliers manufacturers taiwan ',true
+'organizer trade city trade venue expired trade business home trade calendar canton fair 2015 - 118th import export fair 2015 canton fair 2015 - ',true
+'city trade venue expired trade business home trade calendar canton fair 2015 - 118th import export fair 2015 canton fair 2015 - ',true
+'venue expired trade business home trade calendar canton fair 2015 - 118th import export fair 2015 canton fair 2015 - 118th import ',true
+'expired trade business home trade calendar canton fair 2015 - 118th import export fair 2015 canton fair 2015 - 118th import export fair 2015 fields required ',true
+'business home trade calendar canton fair 2015 - 118th import export fair 2015 canton fair 2015 - 118th import export fair 2015 fields required ',true
+'2015 - 118th import export fair 2015 canton fair 2015 - 118th import export fair 2015 fields required receive ',true
+'date 2015 10 15 - 2015 11 04 expired event\'s profile canton fair 2015 118th import export fair 2015 fair please click canton fair 2016 spring ',true
+'red gold yellow brown hues create amazing view enjoy colors disadvantages crowds weather brings tourists outdoors top attractions ',true
+'brown hues create amazing view enjoy colors disadvantages crowds weather brings tourists outdoors top attractions wall packed ',true
+'weather august weather september weather weather november weather december 5 visit top 5 visit fall weather september weather november author gavin van hinsbergh update ',true
+'november weather december 5 visit top 5 visit fall weather september weather november author gavin van hinsbergh update september 29 ',true
+'orschwihr france september 26 2015 file photo photo jacky naegelen reuters late colours vineyards mark change season neuenburg 29 2015 photo jacky naegelen reuters late colours vineyards mark change ',true
+'naegelen reuters late colours vineyards mark change season neuenburg 29 2015 photo jacky naegelen reuters late colours vineyards mark change season soultz alsace region eastern ',true
+'vineyards mark change season soultz alsace region eastern france 29 2015 photo jacky naegelen reuters late colours wineyards mark change season neuenburg 29 2015 photo jacky naegelen reuters one-year-old qiqi holds ballon ',true
+'alsace region eastern france 29 2015 photo jacky naegelen reuters late colours wineyards mark change season neuenburg 29 2015 photo jacky naegelen reuters one-year-old qiqi holds ballon street ',true
+'photo francois lenoir reuters aerial view deciduous forest sunny day recklinghausen 31 2015 photo ina fassbender reuters aerial view street deciduous ',true
+'ina fassbender reuters aerial view street deciduous trees sunny day recklinghausen 31 2015 photo ina fassbender reuters aerial view field deciduous ',true
+'ina fassbender reuters aerial view field deciduous trees sunny day recklinghausen 31 2015 photo ina fassbender reuters aerial view mixed forest ',true
+'photo ina fassbender reuters aerial view mixed forest sunny day recklinghausen 31 2015 photo ina fassbender reuters aerial view deciduous forest ',true
+'photo ina fassbender reuters aerial view deciduous forest sunny day recklinghausen 31 2015 photo ina fassbender reuters aerial view mixed forest ',true
+'photo ina fassbender reuters aerial view mixed forest sunny day recklinghausen 31 2015 photo ina fassbender reuters aerial view mixed forest ',true
+'photo ina fassbender reuters aerial view mixed forest sunny day recklinghausen 31 2015 photo ina fassbender reuters view late colours garden ',true
+'reuters aerial view mixed forest sunny day recklinghausen 31 2015 photo ina fassbender reuters view late colours garden annevoie belgium november 1 2015 photo yves herman reuters ',true
+'27 2015 photo jed wee rex shutterstock photograph avaialble 24 2015 boy playing amongst leaves tree lined avenue straubing southern 23 2015 photo armin weigel epa gary szilagyi casts line standing ',true
+'photograph avaialble 24 2015 boy playing amongst leaves tree lined avenue straubing southern 23 2015 photo armin weigel epa gary szilagyi casts line standing ',true
+'photo zsolt czegledi epa camera forest floor foliage forest near springe 29 2015 photo julian stratenschulte epa aerial view trees shore ',true
+'forest floor foliage forest near springe 29 2015 photo julian stratenschulte epa aerial view trees shore quarry pond cologne 02 november 2015 photo ',true
+'forest floor foliage forest near springe 29 2015 photo julian stratenschulte epa aerial view trees shore quarry pond cologne 02 november 2015 photo henning kaiser epa sun streaks fall foliage ',true
+'inspirations email inspirational quote monday weekend alps beautiful posted 7 2012 rji alps alps daluphoto beautiful ',true
+'email inspirational quote monday weekend alps beautiful posted 7 2012 rji alps alps daluphoto beautiful - inspire ',true
+'monday weekend alps beautiful posted 7 2012 rji alps alps daluphoto beautiful - inspire feel ',true
+'art tuesday tints kaleidoskop kaleidoskop search main menu skip primary content home japanese reading list ',true
+'primary content home japanese reading list post navigation previous art tuesday tints posted 13 2015 kaleidoskop ukiyo-e nakayama shuko 1876 1920 ',true
+'primary content home japanese reading list post navigation previous art tuesday tints posted 13 2015 kaleidoskop ukiyo-e nakayama shuko 1876 1920 ',true
+'japanese art tagged art japanese artists nakayama shuko ukiyo woodblock print kaleidoskop bookmark permalink 4 art tuesday tints koh 13 2015 8 20 am wonderful likelike reply ',true
+'woodblock print kaleidoskop bookmark permalink 4 art tuesday tints koh 13 2015 8 20 am wonderful likelike reply kaleidoskop 13 2015 9 22 am thank ',true
+'festivals sapporo fest festivals fest festivals sapporo probably ',true
+'festivals sapporo fest festivals fest festivals sapporo probably ',true
+'festivals sapporo fest festivals fest festivals sapporo probably rains lot starts cold ',true
+'festivals sapporo fest festivals fest festivals sapporo probably rains lot starts cold ',true
+'festivals sapporo fest festivals fest festivals sapporo probably rains lot starts cold ',true
+'coming near future sapporo venture festivals getting fest festivals sapporo starting middle ',true
+'near future sapporo venture festivals getting fest festivals sapporo starting middle ',true
+'sapporo venture festivals getting fest festivals sapporo starting middle september beginning ',true
+'river ouse yorkshire reached level 17th century 4 series severe floods affected country 2000 worst affected kent sussex shropshire worcestershire yorkshire november 2000 wettest ',true
+'wikipedia org index php title autumn_2000_western_europe_floods oldid 757066820 categories 2000 disasters 2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events september 2000 events 2000 events november 2000 events december 2000 events hidden categories articles dead external ',true
+'2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events september 2000 events 2000 events november 2000 events december 2000 events hidden categories articles dead external ',true
+'tours explore map holiday business close navigation festival fun home northern territory festival fun add share northern territory perfect time outside celebrate world winter ',true
+'fun home northern territory festival fun add share northern territory perfect time outside celebrate world winter ',true
+'home northern territory festival fun add share northern territory perfect time outside celebrate world winter ',true
+'home northern territory festival fun add share northern territory perfect time outside celebrate world winter ',true
+'warm air southern europe rise towards uk dates 25 september 3 affected ireland temperature 29 9 gravesend england 1 2011 heat wave period unseasonably warm weather arrived towards ',true
+'weather averages hokkaido holiday weather search search home asia hokkaido averages hokkaido weather lowdown swing hokkaido island literally ',true
+'weather averages hokkaido holiday weather search search home asia hokkaido averages hokkaido weather lowdown swing hokkaido island literally ',true
+'looking visitors comes return top kimberley climate temperatures september - it\'s warming tourists fleeing northern ok drop noticeable ',true
+'january february march april june july august september november december article related australia\'s flower festivals month month weather events holiday ',true
+'february march april june july august september november december article related australia\'s flower festivals month month weather events holiday ',true
+'march april june july august september november december article related australia\'s flower festivals month month weather events holiday ',true
+'april june july august september november december article related australia\'s flower festivals month month weather events holiday ',true
+'june july august september november december article related australia\'s flower festivals month month weather events holiday ',true
+'june july august september november december article related australia\'s flower festivals month month weather events holiday ',true
+'june july august september november december article related australia\'s flower festivals month month weather events holiday web powered zergnet ',true
+'july august september november december article related australia\'s flower festivals month month weather events holiday web powered zergnet ',true
+'november december article related australia\'s flower festivals month month weather events holiday web powered zergnet ',true
+'warm air southern europe rise towards uk dates 25 september 3 affected ireland temperature 29 9 gravesend england 1 2011 heat wave period unseasonably warm weather arrived towards ',true
+'title autumn_2011_united_kingdom_heat_wave oldid 757066663 categories 2011 heat waves 2011 ireland 2011 2011 meteorology heat waves weather events europe history gravesend kent 21st century kent weather events september 2011 events 2011 events hidden categories engvarb january 2014 dmy dates january 2014 navigation ',true
+'waves 2011 ireland 2011 2011 meteorology heat waves weather events europe history gravesend kent 21st century kent weather events september 2011 events 2011 events hidden categories engvarb january 2014 dmy dates january 2014 navigation ',true
+'moscow - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'learn you\'re viewing youtube japanese change preference below __count__ __total__ moscow 22 163 5 6 0 1 2014 10 18 moscow capital europe - ',true
+'you\'re viewing youtube japanese change preference below __count__ __total__ moscow 22 163 5 6 0 1 2014 10 18 moscow capital europe - 19 35 harald baldr 81 661 19 35 moscow ',true
+'viewing youtube japanese change preference below __count__ __total__ moscow 22 163 5 6 0 1 2014 10 18 moscow capital europe - 19 35 harald baldr 81 661 19 35 moscow - 12 06 dcdent151 248 12 06 visit moscow - 21 31 ',true
+'21 31 moscow travel guide - 13 19 tripment 213 522 13 19 beautiful moscow - 6 20 216 6 20 trip season snow moscow 2015 - 2 19 yayayaya2012 156 2 19 baonga com - saint petersburg ',true
+'tripment 213 522 13 19 beautiful moscow - 6 20 216 6 20 trip season snow moscow 2015 - 2 19 yayayaya2012 156 2 19 baonga com - saint petersburg ',true
+'agricultural exhibition developing modern technology exhibition business agribusiness xviii russian agricultural exhibition golden held 5 8 2016 moscow golden largest agriculture exhibition organizer ministry agriculture ',true
+'agribusiness xviii russian agricultural exhibition golden held 5 8 2016 moscow golden largest agriculture exhibition organizer ministry agriculture llc rotex partners ',true
+'below weather forecast weather freemeteo com top page seasons months september november winter season changes conditions windy ',true
+'forecast weather freemeteo com top page seasons months september november winter season changes conditions windy ',true
+'coastal except maybe western cape coast flowering jacaranda trees pretoria copyright african tourism - weather forecast climate world time throughout months august september time enjoy indigenous wild flowers cape town ',true
+'western cape coast flowering jacaranda trees pretoria copyright african tourism - weather forecast climate world time throughout months august september time enjoy indigenous wild flowers cape town ',true
+'sports sections answers cloud services wikianswers categories travel countries cities time click answer september november southern hemisphere answer question yes partially ',true
+'answers cloud services wikianswers categories travel countries cities time click answer september november southern hemisphere answer question yes partially ',true
+'wikianswers categories travel countries cities time click answer september november southern hemisphere answer question yes partially ',true
+'categories travel countries cities time click answer september november southern hemisphere answer question yes partially ',true
+'cities time click answer september november southern hemisphere answer question yes partially ',true
+'21 iconic male designers premieres 23 kuala lumpur fashion week ready-to-wear 2015 premieres 26 mod menswear premieres 27 african menswear week summer 2015-16 premieres 27 fashion week london 2015 premieres 28 emerging designers premieres 30 europe asia ',true
+'premieres 23 kuala lumpur fashion week ready-to-wear 2015 premieres 26 mod menswear premieres 27 african menswear week summer 2015-16 premieres 27 fashion week london 2015 premieres 28 emerging designers premieres 30 europe asia ',true
+'23 kuala lumpur fashion week ready-to-wear 2015 premieres 26 mod menswear premieres 27 african menswear week summer 2015-16 premieres 27 fashion week london 2015 premieres 28 emerging designers premieres 30 europe asia ',true
+'autumns latvia nice worth taking look related posted admin nature latvia latvia 23 2010 post navigation rapidex malayalam dictionary feeding fish china 2 ',true
+'nice worth taking look related posted admin nature latvia latvia 23 2010 post navigation rapidex malayalam dictionary feeding fish china 2 ',true
+'nice worth taking look related posted admin nature latvia latvia 23 2010 post navigation rapidex malayalam dictionary feeding fish china 2 ',true
+'23 2010 post navigation rapidex malayalam dictionary feeding fish china 2 latvia door 23 2010 3 00 pm latvia http goo gl fb b8dpr ',true
+'post navigation rapidex malayalam dictionary feeding fish china 2 latvia door 23 2010 3 00 pm latvia http goo gl fb b8dpr reply sony 23 2010 8 ',true
+'feeding fish china 2 latvia door 23 2010 3 00 pm latvia http goo gl fb b8dpr reply sony 23 2010 8 37 pm ',true
+'latvia door 23 2010 3 00 pm latvia http goo gl fb b8dpr reply sony 23 2010 8 37 pm nice photos reply leave ',true
+'warm air southern europe rise towards uk dates 25 september 3 affected ireland temperature 29 9 gravesend england 1 2011 heat wave period unseasonably warm weather arrived towards ',true
+'warm air southern europe rise towards uk dates 25 september 3 affected ireland temperature 29 9 gravesend england 1 2011 heat wave period unseasonably warm weather arrived towards ',true
+'paying taxes time unlike countries essentially year-round runs 1st july 31st re individual re business re lucky ',true
+'beautiful - events festivals pricebeat guarentee lower advertised price beat ',true
+'search blog home tlp store skip content blog home tlp store beautiful events festivals leave reply blooming flowers warm weather cosy sand ',true
+'leave reply blooming flowers warm weather cosy sand lovely mid season makes extremely beautiful australian continent treat embarking ',true
+'warming weather time sourced internet sourced internet wonderful month plan vacation beautiful time explore cities experience rich culture ',true
+'core treat yourself amazing art craft food visual arts theatre lots australian couldn entry posted travellers solo travels ',true
+'entry posted travellers solo travels travel tips travels tagged australian melbourne festival renmark rose festival sydney food festival 11 2014 luggage professionals post ',true
+'idiosyncrasy time menu skip content home favorite photos crimea chronicles russian russian art 1 anna 24 2013 steadily descending grey season glimpses ',true
+'isaac levitan image credit wikipaintings share twitter facebook pinterest email loading 24 2013 russian art tags art golden russian art russian russian landscape russian nature related posts russian ',true
+'bazaar june 2015 press harper bazaar june 2015 press harper bazaar march 2015 press harper bazaar 2015 press harper bazaar september 2013 press inspired 2014 press inspired winter 2014 press katy perry runa jewelry press azure ',true
+'bazaar june 2015 press harper bazaar march 2015 press harper bazaar 2015 press harper bazaar september 2013 press inspired 2014 press inspired winter 2014 press katy perry runa jewelry press azure ',true
+'june 2015 press harper bazaar march 2015 press harper bazaar 2015 press harper bazaar september 2013 press inspired 2014 press inspired winter 2014 press katy perry runa jewelry press azure ',true
+'usa august 2015 press notofu usa august 2015 press oui magazine press pulp magazine usa 2014 press rapoport august 2014 press snc magazine 2014 press stylist france 2013 press tatler april 2013 press tatler hong kong december ',true
+'idiosyncrasy time menu skip content home favorite photos crimea chronicles russian russian art anna 31 2014 eastern heartland ultimate interplay light shadow gloomiest rainiest day nature ',true
+'winter 2 russian winter 1 share twitter facebook pinterest email loading 31 2014 russian art tags art golden russian art russian russian landscape russian nature related posts russian ',true
+'portuguese 27 june 2013 retrieved 27 june 2013 protests economist retrieved 2 2015 brazilian explainer abc june 24 2013 comiss de cultura da mara ouve fora ',true
+'summer drought disturbed sandy windy travel info august namaqualand roughly 5 hours cape town northern cape contact namaqua national park tel 27 0 27 672 1948 tourism tel 27 ',true
+'snowstorm dropped 32 inches 81 centimeters northeastern late 2011 nor easter left wet heavy trees loaded leaves news reports described snapped branches power ',false
+'despite warm march east rockies extended winter march fifth-coldest record conterminous coldest 1917 3 wave followed hottest summers record 1936 north american ',false
+'administration central nws region average february mean temperature 1895-1976 national oceanic atmospheric administration contiguous temperatures march 1 8 sets feb 19 mark 5 low due little hope ',false
+'yellowstone grand tetons - temp forum fodor\'s travel talk forums log subscribe facebook twitter pinterest instagram google home menu ',false
+'view trip ideas log subscribe follow facebook twitter pinterest instagram google forums yellowstone grand tetons - temp forums search forums post topic change forum africa middle ',false
+'trip ideas log subscribe follow facebook twitter pinterest instagram google forums yellowstone grand tetons - temp forums search forums post topic change forum africa middle east asia ',false
+'follow facebook twitter pinterest instagram google forums yellowstone grand tetons - temp forums search forums post topic change forum africa middle east asia australia ',false
+'14 2015 nifs data collected internet panel survey conducted 29 november 11 2015 report provides season estimates people children adults received vaccination final 2015 16 season vaccination coverage estimates ',false
+'adult nifs data 29 november 11 2015 compared nifs data 29 november 12 2014 national season vaccination coverage november 2014 national immunization survey-flu nis-flu nis-flu ongoing national list-assisted random-digit-dialed dual ',false
+'government believes 50 000 000 britons vaccinated christmas 447 16 edit initial shortfall swine vaccine predicted shortly proportion deaths attributed pneumonia influenza goes ',false
+'124 using mechanisms vaccines children vfc program 125 24 2009 president barack obama declared swine national emergency november 12 2009 cdc reported estimated 22 million americans infected ',false
+'3 2010 international situation update map international activity estimates including 2009 h1n1 key indicators week year-round cdc analyzes information influenza disease activity findings key indicators published report called fluview mid-may coincide typical seasonal influenza activity ',false
+'key indicators week year-round cdc analyzes information influenza disease activity findings key indicators published report called fluview mid-may coincide typical seasonal influenza activity ',false
+'indicators week year-round cdc analyzes information influenza disease activity findings key indicators published report called fluview mid-may coincide typical seasonal influenza activity week 16 22 2010 final fluview 2009-2010 ',false
+'year-round cdc analyzes information influenza disease activity findings key indicators published report called fluview mid-may coincide typical seasonal influenza activity week 16 22 2010 final fluview 2009-2010 influenza ',false
+'newport weather 2017 - accuweather forecast ca 92663 recent locations newport ca51 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country newport weather partnership follow login weather newport ca local weather 51 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country newport weather partnership follow login weather newport ca local weather 51 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'world world world world world note select region finding country panama city weather follow login weather panama city fl local weather 71 local weather today\'s weather hourly forecast ',false
+'world world world world note select region finding country panama city weather follow login weather panama city fl local weather 71 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'pismo weather 2017 - accuweather forecast ca 93449 recent locations pismo ca44 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country pismo weather follow login weather pismo ca local weather 44 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country pismo weather follow login weather pismo ca local weather 44 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'124 using mechanisms vaccines children vfc program 125 24 2009 president barack obama declared swine national emergency november 12 2009 cdc reported estimated 22 million americans infected ',false
+'huntington sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',false
+'asia aus pacific europe latin america america america mid east home north america huntington huntington average sea temperature max 19 4 66 9 avg 18 64 5 ',false
+'sunset weather 2017 - accuweather forecast nc 28468 recent locations sunset nc56 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country sunset weather follow login weather sunset nc local weather 56 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country sunset weather follow login weather sunset nc local weather 56 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'redondo sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',false
+'asia aus pacific europe latin america america america mid east home north america redondo redondo average sea temperature max 19 5 67 1 avg 18 64 5 ',false
+'world world world world world world world note select region finding country hill weather partnership follow login weather hill fl local weather 76 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country hill weather partnership follow login weather hill fl local weather 76 local weather today\'s weather hourly forecast extended weekend month ',false
+'weather 2017 - accuweather forecast ca 90802 recent locations ca48 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country weather partnership follow login weather ca local weather 48 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country weather partnership follow login weather ca local weather 48 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'2015 2016 prediction north america please page 15th 2015 final 15 16 forecast america gavsweathervids remember watch video underneath blog post ',false
+'25 - vacationidea toggle navigation home romantic beach family weekend getaways world search site search vacation ideas month follow 25 ',false
+'25 - vacationidea toggle navigation home romantic beach family weekend getaways world search site search vacation ideas month follow 25 updated september 27 2016 vacationidea staff tweet month ',false
+'25 - vacationidea toggle navigation home romantic beach family weekend getaways world search site search vacation ideas month follow 25 updated september 27 2016 vacationidea staff tweet month ',false
+'25 - vacationidea toggle navigation home romantic beach family weekend getaways world search site search vacation ideas month follow 25 updated september 27 2016 vacationidea staff tweet month ',false
+'policy update - 20 2015 - - cookies online experience using website ',false
+'policy update - 20 2015 - - cookies online experience using website ',false
+'cookies accordance cookie policy learn close home usa policy update - 20 2015 updated 26 2015 article russell sullivan rosemary becchi danielle ',false
+'cookies accordance cookie policy learn close home usa policy update - 20 2015 updated 26 2015 article russell sullivan rosemary becchi danielle ',false
+'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'daytona weather 2017 - accuweather forecast fl 32114 recent locations daytona fl78 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country daytona weather partnership follow login weather daytona fl local weather 78 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country daytona weather partnership follow login weather daytona fl local weather 78 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'2 july 1994 southern philippines - 2-13 citation san fernando philippines 16 1994 philippines 3 citation southern philippines 29 november 1994 southern philippines - 14 citation guizhou province 19 april 1995 guizhou province - 37 citation jamalpur-tangail districts bangladesh ',false
+'june 2007 thanh province vietnam 2 nearly 500 houses damaged 33 zhejiang 18 august 2007 wenzhou city zhejiang province 11 62 156 houses destroyed 34 35 bangladesh tornadoes 11-15 2007 jamalpur sunamganj barisal gopalganj bhola districts bangladesh 7 500 houses destroyed ',false
+'900 homes damaged ten f0 f1 tornadoes 70 71 2014 peninsula malaysia outbreak 14 12 november malaysia 5 ef3 none none 72 73 foshan city 04 2015 shunde district foshan city guangdong province 3 80 associated ',false
+'ten f0 f1 tornadoes 70 71 2014 peninsula malaysia outbreak 14 12 november malaysia 5 ef3 none none 72 73 foshan city 04 2015 shunde district foshan city guangdong province 3 80 associated typhoon ',false
+'outbreak 14 12 november malaysia 5 ef3 none none 72 73 foshan city 04 2015 shunde district foshan city guangdong province 3 80 associated typhoon mujigae 74 ',false
+'outbreak 14 12 november malaysia 5 ef3 none none 72 73 foshan city 04 2015 shunde district foshan city guangdong province 3 80 associated typhoon mujigae 74 75 jiangxi 16 april 2016 yichin ',false
+'12 november malaysia 5 ef3 none none 72 73 foshan city 04 2015 shunde district foshan city guangdong province 3 80 associated typhoon mujigae 74 75 jiangxi 16 april 2016 yichin city shangu town jing\'an county gao\'an county jiangxi province ',false
+'mobile shopping 2014 event held feb 2017 mobile shopping 2014 6-8 2014 wigwam litchfield park az past view hotels near venue mobile shopping 2014 held litchfield ',false
+'2014 event held feb 2017 mobile shopping 2014 6-8 2014 wigwam litchfield park az past view hotels near venue mobile shopping 2014 held litchfield park az 6-8 2014 mobile ',false
+'feb 2017 mobile shopping 2014 6-8 2014 wigwam litchfield park az past view hotels near venue mobile shopping 2014 held litchfield park az 6-8 2014 mobile shopping 2014 conference focused ',false
+'feb 2017 mobile shopping 2014 6-8 2014 wigwam litchfield park az past view hotels near venue mobile shopping 2014 held litchfield park az 6-8 2014 mobile shopping 2014 conference focused ',false
+'wigwam litchfield park az past view hotels near venue mobile shopping 2014 held litchfield park az 6-8 2014 mobile shopping 2014 conference focused ',false
+'hotels near venue mobile shopping 2014 held litchfield park az 6-8 2014 mobile shopping 2014 conference focused calculate roifor mobile initiatives ',false
+'halloween 2009-slappyt316\'s webcam recorded video - 12 2009 04 34 pm - youtube jp view message english youtube learn ',false
+'learn you\'re viewing youtube japanese change preference below __count__ __total__ halloween 2009-slappyt316\'s webcam recorded video - 12 2009 04 34 pm kenny thigpen 4646 198 1 2 1 2 2009 10 ',false
+'thigpen 4646 198 1 2 1 2 2009 10 12 slappyt316\'s webcam recorded video - 12 2009 04 34 pm halloween 2009 youtube trigger happy pedro waco texas - 10 00 slappyt316 81 10 ',false
+'york insights - volume 5 issue 10 2014 - - cookies online experience using website ',false
+'york insights - volume 5 issue 10 2014 - - cookies online experience using website ',false
+'cookies accordance cookie policy learn close home usa york insights - volume 5 issue 10 2014 updated 13 2014 article hollis hyans kara kraman irwin ',false
+'cookies accordance cookie policy learn close home usa york insights - volume 5 issue 10 2014 updated 13 2014 article hollis hyans kara kraman irwin ',false
+'69023 16 650 70 71 7 8 2015 10 05 typhoon mujigae caused huge sunday 4 wreaked havoc city foshan videos captured local ',false
+'650 70 71 7 8 2015 10 05 typhoon mujigae caused huge sunday 4 wreaked havoc city foshan videos captured local foshan residents mushroom-shaped clouds appeared sky 4pm ',false
+'world world world world world world world note select region finding country springs weather follow login weather springs ar local weather 48 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country springs weather follow login weather springs ar local weather 48 local weather today\'s weather hourly forecast extended weekend month ',false
+'remove template message 6th olympic basketball tournament tokyo 1964 tournament details olympics 1964 olympics host nation japan city tokyo duration 11 23 men\'s tournament teams 16 medals gold medalists silver medalists soviet union bronze medalists brazil tournaments rome 1960 mexico city 1968 basketball contests ',false
+'union bronze medalists brazil tournaments rome 1960 mexico city 1968 basketball contests 1964 olympics yoyogi national gymnasium tokyo japan 11 23 defeated soviet union win sixth straight gold medal event ',false
+'world world world world world world world note select region finding country green weather follow login weather green wi local weather 30 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country green weather follow login weather green wi local weather 30 local weather today\'s weather hourly forecast extended weekend month ',false
+'row 18 chart performance song debuted billboard 100 dated 22 2016 19 following week climbed 20 week ',false
+'http www billboard com articles columns pop 7597495 pikotaro-ppap-new-album-interview japanese music top japanese songs chart 100 billboard 22 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard ',false
+'www billboard com articles columns pop 7597495 pikotaro-ppap-new-album-interview japanese music top japanese songs chart 100 billboard 22 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard 29 2016 retrieved 5 november 2016 japanese music top japanese songs ',false
+'columns pop 7597495 pikotaro-ppap-new-album-interview japanese music top japanese songs chart 100 billboard 22 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard 29 2016 retrieved 5 november 2016 japanese music top japanese songs chart ',false
+'100 billboard 22 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard 29 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard ',false
+'billboard 22 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard 29 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard 5 november 2016 retrieved 5 november 2016 http www billboard-japan com charts ',false
+'retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard 29 2016 retrieved 5 november 2016 japanese music top japanese songs chart 100 billboard 5 november 2016 retrieved 5 november 2016 http www billboard-japan com charts detail ',false
+'shortest song billboard 100 billboard retrieved 20 2016 sim walter 28 2016 pen-pineapple-apple-pen sets world record shortest song chart billboard 100 straits times retrieved 29 2016 billboard 100 billboard 14 november 2016 retrieved 14 november 2016 ultratop pikotaro ppap ',false
+'28 2016 pen-pineapple-apple-pen sets world record shortest song chart billboard 100 straits times retrieved 29 2016 billboard 100 billboard 14 november 2016 retrieved 14 november 2016 ultratop pikotaro ppap ',false
+'shortest song chart billboard 100 straits times retrieved 29 2016 billboard 100 billboard 14 november 2016 retrieved 14 november 2016 ultratop pikotaro ppap pen ',false
+'endless roseland ballroom york 10 2010 - youtube jp view message english youtube learn you\'re viewing ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ endless roseland ballroom york 10 2010 ctg21361 1414 1 287 3 4 0 1 2010 10 13 ',false
+'340 12 42 yoshiki addressing audience roseland ballroom york 10 2010 - 4 07 ctg21361 2 316 4 07 - live nyc 10 10 10 yoshiki talks endless - 7 40 pimpmasterz 3 028 7 40 05 x-japan performing art life - ',false
+'june kim 186 1 56 rusty nail roseland ballroom york 10 2010 - 5 50 ctg21361 8 199 5 50 york 10 10 part10 hd 10 endless art life - 10 09 thevectorc1 13 577 10 09 endless ',false
+'japanese retrieved september 21 2016 billboard 100 2016 10 3 billboard japanese retrieved september 28 2016 billboard 100 2016 10 10 billboard japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved ',false
+'100 2016 10 3 billboard japanese retrieved september 28 2016 billboard 100 2016 10 10 billboard japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved ',false
+'100 2016 10 3 billboard japanese retrieved september 28 2016 billboard 100 2016 10 10 billboard japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved ',false
+'japanese retrieved september 28 2016 billboard 100 2016 10 10 billboard japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved 12 2016 billboard ',false
+'september 28 2016 billboard 100 2016 10 10 billboard japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved 12 2016 billboard ',false
+'100 2016 10 10 billboard japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved 12 2016 billboard 100 2016 10 24 billboard japanese retrieved ',false
+'100 2016 10 10 billboard japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved 12 2016 billboard 100 2016 10 24 billboard japanese retrieved ',false
+'japanese retrieved 5 2016 billboard 100 2016 10 17 billboard japanese retrieved 12 2016 billboard 100 2016 10 24 billboard japanese retrieved 19 2016 billboard ',false
+'5 2016 billboard 100 2016 10 17 billboard japanese retrieved 12 2016 billboard 100 2016 10 24 billboard japanese retrieved 19 2016 billboard ',false
+'100 2016 10 17 billboard japanese retrieved 12 2016 billboard 100 2016 10 24 billboard japanese retrieved 19 2016 billboard 100 2016 10 31 billboard japanese retrieved ',false
+'100 2016 10 17 billboard japanese retrieved 12 2016 billboard 100 2016 10 24 billboard japanese retrieved 19 2016 billboard 100 2016 10 31 billboard japanese retrieved ',false
+'japanese retrieved 12 2016 billboard 100 2016 10 24 billboard japanese retrieved 19 2016 billboard 100 2016 10 31 billboard japanese retrieved 26 2016 billboard ',false
+'12 2016 billboard 100 2016 10 24 billboard japanese retrieved 19 2016 billboard 100 2016 10 31 billboard japanese retrieved 26 2016 billboard ',false
+'100 2016 10 24 billboard japanese retrieved 19 2016 billboard 100 2016 10 31 billboard japanese retrieved 26 2016 billboard 100 2016 11 7 billboard japanese retrieved november ',false
+'100 2016 10 24 billboard japanese retrieved 19 2016 billboard 100 2016 10 31 billboard japanese retrieved 26 2016 billboard 100 2016 11 7 billboard japanese retrieved november ',false
+'japanese retrieved 19 2016 billboard 100 2016 10 31 billboard japanese retrieved 26 2016 billboard 100 2016 11 7 billboard japanese retrieved november 2 2016 billboard ',false
+'19 2016 billboard 100 2016 10 31 billboard japanese retrieved 26 2016 billboard 100 2016 11 7 billboard japanese retrieved november 2 2016 billboard ',false
+'com widgets - stats site post support ads ad-free 1964 tokyo games previous games games host city tokyo japan 11 1964 24 1964 ceremony 10 1964 closing ceremony 24 ',false
+'widgets - stats site post support ads ad-free 1964 tokyo games previous games games host city tokyo japan 11 1964 24 1964 ceremony 10 1964 closing ceremony 24 ',false
+'site post support ads ad-free 1964 tokyo games previous games games host city tokyo japan 11 1964 24 1964 ceremony 10 1964 closing ceremony 24 ',false
+'support ads ad-free 1964 tokyo games previous games games host city tokyo japan 11 1964 24 1964 ceremony 10 1964 closing ceremony 24 ',false
+'japanese retrieved september 2 2015 billboard 100 2015 9 7 billboard japanese retrieved september 2 2015 billboard 100 2015 9 14 billboard japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved ',false
+'100 2015 9 7 billboard japanese retrieved september 2 2015 billboard 100 2015 9 14 billboard japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved ',false
+'100 2015 9 7 billboard japanese retrieved september 2 2015 billboard 100 2015 9 14 billboard japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved ',false
+'japanese retrieved september 2 2015 billboard 100 2015 9 14 billboard japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved 12 2015 billboard ',false
+'september 2 2015 billboard 100 2015 9 14 billboard japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved 12 2015 billboard ',false
+'100 2015 9 14 billboard japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved 12 2015 billboard 100 2015 9 28 billboard japanese retrieved ',false
+'100 2015 9 14 billboard japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved 12 2015 billboard 100 2015 9 28 billboard japanese retrieved ',false
+'japanese retrieved 12 2015 billboard 100 2015 9 21 billboard japanese retrieved 12 2015 billboard 100 2015 9 28 billboard japanese retrieved 12 2015 billboard ',false
+'12 2015 billboard 100 2015 9 21 billboard japanese retrieved 12 2015 billboard 100 2015 9 28 billboard japanese retrieved 12 2015 billboard ',false
+'100 2015 9 21 billboard japanese retrieved 12 2015 billboard 100 2015 9 28 billboard japanese retrieved 12 2015 billboard 100 2015 10 5 billboard japanese retrieved ',false
+'100 2015 9 21 billboard japanese retrieved 12 2015 billboard 100 2015 9 28 billboard japanese retrieved 12 2015 billboard 100 2015 10 5 billboard japanese retrieved ',false
+'japanese retrieved 12 2015 billboard 100 2015 9 28 billboard japanese retrieved 12 2015 billboard 100 2015 10 5 billboard japanese retrieved 12 2015 billboard ',false
+'12 2015 billboard 100 2015 9 28 billboard japanese retrieved 12 2015 billboard 100 2015 10 5 billboard japanese retrieved 12 2015 billboard ',false
+'100 2015 9 28 billboard japanese retrieved 12 2015 billboard 100 2015 10 5 billboard japanese retrieved 12 2015 billboard 100 2015 10 12 billboard japanese retrieved ',false
+'100 2015 9 28 billboard japanese retrieved 12 2015 billboard 100 2015 10 5 billboard japanese retrieved 12 2015 billboard 100 2015 10 12 billboard japanese retrieved ',false
+'japanese retrieved 12 2015 billboard 100 2015 10 5 billboard japanese retrieved 12 2015 billboard 100 2015 10 12 billboard japanese retrieved 12 2015 billboard ',false
+'12 2015 billboard 100 2015 10 5 billboard japanese retrieved 12 2015 billboard 100 2015 10 12 billboard japanese retrieved 12 2015 billboard ',false
+'100 2015 10 5 billboard japanese retrieved 12 2015 billboard 100 2015 10 12 billboard japanese retrieved 12 2015 billboard 100 2015 10 19 billboard japanese retrieved november ',false
+'100 2015 10 5 billboard japanese retrieved 12 2015 billboard 100 2015 10 12 billboard japanese retrieved 12 2015 billboard 100 2015 10 19 billboard japanese retrieved november ',false
+'japanese retrieved 12 2015 billboard 100 2015 10 12 billboard japanese retrieved 12 2015 billboard 100 2015 10 19 billboard japanese retrieved november 7 2015 billboard ',false
+'12 2015 billboard 100 2015 10 12 billboard japanese retrieved 12 2015 billboard 100 2015 10 19 billboard japanese retrieved november 7 2015 billboard ',false
+'lesson releases playstation 4 - siliconera img src http scorecardresearch com c1 2 amp ',false
+'3ds wii ps4 ps3 vita psp ios xbox xbox 360 interviews playstation 4 tip lesson releases playstation 4 sato june 13 2016 9 00pm bandai namco announced ',false
+'ps3 vita psp ios xbox xbox 360 interviews playstation 4 tip lesson releases playstation 4 sato june 13 2016 9 00pm bandai namco announced ',false
+'sato june 13 2016 9 00pm bandai namco announced upcoming playstation vr title lesson releasing playstation 4 didn game ',false
+'bbcr1 teen awards uk trips cancelled - 5 click sign-in spotify twitter facebook google youtube vevo tumblr instagram 5 ',false
+'dai hachi-kai orinpikku ky gi taikai international multi-sport event held tokyo 10 24 1964 tokyo awarded organization 1940 olympics honor subsequently passed helsinki japan\'s invasion china ',false
+'php title 1964_summer_olympics oldid 756763416 categories 1964 olympics sport tokyo olympic games 1964 multi-sport events 1964 japanese sport 20th century tokyo olympics 1964 sports events hidden categories mdy dates july 2011 articles containing japanese-language text ',false
+'resistance looting qing soldiers vicinity 11 18 lord elgin british commissioner retaliated torture executions destruction palace 12 destroying palace ',false
+'14 07 2012 barlewiczki poland - 2 31 polishchaser1 868 708 2 31 tornados - comment - 1 50 comment tv 2 671 1 50 southern 2015 - 0 51 roy 1 569 0 51 en xico 22 ',false
+'- comment - 1 50 comment tv 2 671 1 50 southern 2015 - 0 51 roy 1 569 0 51 en xico 22 ',false
+'comment - 1 50 comment tv 2 671 1 50 southern 2015 - 0 51 roy 1 569 0 51 en xico 22 de marzo 2014 - 2 21 davisito de zabedrosky 1 369 ',false
+'month continue read fall colors top visit late april comfortable rainy yellow mountains 2 time ',false
+'read fall colors top visit late april comfortable rainy yellow mountains 2 time ',false
+'longji terraced fields popularly recommended time autumn weather optimal warm mild temperatures rains stopped apart hong kong sanya it\'s relatively dry ',false
+'popularly recommended time autumn weather optimal warm mild temperatures rains stopped apart hong kong sanya it\'s relatively dry ',false
+'rolled stainless import hits year-high metal bulletin price scrap statistics company supply-demand earnings report rolled stainless ',false
+'rolled stainless import hits year-high metal bulletin price scrap statistics company supply-demand earnings report rolled stainless import ',false
+'rolled stainless import hits year-high metal bulletin price scrap statistics company supply-demand earnings report rolled stainless import hits year-high dec 05 2011 - iron steel jmb-plus ',false
+'rolled stainless import hits year-high metal bulletin price scrap statistics company supply-demand earnings report rolled stainless import hits year-high dec 05 2011 - iron steel jmb-plus japanese rolled flat stainless steel import ',false
+'hits year-high metal bulletin price scrap statistics company supply-demand earnings report rolled stainless import hits year-high dec 05 2011 - iron steel jmb-plus japanese rolled flat stainless steel import ',false
+'employment sorry derail aspect living posted ghidorah 8 05 pm 20 2013 8 favorites oh mitheral peter mcdermot surely tentacles simulated ',false
+'destination rain average amount rain observed 54 mm 11 21 days avoid rain preferred destination brighton note ',false
+'zip code starfish limited 63 partridge road roath cardiff cf24 3qy overview - starfish ownershipcontact details starfish limited starfish limited incorporated 8 ago thursday 22 2009 corporate identification 07053955 registered office located ',false
+'starfish limited 63 partridge road roath cardiff cf24 3qy overview - starfish ownershipcontact details starfish limited starfish limited incorporated 8 ago thursday 22 2009 corporate identification 07053955 registered office located ',false
+'partridge road roath cardiff cf24 3qy overview - starfish ownershipcontact details starfish limited starfish limited incorporated 8 ago thursday 22 2009 corporate identification 07053955 registered office located ',false
+'officer appointed directors owners nicolas price director director born august 1977 40 british thursday 22 2009 partridge road roath cardiff cf24 3qy active view 1 people starfish limited - news college human health sciences calon ',false
+'sunday march start british time sunday british time 5 experimentations central european time edit experimentally adopted central european time maintaining time throughout 1968 ',false
+'http www eurosurveillance org viewarticle aspx articleid 18986 date submission 12 september 2008 outbreaks occurred closed settings late 2007 08 mid-may uk implications public health management viruses usually circulate late ',false
+'september 2008 outbreaks occurred closed settings late 2007 08 mid-may uk implications public health management viruses usually circulate late ',false
+'2008 outbreaks occurred closed settings late 2007 08 mid-may uk implications public health management viruses usually circulate late cause milder disease ',false
+'outbreaks occurred closed settings late 2007 08 mid-may uk implications public health management viruses usually circulate late cause milder disease viruses 1 epidemics usually ',false
+'post 18 2011 dpr lpr switch moscow time itar tass 26 2014 retrieved 15 august 2015 text - daylight saving time - law - time 1997 british time wwp greenwichmeantime com reading edit david prerau saving ',false
+'tatsuo matsumura sekkyo-bushi jii preacher tatsuya nakadai tsuji gettan release edit premiered venice film festival 25 1999 1 released january 22 2000 distributed toho 1 released ',false
+'national health medical research council clinical practice guidelines management melanoma zealand 2008 cited 13 2014 available url link council nsw guide clinics 2013 cited 6 february 2015 available url link council nsw sun safe ',false
+'2008 cited 13 2014 available url link council nsw guide clinics 2013 cited 6 february 2015 available url link council nsw sun safe hats 2013 cited 13 2014 available url link council western melanoma cancers guide medical practitioners online 2013 accessed 3rd ',false
+'nsw guide clinics 2013 cited 6 february 2015 available url link council nsw sun safe hats 2013 cited 13 2014 available url link council western melanoma cancers guide medical practitioners online 2013 accessed 3rd november 2014 available ',false
+'february 2015 available url link council nsw sun safe hats 2013 cited 13 2014 available url link council western melanoma cancers guide medical practitioners online 2013 accessed 3rd november 2014 available ',false
+'council nsw sun safe hats 2013 cited 13 2014 available url link council western melanoma cancers guide medical practitioners online 2013 accessed 3rd november 2014 available url link council nsw screening ',false
+'sun safe hats 2013 cited 13 2014 available url link council western melanoma cancers guide medical practitioners online 2013 accessed 3rd november 2014 available url link council nsw screening 2013 cited 13 2014 available url link ',false
+'council western melanoma cancers guide medical practitioners online 2013 accessed 3rd november 2014 available url link council nsw screening 2013 cited 13 2014 available url link council specialist 2014 cited 9 december 2014 available url link council ',false
+'guide medical practitioners online 2013 accessed 3rd november 2014 available url link council nsw screening 2013 cited 13 2014 available url link council specialist 2014 cited 9 december 2014 available url link council ',false
+'practitioners online 2013 accessed 3rd november 2014 available url link council nsw screening 2013 cited 13 2014 available url link council specialist 2014 cited 9 december 2014 available url link council ',false
+'nsw screening 2013 cited 13 2014 available url link council specialist 2014 cited 9 december 2014 available url link council check signs 2014 cited 13 2014 available url link council issues statistics 2014 cited ',false
+'council specialist 2014 cited 9 december 2014 available url link council check signs 2014 cited 13 2014 available url link council issues statistics 2014 cited ',false
+'specialist 2014 cited 9 december 2014 available url link council check signs 2014 cited 13 2014 available url link council issues statistics 2014 cited ',false
+'cited 9 december 2014 available url link council check signs 2014 cited 13 2014 available url link council issues statistics 2014 cited 13 2014 available url link ',false
+'9 december 2014 available url link council check signs 2014 cited 13 2014 available url link council issues statistics 2014 cited 13 2014 available url link council ',false
+'url link council check signs 2014 cited 13 2014 available url link council issues statistics 2014 cited 13 2014 available url link council ',false
+'check signs 2014 cited 13 2014 available url link council issues statistics 2014 cited 13 2014 available url link council causes 2014 cited 13 ',false
+'signs 2014 cited 13 2014 available url link council issues statistics 2014 cited 13 2014 available url link council causes 2014 cited 13 ',false
+'2014 cited 13 2014 available url link council issues statistics 2014 cited 13 2014 available url link council causes 2014 cited 13 2014 available url link american ',false
+'2014 cited 13 2014 available url link council issues statistics 2014 cited 13 2014 available url link council causes 2014 cited 13 2014 available url link american society testing biopsy ',false
+'available url link council issues statistics 2014 cited 13 2014 available url link council causes 2014 cited 13 2014 available url link american society testing biopsy ',false
+'issues statistics 2014 cited 13 2014 available url link council causes 2014 cited 13 2014 available url link american society testing biopsy cytology specimens ',false
+'issues statistics 2014 cited 13 2014 available url link council causes 2014 cited 13 2014 available url link american society testing biopsy cytology specimens ',false
+'- wikipedia airlines wikipedia free encyclopedia jump navigation search airlines shunj nihon iata icao callsign ij sjo jey founded 2012 commenced operations 1 august 2014 operating bases narita international airport fleet size 3 destinations ',false
+'wikipedia airlines wikipedia free encyclopedia jump navigation search airlines shunj nihon iata icao callsign ij sjo jey founded 2012 commenced operations 1 august 2014 operating bases narita international airport fleet size 3 destinations ',false
+'2010 11 comparison 2003 04 2006-07 unpublished centre behavioural research council victoria melbourne 2011 council wiki incidence mortality available http wiki org au skincancerstats skin_cancer_incidence_and_mortality top ',false
+'11 comparison 2003 04 2006-07 unpublished centre behavioural research council victoria melbourne 2011 council wiki incidence mortality available http wiki org au skincancerstats skin_cancer_incidence_and_mortality top ',false
+'2003 04 2006-07 unpublished centre behavioural research council victoria melbourne 2011 council wiki incidence mortality available http wiki org au skincancerstats skin_cancer_incidence_and_mortality top ',false
+'endless chords ultimate-guitar com tab pro guitar tabs updates news reviews lessons forums endless chords added 3rd 2008 logout unregistered 0 ug plus favorites profile history recently viewed tabs tabs ',false
+'ultimate-guitar com tab pro guitar tabs updates news reviews lessons forums endless chords added 3rd 2008 logout unregistered 0 ug plus favorites profile history recently viewed tabs tabs ',false
+'lesson launches - gematsu ps4 xbo wii ps3 pc 3ds vita browse games track exclusives ',false
+'warriors 9 announced rewrite ignis memoria announced smartpho jojo bizarre adventure diamond recor lesson launches posted 06 13 16 11 49 pm est sal romano salromano virtual ',false
+'south tasmania victoria western help emergency services recover past events south wales 2013 south wales 2013 lhs navigation section navigation help emergency ',false
+'help emergency services recover past events south wales 2013 south wales 2013 lhs navigation section navigation help emergency services disaster preparedness respond recover recovering blue mountains cyclone marcia queensland february 2015 ',false
+'services recover past events south wales 2013 south wales 2013 lhs navigation section navigation help emergency services disaster preparedness respond recover recovering blue mountains cyclone marcia queensland february 2015 ',false
+'recover past events south wales 2013 south wales 2013 lhs navigation section navigation help emergency services disaster preparedness respond recover recovering blue mountains cyclone marcia queensland february 2015 cyclone olwyn 2015 past events people ',false
+'snowfall 20 3rd warmest 20 guess inthe virtually non-existent 9 2010 activity map below forthis let\'s look answers started folks northern hemisphere basking summer sun ',false
+'20 guess inthe virtually non-existent 9 2010 activity map below forthis let\'s look answers started folks northern hemisphere basking summer sun ',false
+'edition blog education live events consulting contact previous ron guba essential oils mini-tour 2010 interviewed ron guba melbourne interview shown ',false
+'fire springwood fire sydney metropolitan afternoon 17 2013 looking kingsgrove 2013 south wales series south wales primarily starting becoming notable 13 ',false
+'2014 nsw bushfire emergency firefighters hope advantage cooler conditions radio australian broadcasting corporation abc wires 19 2013 retrieved 27 2013 nsw fires continue burning conditions deteriorate abc news 20 2013 event occurs ',false
+'hope advantage cooler conditions radio australian broadcasting corporation abc wires 19 2013 retrieved 27 2013 nsw fires continue burning conditions deteriorate abc news 20 2013 event occurs 12 00 retrieved 20 2013 nsw ',false
+'cooler conditions radio australian broadcasting corporation abc wires 19 2013 retrieved 27 2013 nsw fires continue burning conditions deteriorate abc news 20 2013 event occurs 12 00 retrieved 20 2013 nsw ',false
+'radio australian broadcasting corporation abc wires 19 2013 retrieved 27 2013 nsw fires continue burning conditions deteriorate abc news 20 2013 event occurs 12 00 retrieved 20 2013 nsw bushfire smoke sparks health ',false
+'sydney morning herald fairfax media retrieved 8 march 2015 emergency warnings issued nsw near lithgow mt victoria wollongong newcastle abc news 17 2013 retrieved 20 2013 mt york rd mt victoria current fires incidents ',false
+'victim flames continue rip doyalson mannering park daily telegraph retrieved 19 2013 duncan carol 13 2013 properties lost port stephens salt ash 1233 abc newcastle retrieved 21 2013 strong winds expected amid nsw ',false
+'adrian piccoli students fire-disrupted hsc exams safety daily telegraph retrieved 19 2013 nsw live updates sydney morning herald 18 2013 retrieved 20 2013 nsw fire ',false
+'2013 struggles control wildfires york times associated press 20 2013 retrieved 25 2013 smith-spark laura 18 2013 bush fires claim victim cnn retrieved 20 2013 destroy scores homes al jazeera al jazeera agencies 19 2013 retrieved 20 ',false
+'control wildfires york times associated press 20 2013 retrieved 25 2013 smith-spark laura 18 2013 bush fires claim victim cnn retrieved 20 2013 destroy scores homes al jazeera al jazeera agencies 19 2013 retrieved 20 ',false
+'york times associated press 20 2013 retrieved 25 2013 smith-spark laura 18 2013 bush fires claim victim cnn retrieved 20 2013 destroy scores homes al jazeera al jazeera agencies 19 2013 retrieved 20 ',false
+'associated press 20 2013 retrieved 25 2013 smith-spark laura 18 2013 bush fires claim victim cnn retrieved 20 2013 destroy scores homes al jazeera al jazeera agencies 19 2013 retrieved 20 ',false
+'smith-spark laura 18 2013 bush fires claim victim cnn retrieved 20 2013 destroy scores homes al jazeera al jazeera agencies 19 2013 retrieved 20 ',false
+'18 2013 bush fires claim victim cnn retrieved 20 2013 destroy scores homes al jazeera al jazeera agencies 19 2013 retrieved 20 2013 firefighters battle regardless personal tragedies zealand ',false
+'predictions types viruses prevalent ahead 2014 times worse 2013 runs 59 800 confirmed 2014 ',false
+'types viruses prevalent ahead 2014 times worse 2013 runs 59 800 confirmed 2014 ',false
+'viruses prevalent ahead 2014 times worse 2013 runs 59 800 confirmed 2014 ',false
+'prevalent ahead 2014 times worse 2013 runs 59 800 confirmed 2014 ',false
+'november 9 according irish calendar based ancient gaelic traditions lasts throughout months august september possibly days depending tradition zealand officially begins 1 march 31 10 ',false
+'based ancient gaelic traditions lasts throughout months august september possibly days depending tradition zealand officially begins 1 march 31 10 contents 1 etymology 2 ',false
+'jan 1 available http wiki org au skincancerstats skin_cancer_incidence_and_mortality council statistics issues sydney council available http wiki org au skincancerstats modified 13 2016 11 28 11 retrieved http wiki org au skincancerstats_mw index php title ',false
+'kirrilly wright lindsey rainbird sophia trigg josh mclennan jim 2015 capturing comminuty experiences south australian january 2014 bushfire natural hazards crc retrieved 13 2016 hillard leith 2014 drama dromana brigade country fire authority autumn 10 retrieved 11 ',false
+'lesson launches 13 - gematsu ps4 xbo wii ps3 pc 3ds vita browse games track exclusives ',false
+'warriors 9 announced rewrite ignis memoria announced smartpho jojo bizarre adventure diamond recor lesson launches 13 posted 09 13 16 03 42 am est sal romano salromano watch ',false
+'watch tokyo game 2016 trailer lesson launch playstation 4 lesson hikari miyamoto seven days basic game pack 13 2 980 bandai namco announced 2016 playstation press conference ',false
+'tokyo game 2016 trailer lesson launch playstation 4 lesson hikari miyamoto seven days basic game pack 13 2 980 bandai namco announced 2016 playstation press conference ',false
+'summer months leading risk bushfire occurrence late september affected southeastern northern queensland affected central latitudes western queensland south wales november heat wave ',false
+'risk bushfire occurrence late september affected southeastern northern queensland affected central latitudes western queensland south wales november heat wave ',false
+'half total fire ban 22 september edit strong westerly winds fanned central latitudes 2009 western queensland south wales ',false
+'total fire ban 22 september edit strong westerly winds fanned central latitudes 2009 western queensland south wales ',false
+'uk lot closer reflected language maeveon 24 2008 10 23 pm tmg agree especially phrase mists peteron april 05 2011 11 03 am native trees drop leaves snow ',false
+'1 november 2014 queensland storms 12 000 properties power following record setting day temperatures abc news 26 2014 retrieved 2 november 2014 hughes lesley fenwick jacqui 2015 own backyard burning issue climate change australian bushfire threat pdf ',false
+'storms 12 000 properties power following record setting day temperatures abc news 26 2014 retrieved 2 november 2014 hughes lesley fenwick jacqui 2015 own backyard burning issue climate change australian bushfire threat pdf ',false
+'southern wa australian broadcasting corporation retrieved 19 january 2016 emergency management committee 2015 review o\'sullivan lower hotham pdf perth government western retrieved 7 2016 mulcahy roslyn ed 2015 waroona saved blaze pdf 24seven department ',false
+'matt 18 september 2014 nt cattle stations battle huge bushfire abc news retrieved 8 december 2014 queensland heatwave crews brace state\'s south abc news australian broadcasting commission 27 2014 retrieved 2 november 2014 ravenshoe bushfire 12 000 hectares bush burned blaze ',false
+'huge bushfire abc news retrieved 8 december 2014 queensland heatwave crews brace state\'s south abc news australian broadcasting commission 27 2014 retrieved 2 november 2014 ravenshoe bushfire 12 000 hectares bush burned blaze ',false
+'events 1956 olympics melbourne victoria 22 november 8 december 72 3 314 151 2000 olympics sydney south wales 15 september 1 199 10 651 300 unsuccessful bids edit unsuccessfully bidded games occasions games proposed host city awarded ',false
+'pneumonia 122 cities vs causes united considered 13 usually peaks february 14 considered usually peaks august 15 ',false
+'pneumonia 122 cities vs causes united considered 13 usually peaks february 14 considered usually peaks august 15 seasons ',false
+'cities vs causes united considered 13 usually peaks february 14 considered usually peaks august 15 seasons exist ',false
+'considered 13 usually peaks february 14 considered usually peaks august 15 seasons exist tropics subtropics ',false
+'3 people found useful lyzie forbes-dash 158 contributions answered seasons date start finish - march april winter - june july august spring - september november summer - december january february 27 people found useful edit share ',false
+'lyzie forbes-dash 158 contributions answered seasons date start finish - march april winter - june july august spring - september november summer - december january february 27 people found useful edit share ',false
+'anthem - session duma 2016 5 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ anthem - session duma 2016 5 rsfsr 791791 10 544 94 95 4 5 2016 10 08 youtube russian anthem - ',false
+'perfectly suits creative individuals collection based discreet colors loose cut 21 till 25 moscow summer 2016 mercedes-benz fashion week major eastern european fashion week runways manege central exhibition hall ',false
+'individuals collection based discreet colors loose cut 21 till 25 moscow summer 2016 mercedes-benz fashion week major eastern european fashion week runways manege central exhibition hall ',false
+'week runways manege central exhibition hall welcomed designers coming georgia turnkey china countries designer vadim merlis summer 2016 collection 22 debutants - - tako mekvabidze fureddo ',false
+'regime edit soviet ski troops palace leningrad siege gates palace gilded emblems imperial torn 1917 restored 30 1917 palace declared hermitage public museums ',false
+'eng rus pt ita world society science incidents opinion business photo advertising sections news switches time avoid darkness 24 10 2014 source pravda ru 26 switch time 02 00 russians ',false
+'rus pt ita world society science incidents opinion business photo advertising sections news switches time avoid darkness 24 10 2014 source pravda ru 26 switch time 02 00 russians ',false
+'world society science incidents opinion business photo advertising sections news switches time avoid darkness 24 10 2014 source pravda ru 26 switch time 02 00 russians set ',false
+'incidents opinion business photo advertising sections news switches time avoid darkness 24 10 2014 source pravda ru 26 switch time 02 00 russians set ',false
+'switches time avoid darkness 24 10 2014 source pravda ru 26 switch time 02 00 russians set clocks hour ',false
+'country date format label europe 5 32 33 15 2009 digital download columbia records 9 34 16 2009 19 2009 12 vinyl references edit miike media notes miike downtown 2009 dwt70085 o\'driscoll ceiri 2009 interview miike ',false
+'phase change material pcm supply chain security stability sustainability events event passed chain gdp temperature management summit chain gdp temperature management summit 28 2015 - 30 2015 event navigation clinical trial supply east coast 2015 smithers ',false
+'security stability sustainability events event passed chain gdp temperature management summit chain gdp temperature management summit 28 2015 - 30 2015 event navigation clinical trial supply east coast 2015 smithers ',false
+'30 2015 event navigation clinical trial supply east coast 2015 smithers pira packaging forum chain gdp temperature management summit held 28-30 2015 event portuguese language temperature controlled professionals ',false
+'temperature controlled professionals south america region google calendar ical export details start 28 2015 30 2015 website http www coldchainbrazil com organizer iqpc chain iq website http www coldchainiq com venue sao paolo sao paolo google map event navigation clinical trial supply east coast 2015 smithers pira ',false
+'south america region google calendar ical export details start 28 2015 30 2015 website http www coldchainbrazil com organizer iqpc chain iq website http www coldchainiq com venue sao paolo sao paolo google map event navigation clinical trial supply east coast 2015 smithers pira ',false
+'sexy magazine - - 2009 - muy caliente latin chicas free ebooks download - ebookee login join user search ebooks subscription technical study ',false
+'ebooks subscription technical study novel nonfiction medical tutorial entertainment business magazine uncategorized sexy magazine - - 2009 - muy caliente latin chicas category uncategorized posted 2010-01-30 anonymous description sexy magazine - - ',false
+'technical study novel nonfiction medical tutorial entertainment business magazine uncategorized sexy magazine - - 2009 - muy caliente latin chicas category uncategorized posted 2010-01-30 anonymous description sexy magazine - - 2009 - muy caliente latin chicas 41 pages pdf ',false
+'tutorial entertainment business magazine uncategorized sexy magazine - - 2009 - muy caliente latin chicas category uncategorized posted 2010-01-30 anonymous description sexy magazine - - 2009 - muy caliente latin chicas 41 pages pdf rar ',false
+'entertainment business magazine uncategorized sexy magazine - - 2009 - muy caliente latin chicas category uncategorized posted 2010-01-30 anonymous description sexy magazine - - 2009 - muy caliente latin chicas 41 pages pdf rar 12 5 mb adult entertainment ',false
+'latin chicas category uncategorized posted 2010-01-30 anonymous description sexy magazine - - 2009 - muy caliente latin chicas 41 pages pdf rar 12 5 mb adult entertainment http ',false
+'rar password a3990918 sponsored speed downloads 7718 dl\'s 3340 kb sexy magazine - - 2009 - muy caliente version 8807 dl\'s 3109 kb sexy magazine - - 2009 ',false
+'a3990918 sponsored speed downloads 7718 dl\'s 3340 kb sexy magazine - - 2009 - muy caliente version 8807 dl\'s 3109 kb sexy magazine - - 2009 - muy caliente - fast download 8011 dl\'s 2308 ',false
+'7718 dl\'s 3340 kb sexy magazine - - 2009 - muy caliente version 8807 dl\'s 3109 kb sexy magazine - - 2009 - muy caliente - fast download 8011 dl\'s 2308 kb ',false
+'dl\'s 3340 kb sexy magazine - - 2009 - muy caliente version 8807 dl\'s 3109 kb sexy magazine - - 2009 - muy caliente - fast download 8011 dl\'s 2308 kb sexy magazine - - ',false
+'muy caliente version 8807 dl\'s 3109 kb sexy magazine - - 2009 - muy caliente - fast download 8011 dl\'s 2308 kb sexy magazine - - ',false
+'version 8807 dl\'s 3109 kb sexy magazine - - 2009 - muy caliente - fast download 8011 dl\'s 2308 kb sexy magazine - - 2009 - muy caliente - direct download search sexy ',false
+'8807 dl\'s 3109 kb sexy magazine - - 2009 - muy caliente - fast download 8011 dl\'s 2308 kb sexy magazine - - 2009 - muy caliente - direct download search sexy magazine - ',false
+'dl\'s 3109 kb sexy magazine - - 2009 - muy caliente - fast download 8011 dl\'s 2308 kb sexy magazine - - 2009 - muy caliente - direct download search sexy magazine - - 2009 - ',false
+'caliente - fast download 8011 dl\'s 2308 kb sexy magazine - - 2009 - muy caliente - direct download search sexy magazine - - 2009 - muy ',false
+'- fast download 8011 dl\'s 2308 kb sexy magazine - - 2009 - muy caliente - direct download search sexy magazine - - 2009 - muy caliente latin chicas links download book free ',false
+'8011 dl\'s 2308 kb sexy magazine - - 2009 - muy caliente - direct download search sexy magazine - - 2009 - muy caliente latin chicas links download book free download sexy ',false
+'dl\'s 2308 kb sexy magazine - - 2009 - muy caliente - direct download search sexy magazine - - 2009 - muy caliente latin chicas links download book free download sexy magazine - - ',false
+'2009 - muy caliente - direct download search sexy magazine - - 2009 - muy caliente latin chicas links download book free download sexy magazine - - 2009 ',false
+'muy caliente - direct download search sexy magazine - - 2009 - muy caliente latin chicas links download book free download sexy magazine - - 2009 - muy caliente latin chicas download link 2 active ',false
+'- direct download search sexy magazine - - 2009 - muy caliente latin chicas links download book free download sexy magazine - - 2009 - muy caliente latin chicas download link 2 active download links ',false
+'direct download search sexy magazine - - 2009 - muy caliente latin chicas links download book free download sexy magazine - - 2009 - muy caliente latin chicas download link 2 active download links please check description ',false
+'muy caliente latin chicas links download book free download sexy magazine - - 2009 - muy caliente latin chicas download link 2 active download links please check description ',false
+'2009 2011-02-26professional photographer magazine uk 2009 2010-04-27sexy especial november 2009 2010-04-01labtalk magazine september 2009 2010-03-10labtalk magazine september 2009 comments comments sexy magazine - - 2009 - muy caliente latin chicas add comments download links password description section ',false
+'2009 2010-04-27sexy especial november 2009 2010-04-01labtalk magazine september 2009 2010-03-10labtalk magazine september 2009 comments comments sexy magazine - - 2009 - muy caliente latin chicas add comments download links password description section ',false
+'september 2009 2010-03-10labtalk magazine september 2009 comments comments sexy magazine - - 2009 - muy caliente latin chicas add comments download links password description section ',false
+'destinations choose seasons fall follows spring - september summer - november february - march april winter - june - august divided summer rainfall winter rainfall northern central ',false
+'restaurant week 2016 participating restaurants - 20th - 30th 2016 - reservations www restaurantweek co ',false
+'restaurant week 2016 participating restaurants - 20th - 30th 2016 - reservations www restaurantweek co ',false
+'restaurant week 2016 participating restaurants - 20th - 30th 2016 - reservations www restaurantweek co ',false
+'city vain sentries watch sermon psalm 127 1 colin o\'brien 1981 retrieved 6 june 2011 ecsa bulletin york episcopal churchmen 1976 contains statements references retrieved 6 june 2011 authority control worldcat ',false
+'vain sentries watch sermon psalm 127 1 colin o\'brien 1981 retrieved 6 june 2011 ecsa bulletin york episcopal churchmen 1976 contains statements references retrieved 6 june 2011 authority control worldcat identities viaf 93157514 lccn n83035555 isni 0000 0000 ',false
+'restaurant week 2016 participating restaurants - 20th - 30th 2016 - reservations www restaurantweek co ',false
+'restaurant week 2016 participating restaurants - 20th - 30th 2016 - reservations www restaurantweek co ',false
+'restaurant week 2016 participating restaurants - 20th - 30th 2016 - reservations www restaurantweek co ',false
+'destination rain average amount rain observed 61 mm 5 11 days avoid rain preferred destination le cap note ',false
+'01 08 5020 views 4 replies forums gemma garrett - zoo - 2008 5-2008d itwins - 09 01 08 - 5020 views 4 replies forums glau - sfx - 2008 itwins - 09 01 08 5915 views 7 replies forums glau ',false
+'08 5020 views 4 replies forums gemma garrett - zoo - 2008 5-2008d itwins - 09 01 08 - 5020 views 4 replies forums glau - sfx - 2008 itwins - 09 01 08 5915 views 7 replies forums glau - sfx ',false
+'2008 5-2008d itwins - 09 01 08 - 5020 views 4 replies forums glau - sfx - 2008 itwins - 09 01 08 5915 views 7 replies forums glau - sfx - ',false
+'- 09 01 08 - 5020 views 4 replies forums glau - sfx - 2008 itwins - 09 01 08 5915 views 7 replies forums glau - sfx - 2008 itwins - 09 01 08 - 5915 ',false
+'01 08 - 5020 views 4 replies forums glau - sfx - 2008 itwins - 09 01 08 5915 views 7 replies forums glau - sfx - 2008 itwins - 09 01 08 - 5915 views 7 replies forums bianca ',false
+'08 - 5020 views 4 replies forums glau - sfx - 2008 itwins - 09 01 08 5915 views 7 replies forums glau - sfx - 2008 itwins - 09 01 08 - 5915 views 7 replies forums bianca gascoigne - ',false
+'- 2008 itwins - 09 01 08 5915 views 7 replies forums glau - sfx - 2008 itwins - 09 01 08 - 5915 views 7 replies forums bianca gascoigne - ok ',false
+'seasons opposite northern hemisphere spring september summer months run late november december january february tends short lived takes march april ',false
+'opposite northern hemisphere spring september summer months run late november december january february tends short lived takes march april ',false
+'25 32 77 90 precipitation occurs summer november december january february march winter daytime average temperatures cool ',false
+'rainfall occur winter months 2011 2012 16 edit 2011 heat wave indian summer references edit britain hottest day record taiwan news online taiwannews com tw 1 2011 retrieved 17 august ',false
+'january 2016 author tom di liberto february 17 2016 poor rains southern monsoon led extensive drought mozambique zambia zimbabwe southern madagascar dismal season destroyed crops killed livestock led blackouts ',false
+'2016 author tom di liberto february 17 2016 poor rains southern monsoon led extensive drought mozambique zambia zimbabwe southern madagascar dismal season destroyed crops killed livestock led blackouts ',false
+'saturday halloween threw dust block sun unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell ',false
+'halloween threw dust block sun unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell ',false
+'sun unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell hit note south east experienced ',false
+'unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell hit note south east experienced ',false
+'driving heat record spell affected southeast week exceptional spell followed weeks spell hit note south east experienced temperatures 8-10c average australian ',false
+'spell affected southeast week exceptional spell followed weeks spell hit note south east experienced temperatures 8-10c average australian bureau meteorology ',false
+'week exceptional spell followed weeks spell hit note south east experienced temperatures 8-10c average australian bureau meteorology ',false
+'saturday halloween threw dust block sun unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell ',false
+'halloween threw dust block sun unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell ',false
+'sun unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell hit note south east experienced ',false
+'unlikely driving heat record spell affected southeast week exceptional spell followed weeks spell hit note south east experienced ',false
+'driving heat record spell affected southeast week exceptional spell followed weeks spell hit note south east experienced temperatures 8-10c average australian ',false
+'spell affected southeast week exceptional spell followed weeks spell hit note south east experienced temperatures 8-10c average australian bureau meteorology ',false
+'week exceptional spell followed weeks spell hit note south east experienced temperatures 8-10c average australian bureau meteorology ',false
+'time 2001 floods riverina southwest slopes south wales 13 16 record-high sea surface temperatures northern coasts december wettest record northern queensland western november 2010 april 2011 ',false
+'south wales 13 16 record-high sea surface temperatures northern coasts december wettest record northern queensland western november 2010 april 2011 ',false
+'south wales 13 16 record-high sea surface temperatures northern coasts december wettest record northern queensland western november 2010 april 2011 australian monsoon arrives earlier stronger ',false
+'archives videos celebrating sydney\'s bright minds sydney\'s changing landscape - six-part video series 20 2016 top five cancers diagnosed nation rates disease world ',false
+'2016 17 south-west indian ocean cyclone season 2016 17 south pacific cyclone season south atlantic cyclone references edit national climate centre 10 2016 australian cyclone outlook 2016 2017 average australian bureau meteorology retrieved 10 2016 perth cyclone warning centre ',false
+'south atlantic cyclone references edit national climate centre 10 2016 australian cyclone outlook 2016 2017 average australian bureau meteorology retrieved 10 2016 perth cyclone warning centre ',false
+'cyclone references edit national climate centre 10 2016 australian cyclone outlook 2016 2017 average australian bureau meteorology retrieved 10 2016 perth cyclone warning centre 10 2016 western seasonal ',false
+'national climate centre 10 2016 australian cyclone outlook 2016 2017 average australian bureau meteorology retrieved 10 2016 perth cyclone warning centre 10 2016 western seasonal cyclone outlook 2016-17 australian bureau ',false
+'torres strait islands queensland affected 2015 16 northern april rainfall coastal northern particularly north 14 driest ten cent ',false
+'records kimberley region rainfall 14 cent below normal april period driest 2004 05 northwest seen strong increase rainfall recent decades below-normal seasons ',false
+'brings below-normal temperatures northern tropics \'build-up\' main starts 2015 followed script august september slightly cooler normal due increasing trend rainfall northwest mean temperatures january april period northern tropics modest trend ',false
+'main starts 2015 followed script august september slightly cooler normal due increasing trend rainfall northwest mean temperatures january april period northern tropics modest trend ',false
+'south winter-spring average past events below average rainfall occurs december rainfall northern eastern throughout top northern territory northern progresses march impacts potentially severe extend south ',false
+'pacific ocean journal geophysical research 115 d01101 doi 10 1029 2009jd012372 archive previous australian cyclone outlooks issued 10 2016 average average above-average expected 2016 17 australian ',false
+'farm shed 1 bridge thousands production forest jarrah national parks 2015 esperance western 200 000 ha 39 november 2015 4 40 10 houses public buildings scaddan 15 000 stock losses ',false
+'south wales government retrieved 30 2010 country fire authority country fire authority retrieved 30 2010 welcome dfes department fire emergency services western retrieved 30 2010 luke rh mcarthur ag 1978 canberra australian government publishing service cs1 maint authors parameter link sullivan rohan ',false
+'retrieved 30 2010 welcome dfes department fire emergency services western retrieved 30 2010 luke rh mcarthur ag 1978 canberra australian government publishing service cs1 maint authors parameter link sullivan rohan ',false
+'2010 welcome dfes department fire emergency services western retrieved 30 2010 luke rh mcarthur ag 1978 canberra australian government publishing service cs1 maint authors parameter link sullivan rohan 11 february ',false
+'tasmanian fires february 1967 62 lives 1400 houses buildings lost list australia\'s natural disasters ablaze marks start bushfire season hot summers recent mean ',false
+'buildings lost list australia\'s natural disasters ablaze marks start bushfire season hot summers recent mean recurring news australian media map ',false
+'possibly due mild temperatures country lasts australian winter winter fall sick ',false
+'pneumonia 122 cities vs causes united considered 13 usually peaks february 14 considered usually peaks august 15 ',false
+'pneumonia 122 cities vs causes united considered 13 usually peaks february 14 considered usually peaks august 15 seasons ',false
+'cities vs causes united considered 13 usually peaks february 14 considered usually peaks august 15 seasons exist ',false
+'considered 13 usually peaks february 14 considered usually peaks august 15 seasons exist tropics subtropics ',false
+'march april navigate photo credit andrew watson awl images getty images updated 16 2016 begins march 1 actually 20 days march equinox ',false
+'colours seasons 7 apps transform holiday com travel travel visiting travel follow deliver travel ',false
+'april according centers disease control prevention australian winter experiences winter ',false
+'december article related month month weather events holiday travelling march web powered zergnet travel travel - travel ',false
+'month weather events holiday travelling march web powered zergnet travel travel - travel ',false
+'weather events holiday travelling march web powered zergnet travel travel - travel ',false
+'index php title australia_at_the_winter_paralympics oldid 753878709 categories paralympics nations paralympics australian institute sport paralympic skiers sports hidden categories articles merged 2016 articles merged australian english 2016 wikipedia articles ',false
+'paralympics nations paralympics australian institute sport paralympic skiers sports hidden categories articles merged 2016 articles merged australian english 2016 wikipedia articles ',false
+'update 08 04 13 tour organisers announced due red-tape immigration rite tour hit snag enslaved postponed late november tickets sold previous valid ',false
+'homecoming sounds live feels live tour biggest breakthrough band 2014 5 night 2015 aria awards announced return run east coast dates september - 2016 qantas band tour world 2016 close ',false
+'fashion - vogue subscribe magazine vogue fashionbeautycultureliving runway video runway showsseasondesigner 2016 23 2015 - 26 2015 top pirosmani ria keburia yasya minochkina dimaneu saint-tokyo ',false
+'june 2015 press harper bazaar march 2015 press harper bazaar 2015 press harper bazaar september 2013 press inspired autumn 2014 press inspired 2014 press katy perry runa jewelry press azure 2015 press ',false
+'guards forces military revolutionary committee takeover government buildings 24 1917 following day palace seat provisional government located petrograd capital captured long-awaited constituent assembly elections held 12 november 1917 bolsheviks ',false
+'effect changing clock hour comparison permanent time 2011 2014 2014 changed permanently standard time utc 03 00 country\'s west ',false
+'changing clock hour comparison permanent time 2011 2014 2014 changed permanently standard time utc 03 00 country\'s west including moscow ',false
+'ukraine further-eastern european time zone utc 03 00 belarus western observe time 18 2011 parliament canceled plans country returned eastern european time ',false
+'lonely planet recommends exploring area\'s thousands animal plant species dry months temperatures drop below 70 degrees night references frommer\'s - planning trip - wwf pantanal south america lonely planet ',false
+'br noticias 2016-09-08 este-e-o-setembro-mais-frio-dos-ultimos-50-anos thanks wagner link post navigation previous postrecord slovakianext postnorthern rockies clobbered snow 7 coldest september 50 martin siebert 6 2016 12 57 pm snow hail ',false
+'commentary view posts vincit omnia veritas published vincit omnia veritas 4 2016format gallery murder tags assassination brazilian cctv video close range shot blooded murder gun shot gunshot gunshot wound hitman murder murder victim shot shot death ',false
+'shot gunshot gunshot wound hitman murder murder victim shot shot death 55 blooded assassination caught cctv dourados dethbyplaster 4 2016 5 32 pm walking scene ',false
+'retrieved 7 2016 byman daniel 1 december 2011 hope arab chill arab winter washington post retrieved 7 2016 hossein mousavian seyed 3 june 2016 iran\'s national security threat huffington post retrieved 23 september 2016 toby harnden ',false
+'1 december 2011 hope arab spring chill arab washington post retrieved 7 2016 hossein mousavian seyed 3 june 2016 iran\'s national security threat huffington post retrieved 23 september 2016 toby harnden ',false
+'destinations choose seasons fall follows spring - september summer - november february autumn - march april - june - august divided summer rainfall rainfall northern central ',false
+'arid scenery hot dry summers cold dry winters southern hemisphere country seasons opposite northern hemisphere spring september months run late november december january february autumn tends ',false
+'country seasons opposite northern hemisphere spring september months run late november december january february autumn tends ',false
+'seasons opposite northern hemisphere spring september months run late november december january february autumn tends ',false
+'opposite northern hemisphere spring september months run late november december january february autumn tends ',false
+'25 32 77 90 precipitation occurs autumn november december january february march winter daytime average temperatures cool ',false
+'september november actual based weather seasons follows spring september - summer november - march april - winter june - august spring short ',false
+'destinations choose seasons fall follows spring - september - november february autumn - march april winter - june - august divided rainfall winter rainfall northern central ',false

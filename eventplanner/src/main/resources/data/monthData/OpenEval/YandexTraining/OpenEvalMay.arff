@@ -1,0 +1,463 @@
+@relation posOrNegWordBags
+
+@attribute corpus string
+@attribute Class_Attribute_For_SimpleOpenEval {true,false}
+
+@data
+'period april 15 25 luoyang peony festival april 1 7 top travel suggestions ',true
+'mid-march mid-may difference latitude northern china\'s april south earlier march april northern march temperatures day begin warm evening hours bring ',true
+'easy adapt whatever temperatures experience temperatures comfortable humidity detailed weather information weather march weather april weather help ',true
+'temperatures experience temperatures comfortable humidity detailed weather information weather march weather april weather help enjoy avoid labor day week crowds ',true
+'comfortable humidity detailed weather information weather march weather april weather help enjoy avoid labor day week crowds celebrates labor day week ',true
+'humidity detailed weather information weather march weather april weather help enjoy avoid labor day week crowds celebrates labor day week ',true
+'detailed weather information weather march weather april weather help enjoy avoid labor day week crowds celebrates labor day week ',true
+'weather information weather march weather april weather help enjoy avoid labor day week crowds celebrates labor day week ',true
+'weather april weather help enjoy avoid labor day week crowds celebrates labor day week hotel prices etc double attractions busy millions chinese ',true
+'chinese statutory holiday tourism advise avoid coming 1 7 wrong best-selling tour classic wonders 11 days golden triangle beijing xi shanghai ',true
+'tours travel visit march april contact community feedbacks home tours classic tours scenic tours ',true
+'tours travel visit march april contact community feedbacks home tours classic tours scenic tours ',true
+'tours travel visit march april contact community feedbacks home tours classic tours scenic tours ',true
+'tours tries offer choices plan travel mild time march april embrace warm sunshine feel gentle breeze ',true
+'drink galleries theatres help arts thrive visitors enjoy expansive multi-dimensional experience study abroad semester able submerse yourself heart german culture ',true
+'enjoy expansive multi-dimensional experience study abroad semester able submerse yourself heart german culture enjoy german ',true
+'result collection fun life-enhancing experiences study semester playing easy studying wonderful re looking programs fulfill major minor ',true
+'collection fun life-enhancing experiences study semester playing easy studying wonderful re looking programs fulfill major minor ',true
+'1 2018 day national holiday wed 1 2019 day national holiday fri 1 2020 day national holiday quick factsmay day holiday celebrate start campaign workers\' rights 1 day 2017monday ',true
+'day national holiday wed 1 2019 day national holiday fri 1 2020 day national holiday quick factsmay day holiday celebrate start campaign workers\' rights 1 day 2017monday ',true
+'day national holiday fri 1 2020 day national holiday quick factsmay day holiday celebrate start campaign workers\' rights 1 day 2017monday 1 2017 day 2018tuesday 1 2018 advertising name ',true
+'holiday dedicated respect children rights celebrate happiness boys festival happens 5 girls festival 3 festivals loved festivals sakura cherry blossom ',true
+'rights celebrate happiness boys festival happens 5 girls festival 3 festivals loved festivals sakura cherry blossom ',true
+'wine recipe ll prepared ready time bewitching origins day celebrations day public holiday swing weather summer ',true
+'ready time bewitching origins day celebrations day public holiday swing weather summer ',true
+' weather alert experience typhoon-class storm yokosonews - japanese culture lifestyle entertainment yokosonews com join search facebook ',true
+'travel entertainment art lifestyle news study food matsuri world fashion live home news weather alert experience typhoon-class storm posted katzueno wednesday april 4th 2012 standard time weather alert ',true
+'entertainment art lifestyle news study food matsuri world fashion live home news weather alert experience typhoon-class storm posted katzueno wednesday april 4th 2012 standard time weather alert experience typhoon-class storm updates updated ',true
+'news study food matsuri world fashion live home news weather alert experience typhoon-class storm posted katzueno wednesday april 4th 2012 standard time weather alert experience typhoon-class storm updates updated 9 00am april 4 2012 yokosonews ',true
+'alert experience typhoon-class storm posted katzueno wednesday april 4th 2012 standard time weather alert experience typhoon-class storm updates updated 9 00am april 4 2012 yokosonews conclude weather ',true
+'storm posted katzueno wednesday april 4th 2012 standard time weather alert experience typhoon-class storm updates updated 9 00am april 4 2012 yokosonews conclude weather ',true
+'tomorrow morning north originally published 7 27pm april 2 2012 jma meteorological agency warns public experience nationwide storm rain wind snow storm northern tuesday april 3 ',true
+'7 27pm april 2 2012 jma meteorological agency warns public experience nationwide storm rain wind snow storm northern tuesday april 3 ',true
+'content stop slideshow home forums global courses contact subscribe search search fernglade farm update 2014 victoria 15 2014 chris mcleod filed demonstration sites food forests plant systems trees ',true
+'hemenway permaculture crusader help bill mollison time scout 8 fernglade farm update 2014 victoria rick larson 16 2014 11 34 am busy nice ',true
+'layers welcomes beginning warm season traditional easter celebrations festivals except season march weather airfares festivals events airfares hotel rates ',true
+'season traditional easter celebrations festivals except season march weather airfares festivals events airfares hotel rates ',true
+'easter celebrations fairs music festivals events march events april events city berlin bavaria frankfurt hamburg easter easter popular holidays marking awaited ',true
+'air whoever toss bale wins events bank holiday events wish attend besides listed brighton festival held ',true
+'expect planning visit except weather airfares festivals cherry blossoms weeks april erupts pink cherry blossoms bring represent relationship ',true
+'expect planning visit except weather airfares festivals cherry blossoms weeks april erupts pink cherry blossoms bring represent relationship ',true
+'except weather airfares festivals cherry blossoms weeks april erupts pink cherry blossoms bring represent relationship japan brighten berlin wall ran stuttgart ',true
+'weather airfares festivals cherry blossoms weeks april erupts pink cherry blossoms bring represent relationship japan brighten berlin wall ran stuttgart ',true
+'- tourism australia\'s seasons discover australia\'s discover australia\'s discover magical diversity lasting march country red-gold trees orange rural food wine ',true
+'- tourism australia\'s seasons discover australia\'s discover australia\'s discover magical diversity lasting march country red-gold trees orange rural food wine ',true
+'australia\'s seasons discover australia\'s discover australia\'s discover magical diversity lasting march country red-gold trees orange rural food wine ',true
+'australia\'s seasons discover australia\'s luxury add share discover magical diversity australia\'s lasting march country learn adventure scenic brisbane river experience life drover ',true
+'luxury add share discover magical diversity australia\'s lasting march country learn adventure scenic brisbane river experience life drover ',true
+'queensland barrier reef view information add dream trip discover australia\'s discover australia\'s discover australia\'s discover magical diversity lasting march country red-gold trees orange rural food wine ',true
+'barrier reef view information add dream trip discover australia\'s discover australia\'s discover australia\'s discover magical diversity lasting march country red-gold trees orange rural food wine ',true
+'information add dream trip discover australia\'s discover australia\'s discover australia\'s discover magical diversity lasting march country red-gold trees orange rural food wine ',true
+'trip discover australia\'s discover australia\'s discover australia\'s discover magical diversity lasting march country red-gold trees orange rural food wine ',true
+'landmarks related space travel achievement flag russian federation alex kotlov 1 labor day labor day traditionally politically charged marked parades past ',true
+'add events calendar creator adv calendar creator holidays day home calendar holidays bank holiday bank holiday bank holiday late bank holiday time people day ',true
+'events calendar creator adv calendar creator holidays day home calendar holidays bank holiday bank holiday bank holiday late bank holiday time people day ',true
+'adv calendar creator holidays day home calendar holidays bank holiday bank holiday bank holiday late bank holiday time people day ',true
+'day home calendar holidays bank holiday bank holiday bank holiday late bank holiday time people day ',true
+'day home calendar holidays bank holiday bank holiday bank holiday late bank holiday time people day school falls monday ',true
+'home calendar holidays bank holiday bank holiday bank holiday late bank holiday time people day school falls monday ',true
+'bank holiday bank holiday mon 27 2019 bank holiday bank holiday mon 25 2020 bank holiday bank holiday quick factsthe bank holiday monday bank holiday 2017monday 29 ',true
+'bank holiday mon 27 2019 bank holiday bank holiday mon 25 2020 bank holiday bank holiday quick factsthe bank holiday monday bank holiday 2017monday 29 2017 bank holiday 2018monday 28 ',true
+'bank holiday bank holiday mon 25 2020 bank holiday bank holiday quick factsthe bank holiday monday bank holiday 2017monday 29 2017 bank holiday 2018monday 28 ',true
+'25 2020 bank holiday bank holiday quick factsthe bank holiday monday bank holiday 2017monday 29 2017 bank holiday 2018monday 28 2018 advertising name ',true
+'evaluates yandex users search behavior corresponds time russian holidays beginning vacation period series holidays start month office ',true
+'russians travel domestically raising yandex impressions relating domestic flights 51 popular domestic vacation spots peak summer seasons yields significant increase air plane ticket searches local destinations ',true
+'russians travel domestically raising yandex impressions relating domestic flights 51 popular domestic vacation spots peak summer seasons yields significant increase air plane ticket searches local destinations ',true
+'flights 51 popular domestic vacation spots peak summer seasons yields significant increase air plane ticket searches local destinations mind russians travel train especially trips ',true
+'1 895 2017 sale airfares deals weather seasons climates australian seasons spring september november summer december february march winter june august seasons travel nicest weather ',true
+'deals weather seasons climates australian seasons spring september november summer december february march winter june august seasons travel nicest weather spring planning travel read ',true
+'seasons climates australian seasons spring september november summer december february march winter june august seasons travel nicest weather spring planning travel read time travel ',true
+'spring september 1 whatever rationale seasons begin simply australian months march april daylight saving time dayloght saving time sunday april ',true
+'observe daylight saving time public holidays public holidays include easter sunday occur march april labor day western victoria equivalent eight hours day tasmania canberra day australian ',true
+'cook 1770 festival numerically-named town 1770 goomeri\'s pumpkin festival western whaleshark festival held exmouth racing let-up horse racing events throughout racing ',true
+'leaves winter process undergo changes color deciduous trees impact massed autumnal color changes tracts wilderness ',true
+'officially starts sept 22 goes dec 21 people consider fall labor day thanksgiving roughly march april 3 people found useful lyzie forbes-dash 158 contributions answered seasons date ',true
+'people consider fall labor day thanksgiving roughly march april 3 people found useful lyzie forbes-dash 158 contributions answered seasons date ',true
+'3 people found useful lyzie forbes-dash 158 contributions answered seasons date start finish - march april winter - june july august spring - september october november summer - december january february ',true
+'lyzie forbes-dash 158 contributions answered seasons date start finish - march april winter - june july august spring - september october november summer - december january february ',true
+'don\'t wide answered start begins 1 march continues 31 southern hemisphere months march april 5 ',true
+'wide answered start begins 1 march continues 31 southern hemisphere months march april 5 ',true
+'wide answered start begins 1 march continues 31 southern hemisphere months march april 5 ',true
+'wide answered start begins 1 march continues 31 southern hemisphere months march april 5 people found useful edit share ',true
+'start begins 1 march continues 31 southern hemisphere months march april 5 people found useful edit share ',true
+'begins 1 march continues 31 southern hemisphere months march april 5 people found useful edit share answer useful yes somewhat ',true
+'3 kuwait giant - 1 40 thesonicq8 889 906 1 40 massive engulfs arabian cities day night tuesday 8 2013 - 1 49 adrenalinejunky -jason hendricks 29 546 1 49 hits - 0 48 mody nasser 8 259 0 48 youtube youtube ',true
+'889 906 1 40 massive engulfs arabian cities day night tuesday 8 2013 - 1 49 adrenalinejunky -jason hendricks 29 546 1 49 hits - 0 48 mody nasser 8 259 0 48 youtube youtube ',true
+'day happy day happy independence day 1 1 1 related articles photos - photos russian traditions celebrations festivals events cultural festivals celebrating moscow st petersburg celebrating april ',true
+'day happy independence day 1 1 1 related articles photos - photos russian traditions celebrations festivals events cultural festivals celebrating moscow st petersburg celebrating april ',true
+'related articles photos - photos russian traditions celebrations festivals events cultural festivals celebrating moscow st petersburg celebrating april ',true
+'26 bank holiday - - - 01 01 2017 19 36 rss british bulldog 2007-2008 2008-2009 2009-2010 2010-2011 ',true
+'british bulldog 2007-2008 2008-2009 2009-2010 2010-2011 2011-2012 2012-2013 2013-2014 2014-2015 2015-2016 19 1 1 0 26 bank holiday 07 05 2014 22 07 bank holiday bank holiday ',true
+'7 days national days religious holidays christian hindu jewish islamic countdown home countries bank holiday social advertisements bank holiday public holiday observed bank holiday day date 2018 monday 28th 2017 monday 29th 2016 monday 30th 2015 monday 25th 2014 monday ',true
+'7 days national days religious holidays christian hindu jewish islamic countdown home countries bank holiday social advertisements bank holiday public holiday observed bank holiday day date 2018 monday 28th 2017 monday 29th 2016 monday 30th 2015 monday 25th 2014 monday ',true
+'holidays christian hindu jewish islamic countdown home countries bank holiday social advertisements bank holiday public holiday observed bank holiday day date 2018 monday 28th 2017 monday 29th 2016 monday 30th 2015 monday 25th 2014 monday ',true
+'bank holiday social advertisements bank holiday public holiday observed bank holiday day date 2018 monday 28th 2017 monday 29th 2016 monday 30th 2015 monday 25th 2014 monday ',true
+'2016 syria crisis arab world war iran russia usa nato turkey 2016 - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'youtube japanese change preference below __count__ __total__ 2016 syria crisis arab world war iran russia usa nato turkey 2016 u2bheavenbound 130 02713 12 362 70 71 8 9 2016 05 10 2016 syria ',true
+'e-mail 23 shares 15 view comments eddie jones\' england grabbed victory allister coetzee\'s saturday afternoon\'s test tries jonny courtney lawes george ford owen farrell helped land win jubilant home ',true
+'5 ruan combrinck 5 willie le roux 6 related articles previous 1 england 37-21 tries jonny courtney england 37-21 internationals live scotland learn lessons quarter-final loss england\'s clash ',true
+'ruan combrinck 5 willie le roux 6 related articles previous 1 england 37-21 tries jonny courtney england 37-21 internationals live scotland learn lessons quarter-final loss england\'s clash ',true
+'le roux 6 related articles previous 1 england 37-21 tries jonny courtney england 37-21 internationals live scotland learn lessons quarter-final loss england\'s clash ',true
+'calendar add events calendar creator adv calendar creator holidays day home calendar holidays labor day labor day celebrations 1 lost political meaning 1991 political parties labor unions ',true
+'add events calendar creator adv calendar creator holidays day home calendar holidays labor day labor day celebrations 1 lost political meaning 1991 political parties labor unions ',true
+'adv calendar creator holidays day home calendar holidays labor day labor day celebrations 1 lost political meaning 1991 political parties labor unions ',true
+'labor day celebrations 1 lost political meaning 1991 political parties labor unions demonstrations day russians labor day gardening spending time families flowers popular symbol ',true
+'labor unions organize demonstrations day party labor union activists participate demonstrations public life labor day public holiday banks public buildings educational institutions closed day 1 ',true
+'day party labor union activists participate demonstrations public life labor day public holiday banks public buildings educational institutions closed day 1 falls weekend public holiday usually moves following monday public ',true
+'day victory putschists 1991 day-off labour day edit information international workers\' day former soviet union 1 international workers\' day celebrated huge parades cities moscow ',true
+'windows blog archive 1st day labor home donation rss archive recipes russian churches windows russiaall ',true
+'windows blog archive 1st day labor home donation rss archive recipes russian churches windows russiaall ',true
+'windows blog archive 1st day labor home donation rss archive recipes russian churches windows russiaall russian little bit american idiosyncrasies ',true
+'russian churches windows russiaall russian little bit american idiosyncrasies 1st day labor 22nd july 2010 originally posted 2008-04-30 17 01 00 hello ',true
+'russian churches windows russiaall russian little bit american idiosyncrasies 1st day labor 22nd july 2010 originally posted 2008-04-30 17 01 00 hello holiday day labor day 1 2008 formerly ',true
+'russian little bit american idiosyncrasies 1st day labor 22nd july 2010 originally posted 2008-04-30 17 01 00 hello holiday day labor day 1 2008 formerly international worker solidarity day communist system ',true
+'day labor 22nd july 2010 originally posted 2008-04-30 17 01 00 hello holiday day labor day 1 2008 formerly international worker solidarity day communist system ',true
+'idiosyncrasy time menu skip content home favorite photos crimea chronicles russian russian art anna 22 2014 labor day victory day eating outside smelling roses ',true
+'russian landscape throughout share twitter facebook pinterest email loading 22 2014 russian art tags art russian art russian landscape russian nature russian related posts russian autumn russian art october russian summer russian art july ',true
+'compass ceo andrew su risk arab force opec cut oil output home edition news economy finance health care real estate wealth ',true
+'watch cnbc pro watchlist asia-pacific news compass ceo andrew su risk arab force opec cut oil output huileng tan huileng_tan tuesday 19 jan 2016 3 29 am ',true
+'disasters die-offs wonder art antarctica pics sky phenomena forum home natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin ',true
+'antarctica pics sky phenomena forum home natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 ',true
+'pics sky phenomena forum home natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 2016 apocalyptical ',true
+'phenomena forum home natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 2016 apocalyptical swept ',true
+'engulfs hafr al-batin 6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 2016 apocalyptical swept hafr ',true
+'6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 2016 apocalyptical swept hafr al-batin 6 2016 biblical wall sand ',true
+'6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 2016 apocalyptical swept hafr al-batin 6 2016 biblical wall sand blackened sky ',true
+'6 2016 natural disaster sand storm apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 2016 apocalyptical swept hafr al-batin 6 2016 biblical wall sand blackened sky city ',true
+'apocalyptical engulfs hafr al-batin 6 2016 strange sounds - 7 2016 apocalyptical swept hafr al-batin 6 2016 biblical wall sand blackened sky city ',true
+'6 2016 strange sounds - 7 2016 apocalyptical swept hafr al-batin 6 2016 biblical wall sand blackened sky city ',true
+'looks thunderstorm engulfing city crazy follow facebook twitter tags 2016 photo sanstorm video strange sounds related articlesmore author sand storm epic changes day night afghanistan sand storm haboob engulfs phoenix arizona august 9 ',true
+'plane flies quotesmedia 00 3 766 7 8 0 1 2013 05 16 rafha 12 2013 passenger plane flying rafha captures incredible footage ',true
+'00 3 766 7 8 0 1 2013 05 16 rafha 12 2013 passenger plane flying rafha captures incredible footage aircraft flying massive 1000m youtube day night - 2 11 therichexpat ',true
+'766 7 8 0 1 2013 05 16 rafha 12 2013 passenger plane flying rafha captures incredible footage aircraft flying massive 1000m youtube day night - 2 11 therichexpat ',true
+'golf racing profile logout login dailymail articleshometop share ad england 37-21 internationals result eddie jones\' style jonny courtney lawes george ford owen farrell score tries england 37-21 winners ',true
+'player ratings kelleher twickenham eddie jones\' england grabbed victory allister coetzee\'s saturday afternoon\'s test tries jonny courtney lawes george ford owen farrell helped land win jubilant home ',true
+'content skip footer zelmare live love laugh home thank posted 9 2012 zelmare weather unseasonably warm time ',true
+'resulted largest coverage 2009 weather experts continue fall march lots covers winter embed code copy paste embed code below code ',false
+'personalities photos coats lakes northeast sunday renee duff meteorologist 18 2016 9 59 39 pm edt late-season covered lakes northeastern past weekend blast unseasonably cold air caused temperatures drop 10-20 degrees ',false
+'9 2015 02 11 pm edt weather com country winter comes forms amounts cripple cities provoke amazement brushed ordinary winter weather slideshow page ',false
+'activity addresses spread severity bottom line it\'s season frieden told reporters activity elevated decreasing that\'s hard predict influenza activity ebbs flows ',false
+'spread severity bottom line it\'s season frieden told reporters activity elevated decreasing that\'s hard predict influenza activity ebbs flows ',false
+'redirected swine outbreak information 2009 pandemic 2009 pandemic country 2009 pandemic article\'s factual accuracy compromised due out-of-date information please update article reflect recent events ',false
+'redirected swine outbreak information 2009 pandemic 2009 pandemic country 2009 pandemic article\'s factual accuracy compromised due out-of-date information please update article reflect recent events ',false
+'information 2009 pandemic 2009 pandemic country 2009 pandemic article\'s factual accuracy compromised due out-of-date information please update article reflect recent events ',false
+'expansion help adding december 2009 cdc report 2008-2009 season week 18 17 subtypes percent positive tests h1n1 spread rapidly particularly severe outbreaks texas york utah california associated ',false
+'related articles vacation southern top ten seniors adventure deciding exactly hardest vacationing southern ',false
+'articles vacation southern top ten seniors adventure deciding exactly hardest vacationing southern ',false
+'vacation southern top ten seniors adventure deciding exactly hardest vacationing southern ',false
+'vacation southern top ten seniors adventure deciding exactly hardest vacationing southern ',false
+'vacation southern top ten seniors adventure deciding exactly hardest vacationing southern ',false
+'top ten seniors adventure deciding exactly hardest vacationing southern ',false
+'2009 pandemic - wikipedia 2009 pandemic wikipedia free encyclopedia jump navigation search information 2009 pandemic 2009 pandemic country 2009 pandemic article\'s factual accuracy compromised due out-of-date information please update article reflect recent events ',false
+'wikipedia free encyclopedia jump navigation search information 2009 pandemic 2009 pandemic country 2009 pandemic article\'s factual accuracy compromised due out-of-date information please update article reflect recent events ',false
+'wikipedia free encyclopedia jump navigation search information 2009 pandemic 2009 pandemic country 2009 pandemic article\'s factual accuracy compromised due out-of-date information please update article reflect recent events ',false
+'navigation search information 2009 pandemic 2009 pandemic country 2009 pandemic article\'s factual accuracy compromised due out-of-date information please update article reflect recent events ',false
+'expansion help adding december 2009 cdc report 2008-2009 season week 18 17 subtypes percent positive tests h1n1 spread rapidly particularly severe outbreaks texas york utah california associated ',false
+'missing empty title help dead link severity pandemic h1n1 influenza april july 2009 bayesian analysis plos medicine swine mildest pandemic researchers los angeles times 2009-12-08 retrieved 2 august 2010 stein ',false
+'majority 706 90 54 52 respectively 24 2009 wisconsin currently confirmed swine june 1 2009 confirmed milwaukee resident underlying health issues ',false
+'04 04 pm tagged york view 25 top myrtle virginia gloucester posted monamanuel 15 10 02 44 pm posted tagged massachusetts south carolina virginia jump reply add reply report abuse printer ',false
+'pm tagged york view 25 top myrtle virginia gloucester posted monamanuel 15 10 02 44 pm posted tagged massachusetts south carolina virginia jump reply add reply report abuse printer ',false
+'africa am rica latina argentina brasil canada deutschland espa france india italia xico kingdom commodities thu 21 2015 9 32pm edt cleanup oil-fouled california months left workers clean oil slick coast ',false
+'rica latina argentina brasil canada deutschland espa france india italia xico kingdom commodities thu 21 2015 9 32pm edt cleanup oil-fouled california months left workers clean oil slick coast ',false
+'months left workers clean oil slick coast refugio goleta california 21 2015 reuters lucy nicholson 1 30 left clean worker holds ',false
+'box sea creatures killed oil slick coast refugio goleta california 21 2015 reuters lucy nicholson 2 30 left workers clean oil slick ',false
+'30 left workers clean oil slick coast refugio goleta california 21 2015 reuters lucy nicholson 3 30 left worker climbs rocks covered ',false
+'oil cleans oil slick coast refugio goleta california 21 2015 reuters lucy nicholson 4 30 left bags debris covered oil ',false
+'truck workers clean oil slick coast refugio goleta california 21 2015 reuters lucy nicholson 5 30 left paige thelen 22 paige ',false
+'fracking phasing oil development california santa barbara california 21 2015 reuters lucy nicholson 6 30 left crews clean near refugio californian coast goleta california 21 ',false
+'fracking phasing oil development california santa barbara california 21 2015 reuters lucy nicholson 6 30 left crews clean near refugio californian coast goleta california 21 2015 reuters kevork djansezian 7 30 left source ',false
+'phasing oil development california santa barbara california 21 2015 reuters lucy nicholson 6 30 left crews clean near refugio californian coast goleta california 21 2015 reuters kevork djansezian 7 30 left source spill ',false
+'21 2015 reuters lucy nicholson 6 30 left crews clean near refugio californian coast goleta california 21 2015 reuters kevork djansezian 7 30 left source spill ',false
+'2015 reuters lucy nicholson 6 30 left crews clean near refugio californian coast goleta california 21 2015 reuters kevork djansezian 7 30 left source spill ',false
+'left source spill seen near refugio massive oil spill california coast goleta california 21 2015 reuters kevork djansezian 8 30 left source spill ',false
+'left source spill seen near refugio massive oil spill california coast goleta california 21 2015 reuters kevork djansezian 9 30 left protesters call ban ',false
+'oil spill makes patterns marine algae waters refugio massive oil spill california coast goleta california 21 2015 reuters kevork djansezian 11 30 left laudine borges holds canvas ',false
+'oil boom attempt skim oil waters refugio massive oil spill california coast goleta california 21 2015 reuters kevork djansezian 13 30 left protesters call ban ',false
+'oil boom attempt skim oil waters refugio massive oil spill california coast goleta california 21 2015 reuters kevork djansezian 16 30 left crew attempts skims oil ',false
+'30 left crew attempts skims oil waters refugio massive oil spill california coast goleta california 21 2015 reuters kevork djansezian 17 30 left crew oil boom ',false
+'oil boom attempt skim oil waters refugio massive oil spill california coast goleta california 21 2015 reuters kevork djansezian 18 30 left volunteers carry buckets oil ',false
+'volunteers carry buckets oil oil slick coast refugio goleta california 20 2015 reuters lucy nicholson 19 30 left william mcconnaughey 56 drove ',false
+'oil oil slick bare feet coast refugio goleta california 20 2015 reuters lucy nicholson 20 30 left volunteers fill buckets oil ',false
+'volunteers fill buckets oil oil slick coast refugio goleta california 20 2015 reuters lucy nicholson 21 30 left volunteers carry buckets oil ',false
+'volunteers carry buckets oil oil slick coast refugio goleta california 20 2015 reuters lucy nicholson 22 30 left sign warns petroleum pipelines ',false
+'warns petroleum pipelines oil slick coast refugio goleta california 20 2015 reuters lucy nicholson 23 30 left buckets oil volunteers carried ',false
+'buckets oil volunteers carried oil slick coast refugio seen goleta california 20 2015 reuters lucy nicholson 24 30 left oil slick seen ',false
+'24 30 left oil slick seen coast refugio goleta california 19 2015 reuters lucy nicholson 25 30 left watches oil slick ',false
+'nicholson 25 30 left watches oil slick wash coast refugio goleta california 19 2015 reuters lucy nicholson 26 30 left oil slick washes ',false
+'watches oil slick wash coast refugio goleta california 19 2015 reuters lucy nicholson 26 30 left oil slick washes ',false
+'2015 reuters lucy nicholson 26 30 left oil slick washes coast refugio goleta california 19 2015 reuters lucy nicholson 27 30 left oil slick seen ',false
+'oil slick washes coast refugio goleta california 19 2015 reuters lucy nicholson 27 30 left oil slick seen ',false
+'27 30 left oil slick seen coast refugio goleta california 19 2015 reuters lucy nicholson 28 30 left oil slick seen ',false
+'28 30 left oil slick seen coast refugio goleta california 19 2015 reuters lucy nicholson 29 30 left oil slick seen ',false
+'29 30 left oil slick seen coast refugio goleta california 19 2015 reuters lucy nicholson 30 30 steve gorman santa barbara santa barbara ',false
+'adventure historic southwestern west deciding vacation options mind possibility trip continental ',false
+'historic southwestern west deciding vacation options mind possibility trip continental ',false
+'forum taxpayers paid disputed parties contest imposition bring action district court court federal claims venues require ',false
+'paid disputed parties contest imposition bring action district court court federal claims venues require ',false
+'revenue service building federal triangle 11 session board appeals spanned july 16 1924 31 1925 12 1929 supreme court indicated board appeals court ',false
+'11 session board appeals spanned july 16 1924 31 1925 12 1929 supreme court indicated board appeals court instead executive administrative board ',false
+'revenue code codified internal revenue code section 7482 providing decisions court reviewed applicable geographical court appeals court appeals federal circuit 28 ',false
+'principal office court located district columbia court judges sit 38 judges travel nationwide conduct trials various designated cities ',false
+'review edit petitioner taxpayer respondent commissioner internal revenue appeal adverse decision court appropriate court appeals appeal taxpayer bond ',false
+'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny48 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'misty treanor kerri walsh jennings women\'s volleyball gold medal match - youtube jp view message english youtube learn ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ misty treanor kerri walsh jennings women\'s volleyball gold medal match mallu girls 2 2312 231 11 767 9 10 10 11 ',false
+'scholarships reviews study abroad undergraduate programs toggle navigation study abroad undergraduate program perfect fit country ',false
+'looking political science course washington marine biology florida study abroad undergraduate experience lifetime choose programs locations fun ',false
+'post post subscribe post comments atom blog archive 2012 26 july 4 1 march 4 sampaguita philippines national flower national flower lotus indian national flower golden wattle australia national flower february 3 january 14 ',false
+'polishaholic glaze 2013 sunsational collection swatches home check favorites disclosure copyright info 7 2013 glaze 2013 sunsational collection swatches hi guys ',false
+'polishaholic glaze 2013 sunsational collection swatches home check favorites disclosure copyright info 7 2013 glaze 2013 sunsational collection swatches hi guys glaze ',false
+'glaze 2013 sunsational collection swatches home check favorites disclosure copyright info 7 2013 glaze 2013 sunsational collection swatches hi guys glaze 2013 sunsational ',false
+'hall rabushka flat kemp commission taxpayer choice act usa value added portal local governments impose property principal source revenue 1 imposed real estate personal property nearly computed ',false
+'value added portal local governments impose property principal source revenue 1 imposed real estate personal property nearly computed ',false
+'experience 12 larger jurisdictions employ full-time personnel assessors office jurisdictions engage part-time person entire assessor function constitutional limitations edit property taxes taxes subject constraints applicable constitutions ',false
+'tips articles home guide articles seasonal travel travel planning trip browse travel june highlights helping customers including experienced hikers ',false
+'seasonal travel travel planning trip browse travel june highlights helping customers including experienced hikers ',false
+'travel travel planning trip browse travel june highlights helping customers including experienced hikers ',false
+'travel planning trip browse travel june highlights helping customers including experienced hikers ',false
+'planning trip browse travel june highlights helping customers including experienced hikers families little children explore ',false
+'visit top visit june top 5 visit weather author gavin van hinsbergh update july 21 2016 travel articles send feedback ',false
+'top visit june top 5 visit weather author gavin van hinsbergh update july 21 2016 travel articles send feedback ',false
+'visit june top 5 visit weather author gavin van hinsbergh update july 21 2016 travel articles send feedback ',false
+'celebrate actual chinese colorful dress folk performances fascinating activities viewed january february tours associated bestsellers including major highlights cities affected weather ',false
+'symptoms bad head drugs medicine eastern medicine kanpou medicine look local daily store local ',false
+'disney\'s japanese release frozen animated movie hit 8 100 film\'s japanese release march 2014 9 appeared variety kanjani8 shiwake eight 2012 ',false
+'retrieved december 10 2006 kingrecords webcommunication tanaka ma retrieved december 10 2006 - official site retrieved december 5 2006 billboard 100 2014 04 28 billboard japanese april 23 2014 retrieved april 23 2014 ',false
+'3 2014 retrieved july 6 2014 oricon retrieved january 31 2014 subscription 100 billboard retrieved january 31 2014 external links edit official website - rhythm zone sony music online official ',false
+'3 2014 retrieved july 6 2014 oricon retrieved january 31 2014 subscription 100 billboard retrieved january 31 2014 external links edit official website - rhythm zone sony music online official blog janglish style - japanese news live ',false
+'edited hajime okayasu distributed hayashibara imamura productions tohokushinsha film co release dates 13 1989 1989-05-13 running time 123 minutes country language japanese black kuroi ame 1989 japanese film director shohei imamura based ',false
+'tibet guizhou province tips time travel cool school breaks coming probably search holiday wish list lasts late september destination charm span ',false
+'newcastle tour - world soccer talk podcast official soccer jerseys holiday gift guide books menu home schedules ',false
+'newcastle tour - world soccer talk podcast official soccer jerseys holiday gift guide books menu home schedules ',false
+'nwsl olympics premier league primeira liga scottish premiership serie usl home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl ',false
+'olympics premier league primeira liga scottish premiership serie usl home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl ',false
+'league primeira liga scottish premiership serie usl home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 ',false
+'primeira liga scottish premiership serie usl home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 ',false
+'scottish premiership serie usl home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle ',false
+'serie usl home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return ',false
+'usl home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return ',false
+'home leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return series friendlies american teams ',false
+'leagues epl newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return series friendlies american teams ',false
+'newcastle tour newcastle tour christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return series friendlies american teams re looking various ',false
+'tour christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return series friendlies american teams re looking various scenarios ',false
+'christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return series friendlies american teams re looking various scenarios ',false
+'christopher harris march 25 2013 leagues epl newcastle 25 comments newcastle return series friendlies american teams re looking various scenarios ',false
+'opt sign six-month one-year contracts wish stay long-term apply short-term teaching jobs you\'ll tefl certification obtain teaching english foreign language tefl certification ',false
+'terminology especially handy you\'ve taught apply jobs labeled camp instances send resume cover letter initially ',false
+'especially handy you\'ve taught apply jobs labeled camp instances send resume cover letter initially ',false
+'advance final netherlands 4 3 04 22 5 edit 2006 paralympics references edit flagbearers ceremony retrieved 27 2009 flagbearers closing ceremony retrieved 27 2009 sally jenkins february 25 ',false
+'tibet guizhou province tips time travel cool school breaks coming probably search holiday wish list lasts late september destination charm span ',false
+'info individual cities top graph provides information rainfall temperature noticed lower temperature travel january december ',false
+'provides information rainfall temperature noticed lower temperature travel january december february isn\'t bad ton ',false
+'viewing youtube japanese change preference below __count__ __total__ may\'s notebook - notebook 2424 589 5 6 0 1 2014 12 02 youtube - ',false
+'japanese change preference below __count__ __total__ may\'s notebook - notebook 2424 589 5 6 0 1 2014 12 02 youtube - - 31 55 liwei 40 035 31 55 may\'s notebook - travel vlog ',false
+'japanese change preference below __count__ __total__ may\'s notebook - notebook 2424 589 5 6 0 1 2014 12 02 youtube - - 31 55 liwei 40 035 31 55 may\'s notebook - travel vlog 1 - ',false
+'01 notebook 436 10 01 may\'s notebook - summer europe - 5 17 notebook 614 5 17 colors momiji leaves kyoto - 8 09 lagoonphoto 1 275 306 8 09 may\'s notebook - travel vlog 2 ',false
+'gathering conservation water warmer wetter regions fall gentle misting water droplets fall heavily sometimes seemingly ',false
+'17 2016 dec 23 initial visibility set template\'s initial visibility parameter collapsed storms collapsed template collapsed hidden apart title ',false
+'school vacations breaks coming probably search holiday wish list lasts late september destination charm span ',false
+'vacations breaks coming probably search holiday wish list lasts late september destination charm span ',false
+'probably search holiday wish list lasts late september destination charm span time read following bullet ',false
+'yulia tymoshenko sent world news guardian close skip main content sign comment activity edit profile ',false
+'culture business lifestyle fashion environment tech travel browse sections close yulia tymoshenko yulia tymoshenko sent speculation rife eu ukraine tymoshenko agreed jailed opposition leader moving ',false
+'southern philippines 29 november 1994 southern philippines - 14 citation guizhou province 19 april 1995 guizhou province - 37 citation jamalpur-tangail districts bangladesh 13 1996 dhaka division bangladesh - 700 4 central vietnam 23 september 1997 central vietnam ',false
+'southern philippines - 14 citation guizhou province 19 april 1995 guizhou province - 37 citation jamalpur-tangail districts bangladesh 13 1996 dhaka division bangladesh - 700 4 central vietnam 23 september 1997 central vietnam ',false
+'destroyed appears deaths injuries under-reported 7 guangdong 11 2005 huilai county lufeng guangdong province 6 100 204 houses destroyed 28 310 ',false
+'appears deaths injuries under-reported 7 guangdong 11 2005 huilai county lufeng guangdong province 6 100 204 houses destroyed 28 310 people affected 31 million yuan economic losses ',false
+'bhola districts bangladesh 7 500 houses destroyed 3 000 left homeless 36 heilongjiang 25 2008 wuchang city heilongjiang province 2 1 36 433 houses damaged 37 guangdong ',false
+'districts bangladesh 7 500 houses destroyed 3 000 left homeless 36 heilongjiang 25 2008 wuchang city heilongjiang province 2 1 36 433 houses damaged 37 guangdong 6 june 2008 wuchuan city ',false
+'7 500 houses destroyed 3 000 left homeless 36 heilongjiang 25 2008 wuchang city heilongjiang province 2 1 36 433 houses damaged 37 guangdong 6 june 2008 wuchuan city guangdong province 20 38 anhui 20 june ',false
+'10 august 2009 oton iloilo philippines 1 20 26 houses damaged 46 chongqing 6 2010 dianjiang liangping counties chongqing municipality 39 200 48 49 heilongjiang ',false
+'10 august 2009 oton iloilo philippines 1 20 26 houses damaged 46 chongqing 6 2010 dianjiang liangping counties chongqing municipality 39 200 48 49 heilongjiang 15 2010 suihua city heilongjiang province ',false
+'2009 oton iloilo philippines 1 20 26 houses damaged 46 chongqing 6 2010 dianjiang liangping counties chongqing municipality 39 200 48 49 heilongjiang 15 2010 suihua city heilongjiang province 7 98 50 jiangxi 20 ',false
+'damaged 46 chongqing 6 2010 dianjiang liangping counties chongqing municipality 39 200 48 49 heilongjiang 15 2010 suihua city heilongjiang province 7 98 50 jiangxi 20 july 2010 ',false
+'6 2010 dianjiang liangping counties chongqing municipality 39 200 48 49 heilongjiang 15 2010 suihua city heilongjiang province 7 98 50 jiangxi 20 july 2010 ',false
+'2010 dianjiang liangping counties chongqing municipality 39 200 48 49 heilongjiang 15 2010 suihua city heilongjiang province 7 98 50 jiangxi 20 july 2010 yongxiu county jiangxi province unknown ',false
+'dianjiang liangping counties chongqing municipality 39 200 48 49 heilongjiang 15 2010 suihua city heilongjiang province 7 98 50 jiangxi 20 july 2010 yongxiu county jiangxi province unknown mortality damages news article ',false
+'15 2010 suihua city heilongjiang province 7 98 50 jiangxi 20 july 2010 yongxiu county jiangxi province unknown mortality damages news article found 51 guangdong 2 2011 dabu town ruyuan yao nationality autonomous county guangdong province 1 house destroyed ',false
+'province 7 98 50 jiangxi 20 july 2010 yongxiu county jiangxi province unknown mortality damages news article found 51 guangdong 2 2011 dabu town ruyuan yao nationality autonomous county guangdong province 1 house destroyed ',false
+'yongxiu county jiangxi province unknown mortality damages news article found 51 guangdong 2 2011 dabu town ruyuan yao nationality autonomous county guangdong province 1 house destroyed ',false
+'county jiangxi province unknown mortality damages news article found 51 guangdong 2 2011 dabu town ruyuan yao nationality autonomous county guangdong province 1 house destroyed 53 damaged injuries unknown 52 tsukuba ibaraki prefecture 6 2012 ',false
+'province unknown mortality damages news article found 51 guangdong 2 2011 dabu town ruyuan yao nationality autonomous county guangdong province 1 house destroyed 53 damaged injuries unknown 52 tsukuba ibaraki prefecture 6 2012 tsukuba ibaraki prefecture japan 1 f3 1 52 japan\'s worst ',false
+'2 2011 dabu town ruyuan yao nationality autonomous county guangdong province 1 house destroyed 53 damaged injuries unknown 52 tsukuba ibaraki prefecture 6 2012 tsukuba ibaraki prefecture japan 1 f3 1 52 japan\'s worst november 2006 ',false
+'province 1 house destroyed 53 damaged injuries unknown 52 tsukuba ibaraki prefecture 6 2012 tsukuba ibaraki prefecture japan 1 f3 1 52 japan\'s worst november 2006 890 houses damaged 53 hunan 9 2012 lianyuan hunan province 4 30 5 000 people ',false
+'prefecture 6 2012 tsukuba ibaraki prefecture japan 1 f3 1 52 japan\'s worst november 2006 890 houses damaged 53 hunan 9 2012 lianyuan hunan province 4 30 5 000 people forced ',false
+'f3 1 52 japan\'s worst november 2006 890 houses damaged 53 hunan 9 2012 lianyuan hunan province 4 30 5 000 people forced ',false
+'1 52 japan\'s worst november 2006 890 houses damaged 53 hunan 9 2012 lianyuan hunan province 4 30 5 000 people forced relocate severe weather ',false
+'computerestrictedmodetext_ clientsettings_ restrictedmode getsimplestring data description getsimplestring data title getsimplestring data subtitle menustrings_ share_label johnny live freising 2011 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ johnny live freising 2011 rockjektiv 6969 6 392 16 17 0 1 2011 06 18 german youtube version ',false
+'rockjektiv 6969 6 392 16 17 0 1 2011 06 18 german youtube version johnny concert highlights 2011 freising filmed 16 9 hd nikon d5100 dslr tamron lenses youtube johnny ',false
+'sources tell pink trees actually ume reply anonymous 10 2013 3 11 am actually originates personally chinese mei flower accurate name ',false
+'tell pink trees actually ume reply anonymous 10 2013 3 11 am actually originates personally chinese mei flower accurate name ',false
+'80 occasional spikes temperature countries commitment forgoing air conditioning leave sweating deliriously hot days months time precipitation bring umbrella usually warmest south ',false
+'valuable asset water events june events july events august festivals eat drink german food oppressive heavy warmer months surprised amount ',false
+'events july events august festivals eat drink german food oppressive heavy warmer months surprised amount ',false
+'5 edit 509 tornadoes confirmed 9 edit people killed 6 22 30 edit main article 2004 outbreak sequence f0 f1 f2 f3 f4 f5 241 115 23 8 2 0 ',false
+'confirmed 9 edit people killed 6 22 30 edit main article 2004 outbreak sequence f0 f1 f2 f3 f4 f5 241 115 23 8 2 0 ',false
+'united count december 21 timespan january 6 - december 29 maximum rated ef4 katie wynnewood oklahoma 9 abilene-chapman kansas 25 yancheng jiangsu june 23 tornadoes 949 damage unknown fatalities ',false
+'count december 21 timespan january 6 - december 29 maximum rated ef4 katie wynnewood oklahoma 9 abilene-chapman kansas 25 yancheng jiangsu june 23 tornadoes 949 damage unknown fatalities ',false
+'standards cleanup reason specified please help improve article 2009 learn remove template message 1984 25 episodes popular tv series shown television starring shen hai-jung kou shih-hsiun contents 1 theme 2 setting 3 plot 4 ',false
+'mine home contact faq blogroll friday 18 2012 glaze neons collection 2012 swatches review glaze set twelve ',false
+'adequately cared disrepair ii wherever wall semester abroad presence country ancient history ',false
+'travel experience degree paths program shanghai semester abroad city life opportunity learn chinese ',false
+'career home international corporation greatly appreciate immersive language program semester abroad complete beginner don discouraged program whatever level proficiency currently ',false
+'johnny alive freising 2011 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ johnny alive freising 2011 rockjektiv 6969 17 941 46 47 0 1 2011 06 14 johnny ',false
+'change preference below __count__ __total__ johnny alive freising 2011 rockjektiv 6969 17 941 46 47 0 1 2011 06 14 johnny alive freising 2011 youtube johnny alive ',false
+'change preference below __count__ __total__ johnny alive freising 2011 rockjektiv 6969 17 941 46 47 0 1 2011 06 14 johnny alive freising 2011 youtube johnny alive google play itunes johnny live ',false
+'2011 rockjektiv 6969 17 941 46 47 0 1 2011 06 14 johnny alive freising 2011 youtube johnny alive google play itunes johnny live copenhagen ',false
+'46 47 0 1 2011 06 14 johnny alive freising 2011 youtube johnny alive google play itunes johnny live copenhagen 1970 february ',false
+'- 22 36 michael jensen 687 883 22 36 50 - johnny alive freising 2011youtube johnny - alive - 3 41 rickyon 253 909 3 ',false
+'jensen 687 883 22 36 50 - johnny alive freising 2011youtube johnny - alive - 3 41 rickyon 253 909 3 41 rick derringer ',false
+'family dumplings enjoy year\'s eve dinner 886 recommended articles travel top destinations preferred destination foreign travelers terms specific ',false
+'enjoy year\'s eve dinner 886 recommended articles travel top destinations preferred destination foreign travelers terms specific ',false
+'year\'s eve dinner 886 recommended articles travel top destinations preferred destination foreign travelers terms specific ',false
+'eve dinner 886 recommended articles travel top destinations preferred destination foreign travelers terms specific activities ',false
+'colder weather trade-off lower prices hotels transport gate tickets weather expect vast country weather ',false
+'lower prices hotels transport gate tickets weather expect vast country weather varies greatly north south east west below summarize china\'s weather ',false
+'mcdonald\'s - specials 30 2015 - youtube jp view message english youtube learn you\'re viewing ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ mcdonald\'s - specials 30 2015 kyde eric 38 7803 19 896 521 522 14 15 2015 05 ',false
+'meetings dreams adventure road travelled horizons unlimited event schedule event taking thursday 5 sunday 8 2016 presentations start thursday night rideouts start friday morning ',false
+'theturnip co uk - www in9 co uk theturnip co uk add website ads views 31 date 27 2015 webpage theturnip co uk country readme ',false
+'theturnip co uk - www in9 co uk theturnip co uk add website ads views 31 date 27 2015 webpage theturnip co uk country readme ',false
+'www in9 co uk theturnip co uk add website ads views 31 date 27 2015 webpage theturnip co uk country readme ',false
+'in9 co uk theturnip co uk add website ads views 31 date 27 2015 webpage theturnip co uk country readme ',false
+'health life humor friendship success happiness love trust wishes inspirations email inspirational quote monday weekend alps beautiful posted october 7 2012 rji alps alps ',false
+'sitting inside waits outside erin porter 8 beer cold beer sound ideal drink bad time drink beer besides drink warm inside drink ',false
+'2014 forecast seasonal outlook tonight blog post re focus sea surface temperatures impact 2013 2014 forecasting unreliable relied usually ',false
+'blog post re focus sea surface temperatures impact 2013 2014 forecasting unreliable relied usually ',false
+'december april depending snowfall winter frequently mountains potent depressions move north form \'polar lows\' introducing heavy blizzard-like conditions particularly scotland periods light winds pressure frost fog ',false
+'vacation time length methods spend surprise unfamiliar school system -- example school seen punishment america it\'s expected japanese students ',false
+'methods spend surprise unfamiliar school system -- example school seen punishment america it\'s expected japanese students ',false
+'advantages traveling studying abroad don year-long commitment study abroad program idea countries provide wealth educational opportunities experiences accomplished ',false
+'idea countries provide wealth educational opportunities experiences accomplished attending study abroad choose study abroad study abroad easy effective ',false
+'wealth educational opportunities experiences accomplished attending study abroad choose study abroad study abroad easy effective enhance resumes program applications category ',false
+'opportunities experiences accomplished attending study abroad choose study abroad study abroad easy effective enhance resumes program applications category ',false
+'accomplished attending study abroad choose study abroad study abroad easy effective enhance resumes program applications category ',false
+'difficult languages gain fluency learn japanese abroad programs gain immersive experience drops middle native speakers enhancing ',false
+'predictions types viruses prevalent ahead 2014 times worse 2013 runs october 59 800 confirmed ',false
+'predictions types viruses prevalent ahead 2014 times worse 2013 runs october 59 800 confirmed ',false
+'types viruses prevalent ahead 2014 times worse 2013 runs october 59 800 confirmed ',false
+'viruses prevalent ahead 2014 times worse 2013 runs october 59 800 confirmed ',false
+'prevalent ahead 2014 times worse 2013 runs october 59 800 confirmed ',false
+'foliage season starts mid september hokkaido region average time appearing foliage vary depending temperatures careful fall foliage forecast usually ',false
+'time watch whales wildflowers explore wineries western margaret river region tropical october blue skies sunny days time experience ',false
+'wildflowers explore wineries western margaret river region tropical october blue skies sunny days time experience ',false
+'selected sport football opinion culture business lifestyle fashion environment tech travel browse sections close news arsonists guilty \'mass murder\' pm death toll reach 200 ellen connolly sydney rachel williams agencies monday 9 february 2009 13 ',false
+'football opinion culture business lifestyle fashion environment tech travel browse sections close news arsonists guilty \'mass murder\' pm death toll reach 200 ellen connolly sydney rachel williams agencies monday 9 february 2009 13 ',false
+'opinion culture business lifestyle fashion environment tech travel browse sections close news arsonists guilty \'mass murder\' pm death toll reach 200 ellen connolly sydney rachel williams agencies monday 9 february 2009 13 ',false
+'browse sections close news arsonists guilty \'mass murder\' pm death toll reach 200 ellen connolly sydney rachel williams agencies monday 9 february 2009 13 ',false
+'content mendeleyev journal live moscow life events art culture language music september 1 knowledge bell moscow celebrations 29 08 201230 08 2012 country busy saturday 1 ',false
+'journal live moscow life events art culture language music september 1 knowledge bell moscow celebrations 29 08 201230 08 2012 country busy saturday 1 ',false
+'live moscow life events art culture language music september 1 knowledge bell moscow celebrations 29 08 201230 08 2012 country busy saturday 1 ',false
+'moscow life events art culture language music september 1 knowledge bell moscow celebrations 29 08 201230 08 2012 country busy saturday 1 ',false
+'copy passport bandaids change shoes extra socks random tourist re temps own country doesn snow act tourist ',false
+'extra socks random tourist re temps own country doesn snow act tourist ',false
+'west north queensland east cyclone season pretty daunting commonplace regions compared america rate drastically lower alongside ',false
+'festivals 4 carnival cultures 5 festivals events com travel travel seasonal events festivals germany\'s festivals birge amondson travel expert birge amondson updated ',false
+'com travel travel seasonal events festivals germany\'s festivals birge amondson travel expert birge amondson updated 12 2016 there\'s enjoy germany\'s months hitting ',false
+'travel seasonal events festivals germany\'s festivals birge amondson travel expert birge amondson updated 12 2016 there\'s enjoy germany\'s months hitting ',false
+'festivals germany\'s festivals birge amondson travel expert birge amondson updated 12 2016 there\'s enjoy germany\'s months hitting music art festival introduction ',false
+'rankings worldwide usa caribbean canada mexico central south america europe africa middle east asia pacific family beaches usa affordable destinations usa ',false
+'sunny days warm temperatures scenic outdoor activities collection global partner organizations available professional internships strive align career goals students organizations range ',false
+'scenic outdoor activities collection global partner organizations available professional internships strive align career goals students organizations range multinational holdings family-owned businesses searching ',false
+'4 times develop type risk chance developing depends factors person develop spent childhood mature risk increases age fair ',false
+'type risk chance developing depends factors person develop spent childhood mature risk increases age fair ',false
+'type risk chance developing depends factors person develop spent childhood mature risk increases age fair ',false
+'risk chance developing depends factors person develop spent childhood mature risk increases age fair ',false
+'useful statistical information found various official country tourism websites rainfall tropics november rainfall occurs january february march dry june october tropics ',false
+'found various official country tourism websites rainfall tropics november rainfall occurs january february march dry june october tropics ',false
+'comment submit report abuse don\'t specific dates summer april june guess michelle 7 ago 0 thumbs 7 thumbs ',false
+'it\'s summer cheeks dior\'s summer 2013 mix match blushes - ',false
+'beauty blogger media kit help blog summer cheeks dior summer 2013 mix match ',false
+'celebrate study plan russian language blog learnrussianwith start learning personal education libraries corporate government free resources russian ',false
+'blog learnrussianwith start learning personal education libraries corporate government free resources russian language blog celebrate study plan posted yelena 6 2011 culture russian beginners russian life traditions ',false
+'start learning personal education libraries corporate government free resources russian language blog celebrate study plan posted yelena 6 2011 culture russian beginners russian life traditions ',false
+'october april according centers disease control prevention october australian winter experiences winter ',false
+'harper bazaar october 2015 press harper bazaar september 2013 press inspired 2014 press inspired winter 2014 press katy perry runa jewelry press azure 2015 press officiel france february 2014 press madame figaro september 2013 press madame figaro ',false
+'exceptionally hot dry northeast linked outbreak zika virus -- sciencedaily source ',false
+'sciencedaily store science news research organizations exceptionally hot dry northeast linked outbreak zika virus date february 4 2016 source university ',false
+'16 00256-7 cite page mla apa chicago university haifa exceptionally hot dry northeast linked outbreak zika virus sciencedaily sciencedaily 4 february 2016 www sciencedaily ',false
+'releases 2016 02 160204112335 htm university haifa 2016 february 4 exceptionally hot dry northeast linked outbreak zika virus sciencedaily retrieved january 1 2017 www ',false
+'www sciencedaily com releases 2016 02 160204112335 htm university haifa exceptionally hot dry northeast linked outbreak zika virus sciencedaily www sciencedaily com releases 2016 02 ',false
+'passe sledding snow favorite game moscow festival swings - replicas 16th century - troika ride exciting past-era activities horses attached ',false
+'people emanates restless life potential unexpected emerge vivid tropical country thiago rodrigues professor international relations institute strategic studies inest ',false
+'variation types dresses women purchasing hot weather items huge month ecommerce due russians prepping booking trips plans proved fruitful month ',false
+'purchasing hot weather items huge month ecommerce due russians prepping booking trips plans proved fruitful month buy cute outfits ',false
+'variation types dresses women purchasing hot weather items huge month ecommerce due russians prepping vacations booking trips plans proved fruitful ',false
+'purchasing hot weather items huge month ecommerce due russians prepping vacations booking trips plans proved fruitful month buy cute outfits ',false
+'international summit polar bear held 2013 encyclopedia safety encyclopedia safety surviving city survival world ',false
+'online libyan salting charges gaddafi regime sin unfounded international summit polar bear held 2013 fall 2013 international summit forum preservation ',false
+'gaddafi regime sin unfounded international summit polar bear held 2013 fall 2013 international summit forum preservation polar bear ',false
+'sin unfounded international summit polar bear held 2013 fall 2013 international summit forum preservation polar bear ',false
+'enjoy visit imperial city fullest st petersburg tours page lot tour ideas written davide st petersburg return weather st petersburg homepage ',false
+'1010 mm monthly rainfall 1111 extreme uv index average maximum daytime temperature 39 102 heat humidity usually 10 hours ',false
+'summary burt stephen bitter 1962 63 23 shellard 1962-63 climatological survey meteorological magazine 97 1150 1968 pp 129-141 scotland north mean temperatures ',false
+'experienced europe mild frost occasional snow rarity rainiest months august johannesburg receives summer weather bureau detailed forecasts temp rainfall charts following table provide details ',false
+'tel aviv 1968 paralympic games table tennis men\'s singles a2 international paralympic committee retrieved 17 2011 nations 1968 paralympics tel aviv israel ethiopia rhodesia america argentina canada jamaica united asia india japan korea europe austria belgium ',false
+'images tools covering symptoms diseases tests medicines treatments nutrition fitness related articles melanoma risk factors warning signs medicine advertisement recommended ',false
+'january 2016 author tom di liberto february 17 2016 poor rains southern monsoon october led extensive drought mozambique zambia zimbabwe southern madagascar dismal season destroyed crops killed livestock led blackouts ',false
+'tom di liberto february 17 2016 poor rains southern monsoon october led extensive drought mozambique zambia zimbabwe southern madagascar dismal season destroyed crops killed livestock led blackouts ',false
+'23 2016 11 00 we\'ve heart eyes sheren via shakedcohen1 call - 22 2016 11 00 holiday filled joyous laughter family memories fabulous shoes callitlove call ',false
+'2006-07 australian bushfire season typically run june southeast tend common severe summer autumn december march ',false
+'suggested peak winds increase 5-10 peak rainfall rates rise 20-30 details climate change chapter 5 9 1 current weather information weather warnings wind forecast maps sea surface temperature north west ',false
+'pneumonia 122 cities vs causes united considered october 13 usually peaks february 14 considered october usually peaks august 15 ',false
+'pneumonia 122 cities vs causes united considered october 13 usually peaks february 14 considered october usually peaks august 15 seasons ',false
+'cities vs causes united considered october 13 usually peaks february 14 considered october usually peaks august 15 seasons exist ',false
+'considered october 13 usually peaks february 14 considered october usually peaks august 15 seasons exist tropics ',false
+'opposite times northern hemisphere december february summer march autumn june august winter september november plan ahead information weather rainfall capital cities weather sydney weather sydney summer dec ',false
+'southern hemisphere predict extent northern hemisphere opposite australians begins october twice virus reported ',false
+'ancient unique cultural tapestry popular topic school choose build experience opportunities learning include discovering stark ',false
+'unique cultural tapestry popular topic school choose build experience opportunities learning include discovering stark beauty cultural importance outback photography excursions ',false
+'popular topic school choose build experience opportunities learning include discovering stark beauty cultural importance outback photography excursions ',false
+'spring surprise rugby worlds - pundit rt sport facebook twitter youtube google-plus instagram soundcloud coub applications rss esp de ',false
+'russian politics business sport op-edge vision motion rt360 on-air talent homesport spring surprise rugby worlds - pundit published time 8 dec 2010 10 55edited time 8 dec 2010 14 09 ',false
+'ve heard stories people cold russian climate weather greatly region rain december snow april central ',false
+'school gap graduate resources articles blogs student guide scholarships reviews study abroad undergraduate programs toggle navigation study abroad programs sessions studying abroad piques time complete quarters ',false
+'articles blogs student guide scholarships reviews study abroad undergraduate programs toggle navigation study abroad programs sessions studying abroad piques time complete quarters ',false
+'scholarships reviews study abroad undergraduate programs toggle navigation study abroad programs sessions studying abroad piques time complete quarters ',false
+'undergraduate programs toggle navigation study abroad programs sessions studying abroad piques time complete quarters ',false
+'complete quarters semesters regular university head school words life-enhancing adventure includes earning academic credit boosting ',false
+'life-enhancing adventure includes earning academic credit boosting ol resume spending fun responsible study abroad ',false
+'includes earning academic credit boosting ol resume spending fun responsible study abroad perfect location study abroad ',false
+'includes earning academic credit boosting ol resume spending fun responsible study abroad perfect location study abroad ',false
+'outside school eat studying abroad abroad wish time country treasured sights consider ',false
+'eat studying abroad abroad wish time country treasured sights consider ',false
+'month - winter - south time visit iguassu falls visiting ',false
+'month - winter - south time visit iguassu falls visiting ',false
+'3 bbc remarked london 2012 women olympians time conceivable kingdom allowed enter all-male team 1 send female competitor inaugural youth olympics singapore 2010 international olympic committee requirement ',false
+'women olympians time conceivable kingdom allowed enter all-male team 1 send female competitor inaugural youth olympics singapore 2010 international olympic committee requirement ',false
+'lonely planet recommends exploring area\'s thousands animal plant species dry months temperatures drop below 70 degrees night october references frommer\'s - planning trip - wwf pantanal south america lonely planet ',false
+'2017 05 05 18 37 tuesday 30th 2017 05 04 18 37 wednesday 31st 2017 05 04 18 38 hilton sale 30 hotels sale save 30 hotels hilton sale ',false
+'program haven\'t http www scribd com mackenzie-welcome-guide-brazil-summ mackenzie welcome guide - program scribd world\'s largest social reading publishing site scribd com program - university albany 1 2013 reminder wednesday 1st day submit application upcoming program ',false
+'program scribd world\'s largest social reading publishing site scribd com program - university albany 1 2013 reminder wednesday 1st day submit application upcoming program ',false
+'site scribd com program - university albany 1 2013 reminder wednesday 1st day submit application upcoming program please submit remaining materials 5pm obrigado thank program - university ',false
+'program - university albany 22 2013 news- application deadline program extended 1st visit https ualbany studioabroad com brazilsummer start application international business ',false
+'annoying hum mosquito entire safari holiday sun holiday deals lastminute com top reasons sun safari holiday cheaper flights cheaper accommodation safari lodges easier spot african wildlife species chance rain blue skies day ',false
+'sun holiday deals lastminute com top reasons sun safari holiday cheaper flights cheaper accommodation safari lodges easier spot african wildlife species chance rain blue skies day ',false
+'list reasons safari holiday plenty benefits choice late deals ',false
+'thread tools printable version 14th august 2013 12 19 pm 1 ab26 join date 2012 location johannesburg posts 2 550 real name andre burger african highveld looks african highveld dry ',false
+'reply quote 16th august 2013 08 17 am 6 ab26 join date 2012 location johannesburg posts 2 550 real name andre burger re african highveld originally posted tbob nice image question object below tree ',false
+'fridge reply quote 16th august 2013 08 19 am 7 ab26 join date 2012 location johannesburg posts 2 550 real name andre burger re african highveld originally posted kaye leggett uk prefer reason ',false
+'wet reply quote 16th august 2013 08 22 am 8 ab26 join date 2012 location johannesburg posts 2 550 real name andre burger re african highveld originally posted christina beautiful photo andre thanks christina ',false
+'2015 etheridge mark 14 2016 schoeman seventh heaven rabie\'s return gathers pace african sports confederation olympic committee retrieved 19 2016 nations 2016 olympics rio de janeiro brazil algeria angola benin botswana burkina faso burundi cameroon cape verde central african republic chad comoros ',false
+'index php title south_africa_at_the_2016_summer_olympics oldid 754009411 categories nations 2016 olympics olympics 2016 african sport hidden categories dmy dates 2016 articles hcards navigation menu personal tools logged talk contributions create account ',false
+'org index php title saudi_arabia_at_the_2016_summer_olympics oldid 754008783 categories nations 2016 olympics olympics 2016 hidden categories dmy dates 2016 articles arabic-language external links navigation menu personal tools logged talk contributions ',false
+'index php title saudi_arabia_at_the_2016_summer_olympics oldid 754008783 categories nations 2016 olympics olympics 2016 hidden categories dmy dates 2016 articles arabic-language external links navigation menu personal tools logged talk contributions ',false
+'title saudi_arabia_at_the_2016_summer_olympics oldid 754008783 categories nations 2016 olympics olympics 2016 hidden categories dmy dates 2016 articles arabic-language external links navigation menu personal tools logged talk contributions ',false
+'policy king abdulaziz pdf university leeds retrieved 21 july 2013 quandt william 1981 riyadh superpowers foreign policy 44 37 56 jstor 1148544 library congress december 1992 retrieved 27 2012 gerald segal 1992 openness foreign policy reform communist routledge 149 ',false
+'47 observed previous average amount rain observed 4 mm typically 2 days note gap temperature country ',false
+'latitude australia interior central plateau highveld including johannesburg elevation temperatures reach freezing altitude mild coastal ',false
+'april zimbabwe game viewing - oct time vic falls march - dry season - oct season nov - april game viewing - sept kruger dry season - sept kruger season ',false
+'game viewing - oct time vic falls march - dry season - oct season nov - april game viewing - sept kruger dry season - sept kruger season ',false
+'- oct time vic falls march - dry season - oct season nov - april game viewing - sept kruger dry season - sept kruger season oct - april kruger ',false
+'vic falls march - dry season - oct season nov - april game viewing - sept kruger dry season - sept kruger season oct - april kruger summer cape town november - march mozambique dry season ',false

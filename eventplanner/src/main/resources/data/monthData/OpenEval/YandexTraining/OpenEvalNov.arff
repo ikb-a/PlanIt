@@ -1,0 +1,576 @@
+@relation posOrNegWordBags
+
+@attribute corpus string
+@attribute Class_Attribute_For_SimpleOpenEval {true,false}
+
+@data
+'immersed gobi sand dunes snow-capped mountains narrow gansu corridor northwest silk road characterized bitter cold dry winter march time pleasant climate appears july september weather mild june october ',true
+'api 2009 11th clocate - conferences exhibitions toggle navigation home conferences organizers venues add conference subscription ',true
+'add conference subscription subscribe sign book hotel add article search search home api 2009 api 2009 11-13 2009 beijing jiuhua exhibition center beijing past view hotels near venue event ',true
+'conference subscription subscribe sign book hotel add article search search home api 2009 api 2009 11-13 2009 beijing jiuhua exhibition center beijing past view hotels near venue event ',true
+'sign book hotel add article search search home api 2009 api 2009 11-13 2009 beijing jiuhua exhibition center beijing past view hotels near venue event ',true
+'book hotel add article search search home api 2009 api 2009 11-13 2009 beijing jiuhua exhibition center beijing past view hotels near venue event - view upcoming events p-mec ',true
+'16-18 2017 brussels belgium pharmapack europe 2017 february 1-2 2017 paris france events api 2009 held beijing 11-13 2009 api leading exhibition pharmaceutical manufacturing sector covering ',true
+'2017 brussels belgium pharmapack europe 2017 february 1-2 2017 paris france events api 2009 held beijing 11-13 2009 api leading exhibition pharmaceutical manufacturing sector covering ',true
+'colours - fall leaves kouyou metafilter caret-down clock comment email facebook feed go-to-bottom go-to-top heart ',true
+'podcast chat labs search metafilter menu home faq archives tags popular random colours september 18 2008 11 45 pm subscribe 1st week ',true
+'podcast chat labs search metafilter menu home faq archives tags popular random colours september 18 2008 11 45 pm subscribe 1st week colours i\'ll landing ',true
+'search metafilter menu home faq archives tags popular random colours september 18 2008 11 45 pm subscribe 1st week colours i\'ll landing tokyo 2nd i\'ll probably ',true
+'colours september 18 2008 11 45 pm subscribe 1st week colours i\'ll landing tokyo 2nd i\'ll probably ',true
+'45 pm subscribe 1st week colours i\'ll landing tokyo 2nd i\'ll probably spending upwards week visit ',true
+'tours 2016 - tokyo kanazawa nagoya takayama kyoto hiroshima nara tours 2016 joining tour contact ',true
+'tours 2016 - tokyo kanazawa nagoya takayama kyoto hiroshima nara tours 2016 joining tour contact ',true
+'contact form email admin japancustomtours co nz 2016 tours designed tours beautiful colour offered ',true
+'guangzhou follow book booth share exhibitors 120 reviews buzz similar events api 3 day event held 27th 29th 2014 shangri-la hotel guangzhou guangzhou event ',true
+'follow book booth share exhibitors 120 reviews buzz similar events api 3 day event held 27th 29th 2014 shangri-la hotel guangzhou guangzhou event showcases products gum turpentine oil terpinolene terpineol etc business ',true
+'northern island hokkaido reaches lower elevations central southern towards trees tokyo kyoto remain colorful december color reports 2016 december 7 kyoto december 6 tokyo december 2 kyoto december 2 kamakura ',true
+'wallpaper south-western bavaria rocks forest neuschwanstein castle images desktop section - download sign sign south-western bavaria ',true
+'forest neuschwanstein castle images desktop section - download sign sign south-western bavaria rocks forest neuschwanstein castle wallpaper photos pictures day pictures screensavers beautiful wallpapers ',true
+'360x480 blackberry 320x400 palm pixi hp veer 320x240 cellphone manual resize wallpaper colors south-western bavaria rocks forest neuschwanstein castle similar wallpapers favored koshka_alexa alice_fox laberintos share code blog leave ',true
+'2016 forecast warmth hold september wind threat build recent locations york ny52 miami fl80 los angeles ca48 browse ',true
+'radar maps news video winter severe climate social watch videos news videos blogs personalities 2016 forecast warmth hold september wind threat build eric leister meteorologist august 23 2016 5 25 22 am edt wet ',true
+'winter travel guide activities suggestions top 5 ski resorts trip december trip january february trip middle china\'s gorgeous fall colors cities ',true
+'travel guide activities suggestions top 5 ski resorts trip december trip january february trip middle china\'s gorgeous fall colors cities ',true
+'activities suggestions top 5 ski resorts trip december trip january february trip middle china\'s gorgeous fall colors cities ',true
+'photography trekking 1 beijing - weather fall colors wall seasons visit beijing followed june ',true
+'read yading pure land earth related articles visit top 5 visit fall 5 visit october china\'s top ',true
+'slopes kyoto\'s western mountains nishiyama nice views city beautiful colors color spots kyoto central tateyama kurobe alpen route late september thanks elevation range covered tateyama kurobe alpen route ',true
+'kyoto\'s western mountains nishiyama nice views city beautiful colors color spots kyoto central tateyama kurobe alpen route late september thanks elevation range covered tateyama kurobe alpen route ',true
+'village angkor wat hoi chi minh city saigon hanoi halong bay luang prabang travel information visa assistance travel protection plan booking documentations terms conditions 2015 special beijing xi\'an shangahi 879 pp land 16 24 2015 9 days special tour itinerary superior class accommodations inclusions ',true
+'activities city parks gardens sights historic city centers shopping outletcity metzingen fly kite cheap activities fly kite germany-for-cheap com team 18 2014 0 comments activities air foil fly kite kite stunt kite ',true
+'gardens sights historic city centers shopping outletcity metzingen fly kite cheap activities fly kite germany-for-cheap com team 18 2014 0 comments activities air foil fly kite kite stunt kite ',true
+'centers shopping outletcity metzingen fly kite cheap activities fly kite germany-for-cheap com team 18 2014 0 comments activities air foil fly kite kite stunt kite ',true
+'outletcity metzingen fly kite cheap activities fly kite germany-for-cheap com team 18 2014 0 comments activities air foil fly kite kite stunt kite symphony beach ',true
+'kite cheap activities fly kite germany-for-cheap com team 18 2014 0 comments activities air foil fly kite kite stunt kite symphony beach colorful slightly ',true
+'destination rain average amount rain observed 60 mm 15 21 days avoid rain preferred destination brighton note ',true
+'photo workshop main gallery prints workshops archive 2016 tours 2017 tours testimonials search red leaves photo workshop 13 22 home 2017 photography tours workshops expeditions red leaves ',true
+'gallery prints workshops archive 2016 tours 2017 tours testimonials search red leaves photo workshop 13 22 home 2017 photography tours workshops expeditions red leaves photo workshop 13 22 red leaves photo ',true
+'2017 tours testimonials search red leaves photo workshop 13 22 home 2017 photography tours workshops expeditions red leaves photo workshop 13 22 red leaves photo workshop 13 22 ',true
+'photo workshop 13 22 home 2017 photography tours workshops expeditions red leaves photo workshop 13 22 red leaves photo workshop 13 22 ',true
+'22 home 2017 photography tours workshops expeditions red leaves photo workshop 13 22 red leaves photo workshop 13 22 ',true
+'2017 photography tours workshops expeditions red leaves photo workshop 13 22 red leaves photo workshop 13 22 enigmatic countries ',true
+'photography tours workshops expeditions red leaves photo workshop 13 22 red leaves photo workshop 13 22 enigmatic countries world lot ',true
+'expeditions red leaves photo workshop 13 22 red leaves photo workshop 13 22 enigmatic countries world lot ',true
+'biggest lake near fuji admire volcano maples leaves setting mid little late fuji fuji crime maples beautiful ',true
+'kansai region month rapidly past leaving western nearing color season late-season color spots region nov 30 30 kanazawa season sudden fall temperatures country ',true
+'burst color little isle wonders popular color viewing spots western nov 21 21 tokyo approaching peak time joe tokyo reported ',true
+'colors leak mountain slopes typically peak nov 16 16 kyoto approaching peak color season burst force western annually goes bang county\'s well-loved ',true
+'leak mountain slopes typically peak nov 16 16 kyoto approaching peak color season burst force western annually goes bang county\'s well-loved ',true
+'discover australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'discover australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'discover australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'dornans spotlighted archives site ireport athens hellas wes october 2016 ireport kiev wes 18-20 2016 ireport wes ok ve convinced dream month thank ',true
+'site ireport athens hellas wes october 2016 ireport kiev wes 18-20 2016 ireport wes ok ve convinced dream month thank incredible speakers ',true
+'site ireport athens hellas wes october 2016 ireport kiev wes 18-20 2016 ireport wes ok ve convinced dream month thank incredible speakers team ',true
+'western europe floods - wikipedia main menu edit page read language 2000 western europe floods 2000 western europe floods shrewsbury abbey 1 date mid-september 2000 mid-december 2000 1 location italy france switzerland spain netherlands ireland denmark norway slovenia deaths 20 property damage estimated ',true
+'main menu edit page read language 2000 western europe floods 2000 western europe floods shrewsbury abbey 1 date mid-september 2000 mid-december 2000 1 location italy france switzerland spain netherlands ireland denmark norway slovenia deaths 20 property damage estimated ',true
+'freiburg - 2010 trip reports mountain photography jack brauer mountain photography jack brauer galleries trips ',true
+'free shipping quality guarantee customer testimonials licensing downloads news blog search contact trip reports freiburg - 2010 photos colorful colors foot black forest near freiburg ',true
+'quality guarantee customer testimonials licensing downloads news blog search contact trip reports freiburg - 2010 photos colorful colors foot black forest near freiburg freiburg evening freiburg ',true
+'customer testimonials licensing downloads news blog search contact trip reports freiburg - 2010 photos colorful colors foot black forest near freiburg freiburg evening freiburg pink dusk light city lights freiburg photo ',true
+'aborigines torres strait islanders alice 29 1986 john paul ii john paul ii speeches 1986 en - pilgrimage ',true
+'john paul ii aborigines torres strait islanders blatherskite park alice 29 1986 dear brothers sisters joy ',true
+'heathrow airport summer temperatures reach 30 2007 edit lasts september 22 season notorious unsettled cool polar air moves southwards following ',true
+'summer temperatures reach 30 2007 edit lasts september 22 season notorious unsettled cool polar air moves southwards following ',true
+'wikipedia 2000 western europe floods wikipedia free encyclopedia jump navigation search 2000 western europe floods shrewsbury abbey 1 date mid-september 2000 mid-december 2000 1 location italy france switzerland spain netherlands ireland denmark norway slovenia deaths 20 property damage estimated ',true
+'wikipedia org index php title autumn_2000_western_europe_floods oldid 757066820 categories 2000 disasters 2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events september 2000 events october 2000 events 2000 events december 2000 events hidden categories articles dead external links articles ',true
+'2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events september 2000 events october 2000 events 2000 events december 2000 events hidden categories articles dead external links articles ',true
+'loading october 24 2013 russian art tags art golden russian art russian russian landscape russian nature related posts russian russian art russian art vasily polenov russian russian art september post navigation ',true
+'2013 russian art tags art golden russian art russian russian landscape russian nature related posts russian russian art russian art vasily polenov russian russian art september post navigation moscow ',true
+'golden russian art russian russian landscape russian nature related posts russian russian art russian art vasily polenov russian russian art september post navigation moscow ',true
+'russian art russian russian landscape russian nature related posts russian russian art russian art vasily polenov russian russian art september post navigation moscow 5 raspberries nukes 27 ',true
+'1 895 2017 sale airfares deals weather seasons climates australian seasons september summer december february autumn march winter june august seasons travel ',true
+'collection premiere moscow summer 2016 premieres 20 18th shanghai international film festival premieres 23 fashion week highlights premieres 24 mercedes-benz fashion week summer 2015-2016 premieres 27 fashion accents premieres 27 house ikons london fashion ',true
+'premieres 20 18th shanghai international film festival premieres 23 fashion week highlights premieres 24 mercedes-benz fashion week summer 2015-2016 premieres 27 fashion accents premieres 27 house ikons london fashion ',true
+'international film festival premieres 23 fashion week highlights premieres 24 mercedes-benz fashion week summer 2015-2016 premieres 27 fashion accents premieres 27 house ikons london fashion week summer 2016 ',true
+'winter sun holiday snorkel temperate barrier reef 4wd south simpson desert september time watch whales wildflowers explore wineries ',true
+'snorkel temperate barrier reef 4wd south simpson desert september time watch whales wildflowers explore wineries ',true
+'blue mountains christmas festivities view information add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'christmas festivities view information add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'information add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts september country tropical north build-up pre-monsoonal ',true
+'fete signedevents com toggle navigation signedevents countries categories fete durban home durban fete event cover event description fete happening saturday 05th ndpc 09h00 location map north durban presbyterian church 3 round green sunningdale ',true
+'fete signedevents com toggle navigation signedevents countries categories fete durban home durban fete event cover event description fete happening saturday 05th ndpc 09h00 location map north durban presbyterian church 3 round green sunningdale ',true
+'fete signedevents com toggle navigation signedevents countries categories fete durban home durban fete event cover event description fete happening saturday 05th ndpc 09h00 location map north durban presbyterian church 3 round green sunningdale ',true
+'winter 2 russian winter 1 share twitter facebook pinterest email loading 30 2014 russian art tags art golden russian art russian russian landscape russian nature related posts russian summer ',true
+'exhibition 18 2000 st petersburg exhibition 18 2000 union artists st petersburg professor yeremeev middle - ',true
+'exhibition 18 2000 st petersburg exhibition 18 2000 union artists st petersburg professor yeremeev middle - rector ',true
+'exhibition 18 2000 st petersburg exhibition 18 2000 union artists st petersburg professor yeremeev middle - rector ',true
+'exhibition 18 2000 st petersburg exhibition 18 2000 union artists st petersburg professor yeremeev middle - rector st-petersburg\'s academic institute named repin- akhmed ',true
+'loading october 31 2014 russian art tags art golden russian art russian russian landscape russian nature related posts russian russian art russian summer russian art august russian russian art september post navigation ',true
+'2007 june 2007 2007 april 2007 march 2007 february 2007 january 2007 december 2006 2006 october 2006 september 2006 august 2006 popular helicopter flight iphone nano cold winter red grey soviet bulb missile carrying tu 22 ',true
+'below weather forecast weather freemeteo com top page seasons months september october winter season changes conditions windy ',true
+'freemeteo com top page seasons months september october winter season changes conditions windy ',true
+'41 observed previous average amount rain observed 3 mm typically 2 days note gap temperature country ',true
+'sports sections answers cloud services wikianswers categories travel countries cities time click answer september october southern hemisphere answer question yes partially tell ',true
+'answers cloud services wikianswers categories travel countries cities time click answer september october southern hemisphere answer question yes partially tell ',true
+'wikianswers categories travel countries cities time click answer september october southern hemisphere answer question yes partially tell ',true
+'categories travel countries cities time click answer september october southern hemisphere answer question yes partially tell ',true
+'cities time click answer september october southern hemisphere answer question yes partially tell ',true
+'upper mississippi river earliest closing records 1969 13 related weather edit edit 13 21 2014 north american winter storm severe persistent lake-effect event hit lakes snowbelt regions triggered winter storm emerged ',false
+'code name knife local governments 2 3 colloquially nicknamed snowvember 4 affected originating pacific northwest 13 brought copious amounts lake-effect central england 15 21 ',false
+'originating pacific northwest 13 brought copious amounts lake-effect central england 15 21 system departed east coast snowstorm elicited enormous response emergency crews national guard requiring ',false
+'quasi-permanent phenomenon referred polar vortex partly responsible weather temperatures dropped 15 35 8 3 19 below average 19 following southward dip polar vortex eastern two-thirds ',false
+'westward produced ripple jet stream allowed strong front dive southward canada producing wave 5 wave edit main article 2014 north american wave ',false
+'allowed strong front dive southward canada producing wave 5 wave edit main article 2014 north american wave ',false
+'winds 19 mid-november winter storm edit winter storm viewed goes 13 17 main article 13 21 2014 north american winter storm wave ongoing storm entered northwestern transporting warmer moister air shallow air near surface ',false
+'storm edit winter storm viewed goes 13 17 main article 13 21 2014 north american winter storm wave ongoing storm entered northwestern transporting warmer moister air shallow air near surface ',false
+'american winter storm wave ongoing storm entered northwestern transporting warmer moister air shallow air near surface 13 portland oregon recorded 1 25 inches 0 25 0 64 cm accumulation ',false
+'significant snowfall season northern plains week accumulating continue western thursday night 15 2016 4 03 07 pm est western continue receive widespread significant snowfall season thursday ',false
+'external links edit climate glance national centers environmental information department commerce plains regional climate center wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'environmental information department commerce plains regional climate center wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'department commerce plains regional climate center wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave 1978 ',false
+'wave 1936 north american wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'1911 wikipedia free encyclopedia jump navigation search blue norther 11 1911 snap affected central saturday 11 1911 cities broke record highs 70s ',false
+'encyclopedia jump navigation search blue norther 11 1911 snap affected central saturday 11 1911 cities broke record highs 70s 80s ',false
+'tornado causes havoc city county tribune star retrieved march 18 2012 wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'havoc city county tribune star retrieved march 18 2012 wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave 1978 ',false
+'wave 1936 north american wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'hwrfvery high-resolution ncep hwrf ncep gfdl gfdl hurricane model sign log record breaking blankets -- coldest morning 1976 dr ryan maue -- weatherbell 18 2014 follow ryanmaue update wednesday ',false
+'health care personnel vaccination internet panel survey 2014 fluvaxview seasonal influenza cdc skip directly search skip directly ',false
+'health care personnel vaccination internet panel survey 2014 fluvaxview seasonal influenza cdc skip directly search skip directly list skip directly ',false
+'email address what\'s submit what\'s submit button past newsletters health care personnel vaccination internet panel survey 2014 language english espa ol format select pdf 580 kb recommend facebook tweet ',false
+'pregnant women shots internet panel survey 2011 fluvaxview seasonal influenza cdc skip directly search skip directly ',false
+'pregnant women shots internet panel survey 2011 fluvaxview seasonal influenza cdc skip directly search skip directly list skip directly ',false
+'enter email address what\'s submit what\'s submit button past newsletters pregnant women shots internet panel survey 2011 language english espa ol format select pdf 370 kb recommend facebook tweet ',false
+'gary euler drph james singleton ms immunization services division ncird pregnant women influenza vaccination coverage month survey vaccinated mid-november based women pregnant anytime august- 2010-11 influenza season 1 486 2011-12 influenza season 2 ',false
+'air outbreak remains coldest winters recorded occur northern meteorological data kept weather bureau established 1870 wave started 1911 continued march 1912 contents 1 winter 2 winter 3 aftermath ',false
+'occur northern meteorological data kept weather bureau established 1870 wave started 1911 continued march 1912 contents 1 winter 2 winter 3 aftermath ',false
+'april 1913 12 external links edit monthly weather review 1912 noaa wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'12 external links edit monthly weather review 1912 noaa wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave 1978 ',false
+'wave 1936 north american wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'national season vaccination coverage 2014 fluvaxview seasonal influenza cdc skip directly search skip directly ',false
+'national season vaccination coverage 2014 fluvaxview seasonal influenza cdc skip directly search skip directly list skip directly ',false
+'enter email address what\'s submit what\'s submit button past newsletters national season vaccination coverage 2014 language english espa ol format select pdf 717 kb recommend facebook tweet ',false
+'coverage estimates time season 39 5 table 1 table 1 vaccination coverage age national immunization survey-flu national internet survey 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci overall 6 months 39 5 1 5 40 ',false
+'1 table 1 vaccination coverage age national immunization survey-flu national internet survey 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci overall 6 months 39 5 1 5 40 ',false
+'4 49 7 lowest children 13 17 31 8 table 2 vaccination coverage children national immunization survey-flu 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci children 6 months-17 41 1 2 ',false
+'coverage 43 2 adults 18 64 high-risk conditions 32 6 table 3 vaccination coverage adults national internet survey 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci adults 18 39 0 1 8 ',false
+'high-risk conditions 32 6 table 3 vaccination coverage adults national internet survey 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci adults 18 39 0 1 8 ',false
+'differences vaccination coverage children based season estimates table 4 vaccination coverage children race ethnicity national immunization survey-flu 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci children 6 months-17 41 1 2 3 ',false
+'adults season differences racial ethnic table 5 vaccination coverage adults race ethnicity national internet survey 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci adults 18 39 0 1 8 40 ',false
+'ethnic table 5 vaccination coverage adults race ethnicity national internet survey 2013 14 2014 15 seasons 2013 95 ci 2014 95 ci adults 18 39 0 1 8 40 ',false
+'adult nifs data october 29 12 2014 compared nifs data 1-14 2013 national season vaccination coverage 2013 national immunization survey-flu nis-flu nis-flu ongoing national list-assisted random-digit-dialed dual ',false
+'12 2014 compared nifs data 1-14 2013 national season vaccination coverage 2013 national immunization survey-flu nis-flu nis-flu ongoing national list-assisted random-digit-dialed dual frame ',false
+'15 influenza season 905 kb 40 pages standards adult immunization practice vaccination coverage 2013 14 influenza season 600 kb 18 pages national season vaccination coverage 2013 374 kb 14 pages vaccination coverage 2012 13 influenza season 415 ',false
+'influenza season 905 kb 40 pages standards adult immunization practice vaccination coverage 2013 14 influenza season 600 kb 18 pages national season vaccination coverage 2013 374 kb 14 pages vaccination coverage 2012 13 influenza season 415 ',false
+'vaccination coverage 2013 14 influenza season 600 kb 18 pages national season vaccination coverage 2013 374 kb 14 pages vaccination coverage 2012 13 influenza season 415 ',false
+'2013 14 influenza season 600 kb 18 pages national season vaccination coverage 2013 374 kb 14 pages vaccination coverage 2012 13 influenza season 415 kb 16 pages national season ',false
+'2013 14 influenza season 600 kb 18 pages national season vaccination coverage 2013 374 kb 14 pages vaccination coverage 2012 13 influenza season 415 kb 16 pages national season vaccination coverage ',false
+'14 influenza season 600 kb 18 pages national season vaccination coverage 2013 374 kb 14 pages vaccination coverage 2012 13 influenza season 415 kb 16 pages national season vaccination coverage ',false
+'influenza season 726 kb 11 pages march vaccination coverage national immunization survey national survey march 2012 results 2011 national survey 2011 12 influenza season national immunization survey cdc influenza awareness campaign media relations toolkit 2013 ',false
+'vaccination coverage national immunization survey national survey march 2012 results 2011 national survey 2011 12 influenza season national immunization survey cdc influenza awareness campaign media relations toolkit 2013 ',false
+'telephone based survey described detail previously details national mid-season vaccination coverage 2011-12 influenza season vaccination coverage estimates age race ethnicity subgroups 2012-13 season ',false
+'survey described detail previously details national mid-season vaccination coverage 2011-12 influenza season vaccination coverage estimates age race ethnicity subgroups 2012-13 season compared ',false
+'seasons 1 4 mb 30 pages march vaccination coverage national immunization survey national survey march 2012 results 2011 national survey 2010-11 influenza season results march 2011 national survey 2010-11 influenza ',false
+'vaccination coverage national immunization survey national survey march 2012 results 2011 national survey 2010-11 influenza season results march 2011 national survey 2010-11 influenza ',false
+'survey national survey march 2012 results 2011 national survey 2010-11 influenza season results march 2011 national survey 2010-11 influenza season 570 kb 8 pages results 2010 national survey 2010-11 influenza season 652 kb 7 pages national immunization ',false
+'national survey march 2012 results 2011 national survey 2010-11 influenza season results march 2011 national survey 2010-11 influenza season 570 kb 8 pages results 2010 national survey 2010-11 influenza season 652 kb 7 pages national immunization ',false
+'2011 national survey 2010-11 influenza season results march 2011 national survey 2010-11 influenza season 570 kb 8 pages results 2010 national survey 2010-11 influenza season 652 kb 7 pages national immunization ',false
+'survey 2010-11 influenza season results march 2011 national survey 2010-11 influenza season 570 kb 8 pages results 2010 national survey 2010-11 influenza season 652 kb 7 pages national immunization survey vaccination ',false
+'survey 2010-11 influenza season results march 2011 national survey 2010-11 influenza season 570 kb 8 pages results 2010 national survey 2010-11 influenza season 652 kb 7 pages national immunization survey vaccination coverage reported ',false
+'national survey 2010-11 influenza season 570 kb 8 pages results 2010 national survey 2010-11 influenza season 652 kb 7 pages national immunization survey vaccination coverage reported via ',false
+'national season vaccination coverage 2015 fluvaxview seasonal influenza cdc skip directly search skip directly ',false
+'national season vaccination coverage 2015 fluvaxview seasonal influenza cdc skip directly search skip directly list skip directly ',false
+'enter email address what\'s submit what\'s submit button past newsletters national season vaccination coverage 2015 language english espa ol format select pdf 750 kb recommend facebook tweet ',false
+'nifs data collected internet panel survey conducted october 29 11 2015 report provides season estimates people children adults received vaccination final 2015 16 season vaccination coverage estimates ',false
+'coverage estimates time season 40 8 table 1 table 1 vaccination coverage age national immunization survey-flu national internet survey 2014 15 2015 16 seasons 2014 95 ci 2015 95 ci overall 6 months 40 8 1 5 39 ',false
+'1 table 1 vaccination coverage age national immunization survey-flu national internet survey 2014 15 2015 16 seasons 2014 95 ci 2015 95 ci overall 6 months 40 8 1 5 39 ',false
+'1 vaccination coverage age national immunization survey-flu national internet survey 2014 15 2015 16 seasons 2014 95 ci 2015 95 ci overall 6 months 40 8 1 5 39 ',false
+'4 51 7 lowest children 13 17 26 6 table 2 vaccination coverage children age national immunization survey-flu 2014 15 2015 16 seasons age 2014 95 ci 2015 95 ci children 6 months-17 42 0 2 ',false
+'26 6 table 2 vaccination coverage children age national immunization survey-flu 2014 15 2015 16 seasons age 2014 95 ci 2015 95 ci children 6 months-17 42 0 2 ',false
+'40 8 adults 18 64 risk conditions 32 7 table 3 vaccination coverage adults age national internet survey 2014 15 2015 16 seasons age 2014 95 ci 2015 95 ci adults 18 40 4 1 8 ',false
+'conditions 32 7 table 3 vaccination coverage adults age national internet survey 2014 15 2015 16 seasons age 2014 95 ci 2015 95 ci adults 18 40 4 1 8 ',false
+'7 table 3 vaccination coverage adults age national internet survey 2014 15 2015 16 seasons age 2014 95 ci 2015 95 ci adults 18 40 4 1 8 ',false
+'races 48 8 coverage compared non-hispanic white children 35 2 table 4 vaccination coverage children race ethnicity national immunization survey-flu 2014 15 2015 16 seasons racial ethnic 2014 95 ci 2015 95 ci children 6 months-17 42 0 2 5 ',false
+'2 table 4 vaccination coverage children race ethnicity national immunization survey-flu 2014 15 2015 16 seasons racial ethnic 2014 95 ci 2015 95 ci children 6 months-17 42 0 2 5 ',false
+'adults coverage 41 6 compared non-hispanic black adults 35 5 table 5 vaccination coverage adults race ethnicity national internet survey 2014 15 2015 16 seasons racial ethnic 2014 95 ci 2015 95 ci adults 18 40 4 1 8 39 ',false
+'35 5 table 5 vaccination coverage adults race ethnicity national internet survey 2014 15 2015 16 seasons racial ethnic 2014 95 ci 2015 95 ci adults 18 40 4 1 8 39 ',false
+'table 5 vaccination coverage adults race ethnicity national internet survey 2014 15 2015 16 seasons racial ethnic 2014 95 ci 2015 95 ci adults 18 40 4 1 8 39 ',false
+'data october 29 11 2015 compared nifs data october 29 12 2014 national season vaccination coverage 2014 national immunization survey-flu nis-flu nis-flu ongoing national list-assisted random-digit-dialed dual ',false
+'2015 compared nifs data october 29 12 2014 national season vaccination coverage 2014 national immunization survey-flu nis-flu nis-flu ongoing national list-assisted random-digit-dialed dual frame ',false
+'seasonal influenza vaccines recommendations advisory committee immunization practices acip 2015 16 influenza season standards adult immunization practice vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage ',false
+'immunization practices acip 2015 16 influenza season standards adult immunization practice vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage ',false
+'acip 2015 16 influenza season standards adult immunization practice vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage ',false
+'2015 16 influenza season standards adult immunization practice vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage ',false
+'adult immunization practice vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage ',false
+'practice vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage ',false
+'vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 ',false
+'vaccination coverage 2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination ',false
+'2014-15 influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination coverage 2012-13 influenza season national season vaccination coverage ',false
+'influenza season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination coverage 2012-13 influenza season national season vaccination coverage ',false
+'season national season vaccination coverage 2014 vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination coverage 2012-13 influenza season national season vaccination coverage ',false
+'2014 vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination coverage 2012-13 influenza season national season vaccination coverage ',false
+'2014 vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination coverage 2012-13 influenza season national season vaccination coverage ',false
+'vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination coverage 2012-13 influenza season national season vaccination coverage 2012-13 season ',false
+'vaccination coverage 2013-14 influenza season national season vaccination coverage 2013 vaccination coverage 2012-13 influenza season national season vaccination coverage 2012-13 season estimated ',false
+'coverage 2011-12 influenza season march vaccination coverage national immunization survey national survey march 2012 results 2011 national survey 2011 12 influenza season national immunization survey cdc influenza awareness campaign media relations toolkit 2013 ',false
+'vaccination coverage national immunization survey national survey march 2012 results 2011 national survey 2011 12 influenza season national immunization survey cdc influenza awareness campaign media relations toolkit 2013 ',false
+'920 hpa 27 inhg 2 2014 bering sea cyclone damage unknown affected canada contiguous northern mexico 2014 15 north american winter 2014 north american wave extreme weather event occurred canada contiguous ',false
+'throughout winter 2014 15 chances average 7 23 warming trend primarily eastern brought wave 1 below-average temperatures forecast return midwest 24 ',false
+'average 7 23 warming trend primarily eastern brought wave 1 below-average temperatures forecast return midwest 24 despite development wave december 6 ',false
+'factors erratic jet stream behavior lead abnormally winter 7 record temperatures edit edit 18 coldest morning 1976 national average temperature 19 ',false
+'10 dead storm buffalo awaits rain - cnn com cnn wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'storm buffalo awaits rain - cnn com cnn wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave ',false
+'1886 87 1888 northwest wave freeze blue norther 11 1911 1912 wave 1936 north american wave wave january 1977 wave 1978 ',false
+'wave 1936 north american wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'wave wave january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'january 1977 wave 1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'1978 sunday winter 1985 wave 1994 north american wave 2007 western freeze 2014 north american wave 2014 north american wave 2015 valentine\'s day blizzard siberian express waves europe ',false
+'15 north american winter 2014 meteorology 2014 disasters canada 2014 natural disasters 2014 natural disasters climate change controversies waves canada waves 2014 events hidden categories mdy dates 2014 articles expanded ',false
+'north american winter 2014 meteorology 2014 disasters canada 2014 natural disasters 2014 natural disasters climate change controversies waves canada waves 2014 events hidden categories mdy dates 2014 articles expanded ',false
+'canada 2014 natural disasters 2014 natural disasters climate change controversies waves canada waves 2014 events hidden categories mdy dates 2014 articles expanded ',false
+'disasters 2014 natural disasters climate change controversies waves canada waves 2014 events hidden categories mdy dates 2014 articles expanded ',false
+'com pixel p-fw53_-tq3mnk1 gif style display none border 0 height 1 width 1 alt quantcast forecast eastern slate sign sign bundle ',false
+'none border 0 height 1 width 1 alt quantcast forecast eastern slate sign sign bundle eastern bundle ',false
+'1 width 1 alt quantcast forecast eastern slate sign sign bundle eastern bundle ',false
+'width 1 alt quantcast forecast eastern slate sign sign bundle eastern bundle eastern ',false
+'eastern slate sign sign bundle eastern bundle eastern slate ',false
+'slate sign sign bundle eastern bundle eastern slate sign sign ',false
+'sign bundle eastern bundle eastern slate sign sign asu america slate learn ',false
+'sign bundle eastern bundle eastern slate sign sign asu america slate learn future tense ',false
+'eastern bundle eastern slate sign sign asu america slate learn future tense slate ',false
+'tense citizen\'s guide future nov 5 2014 1 08 pm bundle eastern eric holthaus hang puppy photo karen bleier afp getty images ',false
+'consulate traveling abroad fourth july common spanish words unique vacation test knowledge happy camper test outdoors knowledge pass proper ',false
+'consulate traveling abroad fourth july common spanish words unique vacation test knowledge happy camper test outdoors knowledge pass proper ',false
+'fourth july common spanish words unique vacation test knowledge happy camper test outdoors knowledge pass proper ',false
+'pregnant women vaccination internet panel survey 2014 fluvaxview seasonal influenza cdc skip directly search skip directly ',false
+'pregnant women vaccination internet panel survey 2014 fluvaxview seasonal influenza cdc skip directly search skip directly list skip directly ',false
+'enter email address what\'s submit what\'s submit button past newsletters pregnant women vaccination internet panel survey 2014 language english espa ol format select pdf 567 kb recommend facebook tweet ',false
+'daytona weather 2017 - accuweather forecast fl 32114 recent locations daytona fl78 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country daytona weather partnership follow login weather daytona fl local weather 78 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country daytona weather partnership follow login weather daytona fl local weather 78 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'noscript 1 holiday weather deals holidays flights hotels cruises cars extras blog home weather florida south weather south 2017 facebook twitter google check weather south ',false
+'1 holiday weather deals holidays flights hotels cruises cars extras blog home weather florida south weather south 2017 facebook twitter google check weather south book ',false
+'2017 include figures temperature sunshine rainfall plus sunrise sunset times south florida weather south jan feb mar apr jun jul aug sep oct nov dec months 2626 ',false
+'include figures temperature sunshine rainfall plus sunrise sunset times south florida weather south jan feb mar apr jun jul aug sep oct nov dec months 2626 ',false
+'noscript 1 holiday weather deals holidays flights hotels cruises cars extras blog home weather florida miami weather miami 2017 facebook twitter google check weather miami ',false
+'1 holiday weather deals holidays flights hotels cruises cars extras blog home weather florida miami weather miami 2017 facebook twitter google check weather miami book ',false
+'2017 include figures temperature sunshine rainfall plus sunrise sunset times miami florida weather miami jan feb mar apr jun jul aug sep oct nov dec months 2727 ',false
+'include figures temperature sunshine rainfall plus sunrise sunset times miami florida weather miami jan feb mar apr jun jul aug sep oct nov dec months 2727 ',false
+'15 changing historically administrative court judicial court completed court building dedicated 22 1974 fiftieth anniversary revenue act created court 11 ',false
+'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'air outbreak remains coldest winters recorded occur northern meteorological data kept weather bureau established 1870 cold wave started 1911 continued march 1912 contents 1 2 3 aftermath 4 5 references 6 external links ',false
+'occur northern meteorological data kept weather bureau established 1870 cold wave started 1911 continued march 1912 contents 1 2 3 aftermath 4 5 references 6 external links ',false
+'monthly weather review 1912 noaa cold wave cold waves north america 1886 87 1888 northwest cold wave freeze blue norther 11 1911 1912 cold wave 1936 north american cold wave cold wave ',false
+'north american cold wave cold wave january 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 north american cold wave 2014 north american cold wave 2015 valentine\'s day blizzard siberian express cold waves europe ',false
+'winds 19 mid-november storm edit storm viewed goes 13 17 main article 13 21 2014 north american storm cold wave ongoing storm entered northwestern transporting warmer moister air shallow cold air near surface ',false
+'storm edit storm viewed goes 13 17 main article 13 21 2014 north american storm cold wave ongoing storm entered northwestern transporting warmer moister air shallow cold air near surface ',false
+'yearender china\'s sports uphill battle sochi 2014 qualification systems xxii olympic games sochi 2014 pdf international ski federation december 2011 retrieved 10 2012 send 66 athletes sochi games xinhua central television 26 january 2014 ',false
+'systems xxii olympic games sochi 2014 pdf international ski federation december 2011 retrieved 10 2012 send 66 athletes sochi games xinhua central television 26 january 2014 retrieved 27 january 2014 xxii olympic ',false
+'2011 retrieved 10 2012 send 66 athletes sochi games xinhua central television 26 january 2014 retrieved 27 january 2014 xxii olympic games 2014 sochi - entries short track speed skating international skating union 22 2013 retrieved 22 2013 wang meng short track star doubtful sochi olympics ',false
+'twitch retrieved august 25 2012 elley derek september 10 2010 fish film business asia retrieved july 11 2011 cj 28 2010 sion sono\'s \'cold fish\' nets premiere tokyo filmex tokyo reporter retrieved july 11 2011 landreth jonathan ',false
+'relatively warmer unique hakka earthern buildings found 12 snow beijing beijing city experiences season late lasts 100 days beautiful snow scenes created snow ',false
+'news ancient world environment news cultures news space tech news weird photos video japan\'s cherry bloom fall warming blame tony mcnicol tokyo national geographic news 27 2007 ornamental cherry japanese archipelago unseasonably fall according local media reports sakura ',false
+'photos video japan\'s cherry bloom fall warming blame tony mcnicol tokyo national geographic news 27 2007 ornamental cherry japanese archipelago unseasonably fall according local media reports sakura ',false
+'outlets aren\'t biting huffington post retrieved february 10 2013 external links edit storm names 2013 weather channel october 2 2013 retrieved 24 2013 severe weather terminology severe storms thunderstorm advisory watch pds watch warning tornado watch pds watch warning pds warning ',false
+'04 2011 world tour- hong kong endless - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ 04 2011 world tour- hong kong endless jj cheng 4242 7 984 46 47 2 3 2011 11 05 youtube ',false
+'live bangkok 2011 - 7 36 fangirl 13 902 7 36 50 - 04 2011 world tour- hong kong endless youtube - endless live seoul 2011 - 7 48 fangirl 78 ',false
+'tour kpop news music officially kmusic home news music videos events exclusives km korea ',false
+'events exclusives km korea 2015 kshop k-shop bts k-shop exo join facebook twitter youtube tour posted officially kmusic date october 10 2013 category events 4kshares share facebookshare ',false
+'japanese retrieved october 12 2015 billboard 100 2015 10 12 billboard japanese retrieved october 12 2015 billboard 100 2015 10 19 billboard japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved ',false
+'100 2015 10 12 billboard japanese retrieved october 12 2015 billboard 100 2015 10 19 billboard japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved ',false
+'100 2015 10 12 billboard japanese retrieved october 12 2015 billboard 100 2015 10 19 billboard japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved ',false
+'japanese retrieved october 12 2015 billboard 100 2015 10 19 billboard japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved 7 2015 billboard ',false
+'october 12 2015 billboard 100 2015 10 19 billboard japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved 7 2015 billboard ',false
+'100 2015 10 19 billboard japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved 7 2015 billboard 100 2015 11 2 billboard japanese retrieved ',false
+'100 2015 10 19 billboard japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved 7 2015 billboard 100 2015 11 2 billboard japanese retrieved ',false
+'japanese retrieved 7 2015 billboard 100 2015 10 26 billboard japanese retrieved 7 2015 billboard 100 2015 11 2 billboard japanese retrieved 7 2015 billboard ',false
+'7 2015 billboard 100 2015 10 26 billboard japanese retrieved 7 2015 billboard 100 2015 11 2 billboard japanese retrieved 7 2015 billboard ',false
+'100 2015 10 26 billboard japanese retrieved 7 2015 billboard 100 2015 11 2 billboard japanese retrieved 7 2015 billboard 100 2015 11 9 billboard japanese retrieved ',false
+'100 2015 10 26 billboard japanese retrieved 7 2015 billboard 100 2015 11 2 billboard japanese retrieved 7 2015 billboard 100 2015 11 9 billboard japanese retrieved ',false
+'japanese retrieved 7 2015 billboard 100 2015 11 2 billboard japanese retrieved 7 2015 billboard 100 2015 11 9 billboard japanese retrieved 7 2015 billboard ',false
+'7 2015 billboard 100 2015 11 2 billboard japanese retrieved 7 2015 billboard 100 2015 11 9 billboard japanese retrieved 7 2015 billboard ',false
+'100 2015 11 2 billboard japanese retrieved 7 2015 billboard 100 2015 11 9 billboard japanese retrieved 7 2015 billboard 100 2015 11 16 billboard japanese retrieved ',false
+'100 2015 11 2 billboard japanese retrieved 7 2015 billboard 100 2015 11 9 billboard japanese retrieved 7 2015 billboard 100 2015 11 16 billboard japanese retrieved ',false
+'japanese retrieved 7 2015 billboard 100 2015 11 9 billboard japanese retrieved 7 2015 billboard 100 2015 11 16 billboard japanese retrieved 16 2015 billboard ',false
+'7 2015 billboard 100 2015 11 9 billboard japanese retrieved 7 2015 billboard 100 2015 11 16 billboard japanese retrieved 16 2015 billboard ',false
+'100 2015 11 9 billboard japanese retrieved 7 2015 billboard 100 2015 11 16 billboard japanese retrieved 16 2015 billboard 100 2015 11 23 billboard japanese retrieved ',false
+'100 2015 11 9 billboard japanese retrieved 7 2015 billboard 100 2015 11 16 billboard japanese retrieved 16 2015 billboard 100 2015 11 23 billboard japanese retrieved ',false
+'japanese retrieved 7 2015 billboard 100 2015 11 16 billboard japanese retrieved 16 2015 billboard 100 2015 11 23 billboard japanese retrieved 21 2015 billboard ',false
+'7 2015 billboard 100 2015 11 16 billboard japanese retrieved 16 2015 billboard 100 2015 11 23 billboard japanese retrieved 21 2015 billboard ',false
+'100 2015 11 16 billboard japanese retrieved 16 2015 billboard 100 2015 11 23 billboard japanese retrieved 21 2015 billboard 100 2015 11 30 billboard japanese retrieved december ',false
+'100 2015 11 16 billboard japanese retrieved 16 2015 billboard 100 2015 11 23 billboard japanese retrieved 21 2015 billboard 100 2015 11 30 billboard japanese retrieved december ',false
+'japanese retrieved 16 2015 billboard 100 2015 11 23 billboard japanese retrieved 21 2015 billboard 100 2015 11 30 billboard japanese retrieved december 5 2015 billboard ',false
+'16 2015 billboard 100 2015 11 23 billboard japanese retrieved 21 2015 billboard 100 2015 11 30 billboard japanese retrieved december 5 2015 billboard ',false
+'japanese retrieved october 19 2016 billboard 100 2016 10 31 billboard japanese retrieved october 26 2016 billboard 100 2016 11 7 billboard japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved ',false
+'100 2016 10 31 billboard japanese retrieved october 26 2016 billboard 100 2016 11 7 billboard japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved ',false
+'100 2016 10 31 billboard japanese retrieved october 26 2016 billboard 100 2016 11 7 billboard japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved ',false
+'japanese retrieved october 26 2016 billboard 100 2016 11 7 billboard japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved 14 2016 billboard ',false
+'october 26 2016 billboard 100 2016 11 7 billboard japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved 14 2016 billboard ',false
+'100 2016 11 7 billboard japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved 14 2016 billboard 100 2016 11 21 billboard japanese retrieved ',false
+'100 2016 11 7 billboard japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved 14 2016 billboard 100 2016 11 21 billboard japanese retrieved ',false
+'japanese retrieved 2 2016 billboard 100 2016 11 14 billboard japanese retrieved 14 2016 billboard 100 2016 11 21 billboard japanese retrieved 16 2016 billboard ',false
+'2 2016 billboard 100 2016 11 14 billboard japanese retrieved 14 2016 billboard 100 2016 11 21 billboard japanese retrieved 16 2016 billboard ',false
+'100 2016 11 14 billboard japanese retrieved 14 2016 billboard 100 2016 11 21 billboard japanese retrieved 16 2016 billboard 100 2016 11 28 billboard japanese retrieved ',false
+'100 2016 11 14 billboard japanese retrieved 14 2016 billboard 100 2016 11 21 billboard japanese retrieved 16 2016 billboard 100 2016 11 28 billboard japanese retrieved ',false
+'japanese retrieved 14 2016 billboard 100 2016 11 21 billboard japanese retrieved 16 2016 billboard 100 2016 11 28 billboard japanese retrieved 23 2016 billboard ',false
+'14 2016 billboard 100 2016 11 21 billboard japanese retrieved 16 2016 billboard 100 2016 11 28 billboard japanese retrieved 23 2016 billboard ',false
+'100 2016 11 21 billboard japanese retrieved 16 2016 billboard 100 2016 11 28 billboard japanese retrieved 23 2016 billboard 100 2016 12 5 billboard japanese retrieved ',false
+'100 2016 11 21 billboard japanese retrieved 16 2016 billboard 100 2016 11 28 billboard japanese retrieved 23 2016 billboard 100 2016 12 5 billboard japanese retrieved ',false
+'japanese retrieved 16 2016 billboard 100 2016 11 28 billboard japanese retrieved 23 2016 billboard 100 2016 12 5 billboard japanese retrieved 30 2016 billboard ',false
+'16 2016 billboard 100 2016 11 28 billboard japanese retrieved 23 2016 billboard 100 2016 12 5 billboard japanese retrieved 30 2016 billboard ',false
+'100 2016 11 28 billboard japanese retrieved 23 2016 billboard 100 2016 12 5 billboard japanese retrieved 30 2016 billboard 100 2016 12 12 billboard japanese retrieved december ',false
+'100 2016 11 28 billboard japanese retrieved 23 2016 billboard 100 2016 12 5 billboard japanese retrieved 30 2016 billboard 100 2016 12 12 billboard japanese retrieved december ',false
+'japanese retrieved 23 2016 billboard 100 2016 12 5 billboard japanese retrieved 30 2016 billboard 100 2016 12 12 billboard japanese retrieved december 7 2016 billboard ',false
+'23 2016 billboard 100 2016 12 5 billboard japanese retrieved 30 2016 billboard 100 2016 12 12 billboard japanese retrieved december 7 2016 billboard ',false
+'japanese retrieved october 19 2014 billboard 100 2014 10 27 billboard japanese retrieved october 26 2014 billboard 100 2014 11 03 billboard japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved ',false
+'100 2014 10 27 billboard japanese retrieved october 26 2014 billboard 100 2014 11 03 billboard japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved ',false
+'100 2014 10 27 billboard japanese retrieved october 26 2014 billboard 100 2014 11 03 billboard japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved ',false
+'japanese retrieved october 26 2014 billboard 100 2014 11 03 billboard japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved 9 2014 billboard ',false
+'october 26 2014 billboard 100 2014 11 03 billboard japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved 9 2014 billboard ',false
+'100 2014 11 03 billboard japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved 9 2014 billboard 100 2014 11 17 billboard japanese retrieved ',false
+'100 2014 11 03 billboard japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved 9 2014 billboard 100 2014 11 17 billboard japanese retrieved ',false
+'japanese retrieved 2 2014 billboard 100 2014 11 10 billboard japanese retrieved 9 2014 billboard 100 2014 11 17 billboard japanese retrieved 16 2014 billboard ',false
+'2 2014 billboard 100 2014 11 10 billboard japanese retrieved 9 2014 billboard 100 2014 11 17 billboard japanese retrieved 16 2014 billboard ',false
+'100 2014 11 10 billboard japanese retrieved 9 2014 billboard 100 2014 11 17 billboard japanese retrieved 16 2014 billboard 100 2014 11 24 billboard japanese retrieved ',false
+'100 2014 11 10 billboard japanese retrieved 9 2014 billboard 100 2014 11 17 billboard japanese retrieved 16 2014 billboard 100 2014 11 24 billboard japanese retrieved ',false
+'japanese retrieved 9 2014 billboard 100 2014 11 17 billboard japanese retrieved 16 2014 billboard 100 2014 11 24 billboard japanese retrieved 23 2014 billboard ',false
+'9 2014 billboard 100 2014 11 17 billboard japanese retrieved 16 2014 billboard 100 2014 11 24 billboard japanese retrieved 23 2014 billboard ',false
+'100 2014 11 17 billboard japanese retrieved 16 2014 billboard 100 2014 11 24 billboard japanese retrieved 23 2014 billboard 100 2014 12 01 billboard japanese retrieved ',false
+'100 2014 11 17 billboard japanese retrieved 16 2014 billboard 100 2014 11 24 billboard japanese retrieved 23 2014 billboard 100 2014 12 01 billboard japanese retrieved ',false
+'japanese retrieved 16 2014 billboard 100 2014 11 24 billboard japanese retrieved 23 2014 billboard 100 2014 12 01 billboard japanese retrieved 30 2014 billboard ',false
+'16 2014 billboard 100 2014 11 24 billboard japanese retrieved 23 2014 billboard 100 2014 12 01 billboard japanese retrieved 30 2014 billboard ',false
+'100 2014 11 24 billboard japanese retrieved 23 2014 billboard 100 2014 12 01 billboard japanese retrieved 30 2014 billboard 100 2014 12 08 billboard japanese retrieved december ',false
+'100 2014 11 24 billboard japanese retrieved 23 2014 billboard 100 2014 12 01 billboard japanese retrieved 30 2014 billboard 100 2014 12 08 billboard japanese retrieved december ',false
+'japanese retrieved 23 2014 billboard 100 2014 12 01 billboard japanese retrieved 30 2014 billboard 100 2014 12 08 billboard japanese retrieved december 7 2014 billboard ',false
+'23 2014 billboard 100 2014 12 01 billboard japanese retrieved 30 2014 billboard 100 2014 12 08 billboard japanese retrieved december 7 2014 billboard ',false
+'heavy snow drive city - 7 05 kusa co 10 421 7 05 tokyo storm forecast 24th - 4 37 westpacwx 428 4 37 osaka travel vlog - 2 41 sean ng 4 723 2 41 journeys - ',false
+'city - 7 05 kusa co 10 421 7 05 tokyo storm forecast 24th - 4 37 westpacwx 428 4 37 osaka travel vlog - 2 41 sean ng 4 723 2 41 journeys - ',false
+'rite s04e09 - 28 01 tube therapy 6 018 28 01 osaka kyoto tour - 2 59 monleyn 10 165 2 59 11th 13th weekend snow outlook - 4 59 westpacwx 265 4 59 ',false
+'rite s04e09 - 28 01 tube therapy 6 018 28 01 osaka kyoto tour - 2 59 monleyn 10 165 2 59 11th 13th weekend snow outlook - 4 59 westpacwx 265 4 59 lookbook sunnydahye ',false
+'01 osaka kyoto tour - 2 59 monleyn 10 165 2 59 11th 13th weekend snow outlook - 4 59 westpacwx 265 4 59 lookbook sunnydahye - ',false
+'scheduled tour - k-pop concerts kpop news kpop concerts k-fashion kpop profiles kpop gallery k-drama news k-tv ',false
+'k-fashion kpop profiles kpop gallery k-drama news k-tv kpop features competitions reviews home kpop news scheduled tour kpop news scheduled tour jeremy - october 9 2013 ',false
+'gallery k-drama news k-tv kpop features competitions reviews home kpop news scheduled tour kpop news scheduled tour jeremy - october 9 2013 0 44 share ',false
+'news k-tv kpop features competitions reviews home kpop news scheduled tour kpop news scheduled tour jeremy - october 9 2013 0 44 share facebook tweet ',false
+'features competitions reviews home kpop news scheduled tour kpop news scheduled tour jeremy - october 9 2013 0 44 share facebook tweet twitter tweet ',false
+'jeremy - october 9 2013 0 44 share facebook tweet twitter tweet announced touring name tour 2013 zepp tour story ',false
+'share facebook tweet twitter tweet announced touring name tour 2013 zepp tour story scheduled start 14 zepp ',false
+'meet seoul hall peace october 12 heading tags share facebook twitter tweet previous articleyesstyle mobile accessories voucher giveaway articlekahi returns ',false
+'920 hpa 27 inhg 2 2014 bering sea cyclone damage unknown affected canada contiguous northern mexico 2014 15 north american 2014 north american cold wave extreme weather event occurred ',false
+'meteorologists cold wave abnormally cold trend persist throughout 2014 15 chances average 7 23 warming trend primarily eastern brought cold wave 1 below-average temperatures forecast return ',false
+'factors erratic jet stream behavior lead abnormally cold 7 record temperatures edit edit 18 coldest morning 1976 national average temperature 19 ',false
+'upper mississippi river earliest closing records 1969 13 related weather edit edit 13 21 2014 north american storm severe persistent lake-effect snow event hit lakes snowbelt regions triggered ',false
+'island shemya 25 minor damage reported island houses air force installation 26 12 storm lakes region killed people minnesota 27 17 ',false
+'rain - cnn com cnn cold wave cold waves north america 1886 87 1888 northwest cold wave freeze blue norther 11 1911 1912 cold wave 1936 north american cold wave cold wave ',false
+'north american cold wave cold wave january 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 north american cold wave 2014 north american cold wave 2015 valentine\'s day blizzard siberian express cold waves europe ',false
+'southern philippines 2 july 1994 southern philippines - 2-13 citation san fernando philippines 16 october 1994 philippines 3 citation southern philippines 29 1994 southern philippines - 14 citation guizhou province 19 april 1995 guizhou province - 37 citation jamalpur-tangail districts bangladesh ',false
+'citation san fernando philippines 16 october 1994 philippines 3 citation southern philippines 29 1994 southern philippines - 14 citation guizhou province 19 april 1995 guizhou province - 37 citation jamalpur-tangail districts bangladesh ',false
+'san fernando philippines 16 october 1994 philippines 3 citation southern philippines 29 1994 southern philippines - 14 citation guizhou province 19 april 1995 guizhou province - 37 citation jamalpur-tangail districts bangladesh 13 ',false
+'people affected 480 houses destroyed 12 8 million yuan economic losses 19 hainan 27 september 2005 lingao county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 2005 suzhou jiangsu province 6 52 21 anhui 6 december 2005 wuwei ',false
+'yuan economic losses 19 hainan 27 september 2005 lingao county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 2005 suzhou jiangsu province 6 52 21 anhui 6 december 2005 wuwei ',false
+'lingao county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 2005 suzhou jiangsu province 6 52 21 anhui 6 december 2005 wuwei ',false
+'county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 2005 suzhou jiangsu province 6 52 21 anhui 6 december 2005 wuwei county anhui province 16 ',false
+'province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 2005 suzhou jiangsu province 6 52 21 anhui 6 december 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million ',false
+'3 100 2nd deadliest recent japanese history citation 2006 saroma 7 2006 saroma hokkaid japan f3 9 26 deadliest recent japanese history 30 se 03 july 2007 gaoyou city jiangsu province tianchang city anhui province 14 ',false
+'prefecture 6 2012 tsukuba ibaraki prefecture japan 1 f3 1 52 japan\'s worst 2006 890 houses damaged 53 hunan 9 2012 lianyuan hunan province 4 30 5 000 people ',false
+'6 2012 tsukuba ibaraki prefecture japan 1 f3 1 52 japan\'s worst 2006 890 houses damaged 53 hunan 9 2012 lianyuan hunan province 4 30 5 000 people ',false
+'900 homes damaged ten f0 f1 tornadoes 70 71 2014 peninsula malaysia outbreak 14 october 12 malaysia 5 ef3 none none 72 73 foshan city 04 october 2015 shunde district foshan city guangdong province 3 80 associated ',false
+'ten f0 f1 tornadoes 70 71 2014 peninsula malaysia outbreak 14 october 12 malaysia 5 ef3 none none 72 73 foshan city 04 october 2015 shunde district foshan city guangdong province 3 80 associated typhoon ',false
+'weather - jackets required - forum - tripadvisor weather - jackets required ',false
+'weather - jackets required - forum - tripadvisor weather - jackets required - forum review ',false
+'weather - jackets required - forum - tripadvisor weather - jackets required - forum review review ve visited join ',false
+'weather - jackets required - forum - tripadvisor weather - jackets required - forum review review ve visited join log ',false
+'weather - jackets required - forum - tripadvisor weather - jackets required - forum review review ve visited join log ',false
+'weather - jackets required - forum - tripadvisor weather - jackets required - forum review review ve visited join log tourism ',false
+'guides apps cruises greenleaders road trips help center near enter destination search asia travel forum browse 80 983 topics weather - jackets required watch topic browse forums browse destination united forums europe ',false
+'apps cruises greenleaders road trips help center near enter destination search asia travel forum browse 80 983 topics weather - jackets required watch topic browse forums browse destination united forums europe ',false
+'near enter destination search asia travel forum browse 80 983 topics weather - jackets required watch topic browse forums browse destination united forums europe ',false
+'enter destination search asia travel forum browse 80 983 topics weather - jackets required watch topic browse forums browse destination united forums europe ',false
+'forums forums thewasabipea melbourne australia level contributor 237 posts 22 reviews save topic weather - jackets required oct 10 2013 6 40 am travelling ',false
+'forums thewasabipea melbourne australia level contributor 237 posts 22 reviews save topic weather - jackets required oct 10 2013 6 40 am travelling nov including kyoto tokyo nagano cold ',false
+'1 elly level contributor 1 667 posts 28 reviews save reply 1 re weather - jackets required oct 10 2013 7 31 am nagano mountains - ',false
+'inappropriate content elly level contributor 1 667 posts 28 reviews save reply 2 re weather - jackets required oct 10 2013 7 39 am i\'ll add temperature subjective ',false
+'destination expert nara kamikochi level contributor 7 829 posts save reply 3 re weather - jackets required oct 10 2013 12 29 pm monthly line chart average ',false
+'destination expert nara kamikochi level contributor 7 829 posts save reply 4 re weather - jackets required oct 10 2013 12 37 pm sorry link doesn\'t ',false
+'content mapleg toronto canada level contributor 8 552 posts 37 reviews save reply 5 re weather - jackets required oct 10 2013 1 23 pm i\'ll add temperature subjective ',false
+'destination expert nara kamikochi level contributor 7 829 posts save reply 6 re weather - jackets required oct 10 2013 2 45 pm canucks hokkaidols ',false
+'1 hokkaido 2 melbourne victoria australia 2 report inappropriate content 7 re weather - jackets required oct 12 2014 1 19 am - - message tripadvisor staff - ',false
+'deutschlehrer-info live tv media content programs podcasts media center media content web-videos arrives covered gentle snowfall arrived ',false
+'media content programs podcasts media center media content web-videos arrives covered gentle snowfall arrived soon german weather service watch video 00 34 ',false
+'programs podcasts media center media content web-videos arrives covered gentle snowfall arrived soon german weather service watch video 00 34 ',false
+'2smpp date 08 11 2016 duration 00 34 mins videos web-videos related subjects bavaria web-videos national park keywords webvideo snowfall bavaria share facebook twitter google whatsapp tumblr linkedin stumble digg reddit newsvine ',false
+'00 34 mins videos web-videos related subjects bavaria web-videos national park keywords webvideo snowfall bavaria share facebook twitter google whatsapp tumblr linkedin stumble digg reddit newsvine print ',false
+'celebrates season christmas market usually weekend christmas day christmas markets photo gallery german christmas markets 8 drinks endure german munich\'s holiday season berlin\'s christmas markets christmas visit berlin cathedral ',false
+'low pressure zone baltics pressure greenland 24 1 22 2010 conditions arrived northerly wind developed snow fall northern eastern ',false
+'baltics pressure greenland 24 1 22 2010 conditions arrived northerly wind developed snow fall northern eastern ',false
+'festivals home guide travel guide activities suggestions travel guide activities suggestions travel guide activities suggestions top 5 ski resorts trip december trip january february trip ',false
+'guide activities suggestions travel guide activities suggestions travel guide activities suggestions top 5 ski resorts trip december trip january february trip ',false
+'activities suggestions travel guide activities suggestions travel guide activities suggestions top 5 ski resorts trip december trip january february trip ',false
+'suggestions travel guide activities suggestions top 5 ski resorts trip december trip january february trip popular destination foreign travelers looking specific activities fun well-equipped ',false
+'january temperatures average -12 10 day plummet night north beijing experiences cold usually dry winters begins extends march average temperatures below freezing frequent sunny days perfect ',false
+'- jelly menu jelly jelly explore jellywhat question log ',false
+'jelly jelly explore jellywhat question log sign mainly major cities tokyo kyoto osaka add answer travel ',false
+'lantern festival mid-autumn festival dragon boat festival harbin ice snow festival public holiday schedule festivals home travel guide visit visit travel guide ',false
+'festival dragon boat festival harbin ice snow festival public holiday schedule festivals home travel guide visit visit travel guide ',false
+'public holiday schedule festivals home travel guide visit visit travel guide activities suggestions top 5 ski resorts trip ',false
+'schedule festivals home travel guide visit visit travel guide activities suggestions top 5 ski resorts trip ',false
+'travel guide visit visit travel guide activities suggestions top 5 ski resorts trip ',false
+'visit visit travel guide activities suggestions top 5 ski resorts trip december trip january february trip middle ',false
+'visit visit travel guide activities suggestions top 5 ski resorts trip december trip january february trip middle ',false
+'visit visit travel guide activities suggestions top 5 ski resorts trip december trip january february trip middle ',false
+'5 visit october china\'s top 6 visit december weather travel guide activities suggestions author kelly update october 21 2016 ',false
+'visit october china\'s top 6 visit december weather travel guide activities suggestions author kelly update october 21 2016 ',false
+'japan - tokyo time 54 - topics website cookies read cookies ok comments membership ',false
+'japan - tokyo time 54 - topics website cookies read cookies ok comments membership ',false
+'beatles line references assassination john kennedy beatlemania occurred 1963 actually autumn 1963 edit 1946 47 january 1987 southeast england snowfall 1990 ',false
+'line references assassination john kennedy beatlemania occurred 1963 actually autumn 1963 edit 1946 47 january 1987 southeast england snowfall 1990 1991 western europe european ',false
+'assassination john kennedy beatlemania occurred 1963 actually autumn 1963 edit 1946 47 january 1987 southeast england snowfall 1990 1991 western europe european storms ',false
+'natasha oakley pictures - natasha oakley cosmopolitan 2015 home celebs photos quotes celeb net worth gossips news celebs categories ',false
+'natasha oakley pictures - natasha oakley cosmopolitan 2015 home celebs photos quotes celeb net worth gossips news celebs categories ',false
+'news videos bio trivia quotes home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan ',false
+'videos bio trivia quotes home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini ',false
+'quotes home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini ',false
+'home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini miami 2015-09-26 natasha ',false
+'cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini miami 2015-09-26 natasha oakley ',false
+'natasha oakley pictures - natasha oakley cosmopolitan 2015 home celebs photos quotes celeb net worth gossips news celebs categories ',false
+'natasha oakley pictures - natasha oakley cosmopolitan 2015 home celebs photos quotes celeb net worth gossips news celebs categories ',false
+'news videos bio trivia quotes home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan ',false
+'videos bio trivia quotes home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini ',false
+'quotes home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini ',false
+'home models natasha oakley picture gallery3 natasha oakley cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini miami 2015-09-26 natasha ',false
+'cosmopolitan 2015 2015-10-06 credit prphotos com natasha oakley events natasha oakley cosmopolitan 2015 2015-10-06 devin brugman natasha oakley blue bikini miami 2015-09-26 natasha oakley ',false
+'domestic \'clouds\' fan meeting army discharge embark \'2013 zepp tour story rain\' kick nagoya 14 hold 10 concerts 4 cities throughout apparently decided hold japanese tour requests japanese ',false
+'guns n\' roses- tour 2007- - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'viewing youtube japanese change preference below __count__ __total__ guns n\' roses- tour 2007- mario oshiro 537537 41 252 91 92 9 10 2007 07 20 ',false
+'mine - 5 35 mario oshiro 97 134 5 35 50 - guns n\' roses- tour 2007- rainyoutube guns n\' roses - houston 08 05 16 hd - 12 45 space city 453 218 12 45 ',false
+'superdw 1 151 006 8 42 guns n\' roses ft sir elton john playing - 9 44 jdd555 28 528 228 9 44 - guns roses - tour - osaka - 2007 - 8 34 jphideo 4 401 8 34 guns n\' ',false
+'sir elton john playing - 9 44 jdd555 28 528 228 9 44 - guns roses - tour - osaka - 2007 - 8 34 jphideo 4 401 8 34 guns n\' ',false
+'tour - hd - 9 12 catcherintheryeagain 127 446 9 12 guns n\' roses - - live osaka 12 16 09 - 10 01 michelleus66 122 077 10 01 guns n\' roses patience ',false
+'tourism weather weather broome weather broome broome western tropical climate defined dry lasts april dry runs october plan ahead ',false
+'plan holiday broome weather broome broome western tropical climate defined dry lasts april dry runs october plan ahead ',false
+'surgery campaign - inspiration menu home film print interactive design audio contact surgery campaign duncan macleod 19 2006 australian federal government launches 5 million advertising campaign warning ',false
+'surgery campaign - inspiration menu home film print interactive design audio contact surgery campaign duncan macleod 19 2006 australian federal government launches 5 million advertising campaign warning ',false
+'campaign - inspiration menu home film print interactive design audio contact surgery campaign duncan macleod 19 2006 australian federal government launches 5 million advertising campaign warning ',false
+'tourism weather weather broome weather broome broome western tropical climate defined dry lasts april dry runs october plan ahead ',false
+'plan holiday broome weather broome broome western tropical climate defined dry lasts april dry runs october plan ahead ',false
+'tourism weather weather broome weather broome broome western tropical climate defined wet wet lasts april runs october plan ahead ',false
+'plan holiday broome weather broome broome western tropical climate defined wet wet lasts april runs october plan ahead ',false
+' official hoshino resorts tomamu season march hokkaido language english season apr oct nov mar access contact availabillity home ',false
+'previous australian cyclone outlooks issued 10 october 2016 average average above-average expected 2016 17 australian cyclone season april neutral weak la ni conditions pacific ocean warmer ',false
+'homes destroyed 20 homes damaged 27 1980 waterfall bushfire waterfall nsw 1 million ha 3 1980 5 firefighters 14 homes 28 ash wednesday south victoria 418 000 ha 16 february 1983 75 2 400 houses central victoria ',false
+'temporary bridge constructed month fires margaret river bushfire western 4 000 ha 24 2011 0 34 homes destroyed including historic wallcliffe house 34 tasmanian tasmania 20 000 ha 4 january 2013 1 170 buildings warrumbungle bushfire ',false
+'farm shed 1 bridge thousands production forest jarrah national parks 2015 esperance western 200 000 ha 39 october 2015 4 40 10 houses public buildings scaddan 15 000 stock losses 5 ',false
+'useful statistical information found various official country tourism websites rainfall tropics rainfall occurs january february march dry june october tropics ',false
+'found various official country tourism websites rainfall tropics rainfall occurs january february march dry june october tropics ',false
+'storms 12 000 properties power following record setting day october temperatures abc news 26 october 2014 retrieved 2 2014 hughes lesley fenwick jacqui 2015 own backyard burning issue climate change australian bushfire threat pdf ',false
+'fight blaze katoomba total fire ban declared sydney nsw districts abc news 1 2014 retrieved 1 2014 nsw blue mountains home destroyed crews battle control blazes abc news 1 ',false
+'katoomba total fire ban declared sydney nsw districts abc news 1 2014 retrieved 1 2014 nsw blue mountains home destroyed crews battle control blazes abc news 1 2014 retrieved 1 2014 bushfire warrimoo blue mountains sydney ',false
+'fire ban declared sydney nsw districts abc news 1 2014 retrieved 1 2014 nsw blue mountains home destroyed crews battle control blazes abc news 1 2014 retrieved 1 2014 bushfire warrimoo blue mountains sydney ',false
+'sydney nsw districts abc news 1 2014 retrieved 1 2014 nsw blue mountains home destroyed crews battle control blazes abc news 1 2014 retrieved 1 2014 bushfire warrimoo blue mountains sydney morning herald ',false
+'huge bushfire abc news retrieved 8 december 2014 queensland heatwave crews brace state\'s south abc news australian broadcasting commission 27 october 2014 retrieved 2 2014 ravenshoe bushfire 12 000 hectares bush burned blaze eases abc news ',false
+'guns n\' roses - live 1992 tokyo - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'youtube japanese change preference below __count__ __total__ guns n\' roses - live 1992 tokyo officialhiro8002096 45 2414 698 906 2 728 2 729 40 41 2012 08 17 live ',false
+'designed cause hype internet charlie sheen courtney japanese goggles night japanese goggle goggles caaaxy 24 2010 4433 2389 buy mug buy tshirt buy mug buy ',false
+'internet charlie sheen courtney japanese goggles night japanese goggle goggles caaaxy 24 2010 4433 2389 buy mug buy tshirt buy mug buy ',false
+'similar act unbelievable bed set japanese goggles i\'ve goggles japanese gogles japanese goggles goggles japanese goggels madeyoulookituptoo 25 2010 566 549 buy mug buy tshirt buy mug buy ',false
+'set japanese goggles i\'ve goggles japanese gogles japanese goggles goggles japanese goggels madeyoulookituptoo 25 2010 566 549 buy mug buy tshirt buy mug buy ',false
+'set japanese goggles i\'ve goggles japanese gogles japanese goggles goggles japanese goggels madeyoulookituptoo 25 2010 566 549 buy mug buy tshirt buy mug buy ',false
+'japanese goggles i\'ve goggles japanese gogles japanese goggles goggles japanese goggels madeyoulookituptoo 25 2010 566 549 buy mug buy tshirt buy mug buy ',false
+'snow effects edit 7 000 schools closed 2 december 21 timeline edit 2010 edit 22 24 edit weather arrived ireland forecasters warned snowy conditions arriving week ',false
+'000 schools closed 2 december 21 timeline edit 2010 edit 22 24 edit weather arrived ireland forecasters warned snowy conditions arriving week ',false
+'june august offers snow skiing australian alps alternatively sun holiday snorkel temperate barrier reef 4wd south simpson desert spring september time watch whales wildflowers explore wineries ',false
+'mansion escapes ',false
+'12 nov 2016 internationals 2016 england fixtures ireland fixtures scotland fixtures wales fixtures home internationals 2016 scotland scotland scotland 22-23 date saturday 12th 2016 venue bt murrayfield stadium edinburgh referee john lacey irfu attendance 65 395 scotland ',false
+'sato flower-focused park featuring sprawling gardens giant greenhouses running annually mid mid march finest illuminations including famous tunnel light park features onsen hot spring ',false
+'women dressed wonder woman woman looking women lot snow reply milky_candy_sugar 3 2009 3 56 pm yay __ snow party wish ',false
+'mansion escapes ',false
+'remarks minister foreign affairs events bell grade girl lifted shoulders male pupil ring study abroad people\'s unity 4 2016 days 4 2016 russia\'s absolute holiday created 2004 celebrates ',false
+'minister foreign affairs events bell grade girl lifted shoulders male pupil ring study abroad people\'s unity 4 2016 days 4 2016 russia\'s absolute holiday created 2004 celebrates ',false
+'bell grade girl lifted shoulders male pupil ring study abroad people\'s unity 4 2016 days 4 2016 russia\'s absolute holiday created 2004 celebrates ',false
+'workshop berlin systema spetsnaz vadim starov 6 - 8 2015 camp berlin - youtube jp view message english youtube learn you\'re viewing ',false
+'viewing youtube japanese change preference below __count__ __total__ workshop berlin systema spetsnaz vadim starov 6 - 8 2015 camp berlin vadim starov 59 6225 833 20 21 1 2 2015 08 11 6-8 ',false
+'1 2 2015 08 11 6-8 2015 http vk com sistemaspecnaz - workshop berlin systema spetsnaz vadim starov 6 - 8 2015 camp berlin universal system self-defense self-development martial arts russian martial art contact martial arts ',false
+'selected middle east canada latin america caribbean media playback unsupported device chapecoense crash hilly terrain hampers rescue 29 2016 updated 11 27 gmt plane carrying 81 people including top ',false
+'july 5 2009 12 28 pm penne altrui 464 feathers plucked 5th 2007 english russian soldiers images phrases leave reply reply ',false
+'hundreds unique architectural monuments sculptures terms russian weather st petersburg runs late march snowy icy rivers canals freeze throughout ',false
+'20 2005 sydney organising committee olympic games 2001 results retrieved 20 2005 international olympic committee web site references edit 2000 games sports-reference com retrieved 2012-03-11 nations 2000 olympics ',false
+'won bronze medal country\'s medal games 4 5 2011 al arabiya reported plans send female equestrian team 2012 olympics london avoid barred taking dalma rushdi malhas ',false
+'seen life snow started falling northern saudiarabia snow brrr snowinsaudi pic twitter com tlhzzhmrsb rimsha khan rimshakhan82 23 2016 9 pictures weren convincing snow shagra thanks friend sending snow saudiarabia saudia shagra pic twitter ',false
+'views 02-12-2014 02 34 riyadh sand storm 8693 views 18-04-2013 03 54 flood jeddah 25 2009 2 94966 views 16-10-2010 02 43 jeddah 34547 views 08-09-2015 03 42 heavy rainfall floods riyadh 25283 views ',false
+'02-12-2014 02 34 riyadh sand storm 8693 views 18-04-2013 03 54 flood jeddah 25 2009 2 94966 views 16-10-2010 02 43 jeddah 34547 views 08-09-2015 03 42 heavy rainfall floods riyadh 25283 views 22-11-2013 04 46 massive dust storm hits phoenix 426081 views 20-06-2014 02 ',false
+'34 riyadh sand storm 8693 views 18-04-2013 03 54 flood jeddah 25 2009 2 94966 views 16-10-2010 02 43 jeddah 34547 views 08-09-2015 03 42 heavy rainfall floods riyadh 25283 views 22-11-2013 04 46 massive dust storm hits phoenix 426081 views 20-06-2014 02 21 ',false
+'2017 06 40 17 37 wednesday 29th 2017 06 41 17 37 thursday 30th 2017 06 41 17 37 hilton sale 30 hotels sale save 30 hotels hilton sale ',false
+'cold-rolled coil import totaled 21 600 tons increased 12 compared month meanwhile exported 1800 tons rolled coils domestic rolled coil prices 1 300 ex-factory ',false
+'600 tons increased 12 compared month meanwhile exported 1800 tons rolled coils domestic rolled coil prices 1 300 ex-factory price ',false
+'12 compared month meanwhile exported 1800 tons rolled coils domestic rolled coil prices 1 300 ex-factory price including taxes ',false
+'commentary view posts vincit omnia veritas published vincit omnia veritas 28 2009march 4 2013format gallery murder tags brazilian cctv video close range shot blooded murder dead girl dead hot girl girlfriend gun shot gunshot gunshot wound head shot ',false
+'head shot death shot head girl 40 blooded murderer kills cute girl ditching cctv video crazy-cannibal 28 2009 3 01 am oh damn bitch quick ',false
+'rule tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring september - summer december - february autumn march - june - august country summer whol ',false
+'tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring september - summer december - february autumn march - june - august country summer whol ',false
+'person found useful edit share rkramp 963 contributions answered seasons yes spring september - summer december - february autumn march - june - august country summer whol ',false
+'months summer december february autumn march june august spring september actual based weather seasons follows spring september - october summer - march autumn april - ',false
+'september actual based weather seasons follows spring september - october summer - march autumn april - june - august spring short months whilst ',false
+'watch scotland vs live streaming rugby online 17 2013 international rugby live streaming online pc mac pad iphone ps3 fixture result score ',false
+'home home rugby fixtures rugby championship six nations test rugby result test six nations rugby championship top ranking watch scotland vs live streaming rugby online 17 2013 international 16 2013 admin leave comment watch rugby live streaming scotland vs ',false
+'test rugby result test six nations rugby championship top ranking watch scotland vs live streaming rugby online 17 2013 international 16 2013 admin leave comment watch rugby live streaming scotland vs ',false
+'championship top ranking watch scotland vs live streaming rugby online 17 2013 international 16 2013 admin leave comment watch rugby live streaming scotland vs live streaming online 2013 saturday 17 murrayfield edinburgh scotland rugby international live streaming ',false
+'ranking watch scotland vs live streaming rugby online 17 2013 international 16 2013 admin leave comment watch rugby live streaming scotland vs live streaming online 2013 saturday 17 murrayfield edinburgh scotland rugby international live streaming online welcome watch rugby live 2013 scotland vs match ',false
+'international 16 2013 admin leave comment watch rugby live streaming scotland vs live streaming online 2013 saturday 17 murrayfield edinburgh scotland rugby international live streaming online welcome watch rugby live 2013 scotland vs match ',false
+'16 2013 admin leave comment watch rugby live streaming scotland vs live streaming online 2013 saturday 17 murrayfield edinburgh scotland rugby international live streaming online welcome watch rugby live 2013 scotland vs match live stream online pc laptop wait access ',false
+'comment watch rugby live streaming scotland vs live streaming online 2013 saturday 17 murrayfield edinburgh scotland rugby international live streaming online welcome watch rugby live 2013 scotland vs match live stream online pc laptop wait access hd ',false
+'2017 06 18 17 04 wednesday 29th 2017 06 19 17 04 thursday 30th 2017 06 20 17 04 hilton sale 30 hotels sale save 30 hotels hilton sale ',false
+'5 nov 2016 internationals 2016 england fixtures ireland fixtures scotland fixtures wales fixtures home internationals 2016 barbarians barbarians barbarians 31-31 date saturday 5th 2016 venue wembley stadium london referee mike fraser nzru attendance 46 646 barbarians ',false
+'play test hobart time following test perth australia travel hobart test 12-16 time proteas played test blundstone ',false
+'tourism weather weather broome weather broome broome western tropical climate defined dry lasts april dry runs october plan ahead ',false
+'plan holiday broome weather broome broome western tropical climate defined dry lasts april dry runs october plan ahead ',false
+'beginning winter region late october beginning warm weather source cbn nearing add question add comment answer question 2010 ',false
+'5 nov 2016 internationals 2016 england fixtures ireland fixtures scotland fixtures wales fixtures home internationals 2016 wales wales wales 8-32 date saturday 5th 2016 venue principality stadium cardiff referee craig joubert saru attendance 55 776 wales ',false
+'26 nov 2016 internationals 2016 england fixtures ireland fixtures scotland fixtures wales fixtures home internationals 2016 ireland ireland ireland 27-24 date saturday 26th 2016 venue aviva stadium dublin referee garc ffr attendance 51 000 ',false
+'collection premiere moscow spring 2016 premieres 20 18th shanghai international film festival premieres 23 fashion week highlights premieres 24 mercedes-benz fashion week spring 2015-2016 premieres 27 fashion accents premieres 27 house ikons london fashion week ',false
+'premieres 20 18th shanghai international film festival premieres 23 fashion week highlights premieres 24 mercedes-benz fashion week spring 2015-2016 premieres 27 fashion accents premieres 27 house ikons london fashion week ',false
+'international film festival premieres 23 fashion week highlights premieres 24 mercedes-benz fashion week spring 2015-2016 premieres 27 fashion accents premieres 27 house ikons london fashion week spring 2016 ',false
+'1 895 2017 sale airfares deals weather seasons climates australian seasons spring september summer december february march winter june august seasons travel nicest weather ',false
+'2017 sale airfares deals weather seasons climates australian seasons spring september summer december february march winter june august seasons travel nicest weather spring planning travel read ',false
+'hemisphere december february summer march autumn june august september spring plan ahead information weather rainfall capital cities weather sydney weather sydney summer dec ',false
+'1 895 2017 sale airfares deals weather seasons climates australian seasons spring september december february autumn march winter june august seasons travel ',false
+'snow russian language blog learnrussianwith start learning personal education libraries corporate government free resources russian ',false
+'blog learnrussianwith start learning personal education libraries corporate government free resources russian language blog snow posted josefina nov 28 2007 culture ',false
+'october severe frosts month snow 5 2 allied intervention 1918 19 northern russian expedition allied intervention russian civil ',false
+'october severe frosts month snow 5 1 allied intervention 1918 19 edit northern russian expedition allied intervention russian ',false
+'72 73 11 12 2015 11 22 original soundtrack coldest actually compared countries usa instance subscribe channel http www youtube ',false
+'index php title 2011 12_saudi_arabian_protests oldid 754092464 categories 2011 2012 arab country 2011 protests 2012 protests 2011 12 arabian protests iran relations hidden categories dmy dates 2012 cs1 german-language sources de cs1 arabic-language script ar cs1 arabic-language sources ar ',false
+'title 2011 12_saudi_arabian_protests oldid 754092464 categories 2011 2012 arab country 2011 protests 2012 protests 2011 12 arabian protests iran relations hidden categories dmy dates 2012 cs1 german-language sources de cs1 arabic-language script ar cs1 arabic-language sources ar ',false
+'won bronze medal country\'s medal games 4 5 2011 al arabiya reported plans send female equestrian team 2012 olympics london avoid barred taking dalma rushdi malhas ',false
+'weather averages rio de janeiro holiday weather search search home americas rio de janeiro averages rio de janeiro classed europe actually falls spring rio de janeiro weather ',false
+'search search home americas rio de janeiro averages rio de janeiro classed europe actually falls spring rio de janeiro weather warm fairly wet month average temperature ',false
+'home americas rio de janeiro averages rio de janeiro classed europe actually falls spring rio de janeiro weather warm fairly wet month average temperature ',false
+'de janeiro flights rio de janeiro weather widgets averages rio de janeiro classed europe actually falls spring rio de janeiro weather warm fairly wet month average temperature ',false
+'flights rio de janeiro weather widgets averages rio de janeiro classed europe actually falls spring rio de janeiro weather warm fairly wet month average temperature ',false
+'anomalie map advance image lots water coast john 18 2011 12 26 pm weren major fish kills ',false
+'12 nov 2016 internationals 2016 england fixtures ireland fixtures scotland fixtures wales fixtures home internationals 2016 england england england 37-21 date saturday 12th 2016 venue twickenham stadium london referee garc ffr attendance 81 221 ',false
+'choose seasons fall follows spring - september october - february autumn - march april winter - june - august divided rainfall winter rainfall northern central ',false
+'seasons fall follows spring - september october - february autumn - march april winter - june - august divided rainfall winter rainfall northern central east ',false
+'26 nov 2016 internationals 2016 england fixtures ireland fixtures scotland fixtures wales fixtures home internationals 2016 wales wales wales 27-13 date saturday 26th 2016 venue principality stadium cardiff referee romain poite ffr attendance 55 122 wales ',false
+'weather climate average monthly humidity world weather climate information world weather climate information home climate humidity average humidity average july average month mean monthly relative humidity ',false
+'average monthly humidity world weather climate information world weather climate information home climate humidity average humidity average july average month mean monthly relative humidity ',false
+'humidity average humidity average july average month mean monthly relative humidity data nearest weather station 0 0 km climate information ',false

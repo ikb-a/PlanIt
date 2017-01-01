@@ -28,11 +28,11 @@ public class trainSimpleOpenEval {
 	/**
 	 * The folder in which the 12 .arff files produced will be saved.
 	 */
-	public static final String FOLDER = "./src/main/resources/data/monthData/OpenEval/";
+	public static final String FOLDER = "./src/main/resources/data/monthData/OpenEval/YandexTraining/";
 
 	public static void main(String[] args) throws Exception {
 		GenericSearchEngine search = new MemoizingSearch(FOLDER + "TrainingSearchMemoization.ser",
-				new UnBubbleSearchHTML());
+				new YandexSearch());
 
 		// Words for which the predicate AreRelatedToJanuary(Country, Word)
 		// should return true

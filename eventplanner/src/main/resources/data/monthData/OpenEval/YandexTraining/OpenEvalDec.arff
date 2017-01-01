@@ -1,0 +1,425 @@
+@relation posOrNegWordBags
+
+@attribute corpus string
+@attribute Class_Attribute_For_SimpleOpenEval {true,false}
+
+@data
+'5 3 7 billion 2008 usd power outages 1 7 million affected northeastern storms 2008 09 2008 northeastern ice storm damaging ice storm power ',true
+'3 7 billion 2008 usd power outages 1 7 million affected northeastern storms 2008 09 2008 northeastern ice storm damaging ice storm power millions ',true
+'2008 usd power outages 1 7 million affected northeastern storms 2008 09 2008 northeastern ice storm damaging ice storm power millions people ',true
+'temperatures los angeles york snow covers york city\'s central park throughout nisian hughes getty melanie renzulli travel expert melanie renzulli updated august 30 2016 means busy holiday travel season time ',true
+'snow covers york city\'s central park throughout nisian hughes getty melanie renzulli travel expert melanie renzulli updated august 30 2016 means busy holiday travel season time ',true
+'covers york city\'s central park throughout nisian hughes getty melanie renzulli travel expert melanie renzulli updated august 30 2016 means busy holiday travel season time comes snowing ',true
+'getty melanie renzulli travel expert melanie renzulli updated august 30 2016 means busy holiday travel season time comes snowing month ',true
+'melanie renzulli travel expert melanie renzulli updated august 30 2016 means busy holiday travel season time comes snowing month elevations ',true
+'edit list records broken north america 2015 16 edit 2nd warmest boston ma 2001 02 66 wettest recorded lower 48 67 snowfall single snowstorm allentown pa ',true
+'list records broken north america 2015 16 edit 2nd warmest boston ma 2001 02 66 wettest recorded lower 48 67 snowfall single snowstorm allentown pa ',true
+'2013 north american storm complex satellite image nasa depicting system central 21 type ice storm storm extratropical cyclone tornado outbreak formed 19 2013 dissipated 23 2013 lowest pressure ',true
+'american wikipedia free encyclopedia jump navigation search 2013 14 north american temperature map frigid conditions january 2 4 2014 astronomical 21 march 20 meteorological 1 february 28 2012 13 2013 14 2014 15 ',true
+'search 2013 14 north american temperature map frigid conditions january 2 4 2014 astronomical 21 march 20 meteorological 1 february 28 2012 13 2013 14 2014 15 ',true
+'flights canceled reports power outages 18 19 20 21 storm edit 2 pacific storm system entered western spread heavy rain snow pacific coast rocky mountains ',true
+'canceled reports power outages 18 19 20 21 storm edit 2 pacific storm system entered western spread heavy rain snow pacific coast rocky mountains ',true
+'nunavut 10 seasonal summary edit strong storm impacts pacific coast 12 north american season date expressed significant level variance cyclone ',true
+'produced snow michigan cold air rushed late january storm cold wave edit 27 arctic cold front swung northwestern bringing cold temperatures low pressure formed front ',true
+'dec 21 2012 http gbtimes com life dongzhi-celebrating-winter-solstice schrandt lydia 2013-01-28 ngzh festival solstice festival viator yeh joseph 23 2008 solstice taiwan culture portal archived original august 26 2012 ',true
+'http gbtimes com life dongzhi-celebrating-winter-solstice schrandt lydia 2013-01-28 ngzh festival solstice festival viator yeh joseph 23 2008 solstice taiwan culture portal archived original august 26 2012 retrieved 9 ',true
+'commons retrieved https en wikipedia org index php title dongzhi_festival oldid 757421655 categories festivals holidays buddhist festivals movable observances public holidays folk festivals festivals korea annual events south korea folk festivals ',true
+'https en wikipedia org index php title dongzhi_festival oldid 757421655 categories festivals holidays buddhist festivals movable observances public holidays folk festivals festivals korea annual events south korea folk festivals ',true
+'harbin harbin photos attractions photos harbin videos harbin tourist maps home tours trips trips below trips departing throughout march adapted hotels activities ',true
+'photos attractions photos harbin videos harbin tourist maps home tours trips trips below trips departing throughout march adapted hotels activities ',true
+'attractions photos harbin videos harbin tourist maps home tours trips trips below trips departing throughout march adapted hotels activities ',true
+'photos harbin videos harbin tourist maps home tours trips trips below trips departing throughout march adapted hotels activities ',true
+'harbin videos harbin tourist maps home tours trips trips below trips departing throughout march adapted hotels activities ',true
+'maps home tours trips trips below trips departing throughout march adapted hotels activities ',true
+'temples winter-time holiday treat savor forever yunnan warm holiday destination february temperature 12 - 18 ',true
+'tours travel visit january february contact community feedbacks home tours classic tours scenic ',true
+'tours travel visit january february contact community feedbacks home tours classic tours scenic ',true
+'tours travel visit january february contact community feedbacks home tours classic tours scenic ',true
+'tours specially selected popular tour packages plan travel january february north visit harbin grand ice snow ',true
+'2004 christmas eve storm - wikipedia 2004 christmas eve storm wikipedia free encyclopedia jump navigation search 2004 christmas eve storm 25 2004 morning visible satellite image cyclone south louisiana brought snow ',true
+'2004 christmas eve storm - wikipedia 2004 christmas eve storm wikipedia free encyclopedia jump navigation search 2004 christmas eve storm 25 2004 morning visible satellite image cyclone south louisiana brought snow ',true
+'storm wikipedia free encyclopedia jump navigation search 2004 christmas eve storm 25 2004 morning visible satellite image cyclone south louisiana brought snow ',true
+'little christmas kids holiday travel time peaceful not-too-busy traveling huge deal ',true
+'lantern festival mid-autumn festival dragon boat festival harbin ice snow festival public holiday schedule festivals home travel guide china\'s top 6 visit china\'s top 6 visit travel guide ',true
+'festival dragon boat festival harbin ice snow festival public holiday schedule festivals home travel guide china\'s top 6 visit china\'s top 6 visit travel guide activities suggestions top 5 ski resorts november trip ',true
+'schedule festivals home travel guide china\'s top 6 visit china\'s top 6 visit travel guide activities suggestions top 5 ski resorts november trip ',true
+'china\'s top 6 visit china\'s top 6 visit travel guide activities suggestions top 5 ski resorts november trip ',true
+'6 visit china\'s top 6 visit travel guide activities suggestions top 5 ski resorts november trip trip january february trip month ',true
+'visit travel guide activities suggestions top 5 ski resorts november trip trip january february trip month visit popular tourist ',true
+'travel guide activities suggestions top 5 ski resorts november trip trip january february trip month visit popular tourist ',true
+'guide activities suggestions top 5 ski resorts november trip trip january february trip month visit popular tourist ',true
+'activities suggestions top 5 ski resorts november trip trip january february trip month visit popular tourist ',true
+'5 ski resorts november trip trip january february trip month visit popular tourist cities beijing shanghai xi ',true
+'tours inspirational ideas visit november top 6 visit january weather travel guide activities suggestions author kelly update 5 2016 ',true
+'visit november top 6 visit january weather travel guide activities suggestions author kelly update 5 2016 ',true
+'november top 6 visit january weather travel guide activities suggestions author kelly update 5 2016 ',true
+'november top 6 visit january weather travel guide activities suggestions author kelly update 5 2016 travel articles send feedback ',true
+'true enjoy art coziness love feel terms calendar takes approximately mid-march length depth depend bit ',true
+'enjoy art coziness love feel terms calendar takes approximately mid-march length depth depend bit ',true
+'coziness love feel terms calendar takes approximately mid-march length depth depend bit ',true
+'love feel terms calendar takes approximately mid-march length depth depend bit wrote ',true
+'terms calendar takes approximately mid-march length depth depend bit wrote article visit seasons ',true
+'starting surprisingly times visit hakuba japanese alps lasts mid-march depending location winters cold temperatures ranging approximately 30 ',true
+'surprisingly times visit hakuba japanese alps lasts mid-march depending location winters cold temperatures ranging approximately 30 ',true
+'surprisingly times visit hakuba japanese alps lasts mid-march depending location winters cold temperatures ranging approximately 30 ',true
+'surprisingly times visit hakuba japanese alps lasts mid-march depending location winters cold temperatures ranging approximately 30 ',true
+'fest hong kong hong kong christmas popular tourists popular tours celebrate christamas day hong kong choose spring-like weather weather enjoy outdoor fun hiking south ',true
+'kong hong kong christmas popular tourists popular tours celebrate christamas day hong kong choose spring-like weather weather enjoy outdoor fun hiking south skiing ',true
+'weather june weather july weather august weather september weather october weather november weather travel guide activities suggestions china\'s top 6 visit ',true
+'weather july weather august weather september weather october weather november weather travel guide activities suggestions china\'s top 6 visit ',true
+'weather august weather september weather october weather november weather travel guide activities suggestions china\'s top 6 visit ',true
+'weather september weather october weather november weather travel guide activities suggestions china\'s top 6 visit ',true
+'stuttgart cruises loreley day famous legends nurnberg rhine river half day round cruise months november january february march christmas holiday packages german package vacations christmas market amsterdam dusseldorf vacation 2016 2017 rhine ',true
+'dance firework german rhine river main river havel river available hotel castle hotels bed breakfast inns hoiday rentals apartments advent season christmas markets season christmas year\'s eve 2016 2017 january ',true
+'snow storm 30 2014 munich 02 - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'learn you\'re viewing youtube japanese change preference below __count__ __total__ snow storm 30 2014 munich 02 sweetethiopia deluxe 2 5302 530 1 540 1 2 0 1 2014 12 31 ',true
+'crashing storm - 2 33 stormchasingvideo 683 706 2 33 50 - snow storm 30 2014 munich 02 youtube lufthansa a321 stockholm munich snow storm landing - 8 16 mark 3 ',true
+'hd travel channel - 4 44 myvideomedia 63 825 4 44 munich city centre - 8 45 michael jiroch 2 592 8 45 frankfurt wonderland-only sights sounds 2 - 15 55 frankfurtalumnivideo 19 012 15 55 ice storm ',true
+'55 ice storm toronto - 11 38 kristen sarah 2 618 882 11 38 snow storm 30 2014 munich 01 - 1 14 sweetethiopia deluxe 661 1 14 munich sepp-dietmar del ',true
+'snow shumen bulgaria 29 01 2014 - 12 55 emil dragoev 3 556 12 55 snow storm 30 2014 buchenau rstenfeldbruck 03 - 2 29 sweetethiopia deluxe 745 2 29 motorcycle ride crash ',true
+'29 01 2014 - 12 55 emil dragoev 3 556 12 55 snow storm 30 2014 buchenau rstenfeldbruck 03 - 2 29 sweetethiopia deluxe 745 2 29 motorcycle ride crash snow storm honda shadow - 10 30 thedrnaters 69 ',true
+'major storm aims 16 - 17 2014 watchers watching evolve transform earth changes earth changes ',true
+'publish video submit press release sunday january 1 2017 17 54 utc major storm aims 16 - 17 2014 follow thewatchers_ posted adonai 16 2014 categories ',true
+'events calendar 18 november -- anniversary date suica card initiated 2001 21 -- starts 23 -- birthday emperor 25 -- christmas ',true
+'18 november -- anniversary date suica card initiated 2001 21 -- starts 23 -- birthday emperor 25 -- christmas 31 ',true
+'experience japanese recommendations definitely try months miraclewatage 16 2014 post available chinese traditional 1 eat japanese nabe hot ',true
+'japanese recommendations definitely try months miraclewatage 16 2014 post available chinese traditional 1 eat japanese nabe hot ',true
+'kimberley centring predominantly living king leopold ranges spending town derby western references edit book review south-western news xlvii 2351 western 15 1949 9 retrieved 16 april 2016 via national library external links edit ',true
+'king leopold ranges spending town derby western references edit book review south-western news xlvii 2351 western 15 1949 9 retrieved 16 april 2016 via national library external links edit ',true
+'town derby western references edit book review south-western news xlvii 2351 western 15 1949 9 retrieved 16 april 2016 via national library external links edit ',true
+'references edit book review south-western news xlvii 2351 western 15 1949 9 retrieved 16 april 2016 via national library external links edit chapter serialisation book austlit serialised western herald - 20 april 27 april 4 11 ',true
+'attractions castles temples shrines gardens historic blog hire contact post navigation previous illuminations posted 6 2015 john asano illuminations 2016 highlights ',true
+'shrines gardens historic blog hire contact post navigation previous illuminations posted 6 2015 john asano illuminations 2016 highlights spectacular ',true
+'blog hire contact post navigation previous illuminations posted 6 2015 john asano illuminations 2016 highlights spectacular illuminations ',true
+'snow storm 30 2014 munich 01 - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'learn you\'re viewing youtube japanese change preference below __count__ __total__ snow storm 30 2014 munich 01 sweetethiopia deluxe 2 5302 530 662 1 2 0 1 2014 12 31 ',true
+'1 2014 12 31 snow bavarian capital munich youtube snow storm 30 2014 munich 02 - 1 06 sweetethiopia deluxe 1 522 1 06 snowfall time lapse clean ',true
+'storm coats taunusstein roads causing chaos - 2 23 ruptly tv 7 469 2 23 munich hd travel channel - 4 44 myvideomedia 63 825 4 44 9th snow storm time lapse - 2 47 wogggieee 139 252 2 47 munich ',true
+'tour associated album led zeppelin iv start date 11 november 1971 date 21 1971 legs 1 15 led zeppelin concert chronology japan 1971 1971 australasia 1972 led zeppelin\'s 1971 tour concert tour ',true
+'birge amondson travel expert birge amondson updated january 11 2016 - expect planning travel except season february weather airfares sports festivals events ',true
+'updated january 11 2016 - expect planning travel except season february weather airfares sports festivals events ',true
+'11 2016 - expect planning travel except season february weather airfares sports festivals events german holiday season ',true
+'expect planning travel except season february weather airfares sports festivals events german holiday season ',true
+'travel except season february weather airfares sports festivals events german holiday season airfares hotel rates ',true
+'- events festivals happening month month festivals events events events january events february germany\'s christmas markets christmas markets wonderful ',true
+'happening month month festivals events events events january events february germany\'s christmas markets christmas markets wonderful ',true
+'issues parenting religion spirituality sports style tech travel 1 8 drinks endure german 2 biggest german christmas markets 3 christmas markets 4 german christmas traditions 5 festivals com travel travel seasonal events festivals german christmas markets ',true
+'seasonal events festivals german christmas markets 8 drinks endure german germany\'s drink culture isn\'t beer erin porter travel expert erin porter updated 02 2016 time people simply ',true
+'cyclone rhonda pdf australian bureau meteorology report government retrieved 11 march 2014 cyclone katrina australian bureau meteorology report government 2014 retrieved 11 march 2014 cyclone sid bureau meteorology retrieved 2 2012 impacted queensland 1864 windworker com au retrieved 2009-07-29 ',true
+'retrieved 11 march 2014 cyclone katrina australian bureau meteorology report government 2014 retrieved 11 march 2014 cyclone sid bureau meteorology retrieved 2 2012 impacted queensland 1864 windworker com au retrieved 2009-07-29 ',true
+'cyclone katrina australian bureau meteorology report government 2014 retrieved 11 march 2014 cyclone sid bureau meteorology retrieved 2 2012 impacted queensland 1864 windworker com au retrieved 2009-07-29 cyclone john lashes british broadcasting ',true
+'01 2010 6 09 am omega metal 1 529 br summer\'s rise bey inferno melbourne - 5 2010 celebrating start wbo brings bey inferno entrance fees wbo charges ',true
+'6 09 am omega metal 1 529 br summer\'s rise bey inferno melbourne - 5 2010 celebrating start wbo brings bey inferno entrance fees wbo charges entry fee ',true
+'zubtsov special rbth useful tips life snowy months easier rookies magic moments splendid russian photos literary quotes 27 2016 ksenia isaeva rbth gallery fall love russian forever ',true
+'months easier rookies magic moments splendid russian photos literary quotes 27 2016 ksenia isaeva rbth gallery fall love russian forever nutcracker 10 magical ballet 24 2016 culture ru learn holiday classic ',true
+'quotes 27 2016 ksenia isaeva rbth gallery fall love russian forever nutcracker 10 magical ballet 24 2016 culture ru learn holiday classic experience russian christmas ',true
+'floods wikipedia free encyclopedia jump navigation search 2013 14 floods emergency pumps brought drain somerset levels date 5 2013 25 february 2014 location ireland deaths 17 dead citation ',true
+'floods wikipedia free encyclopedia jump navigation search 2013 14 floods emergency pumps brought drain somerset levels date 5 2013 25 february 2014 location ireland deaths 17 dead citation 2013 2014 ',true
+'floods wikipedia free encyclopedia jump navigation search 2013 14 floods emergency pumps brought drain somerset levels date 5 2013 25 february 2014 location ireland deaths 17 dead citation 2013 2014 ',true
+'reaches river severn similar magnitude experienced 2007 floods 21 somerset levels edit main article flooding 2013 14 somerset levels 2013 onwards somerset levels suffered severe flooding 2013 january 2014 heavy ',true
+'compilation 2014 - 4 52 tossfromua 372 610 4 52 car crash compilation 2013 - 3 54 tossfromua 38 100 3 54 russian 2016 car crash compilation - 5 12 tossfromua 11 104 5 12 stupid road rage ',true
+'country wet dry season tropical north february time outdoors swim sydney beaches hike ',true
+'time seasons country dry tropical north summer february time outdoors swim sydney beaches hike ',true
+'south wales 13 16 october record-high sea surface temperatures northern coasts october wettest record northern queensland western november 2010 april 2011 ',true
+'wales 13 16 october record-high sea surface temperatures northern coasts october wettest record northern queensland western november 2010 april 2011 australian monsoon arrives earlier stronger ',true
+'swaps christmas snow home earth environment 20 2010 swaps christmas snow 20 2010 snow ice covering ',true
+'swaps christmas snow home earth environment 20 2010 swaps christmas snow 20 2010 snow ice covering buildings cars ',true
+'swaps christmas snow home earth environment 20 2010 swaps christmas snow 20 2010 snow ice covering buildings cars ',true
+'swaps christmas snow home earth environment 20 2010 swaps christmas snow 20 2010 snow ice covering buildings cars 19 2010 mount ',true
+'society 3 275 sports 226 technology 3 000 transport 179 ukraine 81 video 964 7 posted 4 2014 tim it\'s officially ',true
+'275 sports 226 technology 3 000 transport 179 ukraine 81 video 964 7 posted 4 2014 tim it\'s officially covered snow september ',true
+'technology 3 000 transport 179 ukraine 81 video 964 7 posted 4 2014 tim it\'s officially covered snow september ',true
+'15 subscribe images page network 7 responses john 4 2014 2 08 pm gee photos simply outstanding thanks beautiful ',true
+'exitraordinary photos greets poland reply rob normann 7 2014 1 20 pm beautiful summer reply leave reply click cancel reply name required mail ',true
+'extended 19 november 1995 7 1996 northwest coast season spanned period 6 1995 11 april 1996 total 9 observed perth cyclone warning centre region 90 - 125 6 occurred ',true
+'nina conditions details cyclone northwest australian region 1995-96 frank 6-11 1995 frank cyclone form northwest coast 95 96 season earliest bring gales west pilbara coast bring gales ',true
+'cyclone northwest australian region 1995-96 frank 6-11 1995 frank cyclone form northwest coast 95 96 season earliest bring gales west pilbara coast bring gales ',true
+'helping people travel daniil enjoys learning researching travel related posts visit sochi top 5 2 2016 20 cities visit beaten path october 18 ',true
+'daniil enjoys learning researching travel related posts visit sochi top 5 2 2016 20 cities visit beaten path october 18 2016 driving frozen lake baikal ',true
+'join facebook recent posts visitors guide 2017 confederations cup 30 2016 top 10 fun adventurous 18 2016 visit sochi top 5 2 2016 4 tips move ',true
+'confederations cup 30 2016 top 10 fun adventurous 18 2016 visit sochi top 5 2 2016 4 tips move ',true
+'top 10 fun adventurous 18 2016 visit sochi top 5 2 2016 4 tips move start living november 14 2016 world cup 2018 3 tips cheap flights november ',true
+'mum\'s gone 2 aus oz relocate relocation shopping support sydney live previous post post start australian 1st 1 2010 comments sun please 1st official start ',true
+'australian 1st 1 2010 comments sun please 1st official start ve living aus eleven months getting ',true
+'flash floods hit boma dr congo 30 2016 severe weather severe weather blizzards dust storms hurricanes monsoons sandstorms severe storms tornadoes storms typhoons weather phenomena heavy snowfall deadly flash flooding hits turkey 30 2016 violent storm flash floods hit melbourne 29 2016 powerful winter storm aims northeast canada 29 2016 space ',true
+'photos publish video submit press release sunday january 1 2017 17 55 utc cyclone yvette forms near follow thewatchers_ posted elena ugrin 21 2016 category systems currently eyeing developed ',true
+'press release sunday january 1 2017 17 55 utc cyclone yvette forms near follow thewatchers_ posted elena ugrin 21 2016 category systems currently eyeing developed cyclone yvette ',true
+'55 utc cyclone yvette forms near follow thewatchers_ posted elena ugrin 21 2016 category systems currently eyeing developed cyclone yvette ',true
+'pic twitter com kyz00hhid2 jamilla jamillatweets 21 2016 shot snow pic twitter com 5opvfphakm dralmuraisheds 20 2016 aymadyson lol weirdest cuz it\'s snowing deserts sand snow pic twitter com ',true
+'twitter com kyz00hhid2 jamilla jamillatweets 21 2016 shot snow pic twitter com 5opvfphakm dralmuraisheds 20 2016 aymadyson lol weirdest cuz it\'s snowing deserts sand snow pic twitter com 5sejlg4klg sam xgidfistitissi2 22 2016 globalwarming looks ',true
+'21 2016 shot snow pic twitter com 5opvfphakm dralmuraisheds 20 2016 aymadyson lol weirdest cuz it\'s snowing deserts sand snow pic twitter com 5sejlg4klg sam xgidfistitissi2 22 2016 globalwarming looks amazing ',true
+'pic twitter com 5opvfphakm dralmuraisheds 20 2016 aymadyson lol weirdest cuz it\'s snowing deserts sand snow pic twitter com 5sejlg4klg sam xgidfistitissi2 22 2016 globalwarming looks amazing saudiarabia camels standing snow https ',true
+'l3vcxgta42 climatechange realdonaldtrump pic twitter com xadbptsjih onusbaal onusbaal2015 21 2016 snow falls desert rt memeistalking ajplus zinedne45 turaif yesterday pic twitter com cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow ',true
+'2016 snow falls desert rt memeistalking ajplus zinedne45 turaif yesterday pic twitter com cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow ',true
+'snow falls desert rt memeistalking ajplus zinedne45 turaif yesterday pic twitter com cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow ',true
+'turaif yesterday pic twitter com cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow ',true
+'yesterday pic twitter com cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow 85 https co 90vmivlowl ',true
+'yesterday pic twitter com cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow 85 https co 90vmivlowl ',true
+'com cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow 85 https co 90vmivlowl sdavelisdenoia ihearttrump1 21 ',true
+'cdvloqszpa bello pastoralist1 21 2016 snow northern ksa snow pic twitter com fijvioct9t aljoookr aljookr2022 21 2016 region snow 85 https co 90vmivlowl sdavelisdenoia ihearttrump1 21 ',true
+'2017 06 58 17 48 saturday 30th 2017 06 58 17 49 sunday 31st 2017 06 58 17 49 hilton sale 30 hotels sale save 30 hotels hilton sale ',true
+'hejaz national september october 2011 retrieved 7 october 2016 byman daniel 1 2011 hope arab spring chill arab washington post retrieved 7 october 2016 hossein mousavian seyed 3 june 2016 iran\'s national security threat huffington post retrieved 23 september 2016 toby harnden ',true
+'1 895 2017 sale airfares deals weather seasons climates australian seasons spring september november february autumn march winter june august seasons travel nicest ',true
+'sale airfares deals weather seasons climates australian seasons spring september november february autumn march winter june august seasons travel nicest weather spring autumn planning travel read ',true
+'- january february com food health home money style tech travel autos dating relationships ',true
+'zealand tours travel - zealand hotels accommodation - zealand 1 1 january february navigate morning port macquarie\'s flynn beach south wales north coast photo credit tourism ',true
+'port macquarie\'s flynn beach south wales north coast photo credit tourism south wales season fun sun festive times begins 1 continues february visiting northern hemisphere ',true
+'christmas day holiday season weather ushering days weather warm continue reading below video tipping etiquette ',true
+'day holiday season weather ushering days weather warm continue reading below video tipping etiquette ',true
+'ranked npcs uci para-cycling male female nations ranking lists 31 2014 qualified 2016 paralympics rio assuming continued meet eligibility requirements 7 8 equestrian ',true
+'medal final lacoste borotra fra 3 6 8 10 3 6 4 references edit 1924 paris games sports-reference com retrieved 25 2014 external links edit official olympic reports international olympic committee results database ',true
+'index php title south_africa_at_the_1924_summer_olympics oldid 753855993 categories nations 1924 olympics olympics 1924 african sport hidden categories engvarb 2013 dmy dates 2014 articles hcards navigation menu personal tools logged talk contributions create account ',true
+'ve finished 3 edit wikimedia commons media related climate war references edit chew allen 1981 fighting russians studies pdf leavenworth papers fort leavenworth kansas ',true
+'3 edit wikimedia commons media related climate war references edit chew allen 1981 fighting russians studies pdf leavenworth papers fort leavenworth kansas ',true
+'worst-case scenario boots ruined expect unexpected start exactly expect sometimes temperatures rise zero conducive creating festive atmosphere ',true
+'magical fairy-tale-like understandable highlight christmas celebrations christmas day marked jan 7 festive bustle especially shops carefully maneuver ',true
+'tips 5 moscow capital city com travel eastern europe travel travel moscow travel moscow seasonal travel moscow travel russia\'s capital city january february moscow cc polzovat kerry kubilius eastern europe travel expert ',true
+'families educators raising world citizens arts activities crafts food language love holidays 29 2014 anna watt holidays lucky russians ',true
+'educators raising world citizens arts activities crafts food language love holidays 29 2014 anna watt holidays lucky russians russians proud ',true
+'raising world citizens arts activities crafts food language love holidays 29 2014 anna watt holidays lucky russians russians proud holiday celebrations ',true
+'holidays svyatki subscribe mailing list indicates required email address comments aimee 29 2014 7 12 am wow sounds time visit idea holidays celebrated season ',true
+'2017 06 36 17 14 saturday 30th 2017 06 37 17 15 sunday 31st 2017 06 37 17 15 hilton sale 30 hotels sale save 30 hotels hilton sale ',true
+'voortrekkers defeated zulu army battle blood river christmas day christmas holiday southern brings glorious days sunshine carry irresistible invitation ',true
+'voortrekkers defeated zulu army battle blood river christmas day christmas holiday southern brings glorious days sunshine carry irresistible invitation ',true
+'weather averages cape town holiday weather search search home cape town averages cape town marks beginning season cape town days glorious little precipitation ',true
+'weather averages cape town holiday weather search search home cape town averages cape town marks beginning season cape town days glorious little precipitation ',true
+'weather averages cape town holiday weather search search home cape town averages cape town marks beginning season cape town days glorious little precipitation ',true
+'weather averages cape town holiday weather search search home cape town averages cape town marks beginning season cape town days glorious little precipitation plenty bright sunlight located ',true
+'holiday weather search search home cape town averages cape town marks beginning season cape town days glorious little precipitation plenty bright sunlight located ',true
+'weather search search home cape town averages cape town marks beginning season cape town days glorious little precipitation plenty bright sunlight located ',true
+'town flights cape town cape town links weather widgets averages cape town marks beginning season cape town days glorious little precipitation plenty bright sunlight located ',true
+'flights cape town cape town links weather widgets averages cape town marks beginning season cape town days glorious little precipitation plenty bright sunlight located ',true
+'resigned 19 2016 mk suggestions stamp approval zuma 19 2016 2016 strange weather johannesburg 20 2016 - floods crippling drought taste lives ',true
+'approval zuma 19 2016 2016 strange weather johannesburg 20 2016 - floods crippling drought taste lives ',true
+'approval zuma 19 2016 2016 strange weather johannesburg 20 2016 - floods crippling drought taste lives extreme weather ',true
+'19 2016 2016 strange weather johannesburg 20 2016 - floods crippling drought taste lives extreme weather patterns ',true
+'5 october weather com travel travel plan trip weather geological conditions weather discover average temperatures los angeles york covers york city\'s central park throughout nisian hughes getty melanie renzulli ',false
+'com travel travel plan trip weather geological conditions weather discover average temperatures los angeles york covers york city\'s central park throughout nisian hughes getty melanie renzulli ',false
+'travel travel plan trip weather geological conditions weather discover average temperatures los angeles york covers york city\'s central park throughout nisian hughes getty melanie renzulli travel expert melanie renzulli updated august ',false
+'travel plan trip weather geological conditions weather discover average temperatures los angeles york covers york city\'s central park throughout nisian hughes getty melanie renzulli travel expert melanie renzulli updated august 30 2016 means winter ',false
+'weather discover average temperatures los angeles york covers york city\'s central park throughout nisian hughes getty melanie renzulli travel expert melanie renzulli updated august 30 2016 means winter busy ',false
+'yearly average nearly 100 inches 255 cm close eight feet buries nearby buffalo typical cities receive fresh january february 16 51 largest cities annual snowfall normally ',false
+'feet buries nearby buffalo typical cities receive fresh january february 16 51 largest cities annual snowfall normally ',false
+'trip forum fodor\'s travel talk forums log subscribe facebook twitter pinterest instagram google home menu ',false
+'view trip ideas log subscribe follow facebook twitter pinterest instagram google forums trip forums search forums post topic change forum africa middle east ',false
+'trip ideas log subscribe follow facebook twitter pinterest instagram google forums trip forums search forums post topic change forum africa middle east asia ',false
+'trip ideas log subscribe follow facebook twitter pinterest instagram google forums trip forums search forums post topic change forum africa middle east asia australia ',false
+'30 16 05 41 pm tagged louisiana view 25 top trip posted hawghunter aug 10 15 10 41 am posted tagged florida georgia north carolina tennessee jump reply add reply report abuse ',false
+'26 produced snow michigan air rushed late january winter storm wave edit 27 arctic front swung northwestern bringing temperatures low pressure formed front ',false
+'snow michigan air rushed late january winter storm wave edit 27 arctic front swung northwestern bringing temperatures low pressure formed front ',false
+'air rushed late january winter storm wave edit 27 arctic front swung northwestern bringing temperatures low pressure formed front ',false
+'chilly trend finishing 3 9 2 2 below normal 82 western edit despite intrusion air near month temperatures western averaged normal temperatures averaging 3 1 6 ',false
+'2 2 below normal 82 western edit despite intrusion air near month temperatures western averaged normal temperatures averaging 3 1 6 ',false
+'retrieved 21 2014 erdman jon 1 2014 november 2014 shattered snow records weather channel llc retrieved 21 2014 boston breaks record seasonal snowfall national oceanic atmospheric administration national weather service boston ma march 15 2015 retrieved march ',false
+'week 2017 start unseasonably cold snowy northwestern maine power buried video - 31 2016 12 51 01 pm est dec 31 2016 12 56 pm et roughly ',false
+'above-normal temperatures snowstorm unfold colorado minnesota week weather news - 31 2016 6 13 56 am est disruptive expand north-central sunday night tuesday that\'s blizzard video - 30 2016 10 ',false
+'week weather news - 31 2016 6 13 56 am est disruptive expand north-central sunday night tuesday that\'s blizzard video - 30 2016 10 10 01 am est winter storm brought heavy snowfall strong ',false
+'46 34 am est week 2017 start unseasonably snowy northwestern maine power buried snow video - 31 2016 12 51 01 pm est dec 31 2016 12 56 pm et roughly ',false
+'blog home politics war barack imposes sanctions russia war barack imposes sanctions russia published 21 28 29 2016 luis miranda hates opposition plans especially opposition ',false
+'worldwide pandemic health officials report infections aren\'t match vaccine cdc 18 2014 healthday starting tighten grip particularly south midwest health officials reported thursday season ',false
+'index midday skies average night-time temperature usually -1 30 weather represented washington metric mm imperial inches ',false
+'miami weather 2017 - accuweather forecast fl 33139 recent locations miami fl80 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country miami weather follow login weather miami fl local weather 80 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country miami weather follow login weather miami fl local weather 80 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'26 produced snow michigan air rushed late january winter storm wave edit 27 arctic front swung northwestern bringing temperatures low pressure formed front ',false
+'snow michigan air rushed late january winter storm wave edit 27 arctic front swung northwestern bringing temperatures low pressure formed front ',false
+'air rushed late january winter storm wave edit 27 arctic front swung northwestern bringing temperatures low pressure formed front ',false
+'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'article adding citations reliable sources unsourced material challenged removed 2009 learn remove template message 1936 olympics flag ioc code usa noc olympic committee ',false
+'2014 edit corporations list corporations list taxes paid yearly corporations references edit puzzanghera jim 15 2015 corporate income rates world 2014 taxfoundation org retrieved 28 2012 break corporate ',false
+'corporations list taxes paid yearly corporations references edit puzzanghera jim 15 2015 corporate income rates world 2014 taxfoundation org retrieved 28 2012 break corporate ',false
+'county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan ',false
+'houses destroyed 70 damaged 20 jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan ',false
+'20 jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan ',false
+'jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan economic losses 22 guangdong ',false
+'silver largest miao minority village top 10 winter vacation destinations 3 lu poem ode posted 2 2010 zoe mao lu 1125 11 13-1210 1 26 ',false
+'policy update - 15 2015 - - cookies online experience using website ',false
+'policy update - 15 2015 - - cookies online experience using website ',false
+'cookies accordance cookie policy learn close home usa policy update - 15 2015 updated 23 2015 article russell sullivan rosemary becchi danielle ',false
+'cookies accordance cookie policy learn close home usa policy update - 15 2015 updated 23 2015 article russell sullivan rosemary becchi danielle ',false
+'tokyo kyoto okinawa hotels hostels tours living sapporo festival 8 2008december 12 2014 okinawa travel sapporo festival sapporo yuki matsuri biggest famous winter festival festival takes sapporo city prefecture week february originally started 6 local school kids ',false
+'tension akb48 48 5 koi gen hoshino 49 12 futari saison keyakizaka46 50 19 koi gen hoshino 51 26 52 references edit billboard 100 2016 1 4 billboard japanese retrieved january 9 2016 billboard ',false
+'gen hoshino 49 12 futari saison keyakizaka46 50 19 koi gen hoshino 51 26 52 references edit billboard 100 2016 1 4 billboard japanese retrieved january 9 2016 billboard ',false
+'japanese retrieved november 23 2016 billboard 100 2016 12 5 billboard japanese retrieved november 30 2016 billboard 100 2016 12 12 billboard japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved ',false
+'100 2016 12 5 billboard japanese retrieved november 30 2016 billboard 100 2016 12 12 billboard japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved ',false
+'100 2016 12 5 billboard japanese retrieved november 30 2016 billboard 100 2016 12 12 billboard japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved ',false
+'japanese retrieved november 30 2016 billboard 100 2016 12 12 billboard japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved 14 2016 billboard ',false
+'november 30 2016 billboard 100 2016 12 12 billboard japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved 14 2016 billboard ',false
+'100 2016 12 12 billboard japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved 14 2016 billboard 100 2016 12 26 billboard japanese retrieved ',false
+'100 2016 12 12 billboard japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved 14 2016 billboard 100 2016 12 26 billboard japanese retrieved ',false
+'japanese retrieved 7 2016 billboard 100 2016 12 19 billboard japanese retrieved 14 2016 billboard 100 2016 12 26 billboard japanese retrieved 21 2016 ',false
+'7 2016 billboard 100 2016 12 19 billboard japanese retrieved 14 2016 billboard 100 2016 12 26 billboard japanese retrieved 21 2016 ',false
+'100 2016 12 19 billboard japanese retrieved 14 2016 billboard 100 2016 12 26 billboard japanese retrieved 21 2016 lists number-one singles oricon singles chart ',false
+'100 2016 12 19 billboard japanese retrieved 14 2016 billboard 100 2016 12 26 billboard japanese retrieved 21 2016 lists number-one singles oricon singles chart ',false
+'squall 41 42 starts china south korea potential expand europe america 12 2016 company announced release album 2017 series ',false
+'lenr timeline faq lenr organizations rossi vs ih thread login abstracts published japanese fusion conference dec 7-8 posted 5 2013 frank acland 21 comments 14th meeting fusion research society held tokyo institute technology ',false
+'thread login abstracts published japanese fusion conference dec 7-8 posted 5 2013 frank acland 21 comments 14th meeting fusion research society held tokyo institute technology 7-8 ',false
+'7-8 posted 5 2013 frank acland 21 comments 14th meeting fusion research society held tokyo institute technology 7-8 tokyo institute technology abstracts papers ',false
+'producer singles chronology kurenai 1989 endless 1989 week 1990 endless fourth single released japanese heavy metal band named 1 1989 single major record label reached ',false
+'clamp kiseki vol 11 tokyopop 31 oricon co jp japanese oricon retrieved 10 2011 external links edit live performance endless live youtube toshi yoshiki pata heath sugizo terry tomo atsushi eddie hally zen jun hikaru kerry satoru ',false
+'county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan ',false
+'houses destroyed 70 damaged 20 jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan ',false
+'20 jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan ',false
+'jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 2005 wuwei county anhui province 16 162 715 houses destroyed 24 million yuan economic losses 22 guangdong ',false
+'temperature noticed lower temperature travel january february isn\'t bad ton september that\'s ',false
+'noticed lower temperature travel january february isn\'t bad ton september that\'s ',false
+'temperature travel january february isn\'t bad ton september that\'s typhoon season why\'s rainy june ',false
+'cold am happy travel it\'s raining january you\'re basically guaranteed free existence unless unlucky cold ',false
+'enya - echoes interview zip 11th 2015 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'youtube japanese change preference below __count__ __total__ enya - echoes interview zip 11th 2015 lidiana tedeschi 163163 34 230 228 229 2 3 2015 12 13 youtube enya - ',false
+'references primary sources please improve adding secondary tertiary sources 2007 learn remove template message live tour 1973 live album donovan released 1973 recorded march 25 1973 march 26 ',false
+'refugee crisis europe weather deter nearly 100 000 arrivals editions australia edition edition india edition italy edition japan edition singapore edition united kingdom united jan 01 ',false
+'summer extends september october peeks corner coveted season underway fall fall lasts mid-september depending location widely considered pleasant time weather-wise ',false
+'september october peeks corner coveted season underway fall fall lasts mid-september depending location widely considered pleasant time weather-wise ',false
+'october peeks corner coveted season underway fall fall lasts mid-september depending location widely considered pleasant time weather-wise ',false
+'peeks corner coveted season underway fall fall lasts mid-september depending location widely considered pleasant time weather-wise ',false
+'corner coveted season underway fall fall lasts mid-september depending location widely considered pleasant time weather-wise visit temperatures ',false
+'underway fall fall lasts mid-september depending location widely considered pleasant time weather-wise visit temperatures ranging approximately 50 70 ginkakuji silver pavilion higashiyama district ',false
+'posts posts connect categories recent posts france 2016 fall switzerland 2016 essentials feb 2016 winter bliss archives 2016 june 2016 february 2016 january 2016 2015 november 2015 october 2015 september 2015 ',false
+'media tv newspaper radio website regional tourist centers throughout feel atmosphere mid october except hokkaido region kanto chubu regions colorful ',false
+'january 1976 13 arrived usa previous student american public southern california impressions positive helpful teachers friendly fellow students ',false
+'updated time content up-to-date anymore tokyo 2011 11 20 11 50 am visiting dec am vancouver canada winter temperature ',false
+'kyoto-shi kyoto suma riky park late november kobe-shi hyogo mount kirishima late november kirishima-shi kagoshima sent mail attractions introduces events leaves 2016 enjoy beautiful japanese fullest don\'t ',false
+'mine home contact faq blogroll friday 4 2009 glaze 2010 collection preview i\'m excited don\'t ',false
+'26 june 14 21 april 15 march 6 february 5 january 18 2009 272 21 overall beauty sale haul omg super awesome sneak preview 2010 bariel polish - glaze afterglow nag nag nag sales color club wonderland minis winter 2009 little super-quick ',false
+'airport kiyomizudera kodaiji kofukuji konchi-in koyo kyoto maple momiji nanzenji nara photography photos season setiawan temple tenryuji todaiji tofukuji traveling trip 5 trip 1 ojat 11 2013 1 33 am wahhh keren banget reply edwinsetiawan 11 ',false
+'photography photos season setiawan temple tenryuji todaiji tofukuji traveling trip 5 trip 1 ojat 11 2013 1 33 am wahhh keren banget reply edwinsetiawan 11 ',false
+'bravowhisky com 20 2013 5 40 am bagus reply edwinsetiawan 20 2013 11 08 am trims ya reply pingback trip 2 photography leave reply cancel reply enter comment fill ',false
+'logging news facebook twitter 8 26 16 2016 uk tour red chili peppers pleased announce tour dates 2016 5 london o2 arena 6 london o2 arena 8 glasgow sse hydro ',false
+'decorated snow-filled scenes white christmas christmas beginning period it\'s january march sleet falling average 3 9 days compared 5 ',false
+'don\'t check http www japan-guide com e2265 html search forums knowledgeable report inappropriate content sammyf1oyd hong kong ',false
+'11 1994 penkridge staffordshire 32 despite warmth dullest 1989 33 sunshine cloud edit sunny day average total annual sunshine 1339 7 hours 30 maximum 34 ',false
+'wikipedia org index php title autumn_2000_western_europe_floods oldid 757066820 categories 2000 disasters 2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events september 2000 events october 2000 events november 2000 events 2000 events hidden categories articles dead external links articles dead external links ',false
+'2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events september 2000 events october 2000 events november 2000 events 2000 events hidden categories articles dead external links articles dead external links ',false
+'heat wave southeastern bushfire risk weather precipitated series particularly south 6 people injured separate incidents 5 people injured helicopter pilot killed whilst fighting ',false
+'bushfire risk weather precipitated series particularly south 6 people injured separate incidents 5 people injured helicopter pilot killed whilst fighting nsw month 60-year-old suffered burns whilst ',false
+'chart expanded include sales online stores sales itunes 5 2013 billboard added additional factors billboard 100 chart tweets relating songs twitter data collected ntt data ',false
+'include sales online stores sales itunes 5 2013 billboard added additional factors billboard 100 chart tweets relating songs twitter data collected ntt data ',false
+'14 samurai song kanjani eight 50 21 kuchibiru ni baby akb48 51 28 colorful eyes sexy zone 52 references edit gary trust 2008-05-21 billboard 100 global audience billboard nielsen business media inc retrieved 2011-12-29 billboard 100 ',false
+'japanese retrieved november 16 2015 billboard 100 2015 11 23 billboard japanese retrieved november 21 2015 billboard 100 2015 11 30 billboard japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved ',false
+'100 2015 11 23 billboard japanese retrieved november 21 2015 billboard 100 2015 11 30 billboard japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved ',false
+'100 2015 11 23 billboard japanese retrieved november 21 2015 billboard 100 2015 11 30 billboard japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved ',false
+'japanese retrieved november 21 2015 billboard 100 2015 11 30 billboard japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved 5 2015 billboard ',false
+'november 21 2015 billboard 100 2015 11 30 billboard japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved 5 2015 billboard ',false
+'100 2015 11 30 billboard japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved 5 2015 billboard 100 2015 12 14 billboard japanese retrieved ',false
+'100 2015 11 30 billboard japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved 5 2015 billboard 100 2015 12 14 billboard japanese retrieved ',false
+'japanese retrieved 5 2015 billboard 100 2015 12 7 billboard japanese retrieved 5 2015 billboard 100 2015 12 14 billboard japanese retrieved 21 2015 billboard ',false
+'5 2015 billboard 100 2015 12 7 billboard japanese retrieved 5 2015 billboard 100 2015 12 14 billboard japanese retrieved 21 2015 billboard ',false
+'100 2015 12 7 billboard japanese retrieved 5 2015 billboard 100 2015 12 14 billboard japanese retrieved 21 2015 billboard 100 2015 12 21 billboard japanese retrieved ',false
+'100 2015 12 7 billboard japanese retrieved 5 2015 billboard 100 2015 12 14 billboard japanese retrieved 21 2015 billboard 100 2015 12 21 billboard japanese retrieved ',false
+'japanese retrieved 5 2015 billboard 100 2015 12 14 billboard japanese retrieved 21 2015 billboard 100 2015 12 21 billboard japanese retrieved 21 2015 billboard ',false
+'5 2015 billboard 100 2015 12 14 billboard japanese retrieved 21 2015 billboard 100 2015 12 21 billboard japanese retrieved 21 2015 billboard ',false
+'100 2015 12 14 billboard japanese retrieved 21 2015 billboard 100 2015 12 21 billboard japanese retrieved 21 2015 billboard 100 2015 12 28 billboard japanese retrieved january ',false
+'100 2015 12 14 billboard japanese retrieved 21 2015 billboard 100 2015 12 21 billboard japanese retrieved 21 2015 billboard 100 2015 12 28 billboard japanese retrieved january ',false
+'japanese retrieved 21 2015 billboard 100 2015 12 21 billboard japanese retrieved 21 2015 billboard 100 2015 12 28 billboard japanese retrieved january 4 2016 ',false
+'21 2015 billboard 100 2015 12 21 billboard japanese retrieved 21 2015 billboard 100 2015 12 28 billboard japanese retrieved january 4 2016 ',false
+'christmas holidays don celebrate main characteristic climate begins january february hottest months average tamperature ',false
+'seasons country wet tropical north summer february time outdoors swim sydney beaches hike ',false
+'daily life contact website posts 11 comments hate tsuyu rainy season anonymous 29 2015 2 35 am hate suggest don visit alabama joey 24 april 2015 10 07 ',false
+'earth snapshot fires throughout cape york peninsula 6th 2012 home mosaics newsletter sitemap fires throughout cape york peninsula ',false
+'earth snapshot fires throughout cape york peninsula 6th 2012 home mosaics newsletter sitemap fires throughout cape york peninsula 6th 2012 16 4s 142 2e 6th 2012 category fires image ',false
+'earth snapshot fires throughout cape york peninsula 6th 2012 home mosaics newsletter sitemap fires throughout cape york peninsula 6th 2012 16 4s 142 2e 6th 2012 category fires image ',false
+'earth snapshot fires throughout cape york peninsula 6th 2012 home mosaics newsletter sitemap fires throughout cape york peninsula 6th 2012 16 4s 142 2e 6th 2012 category fires image ',false
+'6th 2012 home mosaics newsletter sitemap fires throughout cape york peninsula 6th 2012 16 4s 142 2e 6th 2012 category fires image day ',false
+'govt prepares hand relief payments abc news australian broadcasting corporation retrieved 20 2015 jay weatherill cheltenham premier south 1 2015 pinery - ministerial statement parliamentary debates hansard south house assembly sam duluk ',false
+'corporation retrieved 20 2015 jay weatherill cheltenham premier south 1 2015 pinery - ministerial statement parliamentary debates hansard south house assembly sam duluk ',false
+'20 2015 jay weatherill cheltenham premier south 1 2015 pinery - ministerial statement parliamentary debates hansard south house assembly sam duluk davenport 3 2015 pinery ',false
+'jay weatherill cheltenham premier south 1 2015 pinery - ministerial statement parliamentary debates hansard south house assembly sam duluk davenport 3 2015 pinery - grievance debate parliamentary debates hansard south house assembly ',false
+'south 1 2015 pinery - ministerial statement parliamentary debates hansard south house assembly sam duluk davenport 3 2015 pinery - grievance debate parliamentary debates hansard south house assembly kate dowler ',false
+'debates hansard south house assembly sam duluk davenport 3 2015 pinery - grievance debate parliamentary debates hansard south house assembly kate dowler alice pohlner 2 2015 crop stock hit ',false
+'house assembly sam duluk davenport 3 2015 pinery - grievance debate parliamentary debates hansard south house assembly kate dowler alice pohlner 2 2015 crop stock hit hard south western fires weekly times news ',false
+'time hopefully scale australian january summer saturday midday fires south wales coast ',false
+'3 dec 2016 internationals 2016 england fixtures ireland fixtures scotland fixtures wales fixtures home internationals 2016 england england england 37-21 date saturday 3rd 2016 venue twickenham stadium london referee jaco peyper saru attendance 81 787 england ',false
+'2016 thirty australians selected sapporo 2017 asian games www corporate olympics com au australian olympic committee 22 2016 retrieved 22 2016 pavitt michael 22 2016 reveal 30 athlete team sapporo 2017 asian games insidethegames biz dunsar media retrieved ',false
+'sapporo 2017 asian games www corporate olympics com au australian olympic committee 22 2016 retrieved 22 2016 pavitt michael 22 2016 reveal 30 athlete team sapporo 2017 asian games insidethegames biz dunsar media retrieved 22 2016 cullen glenn 22 2016 aussie ',false
+'games www corporate olympics com au australian olympic committee 22 2016 retrieved 22 2016 pavitt michael 22 2016 reveal 30 athlete team sapporo 2017 asian games insidethegames biz dunsar media retrieved 22 2016 cullen glenn 22 2016 aussie ',false
+'com au australian olympic committee 22 2016 retrieved 22 2016 pavitt michael 22 2016 reveal 30 athlete team sapporo 2017 asian games insidethegames biz dunsar media retrieved 22 2016 cullen glenn 22 2016 aussie ',false
+'australian olympic committee 22 2016 retrieved 22 2016 pavitt michael 22 2016 reveal 30 athlete team sapporo 2017 asian games insidethegames biz dunsar media retrieved 22 2016 cullen glenn 22 2016 aussie athletes set asian games australian associated ',false
+'30 athlete team sapporo 2017 asian games insidethegames biz dunsar media retrieved 22 2016 cullen glenn 22 2016 aussie athletes set asian games australian associated press sydney retrieved 22 2016 jeffery nicole 22 2016 games hit hard olympic ',false
+'2017 asian games insidethegames biz dunsar media retrieved 22 2016 cullen glenn 22 2016 aussie athletes set asian games australian associated press sydney retrieved 22 2016 jeffery nicole 22 2016 games hit hard olympic ',false
+'media retrieved 22 2016 cullen glenn 22 2016 aussie athletes set asian games australian associated press sydney retrieved 22 2016 jeffery nicole 22 2016 games hit hard olympic sports ',false
+'glenn 22 2016 aussie athletes set asian games australian associated press sydney retrieved 22 2016 jeffery nicole 22 2016 games hit hard olympic sports funding cuts australian surry hills ',false
+'hard olympic sports funding cuts australian surry hills south wales retrieved 22 2016 ice skating announces nominations asian games www isa org au ice skating 19 2016 retrieved 20 2016 ',false
+'sports funding cuts australian surry hills south wales retrieved 22 2016 ice skating announces nominations asian games www isa org au ice skating 19 2016 retrieved 20 2016 ',false
+'cuts australian surry hills south wales retrieved 22 2016 ice skating announces nominations asian games www isa org au ice skating 19 2016 retrieved 20 2016 nations 2017 asian games ',false
+'south wales retrieved 22 2016 ice skating announces nominations asian games www isa org au ice skating 19 2016 retrieved 20 2016 nations 2017 asian games ',false
+'ice skating announces nominations asian games www isa org au ice skating 19 2016 retrieved 20 2016 nations 2017 asian games sapporo obihiro japan asia bahrain china chinese taipei hong kong india indonesia iran ',false
+'ranked npcs uci para-cycling male female nations ranking lists 31 2014 qualified 2016 paralympics rio assuming continued meet eligibility requirements 7 8 equestrian ',false
+'images page network 9 responses carpathians tatiana costea 24 2011 4 18 am except charpatians worth mentioning reply matlok 24 2011 9 16 am beautiful ',false
+'1939-1943 maps 1944-1945 maps 1946-1950 maps 1951-1973 maps 1974-today map description history map wwii 1943 illustrating soviet fall offensive july 17 - 1 1943 credits courtesy united military academy department history related links ',false
+'official site 2014 australian olympic team retrieved 28 september 2013 cullen glenn 19 2013 australian skater loses olympic appeal ninemsn retrieved 31 2013 sharwood anthony names 56 athletes biggest olympic games team news corp retrieved 22 january 2014 viessmann luge world cup 2013 ',false
+'september 2013 cullen glenn 19 2013 australian skater loses olympic appeal ninemsn retrieved 31 2013 sharwood anthony names 56 athletes biggest olympic games team news corp retrieved 22 january 2014 viessmann luge world cup 2013 ',false
+'nicole 31 2013 beating mate olympics berth \'bittersweet\' australian retrieved 31 2013 external links edit wikimedia commons media related 2014 olympics 2014 olympics olympics summer ',false
+'length solstice 2017 day night map solstice 2017 countdown solstice 2017 yokosuka japan equinoxes solstices 2000 2049 southern hemisphere solstice zealand south america southern africa june solstice yokosuka japan 2017 6 ',false
+'due heavy snow effects edit 7 000 schools closed 2 21 timeline edit november 2010 edit 22 24 november edit weather arrived ireland forecasters warned snowy conditions arriving week ',false
+'compete cross-country skiing alpine skiing edit main article alpine skiing 2014 olympics according quota allocation released 30 2013 qualified athletes 6 brazil\'s athletes ones represented ',false
+'20 48 17 16 advance snowboarding edit main article snowboarding 2014 olympics according quota allocation released 30 2013 qualified athlete 6 athlete event seeding quarterfinal semifinal final time rank position position ',false
+'fis 30 2013 retrieved 5 january 2014 luchianov vladislav 7 october 2013 williams olympic skating map icenetwork retrieved 27 2013 external links edit 2014 olympics nations 2014 olympics sochi russia africa morocco togo ',false
+'luchianov vladislav 7 october 2013 williams olympic skating map icenetwork retrieved 27 2013 external links edit 2014 olympics nations 2014 olympics sochi russia africa morocco togo ',false
+'neck woods amy woolard karan mahajan bombings ross perlin 9 2011 russ baker arab noticed count handy boost west revolutions nearby countries ',false
+'commentary view posts vincit omnia veritas published vincit omnia veritas 18 2011december 18 2011format gallery murder tags 12-gauge shotgun brazilian blooded murder head shot head trauma headshot murder murder victim severe head trauma shot ',false
+'fixtures met office confirmed widespread snowfall 17 citation 2 republic ireland covered accumulations north east scotland england 50 cm ',false
+'widespread snowfall 17 citation 2 republic ireland covered accumulations north east scotland england 50 cm ',false
+'london northern hemisphere north equator northern hemisphere february tropics don\'t summer ',false
+'northern hemisphere north equator northern hemisphere february tropics don\'t summer sort climate rio ',false
+'sun 17 people found useful livia11 1 347 contributions answered summer it\'s north hemisphere canada europe february shruti kaushik 36 found useful edit share answer ',false
+'people found useful livia11 1 347 contributions answered summer it\'s north hemisphere canada europe february shruti kaushik 36 found useful edit share answer ',false
+'6 people found useful answered seasons months summer summer months january february months june july august edit share brand ',false
+'answered seasons months summer summer months january february months june july august edit share brand ',false
+'seasons months summer summer months january february months june july august edit share brand ',false
+'war peace threats democracy money earth mindscape blog podcast media fail war peace 7 2011 russ baker arab noticed hear arab noticed joke real situation ',false
+'12 arabian protests wikipedia free encyclopedia jump navigation search 2011 12 arabian protests arab date 11 march 2011 24 2012 1 11 months 3 days location 24 39 00 46 46 01 24 65 46 767 24 ',false
+'free encyclopedia jump navigation search 2011 12 arabian protests arab date 11 march 2011 24 2012 1 11 months 3 days location 24 39 00 46 46 01 24 65 46 767 24 ',false
+'sun june summer earths south tilts towards sun edit share brand cold winters brand choose brands below we\'ll send question directly ',false
+'cloud services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons seasons click answer yes spring september - november summer - february march - winter june - august country summer ',false
+'37 observed previous average amount rain observed 2 mm typically 1 day note gap temperature country ',false
+'opinion weather news interviews podcasts comment 2014 weather highlights storm weather friday 19 2014 - 1 36pm contributors candice mckechnie satellite image storm photo courtesy modis satellie nasa cape town - cold fronts ',false
+'africa asia australia europe latin america middle east selected canada middle east middle east accused repression arab 1 2011 section middle east share share email share email ',false
+'4400 monday friday 9am 5pm address 16 richmond street glasgow g1 1xq scotland home science physics bringing physics pi day - 12th dec 2015 pi day 12th 2015 - 10am 4pm department physics university strathclyde ',false
+'reporters disability asia selected china india asia asia rebuilding lives phil mercer bbc news sydney 25 2013 section asia share share email share email facebook ',false
+'seasons country wet tropical north summer february time outdoors swim sydney beaches hike ',false
+'seasons country wet tropical north summer february time outdoors swim sydney beaches hike ',false
+'1 895 2017 sale airfares deals weather seasons climates australian seasons spring september november summer february march winter june august seasons travel nicest weather ',false
+'airfares deals weather seasons climates australian seasons spring september november summer february march winter june august seasons travel nicest weather spring planning travel read ',false
+'season typically run june southeast tend common severe summer autumn march drought particularly severe el ni southeast ',false
+'typically run june southeast tend common severe summer autumn march drought particularly severe el ni southeast fire-prone warm dry conditions intensify probability fire 13 northern ',false
+'victoria 400 21 january 1997 3 41 homes 30 lithgow bushfire south wales 2 1997 2 30 perth sw region western 23 000 ha 2 1997 2 21 injuries 1 home lost linton bushfire victoria ',false
+'30 lithgow bushfire south wales 2 1997 2 30 perth sw region western 23 000 ha 2 1997 2 21 injuries 1 home lost linton bushfire victoria 2 1998 5 black ',false
+'2007 1 51 homes 2006-07 australian bushfire season september 2006 january 2007 dwellingup bushfire western 12 000 ha 4 february 2007 0 16 kangaroo island south 95 000 ha 6 14 2007 1 boorabbin national park western 40 000 ha 30 2007 3 powerlines ',false
+'2007 dwellingup bushfire western 12 000 ha 4 february 2007 0 16 kangaroo island south 95 000 ha 6 14 2007 1 boorabbin national park western 40 000 ha 30 2007 3 powerlines ',false
+'season typically run june southeast tend common severe summer autumn march drought particularly severe el ni southeast ',false
+'typically run june southeast tend common severe summer autumn march drought particularly severe el ni southeast fire-prone warm dry conditions intensify probability fire 13 northern ',false
+'victoria 400 21 january 1997 3 41 homes 30 lithgow bushfire south wales 2 1997 2 30 perth sw region western 23 000 ha 2 1997 2 21 injuries 1 home lost linton bushfire victoria ',false
+'30 lithgow bushfire south wales 2 1997 2 30 perth sw region western 23 000 ha 2 1997 2 21 injuries 1 home lost linton bushfire victoria 2 1998 5 black ',false
+'2007 1 51 homes 2006-07 australian bushfire season september 2006 january 2007 dwellingup bushfire western 12 000 ha 4 february 2007 0 16 kangaroo island south 95 000 ha 6 14 2007 1 boorabbin national park western 40 000 ha 30 2007 3 powerlines ',false
+'2007 dwellingup bushfire western 12 000 ha 4 february 2007 0 16 kangaroo island south 95 000 ha 6 14 2007 1 boorabbin national park western 40 000 ha 30 2007 3 powerlines ',false
+'1 895 2017 sale airfares deals weather seasons climates australian seasons september november summer february autumn march winter june august seasons travel nicest ',false
+'2017 sale airfares deals weather seasons climates australian seasons september november summer february autumn march winter june august seasons travel nicest weather autumn planning travel read ',false
+'airfares deals weather seasons climates australian seasons september november summer february autumn march winter june august seasons travel nicest weather autumn planning travel read time travel ',false
+'middle winter five ago coming winter spontaneous gathering moscow chishty prudy park agitating ',false
+'9 10 11 2011 12 26 western media excitedly reporting protests suggesting it\'s russia\'s answer arab american autumn here\'s brief account what\'s happening ',false
+'american autumn here\'s brief account what\'s happening vladimir putin moscow arab protests social media news medvedev clinton gorbachev obama usa america elections rigged unfair observers television ',false
+'american autumn here\'s brief account what\'s happening vladimir putin moscow arab protests social media news medvedev clinton gorbachev obama usa america elections rigged unfair observers television ',false
+'weather averages rio de janeiro holiday weather search search home americas rio de janeiro averages rio de janeiro classed rio de janeiro usually wettest month ',false
+'search search home americas rio de janeiro averages rio de janeiro classed rio de janeiro usually wettest month temperatures fairly warm ',false
+'search home americas rio de janeiro averages rio de janeiro classed rio de janeiro usually wettest month temperatures fairly warm ',false
+'de janeiro flights rio de janeiro weather widgets averages rio de janeiro classed rio de janeiro usually wettest month temperatures fairly warm ',false
+'janeiro flights rio de janeiro weather widgets averages rio de janeiro classed rio de janeiro usually wettest month temperatures fairly warm ',false
+'london northern hemisphere north equator northern hemisphere february tropics don\'t summer ',false
+'northern hemisphere north equator northern hemisphere february tropics don\'t summer sort climate rio ',false
+'sun june summer earths south tilts towards sun edit share brand brand choose brands below we\'ll send question directly cancel ',false
+'dead front nightclub ponta grossa published vincit omnia veritas 31 2016format gallery murder tags 12-gauge shotgun assassination brazilian cctv video close range shot blooded murder gun shot gunshot gunshot wound hitman latin america murder murder victim shooting shot ',false
+'found dead half naked signs rape published vincit omnia veritas 31 2016format gallery murder tags brazilian blooded murder dead girl dead woman girl killed murder murder victim murdered naked woman rape ',false
+'feet tied throat slashed found published vincit omnia veritas 27 2016format gallery murder tags beheaded beheading bleeding blood brazilian blooded murder cut throat dead woman decapitate decapitated decapitated head decapitation decapitation pictures killed ',false
+'armed continue reading policewoman shot dead gun thief eve pinhais published vincit omnia veritas 27 2016format gallery murder tags brazilian cctv video close range shot blooded murder cops gun shot gunshot gunshot wound head shot head trauma headshot homicide killed ',false
+'gun thief eve pinhais published vincit omnia veritas 27 2016format gallery murder tags brazilian cctv video close range shot blooded murder cops gun shot gunshot gunshot wound head shot head trauma headshot homicide killed ',false
+'dead front nightclub ponta grossa published vincit omnia veritas 31 2016format gallery murder tags 12-gauge shotgun assassination brazilian cctv video close range shot blooded murder gun shot gunshot gunshot wound hitman latin america murder murder victim shooting shot ',false
+'found dead half naked signs rape published vincit omnia veritas 31 2016format gallery murder tags brazilian blooded murder dead girl dead woman girl killed murder murder victim murdered naked woman rape ',false
+'f20 5 96 11 hani alnakhli shot f33 8 99 03 edit 2016 olympics references edit paralympics categories explained abc 3 september 2008 retrieved 25 2015 sense categories bbc sport 6 october 2000 retrieved 25 2015 ',false
+'arabian protests july 2012 earlier events timeline 2011 12 arabian protests arab date 11 march 2011 24 2012 1 11 months 3 days location 24 39 00 46 46 01 24 65 46 767 24 ',false
+'events timeline 2011 12 arabian protests arab date 11 march 2011 24 2012 1 11 months 3 days location 24 39 00 46 46 01 24 65 46 767 24 ',false
+'policy king abdulaziz pdf university leeds retrieved 21 july 2013 quandt william 1981 riyadh superpowers foreign policy 44 37 56 jstor 1148544 library congress 1992 retrieved 27 2012 gerald segal 1992 openness foreign policy reform communist ',false
+'holidays countries including 16 day reconciliation 25 christmas day 26 day goodwill january 1 comes april lasts mid-may ',false
+'countries including 16 day reconciliation 25 christmas day 26 day goodwill january 1 comes april lasts mid-may ',false

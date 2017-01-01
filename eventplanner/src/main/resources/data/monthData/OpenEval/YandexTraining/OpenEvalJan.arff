@@ -1,0 +1,626 @@
+@relation posOrNegWordBags
+
+@attribute corpus string
+@attribute Class_Attribute_For_SimpleOpenEval {true,false}
+
+@data
+'yearly average nearly 100 inches 255 cm close eight feet buries nearby buffalo typical cities receive fresh december february 16 51 largest cities annual snowfall normally adds ',true
+'feet buries nearby buffalo typical cities receive fresh december february 16 51 largest cities annual snowfall normally adds ',true
+'edu nwsfo storage 20000125 cnn_news_article htm external links edit record blankets region 25 2000 winter storm major ice events pre-1900 1717 feb 27 mar 7 1886 jan 6 10 1888 jan 12 13 mar ',true
+'news notes acquired 1 - 31 2011 download image 419 kb png 1066x706 2011 marked series crippling storms 12 71 percent country ground ',true
+'image 419 kb png 1066x706 2011 marked series crippling storms 12 71 percent country ground fifth-largest ',true
+'png 1066x706 2011 marked series crippling storms 12 71 percent country ground fifth-largest cover extent 45 image ',true
+'modis nasa terra satellite monthly cover product maximum cover month image contiguous exception florida image provides gauge extent length time ',true
+'maximum cover month image contiguous exception florida image provides gauge extent length time ',true
+'inch liquid water melts winter storms brought rain national climatic data center 2011 ninth-driest 117 southern half ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'blizzard major blizzard produced 3 ft 91 cm mid-atlantic northeast friday 22 sunday 24 2016 evolving shortwave trough system consolidated ',true
+'charlotte north carolina 51 52 mid-atlanticedit forecast expected weather conditions eastern saturday 23 blue indicates green indicates rain purple indicates mixed precipitation darker shades denote heavier precipitation ',true
+'gertrude days worse 77 impactedit view eastern 1 30 est 18 30 utc 24 blizzard subsided blankets region highlighting local topographic hydrologic features regional snowfall index analysis ',true
+'july 2014 external links edit 35th anniversary snow south florida storm data 1977 wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'index php title cold_wave_of_january_1977 oldid 757138256 categories 1977 meteorology 1977 natural disasters 1977 bahamas waves climate florida natural disasters florida 1977 florida 1977 events hidden categories mdy dates april 2012 articles unsourced statements ',true
+'757138256 categories 1977 meteorology 1977 natural disasters 1977 bahamas waves climate florida natural disasters florida 1977 florida 1977 events hidden categories mdy dates april 2012 articles unsourced statements ',true
+'wave wikipedia free encyclopedia jump navigation search map detailing record low temperatures various cities 21 1985 winter 1985 wave 1 meteorological event result shifting polar vortex ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'southward shift north polar vortex record-low temperatures extended march 2 arctic front initially associated nor\'easter tracked canada resulting heavy snowfall temperatures fell unprecedented levels low temperature records broken ',true
+'air masses met leading bitter wind chills worsening impacts record temperatures 5 clarification record temperatures edit edit chicago 7 2014 vapor rising lake michigan vapor rising chicago river ',true
+'2013-2014 atlantic winter storms europe linked winter north america edit 3 boston temperature 2 17 20 29 ',true
+'accuweather 6 2014 geos-5 analyses forecasts major stratospheric sudden warming 2013 nasa extreme outbreaks europe 1948 99 american meteorological society june 2001 walsh bryan 6 2014 climate ',true
+'forecasts major stratospheric sudden warming 2013 nasa extreme outbreaks europe 1948 99 american meteorological society june 2001 walsh bryan 6 2014 climate change driving historic snap time retrieved ',true
+'major stratospheric sudden warming 2013 nasa extreme outbreaks europe 1948 99 american meteorological society june 2001 walsh bryan 6 2014 climate change driving historic snap time retrieved 9 2014 monthly seasonal snowfall central park national oceanic ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'east asia north indian wave 2011 indian wave 2012 2013 extreme weather events 2016 east asia wave major snow ice events pre-1900 1717 feb 27 mar 7 1886 jan 6 10 1888 jan 12 13 mar ',true
+'2014 disasters canada 2014 meteorology 2014 natural disasters 2014 natural disasters climate change controversies waves canada waves climate change canada climate change climate change 2014 events hidden categories pages reference errors pages duplicate reference names mdy ',true
+'2014 meteorology 2014 natural disasters 2014 natural disasters climate change controversies waves canada waves climate change canada climate change climate change 2014 events hidden categories pages reference errors pages duplicate reference names mdy ',true
+'disasters 2014 natural disasters climate change controversies waves canada waves climate change canada climate change climate change 2014 events hidden categories pages reference errors pages duplicate reference names mdy ',true
+'10 2013 szabo liz 11 2013 questions answers season hits usa mclean va gannett issn 0734-7456 retrieved 11 2013 estimates seasonal influenza vaccine effectiveness 2013 pdf cdc gov 11 2013 retrieved 11 2013 palmer roxanne 8 ',true
+'east asia north indian cold wave 2011 indian cold wave 2012 2013 extreme weather events 2016 east asia cold wave major ice events pre-1900 1717 feb 27 mar 7 1886 jan 6 10 1888 jan 12 13 mar ',true
+'blizzard major blizzard produced 3 ft 91 cm mid-atlantic northeast friday 22 sunday 24 2016 evolving shortwave trough system consolidated ',true
+'charlotte north carolina 51 52 mid-atlantic edit forecast expected weather conditions eastern saturday 23 blue indicates green indicates rain purple indicates mixed precipitation darker shades denote heavier precipitation ',true
+'days worse 77 impact edit view eastern 1 30 est 18 30 utc 24 blizzard subsided blankets region highlighting local topographic hydrologic features regional snowfall index analysis ',true
+'box office chicago tribune retrieved 3 february 2015 box office business internet movie database retrieved 7 2013 dangerfield rodney fields greg snee greg 1986 orion pictures access-date requires url help thomas kevin 12 june 1986 movie review \'back\' ',true
+'box office chicago tribune retrieved 3 february 2015 box office business internet movie database retrieved 7 2013 dangerfield rodney fields greg snee greg 1986 orion pictures access-date requires url help thomas kevin 12 june 1986 movie review \'back\' ',true
+'box office chicago tribune retrieved 3 february 2015 box office business internet movie database retrieved 7 2013 dangerfield rodney fields greg snee greg 1986 orion pictures access-date requires url help thomas kevin 12 june 1986 movie review \'back\' ',true
+'3 february 2015 box office business internet movie database retrieved 7 2013 dangerfield rodney fields greg snee greg 1986 orion pictures access-date requires url help thomas kevin 12 june 1986 movie review \'back\' ',true
+'slightly zero temperature dropped below 121 hours 10 am 13 2 unreliable source air moving south arctic caused northern severely extreme wind chills air kept moving ',true
+'below 121 hours 10 am 13 2 unreliable source air moving south arctic caused northern severely extreme wind chills air kept moving south arctic pressure system bringing coldest ',true
+'source air moving south arctic caused northern severely extreme wind chills air kept moving south arctic pressure system bringing coldest ',true
+'reduce risk damage extreme waves 1937 california 1940 florida alsoedit wave 1888 northwest wave 1936 north american wave wave 1978 referencesedit climate ',true
+'damage extreme waves 1937 california 1940 florida alsoedit wave 1888 northwest wave 1936 north american wave wave 1978 referencesedit climate ',true
+'american wave wikipedia free encyclopedia jump navigation search 1994 north american wave type wave snowfall formed 1994 dissipated 1994 affected canada 1994 north american wave occurred northern southern canada ',true
+'wikipedia free encyclopedia jump navigation search 1994 north american wave type wave snowfall formed 1994 dissipated 1994 affected canada 1994 north american wave occurred northern southern canada ',true
+'jump navigation search 1994 north american wave type wave snowfall formed 1994 dissipated 1994 affected canada 1994 north american wave occurred northern southern canada 18 1994 ',true
+'search 1994 north american wave type wave snowfall formed 1994 dissipated 1994 affected canada 1994 north american wave occurred northern southern canada 18 1994 ',true
+'wave type wave snowfall formed 1994 dissipated 1994 affected canada 1994 north american wave occurred northern southern canada 18 1994 period western experienced ',true
+'type wave snowfall formed 1994 dissipated 1994 affected canada 1994 north american wave occurred northern southern canada 18 1994 period western experienced ',true
+'formed 1994 dissipated 1994 affected canada 1994 north american wave occurred northern southern canada 18 1994 period western experienced ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'slightly zero temperature dropped below 121 hours 10 am 13 2 unreliable source air moving south arctic caused northern severely extreme wind chills air kept moving ',true
+'below 121 hours 10 am 13 2 unreliable source air moving south arctic caused northern severely extreme wind chills air kept moving south arctic pressure system bringing coldest ',true
+'source air moving south arctic caused northern severely extreme wind chills air kept moving south arctic pressure system bringing coldest ',true
+'reduce risk damage extreme waves 1937 california 1940 florida edit wave 1888 northwest wave 1936 north american wave wave 1978 references edit climate ',true
+'damage extreme waves 1937 california 1940 florida edit wave 1888 northwest wave 1936 north american wave wave 1978 references edit climate ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'2006-11-04 mary winter winter blizzard 1888 winter perspective retrieved 2006-11-04 intellicast almanac southwest retrieved 2006-11-04 wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'wave waves north america winter 1886 87 1888 northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'northwest wave freeze blue norther november 11 1911 1912 wave 1936 north american wave wave 1977 wave 1978 sunday winter 1985 wave 1994 north american ',true
+'navigate comfortably please consider splitting content sub-articles condensing adding removing subheadings 2010 learn remove template message 2009 pandemic reported territory update territory state-reported confirmed ',true
+'cdc activity continues home diseases conditions syndromes 19 2013 cdc activity continues 19 ',true
+'cdc activity continues home diseases conditions syndromes 19 2013 cdc activity continues 19 2013 remains ',true
+'cdc activity continues home diseases conditions syndromes 19 2013 cdc activity continues 19 2013 remains epidemic proportions ',true
+'cdc activity continues home diseases conditions syndromes 19 2013 cdc activity continues 19 2013 remains epidemic proportions activity ',true
+'home diseases conditions syndromes 19 2013 cdc activity continues 19 2013 remains epidemic proportions activity decreased ',true
+'diseases conditions syndromes 19 2013 cdc activity continues 19 2013 remains epidemic proportions activity decreased ',true
+'conditions syndromes 19 2013 cdc activity continues 19 2013 remains epidemic proportions activity decreased week according ',true
+'syndromes 19 2013 cdc activity continues 19 2013 remains epidemic proportions activity decreased week according ',true
+'2013 cdc activity continues 19 2013 remains epidemic proportions activity decreased week according fluview weekly influenza surveillance report prepared influenza division ',true
+'19 2013 remains epidemic proportions activity decreased week according fluview weekly influenza surveillance report prepared influenza division ',true
+'influenza division centers disease control prevention healthday remains epidemic proportions activity decreased week according fluview weekly influenza surveillance report prepared influenza division ',true
+'centers disease control prevention healthday remains epidemic proportions activity decreased week according fluview weekly influenza surveillance report prepared influenza division ',true
+'medical xpress facebook related stories cdc influenza activity increasing 5 2013 healthday season descended hard winter significant increases activity observed past ',true
+'according update issued jan 4 centers disease epidemic worsens 29 children dead 19 2013 epidemic gripping severe usual striking elderly especially hard health authorities friday ',true
+'4 centers disease epidemic worsens 29 children dead 19 2013 epidemic gripping severe usual striking elderly especially hard health authorities friday ',true
+'activity cdc october 4 2012 healthday activity remains low levels federal health officials thursday 48 report activity 29 children dead cdc 18 2013 healthday forty-eight reporting widespread activity 47 ',true
+'climb home diseases conditions syndromes 10 2014 continue climb 10 2014 dennis thompson healthday reporter southwestern hardest hit infections epidemic levels cdc healthday season continues tighten grip 35 experiencing widespread influenza activity federal officials reported friday ',true
+'produced snow michigan air rushed late december winter storm wave edit december 27 arctic front swung northwestern bringing temperatures low pressure formed front ',true
+'pittsburgh baby african penguins national aviary inside 35 late blizzard edit storm affected northeastern viewed 26 main article 2015 north american blizzard 23 ',true
+'penguins national aviary inside 35 late blizzard edit storm affected northeastern viewed 26 main article 2015 north american blizzard 23 low-pressure developed ',true
+'blizzard category 5 extreme rsi 20 14 intensifying extratropical cyclone eastern 2 15 est 07 15 utc 23 2016 type extratropical cyclone nor\'easter storm ice storm blizzard formed 21 2016 2016-01-21 dissipated 29 2016 2016-01-29 lowest ',true
+'scale 2time tornado tornado 2015 16 north american 2016 blizzard major blizzard produced 3 ft 91 cm ',true
+'daily 23 175 virginia wallops island 6998254000000000000 1 0 2 5 cm daily 23 175 namingedit storm naming storm received nicknames various media outlets name storm jonas ',true
+'service offices national oceanic atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration 21 2016 ',true
+'service offices national oceanic atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 storm warnings 22 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 storm warnings 22 2016 various national weather service offices national oceanic atmospheric administration ',true
+'21 2016 archived original 21 2016 retrieved 21 2016 storm warnings 22 2016 various national weather service offices national oceanic atmospheric administration 22 2016 ',true
+'service offices national oceanic atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration 21 2016 ',true
+'service offices national oceanic atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 weather advisories 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 weather advisories 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'21 2016 archived original 21 2016 retrieved 21 2016 weather advisories 21 2016 various national weather service offices national oceanic atmospheric administration 21 2016 ',true
+'2013-2014 atlantic storms europe linked cold north america edit 3 boston temperature 2 17 20 29 ',true
+'cold wave cold waves north america 1886 87 1888 northwest cold wave freeze blue norther november 11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 ',true
+'northwest cold wave freeze blue norther november 11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 ',true
+'cold wave freeze blue norther november 11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 north american cold wave november 2014 north american cold wave 2015 ',true
+'11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 north american cold wave november 2014 north american cold wave 2015 valentine\'s ',true
+'2016 storm - wikidata 2016 storm q22222608 wikidata jump navigation ',true
+'2016 storm - wikidata 2016 storm q22222608 wikidata jump navigation search blizzard affecting ',true
+'2016 storm - wikidata 2016 storm q22222608 wikidata jump navigation search blizzard affecting eastern ',true
+'2016 storm - wikidata 2016 storm q22222608 wikidata jump navigation search blizzard affecting eastern ',true
+'2016 storm - wikidata 2016 storm q22222608 wikidata jump navigation search blizzard affecting eastern ',true
+'2016 storm - wikidata 2016 storm q22222608 wikidata jump navigation search blizzard affecting eastern storm jonas snowzilla edit language label description english 2016 storm blizzard affecting eastern storm jonas snowzilla ',true
+'2016 storm - wikidata 2016 storm q22222608 wikidata jump navigation search blizzard affecting eastern storm jonas snowzilla edit language label description english 2016 storm blizzard affecting eastern storm jonas snowzilla ',true
+'storm q22222608 wikidata jump navigation search blizzard affecting eastern storm jonas snowzilla edit language label description english 2016 storm blizzard affecting eastern storm jonas snowzilla ',true
+'storm q22222608 wikidata jump navigation search blizzard affecting eastern storm jonas snowzilla edit language label description english 2016 storm blizzard affecting eastern storm jonas snowzilla statements instance ',true
+'storm q22222608 wikidata jump navigation search blizzard affecting eastern storm jonas snowzilla edit language label description english 2016 storm blizzard affecting eastern storm jonas snowzilla statements instance ',true
+'eastern storm jonas snowzilla edit language label description english 2016 storm blizzard affecting eastern storm jonas snowzilla statements instance blizzard ',true
+'23 2016 chinese 0 references image snowzilla 2016 md jpg 0 references commons category 2016 storm 0 references location mid-atlantic 0 references start time 21 2016 0 references ',true
+'2016 chinese 0 references image snowzilla 2016 md jpg 0 references commons category 2016 storm 0 references location mid-atlantic 0 references start time 21 2016 0 references 2016 northern hemisphere cold wave 0 references precipitation height ',true
+'cdc h1n1 flu-related hospitalizations deaths april 2009 30 2010 skip directly search skip directly list skip directly ',true
+'age provides updated information flu-related hospitalizations deaths reported cdc april 2009 30 2010 surveillance 2009 h1n1 virus detected mid-april 2009 cdc collect compile ',true
+'information related laboratory-confirmed influenza-associated hospitalizations deaths reported cdc april 2009 30 2010 2009 h1n1 reported ahdra collect individual information collects information related flu-related hospitalizations ',true
+'age impacted pandemic terms hospitalization rates reported ahdra graph below estimated hospitalization rate inclusive 2009 h1n1 seasonal age april 15 30 2010 estimates based 49 008 hospitalizations reported ',true
+'rates reported ahdra graph below estimated hospitalization rate inclusive 2009 h1n1 seasonal age april 15 30 2010 estimates based 49 008 hospitalizations reported ',true
+'below estimated hospitalization rate inclusive 2009 h1n1 seasonal age april 15 30 2010 estimates based 49 008 hospitalizations reported ',true
+'category 2016 storm - wikimedia commons help category 2016 storm wikimedia commons ',true
+'category 2016 storm - wikimedia commons help category 2016 storm wikimedia commons free media repository jump navigation ',true
+'category 2016 storm - wikimedia commons help category 2016 storm wikimedia commons free media repository jump navigation search ',true
+'category 2016 storm - wikimedia commons help category 2016 storm wikimedia commons free media repository jump navigation search category ',true
+'category 2016 storm - wikimedia commons help category 2016 storm wikimedia commons free media repository jump navigation search category ',true
+'6 visit december china\'s top 6 visit december travel guide activities suggestions top 5 ski resorts november trip december trip february trip december month ',true
+'visit december travel guide activities suggestions top 5 ski resorts november trip december trip february trip december month visit popular tourist ',true
+'travel guide activities suggestions top 5 ski resorts november trip december trip february trip december month visit popular tourist ',true
+'activities suggestions top 5 ski resorts november trip december trip february trip december month visit popular tourist ',true
+'tours inspirational ideas visit november top 6 visit weather december travel guide activities suggestions author kelly update december 5 2016 ',true
+'visit november top 6 visit weather december travel guide activities suggestions author kelly update december 5 2016 ',true
+'decorates chinese 2010 sara naumann licensed com sara naumann travel expert sara naumann updated september 14 2016 overview ah peak unless spending south beach hainan you\'re ',true
+'ave daytime temp 53f 12 ave rainy days 14 packing suggestions layers essential read regional weather complete packing guide north cold ',true
+'shanghai chongqing shanxi sichuan 2008 chinese storms 2008 2008 series storm events affected portions southern central starting 25 2008 6 february 2008 systems affected heavy snows ',true
+'6 references 7 external links cold snap blizzard edit series severe events started 10 dome cold air enveloped causing precipitation form heavy snow west coastal ',true
+'february 23 2008 bodeen christopher associated press 2008-01-20 heavy snow blamed 15 deaths associated press 29 2008 storm chaos grips usa xinhua 2008-02-01 china\'s biggest desert taklamakan experiences record snow ',true
+'christopher associated press 2008-01-20 heavy snow blamed 15 deaths associated press 29 2008 storm chaos grips usa xinhua 2008-02-01 china\'s biggest desert taklamakan experiences record snow xinhuanet com perry michael ',true
+'xinhua 2008-02-01 china\'s biggest desert taklamakan experiences record snow xinhuanet com perry michael 31 2008 china\'s snow storms climate change-scientists reuters uk xinhua 2008-02-18 experiences coldest decades chinadaily com cnn 4 february 2008 devastation emerges ',true
+'billion damage russian news information agency novosti 107 people killed storms xinhua news agency february 13 2008 associated press 29 2008 deadly storms wallop ctv foreman william associated press 1 february 2008 chinese workers suffer snowstorms limaohio com ',true
+'107 people killed storms xinhua news agency february 13 2008 associated press 29 2008 deadly storms wallop ctv foreman william associated press 1 february 2008 chinese workers suffer snowstorms limaohio com ',true
+'associated press 2008-01-31 rail services resuming cnn com bbc news 2008-02-03 storm-hit calls \'faith\' bbc buckley chris blanchard ben reuters 28 2008 storms hit chinese economy international herald tribune bbc news 2008-01-28 chinese freeze ',true
+'2008-02-01 snow-hit \'new priority\' bbc jiang catherine chung olivia 2008-01-30 inflation gloom snow chaos asia times online cbc news 29 2008 storm sparks travel woes thousands cbc xinhua 2008-02-02 leaders\' visits boost morale ',true
+'chung olivia 2008-01-30 inflation gloom snow chaos asia times online cbc news 29 2008 storm sparks travel woes thousands cbc xinhua 2008-02-02 leaders\' visits boost morale amid china\'s winter-weather crisis xinhuanet com xinhua news ',true
+'2008-02-02 leaders\' visits boost morale amid china\'s winter-weather crisis xinhuanet com xinhua news agency 30 2008 forecaster china\'s storm continue xinhuanet com bbc news 4 february 2008 \'not ready\' snow crisis bbc xinhua 2008-02-06 red cross donations reach 60 mln ',true
+'based online population 1 038 6 google search data 2014 classification based search terms include phrase 7 google search data june 2015 8 google consumer survey march 2015 based ',true
+'based online population 1 038 6 google search data 2014 classification based search terms include phrase 7 google search data june 2015 8 google consumer survey march 2015 based online population ',true
+'google search data 2014 classification based search terms include phrase 7 google search data june 2015 8 google consumer survey march 2015 based online population ',true
+'trends 2013 june 2015 10 google trends 2010 june 2015 11 google search data june 15 aug 24 2014 12 google search data june 2015 classification based search terms include phrase google research insight thinking subscribe jordan rost analytical insights marketing google ',true
+'2010 june 2015 11 google search data june 15 aug 24 2014 12 google search data june 2015 classification based search terms include phrase google research insight thinking subscribe jordan rost analytical insights marketing google ',true
+'2010 june 2015 11 google search data june 15 aug 24 2014 12 google search data june 2015 classification based search terms include phrase google research insight thinking subscribe jordan rost analytical insights marketing google ',true
+'11 google search data june 15 aug 24 2014 12 google search data june 2015 classification based search terms include phrase google research insight thinking subscribe jordan rost analytical insights marketing google ',true
+'6 iphone 6 plus iphone 5s iphone 5c eligible customers combine promotion apple education pricing additional savings sale runs 30 march 19 apple holds similar promotion summer months offering apple store gift cards equivalent amounts mac ',true
+'iphone 6 plus iphone 5s iphone 5c eligible customers combine promotion apple education pricing additional savings sale runs 30 march 19 apple holds similar promotion summer months offering apple store gift cards equivalent amounts mac ',true
+'promotion apple education pricing additional savings sale runs 30 march 19 apple holds similar promotion summer months offering apple store gift cards equivalent amounts mac ',true
+'activities suggestions travel guide activities suggestions travel guide activities suggestions top 5 ski resorts november trip december trip february trip popular destination foreign travelers ',true
+'activities suggestions travel guide activities suggestions top 5 ski resorts november trip december trip february trip popular destination foreign travelers looking specific activities fun well-equipped ',true
+'travel guide activities suggestions top 5 ski resorts november trip december trip february trip popular destination foreign travelers looking specific activities fun well-equipped ',true
+'activities suggestions top 5 ski resorts november trip december trip february trip popular destination foreign travelers looking specific activities fun well-equipped ',true
+'skating 0 0 2 2 alpine skiing edit main article alpine skiing 2010 olympics men\'s women\'s teams announced 26 2010 medal ceremony men\'s combined left ivica kosteli silver bode ',true
+'3 3 34 06 6 cross-country skiing edit main article cross-country skiing 2010 olympics men\'s women\'s teams announced 19 2010 automatic qualifiers re-allocation olympic berths ',true
+'9 3 37 93 11 ski jumping edit main article ski jumping 2010 olympics ski team announced 2010 olympic ski jumping team 20 2010 21 athlete event qualifying 1st round finals distance rank distance rank ',true
+'5 340 0 11 advance snowboarding edit main article snowboarding 2010 olympics olympic snowboard team announced 26 2010 22 alpine athlete event qualification 1 8 finals quarterfinals semifinals finals time rank ',true
+'shirakawago light-up reaction november 2014 2 reactions question related stories reports 27 2013 visit shirakawago schauwecker survey times visited submit results improve ',true
+'main skip sidebar visitor what\'s happening tokyo nagoya kyoto osaka shimane home travel guide tokyo guide contact auction service shop monday 26 2015 counter medicines country experiences weather winter-time ',true
+'skip sidebar visitor what\'s happening tokyo nagoya kyoto osaka shimane home travel guide tokyo guide contact auction service shop monday 26 2015 counter medicines country experiences weather winter-time ',true
+'tokyo nagoya kyoto osaka shimane home travel guide tokyo guide contact auction service shop monday 26 2015 counter medicines country experiences weather winter-time ',true
+'osaka shimane home travel guide tokyo guide contact auction service shop monday 26 2015 counter medicines country experiences weather winter-time ',true
+'17 august 16 july 18 june 21 19 april 16 march 17 february 17 19 walk kyushu day 54 hita kamiura counter medicines news week 25 2015 yamamoto yuriko exhibition whirlpool kyo ',true
+'17 19 walk kyushu day 54 hita kamiura counter medicines news week 25 2015 yamamoto yuriko exhibition whirlpool kyo walk kyushu day 53 chikugoyoshii ',true
+'weather brings snow ice destinations getty melanie renzulli travel expert melanie renzulli updated august 30 2016 deep winter expect temperatures england midwest mid-atlantic expect ',true
+'weather brings snow ice destinations getty melanie renzulli travel expert melanie renzulli updated august 30 2016 deep winter expect temperatures england midwest mid-atlantic expect ',true
+'getty melanie renzulli travel expert melanie renzulli updated august 30 2016 deep winter expect temperatures england midwest mid-atlantic expect ',true
+'american wikipedia free encyclopedia jump navigation search 2013 14 north american temperature map frigid conditions 2 4 2014 astronomical december 21 march 20 meteorological december 1 february 28 ',true
+'search 2013 14 north american temperature map frigid conditions 2 4 2014 astronomical december 21 march 20 meteorological december 1 february 28 2012 13 2013 14 2014 ',true
+'cold wave nor\'easter edit main articles 2014 north american cold wave 2014 nor\'easter 2014 active note major storm affecting 6 12 inches 150 300 mm snow fell wide ',true
+'blizzard category 5 extreme rsi 20 14 intensifying extratropical cyclone eastern 2 15 est 07 15 utc 23 2016 type extratropical cyclone nor\'easter storm ice storm blizzard formed 21 2016 2016-01-21 dissipated 29 2016 2016-01-29 lowest ',true
+'scale 2time tornado tornado 2015 16 north american 2016 blizzard major blizzard produced 3 ft 91 cm ',true
+'daily 23 175 virginia wallops island 6998254000000000000 1 0 2 5 cm daily 23 175 naming edit storm naming storm received nicknames various media outlets name storm jonas ',true
+'service offices national oceanic atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration 21 2016 ',true
+'service offices national oceanic atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 storm warnings 22 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 storm warnings 22 2016 various national weather service offices national oceanic atmospheric administration ',true
+'21 2016 archived original 21 2016 retrieved 21 2016 storm warnings 22 2016 various national weather service offices national oceanic atmospheric administration 22 2016 ',true
+'service offices national oceanic atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'22 2016 archived original 22 2016 retrieved 22 2016 storm warnings 21 2016 various national weather service offices national oceanic atmospheric administration 21 2016 ',true
+'service offices national oceanic atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 weather advisories 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'atmospheric administration 21 2016 archived original 21 2016 retrieved 21 2016 weather advisories 21 2016 various national weather service offices national oceanic atmospheric administration ',true
+'21 2016 archived original 21 2016 retrieved 21 2016 weather advisories 21 2016 various national weather service offices national oceanic atmospheric administration 21 2016 ',true
+'helpful thank reply trackbacks ultimate female travel packing lists 2 2013 11 09 am ultimate female travel packing list reply meet georgina eurohike hydro 35 5 - backpack review march ',true
+'binned owned summer move reply writer packing list dora machado 29 2014 4 55 pm packing lot questions travel bloggers girl scouts heart ',true
+'move reply writer packing list dora machado 29 2014 4 55 pm packing lot questions travel bloggers girl scouts heart ',true
+'index midday skies average night-time temperature usually -4 25 weather represented washington metric mm imperial inches ',true
+'natural gas daily - expected - natural gas etf lp nysearca ung seeking alpha sign join market news ',true
+'file 2016 storm 2016-01-23 0715z alternate jpg - wikipedia file 2016 storm 2016-01-23 ',true
+'file 2016 storm 2016-01-23 0715z alternate jpg - wikipedia file 2016 storm 2016-01-23 0715z alternate jpg wikipedia free encyclopedia jump ',true
+'file 2016 storm 2016-01-23 0715z alternate jpg - wikipedia file 2016 storm 2016-01-23 0715z alternate jpg wikipedia free encyclopedia jump navigation ',true
+'file 2016 storm 2016-01-23 0715z alternate jpg - wikipedia file 2016 storm 2016-01-23 0715z alternate jpg wikipedia free encyclopedia jump navigation search ',true
+'file 2016 storm 2016-01-23 0715z alternate jpg - wikipedia file 2016 storm 2016-01-23 0715z alternate jpg wikipedia free encyclopedia jump navigation search file ',true
+'summary edit descriptionjanuary 2016 storm 2016-01-23 0715z alternate jpg english massive storm system pummeled eastern late 2016 low-pressure systems merging potent nor easter dropped heavy snow ',true
+'link file pages projects listed 2015 16 north american 2016 blizzard wikipedia news candidates 2016 wikipedia main page history 2016 24 ',true
+'cold wave cold waves north america 1886 87 1888 northwest cold wave freeze blue norther november 11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 ',true
+'northwest cold wave freeze blue norther november 11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 ',true
+'cold wave freeze blue norther november 11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 north american cold wave november 2014 north american cold wave 2015 ',true
+'11 1911 1912 cold wave 1936 north american cold wave cold wave 1977 cold wave 1978 cold sunday 1985 cold wave 1994 north american cold wave 2007 western freeze 2014 north american cold wave november 2014 north american cold wave 2015 valentine\'s ',true
+'decorated snow-filled scenes white christmas christmas beginning period it\'s march december sleet falling average 3 9 days ',true
+'2017 - 2018 ultramarathon calendar img src https d5nxst8fruw4z cloudfront net atrk gif account 4ahjj1aotv00gc style display none height 1 ',true
+'web race directors sign english fran ais rk 2017 - 2018 ultramarathon calendar world europe browse ultramarathon calendar races organized ',true
+'web race directors sign english fran ais rk 2017 - 2018 ultramarathon calendar world europe browse ultramarathon calendar races organized month bearing tag 2 races upcoming races ',true
+'race directors sign english fran ais rk 2017 - 2018 ultramarathon calendar world europe browse ultramarathon calendar races organized month bearing tag 2 races upcoming races ',true
+'english fran ais rk 2017 - 2018 ultramarathon calendar world europe browse ultramarathon calendar races organized month bearing tag 2 races upcoming races upcoming races name a- name z- ',true
+'calendar world europe browse ultramarathon calendar races organized month bearing tag 2 races upcoming races upcoming races name a- name z- ',true
+'location england 2 location derbyshire 2 2 races montane spine race montane spine challenger 14 2017 race day 13 days england derbyshire edale ultramarathon - 108 miles utmb qualifier trail mountain montane spine race montane spine race 14 2017 race day 13 days ',true
+'races montane spine race montane spine challenger 14 2017 race day 13 days england derbyshire edale ultramarathon - 108 miles utmb qualifier trail mountain montane spine race montane spine race 14 2017 race day 13 days england derbyshire edale ultramarathon - 268 ',true
+'montane spine race montane spine challenger 14 2017 race day 13 days england derbyshire edale ultramarathon - 108 miles utmb qualifier trail mountain montane spine race montane spine race 14 2017 race day 13 days england derbyshire edale ultramarathon - 268 miles utmb qualifier trail mountain ',true
+'13 days england derbyshire edale ultramarathon - 108 miles utmb qualifier trail mountain montane spine race montane spine race 14 2017 race day 13 days england derbyshire edale ultramarathon - 268 miles utmb qualifier trail mountain privacy ',true
+'ultramarathon - 108 miles utmb qualifier trail mountain montane spine race montane spine race 14 2017 race day 13 days england derbyshire edale ultramarathon - 268 miles utmb qualifier trail mountain privacy policy contact partners links race directors rapidly add ',true
+'stuttgart cruises loreley day famous legends nurnberg rhine river half day round cruise months november december february march christmas holiday packages german package vacations christmas market amsterdam dusseldorf vacation 2016 2017 rhine ',true
+'waves white earthquake winter storms 2009 10 east asia north indian wave 2011 indian wave 2012 2013 extreme weather events 2016 east asia wave weather events climate drought avalanches lewes 1836 buachaille etive ',true
+'earthquake winter storms 2009 10 east asia north indian wave 2011 indian wave 2012 2013 extreme weather events 2016 east asia wave weather events climate drought avalanches lewes 1836 buachaille etive ',true
+'east asia north indian wave 2011 indian wave 2012 2013 extreme weather events 2016 east asia wave weather events climate drought avalanches lewes 1836 buachaille etive ',true
+'tours travel visit december february contact community feedbacks home tours classic tours scenic ',true
+'tours travel visit december february contact community feedbacks home tours classic tours scenic ',true
+'tours travel visit december february contact community feedbacks home tours classic tours scenic ',true
+'tours specially selected popular tour packages plan travel december february north visit harbin grand ice snow festival ',true
+'lantern festival mid-autumn festival dragon boat festival harbin ice snow festival public holiday schedule festivals home travel guide top 6 visit top 6 visit travel guide ',true
+'festival dragon boat festival harbin ice snow festival public holiday schedule festivals home travel guide top 6 visit top 6 visit travel guide activities suggestions top 5 ski resorts november trip ',true
+'schedule festivals home travel guide top 6 visit top 6 visit travel guide activities suggestions top 5 ski resorts november trip ',true
+'top 6 visit top 6 visit travel guide activities suggestions top 5 ski resorts november trip ',true
+'visit top 6 visit travel guide activities suggestions top 5 ski resorts november trip december trip february trip coldest month main tourist ',true
+'top 6 visit december five travel february weather travel guide activities suggestions author kelly update november 18 2016 ',true
+'visit december five travel february weather travel guide activities suggestions author kelly update november 18 2016 ',true
+'winter 1962 63 - wikipedia winter 1962 63 wikipedia free encyclopedia jump navigation search deep near burrow-with-burrow lancashire england 1963 lancashire 1963 weight ice stretched copper telephone ',true
+'1962 63 - wikipedia winter 1962 63 wikipedia free encyclopedia jump navigation search deep near burrow-with-burrow lancashire england 1963 lancashire 1963 weight ice stretched copper telephone ',true
+'japanese 25 2016 retrieved 4 february 2016 holmes oliver 25 2016 deaths taiwan record snap hits east asia guardian retrieved 25 2016 residents ulleungdo island true ',true
+'2016 retrieved 4 february 2016 holmes oliver 25 2016 deaths taiwan record snap hits east asia guardian retrieved 25 2016 residents ulleungdo island true snow troopers korea bizwire pohang 27 2016 ',true
+'weather events climate drought avalanches lewes 1836 buachaille etive 2009 coldwaves frost 1709 1894 95 1946 47 1962 63 april 1983 march 1987 1990 91 1994 95 1995 96 2000 01 ',true
+'weather averages london holiday weather search search home europe london averages london weather overview coldest month london uk season underway throughout month average temperature remains constant 5-6 ',true
+'weather averages london holiday weather search search home europe london averages london weather overview coldest month london uk season underway throughout month average temperature remains constant 5-6 ',true
+'weather averages london holiday weather search search home europe london averages london weather overview coldest month london uk season underway throughout month average temperature remains constant 5-6 ',true
+'junichi ito production company nikkatsu release dates september 7 2010 2010-09-07 venice film festival 29 2011 2011-01-29 running time 145 minutes country language japanese fish tsumetai nettaigyo 2010 japanese horror-drama 1 serial killer film directed sion ',true
+'award fantastic features section fantastic fest 2010 5 released 29 2011 3 reception edit film business asia fish 8 10 rating praising actor denden tour-de-force ',true
+'floods - wikipedia main menu edit page read language 2013 14 floods redirected uk storms february 2014 2013 14 floods emergency pumps brought drain ',true
+'- wikipedia main menu edit page read language 2013 14 floods redirected uk storms february 2014 2013 14 floods emergency pumps brought drain somerset levels date 5 ',true
+'wikipedia main menu edit page read language 2013 14 floods redirected uk storms february 2014 2013 14 floods emergency pumps brought drain somerset levels date 5 december ',true
+'read language 2013 14 floods redirected uk storms february 2014 2013 14 floods emergency pumps brought drain somerset levels date 5 december 2013 ',true
+'niseko 1st 2017 report niseko weather reporting niseko reports snowjapan mobile forums spotlights lessons services jobs login resorts search resort spotlights ',true
+'- report daily report snowfall analysis 6-day forecast niseko independent trustworthy daily weather reports niseko report posted 8 20am sunday 1st 2017 current weather conditions observed fresh snowfall cloudy - overcast max temp -3 min ',true
+'supplies republic ireland 3 edit weather portal 1947 thames flood 1962 1963 1987 southeast england snowfall 1990 1991 western europe references edit ',true
+'3 edit weather portal 1947 thames flood 1962 1963 1987 southeast england snowfall 1990 1991 western europe references edit burroughs 1997 58 ',true
+'weather events climate drought avalanches lewes 1836 buachaille etive 2009 coldwaves frost 1709 1894 95 1946 47 1962 63 april 1983 march 1987 1990 91 1994 95 1995 96 2000 01 ',true
+'wa cyclone ema gov au archived original 21 october 2007 retrieved 23 2016 western extremes australian bureau meteorology 2010 retrieved 27 2010 jtwc track cyclone ',true
+'ema gov au archived original 21 october 2007 retrieved 23 2016 western extremes australian bureau meteorology 2010 retrieved 27 2010 jtwc track cyclone 26s joint typhoon warning center 2012 retrieved 4 ',true
+'department sustainability environment archived original 22 march 2012 retrieved 16 2011 dpc report 2002 03 victorian story section australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern seaboard 1994 ',true
+'oldfield 2014 eryngium ovinum cunn apiaceae blue devil flowers photographed visible http www ultraviol num-blue-devil maldon victoria 8 2014 australian native wildflower garden specimen synonyms eryngium rostratum cav comment widely distributed ',true
+'posts logged log weatherzone forums weather events tropical central north qld 2008 09 cardwell southwards - 2009 register user forum list active topics faq page 59 171 1 2 57 ',true
+'visit - what\'s time allan baxter stone getty images birge amondson travel expert birge amondson updated 11 2016 - expect planning travel ',true
+'allan baxter stone getty images birge amondson travel expert birge amondson updated 11 2016 - expect planning travel ',true
+'allan baxter stone getty images birge amondson travel expert birge amondson updated 11 2016 - expect planning travel ',true
+'november beginning december significant dip prices february search flights search hotels - weather bundle german winters cold temperatures dropping below zero ',true
+'- events festivals happening month month festivals events events december events events february germany\'s christmas markets christmas markets wonderful german ',true
+'happening month month festivals events events december events events february germany\'s christmas markets christmas markets wonderful german ',true
+'pendula sieber ex spreng tiegh subsp pendula loranthaceae drooping mistletoe flowers photographed visible http www ultraviol ping-mistletoe maldon victoria 18 2015 australian native parasitic plant synonyms amyema pendulum pendulum comment amyema pendula subsp pendula ',true
+'love rains return top kimberley climate temperatures february - cyclone cyclone cyclones occur prime time ',true
+'nakano roppongi shibuya shinjuku tachikawa ueno yanaka nikko yokohama kawasaki partnership anakjajan search kyoto lifestyle tokyo travel trip travel diary gallery 5 2016 jajan 26 comments ',true
+'ueno yanaka nikko yokohama kawasaki partnership anakjajan search kyoto lifestyle tokyo travel trip travel diary gallery 5 2016 jajan 26 comments ',true
+'yanaka nikko yokohama kawasaki partnership anakjajan search kyoto lifestyle tokyo travel trip travel diary gallery 5 2016 jajan 26 comments ',true
+'instagram anakjajan probably travelwithanakjajan trip december 2014 till week 2015 ps check following link complete travel guide tips https anakjajan ',true
+'shop kemang jakartanext post korea food guide eat seoul 26 trip travel diary belinda 13 2016 7 15 pm camera using colors ',true
+'kemang jakartanext post korea food guide eat seoul 26 trip travel diary belinda 13 2016 7 15 pm camera using colors ',true
+'asians risk home 20 2015 asians risk 20 2015 ',true
+'asians risk home 20 2015 asians risk 20 2015 research university adelaide ',true
+'asians risk home 20 2015 asians risk 20 2015 research university adelaide ',true
+'asians risk home 20 2015 asians risk 20 2015 research university adelaide asian australians ',true
+'asians risk home 20 2015 asians risk 20 2015 research university adelaide asian australians ',true
+'risk home 20 2015 asians risk 20 2015 research university adelaide asian australians ',true
+'index php title 2006 07_australian_bushfire_season oldid 752877032 categories 2006 wildfires 2007 wildfires 2006 bushfire seasons arson victoria hidden categories australian english 2016 wikipedia articles written australian english dmy dates 2013 navigation ',true
+'2006 07_australian_bushfire_season oldid 752877032 categories 2006 wildfires 2007 wildfires 2006 bushfire seasons arson victoria hidden categories australian english 2016 wikipedia articles written australian english dmy dates 2013 navigation ',true
+'752877032 categories 2006 wildfires 2007 wildfires 2006 bushfire seasons arson victoria hidden categories australian english 2016 wikipedia articles written australian english dmy dates 2013 navigation ',true
+'categories 2006 wildfires 2007 wildfires 2006 bushfire seasons arson victoria hidden categories australian english 2016 wikipedia articles written australian english dmy dates 2013 navigation ',true
+'hopefully scale australian december summer saturday midday fires south wales coast ',true
+'waves white earthquake winter storms 2009 10 east asia north indian wave 2011 indian wave 2012 2013 extreme weather events 2016 east asia wave weather events climate drought avalanches lewes 1836 buachaille etive ',true
+'earthquake winter storms 2009 10 east asia north indian wave 2011 indian wave 2012 2013 extreme weather events 2016 east asia wave weather events climate drought avalanches lewes 1836 buachaille etive ',true
+'east asia north indian wave 2011 indian wave 2012 2013 extreme weather events 2016 east asia wave weather events climate drought avalanches lewes 1836 buachaille etive ',true
+'low 17 6 0 3 manchester england 3 spread southern england 6 7 blanketed 2 captured nasa\'s terra satellite 4 thaw ',true
+'3 manchester england 3 spread southern england 6 7 blanketed 2 captured nasa\'s terra satellite 4 thaw week ',true
+'manchester england 3 spread southern england 6 7 blanketed 2 captured nasa\'s terra satellite 4 thaw week ',true
+'pressure system attempting build towards uk atlantic heavy snowfall resumed fresh accumulations top existing 15 centimetres 12 wales south-west england fell midlands south-east england ',true
+'external links edit wikimedia commons media related snowfall 2009 2010 icy conditions strike bbc news 7 2010 deaths britain\'s freeze times online 7 2010 cold ',true
+'angry - wikipedia main menu edit page angry angry dates march 2013 affected southern queensland south wales victoria tasmania south western australian 2012 2013 angry extreme ',true
+'angry - wikipedia main menu edit page angry angry dates march 2013 affected southern queensland south wales victoria tasmania south western australian 2012 2013 angry extreme ',true
+'- wikipedia main menu edit page angry angry dates march 2013 affected southern queensland south wales victoria tasmania south western australian 2012 2013 angry extreme resulted 123 weather ',true
+'weather records broken 90-day period including hottest day recorded hottest record hottest average record record seven days row continent ',true
+'low 17 6 0 3 manchester england 3 spread southern england 6 7 blanketed 2 captured nasa\'s terra satellite 4 thaw ',true
+'3 manchester england 3 spread southern england 6 7 blanketed 2 captured nasa\'s terra satellite 4 thaw week ',true
+'manchester england 3 spread southern england 6 7 blanketed 2 captured nasa\'s terra satellite 4 thaw week ',true
+'pressure system attempting build towards uk atlantic heavy snowfall resumed fresh accumulations top existing 15 centimetres 12 wales south-west england fell midlands south-east england ',true
+'2010 external links wikimedia commons media related snowfall 2009-2010 icy conditions strike bbc news 7 2010 deaths britain\'s freeze times online 7 2010 weather ',true
+'december february log sign entertainment tech lifestyle food health politics money sports ',true
+'services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons december february click answer winter christmas season hanukkah ',true
+'world answer time answered seasons countries basically countries southern hemisphere zealand chile argentina uruguay brazil paraguay bolivia peru south africa angola namibia zimb abwe ',true
+'australian answered meteorology weather weather south inland hot dry ',true
+'australian answered meteorology weather weather south inland hot dry north ',true
+'australian answered meteorology weather weather south inland hot dry north ',true
+'world answer time answered specialty travel perth unbearably hot july november february mite goin weather warm ',true
+'east asia storms 2009 2010 february 2009 britain ireland snowfall 1962 63 1987 southeast england snowfall 2010 2011 europe references edit 2010 ',true
+'2009 2010 february 2009 britain ireland snowfall 1962 63 1987 southeast england snowfall 2010 2011 europe references edit 2010 met office retrieved 20 february ',true
+'weather events climate drought avalanches lewes 1836 buachaille etive 2009 coldwaves frost 1709 1894 95 1946 47 1962 63 april 1983 march 1987 1990 91 1994 95 1995 96 2000 01 ',true
+'images page network 102 responses russian siberia irussia mobi russian syberia 21 2007 1 42 pm originally syndicated via rss english check girl day reply texas1 21 2007 1 ',true
+'network 102 responses russian siberia irussia mobi russian syberia 21 2007 1 42 pm originally syndicated via rss english check girl day reply texas1 21 2007 1 ',true
+'looks cold kewl pics hehe reply links 2007-01-22 blog ftofani com 22 2007 7 11 pm english russian siberia sib ria inverno tags photos photography travel cool siberia culture reply siberian ',true
+'ftofani com 22 2007 7 11 pm english russian siberia sib ria inverno tags photos photography travel cool siberia culture reply siberian idigpics com 22 2007 7 48 pm 22 2007 posted idigpics uncategorized trackback ',true
+'pm english russian siberia sib ria inverno tags photos photography travel cool siberia culture reply siberian idigpics com 22 2007 7 48 pm 22 2007 posted idigpics uncategorized trackback ',true
+'ain bad- burrrr reply pristina org design links 2007-01-23 22 2007 7 57 pm english russian siberia sib ria inverno tags photos photography travel cool siberia culture reply lisa ',true
+'2007-01-23 22 2007 7 57 pm english russian siberia sib ria inverno tags photos photography travel cool siberia culture reply lisa 22 2007 8 08 pm ahem bishop brennen- trying ',true
+'com martiallaw911 info contact advertise contact alex contact webmaster link advertisements global cooling covered snow coldest 20 ria novosti friday 11 2008 northern covered snow schools mosques ',true
+'martiallaw911 info contact advertise contact alex contact webmaster link advertisements global cooling covered snow coldest 20 ria novosti friday 11 2008 northern covered snow schools mosques administrative bodies paralyzed local media reported ',true
+'contact webmaster link advertisements global cooling covered snow coldest 20 ria novosti friday 11 2008 northern covered snow schools mosques administrative bodies paralyzed local media reported friday ',true
+'- december february com food health home money style tech travel autos dating relationships education ',true
+'zealand tours travel - zealand hotels accommodation - zealand 1 1 december february navigate morning port macquarie\'s flynn beach south wales north coast photo credit tourism ',true
+'barrier reef south consider crossing kangaroo island western rottnest island 1 1 1 related articles sydney february month month weather events holiday expect december ',true
+'kangaroo island western rottnest island 1 1 1 related articles sydney february month month weather events holiday expect december ',true
+'occurred november 1963 actually autumn 1963 edit 1946 47 1987 southeast england snowfall 1990 1991 western europe european storms ',true
+'1963 actually autumn 1963 edit 1946 47 1987 southeast england snowfall 1990 1991 western europe european storms 2009 10 storms ',true
+'weather events climate drought avalanches lewes 1836 buachaille etive 2009 coldwaves frost 1709 1894 95 1946 47 1962 63 april 1983 march 1987 1990 91 1994 95 1995 96 2000 01 ',true
+'weather events climate drought avalanches lewes 1836 buachaille etive 2009 coldwaves frost 1709 1894 95 1946 47 1962 63 april 1983 march 1987 1990 91 1994 95 1995 96 2000 01 ',true
+'destination rain average amount rain observed 78 mm 3 12 days avoid rain preferred destination le cap note ',true
+'2017 06 36 17 36 monday 30th 2017 06 36 17 37 tuesday 31st 2017 06 36 17 38 hilton sale 30 hotels sale save 30 hotels hilton sale ',true
+'august september october slightly cooler normal due increasing trend rainfall northwest mean temperatures april period northern tropics modest trend 1980s marked ',true
+'adelaide hills bushfire 38 houses destroyed kersbrook worst hit abc news 6 2015 retrieved 7 2015 adelaide hills firefighters battle control south blaze temperatures rise abc news 5 ',true
+'adelaide hills bushfire 38 houses destroyed kersbrook worst hit abc news 6 2015 retrieved 7 2015 adelaide hills firefighters battle control south blaze temperatures rise abc news 5 2015 retrieved 5 2015 ',true
+'38 houses destroyed kersbrook worst hit abc news 6 2015 retrieved 7 2015 adelaide hills firefighters battle control south blaze temperatures rise abc news 5 2015 retrieved 5 2015 ',true
+'kersbrook worst hit abc news 6 2015 retrieved 7 2015 adelaide hills firefighters battle control south blaze temperatures rise abc news 5 2015 retrieved 5 2015 five sa homes destroyed victoria braces blazes ',true
+'6 2015 retrieved 7 2015 adelaide hills firefighters battle control south blaze temperatures rise abc news 5 2015 retrieved 5 2015 five sa homes destroyed victoria braces blazes australian 3 2015 emergency ',true
+'hills firefighters battle control south blaze temperatures rise abc news 5 2015 retrieved 5 2015 five sa homes destroyed victoria braces blazes australian 3 2015 emergency ',true
+'blaze temperatures rise abc news 5 2015 retrieved 5 2015 five sa homes destroyed victoria braces blazes australian 3 2015 emergency warnings downgraded victoria fires south rain 32 homes gone adelaide retrieved 7 2015 bushfire emergency warning ',true
+'funds sa bushfire victims sydney morning herald aap 8 2015 retrieved 10 2015 anz provides assistance customers affected sa downloadable pdf press release zealand banking limited 4 2015 retrieved 10 2015 affected ',true
+'2015 retrieved 10 2015 anz provides assistance customers affected sa downloadable pdf press release zealand banking limited 4 2015 retrieved 10 2015 affected press release banksa division ',true
+'2015 anz provides assistance customers affected sa downloadable pdf press release zealand banking limited 4 2015 retrieved 10 2015 affected press release banksa division westpac banking corporation 5 2015 retrieved 10 ',true
+'commonwealth bank activates emergency assistance package customers affected south australian victorian press release commonwealth bank 4 2015 retrieved 10 2015 support nab customers affected south australian press ',true
+'package customers affected south australian victorian press release commonwealth bank 4 2015 retrieved 10 2015 support nab customers affected south australian press release national bank 4 2015 retrieved 10 2015 suncorp bank offers ',true
+'customers affected south australian victorian press release commonwealth bank 4 2015 retrieved 10 2015 support nab customers affected south australian press release national bank 4 2015 retrieved 10 2015 suncorp bank offers financial relief south ',true
+'australian victorian press release commonwealth bank 4 2015 retrieved 10 2015 support nab customers affected south australian press release national bank 4 2015 retrieved 10 2015 suncorp bank offers financial relief south ',true
+'4 2015 retrieved 10 2015 support nab customers affected south australian press release national bank 4 2015 retrieved 10 2015 suncorp bank offers financial relief south victoria ',true
+'south victoria bushfire victims press release suncorp bank 6 2015 retrieved 10 2015 westpac provides disaster relief package customers impacted south press release westpac banking corporation 5 2015 retrieved 10 2015 sampson flat bushfire ',true
+'2015 retrieved 10 2015 westpac provides disaster relief package customers impacted south press release westpac banking corporation 5 2015 retrieved 10 2015 sampson flat bushfire relief appeal donations emergencies safety ',true
+'cats perish blaze sweeps tea tree gully kennels cattery abc news retrieved 8 2015 external links edit cfs bushfire safety australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern ',true
+'blaze sweeps tea tree gully kennels cattery abc news retrieved 8 2015 external links edit cfs bushfire safety australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern seaboard 1994 ',true
+'moscow - 2010 - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'you\'re viewing youtube japanese change preference below __count__ __total__ moscow - 2010 timosha21 13 2411 3 636 24 25 0 1 2010 01 29 city ',true
+'2411 3 636 24 25 0 1 2010 01 29 city moscow 2010 cold moscow youtube moscow - 2 49 chess video 13 974 2 49 moscow ',true
+'2010 cold moscow youtube moscow - 2 49 chess video 13 974 2 49 moscow - 2 37 ajaxnmiami 412 2 37 moscow day trips - 11 54 ',true
+'bridge destroyed lower hotham fires abc southern wa australian broadcasting corporation retrieved 19 2016 emergency management committee 2015 review o\'sullivan lower hotham pdf perth government western retrieved 7 october 2016 mulcahy roslyn ed 2015 waroona saved blaze pdf ',true
+'northern flank bullsbrook bushfire wa ahead expected wind change abc news retrieved 11 2015 jacob kagi 6 february 2015 wa natural disaster zone declared northcliffe massive bushfire continues burn abc ',true
+'south west fires reopened wa fairfax media retrieved 2 2016 waroona fire inferno metres bbc news 8 2016 retrieved 9 2016 southbound music festival cancelled perth 8 2016 retrieved 8 2016 staff writers 9 ',true
+'posts logged log weatherzone forums weather events tropical central north qld 2008 09 cardwell southwards - 2009 register user forum list active topics faq page 170 171 1 2 168 ',true
+'wikipedia black friday wikipedia free encyclopedia jump navigation search black friday location victoria statistics date 13 1939 burned 4 942 000 acres 2 000 000 hectares cause heat wave careless ',true
+'000 hectares cause heat wave careless burning buildings destroyed 650 fatalities 71 black friday 13 1939 victoria worst natural wildfires world 20 000 km 4 ',true
+'heat wave careless burning buildings destroyed 650 fatalities 71 black friday 13 1939 victoria worst natural wildfires world 20 000 km 4 942 000 acres 2 000 000 ',true
+'dawtrey zara 13 march 2013 risdon fire flares mercury retrieved 24 june 2013 tasmania search 100 \'missing\' bbc news 6 2013 retrieved 6 2013 chadwick sanele 9 2013 nz firefighters lend hand ',true
+'events travel info com autos careers dating relationships education en espa ol entertainment food health home money ',true
+'2 february 3 month month 4 october 5 april com travel travel visiting events celebrations andrew watson lonely planet images getty images larry rivera travel ',true
+'month month 4 october 5 april com travel travel visiting events celebrations andrew watson lonely planet images getty images larry rivera travel ',true
+'4 october 5 april com travel travel visiting events celebrations andrew watson lonely planet images getty images larry rivera travel ',true
+'october 5 april com travel travel visiting events celebrations andrew watson lonely planet images getty images larry rivera travel ',true
+'october 5 april com travel travel visiting events celebrations andrew watson lonely planet images getty images larry rivera travel expert larry rivera dazzling fireworks display particularly sydney ushers ',true
+'arts sports events highlight month calendar weather middle average temperatures ranging 36 97 alice springs ',true
+'arts sports events highlight month calendar weather middle average temperatures ranging 36 97 alice springs ',true
+'sports events highlight month calendar weather middle average temperatures ranging 36 97 alice springs ',true
+'fernglade farm mid 2014 update victoria skip main content stop slideshow home forums global courses contact subscribe search search ',true
+'stop slideshow home forums global courses contact subscribe search search fernglade farm mid 2014 update victoria february 5 2014 chris mcleod filed demonstration sites irrigation author testing ',true
+'permaculture crusader help bill mollison time scout 10 fernglade farm mid 2014 update victoria rob february 6 2014 9 36 am excellent report ideas ',true
+'angry - wikipedia angry wikipedia free encyclopedia jump navigation search angry dates march 2013 affected southern queensland south wales victoria tasmania south western australian 2012 2013 angry extreme ',true
+'- wikipedia angry wikipedia free encyclopedia jump navigation search angry dates march 2013 affected southern queensland south wales victoria tasmania south western australian 2012 2013 angry extreme ',true
+'angry wikipedia free encyclopedia jump navigation search angry dates march 2013 affected southern queensland south wales victoria tasmania south western australian 2012 2013 angry extreme resulted 123 weather ',true
+'weather records broken 90-day period including hottest day recorded hottest record hottest average record record seven days row continent ',true
+'matera 2013 beatport mixes store classic sounds mixes djs log create account 0 0 ',true
+'funk techno glitch hop trance upload mix top100 charted 2013-01-17 61 matera 2013 deep house indie dance nu disco created matera edit details play queue 9 ',true
+'extravagant pageant washington post retrieved 8 february 2014 record 88 nations participate games global news sochi associated press 2 february 2014 retrieved 2 february 2014 mackenzie eric 16 2014 sochi spotlight zimbabwe\'s olympian pique newsmagazine whistler british columbia canada retrieved 16 ',true
+'retrieved 8 february 2014 record 88 nations participate games global news sochi associated press 2 february 2014 retrieved 2 february 2014 mackenzie eric 16 2014 sochi spotlight zimbabwe\'s olympian pique newsmagazine whistler british columbia canada retrieved 16 2014 pagan rivera esteban 12 ',true
+'comcast produce olympics 2014 ultra hd hollywood reporter retrieved 27 2014 transmit 4k sochi tvbeurope newbay media retrieved 27 2014 putin cancels holidays officials responsible games itar-tass retrieved 30 november 2013 pennington adrian 4 february 2014 sochi games set ',true
+'2016 updated february 2013 mass migration towards atlantic ocean takes add buzz international travelers you\'ll understand brazilians live sea feel left ',true
+'hotel-fazenda farm hotel country resort packed leisure options pools weather there\'s guaranteed dry coast divide shore roughly major zones ',true
+'coastal regions especially eastern indian ocean coast average temperatures 1 city winter july max min max min bloemfontein 31 15 17 -2 cape town 26 16 ',true
+'night time temperatures interior regions riydah average low 8 below 20 jeddah bearable deserts cold 0 ',true
+'southern 2016 season drought southern 2016 author tom di liberto february 17 2016 poor rains southern monsoon october led extensive drought mozambique zambia zimbabwe southern madagascar dismal season destroyed crops killed livestock led blackouts ',true
+'arid scenery hot dry summers cold dry winters southern hemisphere country seasons opposite northern hemisphere spring september october months run late november december february autumn tends short lived takes ',true
+'country seasons opposite northern hemisphere spring september october months run late november december february autumn tends short lived takes ',true
+'seasons opposite northern hemisphere spring september october months run late november december february autumn tends short lived takes ',true
+'northern hemisphere spring september october months run late november december february autumn tends short lived takes ',true
+'northern hemisphere spring september october months run late november december february autumn tends short lived takes march april ',true
+'northern hemisphere spring september october months run late november december february autumn tends short lived takes march april winter ',true
+'june covers july august peak holiday periods tend fall mid winter christmas holiday season spans december hottest time humidity levels ',true
+'june covers july august peak holiday periods tend fall mid winter christmas holiday season spans december hottest time humidity levels durban east coast rest ',true
+'peak holiday periods tend fall mid winter christmas holiday season spans december hottest time humidity levels durban east coast rest ',true
+'25 32 77 90 precipitation occurs autumn october november december february march winter daytime average temperatures cool 15 19 ',true
+'victim charms western cape runaway fires months particularly december wet weather lead flash floods particularly kwa-zulu natal highveld ',true
+'windows blog archive 2012 marks aboriginal ceremony alpha arab home donation rss archive recipes russian churches windows russiaall russian ',false
+'windows blog archive 2012 marks aboriginal ceremony alpha arab home donation rss archive recipes russian churches windows russiaall russian little bit american idiosyncrasies ',false
+'southern aroused envy europe encyclopedia safety encyclopedia safety surviving ',false
+'30 31 neutral fascism terrible sin syrian opposition ride wind southern aroused envy europe 24 2013 days south ',false
+'31 neutral fascism terrible sin syrian opposition ride wind southern aroused envy europe 24 2013 days south european warmest region ',false
+'wind southern aroused envy europe 24 2013 days south european warmest region europe city hot krasnodar territory kasumkent dagestan thermometer readings reached 20 warmest city spain ',false
+'destination rain average amount rain observed 130 mm 8 27 days avoid rain preferred destination porto alegre note ',false
+'destination rain average amount rain observed 130 mm 8 27 days avoid rain preferred destination porto alegre note ',false
+'summer 2014 issue quick look opi beach sandies mini pack liquid sands opi collection 34 quick look opi collection summer 2014 erin-paint piggies 15 2014 8 43 am ooooh wait swatches ',false
+'mini pack liquid sands opi collection 34 quick look opi collection summer 2014 erin-paint piggies 15 2014 8 43 am ooooh wait swatches ',false
+'observational study day northeast semi-arid region synoptic mesoscale characteristics - documents docslide net upload login signup leadership technology ',false
+'signup leadership technology education marketing design topics search home documents observational study day northeast semi-arid region synoptic mesoscale characteristics system processing data please download view download ',false
+'processing data please download view download 1 close share observational study day northeast semi-arid region synoptic mesoscale characteristics embed iframe src http docslide net embed observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html ',false
+'5px strong href http docslide net documents observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html title observational study day northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day ',false
+'strong href http docslide net documents observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html title observational study day northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day northeast semi-arid region synoptic mesoscale characteristics div size ',false
+'net documents observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html title observational study day northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day northeast semi-arid region synoptic mesoscale characteristics div size px ',false
+'northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day northeast semi-arid region synoptic mesoscale characteristics div size px 750x600 750x500 600x500 600x400 start ',false
+'div size px 750x600 750x500 600x500 600x400 start 1 link observational study day northeast semi-arid region synoptic mesoscale characteristics maria-regina-da-silva-aragao jul 06 2016 report category documents ',false
+'category documents download 0 comment 0 212 views comments description download observational study day northeast semi-arid region synoptic mesoscale characteristics transcript quarterly journal royal meteorological society ',false
+'wiley interscience www interscience wiley com doi 10 1002 qj 81 observational study day northeast semi-arid region synoptic mesoscale characteristics maria regina da silva araga mo nica ',false
+'clima ticos instituto nacional de pesquisas espaciais sa jose dos campos sa paulo abstract analysis atmospheric structure particular day 1985 month well-above-normal rainfall northeast semi-arid region close attention ',false
+'paulo abstract analysis atmospheric structure particular day 1985 month well-above-normal rainfall northeast semi-arid region close attention 24 1985 focus ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1129 figure 1 relief map northeast coverage ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1131 table ii characteristics rainfall pluviographic stations located ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1133 figure 4 time series 1985 mean daily 24-hour ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1135 figure 8 divergence horizontal moisture flux northeast ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1137 cheng houze 1979 importantly radar- echo signatures resemble ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1139 figure 13 rainfall intensity function duration 24 ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1141 sahelian synoptic weather system representative west african monsoon ',false
+'observational study day northeast semi-arid region synoptic mesoscale characteristics - documents docslide net upload login signup leadership technology ',false
+'signup leadership technology education marketing design topics search home documents observational study day northeast semi-arid region synoptic mesoscale characteristics system processing data please download view download ',false
+'processing data please download view download 1 close share observational study day northeast semi-arid region synoptic mesoscale characteristics embed iframe src http docslide net embed observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html ',false
+'5px strong href http docslide net documents observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html title observational study day northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day ',false
+'strong href http docslide net documents observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html title observational study day northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day northeast semi-arid region synoptic mesoscale characteristics div size ',false
+'net documents observational-study-of-a-rainy-january-day-in-the-northeast-brazil-semi-arid html title observational study day northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day northeast semi-arid region synoptic mesoscale characteristics div size px ',false
+'northeast semi-arid region synoptic mesoscale characteristics target _blank observational study day northeast semi-arid region synoptic mesoscale characteristics div size px 750x600 750x500 600x500 600x400 start ',false
+'div size px 750x600 750x500 600x500 600x400 start 1 link observational study day northeast semi-arid region synoptic mesoscale characteristics maria-regina-da-silva-aragao jul 06 2016 report category documents ',false
+'category documents download 0 comment 0 212 views comments description download observational study day northeast semi-arid region synoptic mesoscale characteristics transcript quarterly journal royal meteorological society ',false
+'wiley interscience www interscience wiley com doi 10 1002 qj 81 observational study day northeast semi-arid region synoptic mesoscale characteristics maria regina da silva araga mo nica ',false
+'clima ticos instituto nacional de pesquisas espaciais sa jose dos campos sa paulo abstract analysis atmospheric structure particular day 1985 month well-above-normal rainfall northeast semi-arid region close attention ',false
+'paulo abstract analysis atmospheric structure particular day 1985 month well-above-normal rainfall northeast semi-arid region close attention 24 1985 focus ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1129 figure 1 relief map northeast coverage ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1131 table ii characteristics rainfall pluviographic stations located ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1133 figure 4 time series 1985 mean daily 24-hour ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1135 figure 8 divergence horizontal moisture flux northeast ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1137 cheng houze 1979 importantly radar- echo signatures resemble ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1139 figure 13 rainfall intensity function duration 24 ',false
+'society meteorol soc 133 1127 1141 2007 doi 10 1002 qj day northeast semi-arid region 1141 sahelian synoptic weather system representative west african monsoon ',false
+'includes thematic decoration future events couromoda - international shoes sports leather fair 15 - 18 2017 contact travessa casalbuono 120 02089-900 paulo sao paulo 55 11 6222 2555 related events premiere - winter july 10 - 11 2013 premiere july 26 - 27 2012 premiere ',false
+'02089-900 paulo sao paulo 55 11 6222 2555 related events premiere - winter july 10 - 11 2013 premiere july 26 - 27 2012 premiere - summer 18 - 19 2012 premi re brasil - winter july 20 - 21 2011 ',false
+'6222 2555 related events premiere - winter july 10 - 11 2013 premiere july 26 - 27 2012 premiere - summer 18 - 19 2012 premi re brasil - winter july 20 - 21 2011 premi re brasil - international fabric 19 ',false
+'winter july 10 - 11 2013 premiere july 26 - 27 2012 premiere - summer 18 - 19 2012 premi re brasil - winter july 20 - 21 2011 premi re brasil - international fabric 19 ',false
+'driver sled cross-country skiing edit main article cross-country skiing 2014 olympics according quota allocation released 20 2014 qualified athletes 6 brazil\'s athletes ones represented ',false
+'brings color smarter gardener sunday 1st 2017 twitter rss home categories home gardening fruit trees landscapes botanical gardens gardening urban ',false
+'coastal regions especially eastern indian ocean coast average temperatures 1 city summer july max min max min bloemfontein 31 15 17 -2 cape town 26 16 18 ',false
+'rockaway sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',false
+'asia aus pacific europe latin america america america mid east home north america rockaway rockaway average sea temperature max 10 5 50 9 avg 9 4 48 9 ',false
+'west palm sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',false
+'asia aus pacific europe latin america america america mid east home north america west palm west palm average sea temperature max 24 8 76 6 avg 23 4 74 2 ',false
+'miami weather 2017 - accuweather forecast fl 33139 recent locations miami fl80 york ny45 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country miami weather follow login weather miami fl local weather 80 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country miami weather follow login weather miami fl local weather 80 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny45 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'2013 arab spring algeria\'s standing world commentator retrieved 27 2014 saudi-algerian committee stresses importance bilateral relations business news algiers retrieved 27 2014 algeria seeks closer ties kuna algiers 6 december 2012 retrieved 27 2014 stephen zunes 1995 algeria maghreb union western sahara stalemate arab studies quarterly 17 3 ',false
+'world commentator retrieved 27 2014 saudi-algerian committee stresses importance bilateral relations business news algiers retrieved 27 2014 algeria seeks closer ties kuna algiers 6 december 2012 retrieved 27 2014 stephen zunes 1995 algeria maghreb union western sahara stalemate arab studies quarterly 17 3 ',false
+'2014 saudi-algerian committee stresses importance bilateral relations business news algiers retrieved 27 2014 algeria seeks closer ties kuna algiers 6 december 2012 retrieved 27 2014 stephen zunes 1995 algeria maghreb union western sahara stalemate arab studies quarterly 17 3 ',false
+'bilateral relations business news algiers retrieved 27 2014 algeria seeks closer ties kuna algiers 6 december 2012 retrieved 27 2014 stephen zunes 1995 algeria maghreb union western sahara stalemate arab studies quarterly 17 3 ',false
+'huntington sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',false
+'asia aus pacific europe latin america america america mid east home north america huntington huntington average sea temperature max 15 7 60 2 avg 14 7 58 4 ',false
+'people\'s republic china avoidance double taxation prevention evasion respect taxes income cyprus convention pdf 66k effective date 1 1986 convention government america government republic cyprus avoidance double ',false
+'39 observed previous average amount rain observed 1 mm typically 4 days note gap temperature country ',false
+'estate planning update - 2013 - - cookies online experience using website ',false
+'estate planning update - 2013 - - cookies online experience using website ',false
+'cookies accordance cookie policy learn close home usa estate planning update - 2013 updated 15 2013 article gardner govan godfrey kahn ',false
+'cookies accordance cookie policy learn close home usa estate planning update - 2013 updated 15 2013 article gardner govan godfrey kahn ',false
+'britain elsewhere instead coincide calendar typically start february examinations edit education primary secondary edit ',false
+'officially public source xinhua published 2013-1-24 9 01 24 photo 23 2013 embroidery art center nanjing capital east china\'s jiangsu province art ',false
+'officially public february xinhua li xiang photo 23 2013 root carving art center nanjing capital east china\'s jiangsu province art ',false
+'officially public february xinhua li xiang photo 23 2013 purple clay teapot art center nanjing capital east china\'s jiangsu province art ',false
+'officially public february xinhua li xiang photo 23 2013 purple clay cup art center nanjing capital east china\'s jiangsu province art ',false
+'officially public february xinhua li xiang photo 23 2013 jade artwork art center nanjing capital east china\'s jiangsu province art ',false
+'online visit www sars gov za obtain 2012 electronic guide help submitting it12 returns calendar 2014 february march 2013 crime safety include 1 207 road fatalities ',false
+'warm forum fodor\'s travel talk forums log subscribe facebook twitter pinterest instagram google home menu ',false
+'view trip ideas log subscribe follow facebook twitter pinterest instagram google forums warm forums search forums post topic change forum africa middle east ',false
+'trip ideas log subscribe follow facebook twitter pinterest instagram google forums warm forums search forums post topic change forum africa middle east asia ',false
+'ideas log subscribe follow facebook twitter pinterest instagram google forums warm forums search forums post topic change forum africa middle east asia australia ',false
+'04 04 pm tagged york view 25 top warm posted bb7 dec 16 09 03 48 pm posted tagged california florida jump reply add reply report abuse printer friendly looking ',false
+'calendar national holidays traditional festivals tourism festivals ethnic minority festivals christmas home tips holidays chinese chinese festival 2017 chinese fall 28 rooster according chinese zodiac ',false
+'temperature noticed lower temperature travel december february isn\'t bad ton september ',false
+'noticed lower temperature travel december february isn\'t bad ton september ',false
+'temperature travel december february isn\'t bad ton september that\'s typhoon season why\'s rainy june ',false
+'cold am happy travel it\'s raining december you\'re basically guaranteed free existence unless unlucky cold ',false
+'beaches historic sites museums shopping attraction style popular hidden gems pace fast-paced 7 days user peru relaxing romantic beaches shopping popular hidden gems preferences relaxing romantic beaches shopping attraction ',false
+'relaxing romantic beaches shopping attraction style popular hidden gems pace medium 31 days user zealand teens kids culture relaxing beaches historic sites museums shopping slow easy hidden gems preferences teens kids culture ',false
+'times monday saturday appointment sundays 10am till 4pm richdon -january 2016 richdon-autumn 2015 spring 2015 grow 2015 2014 spring 2014 2014 2013 2012 50k spring 2012 february 2012 2011 spring 2011 ',false
+'sundays 10am till 4pm richdon -january 2016 richdon-autumn 2015 spring 2015 grow 2015 2014 spring 2014 2014 2013 2012 50k spring 2012 february 2012 2011 spring 2011 ',false
+'10am till 4pm richdon -january 2016 richdon-autumn 2015 spring 2015 grow 2015 2014 spring 2014 2014 2013 2012 50k spring 2012 february 2012 2011 spring 2011 december 2010 2010 sping 2010 2009 june 2009 spring 09 ',false
+'-january 2016 richdon-autumn 2015 spring 2015 grow 2015 2014 spring 2014 2014 2013 2012 50k spring 2012 february 2012 2011 spring 2011 december 2010 2010 sping 2010 2009 june 2009 spring 09 ',false
+'richdon-autumn 2015 spring 2015 grow 2015 2014 spring 2014 2014 2013 2012 50k spring 2012 february 2012 2011 spring 2011 december 2010 2010 sping 2010 2009 june 2009 spring 09 ',false
+'51 december 28 colorful eyes sexy zone 52 references edit gary trust 2008-05-21 billboard 100 global audience billboard nielsen business media inc retrieved 2011-12-29 billboard 100 2015 1 12 billboard japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved ',false
+'billboard 100 global audience billboard nielsen business media inc retrieved 2011-12-29 billboard 100 2015 1 12 billboard japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved ',false
+'100 global audience billboard nielsen business media inc retrieved 2011-12-29 billboard 100 2015 1 12 billboard japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved ',false
+'billboard nielsen business media inc retrieved 2011-12-29 billboard 100 2015 1 12 billboard japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved 21 2015 billboard ',false
+'inc retrieved 2011-12-29 billboard 100 2015 1 12 billboard japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved 21 2015 billboard ',false
+'100 2015 1 12 billboard japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved 21 2015 billboard 100 2015 1 26 billboard japanese retrieved ',false
+'100 2015 1 12 billboard japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved 21 2015 billboard 100 2015 1 26 billboard japanese retrieved ',false
+'japanese retrieved 7 2015 billboard 100 2015 1 19 billboard japanese retrieved 21 2015 billboard 100 2015 1 26 billboard japanese retrieved 21 2015 billboard ',false
+'7 2015 billboard 100 2015 1 19 billboard japanese retrieved 21 2015 billboard 100 2015 1 26 billboard japanese retrieved 21 2015 billboard ',false
+'100 2015 1 19 billboard japanese retrieved 21 2015 billboard 100 2015 1 26 billboard japanese retrieved 21 2015 billboard 100 2015 2 2 billboard japanese retrieved april ',false
+'100 2015 1 19 billboard japanese retrieved 21 2015 billboard 100 2015 1 26 billboard japanese retrieved 21 2015 billboard 100 2015 2 2 billboard japanese retrieved april ',false
+'japanese retrieved 21 2015 billboard 100 2015 1 26 billboard japanese retrieved 21 2015 billboard 100 2015 2 2 billboard japanese retrieved april 8 2015 billboard ',false
+'21 2015 billboard 100 2015 1 26 billboard japanese retrieved 21 2015 billboard 100 2015 2 2 billboard japanese retrieved april 8 2015 billboard ',false
+'japanese retrieved december 21 2015 billboard 100 2015 12 21 billboard japanese retrieved december 21 2015 billboard 100 2015 12 28 billboard japanese retrieved 4 2016 lists number-one singles oricon singles chart ',false
+'100 2015 12 21 billboard japanese retrieved december 21 2015 billboard 100 2015 12 28 billboard japanese retrieved 4 2016 lists number-one singles oricon singles chart ',false
+'100 2015 12 21 billboard japanese retrieved december 21 2015 billboard 100 2015 12 28 billboard japanese retrieved 4 2016 lists number-one singles oricon singles chart ',false
+'1 april 1984 provisions income beginning 1 april 1984 income subject withholding 1 1984 provisions taxable beginning 1 1983 refer article 27 ',false
+'1 april 1984 provisions income beginning 1 april 1984 income subject withholding 1 1984 provisions taxable beginning 1 1983 refer article 27 ',false
+'2011 provisions income beginning 1 april 2011 income subject withholding 1 2011 provisions taxable periods beginning 1 2011 legislation double ',false
+'videos list viewed youtube videos commercial performance edit stressed climbed 13 9 chart dated 16 2016 becoming group\'s top 10 billboard 100 track topped billboard\'s rock songs chart week led ',false
+'toyako onsen results calculated according people stayed spring 1st 2015 31st 2015 based nights stayed person ',false
+'posts posts connect categories recent posts france 2016 fall switzerland 2016 essentials feb 2016 winter bliss archives december 2016 june 2016 february 2016 2016 december 2015 november 2015 october 2015 september 2015 august 2015 july 2015 june 2015 ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model detail ',false
+'detail walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'detail walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 model ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 model walks ',false
+'model walks runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 models walk ',false
+'models walk runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo frazer harrison getty images mercedes-benz berlin 22 models walk ',false
+'models walk runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz berlin 22 models walk ',false
+'models walk runway irene luft mercedes-benz fashion week berlin winter 2015 16 brandenburg gate 22 2015 berlin photo peter michael dills getty images mercedes-benz 2014 irene luft ',false
+'retrieved 23 july 2009 torah bright snowboard australian olympic committee retrieved 31 2009 athlete damon hayler olympic institute archived original 23 2009 retrieved 14 march 2009 nerves ',false
+'torah bright snowboard australian olympic committee retrieved 31 2009 athlete damon hayler olympic institute archived original 23 2009 retrieved 14 march 2009 nerves steele track sparks fear ',false
+'home beautiful red chinese knots authentic chinese-style festival xinwen lianbo 2001 quoted li ren imagining era global consumerism local consciousness 30 preceding days edit ',false
+'index php title chinese_new_year oldid 757728677 categories buddhist holidays chinese chinese-australian culture non-gregorian observances non-gregorian february observances celebrations public holidays public holidays malaysia festivals holidays observances set chinese calendar hidden categories cs1 maint multiple names ',false
+'destination rain average amount rain observed 55 mm 14 23 days avoid rain preferred destination brighton note ',false
+'mine home contact faq blogroll tuesday 7 2014 glaze nights collection fall 2013 swatches review glaze nights fall 2013 glaze ',false
+'backstage left field fashionalysis sydney-based journalist rose scholar imogen morris clarke jigsaw winter 2012 posted 28th 2012 comments shares jigsaw hired jacquetta wheeler front spring summer ',false
+'left field fashionalysis sydney-based journalist rose scholar imogen morris clarke jigsaw winter 2012 posted 28th 2012 comments shares jigsaw hired jacquetta wheeler front spring summer 2011 2012 campaign winter ',false
+'sydney-based journalist rose scholar imogen morris clarke jigsaw winter 2012 posted 28th 2012 comments shares jigsaw hired jacquetta wheeler front spring summer 2011 2012 campaign winter 2012 brand tapped english rose doe-eyed beauty imogen morris clarke bursting ',false
+'polishaholic glaze 2012 electropop collection swatches home check favorites disclosure copyright info 3 2012 glaze 2012 electropop collection swatches morning yesterday ',false
+'polishaholic glaze 2012 electropop collection swatches home check favorites disclosure copyright info 3 2012 glaze 2012 electropop collection swatches morning yesterday bored ',false
+'glaze 2012 electropop collection swatches home check favorites disclosure copyright info 3 2012 glaze 2012 electropop collection swatches morning yesterday bored decided ',false
+'20 2015 2004 result stks held 7 february 2004 breednet com retrieved 20 2015 2003 result stks held 8 february 2003 breednet com retrieved 20 2015 2002 result day vase held 26 2002 breednet com retrieved 20 2015 2001 result ',false
+'result stks held 7 february 2004 breednet com retrieved 20 2015 2003 result stks held 8 february 2003 breednet com retrieved 20 2015 2002 result day vase held 26 2002 breednet com retrieved 20 2015 2001 result ',false
+'result stks held 8 february 2003 breednet com retrieved 20 2015 2002 result day vase held 26 2002 breednet com retrieved 20 2015 2001 result stks held 26 2001 breednet com retrieved 20 2015 2000 result stks ',false
+'19 december 2013 australian skater loses olympic appeal ninemsn retrieved 31 december 2013 sharwood anthony names 56 athletes biggest olympic games team news corp retrieved 22 2014 viessmann luge world cup 2013 2014 standing - world cup xxii olympic ',false
+'appeal ninemsn retrieved 31 december 2013 sharwood anthony names 56 athletes biggest olympic games team news corp retrieved 22 2014 viessmann luge world cup 2013 2014 standing - world cup xxii olympic ',false
+'conditions affected south particularly pilbara western queensland total seasonal rainfall hides severity half rainfall april period below average broader region extending south ',false
+'tanaka tomoyuki ez074520 dilbert ucdavis edu numerous contributions 13 tanaka\'s usa vincent chin american misconceptions remember life middle 1976 13 arrived usa ',false
+'tomoyuki ez074520 dilbert ucdavis edu numerous contributions 13 tanaka\'s usa vincent chin american misconceptions remember life middle 1976 13 arrived usa ',false
+'ez074520 dilbert ucdavis edu numerous contributions 13 tanaka\'s usa vincent chin american misconceptions remember life middle 1976 13 arrived usa ',false
+'13 tanaka\'s usa vincent chin american misconceptions remember life middle 1976 13 arrived usa ',false
+'usa vincent chin american misconceptions remember life middle 1976 13 arrived usa previous december student ',false
+'vincent chin american misconceptions remember life middle 1976 13 arrived usa previous december student ',false
+'chin american misconceptions remember life middle 1976 13 arrived usa previous december student american public southern california impressions ',false
+'american misconceptions remember life middle 1976 13 arrived usa previous december student american public southern california impressions ',false
+'remember life middle 1976 13 arrived usa previous december student american public southern california impressions ',false
+'remember life middle 1976 13 arrived usa previous december student american public southern california impressions positive helpful teachers friendly fellow students ',false
+'onsen results calculated according people stayed hot 1st 2015 31st 2015 based nights stayed person ',false
+'jump navigation search following list number-one singles billboard 100 chart 2016 chart history edit issue date song artist ref 4 christmas song 1 11 torisetsu kana nishino 2 18 boymen ',false
+'saison keyakizaka46 50 december 19 koi gen hoshino 51 december 26 52 references edit billboard 100 2016 1 4 billboard japanese retrieved 9 2016 billboard 100 2016 1 11 billboard japanese retrieved ',false
+'keyakizaka46 50 december 19 koi gen hoshino 51 december 26 52 references edit billboard 100 2016 1 4 billboard japanese retrieved 9 2016 billboard 100 2016 1 11 billboard japanese retrieved ',false
+'hoshino 51 december 26 52 references edit billboard 100 2016 1 4 billboard japanese retrieved 9 2016 billboard 100 2016 1 11 billboard japanese retrieved 9 2016 billboard ',false
+'52 references edit billboard 100 2016 1 4 billboard japanese retrieved 9 2016 billboard 100 2016 1 11 billboard japanese retrieved 9 2016 billboard ',false
+'100 2016 1 4 billboard japanese retrieved 9 2016 billboard 100 2016 1 11 billboard japanese retrieved 9 2016 billboard 100 2016 1 18 billboard japanese retrieved ',false
+'100 2016 1 4 billboard japanese retrieved 9 2016 billboard 100 2016 1 11 billboard japanese retrieved 9 2016 billboard 100 2016 1 18 billboard japanese retrieved ',false
+'japanese retrieved 9 2016 billboard 100 2016 1 11 billboard japanese retrieved 9 2016 billboard 100 2016 1 18 billboard japanese retrieved 19 2016 billboard ',false
+'9 2016 billboard 100 2016 1 11 billboard japanese retrieved 9 2016 billboard 100 2016 1 18 billboard japanese retrieved 19 2016 billboard ',false
+'100 2016 1 11 billboard japanese retrieved 9 2016 billboard 100 2016 1 18 billboard japanese retrieved 19 2016 billboard 100 2016 1 25 billboard japanese retrieved ',false
+'100 2016 1 11 billboard japanese retrieved 9 2016 billboard 100 2016 1 18 billboard japanese retrieved 19 2016 billboard 100 2016 1 25 billboard japanese retrieved ',false
+'japanese retrieved 9 2016 billboard 100 2016 1 18 billboard japanese retrieved 19 2016 billboard 100 2016 1 25 billboard japanese retrieved 21 2016 billboard ',false
+'9 2016 billboard 100 2016 1 18 billboard japanese retrieved 19 2016 billboard 100 2016 1 25 billboard japanese retrieved 21 2016 billboard ',false
+'100 2016 1 18 billboard japanese retrieved 19 2016 billboard 100 2016 1 25 billboard japanese retrieved 21 2016 billboard 100 2016 2 1 billboard japanese retrieved ',false
+'100 2016 1 18 billboard japanese retrieved 19 2016 billboard 100 2016 1 25 billboard japanese retrieved 21 2016 billboard 100 2016 2 1 billboard japanese retrieved ',false
+'japanese retrieved 19 2016 billboard 100 2016 1 25 billboard japanese retrieved 21 2016 billboard 100 2016 2 1 billboard japanese retrieved 27 2016 billboard ',false
+'19 2016 billboard 100 2016 1 25 billboard japanese retrieved 21 2016 billboard 100 2016 2 1 billboard japanese retrieved 27 2016 billboard ',false
+'100 2016 1 25 billboard japanese retrieved 21 2016 billboard 100 2016 2 1 billboard japanese retrieved 27 2016 billboard 100 2016 2 8 billboard japanese retrieved february ',false
+'100 2016 1 25 billboard japanese retrieved 21 2016 billboard 100 2016 2 1 billboard japanese retrieved 27 2016 billboard 100 2016 2 8 billboard japanese retrieved february ',false
+'japanese retrieved 21 2016 billboard 100 2016 2 1 billboard japanese retrieved 27 2016 billboard 100 2016 2 8 billboard japanese retrieved february 9 2016 billboard ',false
+'21 2016 billboard 100 2016 2 1 billboard japanese retrieved 27 2016 billboard 100 2016 2 8 billboard japanese retrieved february 9 2016 billboard ',false
+'title autumn_2011_united_kingdom_heat_wave oldid 757066663 categories 2011 heat waves 2011 ireland 2011 2011 meteorology heat waves weather events europe history gravesend kent 21st century kent weather events september 2011 events october 2011 events hidden categories engvarb 2014 dmy dates 2014 navigation menu personal tools logged talk ',false
+'waves 2011 ireland 2011 2011 meteorology heat waves weather events europe history gravesend kent 21st century kent weather events september 2011 events october 2011 events hidden categories engvarb 2014 dmy dates 2014 navigation menu personal tools logged talk ',false
+'coastal lowest elevated south-east average minimum temperatures near 27 found near north-west coast exceed 20 coastal locations northern torres strait tiwi islands mountains south wales ',false
+'medals sydney morning herald 2006-03-08 retrieved 2009-07-21 jessica gallagher australian paralympic committee website retrieved 21 2013 paralympic games history archived original 5 june 2011 retrieved 23 april 2011 ',false
+'victorian institute sport website archived original 10 april 2013 retrieved 21 2013 sports australian paralympic committee website retrieved 21 2013 paralympics summer athletics cycling goalball powerlifting rowing sailing shooting swimming table ',false
+'sport website archived original 10 april 2013 retrieved 21 2013 sports australian paralympic committee website retrieved 21 2013 paralympics summer athletics cycling goalball powerlifting rowing sailing shooting swimming table ',false

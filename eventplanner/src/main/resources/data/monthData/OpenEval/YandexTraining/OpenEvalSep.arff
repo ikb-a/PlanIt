@@ -1,0 +1,586 @@
+@relation posOrNegWordBags
+
+@attribute corpus string
+@attribute Class_Attribute_For_SimpleOpenEval {true,false}
+
+@data
+'class statcounter src http statcounter com 1854233 0 c5434596 1 alt web stats - round 3 xinjiang west west blog travel resources contact blog travel resources contact round 3 1 2008 comments tweet sumome re enjoying ',true
+'statcounter src http statcounter com 1854233 0 c5434596 1 alt web stats - round 3 xinjiang west west blog travel resources contact blog travel resources contact round 3 1 2008 comments tweet sumome re enjoying ',true
+'src http statcounter com 1854233 0 c5434596 1 alt web stats - round 3 xinjiang west west blog travel resources contact blog travel resources contact round 3 1 2008 comments tweet sumome re enjoying ',true
+'c5434596 1 alt web stats - round 3 xinjiang west west blog travel resources contact blog travel resources contact round 3 1 2008 comments tweet sumome re enjoying ',true
+'web stats - round 3 xinjiang west west blog travel resources contact blog travel resources contact round 3 1 2008 comments tweet sumome re enjoying ',true
+'south sudan south sudan starts march 20 autumn equinox tanzania tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday ',true
+'sudan south sudan starts march 20 autumn equinox tanzania tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday ',true
+'south sudan starts march 20 autumn equinox tanzania tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday ',true
+'south sudan starts march 20 autumn equinox tanzania tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday ',true
+'autumn equinox tanzania tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday ',true
+'tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday ',true
+'tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday ',true
+'tanzania week january usually monday asia falls 1 monday following 1 friday saturday sunday northeastern schools ',true
+'falls 1 monday following 1 friday saturday sunday northeastern schools monday mid-august summer vacation hong kong sar hong kong falls 1 monday following 1 ',true
+'monday following 1 friday saturday sunday northeastern schools monday mid-august summer vacation hong kong sar hong kong falls 1 monday following 1 friday saturday sunday ',true
+'monday following march 3 friday saturday sunday taiwan taiwan falls 1 monday following 1 friday saturday sunday ',true
+'monday following march 3 friday saturday sunday taiwan taiwan falls 1 monday following 1 friday saturday sunday thailand ',true
+'falls eid it\'s thursday sunday asiaedit chinaedit falls 1 monday following 1 friday saturday sunday ',true
+'falls eid it\'s thursday sunday asiaedit chinaedit falls 1 monday following 1 friday saturday sunday northeastern schools ',true
+'falls 1 monday following 1 friday saturday sunday northeastern schools monday mid-august summer vacation hong kong saredit hong kong falls 1 monday following 1 ',true
+'monday following 1 friday saturday sunday northeastern schools monday mid-august summer vacation hong kong saredit hong kong falls 1 monday following 1 friday saturday sunday ',true
+'friday saturday sunday march 1 national holiday taiwanedit taiwan falls 1 monday following 1 friday saturday sunday ',true
+'friday saturday sunday march 1 national holiday taiwanedit taiwan falls 1 monday following 1 friday saturday sunday thailandedit ',true
+'home guide articles seasonal top 5 visit top 5 visit beginning month weather cools rare rainfall ',true
+'top 5 visit top 5 visit beginning month weather cools rare rainfall ',true
+'visit top 5 visit beginning month weather cools rare rainfall ',true
+'visit top 5 visit beginning month weather cools rare rainfall ',true
+'delayed falls eid it\'s thursday sunday asia edit edit falls 1 monday following 1 friday saturday sunday ',true
+'falls eid it\'s thursday sunday asia edit edit falls 1 monday following 1 friday saturday sunday ',true
+'eid it\'s thursday sunday asia edit edit falls 1 monday following 1 friday saturday sunday northeastern schools ',true
+'friday saturday sunday march 1 national holiday taiwan edit taiwan falls 1 monday following 1 friday saturday sunday ',true
+'friday saturday sunday march 1 national holiday taiwan edit taiwan falls 1 monday following 1 friday saturday sunday thailand edit ',true
+'iff magic - 27 - 29 2017 home ubm ubm overview ubm business segments ubm strategy ubm ',true
+'board ubm locations contact search results register event iff magic 2017-09-27t00 00 00-04 00 2017-09-29t00 00 00-04 00 27 - 29 2017 tokyo sight exhibition center 3-11-1 ariake koto-ku tokyo 135-0063 ',true
+'ubm locations contact search results register event iff magic 2017-09-27t00 00 00-04 00 2017-09-29t00 00 00-04 00 27 - 29 2017 tokyo sight exhibition center 3-11-1 ariake koto-ku tokyo 135-0063 tokyo 135-0063 event focus fashion event type expo conference event website http ',true
+'southern philippines - 14 citation guizhou province 19 april 1995 guizhou province - 37 citation jamalpur-tangail districts bangladesh 13 1996 dhaka division bangladesh - 700 4 central vietnam 23 1997 central vietnam - 4 citation west bengal odisha india 24 march 1998 ',true
+'ti giang vietnam 2 1 77 5 savar gazipur districts bangladesh 19 2000 dhaka division bangladesh 2 2 5 6 bhalwal pakistan 28 march 2001 bhalwal pakistan - 3 citation south 20 april 2003 tiaofeng town leizhou city guangdong province 29 unclear ',true
+'netrokona mymensingh districts bangladesh 48 700 exact injured unknown 18 guangdong 8 2005 17 villages lianjiang city guangdong province casualties injuries unknown 10 000 ',true
+'netrokona mymensingh districts bangladesh 48 700 exact injured unknown 18 guangdong 8 2005 17 villages lianjiang city guangdong province casualties injuries unknown 10 000 people affected 480 houses destroyed 12 8 million yuan ',true
+'000 people affected 480 houses destroyed 12 8 million yuan economic losses 19 hainan 27 2005 lingao county hainan province 6 15 6 houses destroyed 70 damaged 20 ',true
+'people affected 480 houses destroyed 12 8 million yuan economic losses 19 hainan 27 2005 lingao county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 november 2005 ',true
+'480 houses destroyed 12 8 million yuan economic losses 19 hainan 27 2005 lingao county hainan province 6 15 6 houses destroyed 70 damaged 20 jiangsu 29 november 2005 suzhou jiangsu province 6 52 21 anhui 6 december ',true
+'error fatalities reported 580 000 people affected severe weather 55 sanba karen 18 2012 japan 10 56 guangxi 17 april 2013 qixing district guilin city rongan county liuzhou city guangxi zhuang autonomous ',true
+'signing subscribe blog join home top 10 leaves top 10 leaves posted 8 2015 violet cloutman time visit ',true
+'subscribe blog join home top 10 leaves top 10 leaves posted 8 2015 violet cloutman time visit ',true
+'top 10 leaves top 10 leaves posted 8 2015 violet cloutman time visit ',true
+'town yumoto onsen leaves beautiful enchantment tour takes advantage leaves nikko october november departures nikko features splendour self guided adventure 7 fuji ',true
+'2016 forecast warmth hold wind threat build november recent locations york ny52 miami fl80 ',true
+'radar maps news video winter severe climate social watch videos news videos blogs personalities 2016 forecast warmth hold wind threat build november eric leister meteorologist august 23 2016 5 ',true
+'25 22 am edt wet warm summer conditions continue summerlike warmth prevail throughout warm air mediterranean sea carried northward accuweather senior meteorologist ',true
+'wet warm summer conditions continue summerlike warmth prevail throughout warm air mediterranean sea carried northward accuweather senior meteorologist alan reppert ',true
+'festivals - mid festival search facebook twitter google pinterest main menu skip content home ',true
+'travel information julia 22 07 2014 travel guides uncategorized tagged festivals holidays moon cake festival permalink festivals mid festival posted 22 07 2014 julia 6th 2014 25th 2015 mid ',true
+'julia 22 07 2014 travel guides uncategorized tagged festivals holidays moon cake festival permalink festivals mid festival posted 22 07 2014 julia 6th 2014 25th 2015 mid ',true
+'travel guides uncategorized tagged festivals holidays moon cake festival permalink festivals mid festival posted 22 07 2014 julia 6th 2014 25th 2015 mid ',true
+'shock fun thinking travel weird movies music total creep losing id posted 12 2012 starts august equinox ',true
+'music total creep losing id posted 12 2012 starts august equinox ',true
+'total creep losing id posted 12 2012 starts august equinox ',true
+'total creep losing id posted 12 2012 starts august equinox temperatures ',true
+'trip traveling kids 7 steps plan perfect family tour top 10 apps travelers marks beginning weather summer heat begins wane weather north cooler ',true
+'7 steps plan perfect family tour top 10 apps travelers marks beginning weather summer heat begins wane weather north cooler ',true
+'lucy\'s stash home nail art posts nail art gallery tutorials sponsor contact disclaimer friday 06 2013 glaze nights fall 2013 - review swatches six shades pr samples hello lovelies ',true
+'2012 2013 14 somerset levels 2013 14 2015 16 2016 heat waves droughts 1906 1911 1955 1976 1990 2003 2006 spring 2011 2011 march 2012 2013 2016 storm surges south england 1287 north sea 1287 bristol channel 16071 north sea 1953 ',true
+'wikipedia org index php title autumn_2000_western_europe_floods oldid 757066820 categories 2000 disasters 2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events 2000 events october 2000 events november 2000 events december 2000 events hidden categories articles ',true
+'2000 floods 2000 ireland 2000 meteorology floods ireland floods floods europe european windstorms weather events 2000 events october 2000 events november 2000 events december 2000 events hidden categories articles ',true
+'issues parenting religion spirituality sports plan trip usa europe world com travel travel what\'s october november days shorter cooler nights ',true
+'parenting religion spirituality sports plan trip usa europe world com travel travel what\'s october november days shorter cooler nights festive ',true
+'trip usa europe world com travel travel what\'s october november days shorter cooler nights festive ',true
+'monday following 1 friday saturday sunday romania edit romania 11 monday following 11 friday saturday sunday edit schools historically begin knowledge 1 exact date ',true
+'following 1 friday saturday sunday romania edit romania 11 monday following 11 friday saturday sunday edit schools historically begin knowledge 1 exact date country fixed decree ',true
+'2016 today\'s edition november 23 2016 american list factory tours williams contributors videos look japanese michael williams posted 21 2009september 21 2009 filed look ',true
+'factory tours williams contributors videos look japanese michael williams posted 21 2009september 21 2009 filed look ',true
+'travel october november visit weather tips clothes book -introducing ',true
+'travel october november visit weather tips clothes book -introducing japan- inspired tokyo kyoto hokkaido osaka sightseeing shrines ',true
+'inspired sightseeing food drink culture otaku search english english 2016 06 07 update 5031 views travel october november visit weather tips clothes prefecture japanese culture ',true
+'sightseeing food drink culture otaku search english english 2016 06 07 update 5031 views travel october november visit weather tips clothes prefecture japanese culture spring considered season spend time ',true
+'drink culture otaku search english english 2016 06 07 update 5031 views travel october november visit weather tips clothes prefecture japanese culture spring considered season spend time vertical geography ',true
+'northern eastern western naha amami http www jma jp includes october november considered ',true
+'northern eastern western naha amami http www jma jp includes october november considered ',true
+'naha amami http www jma jp includes october november considered ',true
+'naha amami http www jma jp includes october november considered explanations based meteorological agency regions ',true
+'amami http www jma jp includes october november considered explanations based meteorological agency regions northern http blog goo ne jp yama-goma ',true
+'shrine walking guide sightseeing spots miyajima 2016 07 08 japanese culture rankings 1 travel october november visit weather tips clothes 2016 06 07 2 winter ',true
+'walking guide sightseeing spots miyajima 2016 07 08 japanese culture rankings 1 travel october november visit weather tips clothes 2016 06 07 2 winter travel december january february visit weather tips clothes 2016 06 07 ',true
+'please visit gq de issue credits include publication gq winter 2014 title vorsehung photography bruno staub styling tobias frericks john todd gq 2014 photography bruno staub follow john todd gq 2014 photography bruno staub john ',true
+'please visit gq de issue credits include publication gq winter 2014 title vorsehung photography bruno staub styling tobias frericks john todd gq 2014 photography bruno staub follow bruno staub gq john todd tobias frericks ',true
+'multimedia pictures cartoons audio slideshows video audio podcasts infographics glorious days 10 2012 ajay kamalakaran warm pleasant days welcome beautiful foliage months spend facebook twitter linkedin ',true
+'pictures cartoons audio slideshows video audio podcasts infographics glorious days 10 2012 ajay kamalakaran warm pleasant days welcome beautiful foliage months spend facebook twitter linkedin pinterest whatsapp print page related 5 fabulous russian destinations indian travellers ',true
+'10 2012 ajay kamalakaran warm pleasant days welcome beautiful foliage months spend facebook twitter linkedin pinterest whatsapp print page related 5 fabulous russian destinations indian travellers ',true
+'visit paris month st petersburg khabarovsk mentioned sites enormous eurasian landmass compare beauty moon majestic amur river reflecting golden domes nearby ',true
+'conference subscription subscribe sign book hotel add article search search home spoga horse 2011 spoga horse 2011 4-6 2011 koelnmesse koeln past view hotels near venue event - view upcoming events dubai international ',true
+'book hotel add article search search home spoga horse 2011 spoga horse 2011 4-6 2011 koelnmesse koeln past view hotels near venue event - view upcoming events dubai international ',true
+'pennsylvania horse world expo 2017 march 2-5 2017 harrisburg united events spoga horse 2011 held koeln 4-6 2011 international trade fair equestrian sports learn venue koelnmesse messeplatz 1 koeln ',true
+'csiro pre-breeding day wheat breeders 2010 - july 20 2010 canberra australia spoga horse 2010 - 5 2010 koeln similar events category lifestyle animals sport leisure concurrent events coffeena 2011 eu vend ',true
+'pressure caused warm air southern europe rise towards uk dates 25 3 october affected ireland temperature 29 9 gravesend england 1 2011 heat wave period unseasonably warm weather arrived towards ',true
+'selc homestay student survey brochure request blog date selc selc blog activities activities 5 2014selcblog happy monday 1st day ',true
+'date selc selc blog activities activities 5 2014selcblog happy monday 1st day month people argue doesn ',true
+'selc blog activities activities 5 2014selcblog happy monday 1st day month people argue doesn ',true
+'activities 5 2014selcblog happy monday 1st day month people argue doesn start equinox equinox ',true
+'5 2014selcblog happy monday 1st day month people argue doesn start equinox equinox ',true
+'winter sun holiday snorkel temperate barrier reef 4wd south simpson desert november time watch whales wildflowers explore ',true
+'snorkel temperate barrier reef 4wd south simpson desert november time watch whales wildflowers explore ',true
+'blue mountains christmas festivities view information add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'christmas festivities view information add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'information add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'add dream trip discover australia\'s discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'pressure caused warm air southern europe rise towards uk dates 25 3 october affected ireland temperature 29 9 gravesend england 1 2011 heat wave period unseasonably warm weather arrived towards ',true
+'discover australia\'s - tourism australias seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'discover australia\'s - tourism australias seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'discover australia\'s - tourism australias seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'australia\'s - tourism australias seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'1st - real ep 84 - youtube jp view message english youtube learn you\'re viewing ',true
+'1st - real ep 84 - youtube jp view message english youtube learn you\'re viewing ',true
+'you\'re viewing youtube japanese change preference below __count__ __total__ 1st - real ep 84 real 77 8247 130 668 2 068 2 069 95 96 2014 ',true
+'you\'re viewing youtube japanese change preference below __count__ __total__ 1st - real ep 84 real 77 8247 130 668 2 068 2 069 95 96 2014 ',true
+'77 8247 130 668 2 068 2 069 95 96 2014 09 03 1st beginning schools colleges universities country it\'s holiday called knowledges graders coming time class it\'s ',true
+'77 8247 130 668 2 068 2 069 95 96 2014 09 03 1st beginning schools colleges universities country it\'s holiday called knowledges graders coming time class it\'s ',true
+'pressure caused warm air southern europe rise towards uk dates 25 3 october affected ireland temperature 29 9 gravesend england 1 2011 heat wave period unseasonably warm weather arrived towards ',true
+'2012 2013 14 somerset levels 2013 14 2015 16 2016 heat waves droughts 1906 1911 1955 1976 1990 2003 2006 spring 2011 2011 march 2012 2013 2016 storm surges south england 1287 north sea 1287 bristol channel 16071 north sea 1953 ',true
+'title autumn_2011_united_kingdom_heat_wave oldid 757066663 categories 2011 heat waves 2011 ireland 2011 2011 meteorology heat waves weather events europe history gravesend kent 21st century kent weather events 2011 events october 2011 events hidden categories engvarb january 2014 dmy dates ',true
+'waves 2011 ireland 2011 2011 meteorology heat waves weather events europe history gravesend kent 21st century kent weather events 2011 events october 2011 events hidden categories engvarb january 2014 dmy dates ',true
+'bazaar june 2015 press harper bazaar june 2015 press harper bazaar march 2015 press harper bazaar october 2015 press harper bazaar 2013 press inspired 2014 press inspired winter 2014 press katy perry runa jewelry press azure ',true
+'bazaar june 2015 press harper bazaar march 2015 press harper bazaar october 2015 press harper bazaar 2013 press inspired 2014 press inspired winter 2014 press katy perry runa jewelry press azure ',true
+'bazaar march 2015 press harper bazaar october 2015 press harper bazaar 2013 press inspired 2014 press inspired winter 2014 press katy perry runa jewelry press azure ',true
+'loading related entry posted met office news tagged climate equinox met office nature\'s calendar spring summer summer solstice winter winter solstice woodland trust bookmark permalink weather satellite set ',true
+'home day growing guides calendar contact hours directions sboe day 19 2012 beautiful species formerly autumnalis blooming season plants offered seedlings ',true
+'1st - real ep 84 dayz3 ru dayz3 ru 1st - ',true
+'1st - real ep 84 dayz3 ru dayz3 ru 1st - ',true
+'1st - real ep 84 dayz3 ru dayz3 ru 1st - real ep 84 10 26 amusement park ',true
+'1st - real ep 84 dayz3 ru dayz3 ru 1st - real ep 84 10 26 amusement park children real ',true
+'1st - real ep 84 dayz3 ru dayz3 ru 1st - real ep 84 10 26 amusement park children real ep ',true
+'1st - real ep 84 dayz3 ru dayz3 ru 1st - real ep 84 10 26 amusement park children real ep ',true
+'1st - real ep 84 dayz3 ru dayz3 ru 1st - real ep 84 10 26 amusement park children real ep 81 amusement ',true
+'- real ep 84 dayz3 ru dayz3 ru 1st - real ep 84 10 26 amusement park children real ep 81 amusement park ',true
+'real ep 84 dayz3 ru dayz3 ru 1st - real ep 84 10 26 amusement park children real ep 81 amusement park ',true
+'be8_qxkj2j8 welcome real watch 9nnecdrdkym 3 48 getting ready realrussia week film episodes real busy getting ready victoria\'s coming 1st 2014 video little announcement upcoming episode ',true
+'welcome real watch 9nnecdrdkym 3 48 getting ready realrussia week film episodes real busy getting ready victoria\'s coming 1st 2014 video little announcement upcoming episode ',true
+'real watch 9nnecdrdkym 3 48 getting ready realrussia week film episodes real busy getting ready victoria\'s coming 1st 2014 video little announcement upcoming episode ',true
+'realrussia week film episodes real busy getting ready victoria\'s coming 1st 2014 video little announcement upcoming episode ',true
+'realrussia week film episodes real busy getting ready victoria\'s coming 1st 2014 video little announcement upcoming episode ',true
+'tower saint basil\'s cathedral historical museum gum department store mausoleum lenin totally hidden reconstruction 2068 130668 1st beginning schools colleges universities country it\'s holiday called knowledges graders coming time class it\'s ',true
+'gum department store mausoleum lenin totally hidden reconstruction 2068 130668 1st beginning schools colleges universities country it\'s holiday called knowledges graders coming time class it\'s ',true
+'mausoleum lenin totally hidden reconstruction 2068 130668 1st beginning schools colleges universities country it\'s holiday called knowledges graders coming time class it\'s ',true
+'mausoleum lenin totally hidden reconstruction 2068 130668 1st beginning schools colleges universities country it\'s holiday called knowledges graders coming time class it\'s ',true
+'taste books music cinema user realrussiablog realrussiablog realrussiablog support - ycm8n8 1st - real ep 84 ',true
+'books music cinema user realrussiablog realrussiablog realrussiablog support - ycm8n8 1st - real ep 84 ',true
+'2013 russian art tags art golden russian art russian russian landscape russian nature related posts russian russian art november russian art vasily polenov russian russian art post navigation moscow 5 raspberries nukes 27 russian ',true
+'golden russian art russian russian landscape russian nature related posts russian russian art november russian art vasily polenov russian russian art post navigation moscow 5 raspberries nukes 27 russian ',true
+'art russian russian landscape russian nature related posts russian russian art november russian art vasily polenov russian russian art post navigation moscow 5 raspberries nukes 27 russian ',true
+'celebration 2 - 1 2014 - blog - russian step step books natasha alexandrova welcome guest registration login ',true
+'1st - real ep 84 - pakfiles com sign sign toggle navigation pakfiles videos drama pakistani ',true
+'1st - real ep 84 - pakfiles com sign sign toggle navigation pakfiles videos drama pakistani ',true
+'courtsey youtube video content delivered directly youtube com 1st - real ep 84 uploaded smartboy 96627 views 10 26 amusement park children real ',true
+'youtube video content delivered directly youtube com 1st - real ep 84 uploaded smartboy 96627 views 10 26 amusement park children real ',true
+'real ep 14 383098 views 23-11-2012 videos video report video 1st beginning schools colleges universities country holiday called knowledges graders coming time class ',true
+'ep 14 383098 views 23-11-2012 videos video report video 1st beginning schools colleges universities country holiday called knowledges graders coming time class ',true
+'2 october 3 month month 4 june 5 com travel travel visiting it\'s it\'s it\'s manfred gottschalk lonely planet images getty images larry rivera ',true
+'month month 4 june 5 com travel travel visiting it\'s it\'s it\'s manfred gottschalk lonely planet images getty images larry rivera ',true
+'4 june 5 com travel travel visiting it\'s it\'s it\'s manfred gottschalk lonely planet images getty images larry rivera ',true
+'june 5 com travel travel visiting it\'s it\'s it\'s manfred gottschalk lonely planet images getty images larry rivera ',true
+'com travel travel visiting it\'s it\'s it\'s manfred gottschalk lonely planet images getty images larry rivera travel expert larry rivera updated july 22 2016 month season allows mother nature showcase ',true
+'com travel travel visiting it\'s it\'s it\'s manfred gottschalk lonely planet images getty images larry rivera travel expert larry rivera updated july 22 2016 month season allows mother nature showcase ',true
+'it\'s it\'s manfred gottschalk lonely planet images getty images larry rivera travel expert larry rivera updated july 22 2016 month season allows mother nature showcase ',true
+'getty images larry rivera travel expert larry rivera updated july 22 2016 month season allows mother nature showcase ',true
+'season allows mother nature showcase offer month southern it\'s season regrowth flowers popular month ',true
+'23 2015 22 2015 21 2015 20 2015 19 2015 18 2015 17 2015 16 2015 15 2015 vladimir smirnov tass banks volga river ples ivanovo region ',true
+'22 2015 21 2015 20 2015 19 2015 18 2015 17 2015 16 2015 15 2015 vladimir smirnov tass banks volga river ples ivanovo region ',true
+'21 2015 20 2015 19 2015 18 2015 17 2015 16 2015 15 2015 vladimir smirnov tass banks volga river ples ivanovo region ',true
+'20 2015 19 2015 18 2015 17 2015 16 2015 15 2015 vladimir smirnov tass banks volga river ples ivanovo region ',true
+'vladimir smirnov tass banks volga river ples ivanovo region sept 21 2015 facebook twitter linkedin pinterest whatsapp print page 22 2015 tags volga related articles 10 poetic landscapes russian artists 5 russian cities map ',true
+'1 students sennaya com forum facebook twitter travelers welcome guest please login register ',true
+'length news welcome expanded russian travel information features home help search login register travelers st petersburg holidays events st petersburg 1 students print pages 1 author topic 1 students ',true
+'home help search login register travelers st petersburg holidays events st petersburg 1 students print pages 1 author topic 1 students ',true
+'login register travelers st petersburg holidays events st petersburg 1 students print pages 1 author topic 1 students read 6422 times 0 ',true
+'travelers st petersburg holidays events st petersburg 1 students print pages 1 author topic 1 students read 6422 times 0 ',true
+'travelers st petersburg holidays events st petersburg 1 students print pages 1 author topic 1 students read 6422 times 0 1 guest viewing ',true
+'st petersburg holidays events st petersburg 1 students print pages 1 author topic 1 students read 6422 times 0 1 guest viewing ',true
+'petersburg holidays events st petersburg 1 students print pages 1 author topic 1 students read 6422 times 0 1 guest viewing topic ',true
+'events st petersburg 1 students print pages 1 author topic 1 students read 6422 times 0 1 guest viewing topic admiral_kolchak ',true
+'1 students print pages 1 author topic 1 students read 6422 times 0 1 guest viewing topic admiral_kolchak administrator ',true
+'0 1 guest viewing topic admiral_kolchak administrator posts 232 1 students november 30 2008 09 48 54 pm happy witness ',true
+'16 2010 11 59 28 pm mariria logged mariria administrator sr posts 474 1 students reply 1 01 2010 03 39 06 pm hello admiral kolchak ',true
+'59 28 pm mariria logged mariria administrator sr posts 474 1 students reply 1 01 2010 03 39 06 pm hello admiral kolchak pictures ',true
+'pm mariria logged mariria administrator sr posts 474 1 students reply 1 01 2010 03 39 06 pm hello admiral kolchak pictures ',true
+'holiday share nice thank logged print pages 1 travelers st petersburg holidays events st petersburg 1 students sennaya com forum smf 2 0 9 smf 2014 simple machines smfads ',true
+'logged print pages 1 travelers st petersburg holidays events st petersburg 1 students sennaya com forum smf 2 0 9 smf 2014 simple machines smfads free forums ',true
+'woman legend blog 09 06 12 1 kids start regardless ',true
+'woman legend blog 09 06 12 1 kids start regardless ',true
+'woman legend blog 09 06 12 1 kids start regardless ',true
+'woman legend blog 09 06 12 1 kids start regardless ',true
+'woman legend blog 09 06 12 1 kids start regardless ',true
+'woman legend blog 09 06 12 1 kids start regardless weekend huge deal ',true
+'woman legend blog 09 06 12 1 kids start regardless weekend huge deal ',true
+'woman legend blog 09 06 12 1 kids start regardless weekend huge deal ',true
+'winter 2 russian winter 1 share twitter facebook pinterest email loading 28 2014 russian art tags art golden russian art russian russian landscape russian nature related posts russian ',true
+'york los angeles miami previous post watch questions melodie monrose post binx 2015 birds chirping sound imagined degrees latitude north sign ',true
+'imagined degrees latitude north sign course issues dint earth axis exposure sun mark ',true
+'axis exposure sun mark winter beginning look promising 2015 cover elle features none kristina bazan photographed justin polkey celebrated designer ',true
+'axis exposure sun mark winter beginning look promising 2015 cover elle features none kristina bazan photographed justin polkey celebrated designer ',true
+'2015 photography justin polkey follow 25 august 2015 damien neva kristina bazan elle 2015 birds chirping sound imagined degrees latitude ',true
+'2015 photography justin polkey follow 25 august 2015 damien neva kristina bazan elle 2015 birds chirping sound imagined degrees latitude north ',true
+'photography justin polkey follow 25 august 2015 damien neva kristina bazan elle 2015 birds chirping sound imagined degrees latitude north sign ',true
+'imagined degrees latitude north sign course issues dint earth axis exposure sun mark ',true
+'axis exposure sun mark winter beginning look promising 2015 cover elle features none kristina bazan photographed justin polkey celebrated designer ',true
+'axis exposure sun mark winter beginning look promising 2015 cover elle features none kristina bazan photographed justin polkey celebrated designer ',true
+'2016 free week entry sanparks sa national parks heritage deals discounts entrance specials western cape mobile site home news hello 2017 news wine dine social holiday city news features ',true
+'money sports sections answers cloud services wikianswers categories travel countries cities time click answer october november southern hemisphere answer question yes ',true
+'sports sections answers cloud services wikianswers categories travel countries cities time click answer october november southern hemisphere answer question yes ',true
+'answers cloud services wikianswers categories travel countries cities time click answer october november southern hemisphere answer question yes ',true
+'wikianswers categories travel countries cities time click answer october november southern hemisphere answer question yes ',true
+'categories travel countries cities time click answer october november southern hemisphere answer question yes ',true
+'cities time click answer october november southern hemisphere answer question yes ',true
+'ford 10 found useful vafloyd 3 166 contributions answered continents start im starts 1st answer remember seasons ',true
+'buy travel news travel videos weekend breaks ultimate guide flower season read time 4 minutes posted 3 2013 getaway filed print post tweet email ',true
+'getaway filed print post tweet email day traditionally marks beginning flowers don care sticking schedule blooming ',true
+'discover australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'discover australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'discover australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'australia\'s - tourism australia\'s seasons discover australia\'s discover australia\'s discover season lasts november country tropical north build-up ',true
+'1 kids ukraine em elena\'s models meet love life join free english ',true
+'1 kids ukraine em elena\'s models meet love life join free english articles menu search 1 children ukraine 1 20151 commentby elena millions ',true
+'1 kids ukraine em elena\'s models meet love life join free english articles menu search 1 children ukraine 1 20151 commentby elena millions kids aged ',true
+'kids ukraine em elena\'s models meet love life join free english articles menu search 1 children ukraine 1 20151 commentby elena millions kids aged 6-17 started ',true
+'meet love life join free english articles menu search 1 children ukraine 1 20151 commentby elena millions kids aged 6-17 started ',true
+'love life join free english articles menu search 1 children ukraine 1 20151 commentby elena millions kids aged 6-17 started 1 2015 ',true
+'communicating children aged 6-17 kids classes time lives pretty event video 1 2015 angarsk pupils teachers russian city angarsk 1 2015 knowledge ',true
+'children aged 6-17 kids classes time lives pretty event video 1 2015 angarsk pupils teachers russian city angarsk 1 2015 knowledge major siberian angarsk 25 thousand pupils started ',true
+'kids classes time lives pretty event video 1 2015 angarsk pupils teachers russian city angarsk 1 2015 knowledge major siberian angarsk 25 thousand pupils started 35 city schools sergey petrov assembly ',true
+'content mendeleyev journal live moscow life events art culture language music 1 knowledge bell moscow celebrations 29 08 201230 08 2012 ',true
+'mendeleyev journal live moscow life events art culture language music 1 knowledge bell moscow celebrations 29 08 201230 08 2012 country busy saturday ',true
+'busy saturday 1 1 traditional bell call knowledge begin saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region ',true
+'busy saturday 1 1 traditional bell call knowledge begin saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region ',true
+'1 traditional bell call knowledge begin saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region ',true
+'knowledge begin saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region ',true
+'saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region ',true
+'saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region widely celebrated holiday russian speaking world ',true
+'saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region widely celebrated holiday russian speaking world ',true
+'saturday considered calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region widely celebrated holiday russian speaking world ',true
+'calendar former soviet union 1 tradition 1 1 knowledge ukraine georgia region widely celebrated holiday russian speaking world traditionally celebrated ',true
+'former soviet union 1 tradition 1 1 knowledge ukraine georgia region widely celebrated holiday russian speaking world traditionally celebrated ',true
+'green gold parks burst color photos st petersburg half weather st petersburg usually warm dry average temperatures ',true
+'emilie 2013 - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'you\'re viewing youtube japanese change preference below __count__ __total__ emilie 2013 1313 187 1 2 0 1 2013 08 13 emilie russian plague rat ',true
+'viewing youtube japanese change preference below __count__ __total__ emilie 2013 1313 187 1 2 0 1 2013 08 13 emilie russian plague rat www vk com emilie_the_asylum youtube emilie pill google play ',true
+'foundation digital tree knowledge day day imagine possibilities growth tree celebrate gain ',true
+'humanities politics opinion travel blogging tips lists deutsch en espa ol author contact travel delights blossoms sights trails written veronica date post 6 20126 2012 leave comment southern hemisphere ',true
+'opinion travel blogging tips lists deutsch en espa ol author contact travel delights blossoms sights trails written veronica date post 6 20126 2012 leave comment southern hemisphere ',true
+'below weather forecast weather freemeteo com top page seasons months october november winter season changes conditions windy ',true
+'weather forecast weather freemeteo com top page seasons months october november winter season changes conditions windy ',true
+'coastal except maybe western cape coast flowering jacaranda trees pretoria copyright african tourism - weather forecast climate world time throughout months august october time enjoy indigenous wild flowers cape town ',true
+'western cape coast flowering jacaranda trees pretoria copyright african tourism - weather forecast climate world time throughout months august october time enjoy indigenous wild flowers cape town ',true
+'spring sales traditionally held late march shopping associate labor day monday widely observed holiday inherent celebrations shopping tradition ',false
+'weather 2017 - accuweather forecast ca 90802 recent locations ca48 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country weather partnership follow login weather ca local weather 48 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country weather partnership follow login weather ca local weather 48 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'ipad ads featured music composer esa-pekka salonen travel blogger ch rie king apple\'s promotion runs 9 available program expected available austria belgium canada denmark finland ',false
+'dementieva elena makarova udmila cervanov daniela hantuchov 5 7 65 77 6 final edit vs russia edit 4 taube tennis stadium stanford ca 18 19 1999 plexipave russia 1 1 2 3 1 venus williams elena likhovtseva 6 3 6 4 2 ',false
+'cervanov daniela hantuchov 5 7 65 77 6 final edit vs russia edit 4 taube tennis stadium stanford ca 18 19 1999 plexipave russia 1 1 2 3 1 venus williams elena likhovtseva 6 3 6 4 2 ',false
+'daniela hantuchov 5 7 65 77 6 final edit vs russia edit 4 taube tennis stadium stanford ca 18 19 1999 plexipave russia 1 1 2 3 1 venus williams elena likhovtseva 6 3 6 4 2 ',false
+'final edit vs russia edit 4 taube tennis stadium stanford ca 18 19 1999 plexipave russia 1 1 2 3 1 venus williams elena likhovtseva 6 3 6 4 2 ',false
+'- canada - destinations - europe - kingdom - packing preparation philippines south africa arab emirates browse tag schools 8th 2010 schools 8th 2010 topic ',false
+'- europe - kingdom - packing preparation philippines south africa arab emirates browse tag schools 8th 2010 schools 8th 2010 topic ',false
+'- kingdom - packing preparation philippines south africa arab emirates browse tag schools 8th 2010 schools 8th 2010 topic ',false
+'world world world world world note select region finding country west palm weather follow login weather west palm fl local weather 78 local weather today\'s weather hourly forecast ',false
+'world world world world note select region finding country west palm weather follow login weather west palm fl local weather 78 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'policy update - 9 2015 - - cookies online experience using website ',false
+'policy update - 9 2015 - - cookies online experience using website ',false
+'cookies accordance cookie policy learn close home usa policy update - 9 2015 updated 16 2015 article russell sullivan rosemary becchi danielle ',false
+'cookies accordance cookie policy learn close home usa policy update - 9 2015 updated 16 2015 article russell sullivan rosemary becchi danielle ',false
+'virginia weather 2017 - accuweather forecast va 23451 recent locations virginia va48 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country virginia weather follow login weather virginia va local weather 48 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country virginia weather follow login weather virginia va local weather 48 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny52 miami fl80 los angeles ca48 browse location recent countries china kingdom countries world north america ',false
+'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',false
+'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',false
+'1964 1968 1972 1976 1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 scheduled compete 2016 paralympics rio de janeiro brazil 7 18 2016 team qualified athletes ',false
+'standard route bryan barten qualified via bipartite commission invitation 56 edit 2016 olympics references edit http www teamusa org news 2016 06 allison-jones-selected-as-us-flag-bearer-for-rio-2016-paralympic-games http www teamusa org news 2016 17 us-army-veteran-and-soccer-player-josh-brunais-elected-us-flag-bearer-for-closing-ceremony ',false
+'satisfy price contact sheela 90 street dogs sausages - - 2014 6 suite 700 albany ny - 12207 tel 1-518-618-1030 usa - canada toll free 866-997-4948 email sales researchmoz website http www ',false
+'1964 1968 1972 1976 1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 competed 2012 paralympics london kingdom august 29 9 2012 contents 1 medallists 1 1 multiple medallists 2 archery 3 athletics 4 boccia ',false
+'1968 1972 1976 1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 competed 2012 paralympics london kingdom august 29 9 2012 contents 1 medallists 1 1 multiple medallists 2 archery 3 athletics 4 boccia ',false
+'- mt wy ynp gtnp trip report forum fodor\'s travel talk forums log subscribe facebook twitter pinterest instagram google home menu ',false
+'view trip ideas log subscribe follow facebook twitter pinterest instagram google forums - mt wy ynp gtnp trip report forums search forums post ',false
+'trip ideas log subscribe follow facebook twitter pinterest instagram google forums - mt wy ynp gtnp trip report forums search forums post topic change forum africa middle east asia ',false
+'trip ideas log subscribe follow facebook twitter pinterest instagram google forums - mt wy ynp gtnp trip report forums search forums post topic change forum africa middle east asia australia ',false
+'tibet guizhou province tips time travel cool school breaks coming probably search holiday wish list lasts late destination charm span time read ',false
+'tibet guizhou province tips time travel cool school breaks coming probably search holiday wish list lasts late destination charm span time read ',false
+'missouri enacts amnesty program begin 1 2015 - - cookies online experience using website ',false
+'missouri enacts amnesty program begin 1 2015 - - cookies online experience using website ',false
+'cookies accordance cookie policy learn close home usa missouri enacts amnesty program begin 1 2015 updated 12 2015 article roy tegenkamp richard lenza amy greiner ',false
+'cookies accordance cookie policy learn close home usa missouri enacts amnesty program begin 1 2015 updated 12 2015 article roy tegenkamp richard lenza amy greiner ',false
+'shi dongshan\'s stars milky disc released 11 2007 edit references edit pang laikwan building cinema chinese left-wing cinema movement york rowman littlefield 2002 26 bi-qi beatrice ',false
+'school vacations breaks coming probably search holiday wish list lasts late destination charm span time read ',false
+'vacations breaks coming probably search holiday wish list lasts late destination charm span time read ',false
+'probably search holiday wish list lasts late destination charm span time read following bullet ',false
+'genesis cast \'house calls\' stephh1041 61 contributions answered chinese territories rainy usually especially dry northwest changes precipitation ',false
+'\'house calls\' stephh1041 61 contributions answered chinese territories rainy usually especially dry northwest changes precipitation ',false
+'mccain arab spread iran russia 14 2011 - youtube jp view message english youtube learn you\'re viewing ',false
+'viewing youtube japanese change preference below __count__ __total__ mccain arab spread iran russia 14 2011 wolkenzwemmer 739739 2 460 7 8 0 1 2011 09 14 ',false
+'korea europe netherlands switzerland belgium ukraine france russia spain italy africa algeria middle east egypt national flower hafeez sayag 26 2016 asia national flower comments please share flower national ',false
+'europe netherlands switzerland belgium ukraine france russia spain italy africa algeria middle east egypt national flower hafeez sayag 26 2016 asia national flower comments please share flower national flower prunus scientific ',false
+'france russia spain italy africa algeria middle east egypt national flower hafeez sayag 26 2016 asia national flower comments please share flower national flower prunus scientific name ',false
+'italy africa algeria middle east egypt national flower hafeez sayag 26 2016 asia national flower comments please share flower national flower prunus scientific name ',false
+'school typically 6 14 weeks depending country district break approximately 2 5 months mid-june ireland italy greece lithuania latvia lebanon romania russia break normally ',false
+'characters iran south africa wheelchair basketball 2008 paralympics 2008 paralympic games chinese thirteenth paralympics beijing 6 17 2008 2008 olympics equestrian events held ',false
+'paralympics 2008 paralympic games chinese thirteenth paralympics beijing 6 17 2008 2008 olympics equestrian events held hong kong sailing events qingdao 3 951 ',false
+'index php title 2008_summer_paralympics oldid 756592019 categories 2008 multi-sport events 2008 olympics 2008 paralympics sport beijing 2008 chinese sport international sports competitions hosted 21st century beijing multi-sport events paralympic games 2008 sports events hidden categories articles dead external links articles dead external ',false
+'2008 paralympics sport beijing 2008 chinese sport international sports competitions hosted 21st century beijing multi-sport events paralympic games 2008 sports events hidden categories articles dead external links articles dead external ',false
+'chinese sport international sports competitions hosted 21st century beijing multi-sport events paralympic games 2008 sports events hidden categories articles dead external links articles dead external ',false
+'ihg rewards club 50 flash sale stays 30 2015 11 loyaltylobby close home contact john hotel videos hotel ',false
+'choice fairmont hilton hyatt ihg rewards club marriott ritz-carlton starwood wyndham rss ihg rewards club 50 flash sale stays 30 2015 11 john ollila - sep 11 2015 0 comments facebook twitter ',false
+'japanese retrieved august 25 2016 billboard 100 2016 9 5 billboard japanese retrieved august 31 2016 billboard 100 2016 9 12 billboard japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved ',false
+'100 2016 9 5 billboard japanese retrieved august 31 2016 billboard 100 2016 9 12 billboard japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved ',false
+'100 2016 9 5 billboard japanese retrieved august 31 2016 billboard 100 2016 9 12 billboard japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved ',false
+'japanese retrieved august 31 2016 billboard 100 2016 9 12 billboard japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved 14 2016 billboard ',false
+'august 31 2016 billboard 100 2016 9 12 billboard japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved 14 2016 billboard ',false
+'100 2016 9 12 billboard japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved 14 2016 billboard 100 2016 9 26 billboard japanese retrieved ',false
+'100 2016 9 12 billboard japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved 14 2016 billboard 100 2016 9 26 billboard japanese retrieved ',false
+'japanese retrieved 7 2016 billboard 100 2016 9 19 billboard japanese retrieved 14 2016 billboard 100 2016 9 26 billboard japanese retrieved 21 2016 billboard ',false
+'7 2016 billboard 100 2016 9 19 billboard japanese retrieved 14 2016 billboard 100 2016 9 26 billboard japanese retrieved 21 2016 billboard ',false
+'100 2016 9 19 billboard japanese retrieved 14 2016 billboard 100 2016 9 26 billboard japanese retrieved 21 2016 billboard 100 2016 10 3 billboard japanese retrieved ',false
+'100 2016 9 19 billboard japanese retrieved 14 2016 billboard 100 2016 9 26 billboard japanese retrieved 21 2016 billboard 100 2016 10 3 billboard japanese retrieved ',false
+'japanese retrieved 14 2016 billboard 100 2016 9 26 billboard japanese retrieved 21 2016 billboard 100 2016 10 3 billboard japanese retrieved 28 2016 billboard ',false
+'14 2016 billboard 100 2016 9 26 billboard japanese retrieved 21 2016 billboard 100 2016 10 3 billboard japanese retrieved 28 2016 billboard ',false
+'100 2016 9 26 billboard japanese retrieved 21 2016 billboard 100 2016 10 3 billboard japanese retrieved 28 2016 billboard 100 2016 10 10 billboard japanese retrieved october ',false
+'100 2016 9 26 billboard japanese retrieved 21 2016 billboard 100 2016 10 3 billboard japanese retrieved 28 2016 billboard 100 2016 10 10 billboard japanese retrieved october ',false
+'japanese retrieved 21 2016 billboard 100 2016 10 3 billboard japanese retrieved 28 2016 billboard 100 2016 10 10 billboard japanese retrieved october 5 2016 billboard ',false
+'21 2016 billboard 100 2016 10 3 billboard japanese retrieved 28 2016 billboard 100 2016 10 10 billboard japanese retrieved october 5 2016 billboard ',false
+'region\'s top musical acts 2006 07 expansion outside korea edit asia edit bangkok 2007 released japanese album eternal 13 2006 held japanese solo concert rainy day tickets concert sold tickets 30 ',false
+'top musical acts 2006 07 expansion outside korea edit asia edit bangkok 2007 released japanese album eternal 13 2006 held japanese solo concert rainy day tickets concert sold tickets 30 ',false
+'korea edit asia edit bangkok 2007 released japanese album eternal 13 2006 held japanese solo concert rainy day tickets concert sold tickets 30 ',false
+'kazakhstan 6 9 ryde aquatic leisure centre semifinals 22 19 15 6 5 netherlands ryde aquatic leisure centre gold medal match 23 21 15 australia 4 3 ryde aquatic leisure centre weightlifting edit main article weightlifting 2000 olympics athlete event snatch clean jerk total rank 1 2 3 1 2 3 ',false
+'22 19 15 6 5 netherlands ryde aquatic leisure centre gold medal match 23 21 15 australia 4 3 ryde aquatic leisure centre weightlifting edit main article weightlifting 2000 olympics athlete event snatch clean jerk total rank 1 2 3 1 2 3 ',false
+'https en wikipedia org index php title labor_day oldid 756110532 categories labor public holidays recurring events established 1882 movable observances holidays 1882 establishments federal holidays hidden categories ',false
+'en wikipedia org index php title labor_day oldid 756110532 categories labor public holidays recurring events established 1882 movable observances holidays 1882 establishments federal holidays hidden categories ',false
+'php title labor_day oldid 756110532 categories labor public holidays recurring events established 1882 movable observances holidays 1882 establishments federal holidays hidden categories ',false
+'title labor_day oldid 756110532 categories labor public holidays recurring events established 1882 movable observances holidays 1882 establishments federal holidays hidden categories wikipedia pending changes protected pages level ',false
+'public holidays recurring events established 1882 movable observances holidays 1882 establishments federal holidays hidden categories wikipedia pending changes protected pages level 1 ',false
+'81 51 239 paralympics appearances 1984 1988 1992 1996 2000 2004 2008 2012 2016 qualified send athletes 2016 paralympics rio de janeiro brazil 7 18 2016 sports scheduled compete include blind football archery ',false
+'1996 2000 2004 2008 2012 2016 qualified send athletes 2016 paralympics rio de janeiro brazil 7 18 2016 sports scheduled compete include blind football archery boccia cycling goalball judo paracanoeing sitting ',false
+'japanese retrieved july 1 2015 billboard 100 2015 7 13 billboard japanese retrieved july 8 2015 billboard 100 2015 7 20 billboard japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved ',false
+'100 2015 7 13 billboard japanese retrieved july 8 2015 billboard 100 2015 7 20 billboard japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved ',false
+'100 2015 7 13 billboard japanese retrieved july 8 2015 billboard 100 2015 7 20 billboard japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved ',false
+'japanese retrieved july 8 2015 billboard 100 2015 7 20 billboard japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved 2 2015 billboard ',false
+'july 8 2015 billboard 100 2015 7 20 billboard japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved 2 2015 billboard ',false
+'100 2015 7 20 billboard japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved 2 2015 billboard 100 2015 8 3 billboard japanese retrieved ',false
+'100 2015 7 20 billboard japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved 2 2015 billboard 100 2015 8 3 billboard japanese retrieved ',false
+'japanese retrieved 2 2015 billboard 100 2015 7 27 billboard japanese retrieved 2 2015 billboard 100 2015 8 3 billboard japanese retrieved 2 2015 billboard ',false
+'2 2015 billboard 100 2015 7 27 billboard japanese retrieved 2 2015 billboard 100 2015 8 3 billboard japanese retrieved 2 2015 billboard ',false
+'100 2015 7 27 billboard japanese retrieved 2 2015 billboard 100 2015 8 3 billboard japanese retrieved 2 2015 billboard 100 2015 8 10 billboard japanese retrieved ',false
+'100 2015 7 27 billboard japanese retrieved 2 2015 billboard 100 2015 8 3 billboard japanese retrieved 2 2015 billboard 100 2015 8 10 billboard japanese retrieved ',false
+'japanese retrieved 2 2015 billboard 100 2015 8 3 billboard japanese retrieved 2 2015 billboard 100 2015 8 10 billboard japanese retrieved 2 2015 billboard ',false
+'2 2015 billboard 100 2015 8 3 billboard japanese retrieved 2 2015 billboard 100 2015 8 10 billboard japanese retrieved 2 2015 billboard ',false
+'100 2015 8 3 billboard japanese retrieved 2 2015 billboard 100 2015 8 10 billboard japanese retrieved 2 2015 billboard 100 2015 8 17 billboard japanese retrieved ',false
+'100 2015 8 3 billboard japanese retrieved 2 2015 billboard 100 2015 8 10 billboard japanese retrieved 2 2015 billboard 100 2015 8 17 billboard japanese retrieved ',false
+'japanese retrieved 2 2015 billboard 100 2015 8 10 billboard japanese retrieved 2 2015 billboard 100 2015 8 17 billboard japanese retrieved 2 2015 billboard ',false
+'2 2015 billboard 100 2015 8 10 billboard japanese retrieved 2 2015 billboard 100 2015 8 17 billboard japanese retrieved 2 2015 billboard ',false
+'100 2015 8 10 billboard japanese retrieved 2 2015 billboard 100 2015 8 17 billboard japanese retrieved 2 2015 billboard 100 2015 8 24 billboard japanese retrieved ',false
+'100 2015 8 10 billboard japanese retrieved 2 2015 billboard 100 2015 8 17 billboard japanese retrieved 2 2015 billboard 100 2015 8 24 billboard japanese retrieved ',false
+'japanese retrieved 2 2015 billboard 100 2015 8 17 billboard japanese retrieved 2 2015 billboard 100 2015 8 24 billboard japanese retrieved 2 2015 billboard ',false
+'2 2015 billboard 100 2015 8 17 billboard japanese retrieved 2 2015 billboard 100 2015 8 24 billboard japanese retrieved 2 2015 billboard ',false
+'100 2015 8 17 billboard japanese retrieved 2 2015 billboard 100 2015 8 24 billboard japanese retrieved 2 2015 billboard 100 2015 8 31 billboard japanese retrieved ',false
+'100 2015 8 17 billboard japanese retrieved 2 2015 billboard 100 2015 8 24 billboard japanese retrieved 2 2015 billboard 100 2015 8 31 billboard japanese retrieved ',false
+'japanese retrieved 2 2015 billboard 100 2015 8 24 billboard japanese retrieved 2 2015 billboard 100 2015 8 31 billboard japanese retrieved 2 2015 billboard ',false
+'2 2015 billboard 100 2015 8 24 billboard japanese retrieved 2 2015 billboard 100 2015 8 31 billboard japanese retrieved 2 2015 billboard ',false
+'100 2015 8 24 billboard japanese retrieved 2 2015 billboard 100 2015 8 31 billboard japanese retrieved 2 2015 billboard 100 2015 9 7 billboard japanese retrieved ',false
+'100 2015 8 24 billboard japanese retrieved 2 2015 billboard 100 2015 8 31 billboard japanese retrieved 2 2015 billboard 100 2015 9 7 billboard japanese retrieved ',false
+'japanese retrieved 2 2015 billboard 100 2015 8 31 billboard japanese retrieved 2 2015 billboard 100 2015 9 7 billboard japanese retrieved 2 2015 billboard ',false
+'2 2015 billboard 100 2015 8 31 billboard japanese retrieved 2 2015 billboard 100 2015 9 7 billboard japanese retrieved 2 2015 billboard ',false
+'100 2015 8 31 billboard japanese retrieved 2 2015 billboard 100 2015 9 7 billboard japanese retrieved 2 2015 billboard 100 2015 9 14 billboard japanese retrieved october ',false
+'100 2015 8 31 billboard japanese retrieved 2 2015 billboard 100 2015 9 7 billboard japanese retrieved 2 2015 billboard 100 2015 9 14 billboard japanese retrieved october ',false
+'japanese retrieved 2 2015 billboard 100 2015 9 7 billboard japanese retrieved 2 2015 billboard 100 2015 9 14 billboard japanese retrieved october 12 2015 billboard ',false
+'2 2015 billboard 100 2015 9 7 billboard japanese retrieved 2 2015 billboard 100 2015 9 14 billboard japanese retrieved october 12 2015 billboard ',false
+'ihg rewards club 50 flash sale stays 30 2015 4 loyaltylobby close home contact john hotel videos hotel ',false
+'choice fairmont hilton hyatt ihg rewards club marriott ritz-carlton starwood wyndham rss ihg rewards club 50 flash sale stays 30 2015 4 john ollila - sep 4 2015 0 comments facebook twitter ',false
+'77 35 40 70 65 typhoon season reaches peak august typhoons usually hit coasts okinawa kyushu shikoku cause strong wind wide days luckily typhoons followed perfectly weather weather ',false
+'manhattan 5 tour \'09 - youtube jp view message english youtube learn you\'re viewing ',false
+'learn you\'re viewing youtube japanese change preference below __count__ __total__ manhattan 5 tour \'09 nebusock 1111 4 714 6 7 0 1 2009 07 12 ongakudo ',false
+'ueda unno tadataka kazuaki yokoyama ds youtube pia beck - - 5 48 fahsijbrands 62 320 5 48 50 - manhattan 5 tour \'09youtube - 7 59 cal haines 3 882 7 59 ',false
+'- - 5 48 fahsijbrands 62 320 5 48 50 - manhattan 5 tour \'09youtube - 7 59 cal haines 3 882 7 59 ',false
+'- 5 48 fahsijbrands 62 320 5 48 50 - manhattan 5 tour \'09youtube - 7 59 cal haines 3 882 7 59 i\'m ',false
+'5 48 fahsijbrands 62 320 5 48 50 - manhattan 5 tour \'09youtube - 7 59 cal haines 3 882 7 59 i\'m mood love ',false
+'- 10 53 londonpack 2 050 10 53 suzukake michi satoshi inoue manhattan 5 tour \'09 - 7 52 dadazee 12 062 7 52 frank wess barcelona jazz orquestra - 7 00 joan chamorro 5 519 7 00 - ',false
+'october 8 2010 1 12 april 2011 february 15 2010 wang ying 30 august 2011 airlines looks japan expansion daily retrieved 2 2013 sanders fay 30 2011 airlines hunt jv partner ',false
+'february 15 2010 wang ying 30 august 2011 airlines looks japan expansion daily retrieved 2 2013 sanders fay 30 2011 airlines hunt jv partner five narrowbodies ascend retrieved 2 2013 ',false
+'tomohide harada cinematography shinya kimura edited junichi ito production company nikkatsu release dates 7 2010 2010-09-07 venice film festival january 29 2011 2011-01-29 running time 145 minutes country language japanese fish tsumetai nettaigyo 2010 japanese horror-drama 1 serial killer film directed sion ',false
+'neil 5th night concert nuremberg 5 1982 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'youtube japanese change preference below __count__ __total__ neil 5th night concert nuremberg 5 1982 dtmathews 44 883 6 7 0 1 2015 01 24 recorded sony ',false
+'touring family ce3 cars toggle navigation ce3 cars touring family 29 2014september 30 2014 graham car news family memorable enjoyable type ',false
+'touring family ce3 cars toggle navigation ce3 cars touring family 29 2014september 30 2014 graham car news family memorable enjoyable type ',false
+'family ce3 cars toggle navigation ce3 cars touring family 29 2014september 30 2014 graham car news family memorable enjoyable type sorts ',false
+'family ce3 cars toggle navigation ce3 cars touring family 29 2014september 30 2014 graham car news family memorable enjoyable type sorts reasons ',false
+'destination rain average amount rain observed 48 mm 9 18 days avoid rain preferred destination brighton note ',false
+'swedish itunes store sweden apple retrieved 3 march 2013 black blue 2009 7digital retrieved 13 2012 black blue ep miike itunes store apple retrieved 13 2012 black blue 12 miike ',false
+'itunes store sweden apple retrieved 3 march 2013 black blue 2009 7digital retrieved 13 2012 black blue ep miike itunes store apple retrieved 13 2012 black blue 12 miike ',false
+'apple retrieved 3 march 2013 black blue 2009 7digital retrieved 13 2012 black blue ep miike itunes store apple retrieved 13 2012 black blue 12 miike columbia ',false
+'2009 7digital retrieved 13 2012 black blue ep miike itunes store apple retrieved 13 2012 black blue 12 miike columbia 2009 lc00162 ',false
+'retrieved 13 2012 black blue ep miike itunes store apple retrieved 13 2012 black blue 12 miike columbia 2009 lc00162 black blue 12 vinyl amazon co uk retrieved ',false
+'retrieved 13 2012 black blue ep miike itunes store apple retrieved 13 2012 black blue 12 miike columbia 2009 lc00162 black blue 12 vinyl amazon co uk retrieved 2 ',false
+'black blue ep miike itunes store apple retrieved 13 2012 black blue 12 miike columbia 2009 lc00162 black blue 12 vinyl amazon co uk retrieved 2 march ',false
+'bbc news bbc 15 august 2011 retrieved 2 march 2013 hol-billy sun 18 2009 retrieved 2 march 2013 black blue miike itunes store apple retrieved 3 march 2013 black blue miike itunes store belgium apple retrieved ',false
+'billboard 100 7 2013 top 25 - youtube jp view message english youtube learn ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ billboard 100 7 2013 top 25 selenabritroma 105105 6 966 11 12 1 2 2013 09 02 ',false
+'100 august 24 2013 top 25 - 6 32 selenabritroma 1 985 6 32 billboard 100 14 2013 top 25 - 6 14 selenabritroma 246 6 14 top 20 ',false
+'temperature travel january december february isn\'t bad ton that\'s typhoon season why\'s rainy june that\'s rainy season ',false
+'position region\'s top musical acts 2006 07 expansion outside koreaedit asiaedit bangkok 2007 released japanese album eternal 13 2006 held japanese solo concert rainy day tickets concert sold tickets 30 ',false
+'region\'s top musical acts 2006 07 expansion outside koreaedit asiaedit bangkok 2007 released japanese album eternal 13 2006 held japanese solo concert rainy day tickets concert sold tickets 30 ',false
+'expansion outside koreaedit asiaedit bangkok 2007 released japanese album eternal 13 2006 held japanese solo concert rainy day tickets concert sold tickets 30 ',false
+'tokyo 13-15 2016 - rfid img alt forward vision analytics width 1 height 1 src win staticstuff net ',false
+'news newsletters contact aim alliance association automatic identification mobility tokyo 13-15 2016 tokyo final agenda tokyo meetings 13 15 2016 meetings ',false
+'newsletters contact aim alliance association automatic identification mobility tokyo 13-15 2016 tokyo final agenda tokyo meetings 13 15 2016 meetings sponsored ',false
+'aim alliance association automatic identification mobility tokyo 13-15 2016 tokyo final agenda tokyo meetings 13 15 2016 meetings sponsored rflocus fast value global voyantic murata denso 13 ',false
+'771 world record 2 won gold medal edit 2008 olympics references edit wheelchair fencer olympic hopes yomiuri shimbun 5 august 2008 retrieved 2 2008 dead link briton kenny hits gold world record double yomiuri shimbun ',false
+'2008 dead link briton kenny hits gold world record double yomiuri shimbun 9 2008 retrieved 22 2008 nations 2008 paralympics beijing china africa algeria angola benin botswana burkina faso burundi cape verde central ',false
+'1962 meteorology 1963 meteorology 1962 natural disasters 1963 natural disasters cold waves weather events weather events hidden categories british english march 2015 dmy dates 2011 navigation menu personal tools logged talk contributions create account log namespaces ',false
+'meteorology 1963 meteorology 1962 natural disasters 1963 natural disasters cold waves weather events weather events hidden categories british english march 2015 dmy dates 2011 navigation menu personal tools logged talk contributions create account log namespaces ',false
+'1962 natural disasters 1963 natural disasters cold waves weather events weather events hidden categories british english march 2015 dmy dates 2011 navigation menu personal tools logged talk contributions create account log namespaces ',false
+'286-0048 4 11 2 lcc nikkei trendy net 8 august 2014 retrieved 1 february 2016 airlines approved delays launch 2014 report capa 13 june 2013 retrieved 2 2013 wang ying 30 august 2011 airlines looks expansion china daily ',false
+'11 2 lcc nikkei trendy net 8 august 2014 retrieved 1 february 2016 airlines approved delays launch 2014 report capa 13 june 2013 retrieved 2 2013 wang ying 30 august 2011 airlines looks expansion china daily retrieved 2 2013 sanders fay 30 ',false
+'airlines approved delays launch 2014 report capa 13 june 2013 retrieved 2 2013 wang ying 30 august 2011 airlines looks expansion china daily retrieved 2 2013 sanders fay 30 2011 airlines ',false
+'2014 report capa 13 june 2013 retrieved 2 2013 wang ying 30 august 2011 airlines looks expansion china daily retrieved 2 2013 sanders fay 30 2011 airlines hunt jv partner ',false
+'june 2013 retrieved 2 2013 wang ying 30 august 2011 airlines looks expansion china daily retrieved 2 2013 sanders fay 30 2011 airlines hunt jv partner five narrowbodies ascend retrieved 2 2013 ',false
+'incomplete please help improve discuss issue talk page 2012 2012 paralympics ipc code jpn npc paralympic committee website www jsad jp japanese ',false
+'releasing fifth japanese single october 19 titled magic album covers album unveiled 27 1 song hit radio immediately afterwards radio rip surfaced online 24 3 music video ',false
+'south west bushfire season outlook australian broadcasting corporation 15 november 2011 retrieved 9 december 2012 torch northern beef central 14 2011 retrieved 9 december 2012 control bushfire scorched runners police ',false
+'threatens humpty doo properties nt news news corp retrieved 8 october 2016 brann matt 18 2014 nt cattle stations battle huge bushfire abc news retrieved 8 december 2014 queensland heatwave crews brace state\'s south abc news australian broadcasting commission 27 october 2014 retrieved 2 november ',false
+'incomplete please help improve discuss issue talk page 2012 2012 paralympics ipc code ger npc national paralympic committee website www dbs-npc de german ',false
+'66 paralympics appearances 1992 1996 2000 2004 2008 2012 2016 related appearances west 1960 1988 east 1984 competed 2012 paralympics london united kingdom 29 august 9 2012 150 german athletes 88 62 women participated london 2 contents 1 ',false
+'1992 1996 2000 2004 2008 2012 2016 related appearances west 1960 1988 east 1984 competed 2012 paralympics london united kingdom 29 august 9 2012 150 german athletes 88 62 women participated london 2 contents 1 ',false
+'2000 2004 2008 2012 2016 related appearances west 1960 1988 east 1984 competed 2012 paralympics london united kingdom 29 august 9 2012 150 german athletes 88 62 women participated london 2 contents 1 ',false
+'south wales rural fire service 36 2 archived original pdf 27 2016 retrieved 5 june 2015 australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern seaboard 1994 ',false
+'2006 official report - snowboarding pdf torino organizing committee la84 foundation march 2009 retrieved 22 2009 dead link external links edit australian noc olympic institute australian olympic committee 2006 australian olympic team pdf file 25 january 2006 ',false
+'western australia\'s wildflowers western australia\'s wildflowers western australia\'s wildflowers forget drab days bleak landscapes western breaks stereotypes june 12 000 wildflower species explode follow vivid trail ',false
+'28 29 february autumn 1 march 31 winter 1 june 31 august spring 1 30 november tropical northern queensland western northern territory dry seasons observed addition temperate names 16 six-season calendar reckoning edit calendars south asia six-season method ',false
+'22 2014 - 1 10am day aussie born bred official day december 1st autumn march 1st winter june 1st spring 1st country equinoxes likewise solstices ',false
+'1996 2000 2004 2008 2012 2016 related appearances soviet union 1988 unified team 1992 competed 2012 paralympics london united kingdom 29 august 9 2012 total 182 athletes sent russian paralympic committee compete ',false
+'crops conditions late 2016 business world skip content business world industry economy ukraine ',false
+'invest ukraine partners contacts news trade board invest ukraine partners contacts crops conditions late 2016 home crops conditions ',false
+'ukraine partners contacts news trade board invest ukraine partners contacts crops conditions late 2016 home crops conditions crops major ',false
+'news trade board invest ukraine partners contacts crops conditions late 2016 home crops conditions crops major ',false
+'partners contacts crops conditions late 2016 home crops conditions crops major country stages development ',false
+'partners contacts crops conditions late 2016 home crops conditions crops major country stages development ',false
+'3 people found useful lyzie forbes-dash 158 contributions answered seasons date start finish - march april winter - june july august spring - october november summer - december january february 27 people found useful edit share ',false
+'lyzie forbes-dash 158 contributions answered seasons date start finish - march april winter - june july august spring - october november summer - december january february 27 people found useful edit share ',false
+'june august offers snow skiing australian alps alternatively sun holiday snorkel temperate barrier reef 4wd south simpson desert spring november time watch whales wildflowers explore ',false
+'events 1956 olympics melbourne victoria 22 november 8 december 72 3 314 151 2000 olympics sydney south wales 15 1 october 199 10 651 300 unsuccessful bids edit unsuccessfully bidded games occasions games proposed host city awarded ',false
+'days am pretty kids 1st knowledge definitely exciting days talked time ago post honor ',false
+'countries blog top pages contact pt driving road trip madness edition home driving driving road trip madness edition updated 6 2016 jo leit 3 comments filed driving ',false
+'pt driving road trip madness edition home driving driving road trip madness edition updated 6 2016 jo leit 3 comments filed driving ',false
+'pt driving road trip madness edition home driving driving road trip madness edition updated 6 2016 jo leit 3 comments filed driving road trip madness edition road trip biggest ',false
+'road trip madness edition home driving driving road trip madness edition updated 6 2016 jo leit 3 comments filed driving road trip madness edition road trip biggest country world ',false
+'964 7 posted december 4 2014 tim it\'s officially covered snow try looking shots russian ',false
+'americas argentina argentina monday february monday march depending usually begins week elementary barbados third week usually begins week february northernmost tropical ',false
+'argentina monday february monday march depending usually begins week elementary barbados third week usually begins week february northernmost tropical ',false
+'argentina monday february monday march depending usually begins week elementary barbados third week usually begins week february northernmost tropical ',false
+'monday february monday march depending usually begins week elementary barbados third week usually begins week february northernmost tropical ',false
+'march depending usually begins week elementary barbados third week usually begins week february northernmost tropical ',false
+'usually begins week elementary barbados third week usually begins week february northernmost tropical ',false
+'usually begins week elementary barbados third week usually begins week february northernmost tropical starts ',false
+'barbados third week usually begins week february northernmost tropical starts week following practice countries north canada provinces tuesday monday ',false
+'third week usually begins week february northernmost tropical starts week following practice countries north canada provinces tuesday monday ',false
+'third week usually begins week february northernmost tropical starts week following practice countries north canada provinces tuesday monday ',false
+'usually begins week february northernmost tropical starts week following practice countries north canada provinces tuesday monday ',false
+'usually begins week february northernmost tropical starts week following practice countries north canada provinces tuesday monday ',false
+'paralympics appearances 1972 1976 1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 competed 2016 paralympics rio de janeiro host country 7 18 2016 contents 1 support 2 disability classifications 3 medalists 4 archery 5 ',false
+'2015 all-day natalia goncharova little station 1912 oil canvas private collection special display twentieth-century ccrac hoart cam ac uk russian festival 17 2014 human resources day hr day marks occasion 1835 tsarist imperial decree spelt ',false
+'destination rain average amount rain observed 52 mm 4 16 days avoid rain preferred destination brasilia note ',false
+'exhibition labace takes weeks usual due 2016 olympics run august 30 1 sao paulo congonhas sbsp airports sao paulo ',false
+'associated risks june 27 2016 0 comments 2016 games bizav ops information 2016 games para games taking august 5-21 7-18 begin trip planning events ',false
+'2016 0 comments 2016 games bizav ops information 2016 games para games taking august 5-21 7-18 begin trip planning events ',false
+'0 comments bizav planning 2016 games airport slots closures 2016 games paralympics held various city venues august 5 18 primary games events rio de janeiro football matches ',false
+'2016 games paralympics held various city venues august 5 18 primary games events rio de janeiro football matches held sao ',false
+'august 3-21 followed paralympic games held rio de janeiro 7-19 expect aviation ga movements particularly games period july 7 2015 0 comments update procedural changes customs sao ',false
+'2017 05 44 17 43 friday 29th 2017 05 44 17 42 saturday 30th 2017 05 45 17 41 hilton sale 30 hotels sale save 30 hotels hilton sale ',false
+'nazareth heart grow live curitiba 16 1995 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'youtube japanese change preference below __count__ __total__ nazareth heart grow live curitiba 16 1995 hamilton chembersk 44 258 4 5 0 1 2013 10 31 nazareth aeroanta ',false
+'00 patrick mcmichael 216 4 00 abertura nazareth aeroanta live curitiba 16 1995 - 5 57 hamilton chembersk 359 5 57 nazareth - hearts grown - live 2009 hq - 7 58 nazarethtv 269 460 7 58 nazareth - broken ',false
+'destination rain average amount rain observed 52 mm 4 16 days avoid rain preferred destination brasilia note ',false
+'2017 06 11 18 11 friday 29th 2017 06 11 18 10 saturday 30th 2017 06 12 18 09 hilton sale 30 hotels sale save 30 hotels hilton sale ',false
+'00 mm monthly rainfall 1111 extreme uv index average maximum daytime temperature 40 104 heat humidity usually 10 hours ',false
+'12 2015 crane accident makka 12 09 2015 warning - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'learn you\'re viewing youtube japanese change preference below __count__ __total__ 12 2015 crane accident makka 12 09 2015 warning network 147147 121 680 143 144 24 25 2015 09 11 makkah ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ 12 2015 crane accident makka 12 09 2015 warning network 147147 121 680 143 144 24 25 2015 09 11 makkah crane ',false
+'viewing youtube japanese change preference below __count__ __total__ 12 2015 crane accident makka 12 09 2015 warning network 147147 121 680 143 144 24 25 2015 09 11 makkah crane accident makka 12 09 2015 warning eighty-seven people died 201 ',false
+'cloud services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons seasons click answer yes spring - november summer december - february march - winter june - august country summer ',false
+'european view season months summer december february march winter june august spring november actual based weather seasons follows spring - october summer november - march april - ',false
+'february march winter june august spring november actual based weather seasons follows spring - october summer november - march april - winter june - august spring short ',false
+'november actual based weather seasons follows spring - october summer november - march april - winter june - august spring short ',false
+'major passenger transport route 4 people found useful rkramp 963 contributions answered seasons yes spring - november summer december - february march - winter june - august country summer ',false
+'passenger transport route 4 people found useful rkramp 963 contributions answered seasons yes spring - november summer december - february march - winter june - august country summer ',false
+'route 4 people found useful rkramp 963 contributions answered seasons yes spring - november summer december - february march - winter june - august country summer ',false
+'european view season months summer december february march winter june august spring november actual based weather seasons follows spring - october summer november - march april - ',false
+'february march winter june august spring november actual based weather seasons follows spring - october summer november - march april - winter june - august spring short ',false
+'november actual based weather seasons follows spring - october summer november - march april - winter june - august spring short ',false
+'2006 official report - skeleton pdf torino organizing committee la84 foundation march 2009 retrieved 22 2009 nations 2006 olympics turin italy algeria ethiopia kenya madagascar senegal america argentina bermuda brazil canada chile costa rica united venezuela virgin islands asia ',false
+'services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons season start click answer starts june 1st spring starts 1st answer question yes partially tell optional submit text ',false
+'earth sciences atmospheric sciences climatology climate changes seasons season start click answer starts june 1st spring starts 1st answer question yes partially tell optional submit text ',false
+'rule tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring - november summer december - february autumn march - june - august country summer whol ',false
+'tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring - november summer december - february autumn march - june - august country summer whol ',false
+'person found useful edit share rkramp 963 contributions answered seasons yes spring - november summer december - february autumn march - june - august country summer whol ',false
+'months summer december february autumn march june august spring november actual based weather seasons follows spring - october summer november - march autumn april - ',false
+'november actual based weather seasons follows spring - october summer november - march autumn april - june - august spring short months whilst ',false
+'beach destinations choose seasons fall follows spring - october - november february autumn - march april winter - june - august divided rainfall winter rainfall northern central ',false
+'2009 2012 2013 14 somerset levels 2013 14 2015 16 2016 heat waves droughts 1906 1911 1955 1976 1990 2003 2006 2011 autumn 2011 march 2012 2013 2016 storm surges south england 1287 north sea 1287 bristol channel 16071 north sea 1953 ',false
+'2012 2013 14 somerset levels 2013 14 2015 16 2016 heat waves droughts 1906 1911 1955 1976 1990 2003 2006 2011 autumn 2011 march 2012 2013 2016 storm surges south england 1287 north sea 1287 bristol channel 16071 north sea 1953 ',false
+'11 heavy hits jeddah - 3 57 tahir jalal 8 696 3 57 huge attack jeddah - 2 15 jaafar al-sharif 253 2 15 jeddah 8 2015 6 00 pm - 4 03 comely 28 575 874 4 03 driving ',false
+'hits jeddah - 3 57 tahir jalal 8 696 3 57 huge attack jeddah - 2 15 jaafar al-sharif 253 2 15 jeddah 8 2015 6 00 pm - 4 03 comely 28 575 874 4 03 driving ',false
+'10 2015 - video dailymotion advertising consolecopy clipboard 00 0000 00 00 00 space ',false
+'consolecopy clipboard 00 0000 00 00 00 space esc shift shift 0-9 10 2015 9 269 tweet dailymotion dailymotion dailymotion dailymotion api api 2005 - 2017 ',false
+'destination rain average amount rain observed 42 mm 2 7 days avoid rain preferred destination johannesburg note ',false
+'- wikipedia purple protest wikipedia free encyclopedia jump navigation search purple protest cover die suid-afrikaan purple shower date 2 1989 1989-09-02 location 33 55 20 18 25 14 33 92222 18 42056 -33 ',false
+'free encyclopedia jump navigation search purple protest cover die suid-afrikaan purple shower date 2 1989 1989-09-02 location 33 55 20 18 25 14 33 92222 18 42056 -33 ',false
+'tumbler popsicle mold eos lip balm clicking giveaway sponsored citrus 9th win huge prize pack adventures 8 win ',false
+'looking visitors comes return top kimberley climate temperatures october - it\'s warming tourists fleeing northern ok drop noticeable ',false
+'fire-prone warm dry conditions intensify probability fire 13 northern usually occur dry season april 14 fire severity tends associated seasonal weather patterns ',false
+'048 000 ha 1 dec 2006 march 2007 1 51 homes 2006-07 australian bushfire season 2006 january 2007 dwellingup bushfire western 12 000 ha 4 february 2007 0 16 kangaroo island south 95 000 ha 6 14 december 2007 1 boorabbin national park western ',false
+'queensland half total fire ban 22 october edit strong westerly winds fanned central latitudes october 2009 western queensland south wales ',false
+'november 9 according irish calendar based ancient gaelic traditions lasts throughout months august october possibly days depending tradition zealand officially begins 1 march 31 10 ',false
+'calendar based ancient gaelic traditions lasts throughout months august october possibly days depending tradition zealand officially begins 1 march 31 10 contents 1 etymology 2 ',false
+'games millennium international multi-sport event held 15 1 october 2000 sydney south wales time olympics held southern hemisphere melbourne ',false
+'cricket ground main stadium 1956 melbourne olympics day 1 15 edit cultural display highlights edit 2000 olympics ceremony 2000 olympics ceremony stadium 15 2000 ceremony tribute australian pastoral ',false
+'1956 melbourne olympics day 1 15 edit cultural display highlights edit 2000 olympics ceremony 2000 olympics ceremony stadium 15 2000 ceremony tribute australian pastoral heritage ',false
+'edit cultural display highlights edit 2000 olympics ceremony 2000 olympics ceremony stadium 15 2000 ceremony tribute australian pastoral heritage ',false
+'wikipedia org index php title 2000_summer_olympics oldid 756945216 categories 2000 australian sport 2000 olympics 2000 multi-sport events sport sydney olympic games olympics 2000 sports events october 2000 sports events hidden categories articles dead external links ',false
+'australian sport 2000 olympics 2000 multi-sport events sport sydney olympic games olympics 2000 sports events october 2000 sports events hidden categories articles dead external links ',false
+'mccain arab spread iran china 14 2011 - youtube jp view message english youtube learn you\'re viewing ',false
+'viewing youtube japanese change preference below __count__ __total__ mccain arab spread iran china 14 2011 wolkenzwemmer 739739 2 460 7 8 0 1 2011 09 14 ',false
+'indian central encyclopedia safety encyclopedia safety surviving city survival world commentsposts ',false
+'27 28 29 30 31 vseslav polotsk prince werewolf goal hockey player indian central weather central regions month autumn ',false
+'argentina monday february monday march depending usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'monday february monday march depending usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'depending usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'argentina monday february monday march depending usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'monday february monday march depending usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'depending usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'usually begins week south colombia elementary barbados edit third week edit usually begins february late march ',false
+'walker chords jets ultimate-guitar com tab pro guitar tabs updates news reviews lessons forums walker chords jets added 11th 2012 logout unregistered 0 ug plus favorites profile history recently viewed tabs tabs ',false
+'jets ultimate-guitar com tab pro guitar tabs updates news reviews lessons forums walker chords jets added 11th 2012 logout unregistered 0 ug plus favorites profile history recently viewed tabs tabs ',false
+'brazilian national anthem ceremony ceremony 2016 paralympics evening 7 2016 independence day maracan stadium theme todo mundo tem um cora ',false
+'paralympics appearances 1972 1976 1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 competed 2012 paralympics london united kingdom 29 august 9 2012 1 host paralympics holding 2016 ',false
+'1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 competed 2012 paralympics london united kingdom 29 august 9 2012 1 host paralympics holding 2016 games rio ',false
+'competed 2012 paralympics london united kingdom 29 august 9 2012 1 host paralympics holding 2016 games rio de janeiro contents 1 athletics 2 football 5-a-side ',false
+'3 2012 15 00 5 4 finland copper box london quarter-final 5 2012 10 30 japan 2 0 copper box london report judo edit main article judo 2012 paralympics athlete event round quarter-final semi-final repechage bronze medal match final opposition result ',false
+'paralympic games retrieved 4 2012 men\'s sitting volleyball teams london2012 com retrieved 30 2012 women\'s sitting volleyball teams london2012 com retrieved 14 october 2012 nations 2012 paralympics london united kingdom africa algeria angola benin burkina faso burundi cameroon cape verde ',false
+'0 1 0 1 paralympics appearances 1996 2000 2004 2008 2012 2016 file paralympic team london 2012 ceremony participated 2012 paralympics london united kingdom august 29 9 country sent female athletes time london olympics ',false
+'2004 2008 2012 2016 file paralympic team london 2012 ceremony participated 2012 paralympics london united kingdom august 29 9 country sent female athletes time london olympics ',false
+'bronze total 0 0 1 1 paralympics appearances 1996 2000 2004 2008 2012 2016 scheduled compete 2016 paralympics rio de janeiro brazil 7 18 2016 contents 1 disability classifications 2 medallists 3 athletics 4 ',false
+'f20 5 96 11 hani alnakhli shot f33 8 99 03 edit 2016 olympics references edit paralympics categories explained abc 3 2008 retrieved 25 december 2015 sense categories bbc sport 6 october 2000 ',false
+'br noticias 2016-09-08 este-e-o-setembro-mais-frio-dos-ultimos-50-anos thanks wagner link post navigation previous postrecord slovakianext postnorthern rockies clobbered snow 7 coldest 50 martin siebert october 6 2016 12 57 pm ',false
+'1 december 2011 hope arab spring chill arab washington post retrieved 7 october 2016 hossein mousavian seyed 3 june 2016 iran\'s national security threat huffington post retrieved 23 2016 toby harnden christina lamb saudis nuclear weapons sunday times london ',false
+'sneak footage please contact location specific information shoot desert climate dry days cold nights coastal humid summer rainfall winter november february mild days chilly nights ',false
+'1 december 2011 hope arab spring chill arab washington post retrieved 7 october 2016 hossein mousavian seyed 3 june 2016 iran\'s national security threat huffington post retrieved 23 2016 toby harnden christina lamb saudis nuclear weapons sunday times london ',false
+'49 observed previous average amount rain observed 4 mm typically 1 day note gap temperature country ',false
+'horror jeddah - 08 15 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'you\'re viewing youtube japanese change preference below __count__ __total__ horror jeddah - 08 15 food traveling 478 0 1 0 1 2015 09 11 horror ',false
+'youtube japanese change preference below __count__ __total__ horror jeddah - 08 15 food traveling 478 0 1 0 1 2015 09 11 horror jeddah - 08 15 jeddah jeddah fanspage https www ',false
+'japanese change preference below __count__ __total__ horror jeddah - 08 15 food traveling 478 0 1 0 1 2015 09 11 horror jeddah - 08 15 jeddah jeddah fanspage https www facebook com duniakulinerbdg ',false
+'change preference below __count__ __total__ horror jeddah - 08 15 food traveling 478 0 1 0 1 2015 09 11 horror jeddah - 08 15 jeddah jeddah fanspage https www facebook com duniakulinerbdg follow ',false
+'08 15 food traveling 478 0 1 0 1 2015 09 11 horror jeddah - 08 15 jeddah jeddah fanspage https www facebook com duniakulinerbdg follow https instagram com ',false
+'food traveling 478 0 1 0 1 2015 09 11 horror jeddah - 08 15 jeddah jeddah fanspage https www facebook com duniakulinerbdg follow https instagram com dunia_kulinerbdg url ',false
+'- findingufo - 3 55 findingufo 830 425 3 55 flying horse jeddah revealed - 14 18 lions ground 2 166 14 18 jeddah 8 2015 6 00 pm - 4 03 comely 28 575 874 4 03 strong ',false
+'makkah 2015 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'learn you\'re viewing youtube japanese change preference below __count__ __total__ makkah 2015 channel 7878 24 133 26 27 4 5 2015 09 08 plz ',false
+'kiswa change 2013-1434 arafa day - 9 58 haramaingallery 4 593 931 9 58 jeddah - 2 43 tommy cruise 34 529 2 43 12 2015 crane accident makka 12 09 2015 warning - 5 01 ',false
+'593 931 9 58 jeddah - 2 43 tommy cruise 34 529 2 43 12 2015 crane accident makka 12 09 2015 warning - 5 01 network 120 698 5 01 strong wind blows masjidil haram ',false
+'931 9 58 jeddah - 2 43 tommy cruise 34 529 2 43 12 2015 crane accident makka 12 09 2015 warning - 5 01 network 120 698 5 01 strong wind blows masjidil haram makkah - 1 ',false
+'hajj - 0 45 syed mahmood 1 539 078 0 45 holy makkah madinah - 33 43 yusuf islam 59 618 33 43 mecca - 2 15 nstonlinetv 3 455 2 15 jeddah 8 2015 6 00 pm - 4 03 comely 28 575 874 4 03 makkah ',false
+'rule tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring - november summer december - february march - winter june - august country summer ',false
+'tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring - november summer december - february march - winter june - august country summer ',false
+'person found useful edit share rkramp 963 contributions answered seasons yes spring - november summer december - february march - winter june - august country summer ',false
+'european view season months summer december february march winter june august spring november actual based weather seasons follows spring - october summer november - march april - ',false
+'february march winter june august spring november actual based weather seasons follows spring - october summer november - march april - winter june - august spring short ',false
+'november actual based weather seasons follows spring - october summer november - march april - winter june - august spring short ',false
+'start blog inspired confessions nerd alert return content cape winelands liz 11 2015 destinations wine 45 minutes inland cape town ',false
+'deep blue barrier reef experience matters 31 responses cape winelands sarah 11 2015 6 58 pm photos incredible captured ',false
+'reef experience matters 31 responses cape winelands sarah 11 2015 6 58 pm photos incredible captured beautifully obsessive amazing colours ',false
+'arid scenery hot dry summers cold dry winters southern hemisphere country seasons opposite northern hemisphere spring october months run late november december january february autumn tends ',false
+'country seasons opposite northern hemisphere spring october months run late november december january february autumn tends ',false
+'seasons opposite northern hemisphere spring october months run late november december january february autumn tends ',false
+'seasons opposite northern hemisphere spring october months run late november december january february autumn tends ',false
