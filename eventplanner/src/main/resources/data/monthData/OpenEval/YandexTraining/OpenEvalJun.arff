@@ -4,29 +4,6 @@
 @attribute Class_Attribute_For_SimpleOpenEval {true,false}
 
 @data
-'weather 2017 - accuweather forecast wa 98631 recent locations wa38 york ny48 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',true
-'world world world world world world note select region finding country weather follow login weather wa local weather 38 local weather today\'s weather hourly forecast extended ',true
-'world world world world world note select region finding country weather follow login weather wa local weather 38 local weather today\'s weather hourly forecast extended weekend month outlook ',true
-'virginia weather 2017 - accuweather forecast va 23451 recent locations virginia va46 york ny48 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',true
-'world world world world world world note select region finding country virginia weather follow login weather virginia va local weather 46 local weather today\'s weather hourly forecast extended ',true
-'world world world world world note select region finding country virginia weather follow login weather virginia va local weather 46 local weather today\'s weather hourly forecast extended weekend month outlook ',true
-'lazzarino lea pericoli ingrid palmeri christiane mercelis 6 2 6 2 1 round edit vs rhodesia edit 3 blau-weiss tennis club west berlin 8 1967 red clay rhodesia 0 1 2 3 1 billie jean king patricia walkden 6 3 2 6 ',true
-'lea pericoli ingrid palmeri christiane mercelis 6 2 6 2 1 round edit vs rhodesia edit 3 blau-weiss tennis club west berlin 8 1967 red clay rhodesia 0 1 2 3 1 billie jean king patricia walkden 6 3 2 6 ',true
-'christiane mercelis 6 2 6 2 1 round edit vs rhodesia edit 3 blau-weiss tennis club west berlin 8 1967 red clay rhodesia 0 1 2 3 1 billie jean king patricia walkden 6 3 2 6 ',true
-'lidy venneboer sylvana lazzarino lea pericoli 6 2 5 7 4 6 7 quarterfinals edit vs south africa edit 3 blau-weiss tennis club west berlin 9 1967 red clay south africa 0 1 2 3 1 rosie casals glenda swan 6 1 6 4 ',true
-'venneboer sylvana lazzarino lea pericoli 6 2 5 7 4 6 7 quarterfinals edit vs south africa edit 3 blau-weiss tennis club west berlin 9 1967 red clay south africa 0 1 2 3 1 rosie casals glenda swan 6 1 6 4 ',true
-'6 2 5 7 4 6 7 quarterfinals edit vs south africa edit 3 blau-weiss tennis club west berlin 9 1967 red clay south africa 0 1 2 3 1 rosie casals glenda swan 6 1 6 4 ',true
-'rr janine lieffrig judy tegart lesley turner 3 6 3 6 11 semifinals edit vs west germany edit 3 blau-weiss tennis club west berlin 10 1967 red clay west germany 0 1 2 3 1 rosie casals helga sl 6 2 7 ',true
-'rr janine lieffrig judy tegart lesley turner 3 6 3 6 11 semifinals edit vs west germany edit 3 blau-weiss tennis club west berlin 10 1967 red clay west germany 0 1 2 3 1 rosie casals helga sl 6 2 7 ',true
-'lesley turner 3 6 3 6 11 semifinals edit vs west germany edit 3 blau-weiss tennis club west berlin 10 1967 red clay west germany 0 1 2 3 1 rosie casals helga sl 6 2 7 ',true
-'ann haydon-jones virginia wade judy tegart lesley turner 8 6 6 4 13 final edit vs britain edit 2 blau-weiss tennis club west berlin 11 1967 red clay britain 0 1 2 3 1 rosie casals virginia wade 9 7 8 6 ',true
-'haydon-jones virginia wade judy tegart lesley turner 8 6 6 4 13 final edit vs britain edit 2 blau-weiss tennis club west berlin 11 1967 red clay britain 0 1 2 3 1 rosie casals virginia wade 9 7 8 6 ',true
-'lesley turner 8 6 6 4 13 final edit vs britain edit 2 blau-weiss tennis club west berlin 11 1967 red clay britain 0 1 2 3 1 rosie casals virginia wade 9 7 8 6 ',true
-'world world world world world note select region finding country panama city weather follow login weather panama city fl local weather 71 local weather today\'s weather hourly forecast ',true
-'world world world world note select region finding country panama city weather follow login weather panama city fl local weather 71 local weather today\'s weather hourly forecast extended weekend month outlook ',true
-'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny48 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',true
-'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',true
-'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',true
 'colours biggest win 14-3 france marseille france 1 july 1996 biggest defeat 3-10 brazil miami 2 july 1993 3-10 brazil miami 4 1995 world cup appearances 13 result runners 1995 concacaf soccer championship appearances 4 2006 result champions 2006 2013 ',true
 '14-3 france marseille france 1 july 1996 biggest defeat 3-10 brazil miami 2 july 1993 3-10 brazil miami 4 1995 world cup appearances 13 result runners 1995 concacaf soccer championship appearances 4 2006 result champions 2006 2013 ',true
 '14-3 france marseille france 1 july 1996 biggest defeat 3-10 brazil miami 2 july 1993 3-10 brazil miami 4 1995 world cup appearances 13 result runners 1995 concacaf soccer championship appearances 4 2006 result champions 2006 2013 ',true
@@ -36,87 +13,18 @@
 '3-10 brazil miami 2 july 1993 3-10 brazil miami 4 1995 world cup appearances 13 result runners 1995 concacaf soccer championship appearances 4 2006 result champions 2006 2013 national soccer team represents international soccer competitions ',true
 'brazil miami 2 july 1993 3-10 brazil miami 4 1995 world cup appearances 13 result runners 1995 concacaf soccer championship appearances 4 2006 result champions 2006 2013 national soccer team represents international soccer competitions ',true
 'jaws death troops 1st infantry division landing omaha photograph robert sargent date 6 1944 location sainte-honorine-des-pertes saint-laurent-sur-mer vierville-sur-mer france result allied victory belligerents kingdom canada free france germany commanders leaders omar bradley norman cota clarence ',true
-'3 switzerland 0 netherlands 3 netherlands 0 3 italy 0 3 roundedit australia vs belgiumedit australia 3 queen\'s club london kingdom 17 1963 grass belgium 0 1 2 3 1 margaret smith christiane mercelis 6 3 6 1 2 ',true
-'bourgnon alice wavre eva de jong jenny ridderhof 1 6 3 6 7 italy vs statesedit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
-'ridderhof 1 6 3 6 7 italy vs statesedit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
-'3 6 7 italy vs statesedit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
-'november beijing weather december travel top 5 visit top visit beijing wellbeing author gavin van hinsbergh update july 21 2016 ',true
-'travel top 5 visit top visit beijing wellbeing author gavin van hinsbergh update july 21 2016 ',true
-'travel top 5 visit top visit beijing wellbeing author gavin van hinsbergh update july 21 2016 travel articles ',true
-'20 1963 soviet union establish line introduction lessen threat accidental nuclear war ',true
 '1962 crisis hopefully avert future misunderstandings trigger nuclear conflict soviet union agreed 1963 establish line 24-hour-a-day communications link washington moscow president ',true
-'line thankfully avert nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 ',true
-'avert nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www ',true
-'avert nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www history com this-day-in-history ',true
-'nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www history com this-day-in-history united-states-and-soviet-union-will-establish-a-hot-line ',true
-'line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www history com this-day-in-history united-states-and-soviet-union-will-establish-a-hot-line access date january 01 2017 publisher ',true
-'summer liz osborn currentresults com 51 largest cities phoenix las vegas stand consistently getting remarkably weather months july august major cities average temperature throughout summer ',true
-'hampton sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',true
-'asia aus pacific europe latin america america america mid east home north america hampton hampton average sea temperature max 17 1 62 8 avg 13 9 57 ',true
-'listed website shun shokuzai calendar kikkoman official site foods august vegetables bell pepper bitter melon goya corn cucumber edamame lettuce april august ',true
-'website shun shokuzai calendar kikkoman official site foods august vegetables bell pepper bitter melon goya corn cucumber edamame lettuce april august myoga japanese ',true
-'1962 crisis hopefully avert future misunderstandings trigger nuclear conflict soviet union agreed 1963 establish line 24-hour-a-day communications link washington moscow president ',true
-'sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',true
-'asia aus pacific europe latin america america america mid east home north america average sea temperature max 22 1 71 7 avg 18 3 65 ',true
-'help center close close share property via email beach-contact specials 2017 broadkill delaware america 309133 3 br 2 ba sleeps 7 signed ',true
-'money news issues parenting religion spirituality sports style tech travel 1 germany\'s festivals 2 festivals 3 festivals 4 carnival cultures 5 festivals events ',true
-'snow 2016 hawaii mexico ukraine california hampshire alaska - youtube jp view message english youtube learn you\'re viewing youtube ',true
-'you\'re viewing youtube japanese change preference below __count__ __total__ snow 2016 hawaii mexico ukraine california hampshire alaska adapt 2030 15 2551 3 930 182 183 7 8 2016 06 17 record ',true
-'american rock band killers released 7 2004 15 2004 1 album influenced wave music post-punk fuss produced commercially critically successful singles brightside told ',true
-'media 5 2 10 12 13 rolling stone 14 slant magazine 15 spin 16 fuss released 7 2004 15 2004 1 2005 reissued ',true
-'1001 albums hear die release history edit region date label 7 2004 lizard king 15 2004 island references edit killers fuss - popmatters music review popmatters 15 2004 retrieved july 26 2009 mervis scott ',true
-'anne mcclain happy 11 2013 dis411 family friendly fun home disney stars disney music games game reviews ',true
-'parks outside parks misc privacy policy dmca policy media kit disney stars anne mcclain happy 11 2013 11 2013 amy crooks 0 comment farm anne ',true
-'privacy policy dmca policy media kit disney stars anne mcclain happy 11 2013 11 2013 amy crooks 0 comment farm anne mcclain disney disney channel disney disney stars mcclain sisters music thanks sharing ',true
-'- wikipedia hot song wikipedia free encyclopedia jump navigation search hot single monrose album strictly physical b-side scream released 29 2007 18 july 2007 finland 30 july 2007 netherlands july 2008 turkey format cd single ring ',true
-'macheck production team mozart friends 5 music video edit music video hot directed bernard wedig shot 18 2007 berlin premiered 26 2007 band\'s official website received ',true
-'culture shock fun thinking travel weird movies music answering stupid questions law writing posted 20 2012 tsuyu rainy season designation determined ',true
-'movies music answering stupid questions law writing posted 20 2012 tsuyu rainy season designation determined ',true
-'answering stupid questions law writing posted 20 2012 tsuyu rainy season designation determined ',true
-'shinto zen tagged haiku seasons summer bookmark permalink answering stupid questions law 7 responses writing didem aydin 20 2012 11 22 pm haiku ',true
-'summer bookmark permalink answering stupid questions law 7 responses writing didem aydin 20 2012 11 22 pm haiku ',true
-'questions law 7 responses writing didem aydin 20 2012 11 22 pm haiku ',true
-'decided ll walk park 30 minutes walk maybe stop boo hoo didn live 18 kidding course didn stop hydrangeas park ',true
-'maybe stop boo hoo didn live 18 kidding course didn stop hydrangeas park bloom ',true
-'blog born left 18 months seeing thru kids eyes fascinating reply sheila 29 2013 2 33 pm miss miss friend reply balot july 3 2013 5 31 am ',true
-'3 switzerland 0 netherlands 3 netherlands 0 3 italy 0 3 round edit australia vs belgium edit australia 3 queen\'s club london kingdom 17 1963 grass belgium 0 1 2 3 1 margaret smith christiane mercelis 6 3 6 1 2 ',true
-'bourgnon alice wavre eva de jong jenny ridderhof 1 6 3 6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 ',true
-'alice wavre eva de jong jenny ridderhof 1 6 3 6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 ',true
-'1 6 3 6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
-'6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
-'main menu edit page read language led zeppelin tour 1969 1969 concert led zeppelin associated album led zeppelin start date 8 1969 date 29 1969 legs 1 13 led zeppelin concert ',true
-'menu edit page read language led zeppelin tour 1969 1969 concert led zeppelin associated album led zeppelin start date 8 1969 date 29 1969 legs 1 13 led zeppelin concert ',true
 'trip traveling kids 7 steps plan perfect family tour top 10 apps travelers beginning real weather heat begins set temperature rises ',true
 '7 steps plan perfect family tour top 10 apps travelers beginning real weather heat begins set temperature rises ',true
 'steps plan perfect family tour top 10 apps travelers beginning real weather heat begins set temperature rises 30 86 ',true
 'weather november weather december weather weather july top 5 visit top visit author annie wu update march 4 2016 travel articles send ',true
 'weather weather july top 5 visit top visit author annie wu update march 4 2016 travel articles send ',true
 'weather july top 5 visit top visit author annie wu update march 4 2016 travel articles send feedback ',true
-'damage 6 5 billion series destructive floods occurred 2007 worst flooding occurred scotland 14 east yorkshire midlands 15 yorkshire midlands gloucestershire herefordshire worcestershire ',true
 'img height 1 width 1 style display none src https www facebook com tr id ',true
 'rhymes traditions world kids grown-ups enjoy advertisement 11th 2014 sadao mazuka sent article rainy season ',true
 'traditions world kids grown-ups enjoy advertisement 11th 2014 sadao mazuka sent article rainy season ',true
 'rice september thanks sharing sadao -mama lisa article posted wednesday 11th 2014 3 01 pm filed countries cultures haiku japanese japanese poems languages poetry seasonal spring weather follow responses entry rss 2 ',true
 '84 25 77 45 25 40 60 beginning rainy season tsuyu visits except hokkaido day weather tends overcast dreary duration intensity ',true
-'pack jumper school holidays start mid late week july roughly school holidays means busy cooler southern friends zealand ',true
-'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots ',true
-'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots burning arnhem land northern territory ',true
-'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots burning arnhem land northern territory time ',true
-'northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots burning arnhem land northern territory time moderate resolution imaging spectroradiometer modis image aqua satellite ',true
-'event view left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern ',true
-'event view left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 ',true
-'left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 fires ',true
-'left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 fires northern april 9 2015 fires northern october ',true
-'eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 fires northern april 9 2015 fires northern october 22 ',true
-'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots ',true
-'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots scattered northern moderate resolution imaging spectroradiometer ',true
-'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots scattered northern moderate resolution imaging spectroradiometer modis ',true
-'northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots scattered northern moderate resolution imaging spectroradiometer modis image aqua satellite captured ',true
-'event view left subscribe eo kids related images fires northern 17 2004 fires northern april 9 2015 fires northern 9 ',true
-'left subscribe eo kids related images fires northern 17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 ',true
-'related images fires northern 17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 ',true
-'northern 17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 ',true
-'17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 view related images subscribe feeds contact earth ',true
 'apparel 19 000 items duration sale hobbylink japan\'s super 2016 campaign hlj com starts 9 00am monday morning 6th runs 6 00pm monday afternoon 20th standard time utc 9 check time zones super sale discounts apply ',true
 'hobbylink japan\'s super 2016 campaign hlj com starts 9 00am monday morning 6th runs 6 00pm monday afternoon 20th standard time utc 9 check time zones super sale discounts apply in-stock special sale items charged campaign ',true
 'starts 9 00am monday morning 6th runs 6 00pm monday afternoon 20th standard time utc 9 check time zones super sale discounts apply in-stock special sale items charged campaign ',true
@@ -132,106 +40,11 @@
 'click hobby supplies click sale items hobbylink japan\'s super 2016 campaign hlj com starts 9 00am monday morning 6th runs 6 00pm monday afternoon 20th standard time utc 9 check time zones super sale discounts apply ',true
 'hobbylink japan\'s super 2016 campaign hlj com starts 9 00am monday morning 6th runs 6 00pm monday afternoon 20th standard time utc 9 check time zones super sale discounts apply in-stock special sale items charged campaign ',true
 'starts 9 00am monday morning 6th runs 6 00pm monday afternoon 20th standard time utc 9 check time zones super sale discounts apply in-stock special sale items charged campaign ',true
-'map holiday business close navigation winter home australia\'s seasons discover winter luxury add share winter lasts august country months fall tropical north ski snowboard victoria powdered slopes ',true
-'home australia\'s seasons discover winter luxury add share winter lasts august country months fall tropical north ski snowboard victoria powdered slopes ',true
-'cloud services wikianswers categories travel continents regions continents western click answer australia\'s seasons opposite usa - august summer december - februaryautumn march - maywinter - augustspring september - november ',true
-'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
-'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
-'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
-'recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
-'australiana don\'t wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
-'don\'t wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
-'wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
-'wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
-'don\'t wide answered recently months july august months tropical north ',true
-'wide answered recently months july august months tropical north ',true
-'wide answered recently months july august months tropical north season - ',true
-'wide answered recently months july august months tropical north season - \'wet\' ',true
-'australiana don\'t wide answered months australia\'s season runs august weather varies cold wet south warm dry ',true
-'don\'t wide answered months australia\'s season runs august weather varies cold wet south warm dry ',true
-'wide answered months australia\'s season runs august weather varies cold wet south warm dry ',true
-'don\'t wide updated answer western yes australia\'s begins 1 31 august tropical north experience ',true
-'don\'t wide updated answer western yes australia\'s begins 1 31 august tropical north experience ',true
-'wide updated answer western yes australia\'s begins 1 31 august tropical north experience wet season dry season 2 ',true
-'wide updated answer western yes australia\'s begins 1 31 august tropical north experience wet season dry season 2 ',true
-'updated answer western yes australia\'s begins 1 31 august tropical north experience wet season dry season 2 people found useful edit ',true
-'don\'t wide answered recently australia\'s begins 1 continues months july august tropical ',true
-'wide answered recently australia\'s begins 1 continues months july august tropical ',true
-'wide answered recently australia\'s begins 1 continues months july august tropical ',true
-'australia\'s begins 1 continues months july august tropical north easily defined tends dry season extends ',true
 'health home money news issues parenting religion spirituality sports style tech travel 1 festivals 2 germany\'s festivals 3 festivals 4 festivals july 5 carnival ',true
 'money news issues parenting religion spirituality sports style tech travel 1 festivals 2 germany\'s festivals 3 festivals 4 festivals july 5 carnival cultures com travel ',true
 'month month festivals what\'s birge amondson travel expert birge amondson updated 06 2016 germany\'s festival season swing catch german ',true
 'month festivals what\'s birge amondson travel expert birge amondson updated 06 2016 germany\'s festival season swing catch german ',true
-'media free ebook blogroll shop faqs comment policy contact join day bobinoz 1 2009 australian climate day whilst ',true
-'bobinoz 1 2009 australian climate day whilst uk start summer day picture 4 10 3 minutes ',true
-'range mountain range passes south wales victoria regular snowfalls snow season alps south-eastern september tradition observational practice quality records contributed ',true
 'spring retrieved https en wikipedia org index php title list_of_geothermal_springs_in_the_united_kingdom oldid 706806069 categories springs lists hidden categories articles lacking sources 2011 articles lacking sources navigation menu personal tools logged talk contributions create ',true
-'travel 1 2 july 3 month month 4 5 time visit sydney com travel travel visiting comes snow pete atkinson image bank getty images larry rivera ',true
-'month month 4 5 time visit sydney com travel travel visiting comes snow pete atkinson image bank getty images larry rivera ',true
-'comes snow pete atkinson image bank getty images larry rivera travel expert larry rivera month australian except altitudes expect snow temperature ',true
-'atkinson image bank getty images larry rivera travel expert larry rivera month australian except altitudes expect snow temperature ',true
-'web access - camp directors employer web access - employers volunteer camp 4 8 weeks august camp counselor teach children ages 7 17 immerse yourself ',true
-'answer time answered school subjects day south hemisphere starts 21st day northern hemisphere starts summer 7 people found useful ',true
-'time answered school subjects day south hemisphere starts 21st day northern hemisphere starts summer 7 people found useful ',true
-'somewhat thanks feedback answered countries cities seasons earths north tilts towards sun ',true
-'seasons earths north tilts towards sun summer earths south tilts towards sun december edit share brand cold winters brand choose brands below we\'ll send question directly ',true
-'- tips info travelers tips information travel july august peterhof cc lynng883 kerry kubilius eastern europe travel expert kerry kubilius updated august ',true
-'sports 226 technology 3 000 transport 179 ukraine 81 video 964 8 day posted 1 2016 tim people russian cities norilsk ',true
-'images page network 8 responses day douglas 1 2016 4 53 pm los angeles cloudy cool overcast grey skies reply jim ',true
-'4 53 pm los angeles cloudy cool overcast grey skies reply jim philopena 1 2016 5 48 pm 1st day 20th northern hemisphere guess whenever reply darius 4 2016 ',true
-'philopena 1 2016 5 48 pm 1st day 20th northern hemisphere guess whenever reply darius 4 2016 ',true
-'rss realistic robot hand handles sushi pro video kaguya moon crash update tadpole 19 jun 2009 tadpole hiroshima prefecture 15 past weeks people witnessing tadpoles fish ',true
-'robot hand handles sushi pro video kaguya moon crash update tadpole 19 jun 2009 tadpole hiroshima prefecture 15 past weeks people witnessing tadpoles fish ',true
-'pro video kaguya moon crash update tadpole 19 jun 2009 tadpole hiroshima prefecture 15 past weeks people witnessing tadpoles fish frogs fall sky strange ',true
-'413 hodgman nerd test dashpunk puolimatkassa blog archive kisakuntoon gearfuse afternoon linkage 26th 2009 bryant drew jones spry bry miss fidget com blog archive tadpoles pinktentacle rt laurent_fintoni pinktentacle hey guys havent seen http www ',true
-'you\'re viewing youtube japanese change preference below __count__ __total__ snow russian tornadoman 3131 234 2 3 0 1 2013 06 03 2013 siberia vodka samovar babushka youtube sudden hail storm novosibirsk 12 07 2014 12 ',true
-'youtube japanese change preference below __count__ __total__ snow russian tornadoman 3131 234 2 3 0 1 2013 06 03 2013 siberia vodka samovar babushka youtube sudden hail storm novosibirsk 12 07 2014 12 ',true
-'snow arthurs pass - 2 02 geoffmackley 9 991 506 2 02 heavy snowfall - 2 12 deathmoond 1 173 2 12 toyota land cruiser offroad snow camping - 23 53 jake paslar 31 388 23 53 snow hits yakutia - 0 46 ruptly tv 1 455 0 46 snow canterbury ',true
-'snowfall - 2 12 deathmoond 1 173 2 12 toyota land cruiser offroad snow camping - 23 53 jake paslar 31 388 23 53 snow hits yakutia - 0 46 ruptly tv 1 455 0 46 snow canterbury ',true
-'stars worlds film fashion music art 20th annual russian ball london held saturday 20th lancaster house welcoming guests honour princess olga prince rostislav programme ball include 6 ',true
-'ads contact economic calendar privacy policy submit news tips donate news 0 shivers engulfs southern hemisphere iwb 27 2016 week 2016 ',true
-'economic calendar privacy policy submit news tips donate news 0 shivers engulfs southern hemisphere iwb 27 2016 week 2016 38 cites below 0c hundreds temperature records broken frost snow ',true
-'donate news 0 shivers engulfs southern hemisphere iwb 27 2016 week 2016 38 cites below 0c hundreds temperature records broken frost snow freezing lakes damage crops ready ',true
-'southern hemisphere iwb 27 2016 week 2016 38 cites below 0c hundreds temperature records broken frost snow freezing lakes damage crops ready ',true
-'http g1 globo com minas-gerais tria https en wikipedia org wiki uberaba southern hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
-'hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
-'446 249 250 0 1 2016 06 26 week 2016 38 cites below 0c hundreds temperature records broken frost snow freezing lakes damage crops ready ',true
-'http g1 globo com minas-gerais tria https en wikipedia org wiki uberaba southern hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
-'hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
-'opportunities university missouri program 16 august 12 2014 center study asia pardee school global studies ',true
-'ethnology occasional papers asia opportunities outreach contact search search opportunities university missouri program 16 august 12 2014 inviting applications students ',true
-'martial arts learning japanese living japanese host families university missouri program 16 august 12 2014 share facebook www facebook com mizzoujapansummer2014 http international ',true
-'contact program director prof martin holman mizzoujapan gmail com opportunities university missouri program 16 august 12 2014 posted 3 ago friday february 21st 2014 pardee school ',true
-'follows spring - september october summer - november february autumn - march april - - august divided summer rainfall rainfall northern central ',true
-'spring - september october summer - november february autumn - march april - - august divided summer rainfall rainfall northern central east include ',true
-'2012 rarely outside home riyadh didn notice heat officially starts riyadh usually month peak months july city received considerable able rains march april ',true
-'week school holiday try avoid school holiday destination mentioned post 1 cape town western cape report inappropriate content halem hartford 2 posts save reply 2 re july weather jan 11 2014 7 10 pm happytraveler853 am planning ',true
-'sunny days colorful open-air festivals outdoor activities expect - august weather airfares festivals events airfares hotel rates ',true
-'version called hafenfest centers valuable asset water events events july events august festivals eat drink german food oppressive heavy warmer months ',true
-' vogue magazine sommer 2013 - youtube jp view message english youtube learn you\'re viewing youtube ',true
-'viewing youtube japanese change preference below __count__ __total__ vogue magazine sommer 2013 rockets 1 5841 584 3 363 11 12 1 2 2014 04 22 vogue ',true
-'1 5841 584 3 363 11 12 1 2 2014 04 22 vogue magazine sommer 2013 gorgeus model swimwear join quizgroup partner program http join quizgroup com youtube vogue ',true
-'result rank abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 alsoedit 2012 paralympics referencesedit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
-'rank abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 alsoedit 2012 paralympics referencesedit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
-'94 kg 155 15 180 17 335 15 alsoedit 2012 paralympics referencesedit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision send female athletes london ',true
-'services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons season start click answer starts 1st spring starts september 1st answer question yes partially ',true
-'earth sciences atmospheric sciences climatology climate changes seasons season start click answer starts 1st spring starts september 1st answer question yes partially ',true
-'2 874 671 contributions passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 found ',true
-'incredible value money begin prices lowest months factor mind school holidays month july busier finally means days ',true
-'months factor mind school holidays month july busier finally means days shorter sun sets earlier ',true
-'months factor mind school holidays month july busier finally means days shorter sun sets earlier country bit guard ',true
-'mind school holidays month july busier finally means days shorter sun sets earlier country bit guard ',true
-'time answered continents depends north equator december january february equator july ugust 8 people found useful craig le 2 620 contributions ',true
-'2 874 671 contributions passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 found ',true
 '- july august com food health home money style tech travel autos dating relationships ',true
 'temperatures rarely dropping minus re bound time begins start finishes august weather season cooler temperatures ',true
 'usually takes august edited sarah megginson 1 1 1 related articles august skiing south wales skiing victoria guide month month month weather events holiday july month visit ',true
@@ -268,18 +81,47 @@
 'wide answered recently australia\'s begins 1 continues months july august tropical ',true
 'wide answered recently australia\'s begins 1 continues months july august tropical ',true
 'australia\'s begins 1 continues months july august tropical north easily defined tends dry season extends ',true
-'earth sciences atmospheric sciences climatology climate changes seasons officially start click answer official start 1 months southern hemisphere july august answer ',true
-'sciences atmospheric sciences climatology climate changes seasons officially start click answer official start 1 months southern hemisphere july august answer ',true
-'officially start click answer official start 1 months southern hemisphere july august answer ',true
-'officially start click answer official start 1 months southern hemisphere july august answer question yes ',true
 'st petersburg - july august com autos careers dating relationships education en espa ol entertainment food health home money ',true
 'info travelers 5 russia\'s must-see sights com travel eastern europe travel travel st petersburg travel - travel st petersburg st petersburg july august peter peterhof cc by-nc-nd goron kerry kubilius eastern ',true
 'com travel eastern europe travel travel st petersburg travel - travel st petersburg st petersburg july august peter peterhof cc by-nc-nd goron kerry kubilius eastern ',true
 'powerful anticyclones affected dissipated heat wave 2010 worst eastern united middle east eastern europe european northeastern china southeastern 2010 marked fourth consecutive warmest month ',true
 'drowned swimming bathing various lakes 37 northern eurasia commonwealth independent edit 2010 heatwave type anticyclone heat wave formed 10 2010 dissipated august 13 2010 affected western ukraine kazakhstan belarus georgia georgia edit temperatures 30-40c wild fires hit land near ',true
+'losses 193 adapt 2030 15 2551 6 902 334 335 4 5 2016 07 22 suffering record temperatures july 2016 wave damaged agriculture 2016 arabica coffee beans stand 36 loss bananas 70 loss ribeira argentina 30 ',true
+'rank abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 edit 2012 paralympics references edit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
+'abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 edit 2012 paralympics references edit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
+'kg 155 15 180 17 335 15 edit 2012 paralympics references edit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision send female athletes london ',true
+'money sports sections answers cloud services wikianswers categories travel countries cities time click answer july august answer question yes partially tell optional ',true
+'sports sections answers cloud services wikianswers categories travel countries cities time click answer july august answer question yes partially tell optional ',true
+'answers cloud services wikianswers categories travel countries cities time click answer july august answer question yes partially tell optional ',true
+'goodmedalist 4 contributions answered earth sciences autumn time autumn starts 20th march 1st starts 20th march called autumnal equinox fall equinox ',true
+'2 874 671 contributions passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 found ',true
+'sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',true
+'asia aus pacific europe latin america america america mid east home north america average sea temperature max 22 1 71 7 avg 18 3 65 ',true
+'help center close close share property via email beach-contact specials 2017 broadkill delaware america 309133 3 br 2 ba sleeps 7 signed ',true
+'3 switzerland 0 netherlands 3 netherlands 0 3 italy 0 3 round edit australia vs belgium edit australia 3 queen\'s club london kingdom 17 1963 grass belgium 0 1 2 3 1 margaret smith christiane mercelis 6 3 6 1 2 ',true
+'bourgnon alice wavre eva de jong jenny ridderhof 1 6 3 6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 ',true
+'alice wavre eva de jong jenny ridderhof 1 6 3 6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 ',true
+'1 6 3 6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
+'6 7 italy vs edit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
+'rss realistic robot hand handles sushi pro video kaguya moon crash update tadpole 19 jun 2009 tadpole hiroshima prefecture 15 past weeks people witnessing tadpoles fish ',true
+'robot hand handles sushi pro video kaguya moon crash update tadpole 19 jun 2009 tadpole hiroshima prefecture 15 past weeks people witnessing tadpoles fish ',true
+'pro video kaguya moon crash update tadpole 19 jun 2009 tadpole hiroshima prefecture 15 past weeks people witnessing tadpoles fish frogs fall sky strange ',true
+'413 hodgman nerd test dashpunk puolimatkassa blog archive kisakuntoon gearfuse afternoon linkage 26th 2009 bryant drew jones spry bry miss fidget com blog archive tadpoles pinktentacle rt laurent_fintoni pinktentacle hey guys havent seen http www ',true
+'opportunities university missouri program 16 august 12 2014 center study asia pardee school global studies ',true
+'ethnology occasional papers asia opportunities outreach contact search search opportunities university missouri program 16 august 12 2014 inviting applications students ',true
+'martial arts learning japanese living japanese host families university missouri program 16 august 12 2014 share facebook www facebook com mizzoujapansummer2014 http international ',true
+'contact program director prof martin holman mizzoujapan gmail com opportunities university missouri program 16 august 12 2014 posted 3 ago friday february 21st 2014 pardee school ',true
+'sunny days colorful open-air festivals outdoor activities expect - august weather airfares festivals events airfares hotel rates ',true
+'version called hafenfest centers valuable asset water events events july events august festivals eat drink german food oppressive heavy warmer months ',true
+' vogue magazine sommer 2013 - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'viewing youtube japanese change preference below __count__ __total__ vogue magazine sommer 2013 rockets 1 5841 584 3 363 11 12 1 2 2014 04 22 vogue ',true
+'1 5841 584 3 363 11 12 1 2 2014 04 22 vogue magazine sommer 2013 gorgeus model swimwear join quizgroup partner program http join quizgroup com youtube vogue ',true
 'led zeppelin tour 1969 - wikipedia led zeppelin tour 1969 wikipedia free encyclopedia jump navigation search 1969 concert led zeppelin associated album led zeppelin start date 8 1969 date 29 1969 legs 1 13 led zeppelin concert ',true
 'zeppelin tour 1969 wikipedia free encyclopedia jump navigation search 1969 concert led zeppelin associated album led zeppelin start date 8 1969 date 29 1969 legs 1 13 led zeppelin concert ',true
-'losses 193 adapt 2030 15 2551 6 902 334 335 4 5 2016 07 22 suffering record temperatures july 2016 wave damaged agriculture 2016 arabica coffee beans stand 36 loss bananas 70 loss ribeira argentina 30 ',true
 'sciences atmospheric sciences climatology climate changes seasons days months click answer 92 days months july august answer question yes partially tell optional ',true
 'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
 'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
@@ -311,18 +153,6 @@
 'map holiday business close navigation home australia\'s seasons discover luxury add share lasts august country months fall dry season ',true
 'navigation home australia\'s seasons discover luxury add share lasts august country months fall dry season ',true
 'western australia\'s wildflowers western australia\'s wildflowers western australia\'s wildflowers forget drab days bleak landscapes western breaks stereotypes september 12 000 wildflower species explode follow vivid ',true
-'rank abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 edit 2012 paralympics references edit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
-'abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 edit 2012 paralympics references edit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
-'kg 155 15 180 17 335 15 edit 2012 paralympics references edit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision send female athletes london ',true
-'money sports sections answers cloud services wikianswers categories travel countries cities time click answer july august answer question yes partially tell optional ',true
-'sports sections answers cloud services wikianswers categories travel countries cities time click answer july august answer question yes partially tell optional ',true
-'answers cloud services wikianswers categories travel countries cities time click answer july august answer question yes partially tell optional ',true
-'goodmedalist 4 contributions answered earth sciences autumn time autumn starts 20th march 1st starts 20th march called autumnal equinox fall equinox ',true
-'2 874 671 contributions passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
-'sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 found ',true
 '24 2014 bright warm fragrant wildflower meadows bright nights fresh strawberries absolutely glorious meadow pobojka stanislav zhukovsky corner overgrown garden goutweed grass ',true
 'wifi cafe crimea share twitter facebook pinterest email loading 24 2014 russian art tags art russian art russian landscape russian nature russian related posts russian russian art august russian autumn russian art october ',true
 'player pool current mens xv squad coaches staff eagle donate usa eagles 25 0 men\'s eagles bonney field men\'s eagles bonney field 25 2016 7 00 pm pdt series referee matthew carley eng blanked eagles finish series victory kelley ',true
@@ -335,75 +165,188 @@
 'uribici temperature plummeted -18 insane imprensadopovo com br santa catarina southern hit wave extreme 14 cities subzero temperatures dawn 8 2016 imprensadopovo com br coldest spots hill ',true
 'com br santa catarina southern hit wave extreme 14 cities subzero temperatures dawn 8 2016 imprensadopovo com br coldest spots hill church urubici temperature -1 ',true
 'sensa rmica de -18 durante madrugada follow facebook twitter tags 2016 photo snow weather anomaly strange sounds related articlesmore author earth changes record ',true
+'3 switzerland 0 netherlands 3 netherlands 0 3 italy 0 3 roundedit australia vs belgiumedit australia 3 queen\'s club london kingdom 17 1963 grass belgium 0 1 2 3 1 margaret smith christiane mercelis 6 3 6 1 2 ',true
+'bourgnon alice wavre eva de jong jenny ridderhof 1 6 3 6 7 italy vs statesedit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
+'ridderhof 1 6 3 6 7 italy vs statesedit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
+'3 6 7 italy vs statesedit italy 0 queen\'s club london kingdom 17 1963 grass 3 1 2 3 1 lea pericoli darlene hard 4 6 6 2 2 6 ',true
+'summer liz osborn currentresults com 51 largest cities phoenix las vegas stand consistently getting remarkably weather months july august major cities average temperature throughout summer ',true
+'snow 2016 hawaii mexico ukraine california hampshire alaska - youtube jp view message english youtube learn you\'re viewing youtube ',true
+'you\'re viewing youtube japanese change preference below __count__ __total__ snow 2016 hawaii mexico ukraine california hampshire alaska adapt 2030 15 2551 3 930 182 183 7 8 2016 06 17 record ',true
+'damage 6 5 billion series destructive floods occurred 2007 worst flooding occurred scotland 14 east yorkshire midlands 15 yorkshire midlands gloucestershire herefordshire worcestershire ',true
+'map holiday business close navigation winter home australia\'s seasons discover winter luxury add share winter lasts august country months fall tropical north ski snowboard victoria powdered slopes ',true
+'home australia\'s seasons discover winter luxury add share winter lasts august country months fall tropical north ski snowboard victoria powdered slopes ',true
+'- tips info travelers tips information travel july august peterhof cc lynng883 kerry kubilius eastern europe travel expert kerry kubilius updated august ',true
+'ads contact economic calendar privacy policy submit news tips donate news 0 shivers engulfs southern hemisphere iwb 27 2016 week 2016 ',true
+'economic calendar privacy policy submit news tips donate news 0 shivers engulfs southern hemisphere iwb 27 2016 week 2016 38 cites below 0c hundreds temperature records broken frost snow ',true
+'donate news 0 shivers engulfs southern hemisphere iwb 27 2016 week 2016 38 cites below 0c hundreds temperature records broken frost snow freezing lakes damage crops ready ',true
+'southern hemisphere iwb 27 2016 week 2016 38 cites below 0c hundreds temperature records broken frost snow freezing lakes damage crops ready ',true
+'http g1 globo com minas-gerais tria https en wikipedia org wiki uberaba southern hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
+'hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
+'follows spring - september october summer - november february autumn - march april - - august divided summer rainfall rainfall northern central ',true
+'spring - september october summer - november february autumn - march april - - august divided summer rainfall rainfall northern central east include ',true
+'virginia weather 2017 - accuweather forecast va 23451 recent locations virginia va46 york ny48 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',true
+'world world world world world world note select region finding country virginia weather follow login weather virginia va local weather 46 local weather today\'s weather hourly forecast extended ',true
+'world world world world world note select region finding country virginia weather follow login weather virginia va local weather 46 local weather today\'s weather hourly forecast extended weekend month outlook ',true
+'lazzarino lea pericoli ingrid palmeri christiane mercelis 6 2 6 2 1 round edit vs rhodesia edit 3 blau-weiss tennis club west berlin 8 1967 red clay rhodesia 0 1 2 3 1 billie jean king patricia walkden 6 3 2 6 ',true
+'lea pericoli ingrid palmeri christiane mercelis 6 2 6 2 1 round edit vs rhodesia edit 3 blau-weiss tennis club west berlin 8 1967 red clay rhodesia 0 1 2 3 1 billie jean king patricia walkden 6 3 2 6 ',true
+'christiane mercelis 6 2 6 2 1 round edit vs rhodesia edit 3 blau-weiss tennis club west berlin 8 1967 red clay rhodesia 0 1 2 3 1 billie jean king patricia walkden 6 3 2 6 ',true
+'lidy venneboer sylvana lazzarino lea pericoli 6 2 5 7 4 6 7 quarterfinals edit vs south africa edit 3 blau-weiss tennis club west berlin 9 1967 red clay south africa 0 1 2 3 1 rosie casals glenda swan 6 1 6 4 ',true
+'venneboer sylvana lazzarino lea pericoli 6 2 5 7 4 6 7 quarterfinals edit vs south africa edit 3 blau-weiss tennis club west berlin 9 1967 red clay south africa 0 1 2 3 1 rosie casals glenda swan 6 1 6 4 ',true
+'6 2 5 7 4 6 7 quarterfinals edit vs south africa edit 3 blau-weiss tennis club west berlin 9 1967 red clay south africa 0 1 2 3 1 rosie casals glenda swan 6 1 6 4 ',true
+'rr janine lieffrig judy tegart lesley turner 3 6 3 6 11 semifinals edit vs west germany edit 3 blau-weiss tennis club west berlin 10 1967 red clay west germany 0 1 2 3 1 rosie casals helga sl 6 2 7 ',true
+'rr janine lieffrig judy tegart lesley turner 3 6 3 6 11 semifinals edit vs west germany edit 3 blau-weiss tennis club west berlin 10 1967 red clay west germany 0 1 2 3 1 rosie casals helga sl 6 2 7 ',true
+'lesley turner 3 6 3 6 11 semifinals edit vs west germany edit 3 blau-weiss tennis club west berlin 10 1967 red clay west germany 0 1 2 3 1 rosie casals helga sl 6 2 7 ',true
+'ann haydon-jones virginia wade judy tegart lesley turner 8 6 6 4 13 final edit vs britain edit 2 blau-weiss tennis club west berlin 11 1967 red clay britain 0 1 2 3 1 rosie casals virginia wade 9 7 8 6 ',true
+'haydon-jones virginia wade judy tegart lesley turner 8 6 6 4 13 final edit vs britain edit 2 blau-weiss tennis club west berlin 11 1967 red clay britain 0 1 2 3 1 rosie casals virginia wade 9 7 8 6 ',true
+'lesley turner 8 6 6 4 13 final edit vs britain edit 2 blau-weiss tennis club west berlin 11 1967 red clay britain 0 1 2 3 1 rosie casals virginia wade 9 7 8 6 ',true
+'november beijing weather december travel top 5 visit top visit beijing wellbeing author gavin van hinsbergh update july 21 2016 ',true
+'travel top 5 visit top visit beijing wellbeing author gavin van hinsbergh update july 21 2016 ',true
+'travel top 5 visit top visit beijing wellbeing author gavin van hinsbergh update july 21 2016 travel articles ',true
+'listed website shun shokuzai calendar kikkoman official site foods august vegetables bell pepper bitter melon goya corn cucumber edamame lettuce april august ',true
+'website shun shokuzai calendar kikkoman official site foods august vegetables bell pepper bitter melon goya corn cucumber edamame lettuce april august myoga japanese ',true
+'money news issues parenting religion spirituality sports style tech travel 1 germany\'s festivals 2 festivals 3 festivals 4 carnival cultures 5 festivals events ',true
+'american rock band killers released 7 2004 15 2004 1 album influenced wave music post-punk fuss produced commercially critically successful singles brightside told ',true
+'media 5 2 10 12 13 rolling stone 14 slant magazine 15 spin 16 fuss released 7 2004 15 2004 1 2005 reissued ',true
+'1001 albums hear die release history edit region date label 7 2004 lizard king 15 2004 island references edit killers fuss - popmatters music review popmatters 15 2004 retrieved july 26 2009 mervis scott ',true
+'world world world world world note select region finding country panama city weather follow login weather panama city fl local weather 71 local weather today\'s weather hourly forecast ',true
+'world world world world note select region finding country panama city weather follow login weather panama city fl local weather 71 local weather today\'s weather hourly forecast extended weekend month outlook ',true
+'pack jumper school holidays start mid late week july roughly school holidays means busy cooler southern friends zealand ',true
+'web access - camp directors employer web access - employers volunteer camp 4 8 weeks august camp counselor teach children ages 7 17 immerse yourself ',true
+'answer time answered school subjects day south hemisphere starts 21st day northern hemisphere starts summer 7 people found useful ',true
+'time answered school subjects day south hemisphere starts 21st day northern hemisphere starts summer 7 people found useful ',true
+'somewhat thanks feedback answered countries cities seasons earths north tilts towards sun ',true
+'seasons earths north tilts towards sun summer earths south tilts towards sun december edit share brand cold winters brand choose brands below we\'ll send question directly ',true
+'2012 rarely outside home riyadh didn notice heat officially starts riyadh usually month peak months july city received considerable able rains march april ',true
+'week school holiday try avoid school holiday destination mentioned post 1 cape town western cape report inappropriate content halem hartford 2 posts save reply 2 re july weather jan 11 2014 7 10 pm happytraveler853 am planning ',true
+'anne mcclain happy 11 2013 dis411 family friendly fun home disney stars disney music games game reviews ',true
+'parks outside parks misc privacy policy dmca policy media kit disney stars anne mcclain happy 11 2013 11 2013 amy crooks 0 comment farm anne ',true
+'privacy policy dmca policy media kit disney stars anne mcclain happy 11 2013 11 2013 amy crooks 0 comment farm anne mcclain disney disney channel disney disney stars mcclain sisters music thanks sharing ',true
+'main menu edit page read language led zeppelin tour 1969 1969 concert led zeppelin associated album led zeppelin start date 8 1969 date 29 1969 legs 1 13 led zeppelin concert ',true
+'menu edit page read language led zeppelin tour 1969 1969 concert led zeppelin associated album led zeppelin start date 8 1969 date 29 1969 legs 1 13 led zeppelin concert ',true
+'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots ',true
+'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots burning arnhem land northern territory ',true
+'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots burning arnhem land northern territory time ',true
+'northern natural hazards nasa earth observatory home images global maps features news notes acquired 17 2004 download image 531 kb jpeg 1920x1440 fires red dots burning arnhem land northern territory time moderate resolution imaging spectroradiometer modis image aqua satellite ',true
+'event view left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern ',true
+'event view left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 ',true
+'left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 fires ',true
+'left subscribe eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 fires northern april 9 2015 fires northern october ',true
+'eo kids related images fires northern 14 2004 late fires northern territory september 28 2004 fires northern 9 2014 fires northern april 9 2015 fires northern october 22 ',true
+'cloud services wikianswers categories travel continents regions continents western click answer australia\'s seasons opposite usa - august summer december - februaryautumn march - maywinter - augustspring september - november ',true
+'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
+'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
+'australian answered recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
+'recently seasons day begins 1st months july august unlike countries northern hemisphere ',true
+'australiana don\'t wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
+'don\'t wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
+'wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
+'wide improved answer season falls months july august carroll jones 139 found useful edit share ',true
+'don\'t wide answered recently months july august months tropical north ',true
+'wide answered recently months july august months tropical north ',true
+'wide answered recently months july august months tropical north season - ',true
+'wide answered recently months july august months tropical north season - \'wet\' ',true
+'australiana don\'t wide answered months australia\'s season runs august weather varies cold wet south warm dry ',true
+'don\'t wide answered months australia\'s season runs august weather varies cold wet south warm dry ',true
+'wide answered months australia\'s season runs august weather varies cold wet south warm dry ',true
+'don\'t wide updated answer western yes australia\'s begins 1 31 august tropical north experience ',true
+'don\'t wide updated answer western yes australia\'s begins 1 31 august tropical north experience ',true
+'wide updated answer western yes australia\'s begins 1 31 august tropical north experience wet season dry season 2 ',true
+'wide updated answer western yes australia\'s begins 1 31 august tropical north experience wet season dry season 2 ',true
+'updated answer western yes australia\'s begins 1 31 august tropical north experience wet season dry season 2 people found useful edit ',true
+'don\'t wide answered recently australia\'s begins 1 continues months july august tropical ',true
+'wide answered recently australia\'s begins 1 continues months july august tropical ',true
+'wide answered recently australia\'s begins 1 continues months july august tropical ',true
+'australia\'s begins 1 continues months july august tropical north easily defined tends dry season extends ',true
+'446 249 250 0 1 2016 06 26 week 2016 38 cites below 0c hundreds temperature records broken frost snow freezing lakes damage crops ready ',true
+'http g1 globo com minas-gerais tria https en wikipedia org wiki uberaba southern hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
+'hemisphere 2016 http freddofili 13958-landamento la nina forecast http freddofili 13596-esplode-la victoria 2016 http freddofili 13961-cambiament https en wikipedia org wiki vit c3 http noticias terra ',true
+'incredible value money begin prices lowest months factor mind school holidays month july busier finally means days ',true
+'months factor mind school holidays month july busier finally means days shorter sun sets earlier ',true
+'months factor mind school holidays month july busier finally means days shorter sun sets earlier country bit guard ',true
+'mind school holidays month july busier finally means days shorter sun sets earlier country bit guard ',true
+'weather 2017 - accuweather forecast wa 98631 recent locations wa38 york ny48 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',true
+'world world world world world world note select region finding country weather follow login weather wa local weather 38 local weather today\'s weather hourly forecast extended ',true
+'world world world world world note select region finding country weather follow login weather wa local weather 38 local weather today\'s weather hourly forecast extended weekend month outlook ',true
+'myrtle weather 2017 - accuweather forecast sc 29577 recent locations myrtle sc55 york ny48 miami fl80 los angeles ca45 browse location recent countries china kingdom countries world north america ',true
+'world world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended ',true
+'world world world world world note select region finding country myrtle weather follow login weather myrtle sc local weather 55 local weather today\'s weather hourly forecast extended weekend month outlook ',true
+'20 1963 soviet union establish line introduction lessen threat accidental nuclear war ',true
+'1962 crisis hopefully avert future misunderstandings trigger nuclear conflict soviet union agreed 1963 establish line 24-hour-a-day communications link washington moscow president ',true
+'line thankfully avert nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 ',true
+'avert nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www ',true
+'avert nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www history com this-day-in-history ',true
+'nuclear war article details 20 1963 soviet union establish line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www history com this-day-in-history united-states-and-soviet-union-will-establish-a-hot-line ',true
+'line author history com staff website name history com published 2009 title 20 1963 soviet union establish line url http www history com this-day-in-history united-states-and-soviet-union-will-establish-a-hot-line access date january 01 2017 publisher ',true
+'- wikipedia hot song wikipedia free encyclopedia jump navigation search hot single monrose album strictly physical b-side scream released 29 2007 18 july 2007 finland 30 july 2007 netherlands july 2008 turkey format cd single ring ',true
+'macheck production team mozart friends 5 music video edit music video hot directed bernard wedig shot 18 2007 berlin premiered 26 2007 band\'s official website received ',true
+'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots ',true
+'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots scattered northern moderate resolution imaging spectroradiometer ',true
+'fires northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots scattered northern moderate resolution imaging spectroradiometer modis ',true
+'northern natural hazards nasa earth observatory home images global maps features news notes acquired 14 2004 download image 605 kb jpeg 1720x1290 fires red dots scattered northern moderate resolution imaging spectroradiometer modis image aqua satellite captured ',true
+'event view left subscribe eo kids related images fires northern 17 2004 fires northern april 9 2015 fires northern 9 ',true
+'left subscribe eo kids related images fires northern 17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 ',true
+'related images fires northern 17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 ',true
+'northern 17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 ',true
+'17 2004 fires northern april 9 2015 fires northern 9 2014 late fires northern territory september 28 2004 bushfires northern territory august 17 2008 view related images subscribe feeds contact earth ',true
+'media free ebook blogroll shop faqs comment policy contact join day bobinoz 1 2009 australian climate day whilst ',true
+'bobinoz 1 2009 australian climate day whilst uk start summer day picture 4 10 3 minutes ',true
+'sports 226 technology 3 000 transport 179 ukraine 81 video 964 8 day posted 1 2016 tim people russian cities norilsk ',true
+'images page network 8 responses day douglas 1 2016 4 53 pm los angeles cloudy cool overcast grey skies reply jim ',true
+'4 53 pm los angeles cloudy cool overcast grey skies reply jim philopena 1 2016 5 48 pm 1st day 20th northern hemisphere guess whenever reply darius 4 2016 ',true
+'philopena 1 2016 5 48 pm 1st day 20th northern hemisphere guess whenever reply darius 4 2016 ',true
+'services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons season start click answer starts 1st spring starts september 1st answer question yes partially ',true
+'earth sciences atmospheric sciences climatology climate changes seasons season start click answer starts 1st spring starts september 1st answer question yes partially ',true
+'2 874 671 contributions passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 found ',true
+'hampton sea temperature average water temperatures menu africa asia aus pacific europe latin america america america mid ',true
+'asia aus pacific europe latin america america america mid east home north america hampton hampton average sea temperature max 17 1 62 8 avg 13 9 57 ',true
+'culture shock fun thinking travel weird movies music answering stupid questions law writing posted 20 2012 tsuyu rainy season designation determined ',true
+'movies music answering stupid questions law writing posted 20 2012 tsuyu rainy season designation determined ',true
+'answering stupid questions law writing posted 20 2012 tsuyu rainy season designation determined ',true
+'shinto zen tagged haiku seasons summer bookmark permalink answering stupid questions law 7 responses writing didem aydin 20 2012 11 22 pm haiku ',true
+'summer bookmark permalink answering stupid questions law 7 responses writing didem aydin 20 2012 11 22 pm haiku ',true
+'questions law 7 responses writing didem aydin 20 2012 11 22 pm haiku ',true
+'travel 1 2 july 3 month month 4 5 time visit sydney com travel travel visiting comes snow pete atkinson image bank getty images larry rivera ',true
+'month month 4 5 time visit sydney com travel travel visiting comes snow pete atkinson image bank getty images larry rivera ',true
+'comes snow pete atkinson image bank getty images larry rivera travel expert larry rivera month australian except altitudes expect snow temperature ',true
+'atkinson image bank getty images larry rivera travel expert larry rivera month australian except altitudes expect snow temperature ',true
+'you\'re viewing youtube japanese change preference below __count__ __total__ snow russian tornadoman 3131 234 2 3 0 1 2013 06 03 2013 siberia vodka samovar babushka youtube sudden hail storm novosibirsk 12 07 2014 12 ',true
+'youtube japanese change preference below __count__ __total__ snow russian tornadoman 3131 234 2 3 0 1 2013 06 03 2013 siberia vodka samovar babushka youtube sudden hail storm novosibirsk 12 07 2014 12 ',true
+'snow arthurs pass - 2 02 geoffmackley 9 991 506 2 02 heavy snowfall - 2 12 deathmoond 1 173 2 12 toyota land cruiser offroad snow camping - 23 53 jake paslar 31 388 23 53 snow hits yakutia - 0 46 ruptly tv 1 455 0 46 snow canterbury ',true
+'snowfall - 2 12 deathmoond 1 173 2 12 toyota land cruiser offroad snow camping - 23 53 jake paslar 31 388 23 53 snow hits yakutia - 0 46 ruptly tv 1 455 0 46 snow canterbury ',true
+'result rank abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 alsoedit 2012 paralympics referencesedit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
+'rank abbas al-qaisoum men\'s 94 kg 155 15 180 17 335 15 alsoedit 2012 paralympics referencesedit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision ',true
+'94 kg 155 15 180 17 335 15 alsoedit 2012 paralympics referencesedit women vie olympic rights bbc 13 2008 ioc press qatar brunei associated press 29 2010 qatar decision send female athletes london ',true
+'time answered continents depends north equator december january february equator july ugust 8 people found useful craig le 2 620 contributions ',true
+'2 874 671 contributions passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'passionate australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'australian answered earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'earth sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 ',true
+'sciences officially start official start 1 months southern hemisphere july august tanya de bruyn 14 found ',true
+'decided ll walk park 30 minutes walk maybe stop boo hoo didn live 18 kidding course didn stop hydrangeas park ',true
+'maybe stop boo hoo didn live 18 kidding course didn stop hydrangeas park bloom ',true
+'blog born left 18 months seeing thru kids eyes fascinating reply sheila 29 2013 2 33 pm miss miss friend reply balot july 3 2013 5 31 am ',true
+'range mountain range passes south wales victoria regular snowfalls snow season alps south-eastern september tradition observational practice quality records contributed ',true
+'stars worlds film fashion music art 20th annual russian ball london held saturday 20th lancaster house welcoming guests honour princess olga prince rostislav programme ball include 6 ',true
+'earth sciences atmospheric sciences climatology climate changes seasons officially start click answer official start 1 months southern hemisphere july august answer ',true
+'sciences atmospheric sciences climatology climate changes seasons officially start click answer official start 1 months southern hemisphere july august answer ',true
+'officially start click answer official start 1 months southern hemisphere july august answer ',true
+'officially start click answer official start 1 months southern hemisphere july august answer question yes ',true
 'select region worldwide north america usa california mammoth lakes ski resort lies multiple regions mountain ski resort located sierra nevada pacific west coast pacific coast ranges western ski resorts ski resorts test reports comparison reports weather ski lifts accommodations ski resorts usa sorted according largest ski resorts ',false
-'respectively 24 2009 wisconsin currently confirmed swine 1 2009 confirmed milwaukee resident underlying health issues died ',false
-'december india sales traditionally start month schools japan unusual starts spring sales traditionally held late march shopping associate labor day monday ',false
-'respectively 24 2009 wisconsin currently confirmed swine 1 2009 confirmed milwaukee resident underlying health issues died ',false
-'alexander kotlobovsky igor seyidov russian goldrich robert 2010 published war shoot incidents aiipowmia com archived original 11 2009 retrieved april 4 2010 gerald hannaford lieutenant colonel air force arlingtoncemetery net 2010 retrieved april 5 2010 globalsecurity org 2010 rb-66 destroyer globalsecurity ',false
 'john kennedy nikita khrushchev vienna summit war 1962 1979 edit main article war 1962 1979 date country president secretary premier soviet union notes 23 25 1967 glassboro 6 lyndon johnson alexei kosygin glassboro ',false
+'alexander kotlobovsky igor seyidov russian goldrich robert 2010 published war shoot incidents aiipowmia com archived original 11 2009 retrieved april 4 2010 gerald hannaford lieutenant colonel air force arlingtoncemetery net 2010 retrieved april 5 2010 globalsecurity org 2010 rb-66 destroyer globalsecurity ',false
+'respectively 24 2009 wisconsin currently confirmed swine 1 2009 confirmed milwaukee resident underlying health issues died ',false
 'internet movie database retrieved 7 january 2013 dangerfield rodney fields greg snee greg 1986 orion pictures access-date requires url help thomas kevin 12 1986 movie review \'back\' laughs respect los angeles times retrieved 7 january ',false
-'day typically fallen april 15 1 filing return living outside puerto rico day typically fallen 15 due two-month automatic extension granted filers irs publication 54 2 ',false
-'april 15 1 filing return living outside puerto rico day typically fallen 15 due two-month automatic extension granted filers irs publication 54 2 ',false
 'based online population 1 038 6 google search data 2014 classification based search terms include phrase 7 google search data january 2015 8 google consumer survey march 2015 based ',false
 'based online population 1 038 6 google search data 2014 classification based search terms include phrase 7 google search data january 2015 8 google consumer survey march 2015 based online population ',false
 'google search data 2014 classification based search terms include phrase 7 google search data january 2015 8 google consumer survey march 2015 based online population ',false
 'january 2010 2015 11 google search data 15 aug 24 2014 12 google search data january 2015 classification based search terms include phrase google research insight thinking subscribe jordan rost analytical insights marketing google ',false
 '2010 2015 11 google search data 15 aug 24 2014 12 google search data january 2015 classification based search terms include phrase google research insight thinking subscribe jordan rost analytical insights marketing google ',false
 'google search data 15 aug 24 2014 12 google search data january 2015 classification based search terms include phrase google research insight thinking subscribe jordan rost analytical insights marketing google ',false
-'activities vocabulary posted gabriele jun 21 2012 english vocabulary seen time fun relaxation children attend school half july august families vacation sometime ',false
-'vocabulary posted gabriele jun 21 2012 english vocabulary seen time fun relaxation children attend school half july august families vacation sometime ',false
-'global publications topics datasets question search global indicators methods experts global indicators database updated polling data 2016 survey questions topic image opinion confidence president personal freedoms china image opinion china ',false
-'2016 event held jun 2017 medical device summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 ',false
-'event held jun 2017 medical device summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical ',false
-'summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies ',false
-'summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies ',false
-'nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies ',false
-'venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies medical device industry medical device ',false
-'medical device summit fall 2015 - november 2015 final final medical device summit fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories ',false
-'medical device summit fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories ',false
-'medical device summit fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories medical technology science laboratories ',false
-'fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories medical technology science laboratories life ',false
-'2015 event held apr 2017 medical device manufacturing summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held ',false
-'event held apr 2017 medical device manufacturing summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical ',false
-'manufacturing summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing ',false
-'summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing ',false
-'vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing ',false
-'near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing issues challenges including drive learn venue ',false
-'past events medical device manufacturing summit fall 2012 - november 27 2012 colorado springs medical device manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 ',false
-'colorado springs medical device manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 ',false
-'springs medical device manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 final final ',false
-'manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 final final ',false
-'medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 ',false
-'medical device manufacturing summit fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 ',false
-'medical device manufacturing summit fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas ',false
-'fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas ',false
-'november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health ',false
-'final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical ',false
-'medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical technology concurrent events society ',false
-'summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical technology concurrent events society human ',false
-'street shopping cooler july august heavy chinese tour july october prices disadvantages touring hot rainy sometimes heavy thunderstorms flooding central south coastal sometimes suffer typhoons china\'s top destinations hiking ',false
-'sign book hotel add article search search home medical device summit 2017 medical device summit 2017 19-20 2017 langham huntington pasadena ca view hotels near venue remind mecontact organizerpromote event medical device summit ',false
-'search home medical device summit 2017 medical device summit 2017 19-20 2017 langham huntington pasadena ca view hotels near venue remind mecontact organizerpromote event medical device summit ',false
-'view hotels near venue remind mecontact organizerpromote event medical device summit 2017 held pasadena ca 19-20 2017 medical device summit 2017 addresses insights developments strategies ',false
-'event medical device summit 2017 held pasadena ca 19-20 2017 medical device summit 2017 addresses insights developments strategies medical device industry medical device ',false
-'events medical device summit fall 2015 - november 2015 final final medical device summit 2016 - 23 2016 las vegas medical device summit fall 2016 - november ',false
-'medical device summit fall 2015 - november 2015 final final medical device summit 2016 - 23 2016 las vegas medical device summit fall 2016 - november 23 2016 las vegas ',false
-'2015 - november 2015 final final medical device summit 2016 - 23 2016 las vegas medical device summit fall 2016 - november 23 2016 las vegas ',false
-'23 killing 98 people injuring hundreds hide caption 1 11 photos storms kill scores soldiers rubble funing 24 according ministry civil affairs central government beijing sent ',false
-'victim head injury lies stretcher hospital funing 24 hide caption 3 11 photos storms kill scores worker assesses damage infrastructure 24 according local authorities powerful ',false
-'stretcher hospital funing 24 hide caption 3 11 photos storms kill scores worker assesses damage infrastructure 24 according local authorities powerful storm hit region winds ',false
-'winds 125 kilometers hour hide caption 4 11 photos storms kill scores residents motorbike pass heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged ',false
-'125 kilometers hour hide caption 4 11 photos storms kill scores residents motorbike pass heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged factory seen 24 ',false
-'residents motorbike pass heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged factory seen 24 wake severe weather ',false
-'heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged factory seen 24 wake severe weather affected yancheng city ',false
-'residents densely populated homes farms factories hide caption 6 11 photos storms kill scores funing residents search belongings rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross ',false
-'homes farms factories hide caption 6 11 photos storms kill scores funing residents search belongings rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross road funing 24 provincial ',false
-'scores funing residents search belongings rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross road funing 24 provincial authorities jiangsu deployed ',false
-'rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross road funing 24 provincial authorities jiangsu deployed rescue team 1 000 people ',false
-'rescue team 1 000 people hide caption 8 11 photos storms kill scores residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties ',false
-'1 000 people hide caption 8 11 photos storms kill scores residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties seen funing 24 ',false
-'11 photos storms kill scores residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties seen funing 24 extreme winds tossed cars ',false
-'residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties seen funing 24 extreme winds tossed cars air yancheng city according ',false
+'december india sales traditionally start month schools japan unusual starts spring sales traditionally held late march shopping associate labor day monday ',false
 '2016 event held apr 2017 medical device manufacturing summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2016 held ',false
 'event held apr 2017 medical device manufacturing summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2016 held las vegas nv 23-24 2016 medical ',false
 'manufacturing summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2016 held las vegas nv 23-24 2016 medical device manufacturing summit 2016 dedicated medical device manufacturing ',false
@@ -440,20 +383,7 @@
 'final medical device manufacturing summit 2015 - 25 2015 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical ',false
 'medical device manufacturing summit 2015 - 25 2015 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical technology featured conferences exhibitions epharma ',false
 'summit 2015 - 25 2015 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical technology featured conferences exhibitions epharma 2017 ',false
-'23 2016 1 06pm edt hail storms kill 78 people eastern left stands debris damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen ',false
-'eastern left stands debris damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen ',false
-'debris damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 2 ',false
-'damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 2 6 left stands debris ',false
-'2016 daily via reuters 1 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 2 6 left stands debris ',false
-'via reuters 2 6 left stands debris houses hit funing county yancheng jiangsu province 23 2016 daily via reuters 3 6 left debris damaged houses seen ',false
-'daily via reuters 3 6 left debris damaged houses seen hit funing county yancheng jiangsu province 23 2016 reuters stringer 4 6 left damaged houses seen hit ',false
-'debris damaged houses seen hit funing county yancheng jiangsu province 23 2016 reuters stringer 4 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 5 ',false
-'damaged houses seen hit funing county yancheng jiangsu province 23 2016 reuters stringer 4 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 5 6 left pylon seen ',false
-'23 2016 reuters stringer 4 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 5 6 left pylon seen damaged ',false
-'daily via reuters 5 6 left pylon seen damaged hit funing county yancheng jiangsu province 23 2016 daily via reuters 6 6 beijing hail storms driving ',false
-'pylon seen damaged hit funing county yancheng jiangsu province 23 2016 daily via reuters 6 6 beijing hail storms driving rain killed 78 people injured 500 ',false
-'pylon seen damaged hit funing county yancheng jiangsu province 23 2016 daily via reuters 6 6 beijing hail storms driving rain killed 78 people injured 500 ',false
-'left roads blocked stands debris damaged house hit jiangsu province photograph daily reuters associated press beijing thursday 23 2016 16 59 bst published thursday 23 2016 14 16 bst share ',false
+'global publications topics datasets question search global indicators methods experts global indicators database updated polling data 2016 survey questions topic image opinion confidence president personal freedoms china image opinion china ',false
 'count december 21 timespan january 6 - december 29 maximum rated ef4 katie wynnewood oklahoma 9 abilene-chapman kansas 25 yancheng jiangsu 23 tornadoes 949 damage unknown fatalities 17 1 ',false
 'baker montana demolishing homes steel-framed barn afternoon 23 isolated violent impacted outskirts yancheng jiangsu province numerous homes leveled vehicles tossed cell phone towers destroyed ',false
 'convenience store path overall outbreak produced 23 tornadoes deaths 55 23 edit main article 2016 jiangsu ef0 ef1 ef2 ef3 ef4 ef5 0 0 0 0 1 0 violent ef4 ',false
@@ -462,26 +392,6 @@
 'https apps dat noaa gov stormdamage damageviewer death toll rises 99 world bulletin retrieved 27 2016 kalra shivika 99 killed 846 injured hailstorm india retrieved 26 2016 http www weather gov ict july7thtornadoes record-breaking ',false
 'stormdamage damageviewer death toll rises 99 world bulletin retrieved 27 2016 kalra shivika 99 killed 846 injured hailstorm india retrieved 26 2016 http www weather gov ict july7thtornadoes record-breaking ',false
 '99 world bulletin retrieved 27 2016 kalra shivika 99 killed 846 injured hailstorm india retrieved 26 2016 http www weather gov ict july7thtornadoes record-breaking rainfall destructive tornadoes spell ',false
-' hd bigbang commercial tea pi nongfu 2016 - youtube jp view message english youtube learn you\'re viewing youtube ',false
-'change preference below __count__ __total__ hd bigbang commercial tea pi nongfu 2016 bigbangmusic 453453 672 18 19 1 2 2016 06 10 aim ',false
-'25 2016 reuters aly song 12 13 left people pray victims hit yancheng thursday square ningbo zhejiang province 24 2016 picture 24 2016 reuters stringer 13 13 beijing rescue workers ',false
-'japanese retrieved 21 2015 billboard 100 2015 6 1 billboard japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved ',false
-'100 2015 6 1 billboard japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved ',false
-'100 2015 6 1 billboard japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved ',false
-'japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard ',false
-'27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard ',false
-'100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved ',false
-'100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved ',false
-'japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard ',false
-'3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard ',false
-'100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved ',false
-'100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved ',false
-'japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard ',false
-'10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard ',false
-'100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july ',false
-'100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july ',false
-'japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july 1 2015 billboard ',false
-'17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july 1 2015 billboard ',false
 'japanese retrieved 11 2016 billboard 100 2016 5 30 billboard japanese retrieved 24 2016 billboard 100 2016 6 6 billboard japanese retrieved 1 2016 billboard 100 2016 6 13 billboard japanese retrieved ',false
 '100 2016 5 30 billboard japanese retrieved 24 2016 billboard 100 2016 6 6 billboard japanese retrieved 1 2016 billboard 100 2016 6 13 billboard japanese retrieved ',false
 '100 2016 5 30 billboard japanese retrieved 24 2016 billboard 100 2016 6 6 billboard japanese retrieved 1 2016 billboard 100 2016 6 13 billboard japanese retrieved ',false
@@ -503,6 +413,74 @@
 '100 2016 6 27 billboard japanese retrieved 22 2016 billboard 100 2016 7 4 billboard japanese retrieved 29 2016 billboard 100 2016 7 11 billboard japanese retrieved july ',false
 'japanese retrieved 22 2016 billboard 100 2016 7 4 billboard japanese retrieved 29 2016 billboard 100 2016 7 11 billboard japanese retrieved july 6 2016 billboard ',false
 '22 2016 billboard 100 2016 7 4 billboard japanese retrieved 29 2016 billboard 100 2016 7 11 billboard japanese retrieved july 6 2016 billboard ',false
+'yuriko yoshitaka - magazine pictorial 2012 - famousfix login previous 3 photos posted mishgan jun 9 2015 ',false
+'3 photos posted mishgan jun 9 2015 0 0 yuriko yoshitaka - magazine pictorial 2012 submit enter add comment auto refresh stopped due inactivity refresh comments chat ',false
+'japanese actress represented japanese agency amuse view 0 150 0 magazine 2012 mishgan view 2012 2012 2012 ',false
+'represented japanese agency amuse view 0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko ',false
+'represented japanese agency amuse view 0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka ',false
+'0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka ',false
+'0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos ',false
+'150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos ',false
+'magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial ',false
+'2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial ',false
+'2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial 2012 mishgan jun 9 2015 2 photos yuriko yoshitaka - soup magazine pictorial ',false
+'2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial 2012 mishgan jun 9 2015 2 photos yuriko yoshitaka - soup magazine pictorial ',false
+'magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial 2012 mishgan jun 9 2015 2 photos yuriko yoshitaka - soup magazine pictorial ',false
+'destination rain average amount rain observed 38 mm 10 17 days avoid rain preferred destination brighton note ',false
+'useful statistical information found various official country tourism websites rainfall tropics november rainfall occurs january february march dry october tropics region north tropic capricorn approximately ',false
+'found various official country tourism websites rainfall tropics november rainfall occurs january february march dry october tropics region north tropic capricorn approximately ',false
+'found various official country tourism websites rainfall tropics november rainfall occurs january february march dry october tropics region north tropic capricorn approximately top third ',false
+'australian region tied cyclone gwenda 1999 inigo weakened significantly striking western 8 april dissipating shortly thereafter final system cyclone epi developed east papua guinea 5 dissipated following day overall season caused 60 deaths 12 million 2003 usd nb 1 ',false
+'automatically qualified olympics host nation team roster following squad men\'s football tournament 2016 olympics team 18 players officially named 29 confirmed 14 july 40 41 31 july fernando prass left squad ',false
+'00 mm monthly rainfall 1111 extreme uv index average maximum daytime temperature 42 108 heat humidity usually 11 hours ',false
+'sign book hotel add article search search home medical device summit 2017 medical device summit 2017 19-20 2017 langham huntington pasadena ca view hotels near venue remind mecontact organizerpromote event medical device summit ',false
+'search home medical device summit 2017 medical device summit 2017 19-20 2017 langham huntington pasadena ca view hotels near venue remind mecontact organizerpromote event medical device summit ',false
+'view hotels near venue remind mecontact organizerpromote event medical device summit 2017 held pasadena ca 19-20 2017 medical device summit 2017 addresses insights developments strategies ',false
+'event medical device summit 2017 held pasadena ca 19-20 2017 medical device summit 2017 addresses insights developments strategies medical device industry medical device ',false
+'events medical device summit fall 2015 - november 2015 final final medical device summit 2016 - 23 2016 las vegas medical device summit fall 2016 - november ',false
+'medical device summit fall 2015 - november 2015 final final medical device summit 2016 - 23 2016 las vegas medical device summit fall 2016 - november 23 2016 las vegas ',false
+'2015 - november 2015 final final medical device summit 2016 - 23 2016 las vegas medical device summit fall 2016 - november 23 2016 las vegas ',false
+'respectively 24 2009 wisconsin currently confirmed swine 1 2009 confirmed milwaukee resident underlying health issues died ',false
+'2016 event held jun 2017 medical device summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 ',false
+'event held jun 2017 medical device summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical ',false
+'summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies ',false
+'summit 2016 23-24 2016 red rock casino resort spa las vegas nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies ',false
+'nv past view hotels near venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies ',false
+'venue medical device summit 2016 held las vegas nv 23-24 2016 medical device summit 2016 addresses insights developments strategies medical device industry medical device ',false
+'medical device summit fall 2015 - november 2015 final final medical device summit fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories ',false
+'medical device summit fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories ',false
+'medical device summit fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories medical technology science laboratories ',false
+'fall 2016 - november 23 2016 las vegas medical device summit 2017 - 19 2017 pasadena similar events category health medical equipment medical laboratories medical technology science laboratories life ',false
+'25 2016 reuters aly song 12 13 left people pray victims hit yancheng thursday square ningbo zhejiang province 24 2016 picture 24 2016 reuters stringer 13 13 beijing rescue workers ',false
+'23 killing 98 people injuring hundreds hide caption 1 11 photos storms kill scores soldiers rubble funing 24 according ministry civil affairs central government beijing sent ',false
+'victim head injury lies stretcher hospital funing 24 hide caption 3 11 photos storms kill scores worker assesses damage infrastructure 24 according local authorities powerful ',false
+'stretcher hospital funing 24 hide caption 3 11 photos storms kill scores worker assesses damage infrastructure 24 according local authorities powerful storm hit region winds ',false
+'winds 125 kilometers hour hide caption 4 11 photos storms kill scores residents motorbike pass heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged ',false
+'125 kilometers hour hide caption 4 11 photos storms kill scores residents motorbike pass heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged factory seen 24 ',false
+'residents motorbike pass heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged factory seen 24 wake severe weather ',false
+'heavily damaged village funing 24 hide caption 5 11 photos storms kill scores damaged factory seen 24 wake severe weather affected yancheng city ',false
+'residents densely populated homes farms factories hide caption 6 11 photos storms kill scores funing residents search belongings rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross ',false
+'homes farms factories hide caption 6 11 photos storms kill scores funing residents search belongings rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross road funing 24 provincial ',false
+'scores funing residents search belongings rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross road funing 24 provincial authorities jiangsu deployed ',false
+'rubble collapsed houses 24 hide caption 7 11 photos storms kill scores firefighters cross road funing 24 provincial authorities jiangsu deployed rescue team 1 000 people ',false
+'rescue team 1 000 people hide caption 8 11 photos storms kill scores residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties ',false
+'1 000 people hide caption 8 11 photos storms kill scores residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties seen funing 24 ',false
+'11 photos storms kill scores residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties seen funing 24 extreme winds tossed cars ',false
+'residents survey damaged homes funing 24 hide caption 9 11 photos storms kill scores destroyed properties seen funing 24 extreme winds tossed cars air yancheng city according ',false
+' hd bigbang commercial tea pi nongfu 2016 - youtube jp view message english youtube learn you\'re viewing youtube ',false
+'change preference below __count__ __total__ hd bigbang commercial tea pi nongfu 2016 bigbangmusic 453453 672 18 19 1 2 2016 06 10 aim ',false
+'widespread deep reported england 3rd brazell 1968 inevitably snowfall rarer creature widespread sleet showers manage affect 2nd 1975 rudely infamously affecting cricket match derbyshire lancashire ',false
+'brazell 1968 inevitably snowfall rarer creature widespread sleet showers manage affect 2nd 1975 rudely infamously affecting cricket match derbyshire lancashire buxton ',false
+'commonly 2006-07 australian bushfire season typically run southeast tend common severe summer autumn december march ',false
+'experience winter italy experiences log sign entertainment tech lifestyle food health politics money sports ',false
+'services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons experience winter italy experiences click answer 23 5 tilt earth ',false
+'spring autumn winter countries southern hemisphere experience autumn winter spring respectively northern hemisphere receives direct sunlight experiences winter italy ',false
+'day dog rosenthal1 3 811 contributions answered seasons experiences winter whereas italy experiences 23 5 tilt earth axis causes countries ',false
+'spring autumn winter countries southern hemisphere experience autumn winter spring respectively southern hemisphere receives direct sunlight experiences winter italy ',false
+'answer useful yes somewhat thanks feedback brand experience winter italy experiences brand choose brands below we\'ll send question ',false
+'8 46 precipitation 5 mm 0 2 winter holidays top african holidays celebrated winter 16 youth day 26 day struggle freedom july 10 family day august 9 national women\'s day seasons spring summer winter countries europe asia america australia nature sounds art poems quotes education 2015 - ',false
+'5 mm 0 2 winter holidays top african holidays celebrated winter 16 youth day 26 day struggle freedom july 10 family day august 9 national women\'s day seasons spring summer winter countries europe asia america australia nature sounds art poems quotes education 2015 - ',false
+'winter holidays top african holidays celebrated winter 16 youth day 26 day struggle freedom july 10 family day august 9 national women\'s day seasons spring summer winter countries europe asia america australia nature sounds art poems quotes education 2015 - ',false
 '204 houses destroyed 28 310 people affected 31 million yuan economic losses 8 jiangsu 14 2005 shuyang county jiangsu province 7 223 hundred injured total unknown ',false
 'houses destroyed 28 310 people affected 31 million yuan economic losses 8 jiangsu 14 2005 shuyang county jiangsu province 7 223 hundred injured total unknown 194 487 houses destroyed 825 000 ',false
 'shanghai 13 march 2006 pudong shanghai 34 25 shenzhen 27 march 2006 longgang pingshan districts shenzhen guangdong province 5 12 26 vietnam 14 2006 trieu son district thanh hoa province vietnam 2 500 homes damaged 27 anhui ',false
@@ -525,27 +503,58 @@
 'county jiangxi province 258 houses damaged 27 million yuan damages 76 2016 jiangsu 23 2016 yancheng jiangsu province 1 ef4 99 846 accompanied hailstorm kills 99 people ',false
 'province 258 houses damaged 27 million yuan damages 76 2016 jiangsu 23 2016 yancheng jiangsu province 1 ef4 99 846 accompanied hailstorm kills 99 people injures 846 77 ',false
 'com national 3-killed-80-hurt-as-typhoon-strikes shdaily shtml http www cctvplus com news 20160417 8018938 shtml language 1 mounts rescue efforts toll hits 98 bangkok post afp retrieved 24 2016 fujita tetsuya theodore 1992 memoirs effort unlock mysteries severe ',false
-'yuriko yoshitaka - magazine pictorial 2012 - famousfix login previous 3 photos posted mishgan jun 9 2015 ',false
-'3 photos posted mishgan jun 9 2015 0 0 yuriko yoshitaka - magazine pictorial 2012 submit enter add comment auto refresh stopped due inactivity refresh comments chat ',false
-'japanese actress represented japanese agency amuse view 0 150 0 magazine 2012 mishgan view 2012 2012 2012 ',false
-'represented japanese agency amuse view 0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko ',false
-'represented japanese agency amuse view 0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka ',false
-'0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka ',false
-'0 150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos ',false
-'150 0 magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos ',false
-'magazine 2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial ',false
-'2012 mishgan view 2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial ',false
-'2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial 2012 mishgan jun 9 2015 2 photos yuriko yoshitaka - soup magazine pictorial ',false
-'2012 2012 2012 yuriko yoshitaka magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial 2012 mishgan jun 9 2015 2 photos yuriko yoshitaka - soup magazine pictorial ',false
-'magazine yuriko yoshitaka yuriko yoshitaka 2012 3 photos yuriko yoshitaka - magazine pictorial 2012 mishgan jun 9 2015 2 photos yuriko yoshitaka - soup magazine pictorial ',false
 ' hd bigbang tea pi nongfu commercial 2016 - youtube jp view message english youtube learn you\'re viewing youtube ',false
 'japanese change preference below __count__ __total__ hd bigbang tea pi nongfu commercial 2016 bigbang music 20 9242 7 430 343 344 0 1 2016 06 10 ',false
 '4 04 bigbang music 687 519 4 04 50 - hd bigbang tea pi nongfu commercial 2016youtube 10 bigbang anniversary special - 7 04 hallyu world official 121 884 ',false
+'2017 recognised similar album-equivalent sales 6 albums edit 2015 billboard publishing albums chart based similar methodology billboard 100 combining physical ',false
 'singles chronology tonight 2013 sun 2014 music video sun video teaser youtube sun kim hyun-joong\'s fourth japanese single released 18 2014 delicious deli records universal music six available versions single six completely image concepts ',false
 'mitsuhiro hidaka featured album 3 5 universal music released 30-second video teaser sun music video uploaded onto official youtube account 4 features various album jackets ',false
 'kim hyun joong world tour dream fantasy include cities seoul taiwan china thailand mexico peru starting 28 9 singles edit sun album single concepts title song sun pop-rock summer ',false
 'inst 3 56 type bonus title length 1 random postcard music videos edit sun release history edit country date distributing label format 18 2014 delicious deli records universal music cd 10 worldwide digital download 11 charts ',false
 'people mwave retrieved 2014-08-13 kim hyun joong release album star retrieved 2014-08-13 kim hyun joong comeback album mwave retrieved 2014-08-12 - sun spot 30sec youtube retrieved 2014-08-13 kim hyunjoong reveals video teaser japanese single ',false
+'holidays winter varies depending region country late july edit officially lasts december february includes christmas holidays ',false
+'september november actual based weather seasons follows spring september - october summer november - march april - winter - august spring short months whilst summer ',false
+'mainka peter schubert bernhard sinkel hans peter cloos edgar reitz katja rup volker schl ndorff 1978 credits review evan kindley posted 09 2010 source world artists vhs reaction series events summer ',false
+'katja rup volker schl ndorff 1978 credits review evan kindley posted 09 2010 source world artists vhs reaction series events summer ',false
+'york coming theater near co-presenting rare screening 92ytribeca thursday 10th 8pm discussion screening evan kindley 2010 notcoming com ',false
+'january 2007 retrieved 12 2015 morton adam orietta guerrera bridie smith 15 december 2006 claim life age retrieved 11 2015 fire emergency services authority western annual report 2006-07 pdf dfes wa gov au department fire emergency services retrieved ',false
+'community world answer time answered science experience winter italy experiences 23 5 tilt earth axis causes countries ',false
+'spring autumn winter countries southern hemisphere experience autumn winter spring respectively northern hemisphere receives direct sunlight experiences winter italy ',false
+'tilting sun lookup december solstice giving bottom world heat top colder winter top tilt reverse heat ',false
+'3 people found useful rosenthal1 3 811 contributions answered seasons experiences winter whereas italy experiences 23 5 tilt earth axis causes countries ',false
+'spring autumn winter countries southern hemisphere experience autumn winter spring respectively southern hemisphere receives direct sunlight experiences winter italy ',false
+'date summer 1 december 28 29 february autumn 1 march 31 winter 1 31 august spring 1 september 30 november tropical northern queensland western northern territory dry seasons observed addition temperate names 16 six-season calendar reckoning edit calendars south asia six-season method ',false
+'retrieved 11 2015 bushfire deaths inquest begins ballarat courier 29 august 2007 retrieved 11 2015 stewart mcarthur corangamite 27 february 2006 victoria january - grievance debate parliamentary debates hansard commonwealth house representatives pp 60 62 murphy matthew meaghan shaw 23 january 2006 residents flee ',false
+'tips canada japan zealand uk usa news corporate social responsibility guides oz underway 29th jun 2009 09 21 taxtipsaustralia traveltipsaustralia 30th thousands people sent applications australian refunds ',false
+'canada japan zealand uk usa news corporate social responsibility guides oz underway 29th jun 2009 09 21 taxtipsaustralia traveltipsaustralia 30th thousands people sent applications australian refunds ',false
+'underway 29th jun 2009 09 21 taxtipsaustralia traveltipsaustralia 30th thousands people sent applications australian refunds beat rush 14 500 people registered specialist taxback com ',false
+'day typically fallen april 15 1 filing return living outside puerto rico day typically fallen 15 due two-month automatic extension granted filers irs publication 54 2 ',false
+'april 15 1 filing return living outside puerto rico day typically fallen 15 due two-month automatic extension granted filers irs publication 54 2 ',false
+'activities vocabulary posted gabriele jun 21 2012 english vocabulary seen time fun relaxation children attend school half july august families vacation sometime ',false
+'vocabulary posted gabriele jun 21 2012 english vocabulary seen time fun relaxation children attend school half july august families vacation sometime ',false
+'street shopping cooler july august heavy chinese tour july october prices disadvantages touring hot rainy sometimes heavy thunderstorms flooding central south coastal sometimes suffer typhoons china\'s top destinations hiking ',false
+'left roads blocked stands debris damaged house hit jiangsu province photograph daily reuters associated press beijing thursday 23 2016 16 59 bst published thursday 23 2016 14 16 bst share ',false
+'japanese retrieved 21 2015 billboard 100 2015 6 1 billboard japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved ',false
+'100 2015 6 1 billboard japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved ',false
+'100 2015 6 1 billboard japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved ',false
+'japanese retrieved 27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard ',false
+'27 2015 billboard 100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard ',false
+'100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved ',false
+'100 2015 6 8 billboard japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved ',false
+'japanese retrieved 3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard ',false
+'3 2015 billboard 100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard ',false
+'100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved ',false
+'100 2015 6 15 billboard japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved ',false
+'japanese retrieved 10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard ',false
+'10 2015 billboard 100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard ',false
+'100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july ',false
+'100 2015 6 22 billboard japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july ',false
+'japanese retrieved 17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july 1 2015 billboard ',false
+'17 2015 billboard 100 2015 6 29 billboard japanese retrieved 24 2015 billboard 100 2015 7 6 billboard japanese retrieved july 1 2015 billboard ',false
+'09 24 oldfield 2014 thryptomene baeckeacea muell myrtaceae flowers photographed visible http www ultraviol ene-baeckeacea maldon victoria 9 2014 australian native wildflower garden specimen synonyms baeckea micrantha dc schidiomyrtus micrantha dc schauer ',false
+'fire service 36 2 archived original pdf 27 september 2016 retrieved 5 2015 australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern seaboard 1994 ',false
+'inoculated yellow fever information travelers\' health climate info hot summer august temperatures sometimes excess 50c winter months december march ',false
+'deal sunshine round situated eastern board flora luxuriant abundant temperatures reach 32 16 25 august light rain falls throughout wettest season ',false
 'unknown casualties 99 fatalities 846 injuries affected jiangsu funing sheyang counties 1most severe damage enhanced fujita scale afternoon 23 2016 severe thunderstorm produced violent jiangsu province striking outskirts yancheng 2 30 local time ',false
 'sheyang counties 1most severe damage enhanced fujita scale afternoon 23 2016 severe thunderstorm produced violent jiangsu province striking outskirts yancheng 2 30 local time ',false
 'beds floodlights 2 edit wikimedia commons media related 2016 jiangsu tornadoes 2016 references edit bob henson 23 2016 78 deaths midwest dodges major damage weather underground retrieved 23 2016 steven jiang ',false
@@ -585,43 +594,83 @@
 'close subscribe print edition newsletters epoch times twitter epoch times facebook symbol strength symbol strength hong jiang 12 2011 10 47 am updated october 1 2015 4 34 pm hope ',false
 'subscribe print edition newsletters epoch times twitter epoch times facebook symbol strength symbol strength hong jiang 12 2011 10 47 am updated october 1 2015 4 34 pm hope ',false
 'times twitter epoch times facebook symbol strength symbol strength hong jiang 12 2011 10 47 am updated october 1 2015 4 34 pm hope ',false
-'mainka peter schubert bernhard sinkel hans peter cloos edgar reitz katja rup volker schl ndorff 1978 credits review evan kindley posted 09 2010 source world artists vhs reaction series events summer ',false
-'katja rup volker schl ndorff 1978 credits review evan kindley posted 09 2010 source world artists vhs reaction series events summer ',false
-'york coming theater near co-presenting rare screening 92ytribeca thursday 10th 8pm discussion screening evan kindley 2010 notcoming com ',false
-'destination rain average amount rain observed 38 mm 10 17 days avoid rain preferred destination brighton note ',false
 'japanese change preference below __count__ __total__ yuna kim - shanghai airport 15 2012 980980 21 904 86 87 1 2 2012 06 15 yuna kim fan ',false
-'widespread deep reported england 3rd brazell 1968 inevitably snowfall rarer creature widespread sleet showers manage affect 2nd 1975 rudely infamously affecting cricket match derbyshire lancashire ',false
-'brazell 1968 inevitably snowfall rarer creature widespread sleet showers manage affect 2nd 1975 rudely infamously affecting cricket match derbyshire lancashire buxton ',false
-'09 24 oldfield 2014 thryptomene baeckeacea muell myrtaceae flowers photographed visible http www ultraviol ene-baeckeacea maldon victoria 9 2014 australian native wildflower garden specimen synonyms baeckea micrantha dc schidiomyrtus micrantha dc schauer ',false
-'fire service 36 2 archived original pdf 27 september 2016 retrieved 5 2015 australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern seaboard 1994 ',false
-'2017 recognised similar album-equivalent sales 6 albums edit 2015 billboard publishing albums chart based similar methodology billboard 100 combining physical ',false
-'commonly 2006-07 australian bushfire season typically run southeast tend common severe summer autumn december march ',false
-'experience winter italy experiences log sign entertainment tech lifestyle food health politics money sports ',false
-'services wikianswers categories science earth sciences atmospheric sciences climatology climate changes seasons experience winter italy experiences click answer 23 5 tilt earth ',false
-'spring autumn winter countries southern hemisphere experience autumn winter spring respectively northern hemisphere receives direct sunlight experiences winter italy ',false
-'day dog rosenthal1 3 811 contributions answered seasons experiences winter whereas italy experiences 23 5 tilt earth axis causes countries ',false
-'spring autumn winter countries southern hemisphere experience autumn winter spring respectively southern hemisphere receives direct sunlight experiences winter italy ',false
-'answer useful yes somewhat thanks feedback brand experience winter italy experiences brand choose brands below we\'ll send question ',false
-'useful statistical information found various official country tourism websites rainfall tropics november rainfall occurs january february march dry october tropics region north tropic capricorn approximately ',false
-'found various official country tourism websites rainfall tropics november rainfall occurs january february march dry october tropics region north tropic capricorn approximately ',false
-'found various official country tourism websites rainfall tropics november rainfall occurs january february march dry october tropics region north tropic capricorn approximately top third ',false
-'january 2007 retrieved 12 2015 morton adam orietta guerrera bridie smith 15 december 2006 claim life age retrieved 11 2015 fire emergency services authority western annual report 2006-07 pdf dfes wa gov au department fire emergency services retrieved ',false
-'australian region tied cyclone gwenda 1999 inigo weakened significantly striking western 8 april dissipating shortly thereafter final system cyclone epi developed east papua guinea 5 dissipated following day overall season caused 60 deaths 12 million 2003 usd nb 1 ',false
-'holidays winter varies depending region country late july edit officially lasts december february includes christmas holidays ',false
 'join dance colophon dit artikel ook beschikbaar het nederlands upturn forward economic quarterly report 09 2015 michael share twitter linkedin facebook google pocket instapaper e-mail toon alle ',false
-'community world answer time answered science experience winter italy experiences 23 5 tilt earth axis causes countries ',false
-'spring autumn winter countries southern hemisphere experience autumn winter spring respectively northern hemisphere receives direct sunlight experiences winter italy ',false
-'tilting sun lookup december solstice giving bottom world heat top colder winter top tilt reverse heat ',false
-'3 people found useful rosenthal1 3 811 contributions answered seasons experiences winter whereas italy experiences 23 5 tilt earth axis causes countries ',false
-'spring autumn winter countries southern hemisphere experience autumn winter spring respectively southern hemisphere receives direct sunlight experiences winter italy ',false
-'praised video stance driving law 59 edit portal feminism portal wikimedia commons media related women2drive 2011 2012 arabian protests women\'s rights women arab references edit laura bashraheel 27 2009 women\'s transport solutions arab news retrieved 6 october 2012 ii human ',false
-'edit portal feminism portal wikimedia commons media related women2drive 2011 2012 arabian protests women\'s rights women arab references edit laura bashraheel 27 2009 women\'s transport solutions arab news retrieved 6 october 2012 ii human ',false
-'wikimedia commons media related women2drive 2011 2012 arabian protests women\'s rights women arab references edit laura bashraheel 27 2009 women\'s transport solutions arab news retrieved 6 october 2012 ii human ',false
-'automatically qualified olympics host nation team roster following squad men\'s football tournament 2016 olympics team 18 players officially named 29 confirmed 14 july 40 41 31 july fernando prass left squad ',false
 'caravan - wine recorded live beat-club 1971 - youtube jp view message english youtube learn you\'re viewing youtube ',false
 'you\'re viewing youtube japanese change preference below __count__ __total__ caravan - wine recorded live beat-club 1971 olddenn 264264 286 808 1 822 1 823 30 31 2011 07 15 ',false
 'luv 1971 - 3 29 frankie ruiz 271 268 3 29 50 - caravan - wine recorded live beat-club 1971 youtube caravan - golf girl music video 1971 - 4 22 r1x2f3 91 047 ',false
-'inoculated yellow fever information travelers\' health climate info hot summer august temperatures sometimes excess 50c winter months december march ',false
+'\'epidemiological investigation mers-cov spread single hospital south korea 2015\' http bit ly 29qfxpp announcements issue effectiveness seasonal vaccine preventing laboratory-confirmed primary care 2014 15 results ongoing increasing temporal geographical trends incidence extended-spectrum beta-lactamase-producing enterobacteriaceae infections ',false
+'doi http dx doi org 10 2807 1560-7917 es 2015 20 36 30013 received 16 2015 accepted 31 august 2015 2014 15 uk characterised circulation predominantly antigenically genetically drifted h3n2 ',false
+'2015 event held apr 2017 medical device manufacturing summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held ',false
+'event held apr 2017 medical device manufacturing summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical ',false
+'manufacturing summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing ',false
+'summit 2015 25-26 2015 red rock casino resort spa las vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing ',false
+'vegas nv past view hotels near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing ',false
+'near venue medical device manufacturing summit 2015 held las vegas nv 25-26 2015 medical device manufacturing summit 2015 dedicated medical device manufacturing issues challenges including drive learn venue ',false
+'past events medical device manufacturing summit fall 2012 - november 27 2012 colorado springs medical device manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 ',false
+'colorado springs medical device manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 ',false
+'springs medical device manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 final final ',false
+'manufacturing summit 2012 - november 27 2012 colorado springs medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 final final ',false
+'medical device manufacturing summit 2013 - 27 2013 las vegas medical device manufacturing summit fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 ',false
+'medical device manufacturing summit fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 ',false
+'medical device manufacturing summit fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas ',false
+'fall 2013 - november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas ',false
+'november 2013 final final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health ',false
+'final medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical ',false
+'medical device manufacturing summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical technology concurrent events society ',false
+'summit 2014 - 26 2014 las vegas medical device manufacturing summit 2016 - 23 2016 las vegas similar events category health medical equipment medical technology concurrent events society human ',false
+'reply death oligarchs 11 2007 9 26 am soviet fall snow reply voodoostevie 11 2007 9 29 am pictures circulating past upstate york snow accumalted walls ',false
+'jane learn programs tulane university law school matching criteria tulane university 227 paulo language culture tulane university 2012 language culture paulo 16 july 27 2012 application due march 2 2012 students enroll courses ',false
+'matching criteria tulane university 227 paulo language culture tulane university 2012 language culture paulo 16 july 27 2012 application due march 2 2012 students enroll courses ',false
+'elizabeth ii marked 50th accession throne bank holiday moved 4 2012 form weekend queen diamond jubilee ',false
+'03z southwest indian ocean swi - south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity ',false
+'indian ocean swi - south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity ',false
+'ocean swi - south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity ',false
+'- south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity ',false
+'northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south ',false
+'northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south pacific spa - south pacific ocean east longitude 160e activity ',false
+'southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south pacific spa - south pacific ocean east longitude 160e activity ',false
+'indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south pacific spa - south pacific ocean east longitude 160e activity ',false
+'homeless blaze destroys houses abc news australian broadcasting corporation 6 april 2011 retrieved 10 2015 australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern seaboard 1994 ',false
+'northern hemisphere december february summer march autumn august winter september november plan ahead information weather rainfall capital cities weather sydney weather sydney summer dec ',false
+'title moot title sca talk 21 33 19 2015 utc support nom sovereign sentinel 01 25 20 2015 utc support move ',false
+'talk 21 33 19 2015 utc support nom sovereign sentinel 01 25 20 2015 utc support move russian altenmann\'s comments realized article distinct climate text article \'russian winter\' instead \'russian winter\' sovereign sentinel 16 ',false
+'read article weather article russian capitalized excuse various losers wars -m altenmann 02 13 20 2015 utc strong oppose seriously read article article ',false
+'ictu oculi proposed title doesn\'t red slash 18 45 22 2015 utc oppose russian defined concept article winters funny capitalization english followed own rules ',false
+'em bh dies falling viadutc g1 portuguese 27 2013 retrieved 27 2013 protests economist retrieved 2 october 2015 brazilian explainer abc 24 2013 comiss de cultura da mara ouve fora ',false
+'dies falling viadutc g1 portuguese 27 2013 retrieved 27 2013 protests economist retrieved 2 october 2015 brazilian explainer abc 24 2013 comiss de cultura da mara ouve fora ',false
+'portuguese 27 2013 retrieved 27 2013 protests economist retrieved 2 october 2015 brazilian explainer abc 24 2013 comiss de cultura da mara ouve fora eixo ',false
+'1 december 2011 hope arab spring chill arab washington post retrieved 7 october 2016 hossein mousavian seyed 3 2016 iran\'s national security threat huffington post retrieved 23 september 2016 toby harnden ',false
+'observer reported british officers training snipers elite security forces deployed squelch protesters calling reforms neighboring bahrain 19 17 hague described arab transformational event september 11 attacks 2001 claimed ',false
+'forces deployed squelch protesters calling reforms neighboring bahrain 19 17 hague described arab transformational event september 11 attacks 2001 claimed ',false
+'2017 05 07 18 46 thursday 29th 2017 05 07 18 46 friday 30th 2017 05 07 18 46 hilton sale 30 hotels sale save 30 hotels hilton sale ',false
+'37 21 england 2016 international 37 15 november 2014 twickenham london 28 31 2014 international 36 24 november 2012 twickenham london 15 16 2012 international 35 23 2012 nelson mandela bay stadium port elizabeth 14 14 draw 2012 mid-year rugby test series ',false
+'england 2016 international 37 15 november 2014 twickenham london 28 31 2014 international 36 24 november 2012 twickenham london 15 16 2012 international 35 23 2012 nelson mandela bay stadium port elizabeth 14 14 draw 2012 mid-year rugby test series ',false
+'28 31 2014 international 36 24 november 2012 twickenham london 15 16 2012 international 35 23 2012 nelson mandela bay stadium port elizabeth 14 14 draw 2012 mid-year rugby test series ',false
+'2012 mid-year rugby test series 34 16 2012 coca-cola park johannesburg 36 27 33 9 2012 price kings park durban 22 17 32 27 november 2010 twickenham london 11 21 2010 international 31 22 november 2008 twickenham london 6 42 2008 international 30 ',false
+'test series 34 16 2012 coca-cola park johannesburg 36 27 33 9 2012 price kings park durban 22 17 32 27 november 2010 twickenham london 11 21 2010 international 31 22 november 2008 twickenham london 6 42 2008 international 30 ',false
+'september november actual based weather seasons follows spring september - october summer november - march april - winter - augustthus spring short months whilst summer ',false
+'passenger transport route 4 people found useful rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false
+'route 4 people found useful rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false
+'23 2016 1 06pm edt hail storms kill 78 people eastern left stands debris damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen ',false
+'eastern left stands debris damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen ',false
+'debris damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 2 ',false
+'damaged house hit funing county yancheng jiangsu province 23 2016 daily via reuters 1 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 2 6 left stands debris ',false
+'2016 daily via reuters 1 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 2 6 left stands debris ',false
+'via reuters 2 6 left stands debris houses hit funing county yancheng jiangsu province 23 2016 daily via reuters 3 6 left debris damaged houses seen ',false
+'daily via reuters 3 6 left debris damaged houses seen hit funing county yancheng jiangsu province 23 2016 reuters stringer 4 6 left damaged houses seen hit ',false
+'debris damaged houses seen hit funing county yancheng jiangsu province 23 2016 reuters stringer 4 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 5 ',false
+'damaged houses seen hit funing county yancheng jiangsu province 23 2016 reuters stringer 4 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 5 6 left pylon seen ',false
+'23 2016 reuters stringer 4 6 left damaged houses seen hit funing county yancheng jiangsu province 23 2016 daily via reuters 5 6 left pylon seen damaged ',false
+'daily via reuters 5 6 left pylon seen damaged hit funing county yancheng jiangsu province 23 2016 daily via reuters 6 6 beijing hail storms driving ',false
+'pylon seen damaged hit funing county yancheng jiangsu province 23 2016 daily via reuters 6 6 beijing hail storms driving rain killed 78 people injured 500 ',false
+'pylon seen damaged hit funing county yancheng jiangsu province 23 2016 daily via reuters 6 6 beijing hail storms driving rain killed 78 people injured 500 ',false
+'tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false
+'person found useful edit share rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false
+'september november actual based weather seasons follows spring september - october summer november - march april - winter - august spring short months whilst summer ',false
+'praised video stance driving law 59 edit portal feminism portal wikimedia commons media related women2drive 2011 2012 arabian protests women\'s rights women arab references edit laura bashraheel 27 2009 women\'s transport solutions arab news retrieved 6 october 2012 ii human ',false
+'edit portal feminism portal wikimedia commons media related women2drive 2011 2012 arabian protests women\'s rights women arab references edit laura bashraheel 27 2009 women\'s transport solutions arab news retrieved 6 october 2012 ii human ',false
+'wikimedia commons media related women2drive 2011 2012 arabian protests women\'s rights women arab references edit laura bashraheel 27 2009 women\'s transport solutions arab news retrieved 6 october 2012 ii human ',false
 'rugby world cup quarter-final 30 29 november 2014 millennium stadium cardiff 12 6 wales 2014 international 29 21 2014 mbombela stadium nelspruit 31 30 welsh tour 28 14 2014 growthpoint kings park durban 38 16 ',false
 '29 21 2014 mbombela stadium nelspruit 31 30 welsh tour 28 14 2014 growthpoint kings park durban 38 16 27 9 november 2013 millennium stadium cardiff 15 24 2013 international 26 11 september 2011 wellington regional stadium wellington 17 16 2011 rugby ',false
 '2014 mbombela stadium nelspruit 31 30 welsh tour 28 14 2014 growthpoint kings park durban 38 16 27 9 november 2013 millennium stadium cardiff 15 24 2013 international 26 11 september 2011 wellington regional stadium wellington 17 16 2011 rugby ',false
@@ -642,57 +691,8 @@
 '33 2005 internationals 18 6 november 2004 millennium stadium cardiff 36 38 2004 internationals 17 26 2004 loftus versfeld pretoria 53 18 16 15 2002 newlands cape town ',false
 '2005 internationals 18 6 november 2004 millennium stadium cardiff 36 38 2004 internationals 17 26 2004 loftus versfeld pretoria 53 18 16 15 2002 newlands cape town 19 8 15 8 ',false
 '2005 internationals 18 6 november 2004 millennium stadium cardiff 36 38 2004 internationals 17 26 2004 loftus versfeld pretoria 53 18 16 15 2002 newlands cape town 19 8 15 8 2002 ',false
-'tactic 1 person found useful edit share rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false
-'person found useful edit share rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false
-'september november actual based weather seasons follows spring september - october summer november - march april - winter - august spring short months whilst summer ',false
-'00 mm monthly rainfall 1111 extreme uv index average maximum daytime temperature 42 108 heat humidity usually 11 hours ',false
-'september november actual based weather seasons follows spring september - october summer november - march april - winter - august spring short months whilst summer ',false
 'learn programs ies abroad matching criteria cisabroad 5 0 3-week program stellenbosch university month field trips hands-on community service projects expert guest lecturers ',false
 'programs ies abroad matching criteria cisabroad 5 0 3-week program stellenbosch university month field trips hands-on community service projects expert guest lecturers ',false
 'ies abroad matching criteria cisabroad 5 0 3-week program stellenbosch university month field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad ',false
 'ies abroad matching criteria cisabroad 5 0 3-week program stellenbosch university month field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad matching ',false
 '3-week program stellenbosch university month field trips hands-on community service projects expert guest lecturers once-in-a-lifetime opportunity course topics inclu learn programs cisabroad matching criteria ',false
-'8 46 precipitation 5 mm 0 2 winter holidays top african holidays celebrated winter 16 youth day 26 day struggle freedom july 10 family day august 9 national women\'s day seasons spring summer winter countries europe asia america australia nature sounds art poems quotes education 2015 - ',false
-'5 mm 0 2 winter holidays top african holidays celebrated winter 16 youth day 26 day struggle freedom july 10 family day august 9 national women\'s day seasons spring summer winter countries europe asia america australia nature sounds art poems quotes education 2015 - ',false
-'winter holidays top african holidays celebrated winter 16 youth day 26 day struggle freedom july 10 family day august 9 national women\'s day seasons spring summer winter countries europe asia america australia nature sounds art poems quotes education 2015 - ',false
-'\'epidemiological investigation mers-cov spread single hospital south korea 2015\' http bit ly 29qfxpp announcements issue effectiveness seasonal vaccine preventing laboratory-confirmed primary care 2014 15 results ongoing increasing temporal geographical trends incidence extended-spectrum beta-lactamase-producing enterobacteriaceae infections ',false
-'doi http dx doi org 10 2807 1560-7917 es 2015 20 36 30013 received 16 2015 accepted 31 august 2015 2014 15 uk characterised circulation predominantly antigenically genetically drifted h3n2 ',false
-'date summer 1 december 28 29 february autumn 1 march 31 winter 1 31 august spring 1 september 30 november tropical northern queensland western northern territory dry seasons observed addition temperate names 16 six-season calendar reckoning edit calendars south asia six-season method ',false
-'retrieved 11 2015 bushfire deaths inquest begins ballarat courier 29 august 2007 retrieved 11 2015 stewart mcarthur corangamite 27 february 2006 victoria january - grievance debate parliamentary debates hansard commonwealth house representatives pp 60 62 murphy matthew meaghan shaw 23 january 2006 residents flee ',false
-'tips canada japan zealand uk usa news corporate social responsibility guides oz underway 29th jun 2009 09 21 taxtipsaustralia traveltipsaustralia 30th thousands people sent applications australian refunds ',false
-'canada japan zealand uk usa news corporate social responsibility guides oz underway 29th jun 2009 09 21 taxtipsaustralia traveltipsaustralia 30th thousands people sent applications australian refunds ',false
-'underway 29th jun 2009 09 21 taxtipsaustralia traveltipsaustralia 30th thousands people sent applications australian refunds beat rush 14 500 people registered specialist taxback com ',false
-'elizabeth ii marked 50th accession throne bank holiday moved 4 2012 form weekend queen diamond jubilee ',false
-'deal sunshine round situated eastern board flora luxuriant abundant temperatures reach 32 16 25 august light rain falls throughout wettest season ',false
-'03z southwest indian ocean swi - south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity ',false
-'indian ocean swi - south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity ',false
-'ocean swi - south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity ',false
-'- south indian ocean west longitude 90e activity northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity ',false
-'northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south ',false
-'northwest southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south pacific spa - south pacific ocean east longitude 160e activity ',false
-'southeast indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south pacific spa - south pacific ocean east longitude 160e activity ',false
-'indian ocean auw - 90e 135e activity northeast coral sea aue - 135e 160e activity south pacific spa - south pacific ocean east longitude 160e activity ',false
-'reply death oligarchs 11 2007 9 26 am soviet fall snow reply voodoostevie 11 2007 9 29 am pictures circulating past upstate york snow accumalted walls ',false
-'homeless blaze destroys houses abc news australian broadcasting corporation 6 april 2011 retrieved 10 2015 australian capital territory canberra 2003 south wales seaham 1939 chatsbury 1965 eastern seaboard 1994 ',false
-'northern hemisphere december february summer march autumn august winter september november plan ahead information weather rainfall capital cities weather sydney weather sydney summer dec ',false
-'jane learn programs tulane university law school matching criteria tulane university 227 paulo language culture tulane university 2012 language culture paulo 16 july 27 2012 application due march 2 2012 students enroll courses ',false
-'matching criteria tulane university 227 paulo language culture tulane university 2012 language culture paulo 16 july 27 2012 application due march 2 2012 students enroll courses ',false
-'title moot title sca talk 21 33 19 2015 utc support nom sovereign sentinel 01 25 20 2015 utc support move ',false
-'talk 21 33 19 2015 utc support nom sovereign sentinel 01 25 20 2015 utc support move russian altenmann\'s comments realized article distinct climate text article \'russian winter\' instead \'russian winter\' sovereign sentinel 16 ',false
-'read article weather article russian capitalized excuse various losers wars -m altenmann 02 13 20 2015 utc strong oppose seriously read article article ',false
-'ictu oculi proposed title doesn\'t red slash 18 45 22 2015 utc oppose russian defined concept article winters funny capitalization english followed own rules ',false
-'observer reported british officers training snipers elite security forces deployed squelch protesters calling reforms neighboring bahrain 19 17 hague described arab transformational event september 11 attacks 2001 claimed ',false
-'forces deployed squelch protesters calling reforms neighboring bahrain 19 17 hague described arab transformational event september 11 attacks 2001 claimed ',false
-'em bh dies falling viadutc g1 portuguese 27 2013 retrieved 27 2013 protests economist retrieved 2 october 2015 brazilian explainer abc 24 2013 comiss de cultura da mara ouve fora ',false
-'dies falling viadutc g1 portuguese 27 2013 retrieved 27 2013 protests economist retrieved 2 october 2015 brazilian explainer abc 24 2013 comiss de cultura da mara ouve fora ',false
-'portuguese 27 2013 retrieved 27 2013 protests economist retrieved 2 october 2015 brazilian explainer abc 24 2013 comiss de cultura da mara ouve fora eixo ',false
-'2017 05 07 18 46 thursday 29th 2017 05 07 18 46 friday 30th 2017 05 07 18 46 hilton sale 30 hotels sale save 30 hotels hilton sale ',false
-'1 december 2011 hope arab spring chill arab washington post retrieved 7 october 2016 hossein mousavian seyed 3 2016 iran\'s national security threat huffington post retrieved 23 september 2016 toby harnden ',false
-'37 21 england 2016 international 37 15 november 2014 twickenham london 28 31 2014 international 36 24 november 2012 twickenham london 15 16 2012 international 35 23 2012 nelson mandela bay stadium port elizabeth 14 14 draw 2012 mid-year rugby test series ',false
-'england 2016 international 37 15 november 2014 twickenham london 28 31 2014 international 36 24 november 2012 twickenham london 15 16 2012 international 35 23 2012 nelson mandela bay stadium port elizabeth 14 14 draw 2012 mid-year rugby test series ',false
-'28 31 2014 international 36 24 november 2012 twickenham london 15 16 2012 international 35 23 2012 nelson mandela bay stadium port elizabeth 14 14 draw 2012 mid-year rugby test series ',false
-'2012 mid-year rugby test series 34 16 2012 coca-cola park johannesburg 36 27 33 9 2012 price kings park durban 22 17 32 27 november 2010 twickenham london 11 21 2010 international 31 22 november 2008 twickenham london 6 42 2008 international 30 ',false
-'test series 34 16 2012 coca-cola park johannesburg 36 27 33 9 2012 price kings park durban 22 17 32 27 november 2010 twickenham london 11 21 2010 international 31 22 november 2008 twickenham london 6 42 2008 international 30 ',false
-'september november actual based weather seasons follows spring september - october summer november - march april - winter - augustthus spring short months whilst summer ',false
-'passenger transport route 4 people found useful rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false
-'route 4 people found useful rkramp 963 contributions answered seasons yes spring september - november summer december - february march - winter - august country summer whol ',false

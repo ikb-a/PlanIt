@@ -76,22 +76,22 @@ public class OpenEvalMonthController {
 	/**
 	 * location of January .arff training data (word bags and true/false)
 	 */
-	private static final String janFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalJan.arff";
-	private static final String febFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalFeb.arff";
-	private static final String marFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalMar.arff";
-	private static final String aprFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalApr.arff";
-	private static final String mayFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalMay.arff";
-	private static final String junFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalJun.arff";
-	private static final String julFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalJul.arff";
-	private static final String augFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalAug.arff";
-	private static final String sepFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalSep.arff";
-	private static final String octFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalOct.arff";
-	private static final String novFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalNov.arff";
-	private static final String decFile = "./src/main/resources/data/monthData/OpenEval/OpenEvalDec.arff";
+	private static final String janFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalJan.arff";
+	private static final String febFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalFeb.arff";
+	private static final String marFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalMar.arff";
+	private static final String aprFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalApr.arff";
+	private static final String mayFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalMay.arff";
+	private static final String junFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalJun.arff";
+	private static final String julFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalJul.arff";
+	private static final String augFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalAug.arff";
+	private static final String sepFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalSep.arff";
+	private static final String octFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalOct.arff";
+	private static final String novFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalNov.arff";
+	private static final String decFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalDec.arff";
 	/**
 	 * Folder at which memoized search results are to be stored
 	 */
-	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016_Small/";
+	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/YandexMemoization/";
 	/**
 	 * File extension for serialized link contents.
 	 */
@@ -101,7 +101,7 @@ public class OpenEvalMonthController {
 	 * serialized hashmap from String link name to String link contents. This
 	 * map can be used by the openEval objects.
 	 */
-	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/memoizationDec2016_Small/linkToFile.ser";
+	private static final String linkToFileNameMapPath = "./src/main/resources/data/monthData/OpenEval/YandexMemoization/linkToFile.ser";
 	/**
 	 * The search engine used. Cannot be changed after an instance of the
 	 * controller exists.

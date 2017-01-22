@@ -99,28 +99,46 @@ public class YandexSearch implements XMLSearchEngine {
 			}
 
 		} else {
-			List<SearchResult> results = new ArrayList<SearchResult>();
-			for (int i = 0; i < resultsInDOM.getLength(); i++) {
-				if (resultsInDOM.item(i).getNodeType() == (short) 1) {
-					Element elem = (Element) resultsInDOM.item(i);
-					String URL = elem.getElementsByTagName("url").item(0).getTextContent();
-					String title = elem.getElementsByTagName("title").item(0).getTextContent();
-					// snippet may or may not be present in the result
-					String snippet = "";
-					// attempt to find snippet
-					try {
-						snippet = elem.getElementsByTagName("passage").item(0).getTextContent();
-					} catch (NullPointerException e) {
-					}
+			try {
+				List<SearchResult> results = new ArrayList<SearchResult>();
+				for (int i = 0; i < resultsInDOM.getLength(); i++) {
+					if (resultsInDOM.item(i).getNodeType() == (short) 1) {
+						Element elem = (Element) resultsInDOM.item(i);
+						String URL = elem.getElementsByTagName("url").item(0).getTextContent();
 
-					SearchResult result = new SearchResult(title, URL, snippet);
-					results.add(result);
+						// title may not be present in XML returned by API
+						String title = "";
+						try {
+							title = elem.getElementsByTagName("title").item(0).getTextContent();
+						} catch (NullPointerException e) {
+						}
+
+						// snippet may or may not be present in the result
+						String snippet = "";
+						// attempt to find snippet
+						try {
+							snippet = elem.getElementsByTagName("passage").item(0).getTextContent();
+						} catch (NullPointerException e) {
+						}
+
+						SearchResult result = new SearchResult(title, URL, snippet);
+						results.add(result);
+					}
 				}
+
+				String hitsString = full.getElementsByTagName("found").item(0).getTextContent();
+				int hits = Integer.parseInt(hitsString);
+				return new SearchResults(hits, results, searchString, pageNumber);
+			} catch (Exception e) {
+				System.err.println("Error occured in parsing of DOM rep XML");
+				e.printStackTrace();
+				System.err.println("Raw XML:");
+				System.err.println(rawResults);
+				System.err.println("DOM Interpretation of XML:");
+				DFSDisplay(full.getDocumentElement(), 0);
+				throw new RuntimeException(e);
 			}
 
-			String hitsString = full.getElementsByTagName("found").item(0).getTextContent();
-			int hits = Integer.parseInt(hitsString);
-			return new SearchResults(hits, results, searchString, pageNumber);
 		}
 	}
 
