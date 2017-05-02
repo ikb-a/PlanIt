@@ -60,6 +60,12 @@ public class OpenEvalMonthController {
 	MultithreadSimpleOpenEval oct;
 	MultithreadSimpleOpenEval nov;
 	MultithreadSimpleOpenEval dec;
+	
+	/**
+	 * Map from Event name and keyword to an integer, which is the filename
+	 * of the file containing the memoized website contents found when searching
+	 * for said event and keyword.
+	 */
 	HashMap<String, Integer> completedLinks;
 
 	/**
@@ -89,7 +95,7 @@ public class OpenEvalMonthController {
 	private static final String novFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalNov.arff";
 	private static final String decFile = "./src/main/resources/data/monthData/OpenEval/YandexTraining/OpenEvalDec.arff";
 	/**
-	 * Folder at which memoized search results are to be stored
+	 * Folder at which memoized link contents are to be stored
 	 */
 	private static final String memoizationFolder = "./src/main/resources/data/monthData/OpenEval/YandexMemoization/";
 	/**
@@ -107,8 +113,8 @@ public class OpenEvalMonthController {
 	 * controller exists.
 	 */
 	static GenericSearchEngine search;
-	static boolean verbose = false;
-	static boolean verboseOpenEval=true;
+	static boolean verbose = true;
+	static boolean verboseOpenEval=false;
 	/**
 	 * The next available filename. These filenames are used to store memoized
 	 * link contents.
@@ -196,25 +202,25 @@ public class OpenEvalMonthController {
 			completedLinks = loadLinkToFilename();
 			currFile = completedLinks.size();
 			
-			if(verboseOpenEval){
-				jan.setVerbose(true);
-				feb.setVerbose(true);
-				mar.setVerbose(true);
-				apr.setVerbose(true);
-				may.setVerbose(true);
-				jun.setVerbose(true);
-				jul.setVerbose(true);
-				aug.setVerbose(true);
-				sep.setVerbose(true);
-				oct.setVerbose(true);
-				nov.setVerbose(true);
-				dec.setVerbose(true);
-			}
+
+			jan.setVerbose(verboseOpenEval);
+			feb.setVerbose(verboseOpenEval);
+			mar.setVerbose(verboseOpenEval);
+			apr.setVerbose(verboseOpenEval);
+			may.setVerbose(verboseOpenEval);
+			jun.setVerbose(verboseOpenEval);
+			jul.setVerbose(verboseOpenEval);
+			aug.setVerbose(verboseOpenEval);
+			sep.setVerbose(verboseOpenEval);
+			oct.setVerbose(verboseOpenEval);
+			nov.setVerbose(verboseOpenEval);
+			dec.setVerbose(verboseOpenEval);
+
 
 			System.out.println("Controller setup done");
 
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException(e); //WEKA Exception
 		}
 
 	}
@@ -282,7 +288,7 @@ public class OpenEvalMonthController {
 			//saveLinksMap();
 			currFile++;
 			if (verbose)
-				System.out.println("Create new: " + memoizationFolder + filename + fileExtension);
+				System.out.println("***Create new: " + memoizationFolder + filename + fileExtension);
 		}
 
 		try {
