@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "The US Open Tennis Tournament",
+	"description" : "Shortly after Rio, the attention of the tennis world will shift to New York City, as the world�s best tennis players face off as they try to win the U.S. Open. This tennis tournament is the fourth and final tennis major comprising the Grand Slam each year, and the only one on U.S. Soil. Familiar names will take the court and battle to be crowned the Grand Slam champion, such as Serena Williams, Roger Federer, and Novak Djokovic. ",
+	"keyWords":["New York City", "tennis", "Roger Federer",  "Grand Slam champion",  "tennis tournament", "Novak Djokovic", "Serena Williams"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Burning Man Art Self-Expression",
+	"description" : "Burning Man is one event that is not for everybody. Every year, thousands of people gather together in the Black Rock Desert to create Black Rock City, a temporary metropolis dedicated to community, art, self-expression, and self-reliance. That's right, for one week, a temporary city hosts Burning Man, and when it is over, there is no trace that people were ever there. At Burning Man, you are guaranteed not to be the weirdest kid in the classroom, as a wide range of creative/unique individuals gather together in self-expressionism. Burning Man is not for everybody, but if it is calling your name, it is one experience you are sure to remember for the rest of your life. ",
+	"keyWords":[ "self-expression","self-reliance", "unique individuals", "Black Rock City", "Black Rock Desert"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Qingdao International Beer Festival",
+	"description" : "The Qingdao International Beer Festival  is a yearly festival held in Qingdao in Shandong province, China. The event is jointly sponsored by national state ministries and the Qingdao Municipal Government. Festivals feature artistic parades, Beer Carnival games, beer tasting, drinking contests, music, food, interactive performances, various brewery beer tents, trade exhibitions, gala performances, carnival amusement park games and rides, and even bikini model contests.",
+	"keyWords":[ "bikini model contests", "Qingdao International Beer Festival", "sponsored by state ministries", "Beer Carnival", "Shandong province", "brewery beer tents", "Qingdao", "trade exhibitions", "carnival amusement park games", "drinking contests"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Sho Dun Festival",
+	"description" : "The Sho Dun Festival commonly known as the Yogurt Festival or Banquet is an annual festival held at Norbulingka or Jewel Park palace in Lhasa, Tibet. The festival is celebrated in the summer, from the 15th to the 24th of the 5th lunar month - usually about the middle of August, after a month's retreat by the monks who stay within their monasteries to avoid walking on the emerging summer insects and killing them.",
+	"keyWords":["summer insects", "Sho Dun Festival", "Yogurt Festival", "Jewel Park"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Rally China",
+	"description" : "The Rally China  is the largest rally racing event held in China. The first event was run as the China Rally in 1997 in the province of Guangdong, as a replacement to the Hong Kong - Beijing Rally, and was an event on the World Rally Championship (WRC) calendar in 1999. However it was replaced by the Cyprus Rally the following year. From 2000 to 2015, it has been part of the Asia Pacific Rally Championship (APRC), moving initially to Shaoguan, Fujian province. Force majeure because of government, according to the organisers, led to the cancellation of the event in 2003. The Asia-Pacific Rally Championship (APRC) is an international rally championship organized by the FIA encompassing rounds in Asia and Oceania. Group N cars dominated the championship for many years but in recent years cars built to S2000 regulations have tended to be the frontrunners.",
+	"keyWords":["Asia-Pacific Rally Championship", "Fujian province", "Cyprus Rally", "year", "group N cars", "event", "Championship", "Force majeure", "China", "APRC", "Hong Kong", "Asia Pacific Rally Championship", "rally championship", "China Rally",  "Beijing Rally", "years cars", "World Rally Championship"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Gaubodenvolksfest",
+	"description" : "The Gaubodenvolksfest in Straubing is one of the largest Volksfest (beer festival and travelling funfair) in Bavaria). The G�ubodenvolksfest is a modern and family-friendly festival with about 120 carousels, roller coasters and six big beer tents with 25,000 seats at an area of about 90,000 m�., but it has upheld its traditional character. Many of the approximately 1.2 million visitors wear Bavarian costume (Trachten). The festival combines Bavarian tradition with progress and vitality. It is one of Bavaria's oldest and most popular festivals and it has increased to one of the biggest events in Germany. Beer plays a central role in the fair. The beer is specially brewed. Only breweries from Straubing or the district Straubing-Bogen are allowed to serve beer there.",
+	"keyWords":["beer tents", "Straubing-Bogen", "roller coasters",  "beer", "Bavarian tradition", "Bavarian costume", "25,000 seats", "family-friendly festival", "festival", "beer festival", "Gaubodenvolksfest", "carousels"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Summer School Marktoberdorf",
+	"description" : "The International Summer School Marktoberdorf is an annual two-week summer school for international computer science and mathematics postgraduate students and other young researchers, held annually since 1970 in Marktoberdorf, near Munich in southern Germany. Students are accommodated in the boarding house of a local high school, Gymnasium Marktoberdorf. Proceedings are published when appropriate.",
+	"keyWords":["International Summer School Marktoberdorf", "computer science", "Gymnasium Marktoberdorf", "Marktoberdorf", "summer school"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Mercury Prize",
+	"description" : "The Mercury Prize, formerly called the Mercury Music Prize, is an annual music prize awarded for the best album from the United Kingdom and Ireland. It was established by the British Phonographic Industry and British Association of Record Dealers in 1992 as an alternative to the Brit Awards. Any album released by a British or Irish artist, or by a band where over 50% of the members are British or Irish, may be submitted for consideration by their record label. The shortlist is chosen by an independent panel of musicians, music presenters, music producers, music journalists, festival organisers and other figures in the music industry in the UK and Ireland.",
+	"keyWords":["Record Dealers", "music journalists", "Mercury Music Prize", "United Kingdom", "music prize", "music presenters", "festival organisers", "music", "Brit Awards", "Irish artist", "British", "British Association", "Mercury Prize", "record label", "British Phonographic Industry", "music producers", "music industry"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	}]
+}

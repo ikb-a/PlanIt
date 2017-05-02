@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "Mother's Day",
+	"description" : "Is an annual holiday celebrated on the second Sunday in May. Mother's Day recognizes mothers, motherhood and maternal bonds in general, as well as the positive contributions that they make to society.",
+	"keyWords":["Mother's Day","motherhood"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Memorial Day Dead Soldiers Civil War",
+	"description" : "Honors the nation's war dead from the Civil War onwards; marks the unofficial beginning of the summer season. (traditionally May 30, shifted by the Uniform Holidays Act 1968)",
+	"keyWords":["May 30,", "Civil War", "Memorial Day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Kentucky Derby Horse Race",
+	"description" : "In 2015, American Pharoah became the first horse to win the Triple Crown since 1978. The last time a horse won the Triple Crown before that? 1977. If history repeats itself, 2016 may be the year of back to back Triple Crown champions, and the Kentucky Derby is where all the drama kicks off. The Kentucky Derby is much more than just a horse race. It is a time for dressing up, for socializing, for making a couple bets, and having a good time. Take part in one of the greatest subcultures of 2016. ",
+	"keyWords":["Triple Crown",  "betting", "Triple Crown champions",  "horse race", "Kentucky Derby"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Indianapolis 500",
+	"description" : "The 2016 Indianapolis 500 (known as the 100th Indianapolis 500 presented by PennGrade Motor Oil for sponsorship reasons) took place on Sunday, May 29, 2016, at the Indianapolis Motor Speedway in Speedway, Indiana. It was the premier event of the 2016 Verizon IndyCar Series season. The 2016 Verizon IndyCar Series is the 21st season of the IndyCar Series and the 105th season of American open wheel racing. It included the 100th running of the Indianapolis 500, on May 29. Scott Dixon entered as the reigning drivers' champion, while Chevrolet entered the season as the reigning Manufacturer's champion.",
+	"keyWords":["Indianapolis Motor Speedway",  "IndyCar", "IndyCar Series", "Scott Dixon", "2016 Indianapolis 500", "premier event", "PennGrade Motor Oil", "Indianapolis 500"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "International Workers' Day",
+	"description" : "International Workers' Day, also known as Labour Day or May Day in some places, is a celebration of labourers and the working classes that is promoted by the international labour movement, socialists, communists and anarchists and occurs every year on May Day (1 May), an ancient European spring festival. The date was chosen for International Workers' Day by the Second International, a pan-national organization of socialist and communist political parties, to commemorate the Haymarket affair, which occurred in Chicago on 4 May 1886.",
+	"keyWords":["May Day", "European spring festival", "International", "May Day (1 May ),", "May", "Day", "Labour Day", "Haymarket affair", "Second International", "labour movement", "International Workers"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Midi Music Festival",
+	"description" : "The Midi Music Festival, sometimes also called Midi Modern Music Festival or simply Midi Festival  is among China's largest rock music festivals and is hosted by the Beijing Midi School of Music. Since its inauguration in 1997 it has been held each year in Beijing during the May holiday (May 1�3), with some breaks in 2003, 2004 and 2008 (all times held in October). The 2008 festival was delayed to October for reasons related to the 2008 Summer Olympics. The festival currently is held annually in three Chinese cities: Beijing, Shanghai and Shenzhen",
+	"keyWords":["Beijing Midi School", "Music Festival", "May holiday", "Midi Festival", "Midi Modern Music Festival",  "Beijing", "rock music festivals"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Shanghai Golden Grand Prix",
+	"description" : "The Shanghai Golden Grand Prix is an annual athletics event at the Shanghai Stadium in Shanghai, PR China as part of the IAAF Diamond League. The meeting has had its inaugural edition in 2005. It's officially sponsored by Dunlop. From 2005 to 2009 the IAAF classified the Shanghai Golden Grand Prix among IAAF Grand Prix and IAAF Super Grand Prix meetings. It's the only meeting of the IAAF Diamond League that features and guarantees Men's 110 m Hurdles in every edition of the League.",
+	"keyWords":["110 m Hurdles", "IAAF Super Grand Prix meetings", "meeting", "League", "Shanghai Golden Grand Prix", "athletics event", "Shanghai Stadium", "IAAF Diamond League", "IAAF Grand Prix", "guarantees Men", "IAAF", "Prix", "PR China"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Spring Break Vacation School",
+	"description" : "Spring break is an academic tradition in various mostly western countries, that is scheduled for different periods depending on the state and sometimes the region. In Germany, universities typically schedule a semester break of five to eight weeks around March. The Whitsun (Pentecost) holidays around late May or early June are also considered a spring break.",
+	"keyWords":["Spring Break","Whitsun holidays"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	}]
+}

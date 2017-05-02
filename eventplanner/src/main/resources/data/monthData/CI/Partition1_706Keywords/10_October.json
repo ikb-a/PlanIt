@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "Halloween Treat Tricks Masks Candy Costumes",
+	"description" : "Is a celebration observed in a number of countries on 31 October, the eve of the Western Christian feast of All Hallows' Day. It begins the three-day observance of Allhallowtide,[9] the time in the liturgical year dedicated to remembering the dead, including saints (hallows), martyrs, and all the faithful departed.  It is widely believed that many Halloween traditions originated from the ancient Celtic harvest festival Samhain, and that this Gaelic observance was Christianized by the early Church",
+	"keyWords":["Halloween", "Gaelic observance", "Western Christian feast", "Celtic harvest festival Samhain",  "Allhallowtide", "31 October"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Columbus Day",
+	"description" : "Honors Christopher Columbus, the first European to land in mainland Americas after Leif Erikson.",
+	"keyWords":["Christopher Columbus", "Leif Erikson", "first landing in mainland Americas"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Ragnar Relay Series Runner Race",
+	"description" : "For the running socialite, there is no better event to participate in than Ragnar, a 200 mile relay that spans two days and one night. Ragnar encourages you to get your team of 12 together, dress up in crazy costumes, and make unforgettable experiences! The relay race makes its way across the country, so there is sure to be one near you. ",
+	"keyWords":["200 mile", "crazy costumes","unforgettable experiences","relay race"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "NYC Wine and Food Festival",
+	"description" : "Eat, drink, and end hunger. The New York City Wine and Food Festival is a national, star-studded, four-day event showcasing the talents of the world�s most renowned wine and spirits producers, chefs, culinary personalities, and America�s most beloved television chefs while fighting to end hunger. With more than 100 events in the span of four days, the New York Wine and Food Festival is widely recognized for it�s intimate dinners with world-renowned chefs, late night parties, hands-on classes, educational seminars, coveted wine tasting, and more. Money from the festival is raised to help end hunger, and last year alone $9.5 million was raised to beat hunger. ",
+	"keyWords":[ "wine and food festival",  "television chefs",  "Food Festival", "New York Wine", "spirits producers",  "100 events", "wine tasting", "night parties"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Double Ninth Festival",
+	"description" : "The Double Ninth Festival (Chung Yeung Festival in Hong Kong ), observed on the ninth day of the ninth month in the Chinese calendar, is a traditional Chinese holiday, mentioned in writing since before the East Han period (before AD 25).According to the I Ching, nine is a yang number; the ninth day of the ninth lunar month (or double nine) has too much yang (a traditional Chinese spiritual concept) and is thus a potentially dangerous date. Hence, the day is also called Double Yang Festival. To protect against danger, it is customary to climb a high mountain, drink chrysanthemum liquor, and wear the zhuyu plant, Cornus officinalis. On this holiday some Chinese also visit the graves of their ancestors to pay their respects. In Hong Kong, whole extended families head to ancestral graves to clean them and repaint inscriptions, and to lay out food offerings such as roast suckling pig and fruit, which are then eaten",
+	"keyWords":["Chinese calendar", "Chung Yeung Festival", "Festival", "roast suckling pig", "East Han period", "Hong Kong", "food offerings", "Double Ninth Festival", "Double Yang Festival", "Hong Kong", "yang number", "families head", "Cornus officinalis", "AD 25", "zhuyu plant", "day", "Chinese", "drink chrysanthemum liquor", "Chinese holiday", "repaint inscriptions"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "National Day of the People's Republic of China",
+	"description" : "The National Day of the People's Republic of China  is a public holiday in the People's Republic of China to celebrate their national day, and is celebrated annually on October 1. The PRC was founded on October 1, 1949, with a ceremony at Tiananmen Square. One thing should be noted is that the PRC was not founded on that day, but on September 21, 1949. The Central People's Government passed the Resolution on the National Day of the People's Republic of China on December 2, 1949, and declared that October 1 is the National Day. The National Day is celebrated throughout mainland China, Hong Kong, and Macau with a variety of government-organized festivities, including fireworks and concerts. Public places, such as Tiananmen Square in Beijing, are decorated in a festive theme. Portraits of revered leaders, such as Mao Zedong, are publicly displayed",
+	"keyWords":["Mao Zedong",  "December 2, 1949,", "National Day", "government-organized festivities", "Public places", "October 1", "Hong Kong", "Tiananmen Square"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Shanghai International Film Festival",
+	"description" : "The Shanghai International Film Festival  abbreviated SIFF, is one of the largest film festivals in East Asia. SIFF organized by Shanghai Municipal Administration of Culture, Radio, Film & TV and Shanghai Media & Entertainment Group. It awards several Golden Goblet Awards  for best film, best director, best actor/actress, and other categories, as well as a Special Jury Award. SIFF Mart consists of the Film Market, China Film Pitch and Catch (CFPC), and Co-production Film Pitch and Catch (Co-FPC). The SIFFORUM is a communication platform.",
+	"keyWords":["SIFF", "Shanghai Media", "Shanghai", "Special Jury Award", "SIFF Mart", "Golden Goblet", "film festivals", "Film Market", "Co-production Film Pitch",  "Shanghai International Film Festival", "Entertainment Group", "East Asia", "communication platform", "China Film Pitch", "CFPC"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "FIBA 3x3 World Championships",
+	"description" : "The 2016 FIBA 3x3 World Championships, to be hosted by China, will be an international 3x3 basketball event that will feature separate competitions for men's and women's national teams. The tournament will run from 11-15 October, 2016 in Guangzhou outside the Tianhe Sport Complex. It is co-organized by the FIBA. The International Basketball Federation, more commonly known as FIBA, FIBA World, or FIBA International , from its French name Fedaration Internationale de Basket-ball, is an association of national organizations which governs international competition in basketball. Originally known as the F�d�ration Internationale de Basketball Amateur (hence FIBA), in 1989 it dropped the word Amateur from its official name but retained the acronym; the BA now represents the first two letters of basketball.",
+	"keyWords":["Basketball Amateur", "Fedaration Internationale de Basket-ball", "Tianhe Sport Complex",   "3 x 3 basketball event", "FIBA", "basketball", "FIBA International", "FIBA World", "International Basketball Federation"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	}]
+}

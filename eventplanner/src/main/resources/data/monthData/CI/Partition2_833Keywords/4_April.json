@@ -1,0 +1,233 @@
+{
+"events" : [
+	{
+	"title" : "Easter Jesus Resurrection",
+	"description" : "Easter also called Pascha or Resurrection Sunday, is a festival and holiday celebrating the resurrection of Jesus Christ from the dead, described in the New Testament as having occurred on the third day of his burial after his crucifixion by Romans at Calvary c. 30 AD. It is the culmination of the Passion of Christ, preceded by Lent (or Great Lent), a forty-day period of fasting, prayer, and penance.",
+	"keyWords":["Resurrection Sunday", "Great Lent ),", "New Testament", "forty-day period", "Jesus Christ", "30 AD", "Calvary c"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "New Orleans Jazz & Heritage Festival Music",
+	"description" : "If you want to listen to some true jazz music, there is no better place to do it than in the heart of jazz country itself - New Orleans. This ten day festival will give you all the jazz music you crave, and leave you with a list of new artists to follow. Get your fill of southern cooking, New Orleans culture, all the jazz rhythm in one place at the New Orleans Jazz & Heritage Festival. ",
+	"keyWords":["jazz country", "jazz music", "New Orleans Jazz", "New", "Orleans", "Heritage Festival", "jazz", "New Orleans culture", "day festival", "jazz rhythm", "New Orleans"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The Cooper River Bridge Run Race Runners",
+	"description" : "The Cooper River Bridge Run is one of the most unique runs in the country due to its beautiful setting in Charleston and the fact that over 40,000 people participate in this 10k. While everybody knows about the Boston Marathon, this lesser known 10k is perfect for both beginning and advanced runners. Celebrate your health and participate in a 10k that gives back to over 15 different charities. Your run will make a real difference. ",
+	"keyWords":["Boston Marathon", "10 k", "Cooper River Bridge Run", "10", "k", "40,000 people"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The National Cherry Blossom Festival Flower Spring ",
+	"description" : "If you have never seen the cherry blossoms in DC, this is a must attend event for everybody in their lifetime. The blooming cherry trees line up and down the National Mall, making one of America�s most beautiful cities even prettier. The event celebration kicks off on March 18th with the Pink Tie Party fundraiser, followed by the Opening Ceremony on the 26th, the Blossom Kite Festival on April 2nd, and concludes with the National Cherry Blossom Festival Parade on the 16th. The entire month of celebrating is the event of springtime. ",
+	"keyWords":["event", "event celebration", "April 2", "Blossom Kite Festival", "Party fundraiser", "March 18", "trees line", "America's", "National Cherry Blossom Festival Parade", "National Mall"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The Masters Championships ",
+	"description" : "The Masters golf tournament is played is played at the Augusta National Golf Club in April each year. The Tournament was first played in 1934, and won by Horton Smith of the USA. The Masters Tournament, also known as The Masters or The US Masters, is one of the four major championships in professional golf. The Masters is scheduled for the first full week of April, and it is the first of the majors to be played each year. Unlike the other major championships, the Masters is held each year at the same location, Augusta National Golf Club, a private golf club in the city of Augusta, Georgia, USA. ",
+	"keyWords":["golf", "Masters golf tournament", "year", "Masters", "Horton Smith", "Augusta", "golf club", "Augusta National Golf Club", "Masters Tournament"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Qingming Festival",
+	"description" : "The Qingming or Ching Ming Festival, also known as Tomb-Sweeping Day in English, is a traditional Chinese festival on the first day of the fifth solar term of the traditional Chinese lunisolar calendar. This makes it the 15th day after the Spring Equinox, either 4 or 5 April in a given year.Other common translations include Chinese Memorial Day and Ancestors' Day.In the mainland, the holiday is associated with the consumption of qingtuan, green dumplings made of glutinous rice and barley grass. In Taiwan, the similar confection is known as caozaiguo or shuchuguo",
+	"keyWords":["Chinese festival", "5 April", "Tomb-Sweeping Day", "Chinese lunisolar calendar", "barley grass", "Ching Ming Festival", "Chinese Memorial Day", "Chinese", "Spring Equinox"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "World Track Championships",
+	"description" : "The World Track Championships is an annual event comprising races for the various disciplines and distances in track cycling. The Championships is regulated by the Union Cycliste Internationale (UCI). The current events (from 2013) include: time trial, keirin, individual pursuit, team pursuit, points race, scratch race, sprint, team sprint, omnium and, for men only, the madison. ",
+	"keyWords":["scratch race", "track cycling", "team pursuit", "time trial", "Union Cycliste Internationale", "World Track Championships", "team sprint", "race", "points race"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Acrobatic Gymnastics World Championships",
+	"description" : "The 2016 Acrobatic Gymnastics World Championships was the 25th edition of acrobatic gymnastics competition and were held in Putian, China from April 1 to April 3, 2016.  The International Gymnastics Federation (FIG), a nonprofit organisation, is the governing body for Gymnastics worldwide. It is the oldest established international sports federation (1881) and has participated in the Olympic Games since their revival in 1896. The FIG governs seven disciplines: Gymnastics for All, Men's Artistic, Women's Artistic, Rhythmic, Trampoline, Aerobic and Acrobatic Gymnastics. It counts 142 national member federations and boasts a 30-person staff at its international seat in Lausanne (SUI), which is also home to the International Olympic Committee (IOC).",
+	"keyWords":["FIG ),", "member federations", "30- person staff", "International Gymnastics Federation", "April 1", "Acrobatic Gymnastics", "SUI ),", "2016 Acrobatic Gymnastics World Championships", "counts 142", "sports federation (1881)", "April 3, 2016.", "gymnastics competition", "Olympic Games", "Gymnastic", "International Olympic Committee"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Asian Fencing Championships",
+	"description" : "The 2016 Asian Fencing Championships were held in Wuxi, China from 13 to 18 April 2016 at the Wuxi Sports Center. The FCA organizes the Asian Fencing Championships, the Asian Juniors & Cadet Fencing Championships and other such activities to promote and develop the sport of fencing in Asia. In coordination with the International Fencing Federation, the FCA also sanctions all other fencing competitions and activities organized in Asia such as the World Championships, World Cup, Category A and Grand Prix competitions, as well as the Coaches and Referees� Seminar and Examination. In coordination with the Olympic Council of Asia and the FIE, the FCA also sanctions the fencing competitions in the Asian Games.",
+	"keyWords":["18 April 2016", "Fencing", "Asia", "Asian Fencing Championships", "competition", "World Cup", "Championship", "fencing", "Fencing Championships", "FCA", "Asian Juniors", "Olympic Council", "Asian Games", "Wuxi Sports Center", "fencing competitions", "Grand Prix competitions", "International Fencing Federation", "Cadet Fencing Championships", "World Championships", "Asian", "Referees' Seminar"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Badminton Asia Championships",
+	"description" : "The 2016 Badminton Asia Championships was the 36th edition of the Badminton Asia Championships. It was held in Wuhan, China, from April 26 to May 1. The Badminton Asia Championships (the new name used for the first time in 2007 edition, formerly known as Asian Badminton Championships) is a tournament organized by the Badminton Asia to crown the best badminton players in Asia.",
+	"keyWords":["Asian Badminton Championships", "Asia", "2007 edition", "Championship", "badminton players", "Badminton Asia Championships", "April 26", "Badminton Asia", "May 1.", "2016 Badminton Asia Championships", "Badminton"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Flower Viewing",
+	"description" : "Hanami  is the Japanese traditional custom of enjoying the transient beauty of flowers, flowers (hana) in this case almost always referring to those of the cherry (sakura) or, less frequently, plum (ume) trees From the end of March to early May, sakura bloom all over Japan and around the first of February on the island of Okinawa The blossom forecast  cherry blossom front is announced each year by the weather bureau, and is watched carefully by those planning hanami as the blossoms only last a week or two. In modern-day Japan, hanami mostly consists of having an outdoor party beneath the sakura during daytime or at night.",
+	"keyWords":["plum ( ume ) trees", "weather bureau", "( sakura )", "flowers ( hana )", "sakura bloom", "sakura", ")", "(", "planning hanami"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "International Manga Award",
+	"description" : "nternational Manga Award  is an annual award established to encourage non-Japanese manga artists in 2007. This award was created by Japanese Foreign Minister Taro Aso, who proposed this award in a policy speech he gave in Tokyo's Akihabara district in 2006. The Award is often considered the most prestigious prize for non-Japanese manga artists. The selection is managed by the Ministry of Foreign Affairs of Japan. Annually, award honorees are recommended by the advisers including Machiko Satonaka and many other great manga artists.",
+	"keyWords":["Japanese Foreign Minister Taro Aso", "policy speech", "Machiko Satonaka", "Foreign Affairs", "award", "nternational Manga Award", "Akihabara district", "artist", "manga artists", "award honorees", "manga"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "Pink Grand Prix",
+	"description" : "The Pink Grand Prix or PG Film Prize ( Pink film festival or Pink Prize) is an annual Japanese film award ceremony which recognizes excellence in the pink film. Known as the Academy Awards of the Pink Film, the ceremony attracts a diverse audience of industry personnel, film scholars and the general public. Pink film scholar Jasper Sharp calls it the high point of the year for the pink film community.",
+	"keyWords":["Pink", "Pink Grand Prix", "Pink film scholar Jasper Sharp", "PG Film Prize", "film", "film scholars", "Pink Prize )", "Japanese film award ceremony", "Pink Film ,", "Academy Awards", "film community", "Pink film festival", "industry personnel"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "Art Cologne",
+	"description" : "Art Cologne is an art fair held annually in Cologne, Germany and was established in 1967 as K�lner Kunstmarkt. It is regarded as the world's oldest art fair of its kind. The fair runs for six days and brings together galleries from more than 20 countries at the Cologne Exhibition Center. It is open to the public and attracts about 60,000 visitors. The K�lner Kunstmarkt was founded by galerists Hein St�nke and Rudolph Zwirner in 1967 in an attempt to reinvigorate the weak market for contemporary art. With Bonn as the new capital city of Germany, the Rhineland � an industrial powerhouse at the centre of Europe driving the West German economy and acting as a hub for the entire western European economy � took over as the centre of the West German art world. The first K�lner Kunstmarkt took place in the G�rzenich festival hall in the medieval part of the city; the following year Kunsthalle K�ln was added as an additional location. ",
+	"keyWords":["Rudolph Zwirner", "art", "capital city", "galerists Hein Stunke", "Rhineland", "Kolner Kunstmarkt", "Cologne Exhibition Center", "Kunstmarkt", "20 countries", "60,000 visitors", "year Kunsthalle Koln", "Kolner", "art world", "art Cologne", "Gurzenich festival hall", "Cologne"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Stuttgart Spring Festival",
+	"description" : "Stuttgart Spring Festival (in German called Stuttgarter Fr�hlingsfest or sometimes vernacular Cannstatter Wasen or just Wasen) is an annual fair that takes place in the German city of Stuttgart between the middle of April and the beginning of May. The festival takes place on the Cannstatter Wasen, traditional fairgrounds in Stuttgart's Bad Cannstatt district. It is slightly smaller than the festival in the autumn (and therefore occasionally also called the small Wasen), but it is the largest spring festival in Europe. Like the autumn fair, the Fr�hlingsfest offers a variety of fairground attractions. The tallest attraction is the 47 metre Ferris wheel and the fair almost invariably features a major roller coaster.",
+	"keyWords":["Wasen", "Cannstatter Wasen", "roller coaster", "German city", "fairground attractions", "Bad Cannstatt district", "Stuttgarter Fruhlingsfest", "vernacular Cannstatter Wasen", "Stuttgart", "47 metre Ferris wheel", "spring festival", "Fruhlingsfest", "festival", "Stuttgart Spring Festival", "Wasen ),"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Easter Monday",
+	"description" : "Easter Monday is the day after Easter Sunday and is a holiday in some countries. Easter Monday in the Western Christian liturgical calendar is the second day of Eastertide and analogously in the Byzantine Rite is the second day of Bright Week.",
+	"keyWords":["Bright Week", "Byzantine Rite", "Western Christian", "Easter Sunday", "Easter Monday", "Easter", "day"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Britain in Bloom",
+	"description" : "RHS Britain in Bloom is the largest horticultural campaign in the United Kingdom. It was first held in 1963, initiated by the British Tourist Board based on the example set by Fleurissement de France (now Conseil national de villes et villages fleuris), which since 1959 has promoted the annual Concours des villes et villages fleuris. It has been organised by the Royal Horticultural Society (RHS) since 2002. The competition is entered by the communities of towns, villages and cities. Different categories exist for various sizes of settlements. Groups are assessed for their achievements in three core pillars: Horticultural Excellence; Environmental Responsibility; and Community Participation. Over 1,000 communities around the UK enter each year, participating in their local region's in Bloom campaign. From these regional competitions, roughly 70 communities are selected to enter the national Finals of RHS Britain in Bloom.",
+	"keyWords":["Royal Horticultural Society", "villages fleuris ),", "village", "Concours des villes", "70 communities", "Environmental Responsibility", "Different categories", "Community Participation", "RHS Britain", "Bloom", "Horticultural Excellence", "community", "British Tourist Board", "1,000 communities", "villages fleuris", "RHS", "core pillars", "United Kingdom"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Queen's Official Birthday",
+	"description" : "The Queen's Official Birthday, or King's Official Birthday in the reign of a male monarch, is the selected day in some Commonwealth realms on which the birthday of the monarch (currently Queen Elizabeth II) is officially celebrated in those countries. The sovereign's birthday was first officially marked in the United Kingdom in 1748, for King George II. Since then, the date of the king or queen's birthday has been determined throughout the British Empire, and later the Commonwealth, according to either different royal proclamations issued by the sovereign or governor or by statute laws passed by the local parliament. ",
+	"keyWords":["statute laws", "Commonwealth realms", "Queen Elizabeth II", "British Empire", "Official Birthday", "birthday", "United Kingdom", "King George II"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Anzac Day",
+	"description" : "Anzac Day is a national day of remembrance in Australia and New Zealand that broadly commemorates all Australians and New Zealanders who served and died in all wars, conflicts, and peacekeeping operations and the contribution and suffering of all those who have served. Observed on 25 April each year, Anzac Day was originally to honour the members of the Australian and New Zealand Army Corps (ANZAC) who fought at Gallipoli against the Ottoman Empire during World War I.",
+	"keyWords":["New", "Anzac Day", "New Zealand Army Corps", "New Zealanders", "25 April", "Ottoman Empire", "New Zealand", "World War"],
+	"venue" : {
+		"address" : {
+			"country" : "Australia"
+			}
+		}
+	},
+	{
+	"title" : "Australian Fashion Week",
+	"description" : "Mercedes-Benz Fashion Week Australia is an annual fashion industry event, currently sponsored by Mercedes-Benz and showcasing the latest seasonal collections from Australian and Asia Pacific Designers. Australian Fashion Week is an industry fashion week intended for retail buyers to buy forthcoming spring/summer collections directly from designers and manufacturers, as opposed to a consumer fashion week, which showcases clothes currently available instore and is targeted to fashion consumers.",
+	"keyWords":["consumer fashion week", "fashion", "Asia Pacific Designers", "Mercedes-Benz Fashion Week Australia", "industry fashion week", "fashion industry event", "showcases clothes", "fashion consumers", "spring /summer collections", "Australian Fashion Week"],
+	"venue" : {
+		"address" : {
+			"country" : "Australia"
+			}
+		}
+	},
+	{
+	"title" : "World Fencing Championships",
+	"description" : "The 2016 World Fencing Championships were held at the Carioca Arena 3 in Rio de Janeiro, Brazil from 25 to 27 April 2016. Only two disciplines that are not in the 2016 Olympic program were held. The World Championships in Fencing is an annual competition organized by the F�d�ration Internationale d'Escrime or FIE, (International Fencing Federation in English). The world championships are, after the Olympic Games, the most prominent international competition in the sport of fencing. Contestants may participate in foil, �p�e, and sabre events. ",
+	"keyWords":[ "Fencing", "sabre events", "Carioca Arena 3", "International Fencing Federation", "27 April 2016.", "2016 Olympic program", "Olympic Games", "2016 World Fencing Championships", "world championships", "World Championships"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	},
+	{
+	"title" : "Brazilian Men's Volleyball Superliga",
+	"description" : "The Brazilian Volleyball Super League (Portuguese: Superliga Brasileira de Voleibol) is the top level Brazilian professional volleyball competition. It is organized by the Brazilian Volleyball Confederation. It shares the same name as the women's tournament, and are disputed simultaneously. The number of participating clubs varies every year. The champion team qualifies for the South American Championship.",
+	"keyWords":["Superliga Brasileira", "South American Championship", "champion team", "Brazilian Volleyball Confederation", "volleyball competition", "Brazilian Volleyball Super League"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	},
+	{
+	"title" : "Tiradentes",
+	"description" : "Anniversary of the considered a national martyr for being part of the Inconfid�ncia Mineira, an insurgent movement that aimed to establish an independent Brazilian republic.",
+	"keyWords":["Inconfidencia Mineira", "Brazilian republic"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	}	]
+}

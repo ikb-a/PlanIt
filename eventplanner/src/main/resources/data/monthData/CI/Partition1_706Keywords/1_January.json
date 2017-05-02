@@ -1,0 +1,63 @@
+{
+"events" : [
+	{
+	"title" : "New Year's Day",
+	"description" : "New Year's Day is observed on January 1, the first day of the year on the modern Gregorian calendar as well as the Julian calendar. In pre-Christian Rome under the Julian calendar, the day was dedicated to Janus, god of gateways and beginnings, for whom January is also named. As a date in the Gregorian calendar of Christendom, New Year's Day liturgically marked the Feast of the  Naming and Circumcision of Jesus, which is still observed as such in the Anglican Church and Lutheran Church. In present day, with most countries now using the Gregorian calendar as their de facto calendar, New Year's Day is probably the most celebrated public holiday, often observed with fireworks at the stroke of midnight as the new year starts in each time zone.",
+	"keyWords":["Gregorian calendar",  "New Year", "January 1,", "Anglican Church", "Julian calendar"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Inauguration Day President ",
+	"description" : "Celebrates the United States presidential inauguration, every 4 years. While this is a federal holiday, this is not a public holiday. Only Washington, D.C.. observes this day besides the federal government",
+	"keyWords":["4 years", "Inauguration Day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Key West Food & Wine Festival",
+	"description" : "Ranked as one of the best food and wine festivals in America, who wouldn�t want to spend a week tasting a diverse range of wines and inventive cuisines on the warm beaches of Key West? Escape the winter and discover some new favorite drinks and food throughout the week as you participate in over 40 different dine and drink events in one of the most beautiful places in the country. ",
+	"keyWords":["Key West", "wine festival", "dine and drink", "inventive cuisines","warm beaches"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The Cheesemonger Invitational Cheese",
+	"description" : "Do you love cheese? I mean really love cheese? If yes, there is no better event for you to attend all year than the Cheesemonger Invitational in San Francisco this year. The invitational takes the best cheesemongers in the country and pits them against each other in a grueling cheese battle extravaganza. Enjoy all the delicious flavors as you walk through cheese paradise for the evening, treating yourself to fondue, raclette, and grilled cheese sandwiches along the way!�",
+	"keyWords":["cheese", "cheese sandwiches", "cheese paradise", "Cheesemonger Invitational", "San Francisco", "love cheese", "cheese battle extravaganza"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Sundance Film Festival",
+	"description" : "Every year, the nation's biggest film festival takes place in a small ski town in Utah. Take a trip up to Park City, watch premieres of masterfully done films, and spot celebrities along the way. The Sundance Film Festival is the perfect event for the film lover, the ski junky, and the pop culture enthusiast. In your downtime in between films, participate in seminars, attend parties, and see some big name concerts for ten days of the perfect cinema experience. ",
+	"keyWords":["big name concerts", "cinema experience", "spot celebrities", "ski junky",  "film festival", "ski town", "Park City", "Sundance Film Festival", "pop culture enthusiast", "film lover"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Extreme Sports",
+	"description" : "The X Games is a yearly sports event, controlled and managed by the American sports broadcasting channel, ESPN, which focuses on extreme sports. The first X Games were held in 1995 in Newport, Rhode Island. Held simultaneously to the X Games is the X Fest which is a sports and music festival that offers live music, autograph sessions and interactive elements. The X Games gained big media exposures due to their big sponsors, top-tier athletes and regular sport fan attendance. The X Games frequently features new tricks like Tony Hawk�s 900 in skateboarding, Travis Pastrana�s double backflip in freestyle motocross, Health Frisby�s first ever snowmobile front flip in Snowmobile Best Trick and Torstein Horgmo�s first landed triple flip in a snowboard competition.",
+	"keyWords":["media exposures", "sport", "Travis Pastrana's", "music festival", "Game", "freestyle motocross", "X Games", "Health Frisby's", "Torstein Horgmo's", "autograph sessions", "American sports broadcasting channel", "snowboard competition", "sports event", "Rhode Island", "X", "sport fan attendance", "snowmobile front", "Tony Hawk's 900", "X Fest"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}]
+}

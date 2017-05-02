@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "Father's Day",
+	"description" : "Is a celebration honoring fathers and celebrating fatherhood, paternal bonds, and the influence of fathers in society. The tradition was said to be started from a memorial service held for a large group of men who died in a mining accident in Monongah, West Virginia in 1907. It was first proposed by Sonora Dodd of Spokane, Washington in 1909. It is currently celebrated in the United States annually on the third Sunday in June.",
+	"keyWords":["Father's Day", "West Virginia",  "Sonora Dodd"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Savor Food Beer Festival",
+	"description" : "Savor is an American craft beer and food experience held at the National Building Museum in downtown Washington. This festival features craft beers and artisan cheese from across the country. If you love beer, this formal experience is one you need to attend this year. ",
+	"keyWords":["National Building Museum", "festival features craft beers", "downtown Washington", "food experience", "beer", "American craft beer", "artisan cheese"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The Old Town Art Fair Painting Photography Drawing",
+	"description" : "Art lovers unite at the Old Town Art Fair in Chicago�s historic Old Town Triangle District for your pick of art mediums including 2D and 3D mixed media, drawing, painting, photography, printmaking, ceramics, fiber, glass, jewelry, and works in metal, stone, and wood. In short, any art you can imagine will be here. Known as one of the top art fairs in the country, the Old Town Art Fair celebrates its 67th year, and you are sure to walk away with a new piece of art for your living room. ",
+	"keyWords":["art", "art lovers", "art mediums", "Old Town Triangle District", "Chicago's", "Town", "Old Town Art Fair",  "2D and 3D mixed media", "art fair"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Firefly Music Festival Concert",
+	"description" : "Summer is the season for music, festivals, and concerts and the Firefly Music Festival in Dover offers one of the most unforgettable experiences of the summer. Featuring big name artists like Mumford & Sons, Florence + The Machine, Ellie Goulding, and Of Monsters and Men, the Firefly Music Festival is the perfect event for camping out, hanging out with friends, and creating lifelong memories.",
+	"keyWords":["big name artists", "Ellie Goulding", "camping out","Festival Concert"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Electric Daisy Carnival Las Vegas Art 3D Glow",
+	"description" : "The Electric Daisy Carnival has found a home in Las Vegas for the last 20 years, each year drawing in a bigger and better crowd for the three day carnival! This year, more than 300,000 people are expected to show up in EDC attire to look at the giant metal art, 3D superstructures, and glow in the dark environments. There are rides, food, and of course the best EDM DJ�s from around the world. Experience the heat of the 20th EDC Las Vegas in the full force this year! ",
+	"keyWords":["EDC Las Vegas", "EDC attire", "year", "Electric Daisy Carnival", "EDM DJ's", "giant metal art", "20 years", "3 D superstructures", "Las Vegas", "day carnival", "300,000 people"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Utah Shakespeare Festival",
+	"description" : "The beautiful scenery of Southern Utah makes the perfect backdrop for the best Shakespeare Festival in the country. Each year, more than 100,000 people flock to Cedar City to watch the plays put on by the at the Shakespeare Festival, a festival that has received both a Tony Award and an Emmy! The festival runs for a large part of the summer and into the fall, so you have plenty of opportunities to make your way to Cedar City - and then see some of the country�s most beautiful National Parks with Bryce Canyon and Zion National Park a quick car ride away. ",
+	"keyWords":["Bryce Canyon", "Southern Utah", "Tony Award", "Shakespeare Festival", "National Parks", "Cedar City", "100,000 people", "Zion National Park"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "NBA Finals Basquet Games",
+	"description" : "The National Basketball Association, or NBA, is a professional basketball league comprised of 30 teams across North America featuring the best basketball players in the world.The NBA is a collection of 30 teams, broken down by two conferences with three divisions apiece. The Western Conference plays host to the Northwest, Pacific and Southwest Divisions, featuring the following 15 teams",
+	"keyWords":["NBA", "30 teams", "basketball league", "basketball players", "North America", "Southwest Divisions", "National Basketball Association", "Western Conference", "team"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Wrestling World Cup - Men's freestyle",
+	"description" : "The 2016 Wrestling World Cup - Men's freestyle was The last of a set of three Wrestling World Cups in 2016. Wrestling World Cup is an international wrestling competition among teams representing member nations of the United World Wrestling (UWW) the sport's global governing body. The championships have been conducted every year since the 1973 tournament. The World Cup began as a dual-meet competition for the top teams on each continent, but now features the top teams in the rankings of the previous year's world championships.",
+	"keyWords":["World Cup", "Wrestling", "2016 Wrestling World Cup", "Wrestling World Cups",  "dual-meet competition",  "world championships"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	}]
+}

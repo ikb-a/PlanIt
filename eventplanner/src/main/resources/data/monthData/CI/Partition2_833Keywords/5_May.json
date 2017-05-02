@@ -1,0 +1,273 @@
+{
+"events" : [
+	{
+	"title" : "Mother's Day",
+	"description" : "Is an annual holiday celebrated on the second Sunday in May. Mother's Day recognizes mothers, motherhood and maternal bonds in general, as well as the positive contributions that they make to society.",
+	"keyWords":["Mother's Day","motherhood"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Memorial Day Dead Soldiers Civil War",
+	"description" : "Honors the nation's war dead from the Civil War onwards; marks the unofficial beginning of the summer season. (traditionally May 30, shifted by the Uniform Holidays Act 1968)",
+	"keyWords":["May 30,", "Civil War", "summer season","Memorial Day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Kentucky Derby Horse Race",
+	"description" : "In 2015, American Pharoah became the first horse to win the Triple Crown since 1978. The last time a horse won the Triple Crown before that? 1977. If history repeats itself, 2016 may be the year of back to back Triple Crown champions, and the Kentucky Derby is where all the drama kicks off. The Kentucky Derby is much more than just a horse race. It is a time for dressing up, for socializing, for making a couple bets, and having a good time. Take part in one of the greatest subcultures of 2016. ",
+	"keyWords":["horse", "Triple Crown", "2015, American Pharoah", "couple bets", "Triple Crown champions", "Crown", "Triple", "time", "horse race", "Kentucky Derby"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Indianapolis 500",
+	"description" : "The 2016 Indianapolis 500 (known as the 100th Indianapolis 500 presented by PennGrade Motor Oil for sponsorship reasons) took place on Sunday, May 29, 2016, at the Indianapolis Motor Speedway in Speedway, Indiana. It was the premier event of the 2016 Verizon IndyCar Series season. The 2016 Verizon IndyCar Series is the 21st season of the IndyCar Series and the 105th season of American open wheel racing. It included the 100th running of the Indianapolis 500, on May 29. Scott Dixon entered as the reigning drivers' champion, while Chevrolet entered the season as the reigning Manufacturer's champion.",
+	"keyWords":["21 st season", "Indianapolis Motor Speedway", "Indianapolis", "IndyCar", "IndyCar Series", "2016 Verizon IndyCar Series season", "May 29. Scott Dixon", "2016 Verizon IndyCar Series", "2016 Indianapolis 500", "2016", "premier event", "season", "PennGrade Motor Oil", "May 29, 2016,", "sponsorship reasons", "Indianapolis 500,", "Series", "Indianapolis 500"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "International Workers' Day",
+	"description" : "International Workers' Day, also known as Labour Day or May Day in some places, is a celebration of labourers and the working classes that is promoted by the international labour movement, socialists, communists and anarchists and occurs every year on May Day (1 May), an ancient European spring festival. The date was chosen for International Workers' Day by the Second International, a pan-national organization of socialist and communist political parties, to commemorate the Haymarket affair, which occurred in Chicago on 4 May 1886.",
+	"keyWords":["May Day", "European spring festival", "International", "May Day (1 May ),", "May", "Day", "Labour Day", "Haymarket affair", "Second International", "labour movement", "International Workers"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Midi Music Festival",
+	"description" : "The Midi Music Festival, sometimes also called Midi Modern Music Festival or simply Midi Festival  is among China's largest rock music festivals and is hosted by the Beijing Midi School of Music. Since its inauguration in 1997 it has been held each year in Beijing during the May holiday (May 1�3), with some breaks in 2003, 2004 and 2008 (all times held in October). The 2008 festival was delayed to October for reasons related to the 2008 Summer Olympics. The festival currently is held annually in three Chinese cities: Beijing, Shanghai and Shenzhen",
+	"keyWords":["Beijing Midi School", "Festival", "Music", "May holiday", "Midi Festival", "Midi Modern Music Festival", "Midi", "May 1-3),", "Chinese cities", "Beijing", "rock music festivals", "2003, 2004", "festival", "Midi Music Festival", "2008", "2008 festival", "2008 Summer Olympics"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Shanghai Golden Grand Prix",
+	"description" : "The Shanghai Golden Grand Prix is an annual athletics event at the Shanghai Stadium in Shanghai, PR China as part of the IAAF Diamond League. The meeting has had its inaugural edition in 2005. It's officially sponsored by Dunlop. From 2005 to 2009 the IAAF classified the Shanghai Golden Grand Prix among IAAF Grand Prix and IAAF Super Grand Prix meetings. It's the only meeting of the IAAF Diamond League that features and guarantees Men's 110 m Hurdles in every edition of the League.",
+	"keyWords":["Shanghai", "Grand", "110 m Hurdles", "IAAF Super Grand Prix meetings", "meeting", "League", "Shanghai Golden Grand Prix", "athletics event", "Shanghai Stadium", "IAAF Diamond League", "IAAF Grand Prix", "guarantees Men", "IAAF", "Prix", "PR China"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Spring Break Vacation School",
+	"description" : "Spring break is an academic tradition in various mostly western countries, that is scheduled for different periods depending on the state and sometimes the region. In Germany, universities typically schedule a semester break of five to eight weeks around March. The Whitsun (Pentecost) holidays around late May or early June are also considered a spring break.",
+	"keyWords":["Spring Break","Whitsun holidays"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "BIG 25 Berlin",
+	"description" : "The BIG 25 Berlin (German: 25 km von Berlin) is an annual road running competition over 25 kilometres that takes place in Berlin, Germany in early May. The course for the BIG 25 Berlin runs on major streets of the city and passes some of the city's most prominent landmarks, including the Berlin Victory Column, the Brandenburg Gate, Potsdamer Platz, Friedrichstra�e and Kurfurstendamm. The course begins at Olympischer Platz and the finishing line is placed on the track within the Olympic Stadium. It is one of the most high profile annual international races to be held over the 25 km distance and has been the site of six world records for the 25 km (five by men and one by a woman).",
+	"keyWords":["25 km von Berlin", "25", "Kurfurstendamm", "Berlin", "Olympischer Platz", "25 kilometres", "25 km", "25 km distance", "BIG 25 Berlin", "Friedrichstrasse", "world records", "Brandenburg Gate", "km", "Olympic Stadium", "Berlin Victory Column", "Potsdamer Platz"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Mozart Festival W�rzburg",
+	"description" : "The Mozart Festival W�rzburg is Germany's oldest Mozart Festival. Like the Salzburg Festival it ranks among the most well-known festivals of classic music in the German-speaking world. Each year between May and July internationally renowned symphony orchestras perform Mozart's masterpieces in more than 50 concerts. It is a mixture of indoor and open-air concerts in the unique atmosphere of Wurzburg Residence and its court gardens. Today between 25,000 and 30,000 people from all over the world visit W�rzburg to join this musical event.",
+	"keyWords":["Festival", "Mozart Festival", "symphony orchestras", "Salzburg Festival", "court gardens", "30,000 people", "German-speaking world", "Mozart", "W", "Wurzburg Residence", "50 concerts", "Mozart Festival Wurzburg", "world visit Wurzburg", "Wurzburg"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Rhein in Flammen",
+	"description" : "Rhein in Flammen (English: Rhine in Flames) is the name of five different firework displays along the river Rhine in Germany. The displays take place annually, at various locations along the river. On the five different dates, brightly illuminated ships sail the river in an evening convoy for their passengers to see the full firework display at each location of the river. The firework displays are started when the ships arrive. During the firework displays in St. Goar and St. Goarshausen, the convoy waits statically between the two castles Burg Maus and Burg Rheinfels. On the river banks wine festivals take place that attract hundreds of thousands of visitors every year. The biggest Rhein in Flammen event takes place in Koblenz every year, on the second Saturday in August. The Bonn event takes place at the Rheinauen Park in Bonn, on the first Saturday in May",
+	"keyWords":["firework display", "Flames )", "castles Burg Maus", "firework displays", "Rheinauen Park", "river Rhine", "Bonn event", "river banks wine festivals", "Burg Rheinfels", "evening convoy", "firework", "place", "river", "display"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "IIHF World Championship",
+	"description" : "The Ice Hockey World Championships are an annual men's ice hockey tournament organized by the International Ice Hockey Federation (IIHF). First officially held at the 1920 Summer Olympics, it is the sport's highest profile annual international tournament. The modern format for the World Championship features 16 teams in the championship group, 12 teams in Division I and 12 teams in Division II. If there are more than 40 teams, the rest compete in Division III. The teams in the championship play a preliminary round, then the top eight teams play in the playoff medal round and the winning team is crowned World Champion.",
+	"keyWords":["Ice Hockey World Championships", "International Ice Hockey Federation", "12 teams", "playoff medal round", "Division", "championship group", "World", "World Champion", "Division III", "Division II", "ice hockey tournament", "40 teams", "World Championship features 16 teams", "team", "1920 Summer Olympics"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "European Rowing Championships",
+	"description" : "The 2016 European Rowing Championships were held in Brandenburg, Germany, between 6 and 8 May 2016. The European Rowing Championships is an international Rowing regatta organised by FISA (the International Rowing Federation) for European rowing nations, plus Israel which, though not a member of the European federation is treated as a European nation for competition purposes.",
+	"keyWords":["Rowing regatta", "International Rowing Federation", "European rowing nations", "European", "European nation", "European Rowing Championships", "Rowing", "European federation", "Rowing Championships", "8 May 2016.", "competition purposes"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Euroleague Final Four",
+	"description" : "The 2016 Euroleague Final Four was the concluding Euroleague Final Four tournament of the 2015�16 Euroleague season, the 59th season of Europe's premier club basketball tournament, and the 16th season since it is organised by Euroleague Basketball. The Final Four will be played at the Mercedes-Benz Arena in Berlin, Germany, on May 2016. The EuroLeague Final Four is the final four format championship of the EuroLeague professional club basketball competition, which succeeded the FIBA European Champions Cup Competition in the 2001-2002 season. The EuroLeague used the final four format for the first time in 2002, in the FIBA Champions Cup Competition",
+	"keyWords":["Champions Cup Competition", "premier club basketball tournament", "EuroLeague", "2016 Euroleague", "Euroleague Basketball", "2015-16 Euroleague season", "club basketball competition", "May 2016.", "season", "2001-2002 season", "format championship", "Mercedes-Benz Arena", "Euroleague"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "World Touring Car Championship",
+	"description" : "The 2016 World Touring Car Championship is the thirteenth season of the FIA World Touring Car Championship, and the twelfth since the series was revived in 2005. The FIA World Touring Car Championship (WTCC) is an international Touring Car championship sanctioned by the FIA. It has had several different incarnations over the years, including a single season in 1987, a World Touring Car Cup held between 1993 and 1995 and most recently a world championship that has run since 2005. Citro�n Total driver Jose Maria Lopez from Argentina is the 2015 WTCC reigning champion.",
+	"keyWords":["world championship", "driver Jose Maria Lopez", "Championship", "FIA World", "Car Cup", "Car championship", "World", "2015 WTCC", "Car", "FIA", "Car Championship", "2016 World", "2005. Citroen"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Spring Break Vacation School",
+	"description" : "Spring break is an academic tradition in various mostly western countries, that is scheduled for different periods depending on the state and sometimes the region. The Easter break in the United Kingdom is either one or two weeks (depending on the local council) and fits around Easter.",
+	"keyWords":["United Kingdom","Spring Break"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "May Day",
+	"description" : "May Day is a public holiday usually celebrated on May 1. It is an ancient northern hemisphere spring festival. It is also a traditional spring holiday in many cultures. Dances, singing, and cake are usually part of the celebrations that the day includes. Traditional English May Day rites and celebrations include Morris dancing, crowning a May Queen and celebrations involving a maypole. Much of this tradition derives from the pagan Anglo-Saxon customs held during Thrimilce (the Old English name for the month of May meaning Month of Three Milkings) along with many Celtic traditions. Morris dancing on May Day in Oxford, England, in 2004. May blossom, the flower of the May tree or common hawthorn, Crataegus monogyna Dancing the May Pole at Llanelwedd in Wales, 1909. May Day has been a traditional day of festivities throughout the centuries. May Day is most associated with towns and villages celebrating springtime fertility (of the soil, livestock, and people) and revelry with village fetes and community gatherings. Seeding has been completed by this date and it was convenient to give farm labourers a day off. Perhaps the most significant of the traditions is the maypole, around which traditional dancers circle with ribbons.",
+	"keyWords":["Anglo-Saxon customs", "2004. May", "May tree", "Day", "Celtic traditions", "May Queen", "Morris dancing", "day", "1909. May Day", "village fetes", "May meaning Month", "springtime fertility", "Crataegus monogyna Dancing", "celebration", "hemisphere spring festival", "May Pole", "spring holiday", "May Day", "Old English name", "farm labourers", "Thrimilce", "May', 11, 1), ('community gatherings", "Traditional English May Day rites", "tradition", "May 1.", "dancers circle"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Spring Bank Holiday",
+	"description" : "Statutory bank holiday from 1971, following a trial period from 1965 to 1970. Replaced Whit Monday, which was formerly a public holiday whose date varied according to the date of Easter. The legislation does not specify a name for the holiday, merely when it occurs.",
+	"keyWords":["1970. Replaced Whit Monday", "trial period", "holiday", "Statutory bank holiday"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Labour Day or Early May Bank Holiday",
+	"description" : "Labour Day (Labor Day in the United States) is an annual holiday to celebrate the achievements of workers. Labour Day has its origins in the labour union movement, specifically the eight-hour day movement, which advocated eight hours for work, eight hours for recreation, and eight hours for rest. For many countries, Labour Day is synonymous with, or linked with, International Workers' Day, which occurs on 1 May. For other countries, Labour Day is celebrated on a different date, often one with special significance for the labour movement in that country.",
+	"keyWords":["labour union movement", "labour Day", "labour", "Day", "movement", "1 May", "Labour Day", "United States", "Labor Day", "hour", "day movement", "labour movement", "country", "International Workers"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Victoria Day",
+	"description" : "Victoria Day is a public holiday in parts of Scotland such as Dundee, Edinburgh, Paisley, Livingston and Perth. Also this year in the Standhill area of Bathgate. It is celebrated on the last Monday before or on 24 May. Schools and many shops are closed on Victoria Day, but it is not a bank holiday, meaning that government offices and banks remain open.The Victoria Day holiday commemorates Queen Victoria's birthday (Queen Alexandrina Victoria; 24 May 1819 � 22 January 1901).",
+	"keyWords":["Queen Victoria", "24 May", "bank holiday", "Victoria", "holiday", "Day", "Victoria Day", "government offices", "open.The Victoria Day holiday", "Queen Alexandrina Victoria", "Standhill area"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "The British Soap Awards",
+	"description" : "The British Soap Awards is an annual awards ceremony to honour the best of British soap operas. The ceremony is televised on ITV and currently presented by Phillip Schofield. The trophies given to the winners are made from metal and glass and have been manufactured by British firm Creative Awards since their inception. ",
+	"keyWords":["British firm Creative Awards", "British Soap Awards", "Phillip Schofield", "British", "British soap operas", "awards ceremony"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "European Aquatics Championships",
+	"description" : "The 2016 European Aquatics Championships took place from 9 to 22 May 2016 in London, United Kingdom, in the London Aquatics Centre. The European Aquatics Championships is the continental Aquatics championship for Europe, which is organized by LEN the governing body for aquatics in Europe. The Championships are currently held every two years (in even years); and since 1999, they have included 4 aquatics disciplines: swimming (long course/50m pool), diving, synchronized swimming and open water swimming. Prior to 1999, the championships also included water polo, which beginning in 1999 LEN split-off into a separate championships. The open water events are not held during the Olympic year.",
+	"keyWords":["Olympic year", "4 aquatics disciplines", "22 May 2016", "water events", "European Aquatics Championships", "course /50m pool ),", "year", "water polo", "Championship", "Aquatics Championships", "London Aquatics Centre", "championship", "years );", "water", "Aquatic", "Aquatics championship", "United Kingdom", "1999 LEN split-off", "LEN"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Walk Against Want",
+	"description" : "The Walk Against Want is an annual event held in support of Oxfam Australia (formerly Community Aid Abroad), an independent organisation that works with communities in 27 countries on development projects, humanitarian relief efforts, and advocacy campaigns. The Walk Against Want was originally intended to represent the distances that women in developing countries must walk every day to get clean water, seeing participation in the walk as a tangible action that could help to build a sense of connection and contribution to global development issues.",
+	"keyWords":["Community Aid", "development issues", "Oxfam Australia", "relief efforts", "27 countries", "advocacy campaigns", "development projects"],
+	"venue" : {
+		"address" : {
+			"country" : "Australia"
+			}
+		}
+	},
+	{
+	"title" : "Russian Grand Prix",
+	"description" : "The Russian Grand Prix  is an annual auto race held at Sochi Autodrom circuit built around Olympic Park in Sochi, Russia, as part of the Formula One World Championship. The race was first held briefly in the 1910s in St. Petersburg of the Russian Empire. The plans were made to host a Formula One event in Moscow for the 1983 season as the Grand Prix of the Soviet Union, these plans fell through. In 2010, it was officially announced that the Russian city of Sochi, which was also preparing to host the 2014 Winter Olympics, will host a new event on the F1 schedule beginning in the 2014 Formula One season under a seven-year deal.",
+	"keyWords":["Russian Grand Prix", "World Championship", "Sochi", "Formula", "Grand Prix", "2014 Winter Olympics", "Olympic Park", "Russian", "Soviet Union", "2014 Formula", "F 1 schedule", "1983 season", "Sochi Autodrom circuit", "Russian Empire", "auto race", "Russian city"],
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},
+	{
+	"title" : "HeliRussia",
+	"description" : "HeliRussia is the Russia's first International exhibition of Helicopter Industry held in Moscow, Russia at Crocus Expo exhibition center. The world achievements in helicopter industry were demonstrated in all aspects, from design to manufacture and operation, on 10 thousand square meter area of the Exhibition pavilions and open platforms. The prominent Russian companies like the Mil Moscow Helicopter Plant, Kamov, Kazan Helicopter Plant, Rostvertol, RET Krondshtadt etc. as well as representative offices of Eurocopter, Bell Helicopter Textron and other companies participated in HeliRussia 2008. HeliRussia is an important event in Russian business. The ongoing economic boom in Russia and the growth in paying capacity of the Russian organizations and individuals provide for the steady growth in demand for helicopter-related services.",
+	"keyWords":["Exhibition pavilions", "HeliRussia 2008. HeliRussia", "helicopter industry", "International exhibition", "Helicopter", "Russian organizations", "square meter area", "HeliRussia", "RET Krondshtadt", "representative offices", "Russian", "Russian business", "Mil Moscow Helicopter Plant", "Helicopter Industry", "world achievements", "Crocus Expo exhibition center", "Russia", "Bell Helicopter Textron", "helicopter-related services", "Kazan Helicopter Plant", "Russian companies"],
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},
+	{
+	"title" : "Ibero-American Championships in Athletics",
+	"description" : "The 17th Ibero-American Championships in Athletics were held at the Estadio Olimpico Joao Havelange in Rio de Janeiro, Brazil, between May 14-16, 2016. Since the event served also as the athletics event test for the 2016 Summer Olympics, countries that do not compete at Ibero-American Championships attended the event, including United States, Saudi Arabia and Australia. However, medals won by those athletes did not count toward the total medal tally. The Ibero-American Championships in Athletics (Spanish: Campeonato Iberoamericano de Atletismo) is a biennial athletics competition for athletes representing Ibero-American countries as well as a number of other Spanish- or Portuguese-speaking countries in Africa.[1] The competition is organised by the Asociaci�n Iberoamericana de Atletismo (Ibero-American Athletics Association).",
+	"keyWords":["event", "athletics event test", "Saudi Arabia", "Championship", "Portuguese-speaking countries", "May 14-16, 2016.", "Asociacion Iberoamericana", "2016 Summer Olympics", "United States", "medal tally", "Ibero-American Championships", "Estadio Olimpico Joao Havelange", "Athletics", "Campeonato Iberoamericano", "Ibero-American Athletics Association", "country", "athletics competition", "Ibero-American",  "Africa .[1]", "Ibero-American countries"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	},
+	{
+	"title" : "Work Day",
+	"description" : "Celebrates the achievements of workers and the labour movement. This holiday is also known as May Day around the world.",
+	"keyWords":["May Day", "labour movement"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	}	]
+}

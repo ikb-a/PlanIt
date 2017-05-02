@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "Independence Day",
+	"description" : "Celebrates the signing of the Declaration of Independence from British rule, also called the Fourth of July or simply The Fourth. Fireworks celebration are held in many cities throughout the nation. Boston, Massachusetts is famous for its Boston Pops Fireworks Spectacular with music and fireworks",
+	"keyWords":["British rule", "Boston Pops Fireworks Spectacular", "Fireworks celebration", "Independence Day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Taste of Chicago Food Drink",
+	"description" : "Calling all foodies! Taste of Chicago is the nation�s premier outdoor food festival showcasing the diversity of Chicago�s dining community. The delicious array of food served at Taste of Chicago is complemented by music and fun filled activities for the entire family. Every summer since 1980, Chicago�s beautiful Grant Park on the city�s magnificent lakefront has been home to the world�s largest food festival. The Taste of Chicago features more than just deep dish Pizza, though you�re sure to run into some while you�re there.�",
+	"keyWords":["Chicago", "deep dish Pizza", "since 1980", "outdoor food festival",  "food festival", "Grant Park", "Chicago's dining community", "music and activities"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "San Diego Comic-Con Convention Comic Books Movies",
+	"description" : "The largest and original Comic-Con is gearing up for it�s best year yet, featuring your favorite characters from all your favorite movies, comic books, and shows! You never know who you will meet at the upcoming Comic-Con, and you know the biggest names from this years hit shows will be there. Of all the Comic-Con�s around the country, the one in San Diego by far the best known, and most highly anticipated event of them all. From it�s humble origins, this Comic-Con has grown into the largest gathering of comic, movie, and science fiction fans in the nation! ",
+	"keyWords":["science fiction convention", "science fiction fans", "San Diego", "comics fans","movie fans"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Newport Folk Festival Bands Old Indie",
+	"description" : "The Newport Folk Festival features plenty of high-energy performances from both old times and young indie acts. The festival was made popular by musicians such as Bob Dylan, Johnny Cash, Muddy Waters, and Howlin� Wolf, and in recent years has headlined big names like the Decemberists, Fleet Foxes, the Avett Brothers, and Edward Sharpe and the Magnetic Zeros. This folk festival focuses on being green and suggests getting to the festival by bike, water shuttle, or ride sharing. If folk music is your scene, the Newport Folk Festival is one event you need to attend this year. ",
+	"keyWords":["Edward Sharpe", "Howlin' Wolf", "folk festival", "indie acts", "Fleet Foxes", "festival", "Magnetic Zeros", "Johnny Cash", "Bob Dylan", "Avett Brothers", "folk music", "Newport Folk Festival", "water shuttle", "Newport Folk Festival", "Muddy Waters"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "China Digital Entertainment Expo & Conference",
+	"description" : "ChinaJoy or China Digital Entertainment Expo & Conference  is a digital entertainment expo held annually in Shanghai, China. It is the largest gaming and digital entertainment exhibition held in China and Asia.",
+	"keyWords":["entertainment expo", "China Digital Entertainment Expo", "entertainment exhibition"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "China Touring Car Championship",
+	"description" : "The China Touring Car Championship (CTCC) is a touring car racing series based in China. Between 2004 and 2008 the series was known as the China Circuit Championship. The series consists of two classes, one for 2000cc cars and one for 1600cc cars. The series will join forces with the Japanese Touring Car Championship, which returns in 2012, with the series visiting each other during the 2012 season. The promoters of the two series are looking to form an Asian Touring Car Championship for Super 2000 cars in 2014.",
+	"keyWords":["2000 cc cars", "Super 2000 cars", "Championship", "2012 season", "1600 cc cars",  "Car Championship", "China Circuit Championship"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Ghost Festival",
+	"description" : "The Ghost Festival, also known as the Hungry Ghost Festival in modern day,  is a traditional Buddhist and Taoist festival held in Asian countries. In the Chinese calendar (a lunisolar calendar), the Ghost Festival is on the 15th night of the seventh month (14th in southern China).In Chinese culture, the fifteenth day of the seventh month in the lunar calendar is called Ghost Day and the seventh month in general is regarded as the Ghost Month , in which ghosts and spirits, including those of the deceased ancestors, come out from the lower realm. Distinct from both the Qingming Festival (in spring) and Double Ninth Festival (in autumn) in which living descendants pay homage to their deceased ancestors, during Ghost Festival, the deceased are believed to visit the living.",
+	"keyWords":[ "Ghost Festival", "Double Ninth Festival", "Taoist festival", "Ghost", "lunisolar calendar", "Qingming Festival", "Ghost Day", "Hungry Ghost Festival", "month 14", "Asian countries", "Ghost Month"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "star festival",
+	"description" : "Tanabata , also known as the Star Festival, is a Japanese festival originating from the Chinese Qixi Festival. It celebrates the meeting of the deities Orihime and Hikoboshi (represented by the stars Vega and Altair respectively). According to legend, the Milky Way separates these lovers, and they are allowed to meet only once a year on the seventh day of the seventh lunar month of the lunisolar calendar. The date of Tanabata varies by region of the country, but the first festivities begin on 7 July of the Gregorian calendar. The celebration is held at various days between July and August.",
+	"keyWords":["Tanabata", "Vega and Altair", "Orihime", "Chinese Qixi Festival", "Star Festival", "lunisolar calendar", "Milky Way", "7 July", "Japanese festival"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	}]
+}

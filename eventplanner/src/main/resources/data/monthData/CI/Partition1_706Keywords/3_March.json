@@ -1,0 +1,73 @@
+{
+"events" : [
+	{
+	"title" : "Spring Break School Vacation",
+	"description" : "Spring break is a U.S. phenomenon and an academic tradition which started in the United States and is observed in some other western countries. Spring break is also a vacational period in early spring at universities and schools",
+	"keyWords":["spring", "United States", "vacational period"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "South by Southwest Music Films",
+	"description" : "SXSW (South by Southwest) is the ultimate convergence of original music, independent films, and emerging technologies. This year's SXSW headlines Crystal Castles, Alex G, Caveman, and H�LOS, and keynote speakers Casey Gerald and Andy Puddicombe will be in the spotlight. SXSW is the premiere launching pad for new creative content, and sparks new ideas to carve the path for the future of each ever-evolving field, long after the events' conclusion. ",
+	"keyWords":["Casey Gerald", "Crystal Castles", "Andy Puddicombe",  "SXSW", "Alex G", "emerging technologies","independent films","original music"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Ultra Music Festival",
+	"description" : "Every year, Miami plays host to one of the most exhilarating electronic dance festivals in the country - with over 100,000 people attending. This year shouldn�t be any different as headliners include Armin Van Buuren, Avicii, David Guetta, Kaskade, Nero, Tiesto, and ZEDD among many others. The Ultra Music Festival takes place in downtown Miami, and you are just a stone's throw away from the warm South Beach waters. ",
+	"keyWords":["David Guetta", "dance festivals", "Armin Van Buuren", "South Beach waters", "downtown Miami", "100,000 people",  "Ultra Music Festival"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Lantern Fest Night Lights Candles",
+	"description" : "If there is one event you need to attend this year, the Lantern Fest is definitely it. There is nothing quite like being surrounded by thousands of glowing lanterns as they begin to take off into the air right in front of your eyes. The moment when everybody lights their lantern and the first ones start to take off is nothing short of magic! The only way to experience such a beautiful and fun event is through the Lantern Festival! ",
+	"keyWords":["fun event", "Lantern Festival", "thousands of lanterns",  "Lantern Fest"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Hong Kong International Jewellery Show",
+	"description" : "Hong Kong International Jewellery Show is a trade fair held annually in spring at the Hong Kong Convention and Exhibition Centre, Hong Kong. It is organised by the Hong Kong Trade Development Council.This fair offers a range of jewellery and timepieces exhibits, such as diamonds, coloured gems, pearls and rubies. With 2,673 exhibitors from 44 countries and regions in the 2010 edition, it is the world's third largest jewellery fair in terms of exhibitors",
+	"keyWords":[ "Hong Kong Trade Development Council", "International Jewellery Show", "2010 edition", "Hong Kong Convention",  "44 countries", "timepieces exhibits", "2,673 exhibitors",  "Exhibition Centre"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Shanghai Fashion Week",
+	"description" : "Shanghai Fashion Week is a fashion event held two times every year in Shanghai, each time lasting for seven days which is a part of Shanghai International Fashion Culture Festival which usually lasts for a month. The event first began in 2001. Supported by the Ministry of Commerce, Shanghai Fashion Week is a business and cultural event hosted by the Shanghai Municipal Government. With more and more young designers and models, Shanghai Fashion Week is aiming to build up an international and professional platform and attract top design talents from all over the world.",
+	"keyWords":["Shanghai", "design talents",  "Shanghai International Fashion Culture Festival", "fashion event", "Fashion", "Shanghai Fashion Week"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Shanghai International Fashion Culture Festival",
+	"description" : "The Shanghai International Fashion Culture Festival is a fashion event held annually since 1995 by the municipal authority of Shanghai, China. It is regarded as one of Shanghai's Four Festivals (the other three being the Shanghai Art Festival, the Shanghai Tour Festival and the Shanghai Movie and Television Festival). The fashion festival showcases the output of Shanghai's fashion and textile industry. It is attended by fashion buyers from around the world. Donghua University, which was originally a textiles institute, has a forum at the festival. The event has had an audience of more than 100 million people through broadcasting, the internet, and the press.",
+	"keyWords":["fashion", "Festival", "Shanghai", "Shanghai Art Festival", "fashion event", "Donghua University", "textile industry", "Shanghai International Fashion Culture Festival", "textiles institute", "fashion buyers", "Shanghai Tour Festival", "fashion festival showcases", "Shanghai Movie", "Television Festival"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	}]
+}

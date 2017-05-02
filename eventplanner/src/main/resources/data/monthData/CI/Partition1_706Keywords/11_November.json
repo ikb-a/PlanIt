@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "Veterans Day",
+	"description" : "Honors all veterans of the United States armed forces. It is observed on November 11 to recall the end of World War I on that date in 1918 (major hostilities of World War I were formally ended at the 11th hour of the 11th day of the 11th month of 1918 when the Armistice with Germany went into effect).",
+	"keyWords":["November 11",  "end of World War I", "Veterns Day"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Thanksgiving Day",
+	"description" : "Traditionally celebrates the giving of thanks for the autumn harvest. Traditionally includes the sharing of a turkey dinner.",
+	"keyWords":["autumn harvest", "turkey dinner"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Rock n Roll Marathon Las Vegas Music Bands",
+	"description" : "Run the light-filled Las Vegas Strip at night as you race to the sound your favorite beats. The Rock �n� Roll Marathon was created to make running fun. Have you ever tried running without a beat? Exactly. While Las Vegas maya be the marquee run in this event, the Rock �n� Roll Marathon travels the country and makes stops in cities like D.C., Phoenix, Dallas, Nashville, Seattle, Chicago, and more. If you love running and music, this event is for you, as you can choose to run a 5k, 10k, half marathon or full marathon!",
+	"keyWords":["Rock n Roll Marathon",  "half marathon", "5 k", "10 k"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Texas Renaissance Festival 16th century musicians acrobats dancers",
+	"description" : "Starting from humble beginnings in the 1970�s, the Texas Renaissance festival has grown to become the largest, most acclaimed Renaissance Festival in the nation with over 500,000 guest passing through the Festival�s gates each year. Upon entering the gates, you take a trip back through time to the 16th century, as you explore the 55 acre, authentically recreated park. You wou see musicians, magicians, acrobats, jugglers, and dancers, with over 200 daily performance on over 20 stages throughout the village. ",
+	"keyWords":[ "16th century recreation", "20 stages", "500,000 guest", "55 acre", "Renaissance Festival"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Hong Kong Jewish Film Festival",
+	"description" : "The Hong Kong Jewish Film Festival (HKJFF) is an annual film festival dedicated to world cinema that focuses on Jewish life, history and culture worldwide. It was founded in 2000 by Howard Elias from Toronto, Canada, and takes place in Hong Kong.",
+	"keyWords":["Howard Elias", "Film Festival", "Jewish life", "film festival", "Hong Kong", "world cinema"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "festival day for children aged three, five and seven",
+	"description" : "Shichi-Go-San  is a traditional rite of passage and festival day in Japan for three- and seven-year-old girls and three- and five-year-old boys, held annually on November 15 to celebrate the growth and well-being of young children. As it is not a national holiday, it is generally observed on the nearest weekend.",
+	"keyWords":["November 15", "Shichi-Go-Sany","celebrate well-being", "young children"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "Cultural festival",
+	"description" : "Cultural festivals  in Japan are annual open day events held by most schools, from nursery schools to universities at which their students display their artistic achievements. People who want to enter the school themselves or who are interested in the school may come to see what the schoolwork and atmosphere are like. Parents may also want to see what kind of work their children have been doing. The festivals are usually open to the public, especially at high schools and universities.",
+	"keyWords":["nursery schools", "students display art",  "day event", "Cultural festival"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "Tokyo International Film Festival",
+	"description" : "The Tokyo International Film Festival  (TIFF) is a film festival established in 1985. The event was held biennially from 1985 to 1991 and annually thereafter. Along with the Shanghai International Film Festival, it is one of Asia's competitive film festivals, and the only Japanese festival accredited by the FIAPF. The awards handed out during the festival have changed throughout its existence, but the Tokyo Sakura Grand Prix, handed to the best film, has stayed as the top award. Other awards that have been given regularly include the Special Jury Award and awards for best actor, best actress and best director.",
+	"keyWords":["Other awards", "Tokyo Sakura Grand Prix", "film festival", "Special Jury Award",  "film festivals", "Tokyo International Film Festival", "awards", "Shanghai International Film Festival", "Japanese festival"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	}]
+}

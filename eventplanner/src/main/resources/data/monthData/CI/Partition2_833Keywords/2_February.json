@@ -1,0 +1,113 @@
+{
+"events" : [
+	{
+	"title" : "Super Bowl 50 Football Game",
+	"description" : "The Super Bowl isn�t just another football game. It is the football game that brings an entire nation together for a few hours of friendly entertainment, trash talk, and some pretty creative commercials. This year celebrates the 50th time the Super Bowl will be played, making it a game to remember. If you have never attended the game in person, this would be the year of years to attend, especially in the new Levi�s Stadium, which was built to incorporate your phones and social media during the game. Don�t just watch the Super Bowl this year, be a part of it. ",
+	"keyWords":["Super Bowl", "Bowl", "year", "Super", "football game", "game", "Don't", "Levi's Stadium", "Super Bowl isn't"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Mardi Gras Festival Carnival",
+	"description" : "Mardi Gras surely takes the cake for what has to be one of the most unique events in the United States. Yes, Carnival is celebrated in many countries and cities throughout the world, but Mardi Gras in New Orleans is the only festival of it's kind in the US. Celebrate Fat Tuesday by throwing on some beads, dressing up in costume, and watching the Parade roll on through the famous French Quarter of New Orleans. This is one event that everyone should have on their bucket list. ",
+	"keyWords":["Parade roll", "Mardi Gras", "United States", "Celebrate Fat Tuesday", "New Orleans", "bucket list", "French Quarter"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Groundhog Day Winter Spring",
+	"description" : "Tired of the cold winter weather? Be the first to know if this leap year will give us an early Spring! Each year Punxsutawney Phil comes out of his home to forecast the weather over the next six weeks. The town of Punxsutawney provides a show and activities for everybody who attends from Gobbler�s Knob Got Talent to a top hat decorating contest! The events at Gobbler�s Knob is perfect for any family.",
+	"keyWords":["leap year", "hat decorating contest", "winter weather", "Gobbler's Knob", "year Punxsutawney Phil"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Daytona 500 Car Race",
+	"description" : "Fresh off of�a sold-out crowd witnessing�the closest finish in DAYTONA 500 history against the backdrop of the world's�only motorsports stadium, the 59th running of the DAYTONA 500 is sure to be another for the record books. At a place where the timeline unfolds like the pages of history, a proud new chapter is set to be written at the World Center of Racing.",
+	"keyWords":["DAYTONA 500 history", "DAYTONA 500", "World Center", "record books", "motorsports stadium"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Chinese New Year",
+	"description" : "Chinese New Year, known in modern Chinese as the Spring Festival  is an important Chinese festival celebrated at the turn of the traditional lunisolar Chinese calendar. Celebrations traditionally run from the evening preceding the first day, to the Lantern Festival on the 15th day of the first calendar month. The first day of the New Year falls on the new moon between 21 January and 20 February. In 2017, the first day of the Chinese New Year is on Saturday, 28 January. The New Year festival is centuries old and gains significance because of several myths and traditions. Traditionally, the festival was a time to honour deities as well as ancestors",
+	"keyWords":["gains significance", "Chinese festival", "New Year festival", "New", "calendar month", "festival", "honour deities", "Chinese New Year", "New Year", "Lantern Festival", "28 January", "day", "Chinese", "Spring Festival", "21 January", "20 February", "Year"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Lantern Festival",
+	"description" : "The Lantern Festival is a Chinese festival celebrated on the fifteenth day of the first month in the lunisolar Chinese calendar. It marks the final day of the traditional Chinese New Year celebrations, and usually falls on some day in February or March in the Gregorian calendar. As early as the Western Han Dynasty (206 BC-AD 25), it had become a festival with great significance. During the Lantern Festival, children go out at night to temples carrying paper lanterns and solve riddles on the lanterns",
+	"keyWords":["Chinese festival", "Gregorian calendar", "Western Han Dynasty (206 BC-AD 25),", "Lantern Festival", "day", "paper lanterns", "Chinese New Year celebrations"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Tokyo Marathon",
+	"description" : "The Tokyo Marathon  is an annual marathon sporting event in Tokyo, the capital of Japan. It is an IAAF Gold Label marathon and one of the six World Marathon Majors. The latest edition of the race took place on Sunday February 28, 2016. It is sponsored by Tokyo Metro.",
+	"keyWords":["Tokyo Marathon", "Sunday February 28, 2016.", "IAAF Gold Label marathon", "Tokyo", "Tokyo Metro", "World Marathon Majors"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "British Academy Film Awards",
+	"description" : "The British Academy Film Awards are presented in an annual award show hosted by the British Academy of Film and Television Arts (BAFTA). It is the British equivalent of the American Oscars and Australian AACTA Awards. As of 2008, it has taken place in Central London at the Royal Opera House, the latter having taken over from the flagship Odeon cinema on Leicester Square. ",
+	"keyWords":["British equivalent", "award show", "British Academy", "flagship Odeon cinema", "British", "Central London", "Royal Opera House", "Australian AACTA Awards", "American Oscars", "Leicester Square", "Television Arts", "British Academy Film Awards"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Royal Canberra Show",
+	"description" : "The Royal Canberra Show is an agricultural show that has been staged annually in Canberra since 1927 by the Royal National Capital Agricultural Society. The show has agriculture at its core, but it has expanded with the addition of rides, competitions and educational facilities. It is said that this is where city meets country and country meets city. The number of people who enter their livestock and other agricultural goods into the various competitions has increased, reflecting the significant role the Show plays in the development of the skills and excellence of those who live in the surrounding region, according to the Royal Canberra Show website. In 2012, the show marked the International Year of the Farmer.",
+	"keyWords":["show", "Royal", "International Year", "Royal Canberra Show", "Canberra", "Show", "Royal Canberra Show website", "Royal National Capital Agricultural Society"],
+	"venue" : {
+		"address" : {
+			"country" : "Australia"
+			}
+		}
+	},
+	{
+	"title" : "Diving World Cup",
+	"description" : "The 2016 FINA Diving World Cup was held in Rio de Janeiro, Brazil, from February 19 to February 24, 2016. ",
+	"keyWords":["2016 FINA Diving World Cup", "February 19"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	},
+	{
+	"title" : "Brazilian Carnival",
+	"description" : "Carnival of Brazil (Portuguese: Carnaval do Brasil, IPA: [ka?na'vaw]) is an annual Brazilian festival held between the Friday afternoon (51 days before Easter) and Ash Wednesday at noon, which marks the beginning of Lent, the forty-day period before Easter. On certain days of Lent, Roman Catholics and some other Christians traditionally abstained from the consumption of meat and poultry, hence the term carnival, from carnelevare, to remove (literally, raise) meat. Rhythm, participation, and costumes vary from one region of Brazil to another. In the southeastern cities of Rio de Janeiro, Sao Paulo and Vitoria, huge organized parades are led by samba schools. Those official parades are meant to be watched by the public, while minor parades (blocos) allowing public participation can be found in other cities. ",
+	"keyWords":[") meat", "Brazilian festival", "parade", "Vitoria", "ka ?na", "official parades", "parades","blocos", "Sao Paulo", "samba schools", "Ash Wednesday", "Roman Catholics", "forty-day period", "Friday afternoon 51 days"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	}	]
+}

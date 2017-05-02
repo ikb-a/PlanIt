@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "Easter Jesus Resurrection",
+	"description" : "Easter also called Pascha or Resurrection Sunday, is a festival and holiday celebrating the resurrection of Jesus Christ from the dead, described in the New Testament as having occurred on the third day of his burial after his crucifixion by Romans at Calvary c. 30 AD. It is the culmination of the Passion of Christ, preceded by Lent (or Great Lent), a forty-day period of fasting, prayer, and penance.",
+	"keyWords":["Resurrection Sunday", "End of Lent", "New Testament", "forty-day period", "Jesus Christ", "30 AD", "Calvary c"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "New Orleans Jazz & Heritage Festival Music",
+	"description" : "If you want to listen to some true jazz music, there is no better place to do it than in the heart of jazz country itself - New Orleans. This ten day festival will give you all the jazz music you crave, and leave you with a list of new artists to follow. Get your fill of southern cooking, New Orleans culture, all the jazz rhythm in one place at the New Orleans Jazz & Heritage Festival. ",
+	"keyWords":["jazz country", "jazz music", "New Orleans Jazz",  "Heritage Festival",  "New Orleans culture", "southern cooking"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The Cooper River Bridge Run Race Runners",
+	"description" : "The Cooper River Bridge Run is one of the most unique runs in the country due to its beautiful setting in Charleston and the fact that over 40,000 people participate in this 10k. While everybody knows about the Boston Marathon, this lesser known 10k is perfect for both beginning and advanced runners. Celebrate your health and participate in a 10k that gives back to over 15 different charities. Your run will make a real difference. ",
+	"keyWords":["Boston Marathon", "10 k", "Cooper River Bridge Run",  "40,000 people"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The National Cherry Blossom Festival Flower Spring ",
+	"description" : "If you have never seen the cherry blossoms in DC, this is a must attend event for everybody in their lifetime. The blooming cherry trees line up and down the National Mall, making one of America�s most beautiful cities even prettier. The event celebration kicks off on March 18th with the Pink Tie Party fundraiser, followed by the Opening Ceremony on the 26th, the Blossom Kite Festival on April 2nd, and concludes with the National Cherry Blossom Festival Parade on the 16th. The entire month of celebrating is the event of springtime. ",
+	"keyWords":[ "Blossom Kite Festival", "Party fundraiser",   "National Cherry Blossom Festival Parade", "National Mall", "month of celebrating","blooming cherry trees"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "The Masters Championships ",
+	"description" : "The Masters golf tournament is played is played at the Augusta National Golf Club in April each year. The Tournament was first played in 1934, and won by Horton Smith of the USA. The Masters Tournament, also known as The Masters or The US Masters, is one of the four major championships in professional golf. The Masters is scheduled for the first full week of April, and it is the first of the majors to be played each year. Unlike the other major championships, the Masters is held each year at the same location, Augusta National Golf Club, a private golf club in the city of Augusta, Georgia, USA. ",
+	"keyWords":["golf", "Masters golf tournament", "year", "Masters", "Horton Smith", "Augusta", "golf club", "Augusta National Golf Club", "Masters Tournament"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Qingming Festival",
+	"description" : "The Qingming or Ching Ming Festival, also known as Tomb-Sweeping Day in English, is a traditional Chinese festival on the first day of the fifth solar term of the traditional Chinese lunisolar calendar. This makes it the 15th day after the Spring Equinox, either 4 or 5 April in a given year.Other common translations include Chinese Memorial Day and Ancestors' Day.In the mainland, the holiday is associated with the consumption of qingtuan, green dumplings made of glutinous rice and barley grass. In Taiwan, the similar confection is known as caozaiguo or shuchuguo",
+	"keyWords":[  "Tomb-Sweeping Day", "Chinese lunisolar calendar", "barley grass", "Ching Ming Festival", "Chinese Memorial Day", "Spring Equinox"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "World Track Championships",
+	"description" : "The World Track Championships is an annual event comprising races for the various disciplines and distances in track cycling. The Championships is regulated by the Union Cycliste Internationale (UCI). The current events (from 2013) include: time trial, keirin, individual pursuit, team pursuit, points race, scratch race, sprint, team sprint, omnium and, for men only, the madison. ",
+	"keyWords":["scratch race", "track cycling", "team pursuit", "time trial", "Union Cycliste Internationale", "World Track Championships", "team sprint", "race", "points race"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Acrobatic Gymnastics World Championships",
+	"description" : "The 2016 Acrobatic Gymnastics World Championships was the 25th edition of acrobatic gymnastics competition and were held in Putian, China from April 1 to April 3, 2016.  The International Gymnastics Federation (FIG), a nonprofit organisation, is the governing body for Gymnastics worldwide. It is the oldest established international sports federation (1881) and has participated in the Olympic Games since their revival in 1896. The FIG governs seven disciplines: Gymnastics for All, Men's Artistic, Women's Artistic, Rhythmic, Trampoline, Aerobic and Acrobatic Gymnastics. It counts 142 national member federations and boasts a 30-person staff at its international seat in Lausanne (SUI), which is also home to the International Olympic Committee (IOC).",
+	"keyWords":["FIG", "member federations", "30 person staff", "International Gymnastics Federation", "April 1", "Acrobatic Gymnastics", "SUI", "2016 Acrobatic Gymnastics World Championships", "counts 142", "sports federation (1881)", "April 3, 2016.", "gymnastics competition", "Olympic Games", "Gymnastic", "International Olympic Committee"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	}]
+}

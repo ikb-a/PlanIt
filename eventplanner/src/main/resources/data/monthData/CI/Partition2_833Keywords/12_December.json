@@ -1,0 +1,83 @@
+{
+"events" : [
+	{
+	"title" : "Christmas",
+	"description" : "Annual festival commemorating the birth of Jesus Christ observed most commonly on December 25 as a religious and cultural celebration among billions of people around the world.",
+	"keyWords":["Jesus Christ", "Annual festival", "December 25"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "New Year's Eve",
+	"description" : "Omisoka , New Year's Eve, is the second-most important day in Japanese tradition because it is the final day of the old year and the eve of New Year's Day, which is the most important day of the year. Around 11:00 PM on Omisoka at home, people often gather for one last time in the old year to have a bowl of toshikoshi-soba or toshikoshi-udon together a tradition based on people's association of eating the long noodles with  crossing over from one year to the next,  which is the meaning of toshi-koshi. While the noodles are often eaten plain, or with chopped scallions, in some localities people top them with tempura.",
+	"keyWords":["people", "localities people", "year",  "New Year", "Japanese tradition", "day", "11:00 PM"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "The Emperor's Birthday",
+	"description" : "The Emperor's Birthday  is a national holiday in the Japanese calendar celebrated on 23 December of each year. The date is determined by the reigning Emperor's birthdate. Emperor Akihito was born on 23 December 1933. During the reign of Emperor Hirohito (Showa period, 1926�1989), the Emperor's birthday was observed on 29 April. That date remained a public holiday, posthumously renamed Greenery Day in 1989 and Showa Day in 2007.",
+	"keyWords":["23 December 1933.", "Showa period", "emperor Akihito", "29 April", "Japanese calendar", "Emperor", "Showa Day", "Emperor Hirohito", "Greenery Day", "23 December"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "Christmas",
+	"description" : "Annual festival commemorating the birth of Jesus Christ observed most commonly on December 25 as a religious and cultural celebration among billions of people around the world.",
+	"keyWords":["Jesus Christ", "Annual festival", "December 25"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Christmas Day",
+	"description" : "Christmas or Christmas Day  is an annual festival commemorating the birth of Jesus Christ observed most commonly on December 25 as a religious and cultural celebration among billions of people around the world. A feast central to the Christian liturgical year, it is prepared for by the season of Advent or the Nativity Fast and initiates the season of Christmastide, which historically in the West lasts twelve days and culminates on Twelfth Night; in some traditions, Christmastide includes an Octave.",
+	"keyWords":["Twelfth Night", "Christmas Day", "December 25", "Jesus Christ", "Nativity Fast"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Christmas in Australia",
+	"description" : "Christmas traditions in Australia  have many similarities to British and United States traditions, including traditional Christmas symbols featuring winter iconography. This means a red fur-coated Santa Claus riding a sleigh, carols such as Jingle Bells, and various snow-covered Christmas scenes on Christmas cards and decorations. However, the timing of Christmas occurring during the Southern Hemisphere's summer season has resulted in the development of some local traditions as a result of the warmer weather.",
+	"keyWords":["Jingle Bells", "United States traditions", "Christmas traditions", "Christmas", "Christmas cards", "Christmas scenes", "Christmas symbols", "winter iconography", "tradition", "fur-coated Santa Claus", "summer season", "Southern Hemisphere"],
+	"venue" : {
+		"address" : {
+			"country" : "Australia"
+			}
+		}
+	},
+	{
+	"title" : "Remembrance Day of Journalists Killed in the Line of Duty",
+	"description" : "Remembrance Day of Journalists Killed in the Line of Duty  is a remembrance day, observed on December 15 in Russia in memory of journalists who died while performing their professional duties. The day was established by the Union of Journalists of Russia (RUJ) in 1991, following the deaths of journalist Viktor Nogin and cameraman Gennadi Kurennoy in the former Socialist Federal Republic of Yugoslavia in September that year[1] after their car came under fire from Serbian fighters. In Moscow the day is observed at Nikitsky Boulevard. According to representatives of the Union of Journalists of Russia, between 10 and 20 journalists are killed each year in Russia under various circumstances.",
+	"keyWords":["journalist Viktor Nogin", "December 15", "Nikitsky Boulevard", "Remembrance Day", "day", "cameraman Gennadi Kurennoy", "20 journalists", "year [1]", "Socialist Federal Republic", "Journalists Killed", "Journalist", "Serbian fighters", "Russia", "remembrance day", "journalist"],
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},
+	{
+	"title" : "Christmas",
+	"description" : "Celebrates the nativity of Jesus.",
+	"keyWords":[],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	}	]
+}

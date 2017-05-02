@@ -1,0 +1,183 @@
+{
+"events" : [
+	{
+	"title" : "Halloween Treat Tricks Masks Candy Costumes",
+	"description" : "Is a celebration observed in a number of countries on 31 October, the eve of the Western Christian feast of All Hallows' Day. It begins the three-day observance of Allhallowtide,[9] the time in the liturgical year dedicated to remembering the dead, including saints (hallows), martyrs, and all the faithful departed.  It is widely believed that many Halloween traditions originated from the ancient Celtic harvest festival Samhain, and that this Gaelic observance was Christianized by the early Church",
+	"keyWords":["Halloween traditions", "Gaelic observance", "Western Christian feast", "Celtic harvest festival Samhain", "hallows ), martyrs", "Allhallowtide ,[9]", "31 October"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Columbus Day",
+	"description" : "Honors Christopher Columbus, the first European to land in mainland Americas after Leif Erikson.",
+	"keyWords":["honors Christopher Columbus", "Leif Erikson", "mainland Americas"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Ragnar Relay Series Runner Race",
+	"description" : "For the running socialite, there is no better event to participate in than Ragnar, a 200 mile relay that spans two days and one night. Ragnar encourages you to get your team of 12 together, dress up in crazy costumes, and make unforgettable experiences! The relay race makes its way across the country, so there is sure to be one near you. ",
+	"keyWords":["200 mile"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "NYC Wine and Food Festival",
+	"description" : "Eat, drink, and end hunger. The New York City Wine and Food Festival is a national, star-studded, four-day event showcasing the talents of the world�s most renowned wine and spirits producers, chefs, culinary personalities, and America�s most beloved television chefs while fighting to end hunger. With more than 100 events in the span of four days, the New York Wine and Food Festival is widely recognized for it�s intimate dinners with world-renowned chefs, late night parties, hands-on classes, educational seminars, coveted wine tasting, and more. Money from the festival is raised to help end hunger, and last year alone $9.5 million was raised to beat hunger. ",
+	"keyWords":["hunger", "New York City Wine", "chef",  "television chefs", "end", "Food Festival", "New York Wine", "spirits producers", "world's", "100 events", "end hunger", "America's", "night parties"],
+	"venue" : {
+		"address" : {
+			"country" : "United States"
+			}
+		}
+	},
+	{
+	"title" : "Double Ninth Festival",
+	"description" : "The Double Ninth Festival (Chung Yeung Festival in Hong Kong ), observed on the ninth day of the ninth month in the Chinese calendar, is a traditional Chinese holiday, mentioned in writing since before the East Han period (before AD 25).According to the I Ching, nine is a yang number; the ninth day of the ninth lunar month (or double nine) has too much yang (a traditional Chinese spiritual concept) and is thus a potentially dangerous date. Hence, the day is also called Double Yang Festival. To protect against danger, it is customary to climb a high mountain, drink chrysanthemum liquor, and wear the zhuyu plant, Cornus officinalis. On this holiday some Chinese also visit the graves of their ancestors to pay their respects. In Hong Kong, whole extended families head to ancestral graves to clean them and repaint inscriptions, and to lay out food offerings such as roast suckling pig and fruit, which are then eaten",
+	"keyWords":["Chinese calendar", "Chung Yeung Festival", "Festival", "roast suckling pig", "East Han period", "Hong Kong ),", "food offerings", "Double Ninth Festival", "Double Yang Festival", "Hong Kong", "yang number", "families head", "Cornus officinalis", "AD 25).", "zhuyu plant", "day", "Chinese", "drink chrysanthemum liquor", "Chinese holiday", "repaint inscriptions"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "National Day of the People's Republic of China",
+	"description" : "The National Day of the People's Republic of China  is a public holiday in the People's Republic of China to celebrate their national day, and is celebrated annually on October 1. The PRC was founded on October 1, 1949, with a ceremony at Tiananmen Square. One thing should be noted is that the PRC was not founded on that day, but on September 21, 1949. The Central People's Government passed the Resolution on the National Day of the People's Republic of China on December 2, 1949, and declared that October 1 is the National Day. The National Day is celebrated throughout mainland China, Hong Kong, and Macau with a variety of government-organized festivities, including fireworks and concerts. Public places, such as Tiananmen Square in Beijing, are decorated in a festive theme. Portraits of revered leaders, such as Mao Zedong, are publicly displayed",
+	"keyWords":["Mao Zedong", "Republic", "mainland China", "December 2, 1949,", "National Day", "government-organized festivities", "China", "Public places", "October 1.", "Hong Kong", "Day", "October", "October 1, 1949,", "Tiananmen Square", "People", "National", "September 21, 1949.", "October 1", "Central People"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Shanghai International Film Festival",
+	"description" : "The Shanghai International Film Festival  abbreviated SIFF, is one of the largest film festivals in East Asia. SIFF organized by Shanghai Municipal Administration of Culture, Radio, Film & TV and Shanghai Media & Entertainment Group. It awards several Golden Goblet Awards  for best film, best director, best actor/actress, and other categories, as well as a Special Jury Award. SIFF Mart consists of the Film Market, China Film Pitch and Catch (CFPC), and Co-production Film Pitch and Catch (Co-FPC). The SIFFORUM is a communication platform.",
+	"keyWords":["SIFF", "Shanghai Media", "Shanghai", "Special Jury Award", "SIFF Mart", "Golden Goblet", "film festivals", "Film Market", "Co-production Film Pitch", "actor /actress", "Shanghai International Film Festival", "Entertainment Group", "East Asia", "communication platform", "China Film Pitch", "CFPC ),", "Film"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "FIBA 3x3 World Championships",
+	"description" : "The 2016 FIBA 3x3 World Championships, to be hosted by China, will be an international 3x3 basketball event that will feature separate competitions for men's and women's national teams. The tournament will run from 11-15 October, 2016 in Guangzhou outside the Tianhe Sport Complex. It is co-organized by the FIBA. The International Basketball Federation, more commonly known as FIBA, FIBA World, or FIBA International , from its French name Fedaration Internationale de Basket-ball, is an association of national organizations which governs international competition in basketball. Originally known as the F�d�ration Internationale de Basketball Amateur (hence FIBA), in 1989 it dropped the word Amateur from its official name but retained the acronym; the BA now represents the first two letters of basketball.",
+	"keyWords":["2016 FIBA 3 x 3 World Championships", "Basketball Amateur", "word Amateur", "Fedaration Internationale de Basket-ball", "Tianhe Sport Complex",  "3", "11-15 October", "3 x 3 basketball event", "FIBA ),", "basketball", "FIBA International", "official name", "FIBA", "FIBA World", "International Basketball Federation"],
+	"venue" : {
+		"address" : {
+			"country" : "China"
+			}
+		}
+	},
+	{
+	"title" : "Japanese motorcycle Grand Prix",
+	"description" : "The Japanese Motorcycle Grand Prix  is a motorcycling event that is part of the Grand Prix motorcycle racing season.",
+	"keyWords":["Grand Prix motorcycle", "motorcycling event", "Japanese Motorcycle Grand Prix"],
+	"venue" : {
+		"address" : {
+			"country" : "Japan"
+			}
+		}
+	},
+	{
+	"title" : "German Bowl",
+	"description" : "The German Bowl is the annual national championship game in the sport of American football in Germany. It is contested by the two best teams of the German Football League. The Braunschweig Lions are the record winners of the German Bowl, with ten successful participations out of fifteen overall. The Dusseldorf Panther and the Berlin Adler both have six titles to their name, but Berlin has the best win-loss record of all clubs, 75 percent. Altogether, as of 2014, eleven clubs have won a German Bowl, while a further four clubs have reached the finals game but never won it. The most-played match up in the history of the game is the Braunschweig Lions versus the Hamburg Blue Devils, having been played six times, last in 2005.",
+	"keyWords":["record winners", "Bowl", "Braunschweig Lions", "German Football League", "finals game", "Dusseldorf Panther", "75 percent", "American football", "win-loss record", "club", "Hamburg Blue Devils", "Berlin Adler", "German Bowl", "championship game", "German", "game"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Unabhangiges Filmfest Osnabruck",
+	"description" : "The Unabh�ngige FilmFest Osnabr�ck (Osnabr�ck Independent Film Festival) is one of the eldest and most traditional film festivals in Lower Saxony, Germany. Every year it takes place on five days in October in Osnabruck. It is hosted by the non-profit association Osnabr�cker FilmForum e.V. under the direction of Birgit Mueller and Holger Tepe. Patron of the 26. FilmFest was David McAllister, Minister-President of the state of Lower Saxony. ",
+	"keyWords":["association Osnabrucker FilmForum e.V", "Birgit Mueller", "Osnabr", "Osnabruck", "Unabhangige FilmFest Osnabruck", "film festivals", "David McAllister", "Osnabruck Independent Film Festival", "26. FilmFest", "Holger Tepe"],
+	"venue" : {
+		"address" : {
+			"country" : "Germany"
+			}
+		}
+	},
+	{
+	"title" : "Stirling Prize",
+	"description" : "The Royal Institute of British Architects Stirling Prize is a British prize for excellence in architecture. It is named after the architect James Stirling, organised and awarded annually by the Royal Institute of British Architects (RIBA). The RIBA Stirling Prize is presented to the architects of the building that has made the greatest contribution to the evolution of architecture in the past year. The architects must be RIBA members, but the building can be anywhere in the European Union. Stirling Prize laureates receive a stipend of GB�20,000.",
+	"keyWords":["British prize", "RIBA members", "British Architects", "Stirling Prize laureates", "RIBA", "architect", "RIBA Stirling Prize", "Prize", "Stirling", "British", "European Union", "architect James Stirling", "British Architects Stirling Prize", "Royal Institute"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Labour Party (UK) Conference",
+	"description" : "The Labour Party Conference, or annual national conference of the Labour Party, is formally the supreme decision-making body of the Party.  In the Labour Party, Conference is the supreme body, although the party leadership has made clear, particularly in recent years, that it will ignore the conference's decisions where it does not agree; constitutionally, a British government must be free to make decisions on behalf of the whole population and cannot be bound by any private body. Resolutions for debate are put forward by CLPs and unions before the conference begins. In recent years, party members have had less say in what is debated at the annual conference, as the party leadership has tried to move policy-making increasingly into the new National Policy Forums, which meet in private.",
+	"keyWords":["Labour Party", "supreme decision-making body", "Labour", "Party", "Labour Party Conference", "conference", "British government", "supreme body", "party", "body", "party members", "National Policy Forums", "party leadership"],
+	"venue" : {
+		"address" : {
+			"country" : "United Kingdom"
+			}
+		}
+	},
+	{
+	"title" : "Melbourne Spring Racing Carnival",
+	"description" : "The Melbourne Spring Racing Carnival is the name of a Melbourne, Australia Thoroughbred horse racing series held annually during October and November. Although racing in Australia is held every day except Good Friday and Christmas Day, the Group One races in Melbourne are held almost exclusively throughout the carnival, which is traditionally placed between the football and cricket seasons. During the winter (where football is dominant), and summer (where cricket is dominant), racing takes a 'back seat' position in relation to the cricket or football in terms of media coverage and attendances. ",
+	"keyWords":["Christmas Day", "media coverage", "Australia Thoroughbred horse", "Melbourne Spring Racing Carnival", "cricket", "Good Friday", "football", "Melbourne", "cricket seasons"],
+	"venue" : {
+		"address" : {
+			"country" : "Australia"
+			}
+		}
+	},
+	{
+	"title" : "Lake Moondarra Fishing Classic",
+	"description" : "The Lake Moondarra Fishing Classic is an annual fishing tournament held at Lake Moondarra in Mount Isa, Queensland, Australia. It is held in the last full weekend of October starting on the Friday afternoon and concluding on Sunday. The event is hosted by the Mount Isa Fish Stocking Group, a non-profit volunteer organisation whose primary focus is the development of fresh water recreational fishery in the lakes around Mount Isa. Funds raised from the event are used to stock the lakes with barramundi and sooty grunter fingerlings.",
+	"keyWords":["grunter fingerlings", "Mount Isa", "fishing tournament", "Mount", "Friday afternoon", "Lake Moondarra", "Isa", "Lake Moondarra Fishing Classic", "volunteer organisation", "Mount Isa Fish Stocking Group"],
+	"venue" : {
+		"address" : {
+			"country" : "Australia"
+			}
+		}
+	},
+	{
+	"title" : "Open Innovations",
+	"description" : "Open Innovations (Forum and Technology Show) is an annual international forum that focuses on new technologies and perspectives of the international cooperation on innovations. The focus of Forum is to provide a platform for discussions, interaction and exchange amongst experts in leading edge technologies, scientists, top-managers from Russian and foreign corporations, startups, and state authorities including top public officials. The international exhibition of high-tech achievements is also part of Forum. Forum has been held in Moscow since 2012 under the guidance of the Russian Government with the support of Ministry of Economic Development of Russia, Moscow City Government and Russian development institutes: Rusnano, Russian Venture Company, Skolkovo Foundation, Vnesheconombank, Foundation for Assistance to Small Innovative Enterprises in Science and Technology (FASIE).",
+	"keyWords":["Skolkovo Foundation", "Russian development institutes", "Forum", "Russian", "Open Innovations", "Moscow City Government", "Russian Government", "Technology Show", "Economic Development", "edge technologies", "Russian Venture Company", "state authorities"],
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},
+	{
+	"title" : "Intercharm",
+	"description" : "InterCHARM � is the largest in Russia, CIS and Eastern Europe international perfumery and cosmetics exhibition, annually taking place in October in Moscow.  Over 1400 companies from 46 countries and 130 000 specialists from all over the globe are InterCHARM� clients. More than 80% of business contacts in this geographical region are set at InterCHARM. 2 625 perfumery-cosmetic brands from 25 countries: France, Germany, Spain, Italy, the Republic of Taiwan, China, Poland, Lithuania, Latvia, Estonia, South Korea, Turkey, USA, Canada, India, Israel, Pakistan, Bulgaria, Netherlands, Hungary, UAE, Singapore, Russia, Belarus, Ukraine.   80000 visitors out of which 50 925 are industry professionals. An extensive program of show and educational events.",
+	"keyWords":["130 000 specialists", "50 925", "business contacts", "InterCHARM", "80000 visitors", "InterCHARM' clients", "46 countries", "InterCHARM", "South Korea", "2 625 perfumery-cosmetic brands", "Eastern Europe", "cosmetics exhibition", "1400 companies", "25 countries", "industry professionals"],
+	"venue" : {
+		"address" : {
+			"country" : "Russia"
+			}
+		}
+	},
+	{
+	"title" : "Childrens Day",
+	"description" : "Commemorates the Virgin Mary as Nossa Senhora da Conceicao Aparecida, Patron Saint of Brazil. Also celebrated as Children's Day (Dia das Criancas) on the same date.",
+	"keyWords":["Virgin Mary", "Patron Saint", "Nossa Senhora da Conceicao Aparecida", "Dia das Criancas"],
+	"venue" : {
+		"address" : {
+			"country" : "Brazil"
+			}
+		}
+	}	]
+}
