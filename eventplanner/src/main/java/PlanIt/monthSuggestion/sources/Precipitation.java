@@ -10,7 +10,18 @@ import edu.toronto.cs.se.ci.UnknownException;
 import edu.toronto.cs.se.ci.budget.Expenditure;
 import edu.toronto.cs.se.ci.utils.BasicSource;
 
-public class Precipitation extends BasicSource<Event, Month, Void> implements MLMonthSuggestionContract{
+/**
+ * This source returns the month with the nth least precipitation. The value for
+ * n is defined at construction.
+ * 
+ * @author ikba
+ *
+ */
+public class Precipitation extends BasicSource<Event, Month, Void> implements MLMonthSuggestionContract {
+	/**
+	 * The n for which this source returns nth least precipitation. Therefore n
+	 * is between 1 and 12 inclusive.
+	 */
 	private int nthLeastPrecipitation;
 
 	public Precipitation(int n) {
@@ -39,6 +50,10 @@ public class Precipitation extends BasicSource<Event, Month, Void> implements ML
 		return null;
 	}
 
+	// NOTE that name includes n so that for each value of n, the name of the
+	// source is unique. This is important as each source must have a unique
+	// name, as the WEKA classifier takes source name to be attribute name, and
+	// each attribute must have a unique name.
 	@Override
 	public String getName() {
 		return super.getName() + this.nthLeastPrecipitation + "thLeast";

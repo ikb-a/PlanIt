@@ -43,7 +43,7 @@ public class YandexSearch implements XMLSearchEngine {
 	// Page 1 is numbered as page=0
 	private static final String SEARCH_URL_P1 = "https://yandex.com/search/xml?user=geor-bob&key=03.451371415:7c30b595a4b4d56780150e0db50cdc9c&query=";
 	private static final String SEARCH_URL_P2 = "&l10n=en&sortby=rlv&filter=none&maxpassages=1&groupby=attr%3D%22%22.mode%3Dflat.groups-on-page%3D10.docs-in-group%3D1&page=";
-
+	
 	public YandexSearch() {
 		if (sc == null) {
 			sc = new Scanner(System.in);

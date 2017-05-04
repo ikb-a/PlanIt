@@ -21,12 +21,26 @@ public class MonthWithLeastRainByCountry {
 	private static Map<String, String> map;
 	private static List<MonthAndPrec> data;
 
+	/**
+	 * Quick test of API
+	 * 
+	 * @param args
+	 * @throws UnknownException
+	 */
 	public static void main(String[] args) throws UnknownException {
 		for (int x = 1; x < 13; x++) {
 			System.out.println(nthMonthWithLeastRain("Canada", x));
 		}
 	}
 
+	/**
+	 * Returns the Month which has the nth least precipitation in country on
+	 * average.
+	 * 
+	 * @param country
+	 * @param n
+	 * @throws UnknownException
+	 */
 	public static Month nthMonthWithLeastRain(String country, int n) throws UnknownException {
 		if (n < 1 || n > 12) {
 			throw new IllegalArgumentException("The " + n + "th month does not exist");
@@ -43,7 +57,7 @@ public class MonthWithLeastRainByCountry {
 				}
 
 				try {
-					//System.out.println(apiResult);
+					// System.out.println(apiResult);
 					JSONArray json = new JSONArray(apiResult);
 					JSONObject json1999 = (JSONObject) json.get(json.length() - 1);
 					JSONArray jsonMonthlyData = json1999.getJSONArray("monthVals");

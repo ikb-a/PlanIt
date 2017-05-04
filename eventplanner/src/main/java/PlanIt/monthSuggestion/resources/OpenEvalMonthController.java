@@ -26,14 +26,17 @@ import openEval.MultithreadSimpleOpenEval;
 /**
  * A singleton class designed to hold 12 OpenEval objects, one for each month of
  * the year. When asked if an event belongs to a specific month, it uses the
- * OpenEval to classify each of the keywords as to whether or not they belong to
- * the month. If most of them do, the month is returned. Else, Unknown is
- * returned.
+ * OpenEval to classify each of the keywords as to whether or not they are
+ * related to the month. If more than a given threshold do, the month is returned. Else,
+ * Unknown is returned.
  * 
- * Search results are memoized for future use. Link Contents are memoized for
- * future use. Training data in the form of .arff files (containing word bags
- * and whether or not they relate to the month) must be provided, currently
- * their location is hard-coded for the sake of simplicity.
+ * Search results can be memoized if a memoizing search engine is given to this
+ * class. Link Contents (i.e. text contents of the websites retrieved by the
+ * search engine) are memoized for future use. Training data in the form of
+ * .arff files (containing word bags and whether or not they relate to the
+ * month) must be provided, currently their location is hard-coded for the sake
+ * of simplicity. This training data can be generated using
+ * {@link PlanIt.monthSuggestion.trainingDataGeneration.trainSimpleOpenEval}
  * 
  * @author ikba
  *
@@ -49,6 +52,7 @@ public class OpenEvalMonthController {
 	 * January
 	 */
 	MultithreadSimpleOpenEval jan;
+
 	MultithreadSimpleOpenEval feb;
 	MultithreadSimpleOpenEval mar;
 	MultithreadSimpleOpenEval apr;
@@ -60,10 +64,10 @@ public class OpenEvalMonthController {
 	MultithreadSimpleOpenEval oct;
 	MultithreadSimpleOpenEval nov;
 	MultithreadSimpleOpenEval dec;
-	
+
 	/**
-	 * Map from Event name and keyword to an integer, which is the filename
-	 * of the file containing the memoized website contents found when searching
+	 * Map from Event name and keyword to an integer, which is the filename of
+	 * the file containing the memoized website contents found when searching
 	 * for said event and keyword.
 	 */
 	HashMap<String, Integer> completedLinks;
@@ -114,7 +118,7 @@ public class OpenEvalMonthController {
 	 */
 	static GenericSearchEngine search;
 	static boolean verbose = true;
-	static boolean verboseOpenEval=false;
+	static boolean verboseOpenEval = false;
 	/**
 	 * The next available filename. These filenames are used to store memoized
 	 * link contents.
@@ -142,66 +146,77 @@ public class OpenEvalMonthController {
 			jan.setNameSuffix("Janthreshold");
 			// Set the search engine of the Jan OpenEval
 			jan.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Feb");
 			feb = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(febFile), "February");
 			feb.setNameSuffix("Febthreshold");
 			feb.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Mar");
 			mar = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(marFile), "March");
 			mar.setNameSuffix("Marthreshold");
 			mar.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Apr");
 			apr = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(aprFile), "April");
 			apr.setNameSuffix("Aprthreshold");
 			apr.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training May");
 			may = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(mayFile), "May");
 			may.setNameSuffix("Maythreshold");
 			may.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Jun");
 			jun = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(junFile), "June");
 			jun.setNameSuffix("Junthreshold");
 			jun.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Jul");
 			jul = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(julFile), "July");
 			jul.setNameSuffix("Julthreshold");
 			jul.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Aug");
 			aug = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(augFile), "August");
 			aug.setNameSuffix("Augthreshold");
 			aug.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Sep");
 			sep = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(sepFile), "September");
 			sep.setNameSuffix("Septhreshold");
 			sep.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Oct");
 			oct = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(octFile), "October");
 			oct.setNameSuffix("Octthreshold");
 			oct.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Nov");
 			nov = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(novFile), "November");
 			nov.setNameSuffix("Novthreshold");
 			nov.setSearch(search);
+
 			if (verbose)
 				System.out.println("Training Dec");
 			dec = new MultithreadSimpleOpenEval(MLUtility.fileToInstances(decFile), "December");
 			dec.setNameSuffix("Decthreshold");
 			dec.setSearch(search);
+
 			if (verbose)
 				System.out.println("Loading links map");
 			completedLinks = loadLinkToFilename();
 			currFile = completedLinks.size();
-			
 
 			jan.setVerbose(verboseOpenEval);
 			feb.setVerbose(verboseOpenEval);
@@ -216,11 +231,10 @@ public class OpenEvalMonthController {
 			nov.setVerbose(verboseOpenEval);
 			dec.setVerbose(verboseOpenEval);
 
-
 			System.out.println("Controller setup done");
 
 		} catch (Exception e) {
-			throw new RuntimeException(e); //WEKA Exception
+			throw new RuntimeException(e); // WEKA Exception
 		}
 
 	}
@@ -263,6 +277,7 @@ public class OpenEvalMonthController {
 
 	/**
 	 * Sets a new threshold for {@code m}.
+	 * 
 	 * @param m
 	 * @param threshold
 	 */
@@ -277,15 +292,16 @@ public class OpenEvalMonthController {
 					"Running month " + month + " on event: " + input.getTitle() + " Thres: " + thresholds.get(month));
 
 		MultithreadSimpleOpenEval openEval = getEvalForMonth(month);
+
 		int filename;
+		// load link contents if they were previously memoized
 		if (completedLinks.containsKey(input.getTitle() + openEval.getKeyword())) {
 			filename = completedLinks.get(input.getTitle() + openEval.getKeyword());
 			if (verbose)
 				System.out.println("load from existing: " + memoizationFolder + filename + fileExtension);
-		} else {
+		} else { // else create next sequentially numbered file
 			filename = currFile;
 			completedLinks.put(input.getTitle() + openEval.getKeyword(), currFile);
-			//saveLinksMap();
 			currFile++;
 			if (verbose)
 				System.out.println("***Create new: " + memoizationFolder + filename + fileExtension);
@@ -299,16 +315,12 @@ public class OpenEvalMonthController {
 			throw new RuntimeException(e1);
 		}
 
-		// List<String> keywords = new ArrayList<String>(new
-		// HashSet<String>(input.getWords()));
-		// String[] definedKeywords = input.getKeyWords();
-		// if (definedKeywords != null) {
-		// keywords.addAll(Arrays.asList(definedKeywords));
-		// definedKeywords = null;
-		// }
+		// Fetch event keywords
 		List<String> keywords = new ArrayList<String>(Arrays.asList(input.getKeyWords()));
-
+		// Fetch country
 		String country = input.getVenue().getAddress().getCountry();
+
+		// Check both present
 		if (country == null) {
 			throw new UnknownException();
 		}
@@ -316,6 +328,7 @@ public class OpenEvalMonthController {
 			throw new UnknownException("No Keywords");
 		}
 
+		// Concatenate all keywords with the country
 		keywords.replaceAll((String a) -> country + " " + a);
 
 		if (verbose) {
@@ -326,9 +339,11 @@ public class OpenEvalMonthController {
 		int negativeBags = 0;
 		int unkBags = 0;
 
+		// Evaluate each keyword country pairing with the open eval
 		List<Opinion<Boolean, Double>> opinions = openEval.getOpinions(keywords);
 		// TODO: use weighted vote based on SimpleOpenEval confidences?
-		for (int x = 0; x < keywords.size(); x++) {
+		for (int x = 0; x < keywords.size(); x++) { // Tally results (+, - or
+													// unknown)
 			String keyword = keywords.get(x);
 			Opinion<Boolean, Double> op = opinions.get(x);
 
@@ -380,6 +395,9 @@ public class OpenEvalMonthController {
 		}
 	}
 
+	/**
+	 * Retrieves the corresponding open eval for the given month
+	 */
 	private MultithreadSimpleOpenEval getEvalForMonth(Month month) {
 		switch (month) {
 		case January:
@@ -411,6 +429,10 @@ public class OpenEvalMonthController {
 		}
 	}
 
+	/**
+	 * Load the map that links event/month pairings to the number corresponding
+	 * to the file containing link contents for that specific event/month pair.
+	 */
 	private HashMap<String, Integer> loadLinkToFilename() throws IOException, ClassNotFoundException {
 		File f = new File(linkToFileNameMapPath);
 		if (!f.exists()) {

@@ -3,9 +3,9 @@ package Planit.dataObjects;
 public class Address {
 
 	private String street_number;
-	private String route;
-	private String locality;
-	private String administrative_area_level_1;
+	private String route; //i.e. road name
+	private String locality; //i.e. city name
+	private String administrative_area_level_1; //i.e. province/state
 	private String country;
 	private String postal_code;
 

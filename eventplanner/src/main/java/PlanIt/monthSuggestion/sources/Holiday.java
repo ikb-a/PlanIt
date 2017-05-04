@@ -317,6 +317,15 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		System.out.println(bob.getResponse(events[0]));
 	}
 
+	/**
+	 * Retrieves all Holidays in the event's country. If none of the holidays
+	 * appear in the event's keywords, description, or title, Unknown is thrown.
+	 * If only Holidays from the same month are found, said month is returned.
+	 * 
+	 * @param input
+	 * @return
+	 * @throws UnknownException
+	 */
 	@Override
 	public Month getResponse(Event input) throws UnknownException {
 		Venue venue = input.getVenue();
@@ -331,24 +340,32 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 			definedKeywords = new ArrayList<String>();
 		} else {
 			definedKeywords = new ArrayList<String>(Arrays.asList(definedKeywordsArray));
-			//definedKeywords.replaceAll((String a) -> a.toLowerCase());
-			int nulls=0;
-			for(String a:definedKeywords){
-				if(a==null){
+
+			// Remove all null elements
+			int nulls = 0;
+			for (String a : definedKeywords) {
+				if (a == null) {
 					nulls++;
 				}
 			}
-			while(nulls!=0){
+			while (nulls != 0) {
 				definedKeywords.remove(null);
 				nulls--;
 			}
-			for(int i =0; i<definedKeywords.size();i++){
+
+			// Set to lowercase
+			for (int i = 0; i < definedKeywords.size(); i++) {
 				definedKeywords.set(i, definedKeywords.get(i).toLowerCase());
 			}
 		}
 
+		// Get API response
 		String nationalHolidaysString = getHolidaysString(country);
+
+		// Convert to a list of holidays and their months
 		List<HolidayEvent> holidayEvents = stringToHolidays(nationalHolidaysString);
+
+		// Find holidays appearing in the event
 		List<HolidayEvent> matches = new ArrayList<HolidayEvent>();
 		for (HolidayEvent holiday : holidayEvents) {
 			if (description.contains(holiday.getName()) || definedKeywords.contains(holiday.getName())
@@ -357,6 +374,7 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 			}
 		}
 
+		// Determine if mathches all indicate same month.
 		if (matches.isEmpty()) {
 			throw new UnknownException();
 		} else if (matches.size() == 1) {
@@ -406,7 +424,7 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 	 * checked. Otherwise a call to the HolidayAPI is made.
 	 * 
 	 * @param country
-	 * @return
+	 * @return HolidayAPI response as a string
 	 * @throws UnknownException
 	 */
 	private String getHolidaysString(String country) throws UnknownException {
@@ -467,11 +485,10 @@ public class Holiday extends MLBasicSource<Event, Month> implements MLMonthSugge
 		// TODO Add values (time)
 		return new Expenditure[] {};
 	}
-	
+
 	/**
-	 * Load a serialized map from country name to HolidayAPI output into
-	 * memory. From now on will automatically save new API calls to this
-	 * location.
+	 * Load a serialized map from country name to HolidayAPI output into memory.
+	 * From now on will automatically save new API calls to this location.
 	 * 
 	 * @param filePath
 	 * @throws IOException

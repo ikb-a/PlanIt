@@ -34,7 +34,7 @@ public class demo {
 	public static final String FOLDER = "./src/main/resources/data/monthData/";
 
 	/**
-	 * Create a event (hardcoded right now) and classifies it using the CI
+	 * Create a event (hardcoded right now) and classifies it using the CI.
 	 * @param args
 	 * @throws Exception
 	 */
@@ -56,13 +56,21 @@ public class demo {
 		// month with third best temperature
 		Contracts.register(new Temperature(3));
 
+		// month with related holiday
 		Holiday h = new Holiday();
+		// load map of country to holiday to reduce number of Holiday API calls
 		h.loadSavedHoliday("./src/main/resources/data/monthData/HolidayData/Holidays.ser");
 		Contracts.register(h);
 
+		//Setup the object that runs all of the OpenEval sources (I used this object
+		// to ensure that despite multithreading, only one OpenEval source can be
+		//running at a time. This is to prevent synchronicity issues with the shared
+		//memoized results files)
 		OpenEvalMonthController.setSearchEngine(
 				new MemoizingSearch(FOLDER + "CI/memoizedSearchCITrainYandex.ser", new YandexSearch()));
 		OpenEvalMonthController.setVerbose(true);
+		
+		//Register sources that determine relatedness of an event to a month
 		Contracts.register(new openEvalThresholdSource(Month.January));
 		Contracts.register(new openEvalThresholdSource(Month.February));
 		Contracts.register(new openEvalThresholdSource(Month.March));
@@ -101,7 +109,7 @@ public class demo {
 		event = Event.createEvent("Christmas Parade").setVenue(eventVenue).setKeyWords(keywords).setDescription(description);
 		
 		//Get a future of the result, Zero allowance is fine as costs were not implemented
-		//In any of the sources used
+		//in any of the sources used.
 		Estimate <String, double[]> estimate = ci.apply(event, new Allowance [] {});
 		
 		Result<String, double[]> result = null;
@@ -109,8 +117,10 @@ public class demo {
 			result = estimate.get();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+			return;
 		} catch (ExecutionException e) {
 			e.printStackTrace();
+			return;
 		}
 		
 		System.out.println("Decision of CI: " + result.getValue());

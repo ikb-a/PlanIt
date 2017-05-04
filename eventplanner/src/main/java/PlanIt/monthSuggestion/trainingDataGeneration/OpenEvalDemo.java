@@ -161,7 +161,7 @@ public class OpenEvalDemo {
 			} catch (UnknownException e) {
 				e.printStackTrace();
 			}
-		} else {
+		} else { //Single threaded open eval
 
 			openEvalThresholdSourceSingleThread b = new openEvalThresholdSourceSingleThread(Month.January,
 					"./src/main/resources/data/monthData/OpenEval/OpenEvalJan.arff", 0.25, bob);

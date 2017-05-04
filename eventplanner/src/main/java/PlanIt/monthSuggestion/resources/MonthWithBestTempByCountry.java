@@ -24,23 +24,59 @@ import edu.toronto.cs.se.ci.UnknownException;
  *
  */
 public class MonthWithBestTempByCountry {
+	/**
+	 * The country whose temperature was last checked
+	 */
 	private static String currCountry;
+
+	/**
+	 * The code corresponding to {@link currCountry} (this code used in the
+	 * worldbank climate API call)
+	 */
 	private static String currCountryCode;
+
+	/**
+	 * Map from country name to country code
+	 */
 	private static Map<String, String> map;
+
+	/**
+	 * An ordered list of {@link MonthAndTempDelta}'s from least absolute
+	 * deviation to most absolute deviation for {@link currCountry}.
+	 */
 	private static List<MonthAndTempDelta> data;
+
+	/**
+	 * The "most comfortable" temperature, chosen to be 20 Celsius.
+	 */
 	public static final int IDEAL_TEMP = 20;
 
+	/**
+	 * Quick test program.
+	 * 
+	 * @param args
+	 * @throws UnknownException
+	 */
 	public static void main(String[] args) throws UnknownException {
 		for (int x = 1; x < 13; x++) {
 			System.out.println(nthMonthWithBestTemp("Canada", x));
 		}
 	}
 
+	/**
+	 * Returns the month with the nth smallest deviation between
+	 * {@link IDEAL_TEMP} and the countries average temperature in that month.
+	 * 
+	 * @param country
+	 * @param n
+	 * @throws UnknownException
+	 */
 	public static Month nthMonthWithBestTemp(String country, int n) throws UnknownException {
 		if (n < 1 || n > 12) {
 			throw new IllegalArgumentException("The " + n + "th month does not exist");
 		}
 
+		// Prevents updateCountryAndCode being called unsafely
 		synchronized (MonthWithBestTempByCountry.class) {
 			if (!country.equals(currCountry)) {
 				data = new ArrayList<MonthAndTempDelta>();
@@ -115,6 +151,12 @@ public class MonthWithBestTempByCountry {
 		return data.get(n - 1).getMonth();
 	}
 
+	/**
+	 * Makes a request to the World Bank climate data api for the
+	 * {@link currCountry}, and returns the response
+	 * 
+	 * @throws UnknownException
+	 */
 	private static String requestData() throws UnknownException {
 		String urlString = "http://climatedataapi.worldbank.org/climateweb/rest/v1/country/cru/tas/month/"
 				+ currCountryCode;
@@ -134,7 +176,8 @@ public class MonthWithBestTempByCountry {
 	}
 
 	/**
-	 * Not thread safe.
+	 * Not thread safe. Updates {@link currCountry} to country, and update
+	 * {@link currCountryCode} to the corresponding code.
 	 * 
 	 * @param country
 	 * @return
@@ -400,8 +443,24 @@ public class MonthWithBestTempByCountry {
 		}
 	}
 
+	/**
+	 * Object storing a Month, and the absolute difference between the average
+	 * temperature for that month and {@link IDEAL_TEMP}
+	 * 
+	 * @author ikba
+	 *
+	 */
 	private static class MonthAndTempDelta {
+		/**
+		 * The Month that is {@link delta} degrees Celsius from
+		 * {@link IDEAL_TEMP} on average
+		 */
 		final Month month;
+
+		/**
+		 * Absolute difference of average temperature in this {@link month} and
+		 * {@link IDEAL_TEMP}
+		 */
 		final double delta;
 
 		public MonthAndTempDelta(Month month, double temperatureDifferenceFromBest) {

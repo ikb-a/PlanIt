@@ -126,6 +126,6 @@ public class TrainCIMLAggregator {
 				new MLToCIContract<Event, Month>(MLMonthSuggestionContract.class));
 		// Use trainer to produce and save training data.
 		nt.createNominalTrainingData(trainingData, new EnumNominalConverter(),
-				FOLDER + "CI/CITrainingData_Full_Part1.arff");
+				FOLDER + "CI/CITrainingData_Full_Part1_again.arff");
 	}
 }

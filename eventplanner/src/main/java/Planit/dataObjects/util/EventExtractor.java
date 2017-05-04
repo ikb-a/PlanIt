@@ -34,7 +34,7 @@ public class EventExtractor {
 		// extract the JSON array of events
 		JsonArray eventsArrayObj = eventsJsonObj.getAsJsonArray("events");
 
-		// convet the JSON array into an Event array, and return
+		// convert the JSON array into an Event array, and return
 		Gson gson = new Gson();
 		Event[] events = gson.fromJson(eventsArrayObj, Event[].class);
 		return events;

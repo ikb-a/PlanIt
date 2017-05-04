@@ -17,7 +17,9 @@ import edu.toronto.cs.se.ci.utils.searchEngine.GenericSearchEngine;
 import openEval.SimpleOpenEval;
 import weka.core.converters.JSONLoader;
 
-public class openEvalThresholdSourceSingleThread extends MLBasicSource<Event, Month> implements MLMonthSuggestionContract {
+//This class is deprecated. Use openEvalThresholdSource which in turn uses openEvalMonthController.
+public class openEvalThresholdSourceSingleThread extends MLBasicSource<Event, Month>
+		implements MLMonthSuggestionContract {
 	double threshold;
 	Month month;
 	SimpleOpenEval openEval;
@@ -115,7 +117,7 @@ public class openEvalThresholdSourceSingleThread extends MLBasicSource<Event, Mo
 	@Override
 	public Month getResponse(Event input) throws UnknownException {
 		Set<String> keywords = new HashSet<String>(input.getWords());
-		String [] definedKeywords = input.getKeyWords();
+		String[] definedKeywords = input.getKeyWords();
 		if (definedKeywords != null) {
 			keywords.addAll(Arrays.asList(definedKeywords));
 			definedKeywords = null;
@@ -145,7 +147,7 @@ public class openEvalThresholdSourceSingleThread extends MLBasicSource<Event, Mo
 				}
 			} catch (UnknownException e) {
 				if (verbose) {
-					System.out.println("U"+keyword + ": " + e.getMessage());
+					System.out.println("U" + keyword + ": " + e.getMessage());
 				}
 				unkBags++;
 			}
