@@ -21,21 +21,20 @@ public class OpenEvalDemo {
 		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
 
+		//Which event to load:
+		String CIFile = "./src/main/resources/data/monthData/CI/1_January.json";
+		int index = 0;
+		
 		// Create search engine whose search results are being memoized to the file
 		GenericSearchEngine bob = new MemoizingSearch(
-				"./src/main/resources/data/monthData/OpenEval/OpenEvalDemoDec2016SearchResults.ser", new UnBubbleSearchHTML());
+				"./src/main/resources/data/monthData/OpenEval/OpenEvalDemoY.ser", new YandexSearch());
 
 		EventExtractor extractor = new EventExtractor();
-		String CIFile = "./src/main/resources/data/monthData/CI/1_January.json";
-		// int index = Integer.parseInt(args[0]);
-		int index = 0;
 		Event[] events = extractor.extractEventsFromJsonFile(new File(CIFile));
-		
 		extractor = null;
 		
 		Event one = events[index];
 		System.out.println("Running on element " + index + " of: " + CIFile);
-		System.out.println("January:");
 		System.out.println(one.getTitle());
 		System.out.println(one.getDescription());
 

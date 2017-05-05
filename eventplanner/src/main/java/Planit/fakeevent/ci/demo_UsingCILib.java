@@ -25,6 +25,12 @@ import edu.toronto.cs.se.ci.data.Opinion;
 import edu.toronto.cs.se.ci.machineLearning.aggregators.MLWekaNominalConverter;
 import edu.toronto.cs.se.ci.machineLearning.util.training.NominalTrainer;
 
+/**
+ * Perform same task as demo.java, using the new CI Library.
+ * 
+ * @author ikba
+ *
+ */
 public class demo_UsingCILib {
 
 	static private String fileRealEvents = "./src/main/resources/data/event data/chillwall.json";
@@ -59,7 +65,7 @@ public class demo_UsingCILib {
 			return;
 		}
 
-		// create the sources
+		// create the collection of all the sources to ask
 		Collection<EventSource> sources = new ArrayList<EventSource>();
 
 		// add all the sources

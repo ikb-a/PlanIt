@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
 
 import Planit.dataObjects.Event;
 import Planit.dataObjects.util.EventExtractor;
@@ -16,8 +17,6 @@ import Planit.fakeevent.resources.SourceFactory;
  * results to a file.
  */
 public class demo {
-
-	// TODO: figure out why data folder is not appearing in same folder
 	static private String fileRealEvents = "./src/main/resources/data/event data/singleReal.json";
 	static private String fileFakeEvents = "./src/main/resources/data/event data/fab1.json";
 	// static private String fileFakeEvents = "./data/event data/fully scrambled
@@ -29,6 +28,12 @@ public class demo {
 	static private String logFilePath = "./src/main/resources/data/fab1log_2.txt";
 
 	public static void main(String[] args) throws IOException {
+		// disable HTMLUnit messages produced by UnBubble
+		java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
+		java.util.logging.Logger.getLogger("org.apache.commons.httpclient").setLevel(Level.OFF);
+		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
+
+		
 		EventExtractor extractor = new EventExtractor();
 		// load the real events
 		Event[] realEvents;

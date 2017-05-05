@@ -29,7 +29,7 @@ import edu.toronto.cs.se.ci.utils.searchEngine.XMLSearchEngine;
 
 /**
  * To use, you must have correct username, key, and be accessing from a
- * registered IP
+ * registered IP.
  * 
  * @author ikba
  *
@@ -70,6 +70,7 @@ public class YandexSearch implements XMLSearchEngine {
 
 	@Override
 	public SearchResults search(String searchString, int pageNumber) throws IOException {
+		//Empty search yields no results
 		if (searchString.equals("")) {
 			List<SearchResult> results = new ArrayList<SearchResult>();
 			return new SearchResults(0, results, searchString, pageNumber);

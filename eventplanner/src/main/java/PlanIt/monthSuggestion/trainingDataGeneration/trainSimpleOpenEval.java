@@ -31,8 +31,7 @@ public class trainSimpleOpenEval {
 	public static final String FOLDER = "./src/main/resources/data/monthData/OpenEval/YandexTraining/";
 
 	public static void main(String[] args) throws Exception {
-		GenericSearchEngine search = new MemoizingSearch(FOLDER + "TrainingSearchMemoization.ser",
-				new YandexSearch());
+		GenericSearchEngine search = new MemoizingSearch(FOLDER + "TrainingSearchMemoization.ser", new YandexSearch());
 
 		// Words for which the predicate AreRelatedToJanuary(Country, Word)
 		// should return true
@@ -81,6 +80,7 @@ public class trainSimpleOpenEval {
 		// save the contents of all the links read that were returned from the
 		// above searches.
 		eval1.saveMemoizedContents();
+		// Turn of link memoizatoin now that results have been saved.
 		eval1.setMemoizeLinkContentsOff();
 
 		List<String> wordsRelatedToFeb = new ArrayList<String>(Arrays.asList(new String[] { "United States Snow",

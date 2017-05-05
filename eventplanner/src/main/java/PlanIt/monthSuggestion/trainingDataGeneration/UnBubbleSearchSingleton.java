@@ -48,7 +48,7 @@ public class UnBubbleSearchSingleton implements GenericSearchEngine {
 
 	/**
 	 * Quick test/example of using the search.
-	 * Disabling the HtmlUnit messages is not required, but heavily recomended.
+	 * Disabling the HtmlUnit messages is not required, but heavily recommended.
 	 */
 	public static void main(String[] args) throws IOException {
 		// disable annoying HTMLUnit messages produced by HtmlUnit

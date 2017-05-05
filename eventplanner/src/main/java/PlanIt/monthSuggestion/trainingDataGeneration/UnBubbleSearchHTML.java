@@ -34,7 +34,7 @@ public class UnBubbleSearchHTML implements GenericSearchEngine {
 	private static List<Pattern> ignorePattern;
 	/**
 	 * Currently a memory leak (scanner is never closed). Adding a static
-	 * scanner is just a quick fix to a bug were after receiving a 429 for
+	 * scanner is just a quick fix to a bug where after receiving a 429 HTML code for
 	 * the second time, System.in would already be closed due to the scanner
 	 * having been closed.
 	 */

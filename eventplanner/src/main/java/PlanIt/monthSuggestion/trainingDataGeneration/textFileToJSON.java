@@ -11,6 +11,13 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Quick program to convert the text files I had of events into usable .json
+ * files. Unrelated to rest of program.
+ * 
+ * @author ikba
+ *
+ */
 public class textFileToJSON {
 	public static final String FOLDER = "./src/main/resources/data/monthData/CI/";
 

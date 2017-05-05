@@ -26,10 +26,24 @@ import edu.toronto.cs.se.ci.utils.searchEngine.SearchResult;
 import edu.toronto.cs.se.ci.utils.searchEngine.SearchResults;
 
 /**
- * A simplified version of OpenEval. This class can answer predicates by being
- * given positive and negative examples. To increase speed, this class uses
- * multiple threads so as to request information from websites while waiting for
- * the response from the search engine.
+ * A program created to try and produce better training data for the OpenEvals.
+ * The idea as follows: 1) Get large list of country/keyword pairs 2) Use the
+ * open eval process to get the corresponding word bags, BUT DO NOT convert to
+ * frequencies 3) Using the word bags generated, count the occurrences of each
+ * month 4) Using 3), divide the list into country/keyword pairs that relate to
+ * each month.
+ * 
+ * For example, given "USA cheese" we would first generate word bags. Once we
+ * have word bags related to "USA Halloween", we would then go through the word
+ * bags see that, for instance, Octorber appears 20 times whearas all other
+ * months appear only 5 times or less. Therefore, this would seem to indicate
+ * that "USA Halloween" should be related to October. With this knowledge, we
+ * can now use "USA Halloween" as part of the training data for the October
+ * relatedness Open Eval (although halloween is an obvious example, less obvious
+ * keywords may be things such as skiing, cheese, video games, etc...).
+ * 
+ * Unfortunately this idea did not seem to work very well (see
+ * "notes on Month Suggestion").
  * 
  * @author Ian Berlot-Attwell.
  *
@@ -96,7 +110,8 @@ public class MonthKeywordGenerator {
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
 
 		GenericSearchEngine searchEngine = new MemoizingSearch(
-				"./src/main/resources/data/monthData/OpenEval/TrainingSearchMemoizationDec2016.ser", new UnBubbleSearchHTML());
+				"./src/main/resources/data/monthData/OpenEval/TrainingSearchMemoizationDec2016.ser",
+				new UnBubbleSearchHTML());
 		MonthKeywordGenerator bob = new MonthKeywordGenerator("", searchEngine);
 
 		bob.run(Arrays.asList(new String[] { "usa summer", "usa cheese", "usa aeronautics", "usa lego",
@@ -225,8 +240,8 @@ public class MonthKeywordGenerator {
 		// whether the thread in charge of making queries to the search engine
 		// is done
 		AtomicBoolean SearchDone = new AtomicBoolean(false);
-		
-		//Website contents
+
+		// Website contents
 		List<LinkContentsForSearch> cont = new ArrayList<LinkContentsForSearch>();
 
 		// List of threads in charge of getting website contents from links
@@ -305,11 +320,12 @@ public class MonthKeywordGenerator {
 							// differentiate "May" from "may"
 							resultsPerMonth[4] += webpage.split("May[^A-Za-z]").length - 1;
 							/*
-							System.out.println("May*****************************************************");
-							String[] matches = webpage.split("May[^A-Za-z]");
-							for (String match : matches) {
-								System.out.println(match + "May");
-							}*/
+							 * System.out.println(
+							 * "May*****************************************************"
+							 * ); String[] matches =
+							 * webpage.split("May[^A-Za-z]"); for (String match
+							 * : matches) { System.out.println(match + "May"); }
+							 */
 							resultsPerMonth[5] += webpageLower.split("june").length - 1;
 							resultsPerMonth[6] += webpageLower.split("july").length - 1;
 							resultsPerMonth[7] += webpageLower.split("august").length - 1;
@@ -318,11 +334,13 @@ public class MonthKeywordGenerator {
 							resultsPerMonth[10] += webpageLower.split("november").length - 1;
 							resultsPerMonth[11] += webpageLower.split("december").length - 1;
 							/*
-							System.out.println("Dec*****************************************************");
-							String[] matchesD = webpageLower.split("december");
-							for (String match : matchesD) {
-								System.out.println(match + "december");
-							}*/
+							 * System.out.println(
+							 * "Dec*****************************************************"
+							 * ); String[] matchesD =
+							 * webpageLower.split("december"); for (String match
+							 * : matchesD) { System.out.println(match +
+							 * "december"); }
+							 */
 						}
 
 					}
